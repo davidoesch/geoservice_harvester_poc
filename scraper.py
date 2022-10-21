@@ -37,7 +37,7 @@ def test_server(source):
     false: if server is note reachable
     """
     try:
-        request = requests.get(source)
+        request = requests.get(source['URL'])
         if request.status_code == 200:
            return True
         else:
@@ -204,9 +204,7 @@ if __name__ == "__main__":
 
     for source in sources:
 
-        #check if scraper exists for source
-
-        
+        #check if scraper exists for source       
         if os.path.isfile(os.path.join(config.SOURCE_SCRAPER_DIR,source['Description'])+".py") == True:
             scraper_info=""
         else:
@@ -215,7 +213,7 @@ if __name__ == "__main__":
         print("Starting scraper  %s" % source['Description']+" with "+source['URL']+" "+scraper_info) 
         logger.info("Starting scraper  %s" % source['Description']+" with "+source['URL']+" "+scraper_info)
         #Is server online?
-        if test_server(source['URL']) == True :
+        if test_server(source) == True :
 
             #GetInfo From services per layer
             get_service_info(source)
