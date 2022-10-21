@@ -1,2 +1,48 @@
-# geoservice_harvester_poc
-Open Geoservice scraper proof of concept to extract info of each dataset contained in an OGC  compliant Geoservice
+[![GitHub commit](https://img.shields.io/github/last-commit/davidoesch/geoservice_harvester_poc)](https://github.com/davidoesch/geoservice_harvester_poc/commits/master)
+
+# Geoservice Harvester POC  open geo services reported by the Swiss Gov Agencies and Third parties
+
+### Important note
+> Find and use **high quality data published by our data colleagues of the [SWISS FEDERAL ADMINSTRATION](https://www.geo.admin.ch) [CANTONS](https://www.geodienste.ch)** for all Cantons and FL:
+> 1. visualized (Dashboard): https://www.map.geo.admin.ch
+> 2. published as 'open government data': https://opendata.swiss/de/dataset/?groups=geography
+
+## Aim of this repository
+
+The aim of this repository is to provide a POC to open OGC Compliant geodata services  provided by the Swiss Confederation, Cantons Municipalities, the Principality of Liechtenstein and third parties . Updates of services are infrequent.
+
+If you have any questions, please don't hestitate to contact us: <br>
+- https://twitter.com/davidoesch (follow us, we send you a private Direct Message, thanks!) <br>
+
+## Unified dataset
+
+**General description** <br>
+This data is generated and validated daily using automated procedures. Note that we only publish data that are OGC compliant. Thus, gaps might be the case. 
+
+**Data** <br>
+
+>**https://github.com/davidoesch/geoservice_harvester_poc/data/geoservices_CH.csv** <br>
+>*Description:* Data description for each layer separately  <br>
+>*Spatial unit:* Swiss cantons and Principality of Liechtenstein covered <br>
+>*Format:* csv <br>
+>*Additional remark*: )
+
+| Field Name  | Description                                                                                                      | Format                      | Note                        |
+| ----------- | ---------------------------------------------------------------------------------------------------------------- | --------------------------- | --------------------------- |
+| OWNER       | Both Owner type and Owner Name are reflected,they corespond as well to the corrsponing py file with scraper info | Text <OwnerType\_OwnerName> |                             |
+| TITLE       | Title of the dataset                                                                                             | Text                        |                             |
+| NAME        | Name of the dataset                                                                                              | Text                        |                             |
+| TREE        | Layertree derived from service info                                                                              | Text , tree separator „/“   |                             |
+| GROUP       | Group Name of agreggated datasets                                                                                | Text                        | only applicable for WMS     |
+| ABSTRACT    | Abstract                                                                                                         | Text                        |                             |
+| KEYWORDS    | Keywords                                                                                                         | keywords, commaseparated    |                             |
+| LEGEND      | Legend                                                                                                           | URL to Image                |                             |
+| CONTACT     | Contact info                                                                                                     | Text, email                 |                             |
+| SERVICELINK | Link to Get Capabilities                                                                                         | URL to Image                |                             |
+| METADATA    | Link to Metadata                                                                                                 | URL                         |                             |
+| UPDATE      | Publication Date                                                                                                 | Text                        |                             |
+| SERVICETYPE | OGC Service type                                                                                                 | Text                        | WMTS WMS and STAC           |
+| MAX ZOOM    | Zoom level (mapzoom) on which the data is visible                                                                | Int                         | Currently set to 7 globally |
+| CENTER\_LAT | Lat center of data WGS84                                                                                         | Float                       |                             |
+| CENTER\_LON | Lon center of data WGS84                                                                                         | Float                       |                             |
+| MAPGEO      | permalink to map.geo.admin.ch                                                                                    | URL                         |                             |
