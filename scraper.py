@@ -154,13 +154,13 @@ def write_service_info(source,service,i,layertree, group):
         if os.path.isfile(config.GEOSERVICES_CH_CSV):
             with open(config.GEOSERVICES_CH_CSV, "a", encoding="utf-8") as f:
                 dict_writer = csv.DictWriter(f, fieldnames=list(layer_data.keys()),
-                                            delimiter="\t", quotechar='"',
+                                            delimiter=",", quotechar='"',
                                             lineterminator="\n")
                 dict_writer.writerow(layer_data)
         else:
             with open(config.GEOSERVICES_CH_CSV, "w", encoding="utf-8") as f:
                 dict_writer = csv.DictWriter(f, fieldnames=list(layer_data.keys()),
-                                            delimiter="\t", quotechar='"',
+                                            delimiter=",", quotechar='"',
                                             lineterminator="\n")
                 dict_writer.writeheader()
                 dict_writer.writerow(layer_data)
