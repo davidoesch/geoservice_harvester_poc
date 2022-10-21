@@ -1,1 +1,7 @@
 2022-10-21 14:51:37,323 - scraper LOG - INFO - scraper completed
+2022-10-21 13:19:57,072 - scraper LOG - INFO - Starting scraper  KT_TI with https://wmts.geo.ti.ch/wmts/1.0.0/WMTSCapabilities.xml 
+2022-10-21 13:19:58,951 - scraper LOG - INFO - Starting scraper  KT_BE with http://www.geoservice.apps.be.ch/geoservice2/services/a42geo/a42geo_basiswms_d_fk/MapServer/WMSServer 
+2022-10-21 13:20:00,907 - scraper LOG - INFO - Starting scraper  INT_ECMWF with https://apps.ecmwf.int/wms/?token=public trying DEFAULT scraper 
+2022-10-21 13:20:06,177 - scraper LOG - INFO - Starting scraper  KT_GR with https://wms.geo.gr.ch/naturschutz 
+2022-10-21 13:20:08,229 - scraper LOG - INFO - Starting scraper  KT_GR with https://wms.geo.gr.ch/seilbahnen 
+2022-10-21 13:20:09,577 - scraper LOG - INFO - scraper completed
