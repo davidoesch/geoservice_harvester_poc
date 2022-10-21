@@ -24,6 +24,7 @@ This data is generated and validated daily using automated procedures. Note that
 >**https://github.com/davidoesch/geoservice_harvester_poc/data/geoservices_CH.csv** <br>
 >*Description:* Data description for each layer separately  <br>
 >*Spatial unit:* Swiss cantons and Principality of Liechtenstein covered <br>
+>*Updated:* daily <br>
 >*Format:* csv <br>
 >*Additional remark*: )
 
@@ -46,3 +47,11 @@ This data is generated and validated daily using automated procedures. Note that
 | CENTER\_LAT | Lat center of data WGS84                                                                                         | Float                       |                             |
 | CENTER\_LON | Lon center of data WGS84                                                                                         | Float                       |                             |
 | MAPGEO      | permalink to map.geo.admin.ch                                                                                    | URL                         |                             |
+## How to add additonal WMS WMTS Services
+1. Add your service to  https://github.com/davidoesch/geoservice_harvester_poc/sources.csv follwoing the OWNER Naming Convention and URL (only https) to the service endpoint
+2. copy the [default](https://github.com/davidoesch/geoservice_harvester_poc/scraper/default.py) scraper configuration file, rename it based on the OWNER Naming Convention in 1.)
+3. Adapt the scraper configuration file. Recommended procedure: Add a breakpoint on the first run, follow your nose to find the correct keys.Don't add parameters
+4. Pray
+
+
+
