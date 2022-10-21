@@ -12,7 +12,8 @@ def scrape(source,service,i,layertree, group,layer_data,prefix):
         layer_data["GROUP"]= group if group != 0 else ""
         temp=service.contents[i].abstract+" "+service.contents[i].parent.abstract
         layer_data["ABSTRACT"]=temp.replace('\n','') 
-        layer_data["KEYWORDS"]= ", ".join(service.contents[i].keywords+service.identification.keywords)
+        #layer_data["KEYWORDS"]= ", ".join(service.contents[i].keywords+service.identification.keywords)
+        layer_data["KEYWORDS"]=service.contents[i].keywords
         layer_data["LEGEND"]= service.contents[i].styles['default']['legend'] if 'default' in service.contents[i].styles.keys() else ""
         layer_data["CONTACT"]=service.provider.contact.email
         layer_data["SERVICELINK"]=service.request
