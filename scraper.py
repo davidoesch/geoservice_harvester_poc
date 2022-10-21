@@ -41,16 +41,17 @@ def test_server(source):
         if request.status_code == 200:
            return True
         else:
+            
             log_file = open(os.path.join(config.DEAD_SERVICES_PATH,source['Description']+"_error.txt"), 'a+')
-            log_file.write(source['Description']+": "+str(request.status_code))
+            log_file.write(source['Description']+source['URL']+": "+str(request.status_code))
             log_file.close()
             print (source['Description']+": "+str(request.status_code))
             return False
     except Exception as e_request:
         log_file = open(os.path.join(config.DEAD_SERVICES_PATH,source['Description']+"_error.txt"),  'a+')
-        log_file.write(source['Description']+": "+str(e_request)+"\n")
+        log_file.write(source['Description']+source['URL']+": "+str(e_request)+"\n")
         log_file.close()
-        logger.info(source['Description']+": "+str(e_request))
+        logger.info(source['Description']+source['URL']+": "+str(e_request))
         print (e_request)
        
         return False
