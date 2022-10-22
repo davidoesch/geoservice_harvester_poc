@@ -4,7 +4,7 @@
 
 ### Important note
 > Find and use **high quality data published by our data colleagues of the [SWISS FEDERAL ADMINSTRATION](https://www.geo.admin.ch) [CANTONS](https://www.geodienste.ch)** for all Cantons and FL:
-> 1. visualized (Dashboard): https://www.map.geo.admin.ch
+> 1. visualized (Dashboard): https://davidoesch.github.io/geoservice_harvester_poc
 > 2. published as 'open government data': https://opendata.swiss/de/dataset/?groups=geography
 
 ## Aim of this repository
