@@ -36,3 +36,41 @@
 2022-10-22 08:26:20,434 - scraper LOG - INFO - Starting scraper  KT_GR with https://wms.geo.gr.ch/uebersichtsplan 
 2022-10-22 08:26:20,712 - scraper LOG - INFO - Starting scraper  INT_ECMWF with https://apps.ecmwf.int/wms/?token=public trying DEFAULT scraper 
 2022-10-22 08:26:24,045 - scraper LOG - INFO - scraper completed
+2022-10-22 06:39:55,644 - scraper LOG - INFO - Starting scraper  KT_TI with https://wmts.geo.ti.ch/wmts/1.0.0/WMTSCapabilities.xml 
+2022-10-22 06:39:58,135 - scraper LOG - INFO - Starting scraper  KT_BE with http://www.geoservice.apps.be.ch/geoservice2/services/a42geo/a42geo_basiswms_d_fk/MapServer/WMSServer 
+2022-10-22 06:40:00,563 - scraper LOG - INFO - Starting scraper  KT_BE with http://www.geoservice.apps.be.ch/geoservice2/services/a42geo/a42geo_grenzenwms_d_fk/MapServer/WMSServer 
+2022-10-22 06:40:03,136 - scraper LOG - INFO - Starting scraper  KT_BE with http://www.geoservice.apps.be.ch/geoservice2/services/a42geo/a42geo_planungwms_d_fk/MapServer/WMSServer 
+2022-10-22 06:40:05,321 - scraper LOG - INFO - Starting scraper  KT_BE with http://www.geoservice.apps.be.ch/geoservice2/services/a42geo/a42geo_umweltwms_d_fk/MapServer/WMSServer 
+2022-10-22 06:40:07,342 - scraper LOG - INFO - Starting scraper  KT_BE with http://www.geoservice.apps.be.ch/geoservice2/services/a42geo/a42geo_geologiewms_d_fk/MapServer/WMSServer 
+2022-10-22 06:40:09,365 - scraper LOG - INFO - Starting scraper  KT_BE with http://www.geoservice.apps.be.ch/geoservice2/services/a42geo/a42geo_gewaesserwms_d_fk/MapServer/WMSServer 
+2022-10-22 06:40:11,349 - scraper LOG - INFO - Starting scraper  KT_BE with http://www.geoservice.apps.be.ch/geoservice2/services/a42geo/a42geo_transportwms_d_fk/MapServer/WMSServer 
+2022-10-22 06:40:13,312 - scraper LOG - INFO - Starting scraper  KT_GR with https://wms.geo.gr.ch/admineinteilung 
+2022-10-22 06:40:15,870 - scraper LOG - INFO - Starting scraper  KT_GR with https://wms.geo.gr.ch/bauzonen_graubuenden 
+2022-10-22 06:40:17,470 - scraper LOG - INFO - Starting scraper  KT_GR with https://wms.geo.gr.ch/belastetestandorte 
+2022-10-22 06:40:19,084 - scraper LOG - INFO - Starting scraper  KT_GR with https://wms.geo.gr.ch/gewaesserschutz 
+2022-10-22 06:40:20,907 - scraper LOG - INFO - Starting scraper  KT_GR with https://wms.geo.gr.ch/grundwasser 
+2022-10-22 06:40:22,471 - scraper LOG - INFO - Starting scraper  KT_GR with https://wms.geo.gr.ch/historischekarten 
+2022-10-22 06:40:24,227 - scraper LOG - INFO - Starting scraper  KT_GR with https://wms.geo.gr.ch/landwirtschaft 
+2022-10-22 06:40:24,928 - scraper LOG - INFO - KT_GR with https://wms.geo.gr.ch/landwirtschaft aborted
+2022-10-22 06:40:24,928 - scraper LOG - INFO - Starting scraper  KT_GR with https://wms.geo.gr.ch/naturgefahren_erfassungsbereiche 
+2022-10-22 06:40:26,562 - scraper LOG - INFO - Starting scraper  KT_GR with https://wms.geo.gr.ch/naturschutz 
+2022-10-22 06:40:28,138 - scraper LOG - INFO - Starting scraper  KT_GR with https://wms.geo.gr.ch/rrip_bregaglia 
+2022-10-22 06:40:30,450 - scraper LOG - INFO - Starting scraper  KT_GR with https://wms.geo.gr.ch/rrip_davos 
+2022-10-22 06:40:32,800 - scraper LOG - INFO - Starting scraper  KT_GR with https://wms.geo.gr.ch/rrip_mesolcina 
+2022-10-22 06:40:34,552 - scraper LOG - INFO - Starting scraper  KT_GR with https://wms.geo.gr.ch/rrip_mittelbuenden 
+2022-10-22 06:40:36,498 - scraper LOG - INFO - Starting scraper  KT_GR with https://wms.geo.gr.ch/rrip_nordbuenden 
+2022-10-22 06:40:38,842 - scraper LOG - INFO - Starting scraper  KT_GR with https://wms.geo.gr.ch/rrip_oberengadin 
+2022-10-22 06:40:41,145 - scraper LOG - INFO - Starting scraper  KT_GR with https://wms.geo.gr.ch/rrip_praettigau 
+2022-10-22 06:40:42,921 - scraper LOG - INFO - Starting scraper  KT_GR with https://wms.geo.gr.ch/rrip_unterengadin 
+2022-10-22 06:40:44,971 - scraper LOG - INFO - Starting scraper  KT_GR with https://wms.geo.gr.ch/rrip_regioviamala 
+2022-10-22 06:40:46,731 - scraper LOG - INFO - Starting scraper  KT_GR with https://wms.geo.gr.ch/regionen 
+2022-10-22 06:40:48,688 - scraper LOG - INFO - Starting scraper  KT_GR with https://wms.geo.gr.ch/schutzwald 
+2022-10-22 06:40:50,134 - scraper LOG - INFO - Starting scraper  KT_GR with https://wms.geo.gr.ch/seilbahnen 
+2022-10-22 06:40:51,580 - scraper LOG - INFO - Starting scraper  KT_GR with https://wms.geo.gr.ch/amtlichevermessung_stand 
+2022-10-22 06:40:53,002 - scraper LOG - INFO - Starting scraper  KT_GR with https://wms.geo.gr.ch/waldentwicklungsplan 
+2022-10-22 06:40:54,725 - scraper LOG - INFO - Starting scraper  KT_GR with https://wms.geo.gr.ch/wildruhezonen 
+2022-10-22 06:40:56,128 - scraper LOG - INFO - Starting scraper  KT_GR with https://wms.geo.gr.ch/wildschutzgebiete 
+2022-10-22 06:40:57,693 - scraper LOG - INFO - Starting scraper  KT_GR with https://wms.geo.gr.ch/richtplan 
+2022-10-22 06:40:59,787 - scraper LOG - INFO - Starting scraper  KT_GR with https://wms.geo.gr.ch/uebersichtsplan 
+2022-10-22 06:41:01,154 - scraper LOG - INFO - Starting scraper  INT_ECMWF with https://apps.ecmwf.int/wms/?token=public trying DEFAULT scraper 
+2022-10-22 06:41:06,548 - scraper LOG - INFO - scraper completed
