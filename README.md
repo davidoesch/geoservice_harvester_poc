@@ -4,12 +4,13 @@
 
 ### Important note
 > Find and use **high quality data published by our data colleagues of the [SWISS FEDERAL ADMINSTRATION](https://www.geo.admin.ch) [CANTONS](https://www.geodienste.ch)** for all Cantons and FL:
-> 1. visualized (Dashboard): https://davidoesch.github.io/geoservice_harvester_poc
-> 2. published as 'open government data': https://opendata.swiss/de/dataset/?groups=geography
+> 1. GeoServiceHarvesterPOC visualized (Dashboard): https://davidoesch.github.io/geoservice_harvester_poc
+> 2. geo.admin.ch visualized (Dashboard): https://docs.google.com/spreadsheets/d/1QdxYv6RYWe9PFIq5XQ-BNLnKfgtFcDkfZ58ftZ_Va9I/edit?usp=sharing
+> 3. all published as 'open government data': https://opendata.swiss/de/dataset/?groups=geography
 
 ## Aim of this repository
 
-The aim of this repository is to provide a POC to open OGC Compliant geodata services  provided by the Swiss Confederation, Cantons Municipalities, the Principality of Liechtenstein and third parties . Updates of services are infrequent.
+The aim of this repository is to provide a POC to open OGC Compliant geodata services  provided by the Swiss Confederation, Cantons Municipalities, the Principality of Liechtenstein and third parties. Inspired by the pre-POC [wmsChecker](https://github.com/davidoesch/wmschecker) and driven by the [ 4th Geounconference Workshop: Sujet / Thema 16 –– Service-Verzeichnis](https://github.com/GeoUnconference/discussions/discussions/38)  Updates of services are infrequent.
 
 If you have any questions, please don't hestitate to contact us: <br>
 - https://twitter.com/davidoesch (follow us, we send you a private Direct Message, thanks!) <br>
@@ -48,10 +49,15 @@ This data is generated and validated daily using automated procedures. Note that
 | CENTER\_LON | Lon center of data WGS84                                                                                         | Float                       |                             |
 | MAPGEO      | permalink to map.geo.admin.ch                                                                                    | URL                         |                             |
 ## How to add additonal WMS WMTS Services
-1. Add your service to  https://github.com/davidoesch/geoservice_harvester_poc/sources.csv follwoing the OWNER Naming Convention and URL (only https) to the service endpoint
+1. Add your service to [sources.csv](https://github.com/davidoesch/geoservice_harvester_poc/sources.csv) follwoing the OWNER Naming Convention and URL (only https) to the service endpoint
 2. copy the [default](https://github.com/davidoesch/geoservice_harvester_poc/scraper/default.py) scraper configuration file, rename it based on the OWNER Naming Convention in 1.)
 3. Adapt the scraper configuration file. Recommended procedure: Add a breakpoint on the first run, follow your nose to find the correct keys.Don't add parameters
 4. Pray
 
+## Operation
+Automated daily run of [scraper.py](https://github.com/davidoesch/geoservice_harvester_poc/blob/main/scraper.py via GithubAction [scheduler](https://github.com/davidoesch/geoservice_harvester_poc/blob/main/.github/workflows/scheduler-scraper.yml). The scraper results are logged in [debug.log](https://github.com/davidoesch/geoservice_harvester_poc/blob/main/tools/debug.log), faulty or offline services in [sources.csv](https://github.com/davidoesch/geoservice_harvester_poc/sources.csv) are logged in [tools](https://github.com/davidoesch/geoservice_harvester_poc/tree/main/tools). harveste data in [geoservices_CH.csv] (https://github.com/davidoesch/geoservice_harvester_poc/blob/main/data/geoservices_CH.csv)
+
+#Roadmap/Ideas
+Are collected in [Issues](https://github.com/davidoesch/geoservice_harvester_poc/issues)
 
 
