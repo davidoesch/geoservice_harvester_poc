@@ -48,7 +48,7 @@
     <script src="js/csv_to_html_table.js"></script>
 
     <script>
-        function format_link(link) {
+        function format_link_legend(link) {
             if (link)
                 return "<a href='" + link + "' target='_blank'>" + link + "</a>";
             else return "";
@@ -63,10 +63,10 @@
                 delimiter: '"'
             },
             datatables_options: {
-                paging: false
+                paging: true
             },
             custom_formatting: [
-                [4, format_link]
+                [7, format_link_legend]
             ]
         });
     </script>
