@@ -54,6 +54,11 @@ This data is generated and validated daily using automated procedures. Note that
 3. Adapt the scraper configuration file. Recommended procedure: Add a breakpoint on the first run, follow your nose to find the correct keys.Don't add parameters
 4. Pray
 
+## Current status WMS WMTS Services
+
+KT_BE complete
+KT_GR WMS complete, WFS tbd
+
 ## Operation
 Automated daily run of [scraper.py](https://github.com/davidoesch/geoservice_harvester_poc/scraper.py) via GithubAction [scheduler](https://github.com/davidoesch/geoservice_harvester_poc/blob/main/.github/workflows/scheduler-scraper.yml). The scraper results are logged in [debug.log](https://github.com/davidoesch/geoservice_harvester_poc/blob/main/tools/debug.log), faulty or offline services in [sources.csv](https://github.com/davidoesch/geoservice_harvester_poc/blob/main/sources.csv) are logged in [tools](https://github.com/davidoesch/geoservice_harvester_poc/tree/main/tools). Harvested data in [geoservices_CH.csv](https://github.com/davidoesch/geoservice_harvester_poc/blob/main/data/geoservices_CH.csv)
 
