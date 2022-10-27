@@ -376,3 +376,725 @@
 2022-10-27 04:56:33,031 - scraper LOG - INFO - Starting scraper  KT_ZH with https://wms.zh.ch/FnsInvZHWMS 
 2022-10-27 04:56:34,642 - scraper LOG - INFO - Starting scraper  KT_ZH with https://wms.zh.ch/kkgeo_gws_zh 
 2022-10-27 04:56:36,269 - scraper LOG - INFO - scraper completed
+2022-10-27 20:22:12,986 - scraper LOG - INFO - Starting scraper  KT_TI with https://wmts.geo.ti.ch/wmts/1.0.0/WMTSCapabilities.xml 
+2022-10-27 20:22:13,882 - scraper LOG - INFO - Starting scraper  KT_BE with http://www.geoservice.apps.be.ch/geoservice2/services/a42geo/a42geo_basiswms_d_fk/MapServer/WMSServer 
+2022-10-27 20:43:26,596 - scraper LOG - INFO - Starting scraper  KT_TI with https://wmts.geo.ti.ch/wmts/1.0.0/WMTSCapabilities.xml 
+2022-10-27 20:43:40,487 - scraper LOG - INFO - Starting scraper  KT_TI with https://wmts.geo.ti.ch/wmts/1.0.0/WMTSCapabilities.xml 
+2022-10-27 20:56:39,848 - scraper LOG - INFO - Starting scraper  KT_TI with https://wmts.geo.ti.ch/wmts/1.0.0/WMTSCapabilities.xml 
+2022-10-27 20:56:40,302 - scraper LOG - INFO - Starting scraper  KT_BE with http://www.geoservice.apps.be.ch/geoservice2/services/a42geo/a42geo_basiswms_d_fk/MapServer/WMSServer 
+2022-10-27 20:56:40,828 - scraper LOG - INFO - Starting scraper  KT_BE with http://www.geoservice.apps.be.ch/geoservice2/services/a42geo/a42geo_grenzenwms_d_fk/MapServer/WMSServer 
+2022-10-27 20:56:41,531 - scraper LOG - INFO - Starting scraper  KT_BE with http://www.geoservice.apps.be.ch/geoservice2/services/a42geo/a42geo_planungwms_d_fk/MapServer/WMSServer 
+2022-10-27 20:56:42,254 - scraper LOG - INFO - Starting scraper  KT_BE with http://www.geoservice.apps.be.ch/geoservice2/services/a42geo/a42geo_umweltwms_d_fk/MapServer/WMSServer 
+2022-10-27 20:56:42,769 - scraper LOG - INFO - Starting scraper  KT_BE with http://www.geoservice.apps.be.ch/geoservice2/services/a42geo/a42geo_geologiewms_d_fk/MapServer/WMSServer 
+2022-10-27 20:56:43,311 - scraper LOG - INFO - Starting scraper  KT_BE with http://www.geoservice.apps.be.ch/geoservice2/services/a42geo/a42geo_gewaesserwms_d_fk/MapServer/WMSServer 
+2022-10-27 20:56:43,897 - scraper LOG - INFO - Starting scraper  KT_BE with http://www.geoservice.apps.be.ch/geoservice2/services/a42geo/a42geo_transportwms_d_fk/MapServer/WMSServer 
+2022-10-27 20:56:44,352 - scraper LOG - INFO - Starting scraper  KT_BE with https://www.geoservice.apps.be.ch/geoservice2/services/a42geo/a42geo_klimawms_d_fk/MapServer/WMSServer? 
+2022-10-27 20:56:44,720 - scraper LOG - INFO - Starting scraper  KT_BE with https://www.geoservice.apps.be.ch/geoservice2/services/a42geo/a42geo_gesellschaftwms_d_fk/MapServer/WMSServer? 
+2022-10-27 20:56:45,049 - scraper LOG - INFO - Starting scraper  KT_BE with https://www.geoservice.apps.be.ch/geoservice2/services/a42geo/a42geo_bauwms_d_fk/MapServer/WMSServer? 
+2022-10-27 20:56:45,344 - scraper LOG - INFO - Starting scraper  KT_BE with https://www.geoservice.apps.be.ch/geoservice2/services/a42geo/a42geo_hoehenwms_d_fk/MapServer/WMSServer? 
+2022-10-27 20:56:45,649 - scraper LOG - INFO - Starting scraper  KT_BE with https://www.geoservice.apps.be.ch/geoservice2/services/a42geo/a42geo_agrarwms_d_fk/MapServer/WMSServer? 
+2022-10-27 20:56:45,975 - scraper LOG - INFO - Starting scraper  KT_BE with https://www.geoservice.apps.be.ch/geoservice2/services/a42geo/a42geo_ortwms_d_fk/MapServer/WMSServer? 
+2022-10-27 20:56:46,266 - scraper LOG - INFO - Starting scraper  KT_BE with https://www.geoservice.apps.be.ch/geoservice2/services/a42geo/a42geo_versorgungwms_d_fk/MapServer/WMSServer? 
+2022-10-27 20:56:46,582 - scraper LOG - INFO - Starting scraper  KT_BE with https://www.geoservice.apps.be.ch/geoservice2/services/a42geo/a42geo_florafaunawms_d_fk/MapServer/WMSServer? 
+2022-10-27 20:56:46,924 - scraper LOG - INFO - Starting scraper  KT_BE with https://www.geoservice.apps.be.ch/geoservice2/services/a42geo/a42geo_wirtschaftwms_d_fk/MapServer/WMSServer? 
+2022-10-27 20:56:47,231 - scraper LOG - INFO - Starting scraper  KT_BE with https://oerebservice.apps.be.ch/cgi-bin/mapserv.fcgi?map=oereb_de 
+2022-10-27 20:56:47,797 - scraper LOG - INFO - KT_BEoereb: 'bool' object has no attribute 'keys'
+2022-10-27 20:56:47,847 - scraper LOG - INFO - KT_BEgeodb.nupla_gngruzo: 'bool' object has no attribute 'keys'
+2022-10-27 20:56:47,855 - scraper LOG - INFO - KT_BEgeodb.nupla_gnnutzbk_nzp: 'bool' object has no attribute 'keys'
+2022-10-27 20:56:47,863 - scraper LOG - INFO - KT_BEgeodb.nupla_abgrz_zoen: 'bool' object has no attribute 'keys'
+2022-10-27 20:56:47,871 - scraper LOG - INFO - KT_BEgeodb.nupla_gnnutzbk_bkl: 'bool' object has no attribute 'keys'
+2022-10-27 20:56:47,879 - scraper LOG - INFO - KT_BEgeodb.nupla_gnbauws: 'bool' object has no attribute 'keys'
+2022-10-27 20:56:47,927 - scraper LOG - INFO - KT_BEgeodb.nupla_abgrz_bauweise: 'bool' object has no attribute 'keys'
+2022-10-27 20:56:47,935 - scraper LOG - INFO - KT_BEgeodb.nupla_gnzppueo: 'bool' object has no attribute 'keys'
+2022-10-27 20:56:47,943 - scraper LOG - INFO - KT_BEgeodb.nupla_gnnutzbz_nz: 'bool' object has no attribute 'keys'
+2022-10-27 20:56:47,959 - scraper LOG - INFO - KT_BEgeodb.nupla_bnuefl_nz: 'bool' object has no attribute 'keys'
+2022-10-27 20:56:47,967 - scraper LOG - INFO - KT_BEgeodb.nupla_bngfz: 'bool' object has no attribute 'keys'
+2022-10-27 20:56:47,975 - scraper LOG - INFO - KT_BEgeodb.nupla_bnwna: 'bool' object has no attribute 'keys'
+2022-10-27 20:56:47,983 - scraper LOG - INFO - KT_BEgeodb.nupla_gnnutzbz_bz: 'bool' object has no attribute 'keys'
+2022-10-27 20:56:48,015 - scraper LOG - INFO - KT_BEgeodb.nupla_bnuefl_bz: 'bool' object has no attribute 'keys'
+2022-10-27 20:56:48,023 - scraper LOG - INFO - KT_BEgeodb.nupla_bnbauws: 'bool' object has no attribute 'keys'
+2022-10-27 20:56:48,031 - scraper LOG - INFO - KT_BEgeodb.nupla_bnglgt: 'bool' object has no attribute 'keys'
+2022-10-27 20:56:48,047 - scraper LOG - INFO - KT_BEgeodb.nupla_uefl_1: 'bool' object has no attribute 'keys'
+2022-10-27 20:56:48,095 - scraper LOG - INFO - KT_BEgeodb.nupla_abgrz_asg: 'bool' object has no attribute 'keys'
+2022-10-27 20:56:48,103 - scraper LOG - INFO - KT_BEgeodb.nupla_bnvgb: 'bool' object has no attribute 'keys'
+2022-10-27 20:56:48,111 - scraper LOG - INFO - KT_BEgeodb.nupla_uefl_2: 'bool' object has no attribute 'keys'
+2022-10-27 20:56:48,119 - scraper LOG - INFO - KT_BEgeodb.nupla_bnuefl_blp: 'bool' object has no attribute 'keys'
+2022-10-27 20:56:48,135 - scraper LOG - INFO - KT_BEgeodb.nupla_ueln: 'bool' object has no attribute 'keys'
+2022-10-27 20:56:48,143 - scraper LOG - INFO - KT_BEgeodb.nupla_uept: 'bool' object has no attribute 'keys'
+2022-10-27 20:56:48,159 - scraper LOG - INFO - KT_BEgeodb.nuplkueo_uekaueo: 'bool' object has no attribute 'keys'
+2022-10-27 20:56:48,167 - scraper LOG - INFO - KT_BEgeodb.prjznstr_prjznstr: 'bool' object has no attribute 'keys'
+2022-10-27 20:56:48,175 - scraper LOG - INFO - KT_BEgeodb.nuplkast_uekastab: 'bool' object has no attribute 'keys'
+2022-10-27 20:56:48,191 - scraper LOG - INFO - KT_BEgeodb.baulnstr_baulnstr: 'bool' object has no attribute 'keys'
+2022-10-27 20:56:48,199 - scraper LOG - INFO - KT_BEgeodb.prjzeisn_prjzeisn: 'bool' object has no attribute 'keys'
+2022-10-27 20:56:48,207 - scraper LOG - INFO - KT_BEgeodb.bauleisn_bauleisn: 'bool' object has no attribute 'keys'
+2022-10-27 20:56:48,223 - scraper LOG - INFO - KT_BEgeodb.baulflug_baulflug: 'bool' object has no attribute 'keys'
+2022-10-27 20:56:48,231 - scraper LOG - INFO - KT_BEgeodb.sizoplan_sizoplan: 'bool' object has no attribute 'keys'
+2022-10-27 20:56:48,239 - scraper LOG - INFO - KT_BEgeodb.prjzflug_prjzflug: 'bool' object has no attribute 'keys'
+2022-10-27 20:56:48,255 - scraper LOG - INFO - KT_BEgeodb.baulstrm_baulstrm: 'bool' object has no attribute 'keys'
+2022-10-27 20:56:48,263 - scraper LOG - INFO - KT_BEgeodb.prjzstrm_prjzstrm: 'bool' object has no attribute 'keys'
+2022-10-27 20:56:48,271 - scraper LOG - INFO - KT_BEgeodb.baliskbs_kbs: 'bool' object has no attribute 'keys'
+2022-10-27 20:56:48,287 - scraper LOG - INFO - KT_BEgeodb.kbsmil_kbsmilf: 'bool' object has no attribute 'keys'
+2022-10-27 20:56:48,295 - scraper LOG - INFO - KT_BEgeodb.kbsmil_kbsmilp: 'bool' object has no attribute 'keys'
+2022-10-27 20:56:48,311 - scraper LOG - INFO - KT_BEgeodb.kbsoev_kbsoevf: 'bool' object has no attribute 'keys'
+2022-10-27 20:56:48,319 - scraper LOG - INFO - KT_BEgeodb.kbsoev_kbsoevp: 'bool' object has no attribute 'keys'
+2022-10-27 20:56:48,335 - scraper LOG - INFO - KT_BEgeodb.kbsflug_kbsflugf: 'bool' object has no attribute 'keys'
+2022-10-27 20:56:48,343 - scraper LOG - INFO - KT_BEgeodb.kbsflug_kbsflugp: 'bool' object has no attribute 'keys'
+2022-10-27 20:56:48,359 - scraper LOG - INFO - KT_BEgeodb.gsk25_gsk_areal: 'bool' object has no attribute 'keys'
+2022-10-27 20:56:48,367 - scraper LOG - INFO - KT_BEgeodb.gsk25_gsk_zone: 'bool' object has no attribute 'keys'
+2022-10-27 20:56:48,383 - scraper LOG - INFO - KT_BEgeodb.nupla_uelarmes_kant: 'bool' object has no attribute 'keys'
+2022-10-27 20:56:48,399 - scraper LOG - INFO - KT_BEgeodb.nupla_uelarmes_reg: 'bool' object has no attribute 'keys'
+2022-10-27 20:56:48,415 - scraper LOG - INFO - KT_BEgeodb.nupla_uelarmes: 'bool' object has no attribute 'keys'
+2022-10-27 20:56:48,423 - scraper LOG - INFO - KT_BEgeodb.nuplwald_wfwagrz: 'bool' object has no attribute 'keys'
+2022-10-27 20:56:48,439 - scraper LOG - INFO - KT_BEgeodb.nupla_uewaabl_kant: 'bool' object has no attribute 'keys'
+2022-10-27 20:56:48,447 - scraper LOG - INFO - KT_BEgeodb.nupla_uewaabl_reg: 'bool' object has no attribute 'keys'
+2022-10-27 20:56:48,455 - scraper LOG - INFO - KT_BEgeodb.nupla_uewaabl: 'bool' object has no attribute 'keys'
+2022-10-27 20:56:48,471 - scraper LOG - INFO - KT_BEgeodb.gbo_gbof: 'bool' object has no attribute 'keys'
+2022-10-27 20:56:48,479 - scraper LOG - INFO - KT_BEgeodb.gbo_gbop: 'bool' object has no attribute 'keys'
+2022-10-27 20:56:48,495 - scraper LOG - INFO - KT_BEgeodb.ggo_ggop: 'bool' object has no attribute 'keys'
+2022-10-27 20:56:48,503 - scraper LOG - INFO - KT_BEgeodb.nsg_nsgp: 'bool' object has no attribute 'keys'
+2022-10-27 20:56:48,519 - scraper LOG - INFO - KT_BEgeodb.nsg_nsgz: 'bool' object has no attribute 'keys'
+2022-10-27 20:56:48,519 - scraper LOG - INFO - Starting scraper  KT_GR with https://wms.geo.gr.ch/admineinteilung 
+2022-10-27 21:27:59,500 - scraper LOG - INFO - Starting scraper  KT_BE with https://oerebservice.apps.be.ch/cgi-bin/mapserv.fcgi?map=oereb_de 
+2022-10-27 21:28:13,900 - scraper LOG - INFO - Starting scraper  KT_BE with https://oerebservice.apps.be.ch/cgi-bin/mapserv.fcgi?map=oereb_de 
+2022-10-27 21:42:41,403 - scraper LOG - INFO - Starting scraper  KT_BE with https://oerebservice.apps.be.ch/cgi-bin/mapserv.fcgi?map=oereb_de 
+2022-10-27 21:44:28,437 - scraper LOG - INFO - Starting scraper  KT_BE with http://www.geoservice.apps.be.ch/geoservice2/services/a42geo/a42geo_basiswms_d_fk/MapServer/WMSServer 
+2022-10-27 21:44:47,878 - scraper LOG - INFO - Starting scraper  KT_BE with https://oerebservice.apps.be.ch/cgi-bin/mapserv.fcgi?map=oereb_de 
+2022-10-27 21:46:37,579 - scraper LOG - INFO - Starting scraper  KT_BE with http://www.geoservice.apps.be.ch/geoservice2/services/a42geo/a42geo_basiswms_d_fk/MapServer/WMSServer 
+2022-10-27 21:46:47,517 - scraper LOG - INFO - Starting scraper  KT_BE with http://www.geoservice.apps.be.ch/geoservice2/services/a42geo/a42geo_basiswms_d_fk/MapServer/WMSServer 
+2022-10-27 21:47:01,496 - scraper LOG - INFO - Starting scraper  KT_BE with https://oerebservice.apps.be.ch/cgi-bin/mapserv.fcgi?map=oereb_de 
+2022-10-27 21:47:08,616 - scraper LOG - INFO - KT_BEgeodb.nupla_gngruzo: can only concatenate str (not "NoneType") to str
+2022-10-27 21:47:09,726 - scraper LOG - INFO - KT_BEgeodb.nupla_gnnutzbk_nzp: can only concatenate str (not "NoneType") to str
+2022-10-27 21:47:10,759 - scraper LOG - INFO - KT_BEgeodb.nupla_abgrz_zoen: can only concatenate str (not "NoneType") to str
+2022-10-27 21:47:11,945 - scraper LOG - INFO - KT_BEgeodb.nupla_gnnutzbk_bkl: can only concatenate str (not "NoneType") to str
+2022-10-27 21:48:00,426 - scraper LOG - INFO - KT_BEgeodb.nupla_gnbauws: can only concatenate str (not "NoneType") to str
+2022-10-27 21:48:28,525 - scraper LOG - INFO - KT_BEgeodb.nupla_abgrz_bauweise: can only concatenate str (not "NoneType") to str
+2022-10-27 21:50:56,470 - scraper LOG - INFO - Starting scraper  KT_BE with http://www.geoservice.apps.be.ch/geoservice2/services/a42geo/a42geo_basiswms_d_fk/MapServer/WMSServer 
+2022-10-27 21:51:11,621 - scraper LOG - INFO - Starting scraper  KT_BE with https://oerebservice.apps.be.ch/cgi-bin/mapserv.fcgi?map=oereb_de 
+2022-10-27 21:58:48,077 - scraper LOG - INFO - Starting scraper  KT_BE with http://www.geoservice.apps.be.ch/geoservice2/services/a42geo/a42geo_basiswms_d_fk/MapServer/WMSServer 
+2022-10-27 21:58:58,343 - scraper LOG - INFO - Starting scraper  KT_BE with https://oerebservice.apps.be.ch/cgi-bin/mapserv.fcgi?map=oereb_de 
+2022-10-27 21:59:40,620 - scraper LOG - INFO - Starting scraper  KT_BE with http://www.geoservice.apps.be.ch/geoservice2/services/a42geo/a42geo_basiswms_d_fk/MapServer/WMSServer 
+2022-10-27 22:00:28,341 - scraper LOG - INFO - Starting scraper  KT_BE with http://www.geoservice.apps.be.ch/geoservice2/services/a42geo/a42geo_basiswms_d_fk/MapServer/WMSServer 
+2022-10-27 22:00:28,780 - scraper LOG - INFO - Starting scraper  KT_BE with https://oerebservice.apps.be.ch/cgi-bin/mapserv.fcgi?map=oereb_de 
+2022-10-27 22:00:29,275 - scraper LOG - INFO - Starting scraper  KT_GR with https://wms.geo.gr.ch/admineinteilung 
+2022-10-27 22:00:44,460 - scraper LOG - INFO - Starting scraper  KT_BE with http://www.geoservice.apps.be.ch/geoservice2/services/a42geo/a42geo_basiswms_d_fk/MapServer/WMSServer 
+2022-10-27 22:00:44,931 - scraper LOG - INFO - Starting scraper  KT_BE with https://oerebservice.apps.be.ch/cgi-bin/mapserv.fcgi?map=oereb_de 
+2022-10-27 22:00:45,458 - scraper LOG - INFO - Starting scraper  KT_GR with https://wms.geo.gr.ch/admineinteilung 
+2022-10-27 22:00:45,916 - scraper LOG - INFO - Starting scraper  KT_GR with https://wms.geo.gr.ch/regionen 
+2022-10-27 22:00:46,367 - scraper LOG - INFO - Starting scraper  KT_GR with https://wms.geo.gr.ch/basisinfo 
+2022-10-27 22:00:46,683 - scraper LOG - INFO - Starting scraper  KT_GR with https://wms.geo.gr.ch/basisplan 
+2022-10-27 22:00:46,970 - scraper LOG - INFO - Starting scraper  KT_GR with https://wms.geo.gr.ch/erdwaermenutzung 
+2022-10-27 22:00:47,310 - scraper LOG - INFO - Starting scraper  KT_GR with https://wms.geo.gr.ch/fruchtfolgeflaechen 
+2022-10-27 22:00:47,716 - scraper LOG - INFO - Starting scraper  KT_GR with https://wms.geo.gr.ch/gebaeudeinformation 
+2022-10-27 22:00:48,104 - scraper LOG - INFO - Starting scraper  KT_GR with https://wms.geo.gr.ch/geologie 
+2022-10-27 22:00:48,652 - scraper LOG - INFO - Starting scraper  KT_GR with https://wms.geo.gr.ch/geologische_karten 
+2022-10-27 22:00:48,971 - scraper LOG - INFO - Starting scraper  KT_GR with https://wms.geo.gr.ch/hydrogeologische_karten 
+2022-10-27 22:00:49,314 - scraper LOG - INFO - Starting scraper  KT_GR with https://wms.geo.gr.ch/jagdkarte 
+2022-10-27 22:00:49,651 - scraper LOG - INFO - Starting scraper  KT_GR with https://wms.geo.gr.ch/kantonalesstrassennetz 
+2022-10-27 22:00:49,954 - scraper LOG - INFO - Starting scraper  KT_GR with https://wms.geo.gr.ch/kstn_strassenentwaesserung 
+2022-10-27 22:00:50,334 - scraper LOG - INFO - Starting scraper  KT_GR with https://wms.geo.gr.ch/lw_bewirtschaftung 
+2022-10-27 22:00:50,903 - scraper LOG - INFO - Starting scraper  KT_GR with https://wms.geo.gr.ch/langsamverkehr 
+2022-10-27 22:00:51,277 - scraper LOG - INFO - Starting scraper  KT_GR with https://wms.geo.gr.ch/verbauungen 
+2022-10-27 22:00:51,609 - scraper LOG - INFO - Starting scraper  KT_GR with https://wms.geo.gr.ch/naturgefahrenkarte 
+2022-10-27 22:00:52,079 - scraper LOG - INFO - Starting scraper  KT_GR with https://wms.geo.gr.ch/nutzungsplanung 
+2022-10-27 22:00:53,565 - scraper LOG - INFO - KT_GRLärmempfindlichkeitsstufen: 'bool' object has no attribute 'keys'
+2022-10-27 22:00:53,568 - scraper LOG - INFO - KT_GRFolgeplanung: 'bool' object has no attribute 'keys'
+2022-10-27 22:00:53,577 - scraper LOG - INFO - KT_GRGenereller Erschliessungsplan: 'bool' object has no attribute 'keys'
+2022-10-27 22:00:53,583 - scraper LOG - INFO - KT_GRGenereller Gestaltungsplan: 'bool' object has no attribute 'keys'
+2022-10-27 22:00:53,657 - scraper LOG - INFO - KT_GRZonenplan: 'bool' object has no attribute 'keys'
+2022-10-27 22:00:53,665 - scraper LOG - INFO - KT_GRBau-/Niveaulinienpläne: 'bool' object has no attribute 'keys'
+2022-10-27 22:00:53,681 - scraper LOG - INFO - KT_GRQuartierpläne: 'bool' object has no attribute 'keys'
+2022-10-27 22:00:53,689 - scraper LOG - INFO - KT_GRArealpläne: 'bool' object has no attribute 'keys'
+2022-10-27 22:00:53,705 - scraper LOG - INFO - KT_GRGEP Planperimeter Verkehr und Werkanlagen: 'bool' object has no attribute 'keys'
+2022-10-27 22:00:53,713 - scraper LOG - INFO - KT_GRGEP Planperimeter Verkehr: 'bool' object has no attribute 'keys'
+2022-10-27 22:00:53,721 - scraper LOG - INFO - KT_GRGEP Planperimeter Werkanlagen: 'bool' object has no attribute 'keys'
+2022-10-27 22:00:53,737 - scraper LOG - INFO - KT_GRGEP Pläne in PDF-Form: 'bool' object has no attribute 'keys'
+2022-10-27 22:00:53,745 - scraper LOG - INFO - KT_GRGEP allg. Planungsinhalte Punktobjekte: 'bool' object has no attribute 'keys'
+2022-10-27 22:00:53,753 - scraper LOG - INFO - KT_GRGEP allg. Planungsinhalte Linienobjekte: 'bool' object has no attribute 'keys'
+2022-10-27 22:00:53,769 - scraper LOG - INFO - KT_GRGEP allg. Planungsinhalte Flächenobjekte: 'bool' object has no attribute 'keys'
+2022-10-27 22:00:53,777 - scraper LOG - INFO - KT_GRGEP Ausstattung Punktobjekte: 'bool' object has no attribute 'keys'
+2022-10-27 22:00:53,793 - scraper LOG - INFO - KT_GRGEP Ausstattung Linienobjekte: 'bool' object has no attribute 'keys'
+2022-10-27 22:00:53,801 - scraper LOG - INFO - KT_GRGEP Ausstattung Flächenobjekte: 'bool' object has no attribute 'keys'
+2022-10-27 22:00:53,817 - scraper LOG - INFO - KT_GRGEP Energie Punktobjekte: 'bool' object has no attribute 'keys'
+2022-10-27 22:00:53,825 - scraper LOG - INFO - KT_GRGEP Energie Linienobjekte: 'bool' object has no attribute 'keys'
+2022-10-27 22:00:53,833 - scraper LOG - INFO - KT_GRGEP Energie Flächenobjekte: 'bool' object has no attribute 'keys'
+2022-10-27 22:00:53,849 - scraper LOG - INFO - KT_GRGEP Entsorgung Punktobjekte: 'bool' object has no attribute 'keys'
+2022-10-27 22:00:53,857 - scraper LOG - INFO - KT_GRGEP Entsorgung Linienobjekte: 'bool' object has no attribute 'keys'
+2022-10-27 22:00:53,873 - scraper LOG - INFO - KT_GRGEP Entsorgung Flächenobjekte: 'bool' object has no attribute 'keys'
+2022-10-27 22:00:53,881 - scraper LOG - INFO - KT_GRGEP Wasser Punktobjekte: 'bool' object has no attribute 'keys'
+2022-10-27 22:00:53,897 - scraper LOG - INFO - KT_GRGEP Wasser Linienobjekte: 'bool' object has no attribute 'keys'
+2022-10-27 22:00:53,913 - scraper LOG - INFO - KT_GRGEP Wasser Flächenobjekte: 'bool' object has no attribute 'keys'
+2022-10-27 22:00:53,929 - scraper LOG - INFO - KT_GRGEP Verkehr Punktobjekte: 'bool' object has no attribute 'keys'
+2022-10-27 22:00:53,945 - scraper LOG - INFO - KT_GRGEP Verkehr übrige Verkehrswege: 'bool' object has no attribute 'keys'
+2022-10-27 22:00:53,953 - scraper LOG - INFO - KT_GRGEP Verkehr Radwege: 'bool' object has no attribute 'keys'
+2022-10-27 22:00:53,961 - scraper LOG - INFO - KT_GRGEP Verkehr Fuss-/Wanderwege: 'bool' object has no attribute 'keys'
+2022-10-27 22:00:53,977 - scraper LOG - INFO - KT_GRGEP Verkehr Strassen und Wege: 'bool' object has no attribute 'keys'
+2022-10-27 22:00:53,985 - scraper LOG - INFO - KT_GRGEP Verkehr Flächenobjekte: 'bool' object has no attribute 'keys'
+2022-10-27 22:00:54,001 - scraper LOG - INFO - KT_GRGGP Planperimeter: 'bool' object has no attribute 'keys'
+2022-10-27 22:00:54,017 - scraper LOG - INFO - KT_GRGGP Pläne in PDF-Form: 'bool' object has no attribute 'keys'
+2022-10-27 22:00:54,033 - scraper LOG - INFO - KT_GRGGP allg. Planungsinhalte Punktobjekte: 'bool' object has no attribute 'keys'
+2022-10-27 22:00:54,041 - scraper LOG - INFO - KT_GRGGP allg. Planungsinhalte Linienobjekte: 'bool' object has no attribute 'keys'
+2022-10-27 22:00:54,049 - scraper LOG - INFO - KT_GRGGP allg. Planungsinhalte Flächenobjekte: 'bool' object has no attribute 'keys'
+2022-10-27 22:00:54,065 - scraper LOG - INFO - KT_GRGGP Gestaltungsanweisung Punktobjekte: 'bool' object has no attribute 'keys'
+2022-10-27 22:00:54,081 - scraper LOG - INFO - KT_GRGGP Gestaltungsanweisung Linienobjekte: 'bool' object has no attribute 'keys'
+2022-10-27 22:00:54,089 - scraper LOG - INFO - KT_GRGGP Gestaltungsanweisung Flächenobjekte: 'bool' object has no attribute 'keys'
+2022-10-27 22:00:54,105 - scraper LOG - INFO - KT_GRGGP Objektschutz Punktobjekte: 'bool' object has no attribute 'keys'
+2022-10-27 22:00:54,113 - scraper LOG - INFO - KT_GRGGP Objektschutz Linienobjekte: 'bool' object has no attribute 'keys'
+2022-10-27 22:00:54,121 - scraper LOG - INFO - KT_GRGGP Objektschutz Flächenobjekte: 'bool' object has no attribute 'keys'
+2022-10-27 22:00:54,137 - scraper LOG - INFO - KT_GRGGP Gestaltungsbereiche: 'bool' object has no attribute 'keys'
+2022-10-27 22:00:54,145 - scraper LOG - INFO - KT_GRZP Planperimeter: 'bool' object has no attribute 'keys'
+2022-10-27 22:00:54,153 - scraper LOG - INFO - KT_GRZP allg. Planungsinhalte Punktobjekte: 'bool' object has no attribute 'keys'
+2022-10-27 22:00:54,169 - scraper LOG - INFO - KT_GRZP allg. Planungsinhalte Linienobjekte: 'bool' object has no attribute 'keys'
+2022-10-27 22:00:54,185 - scraper LOG - INFO - KT_GRZP allg. Planungsinhalte Flächenobjekte: 'bool' object has no attribute 'keys'
+2022-10-27 22:00:54,193 - scraper LOG - INFO - KT_GRZP festgelegte Waldgrenzen: 'bool' object has no attribute 'keys'
+2022-10-27 22:00:54,265 - scraper LOG - INFO - KT_GRZP touristische Zonen und Freizeitzonen: 'bool' object has no attribute 'keys'
+2022-10-27 22:00:54,273 - scraper LOG - INFO - KT_GRZP Gewässerschutzzonen: 'bool' object has no attribute 'keys'
+2022-10-27 22:00:54,281 - scraper LOG - INFO - KT_GRZP Gefahrenzonen: 'bool' object has no attribute 'keys'
+2022-10-27 22:00:54,297 - scraper LOG - INFO - KT_GRZP Materialgewinnung / Materialablagerung und Energie: 'bool' object has no attribute 'keys'
+2022-10-27 22:00:54,305 - scraper LOG - INFO - KT_GRZP land- und forstwirtschaftliche Nutzungen: 'bool' object has no attribute 'keys'
+2022-10-27 22:00:54,313 - scraper LOG - INFO - KT_GRZP Ortsbild- und Kulturgüterschutzzonen: 'bool' object has no attribute 'keys'
+2022-10-27 22:00:54,329 - scraper LOG - INFO - KT_GRZP Schutzzonen für besondere Zwecke: 'bool' object has no attribute 'keys'
+2022-10-27 22:00:54,337 - scraper LOG - INFO - KT_GRZP Natur- und Landschaftsschutzzonen: 'bool' object has no attribute 'keys'
+2022-10-27 22:00:54,353 - scraper LOG - INFO - KT_GRZP Grundnutzung - Aufstufung ES: 'bool' object has no attribute 'keys'
+2022-10-27 22:00:54,361 - scraper LOG - INFO - KT_GRZP Grundnutzung: 'bool' object has no attribute 'keys'
+2022-10-27 22:00:54,361 - scraper LOG - INFO - Starting scraper  KT_GR with https://wms.geo.gr.ch/nutzungsplanung_kommunal 
+2022-10-27 22:00:55,942 - scraper LOG - INFO - KT_GRLaermempfindlichkeitsstufen_: 'bool' object has no attribute 'keys'
+2022-10-27 22:00:55,952 - scraper LOG - INFO - KT_GRFolgeplanung_: 'bool' object has no attribute 'keys'
+2022-10-27 22:00:55,960 - scraper LOG - INFO - KT_GRGenereller_Erschliessungsplan_: 'bool' object has no attribute 'keys'
+2022-10-27 22:00:55,976 - scraper LOG - INFO - KT_GRGenereller_Gestaltungsplan_: 'bool' object has no attribute 'keys'
+2022-10-27 22:00:55,984 - scraper LOG - INFO - KT_GRZonenplan_: 'bool' object has no attribute 'keys'
+2022-10-27 22:00:56,000 - scraper LOG - INFO - KT_GRLaermempfindlichkeitsstufen: 'bool' object has no attribute 'keys'
+2022-10-27 22:00:56,008 - scraper LOG - INFO - KT_GRBau_Niveaulinienplaene: 'bool' object has no attribute 'keys'
+2022-10-27 22:00:56,024 - scraper LOG - INFO - KT_GRQuartierplaene: 'bool' object has no attribute 'keys'
+2022-10-27 22:00:56,032 - scraper LOG - INFO - KT_GRArealplaene: 'bool' object has no attribute 'keys'
+2022-10-27 22:00:56,040 - scraper LOG - INFO - KT_GRPlanperimeter_Verkehr_und_Werkanlagen: 'bool' object has no attribute 'keys'
+2022-10-27 22:00:56,056 - scraper LOG - INFO - KT_GRPlanperimeter_Verkehr: 'bool' object has no attribute 'keys'
+2022-10-27 22:00:56,064 - scraper LOG - INFO - KT_GRPlanperimeter_Werkanlagen: 'bool' object has no attribute 'keys'
+2022-10-27 22:00:56,072 - scraper LOG - INFO - KT_GRPlaene_in_PDF_Form_GEP: 'bool' object has no attribute 'keys'
+2022-10-27 22:00:56,088 - scraper LOG - INFO - KT_GRAllgemeine_Planungsinhalte_Punktobjekte_GEP: 'bool' object has no attribute 'keys'
+2022-10-27 22:00:56,096 - scraper LOG - INFO - KT_GRAllgemeine_Planungsinhalte_Linienobjekte_GEP: 'bool' object has no attribute 'keys'
+2022-10-27 22:00:56,112 - scraper LOG - INFO - KT_GRAllgemeine_Planungsinhalte_Flaechenobjekte_GEP: 'bool' object has no attribute 'keys'
+2022-10-27 22:00:56,128 - scraper LOG - INFO - KT_GRAusstattung_Punktobjekte: 'bool' object has no attribute 'keys'
+2022-10-27 22:00:56,136 - scraper LOG - INFO - KT_GRAusstattung_Linienobjekte: 'bool' object has no attribute 'keys'
+2022-10-27 22:00:56,152 - scraper LOG - INFO - KT_GRAusstattung_Flaechenobjekte: 'bool' object has no attribute 'keys'
+2022-10-27 22:00:56,160 - scraper LOG - INFO - KT_GREnergie_Punktobjekte: 'bool' object has no attribute 'keys'
+2022-10-27 22:00:56,168 - scraper LOG - INFO - KT_GREnergie_Linienobjekte: 'bool' object has no attribute 'keys'
+2022-10-27 22:00:56,184 - scraper LOG - INFO - KT_GREnergie_Flaechenobjekte: 'bool' object has no attribute 'keys'
+2022-10-27 22:00:56,192 - scraper LOG - INFO - KT_GREntsorgung_Punktobjekte: 'bool' object has no attribute 'keys'
+2022-10-27 22:00:56,200 - scraper LOG - INFO - KT_GREntsorgung_Linienobjekte: 'bool' object has no attribute 'keys'
+2022-10-27 22:00:56,216 - scraper LOG - INFO - KT_GREntsorgung_Flaechenobjekte: 'bool' object has no attribute 'keys'
+2022-10-27 22:00:56,224 - scraper LOG - INFO - KT_GRWasser_Punktobjekte: 'bool' object has no attribute 'keys'
+2022-10-27 22:00:56,240 - scraper LOG - INFO - KT_GRWasser_Linienobjekte: 'bool' object has no attribute 'keys'
+2022-10-27 22:00:56,248 - scraper LOG - INFO - KT_GRWasser_Flaechenobjekte: 'bool' object has no attribute 'keys'
+2022-10-27 22:00:56,264 - scraper LOG - INFO - KT_GRVerkehr_Punktobjekte: 'bool' object has no attribute 'keys'
+2022-10-27 22:00:56,272 - scraper LOG - INFO - KT_GRVerkehr_uebrige_Verkehrswege: 'bool' object has no attribute 'keys'
+2022-10-27 22:00:56,288 - scraper LOG - INFO - KT_GRVerkehr_Radwege: 'bool' object has no attribute 'keys'
+2022-10-27 22:00:56,296 - scraper LOG - INFO - KT_GRVerkehr_Fuss_Wanderwege: 'bool' object has no attribute 'keys'
+2022-10-27 22:00:56,304 - scraper LOG - INFO - KT_GRVerkehr_Strassen_und_Wege: 'bool' object has no attribute 'keys'
+2022-10-27 22:00:56,320 - scraper LOG - INFO - KT_GRVerkehr_Flaechenobjekte: 'bool' object has no attribute 'keys'
+2022-10-27 22:00:56,328 - scraper LOG - INFO - KT_GRPlanperimeter_GGP: 'bool' object has no attribute 'keys'
+2022-10-27 22:00:56,344 - scraper LOG - INFO - KT_GRPlaene_in_PDF_Form_GGP: 'bool' object has no attribute 'keys'
+2022-10-27 22:00:56,352 - scraper LOG - INFO - KT_GRAllgemeine_Planungsinhalte_Punktobjekte_GGP: 'bool' object has no attribute 'keys'
+2022-10-27 22:00:56,360 - scraper LOG - INFO - KT_GRAllgemeine_Planungsinhalte_Linienobjekte_GGP: 'bool' object has no attribute 'keys'
+2022-10-27 22:00:56,384 - scraper LOG - INFO - KT_GRAllgemeine_Planungsinhalte_Flaechenobjekte_GGP: 'bool' object has no attribute 'keys'
+2022-10-27 22:00:56,392 - scraper LOG - INFO - KT_GRGestaltungsanweisung_Punktobjekte: 'bool' object has no attribute 'keys'
+2022-10-27 22:00:56,408 - scraper LOG - INFO - KT_GRGestaltungsanweisung_Linienobjekte: 'bool' object has no attribute 'keys'
+2022-10-27 22:00:56,416 - scraper LOG - INFO - KT_GRGestaltungsanweisung_Flaechenobjekte: 'bool' object has no attribute 'keys'
+2022-10-27 22:00:56,432 - scraper LOG - INFO - KT_GRObjektschutz_Punktobjekte: 'bool' object has no attribute 'keys'
+2022-10-27 22:00:56,440 - scraper LOG - INFO - KT_GRObjektschutz_Linienobjekte: 'bool' object has no attribute 'keys'
+2022-10-27 22:00:56,448 - scraper LOG - INFO - KT_GRObjektschutz_Flaechenobjekte: 'bool' object has no attribute 'keys'
+2022-10-27 22:00:56,464 - scraper LOG - INFO - KT_GRGestaltungsbereiche: 'bool' object has no attribute 'keys'
+2022-10-27 22:00:56,472 - scraper LOG - INFO - KT_GRPlanperimeter_ZP: 'bool' object has no attribute 'keys'
+2022-10-27 22:00:56,488 - scraper LOG - INFO - KT_GRAllgemeine_Planungsinhalte_Punktobjekte_ZP: 'bool' object has no attribute 'keys'
+2022-10-27 22:00:56,496 - scraper LOG - INFO - KT_GRAllgemeine_Planungsinhalte_Linienobjekte_ZP: 'bool' object has no attribute 'keys'
+2022-10-27 22:00:56,512 - scraper LOG - INFO - KT_GRAllgemeine_Planungsinhalte_Flaecheninhalte_ZP: 'bool' object has no attribute 'keys'
+2022-10-27 22:00:56,520 - scraper LOG - INFO - KT_GRFestgelegte_Waldgrenzen: 'bool' object has no attribute 'keys'
+2022-10-27 22:00:56,528 - scraper LOG - INFO - KT_GRTouristische_Zonen_und_Freizeitzonen: 'bool' object has no attribute 'keys'
+2022-10-27 22:00:56,544 - scraper LOG - INFO - KT_GRGewaesserschutzzonen: 'bool' object has no attribute 'keys'
+2022-10-27 22:00:56,552 - scraper LOG - INFO - KT_GRGefahrenzonen: 'bool' object has no attribute 'keys'
+2022-10-27 22:00:56,560 - scraper LOG - INFO - KT_GRMaterialgewinnung_Materialablagerung_und_Energie: 'bool' object has no attribute 'keys'
+2022-10-27 22:00:56,576 - scraper LOG - INFO - KT_GRLand_und_forstwirtschaftliche_Nutzungen: 'bool' object has no attribute 'keys'
+2022-10-27 22:00:56,584 - scraper LOG - INFO - KT_GROrtsbild_und_Kulturgueterschutzzonen: 'bool' object has no attribute 'keys'
+2022-10-27 22:00:56,592 - scraper LOG - INFO - KT_GRSchutzzonen_fuer_besondere_Zwecke: 'bool' object has no attribute 'keys'
+2022-10-27 22:00:56,608 - scraper LOG - INFO - KT_GRNatur_und_Landschaftsschutzzonen: 'bool' object has no attribute 'keys'
+2022-10-27 22:00:56,616 - scraper LOG - INFO - KT_GRGrundnutzung_Aufstufung_ES: 'bool' object has no attribute 'keys'
+2022-10-27 22:00:56,632 - scraper LOG - INFO - KT_GRGrundnutzung: 'bool' object has no attribute 'keys'
+2022-10-27 22:00:56,632 - scraper LOG - INFO - Starting scraper  KT_GR with https://wms.geo.gr.ch/nutzungsplanungsstand 
+2022-10-27 22:00:58,128 - scraper LOG - INFO - KT_GRBasisinfo: 'bool' object has no attribute 'keys'
+2022-10-27 22:00:58,138 - scraper LOG - INFO - KT_GRStand der Digitalisierung: 'bool' object has no attribute 'keys'
+2022-10-27 22:00:58,154 - scraper LOG - INFO - KT_GRGemeindegrenzen: 'bool' object has no attribute 'keys'
+2022-10-27 22:00:58,162 - scraper LOG - INFO - KT_GRLaufende Arbeiten / Revisionen: 'bool' object has no attribute 'keys'
+2022-10-27 22:00:58,170 - scraper LOG - INFO - KT_GRLetzte abgeschlossene Bearbeitungen: 'bool' object has no attribute 'keys'
+2022-10-27 22:00:58,186 - scraper LOG - INFO - KT_GRDatenverwaltungsstellen und weitere Angaben: 'bool' object has no attribute 'keys'
+2022-10-27 22:00:58,194 - scraper LOG - INFO - KT_GRDarstellungsmodell: 'bool' object has no attribute 'keys'
+2022-10-27 22:00:58,202 - scraper LOG - INFO - Starting scraper  KT_GR with https://wms.geo.gr.ch/oberflaechengewaesser 
+2022-10-27 22:00:58,562 - scraper LOG - INFO - Starting scraper  KT_GR with https://wms.geo.gr.ch/pflanzen_pilzschutzgebiete 
+2022-10-27 22:00:58,810 - scraper LOG - INFO - Starting scraper  KT_GR with https://wms.geo.gr.ch/risikokataster 
+2022-10-27 22:00:59,126 - scraper LOG - INFO - Starting scraper  KT_GR with https://wms.geo.gr.ch/strassenlaermkataster 
+2022-10-27 22:00:59,398 - scraper LOG - INFO - Starting scraper  KT_GR with https://wms.geo.gr.ch/strassenlaermsanierungen 
+2022-10-27 22:00:59,719 - scraper LOG - INFO - Starting scraper  KT_GR with https://wms.geo.gr.ch/tektonische_karten 
+2022-10-27 22:01:00,103 - scraper LOG - INFO - Starting scraper  KT_GR with https://wms.geo.gr.ch/verkehrsmodell 
+2022-10-27 22:01:00,355 - scraper LOG - INFO - Starting scraper  KT_GR with https://wms.geo.gr.ch/walderschliessung 
+2022-10-27 22:01:00,688 - scraper LOG - INFO - Starting scraper  KT_GR with https://wms.geo.gr.ch/bauzonen_graubuenden 
+2022-10-27 22:01:00,934 - scraper LOG - INFO - Starting scraper  KT_GR with https://wms.geo.gr.ch/belastetestandorte 
+2022-10-27 22:01:01,186 - scraper LOG - INFO - Starting scraper  KT_GR with https://wms.geo.gr.ch/gewaesserschutz 
+2022-10-27 22:01:01,485 - scraper LOG - INFO - Starting scraper  KT_GR with https://wms.geo.gr.ch/grundwasser 
+2022-10-27 22:01:01,774 - scraper LOG - INFO - Starting scraper  KT_GR with https://wms.geo.gr.ch/historischekarten 
+2022-10-27 22:01:02,036 - scraper LOG - INFO - Starting scraper  KT_GR with https://wms.geo.gr.ch/landwirtschaft 
+2022-10-27 22:01:02,181 - scraper LOG - INFO - KT_GR with https://wms.geo.gr.ch/landwirtschaft aborted
+2022-10-27 22:01:02,185 - scraper LOG - INFO - Starting scraper  KT_GR with https://wms.geo.gr.ch/naturgefahren_erfassungsbereiche 
+2022-10-27 22:01:02,433 - scraper LOG - INFO - Starting scraper  KT_GR with https://wms.geo.gr.ch/naturschutz 
+2022-10-27 22:01:02,764 - scraper LOG - INFO - Starting scraper  KT_GR with https://wms.geo.gr.ch/rrip_bregaglia 
+2022-10-27 22:01:03,210 - scraper LOG - INFO - Starting scraper  KT_GR with https://wms.geo.gr.ch/rrip_davos 
+2022-10-27 22:01:03,756 - scraper LOG - INFO - Starting scraper  KT_GR with https://wms.geo.gr.ch/rrip_mesolcina 
+2022-10-27 22:01:04,117 - scraper LOG - INFO - Starting scraper  KT_GR with https://wms.geo.gr.ch/rrip_mittelbuenden 
+2022-10-27 22:01:04,518 - scraper LOG - INFO - Starting scraper  KT_GR with https://wms.geo.gr.ch/rrip_nordbuenden 
+2022-10-27 22:01:04,966 - scraper LOG - INFO - Starting scraper  KT_GR with https://wms.geo.gr.ch/rrip_oberengadin 
+2022-10-27 22:01:05,696 - scraper LOG - INFO - Starting scraper  KT_GR with https://wms.geo.gr.ch/rrip_praettigau 
+2022-10-27 22:01:06,072 - scraper LOG - INFO - Starting scraper  KT_GR with https://wms.geo.gr.ch/rrip_unterengadin 
+2022-10-27 22:01:06,497 - scraper LOG - INFO - Starting scraper  KT_GR with https://wms.geo.gr.ch/rrip_regioviamala 
+2022-10-27 22:01:06,890 - scraper LOG - INFO - Starting scraper  KT_GR with https://wms.geo.gr.ch/regionen 
+2022-10-27 22:01:07,300 - scraper LOG - INFO - Starting scraper  KT_GR with https://wms.geo.gr.ch/schutzwald 
+2022-10-27 22:01:07,574 - scraper LOG - INFO - Starting scraper  KT_GR with https://wms.geo.gr.ch/seilbahnen 
+2022-10-27 22:01:07,845 - scraper LOG - INFO - Starting scraper  KT_GR with https://wms.geo.gr.ch/amtlichevermessung_stand 
+2022-10-27 22:01:08,105 - scraper LOG - INFO - Starting scraper  KT_GR with https://wms.geo.gr.ch/amtlichevermessung 
+2022-10-27 22:01:08,456 - scraper LOG - INFO - Starting scraper  KT_GR with https://wms.geo.gr.ch/waldentwicklungsplan 
+2022-10-27 22:01:08,816 - scraper LOG - INFO - Starting scraper  KT_GR with https://wms.geo.gr.ch/wildruhezonen 
+2022-10-27 22:01:09,095 - scraper LOG - INFO - Starting scraper  KT_GR with https://wms.geo.gr.ch/wildschutzgebiete 
+2022-10-27 22:01:09,405 - scraper LOG - INFO - Starting scraper  KT_GR with https://wms.geo.gr.ch/richtplan 
+2022-10-27 22:01:09,913 - scraper LOG - INFO - Starting scraper  KT_GR with https://wms.geo.gr.ch/uebersichtsplan 
+2022-10-27 22:01:10,221 - scraper LOG - INFO - Starting scraper  INT_ECMWF with https://apps.ecmwf.int/wms/?token=public trying DEFAULT scraper 
+2022-10-27 22:01:13,755 - scraper LOG - INFO - Starting scraper  KT_ZH with https://wms.zh.ch/ArchWMS 
+2022-10-27 22:01:14,190 - scraper LOG - INFO - Starting scraper  KT_ZH with https://wms.zh.ch/TBA9ZHWMS 
+2022-10-27 22:01:14,473 - scraper LOG - INFO - Starting scraper  KT_ZH with https://wms.zh.ch/TbaBaustellenZHWMS 
+2022-10-27 22:01:14,738 - scraper LOG - INFO - Starting scraper  KT_ZH with https://wms.zh.ch/TBAAnlagenZHWMS 
+2022-10-27 22:01:15,010 - scraper LOG - INFO - Starting scraper  KT_ZH with https://wms.zh.ch/DenkmalschutzWMS 
+2022-10-27 22:01:15,293 - scraper LOG - INFO - Starting scraper  KT_ZH with https://wms.zh.ch/HaltestellenZHWMS 
+2022-10-27 22:01:15,571 - scraper LOG - INFO - Starting scraper  KT_ZH with https://wms.zh.ch/WaldWNBZHWMS 
+2022-10-27 22:01:15,834 - scraper LOG - INFO - Starting scraper  KT_ZH with https://wms.zh.ch/OrtsbildschutzZHWMS 
+2022-10-27 22:01:16,251 - scraper LOG - INFO - Starting scraper  KT_ZH with https://wms.zh.ch/FnsLRKZHWMS 
+2022-10-27 22:01:16,683 - scraper LOG - INFO - Starting scraper  KT_ZH with https://wms.zh.ch/WaldSWZHWMS 
+2022-10-27 22:01:17,976 - scraper LOG - INFO - Starting scraper  KT_ZH with https://wms.zh.ch/TBAStr3ZHWMS 
+2022-10-27 22:01:18,262 - scraper LOG - INFO - Starting scraper  KT_ZH with https://wms.zh.ch/TBAStr2ZHWMS 
+2022-10-27 22:01:18,540 - scraper LOG - INFO - Starting scraper  KT_ZH with https://wms.zh.ch/TBAStr1ZHWMS 
+2022-10-27 22:01:18,805 - scraper LOG - INFO - Starting scraper  KT_ZH with https://wms.zh.ch/ZVVZHWMS 
+2022-10-27 22:01:19,036 - scraper LOG - INFO - Starting scraper  KT_ZH with https://wms.zh.ch/AFVTempo30ZHWMS 
+2022-10-27 22:01:19,322 - scraper LOG - INFO - Starting scraper  KT_ZH with https://wms.zh.ch/WaldVKWMS 
+2022-10-27 22:01:19,556 - scraper LOG - INFO - Starting scraper  KT_ZH with https://wms.zh.ch/VeloinfrastrukturZHWMS 
+2022-10-27 22:01:19,823 - scraper LOG - INFO - Starting scraper  KT_ZH with https://wms.zh.ch/VelonetzZHWMS 
+2022-10-27 22:01:20,124 - scraper LOG - INFO - Starting scraper  KT_ZH with https://wms.zh.ch/VeloparkieranlagenZHWMS 
+2022-10-27 22:01:20,475 - scraper LOG - INFO - Starting scraper  KT_ZH with https://wms.zh.ch/TBAVMSZHWMS 
+2022-10-27 22:01:20,723 - scraper LOG - INFO - Starting scraper  KT_ZH with https://wms.zh.ch/WaldarealZHWMS 
+2022-10-27 22:01:20,979 - scraper LOG - INFO - Starting scraper  KT_ZH with https://wms.zh.ch/WildkarteZHWMS 
+2022-10-27 22:01:21,209 - scraper LOG - INFO - Starting scraper  KT_ZH with https://wms.zh.ch/FnsLWZHWMS 
+2022-10-27 22:01:21,505 - scraper LOG - INFO - Starting scraper  KT_ZH with https://wms.zh.ch/FNSOEQVZHWMS 
+2022-10-27 22:01:21,818 - scraper LOG - INFO - Starting scraper  KT_ZH with https://wms.zh.ch/FNSLRPZHWMS 
+2022-10-27 22:01:22,155 - scraper LOG - INFO - Starting scraper  KT_ZH with https://wms.zh.ch/FnsSVOZHWMS 
+2022-10-27 22:01:22,475 - scraper LOG - INFO - Starting scraper  KT_ZH with https://wms.zh.ch/FnsInvZHWMS 
+2022-10-27 22:01:22,768 - scraper LOG - INFO - Starting scraper  KT_ZH with https://wms.zh.ch/kkgeo_gws_zh 
+2022-10-27 22:01:23,094 - scraper LOG - INFO - scraper completed
+2022-10-27 22:05:06,909 - scraper LOG - INFO - Starting scraper  KT_GR with https://wms.geo.gr.ch/gewaesserschutz 
+2022-10-27 22:09:07,300 - scraper LOG - INFO - Starting scraper  KT_GR with https://wms.geo.gr.ch/grundwasser 
+2022-10-27 22:09:30,883 - scraper LOG - INFO - Starting scraper  KT_GR with https://wms.geo.gr.ch/historischekarten 
+2022-10-27 22:12:55,966 - scraper LOG - INFO - Starting scraper  KT_GR with https://wms.geo.gr.ch/admineinteilung 
+2022-10-27 22:12:56,449 - scraper LOG - INFO - Starting scraper  KT_GR with https://wms.geo.gr.ch/regionen 
+2022-10-27 22:12:56,869 - scraper LOG - INFO - Starting scraper  KT_GR with https://wms.geo.gr.ch/basisinfo 
+2022-10-27 22:12:57,235 - scraper LOG - INFO - Starting scraper  KT_GR with https://wms.geo.gr.ch/basisplan 
+2022-10-27 22:12:57,562 - scraper LOG - INFO - Starting scraper  KT_GR with https://wms.geo.gr.ch/erdwaermenutzung 
+2022-10-27 22:12:57,838 - scraper LOG - INFO - Starting scraper  KT_GR with https://wms.geo.gr.ch/fruchtfolgeflaechen 
+2022-10-27 22:12:58,140 - scraper LOG - INFO - Starting scraper  KT_GR with https://wms.geo.gr.ch/gebaeudeinformation 
+2022-10-27 22:12:58,481 - scraper LOG - INFO - Starting scraper  KT_GR with https://wms.geo.gr.ch/geologie 
+2022-10-27 22:12:59,072 - scraper LOG - INFO - Starting scraper  KT_GR with https://wms.geo.gr.ch/geologische_karten 
+2022-10-27 22:12:59,366 - scraper LOG - INFO - Starting scraper  KT_GR with https://wms.geo.gr.ch/hydrogeologische_karten 
+2022-10-27 22:12:59,698 - scraper LOG - INFO - Starting scraper  KT_GR with https://wms.geo.gr.ch/jagdkarte 
+2022-10-27 22:13:00,007 - scraper LOG - INFO - Starting scraper  KT_GR with https://wms.geo.gr.ch/kantonalesstrassennetz 
+2022-10-27 22:13:00,317 - scraper LOG - INFO - Starting scraper  KT_GR with https://wms.geo.gr.ch/kstn_strassenentwaesserung 
+2022-10-27 22:13:00,620 - scraper LOG - INFO - Starting scraper  KT_GR with https://wms.geo.gr.ch/lw_bewirtschaftung 
+2022-10-27 22:13:01,050 - scraper LOG - INFO - Starting scraper  KT_GR with https://wms.geo.gr.ch/langsamverkehr 
+2022-10-27 22:13:01,447 - scraper LOG - INFO - Starting scraper  KT_GR with https://wms.geo.gr.ch/verbauungen 
+2022-10-27 22:13:01,756 - scraper LOG - INFO - Starting scraper  KT_GR with https://wms.geo.gr.ch/naturgefahrenkarte 
+2022-10-27 22:13:02,111 - scraper LOG - INFO - Starting scraper  KT_GR with https://wms.geo.gr.ch/nutzungsplanung 
+2022-10-27 22:13:02,450 - scraper LOG - INFO - KT_GRLärmempfindlichkeitsstufen: 'bool' object has no attribute 'keys'
+2022-10-27 22:13:02,498 - scraper LOG - INFO - KT_GRFolgeplanung: 'bool' object has no attribute 'keys'
+2022-10-27 22:13:02,506 - scraper LOG - INFO - KT_GRGenereller Erschliessungsplan: 'bool' object has no attribute 'keys'
+2022-10-27 22:13:02,522 - scraper LOG - INFO - KT_GRGenereller Gestaltungsplan: 'bool' object has no attribute 'keys'
+2022-10-27 22:13:02,530 - scraper LOG - INFO - KT_GRZonenplan: 'bool' object has no attribute 'keys'
+2022-10-27 22:13:02,546 - scraper LOG - INFO - KT_GRBau-/Niveaulinienpläne: 'bool' object has no attribute 'keys'
+2022-10-27 22:13:02,554 - scraper LOG - INFO - KT_GRQuartierpläne: 'bool' object has no attribute 'keys'
+2022-10-27 22:13:02,562 - scraper LOG - INFO - KT_GRArealpläne: 'bool' object has no attribute 'keys'
+2022-10-27 22:13:02,578 - scraper LOG - INFO - KT_GRGEP Planperimeter Verkehr und Werkanlagen: 'bool' object has no attribute 'keys'
+2022-10-27 22:13:02,586 - scraper LOG - INFO - KT_GRGEP Planperimeter Verkehr: 'bool' object has no attribute 'keys'
+2022-10-27 22:13:02,666 - scraper LOG - INFO - KT_GRGEP Planperimeter Werkanlagen: 'bool' object has no attribute 'keys'
+2022-10-27 22:13:02,762 - scraper LOG - INFO - KT_GRGEP Pläne in PDF-Form: 'bool' object has no attribute 'keys'
+2022-10-27 22:13:02,778 - scraper LOG - INFO - KT_GRGEP allg. Planungsinhalte Punktobjekte: 'bool' object has no attribute 'keys'
+2022-10-27 22:13:02,818 - scraper LOG - INFO - KT_GRGEP allg. Planungsinhalte Linienobjekte: 'bool' object has no attribute 'keys'
+2022-10-27 22:13:02,834 - scraper LOG - INFO - KT_GRGEP allg. Planungsinhalte Flächenobjekte: 'bool' object has no attribute 'keys'
+2022-10-27 22:13:02,850 - scraper LOG - INFO - KT_GRGEP Ausstattung Punktobjekte: 'bool' object has no attribute 'keys'
+2022-10-27 22:13:02,866 - scraper LOG - INFO - KT_GRGEP Ausstattung Linienobjekte: 'bool' object has no attribute 'keys'
+2022-10-27 22:13:02,874 - scraper LOG - INFO - KT_GRGEP Ausstattung Flächenobjekte: 'bool' object has no attribute 'keys'
+2022-10-27 22:13:02,882 - scraper LOG - INFO - KT_GRGEP Energie Punktobjekte: 'bool' object has no attribute 'keys'
+2022-10-27 22:13:02,898 - scraper LOG - INFO - KT_GRGEP Energie Linienobjekte: 'bool' object has no attribute 'keys'
+2022-10-27 22:13:02,906 - scraper LOG - INFO - KT_GRGEP Energie Flächenobjekte: 'bool' object has no attribute 'keys'
+2022-10-27 22:13:02,922 - scraper LOG - INFO - KT_GRGEP Entsorgung Punktobjekte: 'bool' object has no attribute 'keys'
+2022-10-27 22:13:02,938 - scraper LOG - INFO - KT_GRGEP Entsorgung Linienobjekte: 'bool' object has no attribute 'keys'
+2022-10-27 22:13:02,954 - scraper LOG - INFO - KT_GRGEP Entsorgung Flächenobjekte: 'bool' object has no attribute 'keys'
+2022-10-27 22:13:02,962 - scraper LOG - INFO - KT_GRGEP Wasser Punktobjekte: 'bool' object has no attribute 'keys'
+2022-10-27 22:13:02,978 - scraper LOG - INFO - KT_GRGEP Wasser Linienobjekte: 'bool' object has no attribute 'keys'
+2022-10-27 22:13:02,986 - scraper LOG - INFO - KT_GRGEP Wasser Flächenobjekte: 'bool' object has no attribute 'keys'
+2022-10-27 22:13:03,010 - scraper LOG - INFO - KT_GRGEP Verkehr Punktobjekte: 'bool' object has no attribute 'keys'
+2022-10-27 22:13:03,026 - scraper LOG - INFO - KT_GRGEP Verkehr übrige Verkehrswege: 'bool' object has no attribute 'keys'
+2022-10-27 22:13:03,034 - scraper LOG - INFO - KT_GRGEP Verkehr Radwege: 'bool' object has no attribute 'keys'
+2022-10-27 22:13:03,050 - scraper LOG - INFO - KT_GRGEP Verkehr Fuss-/Wanderwege: 'bool' object has no attribute 'keys'
+2022-10-27 22:13:03,066 - scraper LOG - INFO - KT_GRGEP Verkehr Strassen und Wege: 'bool' object has no attribute 'keys'
+2022-10-27 22:13:03,074 - scraper LOG - INFO - KT_GRGEP Verkehr Flächenobjekte: 'bool' object has no attribute 'keys'
+2022-10-27 22:13:03,098 - scraper LOG - INFO - KT_GRGGP Planperimeter: 'bool' object has no attribute 'keys'
+2022-10-27 22:13:03,106 - scraper LOG - INFO - KT_GRGGP Pläne in PDF-Form: 'bool' object has no attribute 'keys'
+2022-10-27 22:13:03,122 - scraper LOG - INFO - KT_GRGGP allg. Planungsinhalte Punktobjekte: 'bool' object has no attribute 'keys'
+2022-10-27 22:13:03,130 - scraper LOG - INFO - KT_GRGGP allg. Planungsinhalte Linienobjekte: 'bool' object has no attribute 'keys'
+2022-10-27 22:13:03,146 - scraper LOG - INFO - KT_GRGGP allg. Planungsinhalte Flächenobjekte: 'bool' object has no attribute 'keys'
+2022-10-27 22:13:03,162 - scraper LOG - INFO - KT_GRGGP Gestaltungsanweisung Punktobjekte: 'bool' object has no attribute 'keys'
+2022-10-27 22:13:03,178 - scraper LOG - INFO - KT_GRGGP Gestaltungsanweisung Linienobjekte: 'bool' object has no attribute 'keys'
+2022-10-27 22:13:03,194 - scraper LOG - INFO - KT_GRGGP Gestaltungsanweisung Flächenobjekte: 'bool' object has no attribute 'keys'
+2022-10-27 22:13:03,202 - scraper LOG - INFO - KT_GRGGP Objektschutz Punktobjekte: 'bool' object has no attribute 'keys'
+2022-10-27 22:13:03,218 - scraper LOG - INFO - KT_GRGGP Objektschutz Linienobjekte: 'bool' object has no attribute 'keys'
+2022-10-27 22:13:03,234 - scraper LOG - INFO - KT_GRGGP Objektschutz Flächenobjekte: 'bool' object has no attribute 'keys'
+2022-10-27 22:13:03,250 - scraper LOG - INFO - KT_GRGGP Gestaltungsbereiche: 'bool' object has no attribute 'keys'
+2022-10-27 22:13:03,258 - scraper LOG - INFO - KT_GRZP Planperimeter: 'bool' object has no attribute 'keys'
+2022-10-27 22:13:03,274 - scraper LOG - INFO - KT_GRZP allg. Planungsinhalte Punktobjekte: 'bool' object has no attribute 'keys'
+2022-10-27 22:13:03,298 - scraper LOG - INFO - KT_GRZP allg. Planungsinhalte Linienobjekte: 'bool' object has no attribute 'keys'
+2022-10-27 22:13:03,306 - scraper LOG - INFO - KT_GRZP allg. Planungsinhalte Flächenobjekte: 'bool' object has no attribute 'keys'
+2022-10-27 22:13:03,322 - scraper LOG - INFO - KT_GRZP festgelegte Waldgrenzen: 'bool' object has no attribute 'keys'
+2022-10-27 22:13:03,338 - scraper LOG - INFO - KT_GRZP touristische Zonen und Freizeitzonen: 'bool' object has no attribute 'keys'
+2022-10-27 22:13:03,346 - scraper LOG - INFO - KT_GRZP Gewässerschutzzonen: 'bool' object has no attribute 'keys'
+2022-10-27 22:13:03,362 - scraper LOG - INFO - KT_GRZP Gefahrenzonen: 'bool' object has no attribute 'keys'
+2022-10-27 22:13:03,370 - scraper LOG - INFO - KT_GRZP Materialgewinnung / Materialablagerung und Energie: 'bool' object has no attribute 'keys'
+2022-10-27 22:13:03,386 - scraper LOG - INFO - KT_GRZP land- und forstwirtschaftliche Nutzungen: 'bool' object has no attribute 'keys'
+2022-10-27 22:13:03,402 - scraper LOG - INFO - KT_GRZP Ortsbild- und Kulturgüterschutzzonen: 'bool' object has no attribute 'keys'
+2022-10-27 22:13:03,418 - scraper LOG - INFO - KT_GRZP Schutzzonen für besondere Zwecke: 'bool' object has no attribute 'keys'
+2022-10-27 22:13:03,434 - scraper LOG - INFO - KT_GRZP Natur- und Landschaftsschutzzonen: 'bool' object has no attribute 'keys'
+2022-10-27 22:13:03,450 - scraper LOG - INFO - KT_GRZP Grundnutzung - Aufstufung ES: 'bool' object has no attribute 'keys'
+2022-10-27 22:13:03,466 - scraper LOG - INFO - KT_GRZP Grundnutzung: 'bool' object has no attribute 'keys'
+2022-10-27 22:13:03,466 - scraper LOG - INFO - Starting scraper  KT_GR with https://wms.geo.gr.ch/nutzungsplanung_kommunal 
+2022-10-27 22:13:03,782 - scraper LOG - INFO - KT_GRLaermempfindlichkeitsstufen_: 'bool' object has no attribute 'keys'
+2022-10-27 22:13:03,798 - scraper LOG - INFO - KT_GRFolgeplanung_: 'bool' object has no attribute 'keys'
+2022-10-27 22:13:03,814 - scraper LOG - INFO - KT_GRGenereller_Erschliessungsplan_: 'bool' object has no attribute 'keys'
+2022-10-27 22:13:03,822 - scraper LOG - INFO - KT_GRGenereller_Gestaltungsplan_: 'bool' object has no attribute 'keys'
+2022-10-27 22:13:03,838 - scraper LOG - INFO - KT_GRZonenplan_: 'bool' object has no attribute 'keys'
+2022-10-27 22:13:03,854 - scraper LOG - INFO - KT_GRLaermempfindlichkeitsstufen: 'bool' object has no attribute 'keys'
+2022-10-27 22:13:03,862 - scraper LOG - INFO - KT_GRBau_Niveaulinienplaene: 'bool' object has no attribute 'keys'
+2022-10-27 22:13:03,878 - scraper LOG - INFO - KT_GRQuartierplaene: 'bool' object has no attribute 'keys'
+2022-10-27 22:13:03,886 - scraper LOG - INFO - KT_GRArealplaene: 'bool' object has no attribute 'keys'
+2022-10-27 22:13:03,902 - scraper LOG - INFO - KT_GRPlanperimeter_Verkehr_und_Werkanlagen: 'bool' object has no attribute 'keys'
+2022-10-27 22:13:03,918 - scraper LOG - INFO - KT_GRPlanperimeter_Verkehr: 'bool' object has no attribute 'keys'
+2022-10-27 22:13:03,934 - scraper LOG - INFO - KT_GRPlanperimeter_Werkanlagen: 'bool' object has no attribute 'keys'
+2022-10-27 22:13:03,950 - scraper LOG - INFO - KT_GRPlaene_in_PDF_Form_GEP: 'bool' object has no attribute 'keys'
+2022-10-27 22:13:03,958 - scraper LOG - INFO - KT_GRAllgemeine_Planungsinhalte_Punktobjekte_GEP: 'bool' object has no attribute 'keys'
+2022-10-27 22:13:03,974 - scraper LOG - INFO - KT_GRAllgemeine_Planungsinhalte_Linienobjekte_GEP: 'bool' object has no attribute 'keys'
+2022-10-27 22:13:03,990 - scraper LOG - INFO - KT_GRAllgemeine_Planungsinhalte_Flaechenobjekte_GEP: 'bool' object has no attribute 'keys'
+2022-10-27 22:13:04,006 - scraper LOG - INFO - KT_GRAusstattung_Punktobjekte: 'bool' object has no attribute 'keys'
+2022-10-27 22:13:04,038 - scraper LOG - INFO - KT_GRAusstattung_Linienobjekte: 'bool' object has no attribute 'keys'
+2022-10-27 22:13:04,054 - scraper LOG - INFO - KT_GRAusstattung_Flaechenobjekte: 'bool' object has no attribute 'keys'
+2022-10-27 22:13:04,070 - scraper LOG - INFO - KT_GREnergie_Punktobjekte: 'bool' object has no attribute 'keys'
+2022-10-27 22:13:04,086 - scraper LOG - INFO - KT_GREnergie_Linienobjekte: 'bool' object has no attribute 'keys'
+2022-10-27 22:13:04,102 - scraper LOG - INFO - KT_GREnergie_Flaechenobjekte: 'bool' object has no attribute 'keys'
+2022-10-27 22:13:04,118 - scraper LOG - INFO - KT_GREntsorgung_Punktobjekte: 'bool' object has no attribute 'keys'
+2022-10-27 22:13:04,134 - scraper LOG - INFO - KT_GREntsorgung_Linienobjekte: 'bool' object has no attribute 'keys'
+2022-10-27 22:13:04,142 - scraper LOG - INFO - KT_GREntsorgung_Flaechenobjekte: 'bool' object has no attribute 'keys'
+2022-10-27 22:13:04,158 - scraper LOG - INFO - KT_GRWasser_Punktobjekte: 'bool' object has no attribute 'keys'
+2022-10-27 22:13:04,166 - scraper LOG - INFO - KT_GRWasser_Linienobjekte: 'bool' object has no attribute 'keys'
+2022-10-27 22:13:04,182 - scraper LOG - INFO - KT_GRWasser_Flaechenobjekte: 'bool' object has no attribute 'keys'
+2022-10-27 22:13:04,198 - scraper LOG - INFO - KT_GRVerkehr_Punktobjekte: 'bool' object has no attribute 'keys'
+2022-10-27 22:13:04,206 - scraper LOG - INFO - KT_GRVerkehr_uebrige_Verkehrswege: 'bool' object has no attribute 'keys'
+2022-10-27 22:13:04,222 - scraper LOG - INFO - KT_GRVerkehr_Radwege: 'bool' object has no attribute 'keys'
+2022-10-27 22:13:04,238 - scraper LOG - INFO - KT_GRVerkehr_Fuss_Wanderwege: 'bool' object has no attribute 'keys'
+2022-10-27 22:13:04,254 - scraper LOG - INFO - KT_GRVerkehr_Strassen_und_Wege: 'bool' object has no attribute 'keys'
+2022-10-27 22:13:04,270 - scraper LOG - INFO - KT_GRVerkehr_Flaechenobjekte: 'bool' object has no attribute 'keys'
+2022-10-27 22:13:04,286 - scraper LOG - INFO - KT_GRPlanperimeter_GGP: 'bool' object has no attribute 'keys'
+2022-10-27 22:13:04,310 - scraper LOG - INFO - KT_GRPlaene_in_PDF_Form_GGP: 'bool' object has no attribute 'keys'
+2022-10-27 22:13:04,318 - scraper LOG - INFO - KT_GRAllgemeine_Planungsinhalte_Punktobjekte_GGP: 'bool' object has no attribute 'keys'
+2022-10-27 22:13:04,334 - scraper LOG - INFO - KT_GRAllgemeine_Planungsinhalte_Linienobjekte_GGP: 'bool' object has no attribute 'keys'
+2022-10-27 22:13:04,350 - scraper LOG - INFO - KT_GRAllgemeine_Planungsinhalte_Flaechenobjekte_GGP: 'bool' object has no attribute 'keys'
+2022-10-27 22:13:04,366 - scraper LOG - INFO - KT_GRGestaltungsanweisung_Punktobjekte: 'bool' object has no attribute 'keys'
+2022-10-27 22:13:04,382 - scraper LOG - INFO - KT_GRGestaltungsanweisung_Linienobjekte: 'bool' object has no attribute 'keys'
+2022-10-27 22:13:04,398 - scraper LOG - INFO - KT_GRGestaltungsanweisung_Flaechenobjekte: 'bool' object has no attribute 'keys'
+2022-10-27 22:13:04,414 - scraper LOG - INFO - KT_GRObjektschutz_Punktobjekte: 'bool' object has no attribute 'keys'
+2022-10-27 22:13:04,422 - scraper LOG - INFO - KT_GRObjektschutz_Linienobjekte: 'bool' object has no attribute 'keys'
+2022-10-27 22:13:04,438 - scraper LOG - INFO - KT_GRObjektschutz_Flaechenobjekte: 'bool' object has no attribute 'keys'
+2022-10-27 22:13:04,454 - scraper LOG - INFO - KT_GRGestaltungsbereiche: 'bool' object has no attribute 'keys'
+2022-10-27 22:13:04,470 - scraper LOG - INFO - KT_GRPlanperimeter_ZP: 'bool' object has no attribute 'keys'
+2022-10-27 22:13:04,478 - scraper LOG - INFO - KT_GRAllgemeine_Planungsinhalte_Punktobjekte_ZP: 'bool' object has no attribute 'keys'
+2022-10-27 22:13:04,502 - scraper LOG - INFO - KT_GRAllgemeine_Planungsinhalte_Linienobjekte_ZP: 'bool' object has no attribute 'keys'
+2022-10-27 22:13:04,510 - scraper LOG - INFO - KT_GRAllgemeine_Planungsinhalte_Flaecheninhalte_ZP: 'bool' object has no attribute 'keys'
+2022-10-27 22:13:04,526 - scraper LOG - INFO - KT_GRFestgelegte_Waldgrenzen: 'bool' object has no attribute 'keys'
+2022-10-27 22:13:04,550 - scraper LOG - INFO - KT_GRTouristische_Zonen_und_Freizeitzonen: 'bool' object has no attribute 'keys'
+2022-10-27 22:13:04,574 - scraper LOG - INFO - KT_GRGewaesserschutzzonen: 'bool' object has no attribute 'keys'
+2022-10-27 22:13:04,590 - scraper LOG - INFO - KT_GRGefahrenzonen: 'bool' object has no attribute 'keys'
+2022-10-27 22:13:04,606 - scraper LOG - INFO - KT_GRMaterialgewinnung_Materialablagerung_und_Energie: 'bool' object has no attribute 'keys'
+2022-10-27 22:13:04,622 - scraper LOG - INFO - KT_GRLand_und_forstwirtschaftliche_Nutzungen: 'bool' object has no attribute 'keys'
+2022-10-27 22:13:04,630 - scraper LOG - INFO - KT_GROrtsbild_und_Kulturgueterschutzzonen: 'bool' object has no attribute 'keys'
+2022-10-27 22:13:04,646 - scraper LOG - INFO - KT_GRSchutzzonen_fuer_besondere_Zwecke: 'bool' object has no attribute 'keys'
+2022-10-27 22:13:04,654 - scraper LOG - INFO - KT_GRNatur_und_Landschaftsschutzzonen: 'bool' object has no attribute 'keys'
+2022-10-27 22:13:04,678 - scraper LOG - INFO - KT_GRGrundnutzung_Aufstufung_ES: 'bool' object has no attribute 'keys'
+2022-10-27 22:13:04,694 - scraper LOG - INFO - KT_GRGrundnutzung: 'bool' object has no attribute 'keys'
+2022-10-27 22:13:04,694 - scraper LOG - INFO - Starting scraper  KT_GR with https://wms.geo.gr.ch/nutzungsplanungsstand 
+2022-10-27 22:13:04,983 - scraper LOG - INFO - KT_GRBasisinfo: 'bool' object has no attribute 'keys'
+2022-10-27 22:13:04,996 - scraper LOG - INFO - KT_GRStand der Digitalisierung: 'bool' object has no attribute 'keys'
+2022-10-27 22:13:05,020 - scraper LOG - INFO - KT_GRGemeindegrenzen: 'bool' object has no attribute 'keys'
+2022-10-27 22:13:05,036 - scraper LOG - INFO - KT_GRLaufende Arbeiten / Revisionen: 'bool' object has no attribute 'keys'
+2022-10-27 22:13:05,052 - scraper LOG - INFO - KT_GRLetzte abgeschlossene Bearbeitungen: 'bool' object has no attribute 'keys'
+2022-10-27 22:13:05,068 - scraper LOG - INFO - KT_GRDatenverwaltungsstellen und weitere Angaben: 'bool' object has no attribute 'keys'
+2022-10-27 22:13:05,084 - scraper LOG - INFO - KT_GRDarstellungsmodell: 'bool' object has no attribute 'keys'
+2022-10-27 22:13:05,084 - scraper LOG - INFO - Starting scraper  KT_GR with https://wms.geo.gr.ch/oberflaechengewaesser 
+2022-10-27 22:13:05,467 - scraper LOG - INFO - Starting scraper  KT_GR with https://wms.geo.gr.ch/pflanzen_pilzschutzgebiete 
+2022-10-27 22:13:05,799 - scraper LOG - INFO - Starting scraper  KT_GR with https://wms.geo.gr.ch/risikokataster 
+2022-10-27 22:13:06,151 - scraper LOG - INFO - Starting scraper  KT_GR with https://wms.geo.gr.ch/strassenlaermkataster 
+2022-10-27 22:13:06,470 - scraper LOG - INFO - Starting scraper  KT_GR with https://wms.geo.gr.ch/strassenlaermsanierungen 
+2022-10-27 22:13:06,808 - scraper LOG - INFO - Starting scraper  KT_GR with https://wms.geo.gr.ch/tektonische_karten 
+2022-10-27 22:13:07,211 - scraper LOG - INFO - Starting scraper  KT_GR with https://wms.geo.gr.ch/verkehrsmodell 
+2022-10-27 22:13:07,462 - scraper LOG - INFO - Starting scraper  KT_GR with https://wms.geo.gr.ch/walderschliessung 
+2022-10-27 22:13:07,771 - scraper LOG - INFO - Starting scraper  KT_GR with https://wms.geo.gr.ch/bauzonen_graubuenden 
+2022-10-27 22:13:08,034 - scraper LOG - INFO - Starting scraper  KT_GR with https://wms.geo.gr.ch/belastetestandorte 
+2022-10-27 22:13:08,294 - scraper LOG - INFO - Starting scraper  KT_GR with https://wms.geo.gr.ch/gewaesserschutz 
+2022-10-27 22:13:08,591 - scraper LOG - INFO - Starting scraper  KT_GR with https://wms.geo.gr.ch/grundwasser 
+2022-10-27 22:14:08,795 - scraper LOG - INFO - Starting scraper  KT_GR with https://wms.geo.gr.ch/nutzungsplanung 
+2022-10-27 22:14:09,185 - scraper LOG - INFO - KT_GRLärmempfindlichkeitsstufen: 'bool' object has no attribute 'keys'
+2022-10-27 22:14:09,185 - scraper LOG - INFO - KT_GRFolgeplanung: 'bool' object has no attribute 'keys'
+2022-10-27 22:14:09,193 - scraper LOG - INFO - KT_GRGenereller Erschliessungsplan: 'bool' object has no attribute 'keys'
+2022-10-27 22:14:09,201 - scraper LOG - INFO - KT_GRGenereller Gestaltungsplan: 'bool' object has no attribute 'keys'
+2022-10-27 22:14:09,201 - scraper LOG - INFO - KT_GRZonenplan: 'bool' object has no attribute 'keys'
+2022-10-27 22:14:09,209 - scraper LOG - INFO - KT_GRBau-/Niveaulinienpläne: 'bool' object has no attribute 'keys'
+2022-10-27 22:14:09,217 - scraper LOG - INFO - KT_GRQuartierpläne: 'bool' object has no attribute 'keys'
+2022-10-27 22:14:09,217 - scraper LOG - INFO - KT_GRArealpläne: 'bool' object has no attribute 'keys'
+2022-10-27 22:14:09,225 - scraper LOG - INFO - KT_GRGEP Planperimeter Verkehr und Werkanlagen: 'bool' object has no attribute 'keys'
+2022-10-27 22:14:09,233 - scraper LOG - INFO - KT_GRGEP Planperimeter Verkehr: 'bool' object has no attribute 'keys'
+2022-10-27 22:14:09,233 - scraper LOG - INFO - KT_GRGEP Planperimeter Werkanlagen: 'bool' object has no attribute 'keys'
+2022-10-27 22:14:09,241 - scraper LOG - INFO - KT_GRGEP Pläne in PDF-Form: 'bool' object has no attribute 'keys'
+2022-10-27 22:14:09,249 - scraper LOG - INFO - KT_GRGEP allg. Planungsinhalte Punktobjekte: 'bool' object has no attribute 'keys'
+2022-10-27 22:14:09,249 - scraper LOG - INFO - KT_GRGEP allg. Planungsinhalte Linienobjekte: 'bool' object has no attribute 'keys'
+2022-10-27 22:14:09,257 - scraper LOG - INFO - KT_GRGEP allg. Planungsinhalte Flächenobjekte: 'bool' object has no attribute 'keys'
+2022-10-27 22:14:09,257 - scraper LOG - INFO - KT_GRGEP Ausstattung Punktobjekte: 'bool' object has no attribute 'keys'
+2022-10-27 22:14:09,265 - scraper LOG - INFO - KT_GRGEP Ausstattung Linienobjekte: 'bool' object has no attribute 'keys'
+2022-10-27 22:14:09,265 - scraper LOG - INFO - KT_GRGEP Ausstattung Flächenobjekte: 'bool' object has no attribute 'keys'
+2022-10-27 22:14:09,273 - scraper LOG - INFO - KT_GRGEP Energie Punktobjekte: 'bool' object has no attribute 'keys'
+2022-10-27 22:14:09,281 - scraper LOG - INFO - KT_GRGEP Energie Linienobjekte: 'bool' object has no attribute 'keys'
+2022-10-27 22:14:09,289 - scraper LOG - INFO - KT_GRGEP Energie Flächenobjekte: 'bool' object has no attribute 'keys'
+2022-10-27 22:14:09,289 - scraper LOG - INFO - KT_GRGEP Entsorgung Punktobjekte: 'bool' object has no attribute 'keys'
+2022-10-27 22:14:09,289 - scraper LOG - INFO - KT_GRGEP Entsorgung Linienobjekte: 'bool' object has no attribute 'keys'
+2022-10-27 22:14:09,297 - scraper LOG - INFO - KT_GRGEP Entsorgung Flächenobjekte: 'bool' object has no attribute 'keys'
+2022-10-27 22:14:09,297 - scraper LOG - INFO - KT_GRGEP Wasser Punktobjekte: 'bool' object has no attribute 'keys'
+2022-10-27 22:14:09,305 - scraper LOG - INFO - KT_GRGEP Wasser Linienobjekte: 'bool' object has no attribute 'keys'
+2022-10-27 22:14:09,305 - scraper LOG - INFO - KT_GRGEP Wasser Flächenobjekte: 'bool' object has no attribute 'keys'
+2022-10-27 22:14:09,321 - scraper LOG - INFO - KT_GRGEP Verkehr Punktobjekte: 'bool' object has no attribute 'keys'
+2022-10-27 22:14:09,321 - scraper LOG - INFO - KT_GRGEP Verkehr übrige Verkehrswege: 'bool' object has no attribute 'keys'
+2022-10-27 22:14:09,321 - scraper LOG - INFO - KT_GRGEP Verkehr Radwege: 'bool' object has no attribute 'keys'
+2022-10-27 22:14:09,329 - scraper LOG - INFO - KT_GRGEP Verkehr Fuss-/Wanderwege: 'bool' object has no attribute 'keys'
+2022-10-27 22:14:09,329 - scraper LOG - INFO - KT_GRGEP Verkehr Strassen und Wege: 'bool' object has no attribute 'keys'
+2022-10-27 22:14:09,337 - scraper LOG - INFO - KT_GRGEP Verkehr Flächenobjekte: 'bool' object has no attribute 'keys'
+2022-10-27 22:14:09,345 - scraper LOG - INFO - KT_GRGGP Planperimeter: 'bool' object has no attribute 'keys'
+2022-10-27 22:14:09,345 - scraper LOG - INFO - KT_GRGGP Pläne in PDF-Form: 'bool' object has no attribute 'keys'
+2022-10-27 22:14:09,353 - scraper LOG - INFO - KT_GRGGP allg. Planungsinhalte Punktobjekte: 'bool' object has no attribute 'keys'
+2022-10-27 22:14:09,361 - scraper LOG - INFO - KT_GRGGP allg. Planungsinhalte Linienobjekte: 'bool' object has no attribute 'keys'
+2022-10-27 22:14:09,369 - scraper LOG - INFO - KT_GRGGP allg. Planungsinhalte Flächenobjekte: 'bool' object has no attribute 'keys'
+2022-10-27 22:14:09,369 - scraper LOG - INFO - KT_GRGGP Gestaltungsanweisung Punktobjekte: 'bool' object has no attribute 'keys'
+2022-10-27 22:14:09,369 - scraper LOG - INFO - KT_GRGGP Gestaltungsanweisung Linienobjekte: 'bool' object has no attribute 'keys'
+2022-10-27 22:14:09,377 - scraper LOG - INFO - KT_GRGGP Gestaltungsanweisung Flächenobjekte: 'bool' object has no attribute 'keys'
+2022-10-27 22:14:09,377 - scraper LOG - INFO - KT_GRGGP Objektschutz Punktobjekte: 'bool' object has no attribute 'keys'
+2022-10-27 22:14:09,385 - scraper LOG - INFO - KT_GRGGP Objektschutz Linienobjekte: 'bool' object has no attribute 'keys'
+2022-10-27 22:14:09,385 - scraper LOG - INFO - KT_GRGGP Objektschutz Flächenobjekte: 'bool' object has no attribute 'keys'
+2022-10-27 22:14:09,385 - scraper LOG - INFO - KT_GRGGP Gestaltungsbereiche: 'bool' object has no attribute 'keys'
+2022-10-27 22:14:09,393 - scraper LOG - INFO - KT_GRZP Planperimeter: 'bool' object has no attribute 'keys'
+2022-10-27 22:14:09,401 - scraper LOG - INFO - KT_GRZP allg. Planungsinhalte Punktobjekte: 'bool' object has no attribute 'keys'
+2022-10-27 22:14:09,401 - scraper LOG - INFO - KT_GRZP allg. Planungsinhalte Linienobjekte: 'bool' object has no attribute 'keys'
+2022-10-27 22:14:09,409 - scraper LOG - INFO - KT_GRZP allg. Planungsinhalte Flächenobjekte: 'bool' object has no attribute 'keys'
+2022-10-27 22:14:09,409 - scraper LOG - INFO - KT_GRZP festgelegte Waldgrenzen: 'bool' object has no attribute 'keys'
+2022-10-27 22:14:09,417 - scraper LOG - INFO - KT_GRZP touristische Zonen und Freizeitzonen: 'bool' object has no attribute 'keys'
+2022-10-27 22:14:09,417 - scraper LOG - INFO - KT_GRZP Gewässerschutzzonen: 'bool' object has no attribute 'keys'
+2022-10-27 22:14:09,417 - scraper LOG - INFO - KT_GRZP Gefahrenzonen: 'bool' object has no attribute 'keys'
+2022-10-27 22:14:09,425 - scraper LOG - INFO - KT_GRZP Materialgewinnung / Materialablagerung und Energie: 'bool' object has no attribute 'keys'
+2022-10-27 22:14:09,425 - scraper LOG - INFO - KT_GRZP land- und forstwirtschaftliche Nutzungen: 'bool' object has no attribute 'keys'
+2022-10-27 22:14:09,433 - scraper LOG - INFO - KT_GRZP Ortsbild- und Kulturgüterschutzzonen: 'bool' object has no attribute 'keys'
+2022-10-27 22:14:09,433 - scraper LOG - INFO - KT_GRZP Schutzzonen für besondere Zwecke: 'bool' object has no attribute 'keys'
+2022-10-27 22:14:09,441 - scraper LOG - INFO - KT_GRZP Natur- und Landschaftsschutzzonen: 'bool' object has no attribute 'keys'
+2022-10-27 22:14:09,441 - scraper LOG - INFO - KT_GRZP Grundnutzung - Aufstufung ES: 'bool' object has no attribute 'keys'
+2022-10-27 22:14:09,441 - scraper LOG - INFO - KT_GRZP Grundnutzung: 'bool' object has no attribute 'keys'
+2022-10-27 22:14:09,449 - scraper LOG - INFO - Starting scraper  KT_GR with https://wms.geo.gr.ch/nutzungsplanung_kommunal 
+2022-10-27 22:14:09,702 - scraper LOG - INFO - KT_GRLaermempfindlichkeitsstufen_: 'bool' object has no attribute 'keys'
+2022-10-27 22:14:09,718 - scraper LOG - INFO - KT_GRFolgeplanung_: 'bool' object has no attribute 'keys'
+2022-10-27 22:14:09,718 - scraper LOG - INFO - KT_GRGenereller_Erschliessungsplan_: 'bool' object has no attribute 'keys'
+2022-10-27 22:14:09,726 - scraper LOG - INFO - KT_GRGenereller_Gestaltungsplan_: 'bool' object has no attribute 'keys'
+2022-10-27 22:14:09,726 - scraper LOG - INFO - KT_GRZonenplan_: 'bool' object has no attribute 'keys'
+2022-10-27 22:14:09,734 - scraper LOG - INFO - KT_GRLaermempfindlichkeitsstufen: 'bool' object has no attribute 'keys'
+2022-10-27 22:14:09,742 - scraper LOG - INFO - KT_GRBau_Niveaulinienplaene: 'bool' object has no attribute 'keys'
+2022-10-27 22:14:09,750 - scraper LOG - INFO - KT_GRQuartierplaene: 'bool' object has no attribute 'keys'
+2022-10-27 22:14:09,750 - scraper LOG - INFO - KT_GRArealplaene: 'bool' object has no attribute 'keys'
+2022-10-27 22:14:09,758 - scraper LOG - INFO - KT_GRPlanperimeter_Verkehr_und_Werkanlagen: 'bool' object has no attribute 'keys'
+2022-10-27 22:14:09,758 - scraper LOG - INFO - KT_GRPlanperimeter_Verkehr: 'bool' object has no attribute 'keys'
+2022-10-27 22:14:09,766 - scraper LOG - INFO - KT_GRPlanperimeter_Werkanlagen: 'bool' object has no attribute 'keys'
+2022-10-27 22:14:09,774 - scraper LOG - INFO - KT_GRPlaene_in_PDF_Form_GEP: 'bool' object has no attribute 'keys'
+2022-10-27 22:14:09,790 - scraper LOG - INFO - KT_GRAllgemeine_Planungsinhalte_Punktobjekte_GEP: 'bool' object has no attribute 'keys'
+2022-10-27 22:14:09,798 - scraper LOG - INFO - KT_GRAllgemeine_Planungsinhalte_Linienobjekte_GEP: 'bool' object has no attribute 'keys'
+2022-10-27 22:14:09,814 - scraper LOG - INFO - KT_GRAllgemeine_Planungsinhalte_Flaechenobjekte_GEP: 'bool' object has no attribute 'keys'
+2022-10-27 22:14:09,838 - scraper LOG - INFO - KT_GRAusstattung_Punktobjekte: 'bool' object has no attribute 'keys'
+2022-10-27 22:14:09,862 - scraper LOG - INFO - KT_GRAusstattung_Linienobjekte: 'bool' object has no attribute 'keys'
+2022-10-27 22:14:09,902 - scraper LOG - INFO - KT_GRAusstattung_Flaechenobjekte: 'bool' object has no attribute 'keys'
+2022-10-27 22:14:09,934 - scraper LOG - INFO - KT_GREnergie_Punktobjekte: 'bool' object has no attribute 'keys'
+2022-10-27 22:14:09,950 - scraper LOG - INFO - KT_GREnergie_Linienobjekte: 'bool' object has no attribute 'keys'
+2022-10-27 22:14:09,966 - scraper LOG - INFO - KT_GREnergie_Flaechenobjekte: 'bool' object has no attribute 'keys'
+2022-10-27 22:14:09,974 - scraper LOG - INFO - KT_GREntsorgung_Punktobjekte: 'bool' object has no attribute 'keys'
+2022-10-27 22:14:09,990 - scraper LOG - INFO - KT_GREntsorgung_Linienobjekte: 'bool' object has no attribute 'keys'
+2022-10-27 22:14:10,006 - scraper LOG - INFO - KT_GREntsorgung_Flaechenobjekte: 'bool' object has no attribute 'keys'
+2022-10-27 22:14:10,014 - scraper LOG - INFO - KT_GRWasser_Punktobjekte: 'bool' object has no attribute 'keys'
+2022-10-27 22:14:10,030 - scraper LOG - INFO - KT_GRWasser_Linienobjekte: 'bool' object has no attribute 'keys'
+2022-10-27 22:14:10,038 - scraper LOG - INFO - KT_GRWasser_Flaechenobjekte: 'bool' object has no attribute 'keys'
+2022-10-27 22:14:10,054 - scraper LOG - INFO - KT_GRVerkehr_Punktobjekte: 'bool' object has no attribute 'keys'
+2022-10-27 22:14:10,062 - scraper LOG - INFO - KT_GRVerkehr_uebrige_Verkehrswege: 'bool' object has no attribute 'keys'
+2022-10-27 22:14:10,078 - scraper LOG - INFO - KT_GRVerkehr_Radwege: 'bool' object has no attribute 'keys'
+2022-10-27 22:14:10,086 - scraper LOG - INFO - KT_GRVerkehr_Fuss_Wanderwege: 'bool' object has no attribute 'keys'
+2022-10-27 22:14:10,102 - scraper LOG - INFO - KT_GRVerkehr_Strassen_und_Wege: 'bool' object has no attribute 'keys'
+2022-10-27 22:14:10,110 - scraper LOG - INFO - KT_GRVerkehr_Flaechenobjekte: 'bool' object has no attribute 'keys'
+2022-10-27 22:14:10,126 - scraper LOG - INFO - KT_GRPlanperimeter_GGP: 'bool' object has no attribute 'keys'
+2022-10-27 22:14:10,134 - scraper LOG - INFO - KT_GRPlaene_in_PDF_Form_GGP: 'bool' object has no attribute 'keys'
+2022-10-27 22:14:10,150 - scraper LOG - INFO - KT_GRAllgemeine_Planungsinhalte_Punktobjekte_GGP: 'bool' object has no attribute 'keys'
+2022-10-27 22:14:10,166 - scraper LOG - INFO - KT_GRAllgemeine_Planungsinhalte_Linienobjekte_GGP: 'bool' object has no attribute 'keys'
+2022-10-27 22:14:10,174 - scraper LOG - INFO - KT_GRAllgemeine_Planungsinhalte_Flaechenobjekte_GGP: 'bool' object has no attribute 'keys'
+2022-10-27 22:14:10,182 - scraper LOG - INFO - KT_GRGestaltungsanweisung_Punktobjekte: 'bool' object has no attribute 'keys'
+2022-10-27 22:14:10,198 - scraper LOG - INFO - KT_GRGestaltungsanweisung_Linienobjekte: 'bool' object has no attribute 'keys'
+2022-10-27 22:14:10,206 - scraper LOG - INFO - KT_GRGestaltungsanweisung_Flaechenobjekte: 'bool' object has no attribute 'keys'
+2022-10-27 22:14:10,222 - scraper LOG - INFO - KT_GRObjektschutz_Punktobjekte: 'bool' object has no attribute 'keys'
+2022-10-27 22:14:10,230 - scraper LOG - INFO - KT_GRObjektschutz_Linienobjekte: 'bool' object has no attribute 'keys'
+2022-10-27 22:14:10,246 - scraper LOG - INFO - KT_GRObjektschutz_Flaechenobjekte: 'bool' object has no attribute 'keys'
+2022-10-27 22:14:10,254 - scraper LOG - INFO - KT_GRGestaltungsbereiche: 'bool' object has no attribute 'keys'
+2022-10-27 22:14:10,270 - scraper LOG - INFO - KT_GRPlanperimeter_ZP: 'bool' object has no attribute 'keys'
+2022-10-27 22:14:10,278 - scraper LOG - INFO - KT_GRAllgemeine_Planungsinhalte_Punktobjekte_ZP: 'bool' object has no attribute 'keys'
+2022-10-27 22:14:10,286 - scraper LOG - INFO - KT_GRAllgemeine_Planungsinhalte_Linienobjekte_ZP: 'bool' object has no attribute 'keys'
+2022-10-27 22:14:10,302 - scraper LOG - INFO - KT_GRAllgemeine_Planungsinhalte_Flaecheninhalte_ZP: 'bool' object has no attribute 'keys'
+2022-10-27 22:14:10,318 - scraper LOG - INFO - KT_GRFestgelegte_Waldgrenzen: 'bool' object has no attribute 'keys'
+2022-10-27 22:14:10,326 - scraper LOG - INFO - KT_GRTouristische_Zonen_und_Freizeitzonen: 'bool' object has no attribute 'keys'
+2022-10-27 22:14:10,342 - scraper LOG - INFO - KT_GRGewaesserschutzzonen: 'bool' object has no attribute 'keys'
+2022-10-27 22:14:10,350 - scraper LOG - INFO - KT_GRGefahrenzonen: 'bool' object has no attribute 'keys'
+2022-10-27 22:14:10,366 - scraper LOG - INFO - KT_GRMaterialgewinnung_Materialablagerung_und_Energie: 'bool' object has no attribute 'keys'
+2022-10-27 22:14:10,382 - scraper LOG - INFO - KT_GRLand_und_forstwirtschaftliche_Nutzungen: 'bool' object has no attribute 'keys'
+2022-10-27 22:14:10,398 - scraper LOG - INFO - KT_GROrtsbild_und_Kulturgueterschutzzonen: 'bool' object has no attribute 'keys'
+2022-10-27 22:14:10,406 - scraper LOG - INFO - KT_GRSchutzzonen_fuer_besondere_Zwecke: 'bool' object has no attribute 'keys'
+2022-10-27 22:14:10,422 - scraper LOG - INFO - KT_GRNatur_und_Landschaftsschutzzonen: 'bool' object has no attribute 'keys'
+2022-10-27 22:14:10,430 - scraper LOG - INFO - KT_GRGrundnutzung_Aufstufung_ES: 'bool' object has no attribute 'keys'
+2022-10-27 22:14:10,446 - scraper LOG - INFO - KT_GRGrundnutzung: 'bool' object has no attribute 'keys'
+2022-10-27 22:14:10,446 - scraper LOG - INFO - Starting scraper  KT_GR with https://wms.geo.gr.ch/nutzungsplanungsstand 
+2022-10-27 22:14:10,707 - scraper LOG - INFO - KT_GRBasisinfo: 'bool' object has no attribute 'keys'
+2022-10-27 22:14:10,715 - scraper LOG - INFO - KT_GRStand der Digitalisierung: 'bool' object has no attribute 'keys'
+2022-10-27 22:14:10,731 - scraper LOG - INFO - KT_GRGemeindegrenzen: 'bool' object has no attribute 'keys'
+2022-10-27 22:14:10,747 - scraper LOG - INFO - KT_GRLaufende Arbeiten / Revisionen: 'bool' object has no attribute 'keys'
+2022-10-27 22:14:10,755 - scraper LOG - INFO - KT_GRLetzte abgeschlossene Bearbeitungen: 'bool' object has no attribute 'keys'
+2022-10-27 22:14:10,763 - scraper LOG - INFO - KT_GRDatenverwaltungsstellen und weitere Angaben: 'bool' object has no attribute 'keys'
+2022-10-27 22:14:10,779 - scraper LOG - INFO - KT_GRDarstellungsmodell: 'bool' object has no attribute 'keys'
+2022-10-27 22:14:10,779 - scraper LOG - INFO - Starting scraper  KT_GR with https://wms.geo.gr.ch/oberflaechengewaesser 
+2022-10-27 22:14:43,840 - scraper LOG - INFO - Starting scraper  KT_GR with https://wms.geo.gr.ch/nutzungsplanung 
+2022-10-27 22:14:58,556 - scraper LOG - INFO - Starting scraper  KT_GR with https://wms.geo.gr.ch/nutzungsplanung 
+2022-10-27 22:15:16,444 - scraper LOG - INFO - KT_GRLärmempfindlichkeitsstufen: 'bool' object has no attribute 'keys'
+2022-10-27 22:15:29,019 - scraper LOG - INFO - Starting scraper  KT_GR with https://wms.geo.gr.ch/nutzungsplanung 
+2022-10-27 22:18:01,708 - scraper LOG - INFO - Starting scraper  KT_GR with https://wms.geo.gr.ch/nutzungsplanung 
+2022-10-27 22:18:23,944 - scraper LOG - INFO - Starting scraper  KT_GR with https://wms.geo.gr.ch/nutzungsplanung 
+2022-10-27 22:19:42,338 - scraper LOG - INFO - Starting scraper  KT_GR with https://wms.geo.gr.ch/nutzungsplanung 
+2022-10-27 22:23:05,617 - scraper LOG - INFO - Starting scraper  KT_TI with https://wmts.geo.ti.ch/wmts/1.0.0/WMTSCapabilities.xml 
+2022-10-27 22:23:06,031 - scraper LOG - INFO - Starting scraper  KT_BE with http://www.geoservice.apps.be.ch/geoservice2/services/a42geo/a42geo_basiswms_d_fk/MapServer/WMSServer 
+2022-10-27 22:23:06,472 - scraper LOG - INFO - Starting scraper  KT_BE with http://www.geoservice.apps.be.ch/geoservice2/services/a42geo/a42geo_grenzenwms_d_fk/MapServer/WMSServer 
+2022-10-27 22:23:07,163 - scraper LOG - INFO - Starting scraper  KT_BE with http://www.geoservice.apps.be.ch/geoservice2/services/a42geo/a42geo_planungwms_d_fk/MapServer/WMSServer 
+2022-10-27 22:23:07,832 - scraper LOG - INFO - Starting scraper  KT_BE with http://www.geoservice.apps.be.ch/geoservice2/services/a42geo/a42geo_umweltwms_d_fk/MapServer/WMSServer 
+2022-10-27 22:23:08,354 - scraper LOG - INFO - Starting scraper  KT_BE with http://www.geoservice.apps.be.ch/geoservice2/services/a42geo/a42geo_geologiewms_d_fk/MapServer/WMSServer 
+2022-10-27 22:23:08,870 - scraper LOG - INFO - Starting scraper  KT_BE with http://www.geoservice.apps.be.ch/geoservice2/services/a42geo/a42geo_gewaesserwms_d_fk/MapServer/WMSServer 
+2022-10-27 22:23:09,479 - scraper LOG - INFO - Starting scraper  KT_BE with http://www.geoservice.apps.be.ch/geoservice2/services/a42geo/a42geo_transportwms_d_fk/MapServer/WMSServer 
+2022-10-27 22:23:09,941 - scraper LOG - INFO - Starting scraper  KT_BE with https://www.geoservice.apps.be.ch/geoservice2/services/a42geo/a42geo_klimawms_d_fk/MapServer/WMSServer? 
+2022-10-27 22:23:10,285 - scraper LOG - INFO - Starting scraper  KT_BE with https://www.geoservice.apps.be.ch/geoservice2/services/a42geo/a42geo_gesellschaftwms_d_fk/MapServer/WMSServer? 
+2022-10-27 22:23:10,635 - scraper LOG - INFO - Starting scraper  KT_BE with https://www.geoservice.apps.be.ch/geoservice2/services/a42geo/a42geo_bauwms_d_fk/MapServer/WMSServer? 
+2022-10-27 22:23:10,886 - scraper LOG - INFO - Starting scraper  KT_BE with https://www.geoservice.apps.be.ch/geoservice2/services/a42geo/a42geo_hoehenwms_d_fk/MapServer/WMSServer? 
+2022-10-27 22:23:11,214 - scraper LOG - INFO - Starting scraper  KT_BE with https://www.geoservice.apps.be.ch/geoservice2/services/a42geo/a42geo_agrarwms_d_fk/MapServer/WMSServer? 
+2022-10-27 22:23:11,503 - scraper LOG - INFO - Starting scraper  KT_BE with https://www.geoservice.apps.be.ch/geoservice2/services/a42geo/a42geo_ortwms_d_fk/MapServer/WMSServer? 
+2022-10-27 22:23:11,776 - scraper LOG - INFO - Starting scraper  KT_BE with https://www.geoservice.apps.be.ch/geoservice2/services/a42geo/a42geo_versorgungwms_d_fk/MapServer/WMSServer? 
+2022-10-27 22:23:12,075 - scraper LOG - INFO - Starting scraper  KT_BE with https://www.geoservice.apps.be.ch/geoservice2/services/a42geo/a42geo_florafaunawms_d_fk/MapServer/WMSServer? 
+2022-10-27 22:23:12,381 - scraper LOG - INFO - Starting scraper  KT_BE with https://www.geoservice.apps.be.ch/geoservice2/services/a42geo/a42geo_wirtschaftwms_d_fk/MapServer/WMSServer? 
+2022-10-27 22:23:12,642 - scraper LOG - INFO - Starting scraper  KT_BE with https://oerebservice.apps.be.ch/cgi-bin/mapserv.fcgi?map=oereb_de 
+2022-10-27 22:23:13,125 - scraper LOG - INFO - Starting scraper  KT_GR with https://wms.geo.gr.ch/admineinteilung 
+2022-10-27 22:23:13,560 - scraper LOG - INFO - Starting scraper  KT_GR with https://wms.geo.gr.ch/regionen 
+2022-10-27 22:23:13,936 - scraper LOG - INFO - Starting scraper  KT_GR with https://wms.geo.gr.ch/basisinfo 
+2022-10-27 22:23:14,227 - scraper LOG - INFO - Starting scraper  KT_GR with https://wms.geo.gr.ch/basisplan 
+2022-10-27 22:23:14,513 - scraper LOG - INFO - Starting scraper  KT_GR with https://wms.geo.gr.ch/erdwaermenutzung 
+2022-10-27 22:23:14,757 - scraper LOG - INFO - Starting scraper  KT_GR with https://wms.geo.gr.ch/fruchtfolgeflaechen 
+2022-10-27 22:23:15,033 - scraper LOG - INFO - Starting scraper  KT_GR with https://wms.geo.gr.ch/gebaeudeinformation 
+2022-10-27 22:23:15,304 - scraper LOG - INFO - Starting scraper  KT_GR with https://wms.geo.gr.ch/geologie 
+2022-10-27 22:23:15,785 - scraper LOG - INFO - Starting scraper  KT_GR with https://wms.geo.gr.ch/geologische_karten 
+2022-10-27 22:23:16,087 - scraper LOG - INFO - Starting scraper  KT_GR with https://wms.geo.gr.ch/hydrogeologische_karten 
+2022-10-27 22:23:16,404 - scraper LOG - INFO - Starting scraper  KT_GR with https://wms.geo.gr.ch/jagdkarte 
+2022-10-27 22:23:16,704 - scraper LOG - INFO - Starting scraper  KT_GR with https://wms.geo.gr.ch/kantonalesstrassennetz 
+2022-10-27 22:23:17,012 - scraper LOG - INFO - Starting scraper  KT_GR with https://wms.geo.gr.ch/kstn_strassenentwaesserung 
+2022-10-27 22:23:17,321 - scraper LOG - INFO - Starting scraper  KT_GR with https://wms.geo.gr.ch/lw_bewirtschaftung 
+2022-10-27 22:23:17,731 - scraper LOG - INFO - Starting scraper  KT_GR with https://wms.geo.gr.ch/langsamverkehr 
+2022-10-27 22:23:18,104 - scraper LOG - INFO - Starting scraper  KT_GR with https://wms.geo.gr.ch/verbauungen 
+2022-10-27 22:23:18,434 - scraper LOG - INFO - Starting scraper  KT_GR with https://wms.geo.gr.ch/naturgefahrenkarte 
+2022-10-27 22:23:18,780 - scraper LOG - INFO - Starting scraper  KT_GR with https://wms.geo.gr.ch/nutzungsplanung 
+2022-10-27 22:23:19,175 - scraper LOG - INFO - Starting scraper  KT_GR with https://wms.geo.gr.ch/nutzungsplanung_kommunal 
+2022-10-27 22:23:23,988 - scraper LOG - INFO - Starting scraper  KT_GR with https://wms.geo.gr.ch/nutzungsplanungsstand 
+2022-10-27 22:23:24,293 - scraper LOG - INFO - Starting scraper  KT_GR with https://wms.geo.gr.ch/oberflaechengewaesser 
+2022-10-27 22:23:24,636 - scraper LOG - INFO - Starting scraper  KT_GR with https://wms.geo.gr.ch/pflanzen_pilzschutzgebiete 
+2022-10-27 22:23:24,878 - scraper LOG - INFO - Starting scraper  KT_GR with https://wms.geo.gr.ch/risikokataster 
+2022-10-27 22:23:25,172 - scraper LOG - INFO - Starting scraper  KT_GR with https://wms.geo.gr.ch/strassenlaermkataster 
+2022-10-27 22:23:25,488 - scraper LOG - INFO - Starting scraper  KT_GR with https://wms.geo.gr.ch/strassenlaermsanierungen 
+2022-10-27 22:23:25,801 - scraper LOG - INFO - Starting scraper  KT_GR with https://wms.geo.gr.ch/tektonische_karten 
+2022-10-27 22:23:26,174 - scraper LOG - INFO - Starting scraper  KT_GR with https://wms.geo.gr.ch/verkehrsmodell 
+2022-10-27 22:23:26,443 - scraper LOG - INFO - Starting scraper  KT_GR with https://wms.geo.gr.ch/walderschliessung 
+2022-10-27 22:23:26,756 - scraper LOG - INFO - Starting scraper  KT_GR with https://wms.geo.gr.ch/bauzonen_graubuenden 
+2022-10-27 22:23:27,014 - scraper LOG - INFO - Starting scraper  KT_GR with https://wms.geo.gr.ch/belastetestandorte 
+2022-10-27 22:23:27,243 - scraper LOG - INFO - Starting scraper  KT_GR with https://wms.geo.gr.ch/gewaesserschutz 
+2022-10-27 22:23:27,527 - scraper LOG - INFO - Starting scraper  KT_GR with https://wms.geo.gr.ch/grundwasser 
+2022-10-27 22:23:27,814 - scraper LOG - INFO - Starting scraper  KT_GR with https://wms.geo.gr.ch/historischekarten 
+2022-10-27 22:23:28,123 - scraper LOG - INFO - Starting scraper  KT_GR with https://wms.geo.gr.ch/landwirtschaft 
+2022-10-27 22:23:28,220 - scraper LOG - INFO - KT_GR with https://wms.geo.gr.ch/landwirtschaft aborted
+2022-10-27 22:23:28,236 - scraper LOG - INFO - Starting scraper  KT_GR with https://wms.geo.gr.ch/naturgefahren_erfassungsbereiche 
+2022-10-27 22:23:28,496 - scraper LOG - INFO - Starting scraper  KT_GR with https://wms.geo.gr.ch/naturschutz 
+2022-10-27 22:23:28,803 - scraper LOG - INFO - Starting scraper  KT_GR with https://wms.geo.gr.ch/rrip_bregaglia 
+2022-10-27 22:23:29,302 - scraper LOG - INFO - Starting scraper  KT_GR with https://wms.geo.gr.ch/rrip_davos 
+2022-10-27 22:23:29,840 - scraper LOG - INFO - Starting scraper  KT_GR with https://wms.geo.gr.ch/rrip_mesolcina 
+2022-10-27 22:23:30,194 - scraper LOG - INFO - Starting scraper  KT_GR with https://wms.geo.gr.ch/rrip_mittelbuenden 
+2022-10-27 22:23:30,608 - scraper LOG - INFO - Starting scraper  KT_GR with https://wms.geo.gr.ch/rrip_nordbuenden 
+2022-10-27 22:23:31,239 - scraper LOG - INFO - Starting scraper  KT_GR with https://wms.geo.gr.ch/rrip_oberengadin 
+2022-10-27 22:23:31,803 - scraper LOG - INFO - Starting scraper  KT_GR with https://wms.geo.gr.ch/rrip_praettigau 
+2022-10-27 22:23:32,151 - scraper LOG - INFO - Starting scraper  KT_GR with https://wms.geo.gr.ch/rrip_unterengadin 
+2022-10-27 22:23:32,586 - scraper LOG - INFO - Starting scraper  KT_GR with https://wms.geo.gr.ch/rrip_regioviamala 
+2022-10-27 22:23:32,933 - scraper LOG - INFO - Starting scraper  KT_GR with https://wms.geo.gr.ch/regionen 
+2022-10-27 22:23:33,316 - scraper LOG - INFO - Starting scraper  KT_GR with https://wms.geo.gr.ch/schutzwald 
+2022-10-27 22:23:33,578 - scraper LOG - INFO - Starting scraper  KT_GR with https://wms.geo.gr.ch/seilbahnen 
+2022-10-27 22:23:33,839 - scraper LOG - INFO - Starting scraper  KT_GR with https://wms.geo.gr.ch/amtlichevermessung_stand 
+2022-10-27 22:23:34,132 - scraper LOG - INFO - Starting scraper  KT_GR with https://wms.geo.gr.ch/amtlichevermessung 
+2022-10-27 22:23:34,487 - scraper LOG - INFO - Starting scraper  KT_GR with https://wms.geo.gr.ch/waldentwicklungsplan 
+2022-10-27 22:23:34,801 - scraper LOG - INFO - Starting scraper  KT_GR with https://wms.geo.gr.ch/wildruhezonen 
+2022-10-27 22:23:35,080 - scraper LOG - INFO - Starting scraper  KT_GR with https://wms.geo.gr.ch/wildschutzgebiete 
+2022-10-27 22:23:35,371 - scraper LOG - INFO - Starting scraper  KT_GR with https://wms.geo.gr.ch/richtplan 
+2022-10-27 22:23:35,837 - scraper LOG - INFO - Starting scraper  KT_GR with https://wms.geo.gr.ch/uebersichtsplan 
+2022-10-27 22:23:36,115 - scraper LOG - INFO - Starting scraper  INT_ECMWF with https://apps.ecmwf.int/wms/?token=public trying DEFAULT scraper 
+2022-10-27 22:23:39,717 - scraper LOG - INFO - Starting scraper  KT_ZH with https://wms.zh.ch/ArchWMS 
+2022-10-27 22:23:40,038 - scraper LOG - INFO - Starting scraper  KT_ZH with https://wms.zh.ch/TBA9ZHWMS 
+2022-10-27 22:23:40,371 - scraper LOG - INFO - Starting scraper  KT_ZH with https://wms.zh.ch/TbaBaustellenZHWMS 
+2022-10-27 22:23:40,673 - scraper LOG - INFO - Starting scraper  KT_ZH with https://wms.zh.ch/TBAAnlagenZHWMS 
+2022-10-27 22:23:40,927 - scraper LOG - INFO - Starting scraper  KT_ZH with https://wms.zh.ch/DenkmalschutzWMS 
+2022-10-27 22:23:41,194 - scraper LOG - INFO - Starting scraper  KT_ZH with https://wms.zh.ch/HaltestellenZHWMS 
+2022-10-27 22:23:41,440 - scraper LOG - INFO - Starting scraper  KT_ZH with https://wms.zh.ch/WaldWNBZHWMS 
+2022-10-27 22:23:41,703 - scraper LOG - INFO - Starting scraper  KT_ZH with https://wms.zh.ch/OrtsbildschutzZHWMS 
+2022-10-27 22:23:42,148 - scraper LOG - INFO - Starting scraper  KT_ZH with https://wms.zh.ch/FnsLRKZHWMS 
+2022-10-27 22:23:42,565 - scraper LOG - INFO - Starting scraper  KT_ZH with https://wms.zh.ch/WaldSWZHWMS 
+2022-10-27 22:23:42,855 - scraper LOG - INFO - Starting scraper  KT_ZH with https://wms.zh.ch/TBAStr3ZHWMS 
+2022-10-27 22:23:43,123 - scraper LOG - INFO - Starting scraper  KT_ZH with https://wms.zh.ch/TBAStr2ZHWMS 
+2022-10-27 22:23:43,388 - scraper LOG - INFO - Starting scraper  KT_ZH with https://wms.zh.ch/TBAStr1ZHWMS 
+2022-10-27 22:23:43,641 - scraper LOG - INFO - Starting scraper  KT_ZH with https://wms.zh.ch/ZVVZHWMS 
+2022-10-27 22:23:43,908 - scraper LOG - INFO - Starting scraper  KT_ZH with https://wms.zh.ch/AFVTempo30ZHWMS 
+2022-10-27 22:23:44,205 - scraper LOG - INFO - Starting scraper  KT_ZH with https://wms.zh.ch/WaldVKWMS 
+2022-10-27 22:23:44,459 - scraper LOG - INFO - Starting scraper  KT_ZH with https://wms.zh.ch/VeloinfrastrukturZHWMS 
+2022-10-27 22:23:44,736 - scraper LOG - INFO - Starting scraper  KT_ZH with https://wms.zh.ch/VelonetzZHWMS 
+2022-10-27 22:23:45,093 - scraper LOG - INFO - Starting scraper  KT_ZH with https://wms.zh.ch/VeloparkieranlagenZHWMS 
+2022-10-27 22:23:45,374 - scraper LOG - INFO - Starting scraper  KT_ZH with https://wms.zh.ch/TBAVMSZHWMS 
+2022-10-27 22:23:45,668 - scraper LOG - INFO - Starting scraper  KT_ZH with https://wms.zh.ch/WaldarealZHWMS 
+2022-10-27 22:23:45,920 - scraper LOG - INFO - Starting scraper  KT_ZH with https://wms.zh.ch/WildkarteZHWMS 
+2022-10-27 22:23:46,175 - scraper LOG - INFO - Starting scraper  KT_ZH with https://wms.zh.ch/FnsLWZHWMS 
+2022-10-27 22:23:46,495 - scraper LOG - INFO - Starting scraper  KT_ZH with https://wms.zh.ch/FNSOEQVZHWMS 
+2022-10-27 22:23:46,813 - scraper LOG - INFO - Starting scraper  KT_ZH with https://wms.zh.ch/FNSLRPZHWMS 
+2022-10-27 22:23:47,105 - scraper LOG - INFO - Starting scraper  KT_ZH with https://wms.zh.ch/FnsSVOZHWMS 
+2022-10-27 22:23:47,443 - scraper LOG - INFO - Starting scraper  KT_ZH with https://wms.zh.ch/FnsInvZHWMS 
+2022-10-27 22:23:47,751 - scraper LOG - INFO - Starting scraper  KT_ZH with https://wms.zh.ch/kkgeo_gws_zh 
+2022-10-27 22:23:48,054 - scraper LOG - INFO - scraper completed

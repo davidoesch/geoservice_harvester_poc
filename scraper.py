@@ -170,7 +170,7 @@ def write_service_info(source,service,i,layertree, group):
 
     except Exception as e_request:
         log_file = open(os.path.join(config.DEAD_SERVICES_PATH,source['Description']+"_error.txt"),  'a+')
-        log_file.write(source['Description']+i+": "+str(e_request)+"\n")
+        log_file.write(source['Description']+" "+source['URL']+" "+i+": "+str(e_request)+"\n")
         log_file.close()
         logger.info(source['Description']+i+": "+str(e_request))
         print (e_request)
