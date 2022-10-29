@@ -4,8 +4,7 @@
 def scrape(source,service,i,layertree, group,layer_data,prefix):
     #breakpoint()
     type=service.identification.type
-    if  "WMS" in type:
-        
+    if  "WMS" in type:   
         layer_data["OWNER"]= source['Description']
         layer_data["TITLE"]= service.contents[i].title
         layer_data["NAME"]= service.contents[i].name

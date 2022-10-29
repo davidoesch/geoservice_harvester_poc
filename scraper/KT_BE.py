@@ -30,8 +30,8 @@ def scrape(source,service,i,layertree, group,layer_data,prefix):
         layer_data["CENTER_LAT"]=(service[i].boundingBoxWGS84[1]+service[i].boundingBoxWGS84[3])/2
         layer_data["CENTER_LON"]=(service[i].boundingBoxWGS84[0]+service[i].boundingBoxWGS84[2])/2
         layer_data["BBOX"]=' '.join([str(elem) for elem in (service.contents[i].boundingBox)])
-        layer_data["MAPGEO"]= r""+prefix+"layers="+layer_data["SERVICETYPE"]+\
-            "||"+service.contents[i].id+"||"+service.url+"?||"+service.contents[i].id+"||"\
+        layer_data["MAPGEO"]= r""+prefix+"layers=WMS"+\
+            "||"+service.contents[i].title+"||"+service.url+"?||"+service.contents[i].id+"||"\
             +service.identification.version+"&swisssearch="+str(layer_data["CENTER_LAT"])+\
             "%20"+str(layer_data["CENTER_LON"])+"&zoom="+str(layer_data["MAX_ZOOM"])
         return(layer_data)
@@ -41,5 +41,3 @@ def scrape(source,service,i,layertree, group,layer_data,prefix):
         print("STAC detetcted ..add config")
     else:
         return(False)        
-
-    
