@@ -18,6 +18,8 @@
 "KT_BE","https://www.geoservice.apps.be.ch/geoservice2/services/a42geo/a42geo_florafaunawms_d_fk/MapServer/WMSServer?"
 "KT_BE","https://www.geoservice.apps.be.ch/geoservice2/services/a42geo/a42geo_wirtschaftwms_d_fk/MapServer/WMSServer?"
 "KT_BE","https://oerebservice.apps.be.ch/cgi-bin/mapserv.fcgi?map=oereb_de"
+"KT_GL","https://wms.geo.gl.ch/?SERVICE=WMS&VERSION=1.3.0&REQUEST=GetCapabilities"
+"KT_GL","http://csw.geo.gl.ch/?service=CSW&version=2.0.2&request=GetCapabilities"
 "KT_GR","https://wms.geo.gr.ch/admineinteilung"
 "KT_GR","https://wms.geo.gr.ch/regionen"
 "KT_GR","https://wms.geo.gr.ch/basisinfo"
