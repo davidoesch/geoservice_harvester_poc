@@ -56,7 +56,7 @@ This data is generated and validated daily using automated procedures. Note that
 
 ## Current status Provider & Services
 
-| Canton/FL 	| Status 	| Notes 	|
+| Provider 	| Status 	| Notes 	|
 |:---------:	|--------	|-------	|
 |     AG    	|  ![ok](https://placehold.jp/b8e186/000000/200x50.png?text=WMS 'ok')      	|      	|
 |     AI    	|        	|       	|
