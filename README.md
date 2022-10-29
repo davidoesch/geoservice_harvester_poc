@@ -66,7 +66,7 @@ This data is generated and validated daily using automated procedures. Note that
 |     BS    	|        	|       	|
 |     FR    	|        	|       	|
 |     GE    	|        	|       	|
-|     GL    	|  ![ok](https://placehold.jp/b8e186/000000/200x50.png?text=WMS-WFS 'ok')      	|      	|
+|     GL    	|  ![ok](https://placehold.jp/de77ae/000000/200x50.png?text=WMS-WFS 'ok')      	|  Drops WFS warnings, seems to be ok see error log in /tools     	|
 |     GR    	|  ![ok](https://placehold.jp/b8e186/000000/200x50.png?text=WMS-WFS 'ok')      	|      	|
 |     JU    	|        	|       	|
 |     LU    	|        	|       	|
