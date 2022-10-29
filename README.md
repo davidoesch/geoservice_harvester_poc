@@ -66,7 +66,7 @@ This data is generated and validated daily using automated procedures. Note that
 |     BS    	|        	|       	|
 |     FR    	|        	|       	|
 |     GE    	|        	|       	|
-|     GL    	|        	|       	|
+|     GL    	|  ![ok](https://placehold.jp/b8e186/000000/200x50.png?text=WMS-WFS 'ok')      	|      	|
 |     GR    	|  ![ok](https://placehold.jp/b8e186/000000/200x50.png?text=WMS-WFS 'ok')      	|      	|
 |     JU    	|        	|       	|
 |     LU    	|        	|       	|
