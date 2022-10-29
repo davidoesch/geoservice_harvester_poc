@@ -54,7 +54,7 @@ This data is generated and validated daily using automated procedures. Note that
 3. Adapt the scraper configuration file. Recommended procedure: Add a breakpoint on the first run, follow your nose to find the correct keys.Don't add parameters
 4. Pray
 
-## Current status WMS WMTS Services
+## Current status Provider & Services
 
 | Canton/FL 	| Status 	| Notes 	|
 |:---------:	|--------	|-------	|
