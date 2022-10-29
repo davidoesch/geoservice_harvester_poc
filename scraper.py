@@ -4,6 +4,7 @@ import requests
 import csv
 from owslib.wms import WebMapService
 from owslib.wmts import WebMapTileService
+from owslib.wfs import WebFeatureService
 import sys
 import logging
 import configuration as config
@@ -11,6 +12,12 @@ import importlib
 import glob
 sys.path.insert(0,config.SOURCE_SCRAPER_DIR)
 
+def service_result_empty():
+    SERVICE_RESULT={"OWNER":"n.a.","TITLE":"n.a","NAME":"n.a","MAPGEO":"n.a.","TREE":"n.a.","GROUP":"","ABSTRACT":"n.a",
+    "KEYWORDS":"n.a.","LEGEND":"n.a.","CONTACT":"n.a.","SERVICELINK":"n.a.",
+    "METADATA":"n.a.","UPDATE":"n.a.","LEGEND":"n.a.","SERVICETYPE":"n.a.","MAX_ZOOM":"n.a.",
+    "CENTER_LAT":"n.a.","CENTER_LON":"n.a.","MAPGEO":"n.a.","BBOX":"n.a."}
+    return SERVICE_RESULT
 
 def load_source_collection():
     """Function to open the file of sources and to load all
@@ -64,12 +71,16 @@ def get_service_info(source):
     Variable for each layer
     """
     try:
-        #Testing if WMS or WMTS
+        #Testing if WMS or WMTS/WFS
         try:
             service = WebMapService(source['URL'])
             child=True #assuming that wms can child/parent relation
         except:
-            service = WebMapTileService(source['URL'])
+            child=False #assuming that wmts can't have child/parent relation
+            try:
+                service = WebMapTileService(source['URL'])
+            except:
+                service = WebFeatureService(source['URL'], version='1.1.0') #Seems like owslib only supports 1.1.0 currently
             child=False #assuming that wmts can't have child/parent relation
        
         #extract all layer names
@@ -130,13 +141,11 @@ def write_service_info(source,service,i,layertree, group):
     String  with tree
     String  with Groupname  
     """
+    #Load Empty parameter list
+    layer_data=service_result_empty()
     
-     
     #print(i)
     try:
-        #Load Empty parameter list
-        layer_data=(config.SERVICE_RESULT)
-
         #check if custom scraper is available
         scraper_spec = importlib.util.find_spec(source['Description'])
 
@@ -158,6 +167,7 @@ def write_service_info(source,service,i,layertree, group):
                                             delimiter=",", quotechar='"',
                                             lineterminator="\n")
                 dict_writer.writerow(layer_data)
+                
         else:
             with open(config.GEOSERVICES_CH_CSV, "w", encoding="utf-8") as f:
                 dict_writer = csv.DictWriter(f, fieldnames=list(layer_data.keys()),
@@ -165,7 +175,7 @@ def write_service_info(source,service,i,layertree, group):
                                             lineterminator="\n")
                 dict_writer.writeheader()
                 dict_writer.writerow(layer_data)
-       
+                
         return True
 
     except Exception as e_request:
