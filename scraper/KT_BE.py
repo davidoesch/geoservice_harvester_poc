@@ -12,7 +12,7 @@ def scrape(source,service,i,layertree, group,layer_data,prefix):
         layer_data["NAME"]= service.contents[i].name
         layer_data["TREE"]= layertree
         layer_data["GROUP"]= group if group != 0 else ""
-        #Catch Bern PArnet grouping
+        #Catch Bern OEREB grouping
         if  service.contents[i].parent is not None and service.contents[i].parent.abstract is not None:
             temp=service.contents[i].abstract+" "+service.contents[i].parent.abstract
         else:

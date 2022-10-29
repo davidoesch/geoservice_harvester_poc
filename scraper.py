@@ -70,6 +70,7 @@ def get_service_info(source):
     Returns:
     Variable for each layer
     """
+    
     try:
         #Testing if WMS or WMTS/WFS
         try:
