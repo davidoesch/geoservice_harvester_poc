@@ -1,7 +1,7 @@
 #Project specific stuff
-geoservices_CH.csv
-debug.log
-*error.txt
+data\geoservices_CH.csv
+tools\debug.log
+tools\*error.txt
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
