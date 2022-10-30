@@ -75,7 +75,7 @@ This data is generated and validated daily using automated procedures. Note that
 |     OW    	|        	|       	|
 |     SG    	|        	|       	|
 |     SH    	|        	|       	|
-|     SO    	|        	|       	|
+|     SO    	|  ![ok](https://placehold.jp/b8e186/000000/200x50.png?text=WMS-WFS-WMTS 'ok')      	|      	|
 |     SZ    	|        	|       	|
 |     TG    	|        	|       	|
 |     TI    	|        	|       	|
