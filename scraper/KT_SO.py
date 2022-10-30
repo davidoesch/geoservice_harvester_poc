@@ -4,7 +4,7 @@
 def scrape(source,service,i,layertree, group,layer_data,prefix):
 
     #type=service.identification.type # since @edigonzales runs version 1.0.0 of WFS 
-   
+    
     type=source['URL'] 
     if "wms" in type:
         layer_data["OWNER"]= source['Description']
@@ -28,6 +28,7 @@ def scrape(source,service,i,layertree, group,layer_data,prefix):
             service.contents[i].id+"||"\
             +service.identification.version+"&swisssearch="+str(layer_data["CENTER_LAT"])+\
             "%20"+str(layer_data["CENTER_LON"])+"&zoom="+str(layer_data["MAX_ZOOM"])
+        
         return(layer_data)
     elif "wmts" in type:
         #breakpoint()
