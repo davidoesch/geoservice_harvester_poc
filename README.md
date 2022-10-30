@@ -62,7 +62,7 @@ This data is generated and validated daily using automated procedures. Note that
 |     AI    	|        	|   OWSLIB, Throws error for https://www.geoportal.ch/services/wms/ktai   AttributeError: 'NoneType' object has no attribute 'find' openend ticket in https://github.com/geopython/OWSLib/issues/840  	|
 |     AR    	|        	|   OWSLIB, Throws error for https://www.geoportal.ch/services/wms/ktar?request=getcapabilities   AttributeError: 'NoneType' object has no attribute 'find' openend ticket in https://github.com/geopython/OWSLib/issues/840  	|
 |     BE    	|  ![ok](https://placehold.jp/b8e186/000000/200x50.png?text=WMS 'ok')      	|   FR  to be done   	|
-|     BL    	|        	|       	|
+|     BL    	|  ![ok](https://placehold.jp/b8e186/000000/200x50.png?text=WMS-WMTS 'ok')      	|      	|
 |     BS    	|        	|       	|
 |     FR    	|        	|       	|
 |     GE    	|        	|       	|
