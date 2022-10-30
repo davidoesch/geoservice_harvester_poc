@@ -1,5 +1,7 @@
 "Description","URL"
 "KT_AG","https://wms.geo.ag.ch/public/ows?SERVICE=WMS"
+"KT_BL","https://tile.geoview.bl.ch/1.0.0/WMTSCapabilities.xml"
+"KT_BL","http://geowms.bl.ch/?SERVICE=WMS&VERSION=1.1.1&REQUEST=GetCapabilities"
 "KT_TI","https://wmts.geo.ti.ch/wmts/1.0.0/WMTSCapabilities.xml"
 "KT_BE","http://www.geoservice.apps.be.ch/geoservice2/services/a42geo/a42geo_basiswms_d_fk/MapServer/WMSServer"
 "KT_BE","http://www.geoservice.apps.be.ch/geoservice2/services/a42geo/a42geo_grenzenwms_d_fk/MapServer/WMSServer"
