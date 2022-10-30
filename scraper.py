@@ -1,5 +1,6 @@
 # -*- coding: utf-8 -*-
 import os
+from types import NoneType
 import requests
 import csv
 from owslib.wms import WebMapService
@@ -70,7 +71,7 @@ def get_service_info(source):
     Returns:
     Variable for each layer
     """
-    
+    #breakpoint()
     try:
         #Testing if WMS or WMTS/WFS
         try:
@@ -100,14 +101,15 @@ def get_service_info(source):
                    children=len(service.contents[i].children)  
                 else:
                    children=0
-                
+                #breakpoint()
                 #check for parent layer, when yes use  it for tree
                 if children > 0 :
                     #print(i+" processing parent layer")
                     for j in range(len(service.contents[i].children)):
                         if service.contents[i]._children[j].id not in layers_done :
-                            layertree= source['Description']+"/"+service.identification.title+"/"+i
-                            
+                            layertree= source['Description']+"/"+service.identification.title+"/"+i if service.identification.title is not None else source['Description']+"/"+i                
+                            #print(str(j)+" "+i+""+service.contents[i]._children[j].id)
+                            #breakpoint()
                             write_service_info(source,service,(service.contents[i]._children[j].id),layertree,group=i)
                             layers_done.append(service.contents[i]._children[j].id)
 
@@ -115,7 +117,7 @@ def get_service_info(source):
                 else:
                     #Extracting the description for simple layer
                     #print(i+" processing NORMAL layer")
-                    layertree= source['Description']+"/"+service.identification.title
+                    layertree= source['Description']+"/"+service.identification.title if service.identification.title is not None else source['Description']+"/"
                     write_service_info(source,service,i,layertree,group=0)
                     layers_done.append(i)
 
