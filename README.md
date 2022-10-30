@@ -63,7 +63,7 @@ This data is generated and validated daily using automated procedures. Note that
 |     AR    	|        	|   OWSLIB, Throws error for https://www.geoportal.ch/services/wms/ktar?request=getcapabilities   AttributeError: 'NoneType' object has no attribute 'find' openend ticket in https://github.com/geopython/OWSLib/issues/840  	|
 |     BE    	|  ![ok](https://placehold.jp/b8e186/000000/200x50.png?text=WMS 'ok')      	|   FR  to be done   	|
 |     BL    	|  ![ok](https://placehold.jp/b8e186/000000/200x50.png?text=WMS-WMTS 'ok')      	|      	|
-|     BS    	|        	|       	|
+|     BS    	|  ![ok](https://placehold.jp/b8e186/000000/200x50.png?text=WMS-WFS-WMTS 'ok')      	|      	|
 |     FR    	|        	|       	|
 |     GE    	|        	|       	|
 |     GL    	|  ![ok](https://placehold.jp/de77ae/000000/200x50.png?text=WMS-WFS 'ok')      	|  Drops WFS warnings, seems to be ok see error log in /tools     	|
