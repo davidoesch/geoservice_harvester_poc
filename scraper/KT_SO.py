@@ -17,7 +17,7 @@ def scrape(source,service,i,layertree, group,layer_data,prefix):
         layer_data["LEGEND"]= service.contents[i].styles['default']['legend'] if 'default' in service.contents[i].styles.keys() else ""
         layer_data["CONTACT"]=service.provider.name
         layer_data["SERVICELINK"]=service.request
-        layer_data["METADATA"]=layer_data["METADATA"]=service.contents[i].metadataUrls[0]['url'] if 0 in service.contents[i].metadataUrls else ""
+        layer_data["METADATA"]=service.contents[i].metadataUrls[0]['url'] if 0 in service.contents[i].metadataUrls else ""
         layer_data["UPDATE"]=""
         layer_data["SERVICETYPE"]=service.identification.type
         layer_data["MAX_ZOOM"]= 7 #this is the map.geo.admin.ch map zoom at approx 1:20k
