@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 import os
-from types import NoneType
+#from types import NoneType
 import requests
 import csv
 from owslib.wms import WebMapService
