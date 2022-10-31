@@ -22,7 +22,7 @@ This data is generated and validated daily using automated procedures. Note that
 
 **Data** <br>
 
->**https://github.com/davidoesch/geoservice_harvester_poc/data/geoservices_CH.csv** <br>
+>**https://github.com/davidoesch/geoservice_harvester_poc/blob/main/data/geoservices_CH.csv** <br>
 >*Description:* Data description for each layer separately  <br>
 >*Spatial unit:* Swiss cantons and Principality of Liechtenstein covered <br>
 >*Updated:* daily <br>
