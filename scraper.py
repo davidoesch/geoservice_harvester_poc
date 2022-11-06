@@ -1,6 +1,5 @@
 # -*- coding: utf-8 -*-
 import os
-#from types import NoneType
 import requests
 import csv
 from owslib.wms import WebMapService
@@ -13,12 +12,31 @@ import importlib
 import glob
 sys.path.insert(0,config.SOURCE_SCRAPER_DIR)
 
+service_keys=(("WMSGetCap","n.a."),("WMTSGetCap","n.a."),("WFSGetCap","n.a."))
 def service_result_empty():
     SERVICE_RESULT={"OWNER":"n.a.","TITLE":"n.a","NAME":"n.a","MAPGEO":"n.a.","TREE":"n.a.","GROUP":"","ABSTRACT":"n.a",
     "KEYWORDS":"n.a.","LEGEND":"n.a.","CONTACT":"n.a.","SERVICELINK":"n.a.",
     "METADATA":"n.a.","UPDATE":"n.a.","LEGEND":"n.a.","SERVICETYPE":"n.a.","MAX_ZOOM":"n.a.",
     "CENTER_LAT":"n.a.","CENTER_LON":"n.a.","MAPGEO":"n.a.","BBOX":"n.a."}
     return SERVICE_RESULT
+
+def write_file(input_dict,output_file):
+    #Writing the Result file
+    if os.path.isfile(output_file):
+        with open(output_file, "a", encoding="utf-8") as f:
+            dict_writer = csv.DictWriter(f, fieldnames=list(input_dict.keys()),
+                                        delimiter=",", quotechar='"',
+                                        lineterminator="\n")
+            dict_writer.writerow(input_dict)
+            
+    else:
+        with open(output_file, "w", encoding="utf-8") as f:
+            dict_writer = csv.DictWriter(f, fieldnames=list(input_dict.keys()),
+                                        delimiter=",", quotechar='"',
+                                        lineterminator="\n")
+            dict_writer.writeheader()
+            dict_writer.writerow(input_dict)
+    return
 
 def load_source_collection():
     """Function to open the file of sources and to load all
@@ -164,20 +182,7 @@ def write_service_info(source,service,i,layertree, group):
             layer_data=scraper.scrape(source,service,i,layertree, group,layer_data,config.MAPGEO_PREFIX)
         
         #Writing the Result file
-        if os.path.isfile(config.GEOSERVICES_CH_CSV):
-            with open(config.GEOSERVICES_CH_CSV, "a", encoding="utf-8") as f:
-                dict_writer = csv.DictWriter(f, fieldnames=list(layer_data.keys()),
-                                            delimiter=",", quotechar='"',
-                                            lineterminator="\n")
-                dict_writer.writerow(layer_data)
-                
-        else:
-            with open(config.GEOSERVICES_CH_CSV, "w", encoding="utf-8") as f:
-                dict_writer = csv.DictWriter(f, fieldnames=list(layer_data.keys()),
-                                            delimiter=",", quotechar='"',
-                                            lineterminator="\n")
-                dict_writer.writeheader()
-                dict_writer.writerow(layer_data)
+        write_file(layer_data,config.GEOSERVICES_CH_CSV)
                 
         return True
 
@@ -188,6 +193,69 @@ def write_service_info(source,service,i,layertree, group):
         logger.info(source['Description']+i+": "+str(e_request))
         print (e_request)
         return False
+
+def write_dataset_info(csv_filename,output_file,output_simple_file):
+    """bring data in NF1 (erste normalform): one entry per data set , service is an attribut
+    Parameters:
+    Var with source file
+    Var with Outputfile 
+    Var with simplified output file (just title nad map geo link
+    """
+    # create an empty list to store already processed  datasetUID
+    geo_data_done=[] 
+
+    #read CSV in dict
+    lst=[*csv.DictReader(open(csv_filename, encoding="utf-8"),delimiter=",", quotechar='"',lineterminator="\n")]
+
+    for i in lst:
+    #filter for unique ID consisting of TITLE NAME and OWNER
+        lst_layers=list(filter(lambda lst: (lst['TITLE'] == i['TITLE']) and (lst['NAME'] == i['NAME']) and (lst['OWNER'] == i['OWNER']), lst))  
+        
+        checklayer=i['OWNER']+"_"+i['TITLE']+"_"+i['NAME']#create a datasetUID
+
+        if checklayer not in geo_data_done:
+            #get new empty layer
+            dataset=service_result_empty()
+            dataset.update(service_keys)
+            dataset['OWNER']=i['OWNER']
+            dataset['TITLE']=i['TITLE']
+            dataset['NAME']=i['NAME']
+            #check if multiple datasets are found, ege there must be WMS  WFS or WMTS if lst_layers is bigger
+            
+            for j in range(len(lst_layers)):
+                #check if multiple datasets are found, ege there must be WMS  WFS or WMTS if lst_layers is bigger
+                if "layers=WMS" in dataset['MAPGEO']:
+                    dataset['MAPGEO']=dataset['MAPGEO']
+                elif "layers=WMS" in lst_layers[j]['MAPGEO']:
+                    dataset['MAPGEO']=lst_layers[j]['MAPGEO']
+                elif "layers=WMTS" in lst_layers[j]['MAPGEO']:
+                    dataset['MAPGEO']=lst_layers[j]['MAPGEO']
+                dataset['ABSTRACT']=lst_layers[j]['ABSTRACT'] if lst_layers[j]['ABSTRACT'] != "n.a." else dataset['ABSTRACT']
+                dataset['METADATA']=lst_layers[j]['METADATA'] if lst_layers[j]['METADATA'] != "n.a." else dataset['METADATA']
+                dataset['CONTACT']=lst_layers[j]['CONTACT'] if lst_layers[j]['CONTACT'] != "n.a." else dataset['CONTACT']
+                dataset['KEYWORDS']=lst_layers[j]['KEYWORDS'] if lst_layers[j]['KEYWORDS'] != "n.a." else ""
+                dataset['WMSGetCap']=lst_layers[j]['SERVICELINK'] if "wms".casefold() in lst_layers[j]['SERVICETYPE'].casefold() else dataset['WMSGetCap']
+                dataset['WMTSGetCap']=lst_layers[j]['SERVICELINK'] if "wmts".casefold() in lst_layers[j]['SERVICETYPE'].casefold() else dataset['WMTSGetCap']
+                dataset['WFSGetCap']=lst_layers[j]['SERVICELINK'] if "wfs".casefold() in lst_layers[j]['SERVICETYPE'].casefold() else dataset['WFSGetCap']
+            #remove duplicates from keywords
+            keywordlist=dataset['KEYWORDS']
+            li = list(keywordlist.split(","))
+            keywords=list(dict.fromkeys(li))
+            dataset['KEYWORDS']=','.join(keywords)
+
+            #writing the datasetfile
+            datasetfile_keys=['OWNER','TITLE','NAME','MAPGEO','ABSTRACT','KEYWORDS','CONTACT','WMSGetCap','WMTSGetCap','WFSGetCap']
+            datasetfile=dict((k, dataset[k]) for k in datasetfile_keys if k in dataset)
+            write_file(datasetfile,output_file)
+            
+            #writing the simple overview file
+            datasetfile_keys=['OWNER','TITLE','MAPGEO']
+            datasetfile=dict((k, dataset[k]) for k in datasetfile_keys if k in dataset)
+            write_file(datasetfile,output_simple_file)
+            
+            #add datasetID to lyer done
+            geo_data_done.append(checklayer)
+    return
 
 #Main 
 #--------------------------------------------------------------------
@@ -236,6 +304,14 @@ if __name__ == "__main__":
 
         else:
             logger.info(source['Description']+" with "+source['URL']+" aborted")
+    #Create dataset view
+    print("Creating dataset files ...") 
+    try:
+        os.remove(config.GEODATA_CH_CSV)
+        os.remove(config.GEODATA_SIMPLE_CH_CSV)
+    except OSError:
+        pass
+    write_dataset_info(config.GEOSERVICES_CH_CSV,config.GEODATA_CH_CSV,config.GEODATA_SIMPLE_CH_CSV)
 
     print("scraper completed")    
     logger.info("scraper completed")
