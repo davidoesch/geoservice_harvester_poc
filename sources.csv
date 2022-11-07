@@ -218,7 +218,9 @@
 "KT_SG","https://services.geo.sg.ch/wss/service/SG00096_WMS/guest?"
 "KT_SG","https://services.geo.sg.ch/wss/service/SG00027_WFS/guest?"
 "KT_SG","https://services.geo.sg.ch/wss/service/SG00027_WMS/guest?"
-
+"KT_SH","https://wms.geo.sh.ch/wms?SERVICE=WMS&REQUEST=GetCapabilities"
+"KT_SH","https://wms.geo.sh.ch/raster?SERVICE=WMS&REQUEST=GetCapabilities"
+"KT_SH","https://wfs.geo.sh.ch/wfs?SERVICE=WFS&REQUEST=GetCapabilities"
 "KT_SO","https://geo.so.ch/api/wfs?"
 "KT_SO","https://geo.so.ch/api/wms?"
 "KT_SO","https://geo.so.ch/api/wmts/1.0.0/WMTSCapabilities.xml"
