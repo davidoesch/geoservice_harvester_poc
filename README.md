@@ -71,8 +71,8 @@ This data is generated and validated daily using automated procedures. Note that
 |     JU    	|  ![ok](https://placehold.jp/b8e186/000000/200x50.png?text=WMS-WFS-WMTS 'ok')      	| no love for WebmerCator     	|
 |     LU    	|        	| no open services      	|
 |     NE    	|  ![ok](https://placehold.jp/b8e186/000000/200x50.png?text=WMS 'ok')       	|       	|
-|     NW    	|        	|       	|
-|     OW    	|        	|       	|
+|     NW    	|        	| no open services        	|
+|     OW    	|        	| no open services        	|
 |     SG    	|        	|       	|
 |     SH    	|        	|       	|
 |     SO    	|  ![ok](https://placehold.jp/b8e186/000000/200x50.png?text=WMS-WFS-WMTS 'ok')      	|      	|
