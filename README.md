@@ -73,18 +73,20 @@ This data is generated and validated daily using automated procedures. Note that
 |     NE    	|  ![ok](https://placehold.jp/b8e186/000000/200x50.png?text=WMS 'ok')       	|       	|
 |     NW    	|        	| no open services        	|
 |     OW    	|        	| no open services        	|
-|     SG    	|        	|       	|
+|     SG    	|  ![ok](https://placehold.jp/b8e186/000000/200x50.png?text=WMS-WFS-WMTS 'ok')      	|       	|
 |     SH    	|        	|       	|
 |     SO    	|  ![ok](https://placehold.jp/b8e186/000000/200x50.png?text=WMS-WFS-WMTS 'ok')      	|      	|
 |     SZ    	|  ![ok](https://placehold.jp/b8e186/000000/200x50.png?text=WMS-WFS-WMTS 'ok')      	|      	|
 |     TG    	|        	|       	|
 |     TI    	|        	|       	|
 |     UR    	|        	|       	|
-|     VD    	|   ![ok](https://placehold.jp/b8e186/000000/200x50.png?text=WMS 'ok')      	|      	|
+|     VD    	|  ![ok](https://placehold.jp/b8e186/000000/200x50.png?text=WMS 'ok')      	|      	|
 |     VS    	|        	|       	|
 |     ZG    	|        	|       	|
 |     ZH    	|        	|       	|
 |     LI    	|        	|       	|
+|     Geodienste    	|        	|       	|
+|     Bund   	|        	|       	|
 
 
 
