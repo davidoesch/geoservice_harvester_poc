@@ -74,7 +74,7 @@ This data is generated and validated daily using automated procedures. Note that
 |     NW    	|        	| no open services        	|
 |     OW    	|        	| no open services        	|
 |     SG    	|  ![ok](https://placehold.jp/b8e186/000000/200x50.png?text=WMS-WFS-WMTS 'ok')      	|       	|
-|     SH    	|        	|       	|
+|     SH    	|  ![ok](https://placehold.jp/b8e186/000000/200x50.png?text=WMS-WFS 'ok')       	|       	|
 |     SO    	|  ![ok](https://placehold.jp/b8e186/000000/200x50.png?text=WMS-WFS-WMTS 'ok')      	|      	|
 |     SZ    	|  ![ok](https://placehold.jp/b8e186/000000/200x50.png?text=WMS-WFS-WMTS 'ok')      	|      	|
 |     TG    	|        	|       	|
