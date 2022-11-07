@@ -101,6 +101,7 @@
 "KT_JU","https://geo.jura.ch/mapserv_proxy?ogcserver=Main_PNG&SERVICE=WFS&VERSION=1.1.1&REQUEST=GetCapabilities"
 "KT_JU","https://geo.jura.ch/tiles/1.0.0/WMTSCapabilities.xml"
 "KT_JU","https://geo.jura.ch/mapserv_proxy?ogcserver=Main_PNG&SERVICE=WMS&VERSION=1.1.1&REQUEST=GetCapabilities"
+"KT_NE","http://sitn.ne.ch/ogc-sitn95-open/wms?service=wms&request=getcapabilities&version=1.1.1"
 "KT_SO","https://geo.so.ch/api/wfs?"
 "KT_SO","https://geo.so.ch/api/wms?"
 "KT_SO","https://geo.so.ch/api/wmts/1.0.0/WMTSCapabilities.xml"
