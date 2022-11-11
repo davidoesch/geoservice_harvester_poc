@@ -59,8 +59,8 @@ This data is generated and validated daily using automated procedures. Note that
 | Provider 	| Status 	| Notes 	|
 |:---------:	|--------	|-------	|
 |     AG    	|  ![ok](https://placehold.jp/b8e186/000000/200x50.png?text=WMS 'ok')      	|      	|
-|     AI    	|        	|   OWSLIB, Throws error for https://www.geoportal.ch/services/wms/ktai   AttributeError: 'NoneType' object has no attribute 'find' openend ticket in https://github.com/geopython/OWSLib/issues/840  	|
-|     AR    	|        	|   OWSLIB, Throws error for https://www.geoportal.ch/services/wms/ktar?request=getcapabilities   AttributeError: 'NoneType' object has no attribute 'find' openend ticket in https://github.com/geopython/OWSLib/issues/840  	|
+|     AI    	|  ![ok](https://placehold.jp/b8e186/000000/200x50.png?text=WMS-WFS 'ok')       	| some layers do cover AI AR SG      	|
+|     AR    	|  ![ok](https://placehold.jp/b8e186/000000/200x50.png?text=WMS-WFS 'ok')       	| some layers do cover AI AR SG      	|
 |     BE    	|  ![ok](https://placehold.jp/b8e186/000000/200x50.png?text=WMS 'ok')      	|   FR  to be done   	|
 |     BL    	|  ![ok](https://placehold.jp/b8e186/000000/200x50.png?text=WMS-WMTS 'ok')      	|      	|
 |     BS    	|  ![ok](https://placehold.jp/b8e186/000000/200x50.png?text=WMS-WFS-WMTS 'ok')      	|      	|
