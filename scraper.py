@@ -90,17 +90,23 @@ def get_service_info(source):
     Variable for each layer
     """
     #breakpoint()
+    # test for specific Version for service whcih needs to be passed to OWSLIB
+    if source['Description'] in config.SOURCE_COLLECTION_VERSION:
+        source_version=config.SOURCE_COLLECTION_VERSION[source['Description']]
+    else:
+        source_version=None
+    
     try:
         #Testing if WMS or WMTS/WFS
         try:
-            service = WebMapService(source['URL'])
+            service = WebMapService(source['URL']) if source_version == None else WebMapService(source['URL'],version=source_version)
             child=True #assuming that wms can child/parent relation
         except:
             child=False #assuming that wmts can't have child/parent relation
             try:
                 service = WebMapTileService(source['URL'])
             except:
-                service = WebFeatureService(source['URL'], version='1.1.0') #Seems like owslib only supports 1.1.0 currently
+                service = WebFeatureService(source['URL'], version='1.1.0') if source_version == None else WebMapService(source['URL'],version=source_version)
             child=False #assuming that wmts can't have child/parent relation
        
         #extract all layer names
