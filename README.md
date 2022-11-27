@@ -65,14 +65,14 @@ This data is generated and validated daily using automated procedures. Note that
 |     BL    	|  ![ok](https://placehold.jp/b8e186/000000/200x50.png?text=WMS-WMTS 'ok')      	|      	|
 |     BS    	|  ![ok](https://placehold.jp/b8e186/000000/200x50.png?text=WMS-WFS-WMTS 'ok')      	|      	|
 |     FR    	|  ![ok](https://placehold.jp/b8e186/000000/200x50.png?text=WMS-WFS 'ok')      	|      	|
-|     GE    	|  ![ok](https://placehold.jp/de77ae/000000/200x50.png?text=WMS 'ok')      	|  3 datasets can not be parsed, see error log in /tools     	|
-|     GL    	|  ![ok](https://placehold.jp/de77ae/000000/200x50.png?text=WMS-WFS 'ok')      	|  Drops WFS warnings, seems to be ok see error log in /tools     	|
+|     GE    	|  ![ok](https://placehold.jp/b8e186/000000/200x50.png?text=WMS 'ok')      	|  3 datasets can not be parsed, see error log in /tools     	|
+|     GL    	|  ![ok](https://placehold.jp/b8e186/000000/200x50.png?text=WMS-WFS 'ok')      	|  Drops WFS warnings, seems to be ok see error log in /tools     	|
 |     GR    	|  ![ok](https://placehold.jp/b8e186/000000/200x50.png?text=WMS-WFS 'ok')      	|      	|
 |     JU    	|  ![ok](https://placehold.jp/b8e186/000000/200x50.png?text=WMS-WFS-WMTS 'ok')      	| no love for WebmerCator     	|
-|     LU    	|        	| no open services      	|
+|     LU    	|  ![ok](https://placehold.jp/de77ae/000000/200x50.png?text=no-service 'ok')        	|     	|
 |     NE    	|  ![ok](https://placehold.jp/b8e186/000000/200x50.png?text=WMS 'ok')       	|       	|
-|     NW    	|        	| no open services        	|
-|     OW    	|        	| no open services        	|
+|     NW    	|  ![ok](https://placehold.jp/de77ae/000000/200x50.png?text=no-service 'ok')      	| |
+|     OW    	|  ![ok](https://placehold.jp/de77ae/000000/200x50.png?text=no-service 'ok')      	|         	|
 |     SG    	|  ![ok](https://placehold.jp/b8e186/000000/200x50.png?text=WMS-WFS-WMTS 'ok')      	|       	|
 |     SH    	|  ![ok](https://placehold.jp/b8e186/000000/200x50.png?text=WMS-WFS 'ok')       	|       	|
 |     SO    	|  ![ok](https://placehold.jp/b8e186/000000/200x50.png?text=WMS-WFS-WMTS 'ok')      	|      	|
@@ -81,10 +81,10 @@ This data is generated and validated daily using automated procedures. Note that
 |     TI    	|  ![ok](https://placehold.jp/b8e186/000000/200x50.png?text=WMS-WFS-WMTS 'ok')      	|      	|
 |     UR    	|  ![ok](https://placehold.jp/b8e186/000000/200x50.png?text=WMS-WFS 'ok')       	|       	|
 |     VD    	|  ![ok](https://placehold.jp/b8e186/000000/200x50.png?text=WMS 'ok')      	|      	|
-|     VS    	|        	| no open services      	|
+|     VS    	|  ![ok](https://placehold.jp/de77ae/000000/200x50.png?text=no-service 'nok')      	|   |
 |     ZG    	|  ![ok](https://placehold.jp/b8e186/000000/200x50.png?text=WMS-WFS-WMTS 'ok')      	|      	|
 |     ZH    	|  ![ok](https://placehold.jp/b8e186/000000/200x50.png?text=WMS-WFS 'ok')       	|       	|
-|     LI    	|        	|       	|
+|     LI    	|  ![ok](https://placehold.jp/b8e186/000000/200x50.png?text=WMS 'ok')        	|       	|
 |     Geodienste    	|        	|       	|
 |     Bund   	|        	|       	|
 
