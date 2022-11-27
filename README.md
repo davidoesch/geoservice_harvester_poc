@@ -82,7 +82,7 @@ This data is generated and validated daily using automated procedures. Note that
 |     UR    	|  ![ok](https://placehold.jp/b8e186/000000/200x50.png?text=WMS-WFS 'ok')       	|       	|
 |     VD    	|  ![ok](https://placehold.jp/b8e186/000000/200x50.png?text=WMS 'ok')      	|      	|
 |     VS    	|        	| no open services      	|
-|     ZG    	|        	|       	|
+|     ZG    	|  ![ok](https://placehold.jp/b8e186/000000/200x50.png?text=WMS-WFS-WMTS 'ok')      	|      	|
 |     ZH    	|        	|       	|
 |     LI    	|        	|       	|
 |     Geodienste    	|        	|       	|
