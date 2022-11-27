@@ -71,8 +71,8 @@ This data is generated and validated daily using automated procedures. Note that
 |     JU    	|  ![ok](https://placehold.jp/b8e186/000000/200x50.png?text=WMS-WFS-WMTS 'ok')      	| no love for WebmerCator     	|
 |     LU    	|  ![ok](https://placehold.jp/de77ae/000000/200x50.png?text=no service 'ok')        	|     	|
 |     NE    	|  ![ok](https://placehold.jp/b8e186/000000/200x50.png?text=WMS 'ok')       	|       	|
-|     NW    	|  ![ok](https://placehold.jp/de77ae/000000/200x50.png?text=no service 'ok')      	| |
-|     OW    	|  ![ok](https://placehold.jp/de77ae/000000/200x50.png?text=no service 'ok')      	|         	|
+|     NW    	|  ![ok](https://placehold.jp/de77ae/000000/200x50.png?text=no-service 'ok')      	| |
+|     OW    	|  ![ok](https://placehold.jp/de77ae/000000/200x50.png?text=no-service 'ok')      	|         	|
 |     SG    	|  ![ok](https://placehold.jp/b8e186/000000/200x50.png?text=WMS-WFS-WMTS 'ok')      	|       	|
 |     SH    	|  ![ok](https://placehold.jp/b8e186/000000/200x50.png?text=WMS-WFS 'ok')       	|       	|
 |     SO    	|  ![ok](https://placehold.jp/b8e186/000000/200x50.png?text=WMS-WFS-WMTS 'ok')      	|      	|
@@ -81,7 +81,7 @@ This data is generated and validated daily using automated procedures. Note that
 |     TI    	|  ![ok](https://placehold.jp/b8e186/000000/200x50.png?text=WMS-WFS-WMTS 'ok')      	|      	|
 |     UR    	|  ![ok](https://placehold.jp/b8e186/000000/200x50.png?text=WMS-WFS 'ok')       	|       	|
 |     VD    	|  ![ok](https://placehold.jp/b8e186/000000/200x50.png?text=WMS 'ok')      	|      	|
-|     VS    	|  ![ok](https://placehold.jp/de77ae/000000/200x50.png?text=no service 'nok')      	|   |
+|     VS    	|  ![ok](https://placehold.jp/de77ae/000000/200x50.png?text=no-service 'nok')      	|   |
 |     ZG    	|  ![ok](https://placehold.jp/b8e186/000000/200x50.png?text=WMS-WFS-WMTS 'ok')      	|      	|
 |     ZH    	|  ![ok](https://placehold.jp/b8e186/000000/200x50.png?text=WMS-WFS 'ok')       	|       	|
 |     LI    	|  ![ok](https://placehold.jp/b8e186/000000/200x50.png?text=WMS 'ok')        	|       	|
