@@ -3,7 +3,6 @@
 #SERVICE WMS
 def scrape(source,service,i,layertree, group,layer_data,prefix):
     type=service.identification.type
- 
     if "WMS" in type:
         layer_data["OWNER"]= source['Description']
         layer_data["TITLE"]= service.contents[i].title
@@ -11,6 +10,7 @@ def scrape(source,service,i,layertree, group,layer_data,prefix):
         layer_data["TREE"]= layertree
         layer_data["GROUP"]= group if group != 0 else ""
         layer_data["ABSTRACT"]= service.contents[i].abstract
+        breakpoint()
         layer_data["KEYWORDS"]= ", ".join(service.contents[i].keywords+service.identification.keywords)
         layer_data["LEGEND"]= service.contents[i].styles['default']['legend'] if 'default' in service.contents[i].styles.keys() else ""
         layer_data["CONTACT"]=service.provider.contact
