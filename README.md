@@ -85,8 +85,8 @@ This data is generated and validated daily using automated procedures. Note that
 |     ZG    	|  ![ok](https://placehold.jp/b8e186/000000/200x50.png?text=WMS-WFS-WMTS 'ok')      	|      	|
 |     ZH    	|  ![ok](https://placehold.jp/b8e186/000000/200x50.png?text=WMS-WFS 'ok')       	|       	|
 |     LI    	|  ![ok](https://placehold.jp/b8e186/000000/200x50.png?text=WMS 'ok')        	|       	|
-|     Geodienste    	|        	|       	|
-|     Bund   	|        	|       	|
+|     Geodienste ![ok](https://placehold.jp/b8e186/000000/200x50.png?text=WMS-WFS 'ok')   	|  FR IT  to be done       	|       	|
+|     Bund   	|  ![ok](https://placehold.jp/b8e186/000000/200x50.png?text=WMS-WMTS 'ok')   	|  FR IT EN RM to be done       	|       	|
 
 
 
