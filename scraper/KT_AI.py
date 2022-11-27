@@ -36,7 +36,6 @@ def scrape(source,service,i,layertree, group,layer_data,prefix):
             service.contents[i].id+"||"\
             +service.identification.version+"&swisssearch="+str(layer_data["CENTER_LAT"])+\
             "%20"+str(layer_data["CENTER_LON"])+"&zoom="+str(layer_data["MAX_ZOOM"])
-        ype=source['URL']
 
         return(layer_data)
     elif "WMTS" in type:
