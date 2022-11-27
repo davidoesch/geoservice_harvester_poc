@@ -89,7 +89,7 @@ def get_service_info(source):
     Returns:
     Variable for each layer
     """
-    #breakpoint()
+    
     # test for specific Version for service whcih needs to be passed to OWSLIB
     if source['Description'] in config.SOURCE_COLLECTION_VERSION:
         source_version=config.SOURCE_COLLECTION_VERSION[source['Description']]
