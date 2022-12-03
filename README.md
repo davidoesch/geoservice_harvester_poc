@@ -93,7 +93,6 @@ This data is generated and validated daily using automated procedures based on g
 | ----------- | ---------------------------------------------------------------------------------------------------------------- | --------------------------- | --------------------------- |
 | OWNER       | Both Owner type and Owner Name are reflected,they corespond as well to the corrsponing py file with scraper info | Text <OwnerType\_OwnerName> |                             |
 | TITLE       | Title of the dataset                                                                                             | Text                        |                             |
-| NAME        | Name of the dataset                                                                                              | Text                        |                             |
 | MAPGEO      | permalink to map.geo.admin.ch                                                                                    | URL                         | in case of a WFS only: link will not work
 
 ## How to add additonal WMS WMTS Services
