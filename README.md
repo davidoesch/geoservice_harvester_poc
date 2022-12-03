@@ -15,7 +15,7 @@ The aim of this repository is to provide a POC to open OGC Compliant geodata ser
 If you have any questions, please don't hestitate to contact us: <br>
 - https://twitter.com/davidoesch (follow us, we send you a private Direct Message, thanks!) <br>
 
-## Unified dataset
+## Datasets of all services : geoservices_CH.csv
 
 **General description** <br>
 This data is generated and validated daily using automated procedures. Note that we only publish data that are OGC compliant. Thus, gaps might be the case. 
@@ -48,6 +48,54 @@ This data is generated and validated daily using automated procedures. Note that
 | CENTER\_LAT | Lat center of data WGS84                                                                                         | Float                       |                             |
 | CENTER\_LON | Lon center of data WGS84                                                                                         | Float                       |                             |
 | MAPGEO      | permalink to map.geo.admin.ch                                                                                    | URL                         |                             |
+
+## Unified data : geodata_CH.csv
+
+**General description** <br>
+This data is generated and validated daily using automated procedures based on geoservices_CH.csv (1NF / normalization). Note that we only publish data that are OGC compliant. Thus, gaps might be the case. 
+
+**Data** <br>
+
+>**https://github.com/davidoesch/geoservice_harvester_poc/blob/main/data/geodata_CH.csv** <br>
+>*Description:* This dataset has been aggregated to include data from all of its different services. This means that the information is now more comprehensive and includes all relevant occurrences from each of the services that contribute to the dataset. <br>
+>*Spatial unit:* Swiss cantons and Principality of Liechtenstein covered <br>
+>*Updated:* daily <br>
+>*Format:* csv <br>
+>*Additional remark*: )
+
+| Field Name  | Description                                                                                                      | Format                      | Note                        |
+| ----------- | ---------------------------------------------------------------------------------------------------------------- | --------------------------- | --------------------------- |
+| OWNER       | Both Owner type and Owner Name are reflected,they corespond as well to the corrsponing py file with scraper info | Text <OwnerType\_OwnerName> |                             |
+| TITLE       | Title of the dataset                                                                                             | Text                        |                             |
+| NAME        | Name of the dataset                                                                                              | Text                        |                             |
+| MAPGEO      | permalink to map.geo.admin.ch                                                                                    | URL                         |                             |
+| CONTACT     | Contact info                                                                                                     | Text, email                 |                             |
+| WMSGetCap | Link to WMSGetCap      | Link                        |            |
+| WMTSGetCap | Link to WMTSGetCap      | Link                        |            |
+| WFSGetCap | Link to WFSGetCap      | Link                        |            |
+
+
+## Dataset title : geodata_simple_CH.csv
+
+**General description** <br>
+This data is generated and validated daily using automated procedures based on geodata_CH.csv. Note that we only publish data that are OGC compliant. Thus, gaps might be the case. 
+
+**Data** <br>
+
+>**https://github.com/davidoesch/geoservice_harvester_poc/blob/main/data/geodata_simple_CH.csv** <br>
+>*Description:* This dataset  contains only the title of the datset and a link to map.geo.admin.ch. (no link if only WFS is availbale) . It's sole pupose is to serve as source for https://davidoesch.github.io/geoservice_harvester_poc <br>
+>*Spatial unit:* Swiss cantons and Principality of Liechtenstein covered <br>
+>*Updated:* daily <br>
+>*Format:* csv <br>
+>*Additional remark*: )
+
+| Field Name  | Description                                                                                                      | Format                      | Note                        |
+| ----------- | ---------------------------------------------------------------------------------------------------------------- | --------------------------- | --------------------------- |
+| OWNER       | Both Owner type and Owner Name are reflected,they corespond as well to the corrsponing py file with scraper info | Text <OwnerType\_OwnerName> |                             |
+| TITLE       | Title of the dataset                                                                                             | Text                        |                             |
+| NAME        | Name of the dataset                                                                                              | Text                        |                             |
+| MAPGEO      | permalink to map.geo.admin.ch                                                                                    | URL                         |     
+
 ## How to add additonal WMS WMTS Services
 1. Add your service to [sources.csv](https://github.com/davidoesch/geoservice_harvester_poc/sources.csv) follwoing the OWNER Naming Convention and URL (only https) to the service endpoint
 2. copy the [default](https://github.com/davidoesch/geoservice_harvester_poc/scraper/default.py) scraper configuration file, rename it based on the OWNER Naming Convention in 1.)
