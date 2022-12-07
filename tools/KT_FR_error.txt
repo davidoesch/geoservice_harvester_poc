@@ -4,3 +4,4 @@ KT_FR https://geo.fr.ch/ags/services/OpenData/Postes_de_comptage_de_trafic/MapSe
 KT_FR https://geo.fr.ch/ags/services/OpenData/Servitudes_projetees_Points/MapServer/WFSServer?request=GetCapabilities&service=WFS esri:Servitudes_projetées_Points: 'NoneType' object is not subscriptable
 KT_FR https://geo.fr.ch/ags/services/OpenData/Trafic_journalier_moyen/MapServer/WFSServer?request=GetCapabilities&service=WFS esri:Données_de_comptage_de_trafic_par_tronçon: 'NoneType' object is not subscriptable
 KT_FR https://geo.fr.ch/ags/services/OpenData/Trafic_poids_lourds/MapServer/WFSServer?request=GetCapabilities&service=WFS esri:Données_de_comptage_de_trafic_par_tronçon: 'NoneType' object is not subscriptable
+KT_FR https://geo.fr.ch/ags/services/OpenData/Zones_alluviales_d_importance_nationale/MapServer/WFSServer?request=GetCapabilities&service=WFS: 400
