@@ -10,6 +10,8 @@ import logging
 import configuration as config
 import importlib
 import glob
+from collections import defaultdict
+from statistics import mean
 sys.path.insert(0,config.SOURCE_SCRAPER_DIR)
 
 service_keys=(("WMSGetCap","n.a."),("WMTSGetCap","n.a."),("WFSGetCap","n.a."))
@@ -263,6 +265,53 @@ def write_dataset_info(csv_filename,output_file,output_simple_file):
             geo_data_done.append(checklayer)
     return
 
+def write_dataset_stats(csv_filename,output_file):
+    # Read in the data from the CSV file
+    data = []
+    with open(csv_filename, mode="r", encoding="utf8") as f:
+        data = list(csv.DictReader(f, delimiter=",", quotechar='"', lineterminator="\n"))
+
+    # Calculate the number of occurrences of each OWNER
+    owner_counts = defaultdict(int)
+    for entry in data:
+        owner_counts[entry['OWNER']] += 1
+
+    # Calculate the counts and percentages of entries with non-empty fields for each OWNER
+    fields = ['KEYWORDS', 'ABSTRACT', 'CONTACT', 'METADATA']
+    counts = defaultdict(lambda: defaultdict(int))
+    percentages = defaultdict(lambda: defaultdict(float))
+
+    for field in fields:
+        for entry in data:
+            if entry[field]:
+                counts[field][entry['OWNER']] += 1
+        for owner, count in counts[field].items():
+            percentages[field][owner] = count / owner_counts[owner]
+
+    # Write the results to a CSV file
+    with open(output_file, mode="w", encoding="utf8") as f:
+        writer = csv.DictWriter(f, fieldnames=['OWNER', 'DATASET_COUNT', 'KEYWORDS_COUNT', 'KEYWORDS_MISSING', 'KEYWORDS_PERCENTAGE', 'ABSTRACT_COUNT', 'ABSTRACT_MISSING', 'ABSTRACT_PERCENTAGE', 'CONTACT_COUNT', 'CONTACT_MISSING', 'CONTACT_PERCENTAGE', 'METADATA_COUNT', 'METADATA_MISSING', 'METADATA_PERCENTAGE', 'TOTAL_PERCENTAGE'], lineterminator="\n")
+        writer.writeheader()
+        for owner in owner_counts.keys():
+            row = {
+                'OWNER': owner,
+                'DATASET_COUNT': owner_counts[owner],
+            }
+            total_percentages = []
+            for field in fields:
+                percentage = percentages[field].get(owner, None)
+                if percentage is not None:
+                    percentage = "{:.1%}".format(percentage)
+                    total_percentages.append(percentages[field][owner])
+                else:
+                    percentage = "0%"
+                row[field + '_COUNT'] = counts[field].get(owner, 0)
+                row[field + '_MISSING'] = owner_counts[owner] - counts[field].get(owner, 0)
+                row[field + '_PERCENTAGE'] = percentage
+            row['TOTAL_PERCENTAGE'] = "{:.1%}".format(mean(total_percentages))
+            writer.writerow(row)
+    return
+
 #Main 
 #--------------------------------------------------------------------
 
@@ -310,14 +359,16 @@ if __name__ == "__main__":
 
         else:
             logger.info(source['Description']+" with "+source['URL']+" aborted")
-    #Create dataset view
+    #Create dataset view and stats
     print("Creating dataset files ...") 
     try:
         os.remove(config.GEODATA_CH_CSV)
         os.remove(config.GEODATA_SIMPLE_CH_CSV)
+        os.remove(config.GEOSERVICES_STATS_CH_CSV)
     except OSError:
         pass
     write_dataset_info(config.GEOSERVICES_CH_CSV,config.GEODATA_CH_CSV,config.GEODATA_SIMPLE_CH_CSV)
+    write_dataset_stats(config.GEOSERVICES_CH_CSV,config.GEOSERVICES_STATS_CH_CSV)
 
     print("scraper completed")    
     logger.info("scraper completed")
