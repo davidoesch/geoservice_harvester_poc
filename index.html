@@ -66,11 +66,9 @@
                 return "<a href='" + link + "' target='_blank'>Metadata</a>";
             else return "";
         }
-        function format_link_mapgeo(link) {
-            if (link)
-                return "<a href='" + link + "' target='_blank'>Map</a>";
-            else return "";
-        }
+	function format_link_mapgeo(link) {
+  	return link === "n.a." ? "-" : link ? "<a href='" + link + "' target='_blank'>Map</a>" : "";
+	}
 
         CsvToHtmlTable.init({
             csv_path: "data/geodata_simple_CH.csv",
