@@ -11,11 +11,13 @@ KT_AI,"AV, Gebiete mit dauernden Bodenverschiebungen","https://test.map.geo.admi
 KT_AI,Bestandeskarte 2019 Kt AR/AI,https://test.map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||Bestandeskarte 2019 Kt AR/AI||https://www.geoportal.ch/services/wms/ktai?||ch.geoportal.wald_flora_fauna.1603.0.bestandeskarte_2019_kt_arai||1.3.0&swisssearch=47.339%209.464500000000001&zoom=7
 KT_AI,Bienenstandorte Kt,https://test.map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||Bienenstandorte Kt||https://www.geoportal.ch/services/wms/ktai?||ch.geoportal.landwirtschaft.64.0.bienenstandorte_kt||1.3.0&swisssearch=47.339%209.464500000000001&zoom=7
 KT_AI,Bodeneignungskarte CH,https://test.map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||Bodeneignungskarte CH||https://www.geoportal.ch/services/wms/ktai?||ch.geoportal.geologie_boden_naturbedingte_risiken.1051.0.bodeneignungskarte_ch||1.3.0&swisssearch=47.339%209.464500000000001&zoom=7
+KT_AI,Bundesinventar der Landschaften und Naturdenkmäler (BLN) CH,https://test.map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||Bundesinventar der Landschaften und Naturdenkmäler (BLN) CH||https://www.geoportal.ch/services/wms/ktai?||ch.geoportal.umwelt_naturschutz.1356.0.bundesinventar_der_landschaften_und_naturdenkmaeler_bln_ch||1.3.0&swisssearch=47.339%209.464500000000001&zoom=7
 KT_AI,Dufour Karte,https://test.map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||Dufour Karte||https://www.geoportal.ch/services/wms/ktai?||ch.geoportal.basiskarten_bodenbedeckung_bilddaten.2184.0.dufour_karte||1.3.0&swisssearch=47.339%209.464500000000001&zoom=7
 KT_AI,Durchgangsleitungen aus AV Gde,https://test.map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||Durchgangsleitungen aus AV Gde||https://www.geoportal.ch/services/wms/ktai?||ch.geoportal.ver_entsorgung_kommunikation.121.0.durchgangsleitungen_aus_av_gde||1.3.0&swisssearch=47.339%209.464500000000001&zoom=7
 KT_AI,Eisenbahnlärmkataster Nacht CH,https://test.map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||Eisenbahnlärmkataster Nacht CH||https://www.geoportal.ch/services/wms/ktai?||ch.geoportal.umwelt_naturschutz.1850.0.eisenbahnlaermkataster_nacht_ch||1.3.0&swisssearch=47.339%209.464500000000001&zoom=7
 KT_AI,Eisenbahnlärmkataster Tag CH,https://test.map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||Eisenbahnlärmkataster Tag CH||https://www.geoportal.ch/services/wms/ktai?||ch.geoportal.umwelt_naturschutz.1006.0.eisenbahnlaermkataster_tag_ch||1.3.0&swisssearch=47.339%209.464500000000001&zoom=7
 KT_AI,Elektrizität Stromnetzgebiete Kt,https://test.map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||Elektrizität Stromnetzgebiete Kt||https://www.geoportal.ch/services/wms/ktai?||ch.geoportal.ver_entsorgung_kommunikation.72.0.elektrizitaet_stromnetzgebiete_kt||1.3.0&swisssearch=47.339%209.464500000000001&zoom=7
+KT_AI,Elektrizität Werkplan Gde,https://test.map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||Elektrizität Werkplan Gde||https://www.geoportal.ch/services/wms/ktai?||ch.geoportal.ver_entsorgung_kommunikation.503.0.elektrizitaet_werkplan_gde||1.3.0&swisssearch=47.339%209.464500000000001&zoom=7
 KT_AI,Energiestädte CH,https://test.map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||Energiestädte CH||https://www.geoportal.ch/services/wms/ktai?||ch.geoportal.ver_entsorgung_kommunikation.1043.0.energiestaedte_ch||1.3.0&swisssearch=47.339%209.464500000000001&zoom=7
 KT_AI,Erdwärmesonden Kt,https://test.map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||Erdwärmesonden Kt||https://www.geoportal.ch/services/wms/ktai?||ch.geoportal.ver_entsorgung_kommunikation.29.0.erdwaermesonden_kt||1.3.0&swisssearch=47.339%209.464500000000001&zoom=7
 KT_AI,Ereigniskataster (Fachversion) Kt AI,https://test.map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||Ereigniskataster (Fachversion) Kt AI||https://www.geoportal.ch/services/wms/ktai?||ch.geoportal.geologie_boden_naturbedingte_risiken.669.0.ereigniskataster_fachversion_kt_ai||1.3.0&swisssearch=47.339%209.464500000000001&zoom=7
@@ -34,7 +36,6 @@ KT_AI,"Gebäudeadressen, geocodiert Kt","https://test.map.geo.admin.ch/?bgLayer=
 KT_AI,Gebäude- und Wohnungsregister CH,https://test.map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||Gebäude- und Wohnungsregister CH||https://www.geoportal.ch/services/wms/ktai?||ch.geoportal.ortsangaben_referenzsysteme.1052.0.gebaeude_und_wohnungsregister_ch||1.3.0&swisssearch=47.339%209.464500000000001&zoom=7
 KT_AI,Gefährdungskarte Oberflächenabfluss Kt,https://test.map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||Gefährdungskarte Oberflächenabfluss Kt||https://www.geoportal.ch/services/wms/ktai?||ch.geoportal.geologie_boden_naturbedingte_risiken.1286.0.gefaehrdungskarte_oberflaechenabfluss_kt||1.3.0&swisssearch=47.339%209.464500000000001&zoom=7
 KT_AI,Gefahrenkarte Gesamt Kt,https://test.map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||Gefahrenkarte Gesamt Kt||https://www.geoportal.ch/services/wms/ktai?||ch.geoportal.geologie_boden_naturbedingte_risiken.88.0.gefahrenkarte_gesamt_kt||1.3.0&swisssearch=47.339%209.464500000000001&zoom=7
-KT_AI,"Geologie, harmonisiert Kt (nicht mehr verwendet)","https://test.map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||Geologie, harmonisiert Kt (nicht mehr verwendet)||https://www.geoportal.ch/services/wms/ktai?||ch.geoportal.geologie_boden_naturbedingte_risiken.50.0.geologie_harmonisiert_kt_nicht_mehr_verwendet||1.3.0&swisssearch=47.339%209.464500000000001&zoom=7"
 KT_AI,Geologischer Atlas Kt,https://test.map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||Geologischer Atlas Kt||https://www.geoportal.ch/services/wms/ktai?||ch.geoportal.geologie_boden_naturbedingte_risiken.296.0.geologischer_atlas_kt||1.3.0&swisssearch=47.339%209.464500000000001&zoom=7
 KT_AI,Geotechnische Karte Kt,https://test.map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||Geotechnische Karte Kt||https://www.geoportal.ch/services/wms/ktai?||ch.geoportal.geologie_boden_naturbedingte_risiken.229.0.geotechnische_karte_kt||1.3.0&swisssearch=47.339%209.464500000000001&zoom=7
 KT_AI,Geotopinventar Kt,https://test.map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||Geotopinventar Kt||https://www.geoportal.ch/services/wms/ktai?||ch.geoportal.umwelt_naturschutz.134.0.geotopinventar_kt||1.3.0&swisssearch=47.339%209.464500000000001&zoom=7
@@ -42,6 +43,7 @@ KT_AI,"GEP Zustandsbericht, Versickerung Modell Kt","https://test.map.geo.admin.
 KT_AI,"Gewässer, Hochwasserschutz- und Revitalisierungsprojekte Kt","https://test.map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||Gewässer, Hochwasserschutz- und Revitalisierungsprojekte Kt||https://www.geoportal.ch/services/wms/ktai?||ch.geoportal.gewaesser.991.0.gewaesser_hochwasserschutz_und_revitalisierungsprojekte_kt||1.3.0&swisssearch=47.339%209.464500000000001&zoom=7"
 KT_AI,Gewässernetz 1:10000 GN10 Kt,https://test.map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||Gewässernetz 1:10000 GN10 Kt||https://www.geoportal.ch/services/wms/ktai?||ch.geoportal.gewaesser.160.0.gewaessernetz_110000_gn10_kt||1.3.0&swisssearch=47.339%209.464500000000001&zoom=7
 KT_AI,Gewässernetz 1:200000 Kt,https://test.map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||Gewässernetz 1:200000 Kt||https://www.geoportal.ch/services/wms/ktai?||ch.geoportal.gewaesser.43.0.gewaessernetz_1200000_kt||1.3.0&swisssearch=47.339%209.464500000000001&zoom=7
+KT_AI,Gewässernetz GN10 Nutzung Kt,https://test.map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||Gewässernetz GN10 Nutzung Kt||https://www.geoportal.ch/services/wms/ktai?||ch.geoportal.gewaesser.2307.0.gewaessernetz_gn10_nutzung_kt||1.3.0&swisssearch=47.339%209.464500000000001&zoom=7
 KT_AI,Gewässerqualität Ammonium Kt,https://test.map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||Gewässerqualität Ammonium Kt||https://www.geoportal.ch/services/wms/ktai?||ch.geoportal.gewaesser.1308.0.gewaesserqualitaet_ammonium_kt||1.3.0&swisssearch=47.339%209.464500000000001&zoom=7
 KT_AI,Gewässerqualität DOC Kt,https://test.map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||Gewässerqualität DOC Kt||https://www.geoportal.ch/services/wms/ktai?||ch.geoportal.gewaesser.1314.0.gewaesserqualitaet_doc_kt||1.3.0&swisssearch=47.339%209.464500000000001&zoom=7
 KT_AI,Gewässerqualität Gesamtphosphor Kt,https://test.map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||Gewässerqualität Gesamtphosphor Kt||https://www.geoportal.ch/services/wms/ktai?||ch.geoportal.gewaesser.1313.0.gewaesserqualitaet_gesamtphosphor_kt||1.3.0&swisssearch=47.339%209.464500000000001&zoom=7
@@ -55,6 +57,7 @@ KT_AI,Gewässerräume Kt AI,https://test.map.geo.admin.ch/?bgLayer=ch.swisstopo.
 KT_AI,"Gewässer, Rechtszustand Kt AR","https://test.map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||Gewässer, Rechtszustand Kt AR||https://www.geoportal.ch/services/wms/ktai?||ch.geoportal.gewaesser.1484.0.gewaesser_rechtszustand_kt_ar||1.3.0&swisssearch=47.339%209.464500000000001&zoom=7"
 KT_AI,"Gewässer, Rechtszustand Kt SG","https://test.map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||Gewässer, Rechtszustand Kt SG||https://www.geoportal.ch/services/wms/ktai?||ch.geoportal.gewaesser.1074.0.gewaesser_rechtszustand_kt_sg||1.3.0&swisssearch=47.339%209.464500000000001&zoom=7"
 KT_AI,Gewässerschutzkarte Kt,https://test.map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||Gewässerschutzkarte Kt||https://www.geoportal.ch/services/wms/ktai?||ch.geoportal.gewaesser.30.0.gewaesserschutzkarte_kt||1.3.0&swisssearch=47.339%209.464500000000001&zoom=7
+KT_AI,"Gewässer, Wasserbau Kt SG","https://test.map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||Gewässer, Wasserbau Kt SG||https://www.geoportal.ch/services/wms/ktai?||ch.geoportal.gewaesser.2217.0.gewaesser_wasserbau_kt_sg||1.3.0&swisssearch=47.339%209.464500000000001&zoom=7"
 KT_AI,"Grenzen, Bezirke und Feuerschaugemeinde Kt AI","https://test.map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||Grenzen, Bezirke und Feuerschaugemeinde Kt AI||https://www.geoportal.ch/services/wms/ktai?||ch.geoportal.politische_und_administrative_grenzen.881.0.grenzen_bezirke_und_feuerschaugemeinde_kt_ai||1.3.0&swisssearch=47.339%209.464500000000001&zoom=7"
 KT_AI,"Grenzen, katholische Kirchgemeinden Kt AI","https://test.map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||Grenzen, katholische Kirchgemeinden Kt AI||https://www.geoportal.ch/services/wms/ktai?||ch.geoportal.politische_und_administrative_grenzen.1620.0.grenzen_katholische_kirchgemeinden_kt_ai||1.3.0&swisssearch=47.339%209.464500000000001&zoom=7"
 KT_AI,"Grenzen, Schulgemeinden Kt AI","https://test.map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||Grenzen, Schulgemeinden Kt AI||https://www.geoportal.ch/services/wms/ktai?||ch.geoportal.politische_und_administrative_grenzen.861.0.grenzen_schulgemeinden_kt_ai||1.3.0&swisssearch=47.339%209.464500000000001&zoom=7"
@@ -111,6 +114,7 @@ KT_AI,ÖREB Nutzungsplanung kantonal Kt AI,https://test.map.geo.admin.ch/?bgLaye
 KT_AI,ÖREB Nutzungsplanung Kt AI,https://test.map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||ÖREB Nutzungsplanung Kt AI||https://www.geoportal.ch/services/wms/ktai?||ch.geoportal.raumplanung_grundstueckskataster.1478.0.oereb_nutzungsplanung_kt_ai||1.3.0&swisssearch=47.339%209.464500000000001&zoom=7
 KT_AI,ÖREB Nutzungsplanung Schutz Kt AI,https://test.map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||ÖREB Nutzungsplanung Schutz Kt AI||https://www.geoportal.ch/services/wms/ktai?||ch.geoportal.raumplanung_grundstueckskataster.1483.0.oereb_nutzungsplanung_schutz_kt_ai||1.3.0&swisssearch=47.339%209.464500000000001&zoom=7
 KT_AI,ÖREB Projektierungszonen bei Flughäfen CH,https://test.map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||ÖREB Projektierungszonen bei Flughäfen CH||https://www.geoportal.ch/services/wms/ktai?||ch.geoportal.verkehr.1457.0.oereb_projektierungszonen_bei_flughaefen_ch||1.3.0&swisssearch=47.339%209.464500000000001&zoom=7
+KT_AI,ÖREB Quartierpläne Kt AI,https://test.map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||ÖREB Quartierpläne Kt AI||https://www.geoportal.ch/services/wms/ktai?||ch.geoportal.raumplanung_grundstueckskataster.2302.0.oereb_quartierplaene_kt_ai||1.3.0&swisssearch=47.339%209.464500000000001&zoom=7
 KT_AI,ÖREB Sicherheitszonenplan bei Flughäfen CH,https://test.map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||ÖREB Sicherheitszonenplan bei Flughäfen CH||https://www.geoportal.ch/services/wms/ktai?||ch.geoportal.militaer_sicherheit.1320.0.oereb_sicherheitszonenplan_bei_flughaefen_ch||1.3.0&swisssearch=47.339%209.464500000000001&zoom=7
 KT_AI,ÖREB Waldabstandslinien Kt,https://test.map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||ÖREB Waldabstandslinien Kt||https://www.geoportal.ch/services/wms/ktai?||ch.geoportal.raumplanung_grundstueckskataster.1472.0.oereb_waldabstandslinien_kt||1.3.0&swisssearch=47.339%209.464500000000001&zoom=7
 KT_AI,ÖREB Waldgrenzen Kt,https://test.map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||ÖREB Waldgrenzen Kt||https://www.geoportal.ch/services/wms/ktai?||ch.geoportal.raumplanung_grundstueckskataster.1468.0.oereb_waldgrenzen_kt||1.3.0&swisssearch=47.339%209.464500000000001&zoom=7
@@ -151,6 +155,8 @@ KT_AI,Sondernutzungspläne Gde,https://test.map.geo.admin.ch/?bgLayer=ch.swissto
 KT_AI,Stand der Erschliessung Gde,https://test.map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||Stand der Erschliessung Gde||https://www.geoportal.ch/services/wms/ktai?||ch.geoportal.raumplanung_grundstueckskataster.90.0.stand_der_erschliessung_gde||1.3.0&swisssearch=47.339%209.464500000000001&zoom=7
 KT_AI,Strassenverkehrslärmkataster Nacht CH,https://test.map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||Strassenverkehrslärmkataster Nacht CH||https://www.geoportal.ch/services/wms/ktai?||ch.geoportal.umwelt_naturschutz.1851.0.strassenverkehrslaermkataster_nacht_ch||1.3.0&swisssearch=47.339%209.464500000000001&zoom=7
 KT_AI,Strassenverkehrslärmkataster Tag CH,https://test.map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||Strassenverkehrslärmkataster Tag CH||https://www.geoportal.ch/services/wms/ktai?||ch.geoportal.umwelt_naturschutz.1007.0.strassenverkehrslaermkataster_tag_ch||1.3.0&swisssearch=47.339%209.464500000000001&zoom=7
+KT_AI,Strategie Velo Gde Wil,https://test.map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||Strategie Velo Gde Wil||https://www.geoportal.ch/services/wms/ktai?||ch.geoportal.verkehr.2314.0.strategie_velo_gde_wil||1.3.0&swisssearch=47.339%209.464500000000001&zoom=7
+KT_AI,swissALTI3D Reliefschattierung,https://test.map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||swissALTI3D Reliefschattierung||https://www.geoportal.ch/services/wms/ktai?||ch.geoportal.hoehen.2108.0.swissalti3d_reliefschattierung||1.3.0&swisssearch=47.339%209.464500000000001&zoom=7
 KT_AI,Übersichtsplan 1:10000 (ÜP10) Kt,https://test.map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||Übersichtsplan 1:10000 (ÜP10) Kt||https://www.geoportal.ch/services/wms/ktai?||ch.geoportal.basiskarten_bodenbedeckung_bilddaten.980.0.uebersichtsplan_110000_uep10_kt||1.3.0&swisssearch=47.339%209.464500000000001&zoom=7
 KT_AI,Übersichtsplan Gde,https://test.map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||Übersichtsplan Gde||https://www.geoportal.ch/services/wms/ktai?||ch.geoportal.basiskarten_bodenbedeckung_bilddaten.83.0.uebersichtsplan_gde||1.3.0&swisssearch=47.339%209.464500000000001&zoom=7
 KT_AI,Übersichtsplan grau Gde,https://test.map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||Übersichtsplan grau Gde||https://www.geoportal.ch/services/wms/ktai?||ch.geoportal.basiskarten_bodenbedeckung_bilddaten.85.0.uebersichtsplan_grau_gde||1.3.0&swisssearch=47.339%209.464500000000001&zoom=7
@@ -166,8 +172,8 @@ KT_AI,Vogelstandorte Mehlschwalben Kt,https://test.map.geo.admin.ch/?bgLayer=ch.
 KT_AI,Vogelstandorte Rauchschwalben Kt,https://test.map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||Vogelstandorte Rauchschwalben Kt||https://www.geoportal.ch/services/wms/ktai?||ch.geoportal.wald_flora_fauna.580.0.vogelstandorte_rauchschwalben_kt||1.3.0&swisssearch=47.339%209.464500000000001&zoom=7
 KT_AI,Wald/Bestandeskarte 2001/2003 Kt AI,https://test.map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||Wald/Bestandeskarte 2001/2003 Kt AI||https://www.geoportal.ch/services/wms/ktai?||ch.geoportal.wald_flora_fauna.534.0.waldbestandeskarte_20012003_kt_ai||1.3.0&swisssearch=47.339%209.464500000000001&zoom=7
 KT_AI,Waldfunktionen Kt AI,https://test.map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||Waldfunktionen Kt AI||https://www.geoportal.ch/services/wms/ktai?||ch.geoportal.wald_flora_fauna.42.0.waldfunktionen_kt_ai||1.3.0&swisssearch=47.339%209.464500000000001&zoom=7
+KT_AI,Waldgesellschaften Kt AI,https://test.map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||Waldgesellschaften Kt AI||https://www.geoportal.ch/services/wms/ktai?||ch.geoportal.wald_flora_fauna.2205.0.waldgesellschaften_kt_ai||1.3.0&swisssearch=47.339%209.464500000000001&zoom=7
 KT_AI,Waldreservate Kt AI,https://test.map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||Waldreservate Kt AI||https://www.geoportal.ch/services/wms/ktai?||ch.geoportal.umwelt_naturschutz.660.0.waldreservate_kt_ai||1.3.0&swisssearch=47.339%209.464500000000001&zoom=7
-KT_AI,Waldstandorte Kt AI (alt),https://test.map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||Waldstandorte Kt AI (alt)||https://www.geoportal.ch/services/wms/ktai?||ch.geoportal.wald_flora_fauna.687.0.waldstandorte_kt_ai_alt||1.3.0&swisssearch=47.339%209.464500000000001&zoom=7
 KT_AI,"Wanderwege, kantonal Kt AR","https://test.map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||Wanderwege, kantonal Kt AR||https://www.geoportal.ch/services/wms/ktai?||ch.geoportal.verkehr.20.0.wanderwege_kantonal_kt_ar||1.3.0&swisssearch=47.339%209.464500000000001&zoom=7"
 KT_AI,Wärmeversorgungsplan,https://test.map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||Wärmeversorgungsplan||https://www.geoportal.ch/services/wms/ktai?||ch.geoportal.ver_entsorgung_kommunikation.2024.0.waermeversorgungsplan||1.3.0&swisssearch=47.339%209.464500000000001&zoom=7
 KT_AI,Wärmeversorgungsplan St. Margrethen,https://test.map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||Wärmeversorgungsplan St. Margrethen||https://www.geoportal.ch/services/wms/ktai?||ch.geoportal.ver_entsorgung_kommunikation.2090.0.waermeversorgungsplan_st_margrethen||1.3.0&swisssearch=47.339%209.464500000000001&zoom=7
@@ -181,6 +187,7 @@ KT_AI,Windgeschwindigkeit 75 m Höhe CH,https://test.map.geo.admin.ch/?bgLayer=c
 KT_AI,Windpotenzialgebiete CH,https://test.map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||Windpotenzialgebiete CH||https://www.geoportal.ch/services/wms/ktai?||ch.geoportal.ver_entsorgung_kommunikation.1508.0.windpotenzialgebiete_ch||1.3.0&swisssearch=47.339%209.464500000000001&zoom=7
 KT_AI,"Zonenplan, kantonale Darstellung Kt","https://test.map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||Zonenplan, kantonale Darstellung Kt||https://www.geoportal.ch/services/wms/ktai?||ch.geoportal.raumplanung_grundstueckskataster.128.0.zonenplan_kantonale_darstellung_kt||1.3.0&swisssearch=47.339%209.464500000000001&zoom=7"
 KT_AI,Zonenplan Schutz Gde,https://test.map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||Zonenplan Schutz Gde||https://www.geoportal.ch/services/wms/ktai?||ch.geoportal.raumplanung_grundstueckskataster.316.0.zonenplan_schutz_gde||1.3.0&swisssearch=47.339%209.464500000000001&zoom=7
+KT_AI,Zustandsklasse Ökomorphologie Kt SG,https://test.map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||Zustandsklasse Ökomorphologie Kt SG||https://www.geoportal.ch/services/wms/ktai?||ch.geoportal.gewaesser.2216.0.zustandsklasse_oekomorphologie_kt_sg||1.3.0&swisssearch=47.339%209.464500000000001&zoom=7
 KT_AR,Ablagerungen 2005 Kt AR,https://test.map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||Ablagerungen 2005 Kt AR||https://www.geoportal.ch/services/wms/ktar?||ch.geoportal.gewaesser.185.0.ablagerungen_2005_kt_ar||1.3.0&swisssearch=47.358000000000004%209.411000000000001&zoom=7
 KT_AR,Abwasser Werkplan Gde,https://test.map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||Abwasser Werkplan Gde||https://www.geoportal.ch/services/wms/ktar?||ch.geoportal.ver_entsorgung_kommunikation.205.0.abwasser_werkplan_gde||1.3.0&swisssearch=47.358000000000004%209.411000000000001&zoom=7
 KT_AR,Alternativ Tankstellen Kt AR,https://test.map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||Alternativ Tankstellen Kt AR||https://www.geoportal.ch/services/wms/ktar?||ch.geoportal.ver_entsorgung_kommunikation.935.0.alternativ_tankstellen_kt_ar||1.3.0&swisssearch=47.358000000000004%209.411000000000001&zoom=7
@@ -195,6 +202,7 @@ KT_AR,Bestandeskarte 2014 Kt AR,https://test.map.geo.admin.ch/?bgLayer=ch.swisst
 KT_AR,Bestandeskarte 2019 Kt AR/AI,https://test.map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||Bestandeskarte 2019 Kt AR/AI||https://www.geoportal.ch/services/wms/ktar?||ch.geoportal.wald_flora_fauna.1603.0.bestandeskarte_2019_kt_arai||1.3.0&swisssearch=47.358000000000004%209.411000000000001&zoom=7
 KT_AR,Bienenstandorte Kt,https://test.map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||Bienenstandorte Kt||https://www.geoportal.ch/services/wms/ktar?||ch.geoportal.landwirtschaft.64.0.bienenstandorte_kt||1.3.0&swisssearch=47.358000000000004%209.411000000000001&zoom=7
 KT_AR,Bodeneignungskarte CH,https://test.map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||Bodeneignungskarte CH||https://www.geoportal.ch/services/wms/ktar?||ch.geoportal.geologie_boden_naturbedingte_risiken.1051.0.bodeneignungskarte_ch||1.3.0&swisssearch=47.358000000000004%209.411000000000001&zoom=7
+KT_AR,Bundesinventar der Landschaften und Naturdenkmäler (BLN) CH,https://test.map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||Bundesinventar der Landschaften und Naturdenkmäler (BLN) CH||https://www.geoportal.ch/services/wms/ktar?||ch.geoportal.umwelt_naturschutz.1356.0.bundesinventar_der_landschaften_und_naturdenkmaeler_bln_ch||1.3.0&swisssearch=47.358000000000004%209.411000000000001&zoom=7
 KT_AR,Cablecom Werkplan Gde,https://test.map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||Cablecom Werkplan Gde||https://www.geoportal.ch/services/wms/ktar?||ch.geoportal.ver_entsorgung_kommunikation.1250.0.cablecom_werkplan_gde||1.3.0&swisssearch=47.358000000000004%209.411000000000001&zoom=7
 KT_AR,Dufour Karte,https://test.map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||Dufour Karte||https://www.geoportal.ch/services/wms/ktar?||ch.geoportal.basiskarten_bodenbedeckung_bilddaten.2184.0.dufour_karte||1.3.0&swisssearch=47.358000000000004%209.411000000000001&zoom=7
 KT_AR,Einleitungen 2005 Kt AR,https://test.map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||Einleitungen 2005 Kt AR||https://www.geoportal.ch/services/wms/ktar?||ch.geoportal.gewaesser.305.0.einleitungen_2005_kt_ar||1.3.0&swisssearch=47.358000000000004%209.411000000000001&zoom=7
@@ -222,7 +230,6 @@ KT_AR,Gefahrenkarte Lawine Kt,https://test.map.geo.admin.ch/?bgLayer=ch.swisstop
 KT_AR,Gefahrenkarte Rutschung Kt,https://test.map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||Gefahrenkarte Rutschung Kt||https://www.geoportal.ch/services/wms/ktar?||ch.geoportal.geologie_boden_naturbedingte_risiken.375.0.gefahrenkarte_rutschung_kt||1.3.0&swisssearch=47.358000000000004%209.411000000000001&zoom=7
 KT_AR,Gefahrenkarte Sturz Kt,https://test.map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||Gefahrenkarte Sturz Kt||https://www.geoportal.ch/services/wms/ktar?||ch.geoportal.geologie_boden_naturbedingte_risiken.376.0.gefahrenkarte_sturz_kt||1.3.0&swisssearch=47.358000000000004%209.411000000000001&zoom=7
 KT_AR,Gefahrenkarte Wasser Kt,https://test.map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||Gefahrenkarte Wasser Kt||https://www.geoportal.ch/services/wms/ktar?||ch.geoportal.geologie_boden_naturbedingte_risiken.377.0.gefahrenkarte_wasser_kt||1.3.0&swisssearch=47.358000000000004%209.411000000000001&zoom=7
-KT_AR,"Geologie, harmonisiert Kt (nicht mehr verwendet)","https://test.map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||Geologie, harmonisiert Kt (nicht mehr verwendet)||https://www.geoportal.ch/services/wms/ktar?||ch.geoportal.geologie_boden_naturbedingte_risiken.50.0.geologie_harmonisiert_kt_nicht_mehr_verwendet||1.3.0&swisssearch=47.358000000000004%209.411000000000001&zoom=7"
 KT_AR,Geologischer Atlas Kt,https://test.map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||Geologischer Atlas Kt||https://www.geoportal.ch/services/wms/ktar?||ch.geoportal.geologie_boden_naturbedingte_risiken.296.0.geologischer_atlas_kt||1.3.0&swisssearch=47.358000000000004%209.411000000000001&zoom=7
 KT_AR,Geotechnische Karte Kt,https://test.map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||Geotechnische Karte Kt||https://www.geoportal.ch/services/wms/ktar?||ch.geoportal.geologie_boden_naturbedingte_risiken.229.0.geotechnische_karte_kt||1.3.0&swisssearch=47.358000000000004%209.411000000000001&zoom=7
 KT_AR,Geotopinventar Kt,https://test.map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||Geotopinventar Kt||https://www.geoportal.ch/services/wms/ktar?||ch.geoportal.umwelt_naturschutz.134.0.geotopinventar_kt||1.3.0&swisssearch=47.358000000000004%209.411000000000001&zoom=7
@@ -231,6 +238,7 @@ KT_AR,"GEP Zustandsbericht, Versickerung Modell Kt","https://test.map.geo.admin.
 KT_AR,"Gewässer, Hochwasserschutz- und Revitalisierungsprojekte Kt","https://test.map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||Gewässer, Hochwasserschutz- und Revitalisierungsprojekte Kt||https://www.geoportal.ch/services/wms/ktar?||ch.geoportal.gewaesser.991.0.gewaesser_hochwasserschutz_und_revitalisierungsprojekte_kt||1.3.0&swisssearch=47.358000000000004%209.411000000000001&zoom=7"
 KT_AR,Gewässernetz 1:10000 GN10 Kt,https://test.map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||Gewässernetz 1:10000 GN10 Kt||https://www.geoportal.ch/services/wms/ktar?||ch.geoportal.gewaesser.160.0.gewaessernetz_110000_gn10_kt||1.3.0&swisssearch=47.358000000000004%209.411000000000001&zoom=7
 KT_AR,Gewässernetz 1:200000 Kt,https://test.map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||Gewässernetz 1:200000 Kt||https://www.geoportal.ch/services/wms/ktar?||ch.geoportal.gewaesser.43.0.gewaessernetz_1200000_kt||1.3.0&swisssearch=47.358000000000004%209.411000000000001&zoom=7
+KT_AR,Gewässernetz GN10 Nutzung Kt,https://test.map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||Gewässernetz GN10 Nutzung Kt||https://www.geoportal.ch/services/wms/ktar?||ch.geoportal.gewaesser.2307.0.gewaessernetz_gn10_nutzung_kt||1.3.0&swisssearch=47.358000000000004%209.411000000000001&zoom=7
 KT_AR,Gewässerqualität Ammonium Kt,https://test.map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||Gewässerqualität Ammonium Kt||https://www.geoportal.ch/services/wms/ktar?||ch.geoportal.gewaesser.1308.0.gewaesserqualitaet_ammonium_kt||1.3.0&swisssearch=47.358000000000004%209.411000000000001&zoom=7
 KT_AR,Gewässerqualität DOC Kt,https://test.map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||Gewässerqualität DOC Kt||https://www.geoportal.ch/services/wms/ktar?||ch.geoportal.gewaesser.1314.0.gewaesserqualitaet_doc_kt||1.3.0&swisssearch=47.358000000000004%209.411000000000001&zoom=7
 KT_AR,Gewässerqualität Gesamtphosphor Kt,https://test.map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||Gewässerqualität Gesamtphosphor Kt||https://www.geoportal.ch/services/wms/ktar?||ch.geoportal.gewaesser.1313.0.gewaesserqualitaet_gesamtphosphor_kt||1.3.0&swisssearch=47.358000000000004%209.411000000000001&zoom=7
@@ -244,6 +252,7 @@ KT_AR,Gewässerraum AR festgelegt Kt AR,https://test.map.geo.admin.ch/?bgLayer=c
 KT_AR,"Gewässer, Rechtszustand Kt AR","https://test.map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||Gewässer, Rechtszustand Kt AR||https://www.geoportal.ch/services/wms/ktar?||ch.geoportal.gewaesser.1484.0.gewaesser_rechtszustand_kt_ar||1.3.0&swisssearch=47.358000000000004%209.411000000000001&zoom=7"
 KT_AR,"Gewässer, Rechtszustand Kt SG","https://test.map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||Gewässer, Rechtszustand Kt SG||https://www.geoportal.ch/services/wms/ktar?||ch.geoportal.gewaesser.1074.0.gewaesser_rechtszustand_kt_sg||1.3.0&swisssearch=47.358000000000004%209.411000000000001&zoom=7"
 KT_AR,Gewässerschutzkarte Kt,https://test.map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||Gewässerschutzkarte Kt||https://www.geoportal.ch/services/wms/ktar?||ch.geoportal.gewaesser.30.0.gewaesserschutzkarte_kt||1.3.0&swisssearch=47.358000000000004%209.411000000000001&zoom=7
+KT_AR,"Gewässer, Wasserbau Kt SG","https://test.map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||Gewässer, Wasserbau Kt SG||https://www.geoportal.ch/services/wms/ktar?||ch.geoportal.gewaesser.2217.0.gewaesser_wasserbau_kt_sg||1.3.0&swisssearch=47.358000000000004%209.411000000000001&zoom=7"
 KT_AR,Grundstücksgrenzen Kt,https://test.map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||Grundstücksgrenzen Kt||https://www.geoportal.ch/services/wms/ktar?||ch.geoportal.basiskarten_bodenbedeckung_bilddaten.120.0.grundstuecksgrenzen_kt||1.3.0&swisssearch=47.358000000000004%209.411000000000001&zoom=7
 KT_AR,Grundwasserkarte Kt,https://test.map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||Grundwasserkarte Kt||https://www.geoportal.ch/services/wms/ktar?||ch.geoportal.gewaesser.32.0.grundwasserkarte_kt||1.3.0&swisssearch=47.358000000000004%209.411000000000001&zoom=7
 KT_AR,Hanglagen CH,https://test.map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||Hanglagen CH||https://www.geoportal.ch/services/wms/ktar?||ch.geoportal.landwirtschaft.177.0.hanglagen_ch||1.3.0&swisssearch=47.358000000000004%209.411000000000001&zoom=7
@@ -324,7 +333,6 @@ KT_AR,"Richtplankarte, kantonal Kt AR","https://test.map.geo.admin.ch/?bgLayer=c
 KT_AR,Schienennetz CH,https://test.map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||Schienennetz CH||https://www.geoportal.ch/services/wms/ktar?||ch.geoportal.verkehr.1040.0.schienennetz_ch||1.3.0&swisssearch=47.358000000000004%209.411000000000001&zoom=7
 KT_AR,Schleppschlauchpflicht pot. Flächen Kt,https://test.map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||Schleppschlauchpflicht pot. Flächen Kt||https://www.geoportal.ch/services/wms/ktar?||ch.geoportal.landwirtschaft.2109.0.schleppschlauchpflicht_pot_flaechen_kt||1.3.0&swisssearch=47.358000000000004%209.411000000000001&zoom=7
 KT_AR,Schützenswerte Ortsbilder ISOS CH,https://test.map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||Schützenswerte Ortsbilder ISOS CH||https://www.geoportal.ch/services/wms/ktar?||ch.geoportal.raumplanung_grundstueckskataster.1036.0.schuetzenswerte_ortsbilder_isos_ch||1.3.0&swisssearch=47.358000000000004%209.411000000000001&zoom=7
-KT_AR,Schutz gemäss NHG Gde,https://test.map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||Schutz gemäss NHG Gde||https://www.geoportal.ch/services/wms/ktar?||ch.geoportal.raumplanung_grundstueckskataster.304.0.schutz_gemaess_nhg_gde||1.3.0&swisssearch=47.358000000000004%209.411000000000001&zoom=7
 KT_AR,"Schutzverordnung Moorlandschaften, kantonal Kt","https://test.map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||Schutzverordnung Moorlandschaften, kantonal Kt||https://www.geoportal.ch/services/wms/ktar?||ch.geoportal.raumplanung_grundstueckskataster.156.0.schutzverordnung_moorlandschaften_kantonal_kt||1.3.0&swisssearch=47.358000000000004%209.411000000000001&zoom=7"
 KT_AR,"Schutzzonenplan, kantonal Kt AR","https://test.map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||Schutzzonenplan, kantonal Kt AR||https://www.geoportal.ch/services/wms/ktar?||ch.geoportal.raumplanung_grundstueckskataster.300.0.schutzzonenplan_kantonal_kt_ar||1.3.0&swisssearch=47.358000000000004%209.411000000000001&zoom=7"
 KT_AR,Schwarzplan Gde,https://test.map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||Schwarzplan Gde||https://www.geoportal.ch/services/wms/ktar?||ch.geoportal.basiskarten_bodenbedeckung_bilddaten.1282.0.schwarzplan_gde||1.3.0&swisssearch=47.358000000000004%209.411000000000001&zoom=7
@@ -345,6 +353,7 @@ KT_AR,Strassenlärm Kt AR,https://test.map.geo.admin.ch/?bgLayer=ch.swisstopo.pi
 KT_AR,Strassenverkehrslärmkataster Nacht CH,https://test.map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||Strassenverkehrslärmkataster Nacht CH||https://www.geoportal.ch/services/wms/ktar?||ch.geoportal.umwelt_naturschutz.1851.0.strassenverkehrslaermkataster_nacht_ch||1.3.0&swisssearch=47.358000000000004%209.411000000000001&zoom=7
 KT_AR,Strassenverkehrslärmkataster Tag CH,https://test.map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||Strassenverkehrslärmkataster Tag CH||https://www.geoportal.ch/services/wms/ktar?||ch.geoportal.umwelt_naturschutz.1007.0.strassenverkehrslaermkataster_tag_ch||1.3.0&swisssearch=47.358000000000004%209.411000000000001&zoom=7
 KT_AR,Strassenverzeichnis Kt AR,https://test.map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||Strassenverzeichnis Kt AR||https://www.geoportal.ch/services/wms/ktar?||ch.geoportal.verkehr.268.0.strassenverzeichnis_kt_ar||1.3.0&swisssearch=47.358000000000004%209.411000000000001&zoom=7
+KT_AR,swissALTI3D Reliefschattierung,https://test.map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||swissALTI3D Reliefschattierung||https://www.geoportal.ch/services/wms/ktar?||ch.geoportal.hoehen.2108.0.swissalti3d_reliefschattierung||1.3.0&swisssearch=47.358000000000004%209.411000000000001&zoom=7
 KT_AR,Übersichtsplan 1:10000 (ÜP10) Kt,https://test.map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||Übersichtsplan 1:10000 (ÜP10) Kt||https://www.geoportal.ch/services/wms/ktar?||ch.geoportal.basiskarten_bodenbedeckung_bilddaten.980.0.uebersichtsplan_110000_uep10_kt||1.3.0&swisssearch=47.358000000000004%209.411000000000001&zoom=7
 KT_AR,Übersichtsplan grau + UP Liegenschaften grau,https://test.map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||Übersichtsplan grau + UP Liegenschaften grau||https://www.geoportal.ch/services/wms/ktar?||ch.geoportal.basiskarten_bodenbedeckung_bilddaten.196.0.uebersichtsplan_grau__up_liegenschaften_grau||1.3.0&swisssearch=47.358000000000004%209.411000000000001&zoom=7
 KT_AR,Uferbereich 2005 Kt AR,https://test.map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||Uferbereich 2005 Kt AR||https://www.geoportal.ch/services/wms/ktar?||ch.geoportal.gewaesser.188.0.uferbereich_2005_kt_ar||1.3.0&swisssearch=47.358000000000004%209.411000000000001&zoom=7
@@ -362,8 +371,6 @@ KT_AR,Waldfunktionen Kt AR,https://test.map.geo.admin.ch/?bgLayer=ch.swisstopo.p
 KT_AR,Waldgesellschaften Kt AR,https://test.map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||Waldgesellschaften Kt AR||https://www.geoportal.ch/services/wms/ktar?||ch.geoportal.wald_flora_fauna.688.0.waldgesellschaften_kt_ar||1.3.0&swisssearch=47.358000000000004%209.411000000000001&zoom=7
 KT_AR,Waldreservate Kt AR,https://test.map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||Waldreservate Kt AR||https://www.geoportal.ch/services/wms/ktar?||ch.geoportal.wald_flora_fauna.806.0.waldreservate_kt_ar||1.3.0&swisssearch=47.358000000000004%209.411000000000001&zoom=7
 KT_AR,"Wanderwege, kantonal Kt AR","https://test.map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||Wanderwege, kantonal Kt AR||https://www.geoportal.ch/services/wms/ktar?||ch.geoportal.verkehr.20.0.wanderwege_kantonal_kt_ar||1.3.0&swisssearch=47.358000000000004%209.411000000000001&zoom=7"
-KT_AR,Wärmeversorgungsplan,https://test.map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||Wärmeversorgungsplan||https://www.geoportal.ch/services/wms/ktar?||ch.geoportal.ver_entsorgung_kommunikation.2024.0.waermeversorgungsplan||1.3.0&swisssearch=47.358000000000004%209.411000000000001&zoom=7
-KT_AR,Wärmeversorgungsplan St. Margrethen,https://test.map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||Wärmeversorgungsplan St. Margrethen||https://www.geoportal.ch/services/wms/ktar?||ch.geoportal.ver_entsorgung_kommunikation.2090.0.waermeversorgungsplan_st_margrethen||1.3.0&swisssearch=47.358000000000004%209.411000000000001&zoom=7
 KT_AR,Wasserkraftpotential Kt AR,https://test.map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||Wasserkraftpotential Kt AR||https://www.geoportal.ch/services/wms/ktar?||ch.geoportal.ver_entsorgung_kommunikation.171.0.wasserkraftpotential_kt_ar||1.3.0&swisssearch=47.358000000000004%209.411000000000001&zoom=7
 KT_AR,Wasser Werkplan (ausser Betrieb) Gde,https://test.map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||Wasser Werkplan (ausser Betrieb) Gde||https://www.geoportal.ch/services/wms/ktar?||ch.geoportal.ver_entsorgung_kommunikation.1295.0.wasser_werkplan_ausser_betrieb_gde||1.3.0&swisssearch=47.358000000000004%209.411000000000001&zoom=7
 KT_AR,Wasser Werkplan Gde,https://test.map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||Wasser Werkplan Gde||https://www.geoportal.ch/services/wms/ktar?||ch.geoportal.ver_entsorgung_kommunikation.114.0.wasser_werkplan_gde||1.3.0&swisssearch=47.358000000000004%209.411000000000001&zoom=7
@@ -383,6 +390,7 @@ KT_AR,ZAB Sammelstellen Siedlungsabfälle,https://test.map.geo.admin.ch/?bgLayer
 KT_AR,Zonenplan Gefahren Gde,https://test.map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||Zonenplan Gefahren Gde||https://www.geoportal.ch/services/wms/ktar?||ch.geoportal.raumplanung_grundstueckskataster.71.0.zonenplan_gefahren_gde||1.3.0&swisssearch=47.358000000000004%209.411000000000001&zoom=7
 KT_AR,"Zonenplan, kantonale Darstellung Kt","https://test.map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||Zonenplan, kantonale Darstellung Kt||https://www.geoportal.ch/services/wms/ktar?||ch.geoportal.raumplanung_grundstueckskataster.128.0.zonenplan_kantonale_darstellung_kt||1.3.0&swisssearch=47.358000000000004%209.411000000000001&zoom=7"
 KT_AR,Zonenplan Schutz Gde,https://test.map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||Zonenplan Schutz Gde||https://www.geoportal.ch/services/wms/ktar?||ch.geoportal.raumplanung_grundstueckskataster.316.0.zonenplan_schutz_gde||1.3.0&swisssearch=47.358000000000004%209.411000000000001&zoom=7
+KT_AR,Zustandsklasse Ökomorphologie Kt SG,https://test.map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||Zustandsklasse Ökomorphologie Kt SG||https://www.geoportal.ch/services/wms/ktar?||ch.geoportal.gewaesser.2216.0.zustandsklasse_oekomorphologie_kt_sg||1.3.0&swisssearch=47.358000000000004%209.411000000000001&zoom=7
 KT_AG,Landschaftsschutzdekrete 29AG Linienelemente (Modelllegende),https://test.map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||Landschaftsschutzdekrete 29AG Linienelemente (Modelllegende)||https://wms.geo.ag.ch/public/ows?||ch_ag_geo_29_ag_schutzdekrete_alg_landschutzdekl_02||1.1.1&swisssearch=47.586791562166134%208.233315346493889&zoom=7
 KT_AG,Landschaftsschutzdekrete 29AG (Modelllegende),https://test.map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||Landschaftsschutzdekrete 29AG (Modelllegende)||https://wms.geo.ag.ch/public/ows?||ch_ag_geo_29_ag_schutzdekrete_alg_landschutzdekf_02||1.1.1&swisssearch=47.42087192594984%208.069353413799632&zoom=7
 KT_AG,Landschaftsschutzdekrete 29AG Punktelemente (Modelllegende),https://test.map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||Landschaftsschutzdekrete 29AG Punktelemente (Modelllegende)||https://wms.geo.ag.ch/public/ows?||ch_ag_geo_29_ag_schutzdekrete_alg_landschutzdekp_02||1.1.1&swisssearch=47.5424873727696%208.232077042366345&zoom=7
@@ -399,7 +407,7 @@ KT_AG,Netzgebiete: Elektrizitätsversorgung NE7,https://test.map.geo.admin.ch/?b
 KT_AG,Netzgebietszuteilung Punktuelle Ausnahmen NE7,https://test.map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||Netzgebietszuteilung Punktuelle Ausnahmen NE7||https://wms.geo.ag.ch/public/ows?||ch_ag_geo_ae_netzbetreiberp_02||1.1.1&swisssearch=47.35990706724499%208.121351428840168&zoom=7
 KT_AG,Netzgebietszuteilung Punktuelle Ausnahmen NE5b,https://test.map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||Netzgebietszuteilung Punktuelle Ausnahmen NE5b||https://wms.geo.ag.ch/public/ows?||ch_ag_geo_ae_netzbetreiberp_01||1.1.1&swisssearch=47.35990706724499%208.121351428840168&zoom=7
 KT_AG,Belastete Standorte (KBS),https://test.map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||Belastete Standorte (KBS)||https://wms.geo.ag.ch/public/ows?||ch_ag_geo_afu_kbs_01||1.1.1&swisssearch=47.37859642898944%208.085301039589911&zoom=7
-KT_AG,Erdwärmesonden-Bewilligungen,https://test.map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||Erdwärmesonden-Bewilligungen||https://wms.geo.ag.ch/public/ows?||ch_ag_geo_afu_ewsbewilligungen_01||1.1.1&swisssearch=54.72281528189382%208.02063806695256&zoom=7
+KT_AG,Erdwärmesonden-Bewilligungen,https://test.map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||Erdwärmesonden-Bewilligungen||https://wms.geo.ag.ch/public/ows?||ch_ag_geo_afu_ewsbewilligungen_01||1.1.1&swisssearch=54.859412342351476%208.022507980038577&zoom=7
 KT_AG,Eignung Erdwärmenutzung,https://test.map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||Eignung Erdwärmenutzung||https://wms.geo.ag.ch/public/ows?||ch_ag_geo_afu_ewsp_01||1.1.1&swisssearch=47.38018796864973%208.086047539256105&zoom=7
 KT_AG,"Grundwasservorkommen, Bedeckung Grundwasserleiter","https://test.map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||Grundwasservorkommen, Bedeckung Grundwasserleiter||https://wms.geo.ag.ch/public/ows?||ch_ag_geo_afu_gruw_02||1.1.1&swisssearch=47.379736259996065%208.087179422426125&zoom=7"
 KT_AG,Grundwasservorkommen,https://test.map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||Grundwasservorkommen||https://wms.geo.ag.ch/public/ows?||ch_ag_geo_afu_gruw_01||1.1.1&swisssearch=47.379736259996065%208.087179422426125&zoom=7
@@ -798,7 +806,7 @@ KT_AG,AV: Polizeinummern,https://test.map.geo.admin.ch/?bgLayer=ch.swisstopo.pix
 KT_AG,AV: Parzellen,https://test.map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||AV: Parzellen||https://wms.geo.ag.ch/public/ows?||ch_ag_geo_va_avwms_va_lsparz_01||1.1.1&swisssearch=47.3801882751534%208.086032107531754&zoom=7
 KT_AG,AV: selbständige und dauernde Rechte,https://test.map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||AV: selbständige und dauernde Rechte||https://wms.geo.ag.ch/public/ows?||ch_ag_geo_va_avwms_va_lssdr_01||1.1.1&swisssearch=47.38002226962695%208.08146229431694&zoom=7
 KT_AG,AV: proj. Parzellen,https://test.map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||AV: proj. Parzellen||https://wms.geo.ag.ch/public/ows?||ch_ag_geo_va_avwms_va_lsprojparz_01||1.1.1&swisssearch=47.38175073713286%208.078741855118862&zoom=7
-KT_AG,AV: proj. selbständige und dauernde Rechte,https://test.map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||AV: proj. selbständige und dauernde Rechte||https://wms.geo.ag.ch/public/ows?||ch_ag_geo_va_avwms_va_lsprojsdr_01||1.1.1&swisssearch=47.343294834454085%208.172777870905925&zoom=7
+KT_AG,AV: proj. selbständige und dauernde Rechte,https://test.map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||AV: proj. selbständige und dauernde Rechte||https://wms.geo.ag.ch/public/ows?||ch_ag_geo_va_avwms_va_lsprojsdr_01||1.1.1&swisssearch=47.36241165280198%208.173125969420525&zoom=7
 KT_AG,AV: Rohrleitungen,https://test.map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||AV: Rohrleitungen||https://wms.geo.ag.ch/public/ows?||ch_ag_geo_va_avwms_va_rllinie_01||1.1.1&swisssearch=47.36152626502884%208.078335768514686&zoom=7
 KT_AG,AV: Parzellennummern,https://test.map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||AV: Parzellennummern||https://wms.geo.ag.ch/public/ows?||ch_ag_geo_va_avwms_va_lsparznr_01||1.1.1&swisssearch=47.380074766629306%208.085993520459715&zoom=7
 KT_AG,AV: proj. Parzellennummern,https://test.map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||AV: proj. Parzellennummern||https://wms.geo.ag.ch/public/ows?||ch_ag_geo_va_avwms_va_lsprojparznr_01||1.1.1&swisssearch=47.38179389189283%208.078961819881428&zoom=7
@@ -12504,419 +12512,421 @@ KT_ZH,Spontane Rutschungen,https://test.map.geo.admin.ch/?bgLayer=ch.swisstopo.p
 KT_ZH,Permanente Rutschungen,https://test.map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||Permanente Rutschungen||https://wms.zh.ch/AwelRKHWZHWMS?||perm-rutschungen||1.1.1&swisssearch=47.49495%208.599405&zoom=7
 KT_ZH,Hangmuren,https://test.map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||Hangmuren||https://wms.zh.ch/AwelRKHWZHWMS?||hangmuren||1.1.1&swisssearch=47.49495%208.599405&zoom=7
 KT_ZH,Massenbewegungen,https://test.map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||Massenbewegungen||https://wms.zh.ch/AwelRKHWZHWMS?||massenbewegungen||1.1.1&swisssearch=47.49495%208.599405&zoom=7
-KT_ZH,Vereinfachtes Datenmodell ÖREB ZH - Sondernutzungszonen (überlagernde Festlegungen) - Punkte projektiert (155.6),n.a.
-KT_ZH,Gewässer Prioritäten Erfassung Naturgefahrenkarten (44.1),n.a.
-KT_ZH,Gemeinden mit Berücksichtigung von Seen (95.3),n.a.
-KT_ZH,Generalisierte Gemeinden (337.1),n.a.
-KT_ZH,Flächige Barrieren II 2009 (293.24),n.a.
-KT_ZH,Arten pro Feuchgebietsobjekt der Kartierung 1976/77 (119.2),n.a.
-KT_ZH,Objektflächen des Trockenstanortinventars 1974 (125.1),n.a.
-KT_ZH,Grundwasservorkommen Seen (327.22),n.a.
-KT_ZH,Grundwasserpegel (326.1),n.a.
-KT_ZH,Gewässer Fliessgewässerausprägung (45.4),n.a.
-KT_ZH,Gewässer Gefahrenbereiche Massenbewegungen (44.7),n.a.
-KT_ZH,Gewässer Gefährdung Oberflächenabfluss (35.1),n.a.
-KT_ZH,Vereinfachtes Datenmodell ÖREB ZH - Grundwasserschutzareale projektiert (149.2),n.a.
-KT_ZH,Barrieren I (293.4),n.a.
-KT_ZH,Perimeter (293.10),n.a.
-KT_ZH,Regionaler Richtplan (Linien) (67.2),n.a.
-KT_ZH,Regionaler Richtplan (Flächen) (67.3),n.a.
-KT_ZH,TBA Strassen Kilometerpunkte (OGD) (102.9),n.a.
-KT_ZH,SAMMELSCHACHT-BECKEN (317.7),n.a.
-KT_ZH,S3 Grund- und Trinkwasser (371.19),n.a.
-KT_ZH,Landschaftsförderungsgebiet (kantonaler Richtplan) (371.9),n.a.
-KT_ZH,"Erholungsanlagen Wanderwege (regionale Richtpläne, Nachführung ZAW) (371.13)",n.a.
-KT_ZH,B4 Eichenförderung (371.24),n.a.
-KT_ZH,Gewässer Längsprofillinien (515.3),n.a.
-KT_ZH,Radwege (75.1),n.a.
-KT_ZH,Quellenpunkte (532.532),n.a.
-KT_ZH,Holzwärmenetz (172.10),n.a.
-KT_ZH,ÖREB-Kataster - vereinfachtes Datenmodell ZH - Gewässerabstandslinien (153.1),n.a.
-KT_ZH,Kantonaler Richtplan (Flächen) (173.33),n.a.
-KT_ZH,ÖREB-Kataster - vereinfachtes Datenmodell ZH - Waldabstandslinien projektiert (152.2),n.a.
-KT_ZH,GRUENFLAECHEN_F (460.2),n.a.
-KT_ZH,WINDFELD_P (475.1),n.a.
-KT_ZH,Räumliche Gebäudestatistik Polygon (272.1),n.a.
+KT_ZH,Stromanlagen (329.3),n.a.
 KT_ZH,Fruchtfolgeflächen (2.2),n.a.
-KT_ZH,Hinweisflächen für anthropogene Böden mit Potenzial für Fruchtfolgeflächenkompensation (260.2),n.a.
-KT_ZH,Gewerbebauland (487.1),n.a.
-KT_ZH,TBA Baustellen auf Kantonsstrassen (OGD) (28.2),n.a.
-KT_ZH,Unterhaltsmassnahmen flächig (306.5),n.a.
-KT_ZH,Gewässer Hochwasserrückhaltebecken Stauwerkabflusspunkt (512.1),n.a.
-KT_ZH,Luftbild Bestandesdaten (290.4),n.a.
-KT_ZH,Barrieren III 2009 (293.26),n.a.
-KT_ZH,Gemeinden mit Stadtkreisen von Zürich und Winterthur (278.3),n.a.
-KT_ZH,Gewässer gelöschte Wasserrechtskanäle/-leitungen (51.5),n.a.
-KT_ZH,Geschossflächen auf Quartiersebene (454.2),n.a.
-KT_ZH,Lichte Wälder Kanton Zürich (255.1),n.a.
-KT_ZH,Übriger Gewässerschutzbereich (167.5),n.a.
-KT_ZH,Gemeindebeschriftung (96.3),n.a.
-KT_ZH,Erdwärmesonden Auflagen (316.2),n.a.
-KT_ZH,Inventarflächen Heuschreckeninventar 1990/98  (136.2),n.a.
-KT_ZH,Grundwasservorkommen Beschriftung Hochwasserfall (327.14),n.a.
-KT_ZH,Gewässer Intensitätsflächen Hochwasser 30-jährliche Eintretenswahrscheinlichkeit (44.6),n.a.
-KT_ZH,KVA-Fernwärmenetze (172.4),n.a.
-KT_ZH,Gemeindegrenzen (95.2),n.a.
-KT_ZH,Inventar der Waldstandorte von naturkundlicher Bedeutung (WNB) (113.1),n.a.
-KT_ZH,Wärme aus Oberflächengewässern (172.15),n.a.
-KT_ZH,Ökomorphologie Abschnitte Fliessgewässer (176.2),n.a.
-KT_ZH,Haltestellen (140.1),n.a.
-KT_ZH,GISZHPUB.FNS_INVENTARE\GISZHPUB.FEUCHTGEBIETINVVEG_79_90_F (119.5),n.a.
-KT_ZH,Barrieren II (293.6),n.a.
-KT_ZH,ÖREB - Kataster der belasteten Standorte (KbS) (144.1),n.a.
-KT_ZH,Gewässer Fliessgewässerbezeichnung (45.3),n.a.
-KT_ZH,Waldareal (111.4),n.a.
-KT_ZH,Gewässer Nicht untersuchtes Gebiet Synoptische Gefahrenkarte (44.30),n.a.
+KT_ZH,Strassenachsen (476.1),n.a.
+KT_ZH,Waldeigentum (9.2),n.a.
 KT_ZH,Amphibinezugstellen Kt. Zürich (10.3),n.a.
-KT_ZH,TBA Strassen Routen (OGD) (102.8),n.a.
+KT_ZH,Ökomorphologie der Seeufer (23.1),n.a.
+KT_ZH,TBA Baustellen auf Kantonsstrassen (OGD) (28.2),n.a.
+KT_ZH,Pärke von nationaler Bedeutung Kanton Zürich (31.1),n.a.
+KT_ZH,Gewässer Gefährdung Oberflächenabfluss (35.1),n.a.
+KT_ZH,Gewässer Fliessrichtung (35.2),n.a.
+KT_ZH,Landwirtschaftliche Nutzungseignung (36.2),n.a.
 KT_ZH,Prüfperimeter für Bodenverschiebungen (38.1),n.a.
-KT_ZH,Schutzzone (525.5),n.a.
-KT_ZH,Überlagernde Zonen (525.6),n.a.
-KT_ZH,Erholungsanlagen Aussichtspunkte (kantonaler und regionale Richtpläne) (371.12),n.a.
-KT_ZH,E3 Erholungswälder durch Gemeinden bezeichnet (371.30),n.a.
-KT_ZH,E2 Wenig begangene Wildlebensräume (371.29),n.a.
-KT_ZH,Stromnetzgebiete (49.1),n.a.
-KT_ZH,Landschaftsschutzgebiet (kantonaler Richtplan) (371.8),n.a.
-KT_ZH,B7 Wildnispark Zürich (Naturerlebnispark) (371.27),n.a.
-KT_ZH,Hochwasserabflüsse (HQ Werte) (534.2),n.a.
-KT_ZH,H1 Holzproduktion (371.22),n.a.
-KT_ZH,MOpublic Klasse DPR_Mine_PosNumber (SelbstRechtPos) (404.4),n.a.
-KT_ZH,Anordnungen (525.1),n.a.
-KT_ZH,Gewässer Haupteinzugsgebiete (257.1),n.a.
-KT_ZH,ÖREB-Kataster - vereinfachtes Datenmodell ZH - Grundwasserschutzzonen (143.1),n.a.
-KT_ZH,ARA-Abwärmequellen Symbol (172.7),n.a.
-KT_ZH,MOpublic Klasse LCSurface_PosText (BBText) (401.2),n.a.
-KT_ZH,MOpublic Klasse LCSurfaceProj_PosText (ProjBBText) (401.4),n.a.
-KT_ZH,MOpublic Klasse Surface_element (Flaechenelement) (402.1),n.a.
-KT_ZH,MOpublic Klasse Linear_element (Linienelement) (402.3),n.a.
-KT_ZH,MOpublic Klasse Linear_element_PosText (LinienelementText) (402.4),n.a.
-KT_ZH,MOpublic Klasse Point_element (Punktelement) (402.5),n.a.
-KT_ZH,MOpublic Klasse Control-Point (LFP) (400.1),n.a.
-KT_ZH,MOpublic Klasse Building_entrance (Gebaeudeeingang) (406.3),n.a.
-KT_ZH,MOpublic Klasse Boundary_point (Grenzpunkt) (404.9),n.a.
-KT_ZH,MOpublic Klasse Building_entrance_Pos (HausnummerPos) (406.4),n.a.
-KT_ZH,MOpublic Klasse RealEstate_PosNumber (LiegenschaftPos) (404.2),n.a.
-KT_ZH,MOpublic Klasse RealEstateProj_PosNumber (ProjLiegenschaftPos) (404.6),n.a.
-KT_ZH,MOpublic Klasse DPR_Mine (SelbstRecht) (404.3),n.a.
-KT_ZH,ÖREB-Kataster - vereinfachtes Datenmodell ZH - Grundwasserschutzzonen projektiert (143.2),n.a.
-KT_ZH,MOpublic Klasse Street_name_Pos (LokalisationsNamePos) (406.2),n.a.
-KT_ZH,MOpublic Klasse Names_PosName (NamenPos) (403.2),n.a.
-KT_ZH,"MOpublic Klasse Pipelines, Surface_element (RLFlaeche) (410.1)",n.a.
-KT_ZH,"MOpublic Klasse Pipelines, Surface_element_PosName (RLFlaechenelementText) (410.2)",n.a.
-KT_ZH,"MOpublic Klasse Pipelines, Linear_element_PosName (RLLinieText) (410.4)",n.a.
-KT_ZH,MOpublic Klasse DPR_MineProj_PosNumber (ProjSelbstRechtPos) (404.8),n.a.
-KT_ZH,MOpublic Klasse Other_territ_boundary (Uebrigehoheitsgrenzen) (405.4),n.a.
-KT_ZH,Gewässer Revitalisierungspotenzial Fliessgewässer (375.1),n.a.
-KT_ZH,Kantonaler Richtplan (Punkte) (173.31),n.a.
-KT_ZH,Vektor-Übersichtsplan  - Beschriftung (48.4),n.a.
-KT_ZH,Vektor-Übersichtsplan  - Fläche (48.3),n.a.
-KT_ZH,Vektor-Übersichtsplan  - Linie (48.2),n.a.
-KT_ZH,Archäologische Zonenpläne (87.1),n.a.
-KT_ZH,KALTLUFTEINWIRKBEREICH_F (460.4),n.a.
-KT_ZH,ERDREGISTER (317.11),n.a.
-KT_ZH,Quartieranalyse (485.1),n.a.
-KT_ZH,Werkhöfe des kantonalen Tiefbauamts (OGD) (489.2),n.a.
-KT_ZH,Fliessgewässertypisierung (440.1),n.a.
-KT_ZH,Räumliche Beschäftigtenstatistik Punkt (142.2),n.a.
-KT_ZH,Veloparkierungsanlagen 2019 OGD (53.3),n.a.
-KT_ZH,Inventar der Landschaftsschutzobjekte von überkommunaler Bedeutung - Flächen (442.4),n.a.
-KT_ZH,Gemeinden mit Quartieren von Zürich und Winterthur (278.4),n.a.
-KT_ZH,Polygone Inventar Denkmalschutzobjekte Umgebung (517.2),n.a.
-KT_ZH,Ortschaften und Postleitzahlregionen (268.1),n.a.
-KT_ZH,Grundwassergleichen Mittelwasser (327.17),n.a.
-KT_ZH,Altrechtliche Schutzverordnungen (159.1),n.a.
-KT_ZH,Jagdbezirke (84.2),n.a.
-KT_ZH,Naturschutzobjekte (127.1),n.a.
-KT_ZH,Isohypsen/Isobathen DTM - 2014 (349.1),n.a.
-KT_ZH,Wärmenutzung (316.1),n.a.
-KT_ZH,TUNNELS  (318.1),n.a.
-KT_ZH,Barrieren II 2009 (293.25),n.a.
-KT_ZH,Inventarflächen des Libelleninventares 1984 (132.1),n.a.
-KT_ZH,Arten der Trockenstandortobjekte der Kartierung 1974 (125.2),n.a.
-KT_ZH,Limnigraphenstation (326.2),n.a.
-KT_ZH,Gewässer Hinweisflächen Massenbewegungen (44.8),n.a.
-KT_ZH,Ökomorphologie Abstürze Fliessgewässer (176.4),n.a.
-KT_ZH,Zustömbereich Zo (167.4),n.a.
-KT_ZH,Artenbeobachtungen (Revierkartierung) auf Probeflächen Avimonitoring Kanton Zürich 1993 bis 2012 (60.2),n.a.
-KT_ZH,Grundwassergleichen Mittelwasser (halb) (327.18),n.a.
-KT_ZH,Gewässer Uferlinien der Stehgewässer (45.11),n.a.
-KT_ZH,Gewässer Wasserrechtsentnahmen und -rückgaben (51.3),n.a.
-KT_ZH,"Gemeinden mit Berücksichtigung von Seen, historisch (437.2)",n.a.
-KT_ZH,Zwangswechsel (293.11),n.a.
-KT_ZH,Regionaler Richtplan (Punkte) (67.1),n.a.
-KT_ZH,Vegetationskundliche Kartierung der Wälder im Kanton Zürich (Waldvegetationskarte) (110.4),n.a.
-KT_ZH,Umrechnungstabelle kommunale Fliessgewässernummer und Routennummer in kantonale Fliessgewässernummer (45.8),n.a.
-KT_ZH,Gebäudevolumen  (248.2),n.a.
-KT_ZH,Gewässer Unmittelbarer Oberflächenabfluss (250.3),n.a.
-KT_ZH,Gewässer Querprofillinien (515.2),n.a.
-KT_ZH,Fussgängerstreifen OGD (47.3),n.a.
-KT_ZH,B3 Dauernd lichte Wälder (371.23),n.a.
-KT_ZH,E1 Häufig begangene Wälder (371.28),n.a.
-KT_ZH,Emissionen Istzustand (547.1),n.a.
-KT_ZH,Emissionen Planungshorizont (549.1),n.a.
-KT_ZH,Materialgewinnungsgebiet oder Deponie (kantonaler Richtplan) (371.16),n.a.
-KT_ZH,S1 Gravitative Naturgefahren (371.18),n.a.
-KT_ZH,S-Bahn-Linien des ZVV (108.1),n.a.
-KT_ZH,Perimeter Gesamtplanungsgebiete (526.4),n.a.
-KT_ZH,Autodrehleiter und Hubretter (186.4),n.a.
-KT_ZH,Gewässer Gewässerraum (185.1),n.a.
-KT_ZH,ÖREB-Kataster - vereinfachtes Datenmodell ZH - Kommunale Verkehrsbaulinien projektiert (158.2),n.a.
-KT_ZH,ÖREB-Kataster - vereinfachtes Datenmodell ZH - Kantonale Verkehrsbaulinien projektiert (157.2),n.a.
-KT_ZH,Kantonaler Richtplan (Linien) (173.32),n.a.
-KT_ZH,SIEDLUNGSRAUM_F (460.1),n.a.
-KT_ZH,Räumliche Beschäftigtenstatistik Polygon (142.1),n.a.
-KT_ZH,TBA Haupt- und Nebenstrassen OGD (452.3),n.a.
-KT_ZH,GRUNDWASSERFASSUNGEN (317.2),n.a.
-KT_ZH,QUELLFASSUNGEN (317.9),n.a.
-KT_ZH,Überbauungs- und Erschliessungsstände der Gemeinden (481.1),n.a.
-KT_ZH,Pflegeplandaten aktuelles Jahr (112.101),n.a.
-KT_ZH,Umrisse Pflegeplanflächen (112.104),n.a.
-KT_ZH,Gewässer Intensitätsflächen Hochwasser 30-jährliche Eintretenswahrscheinlichkeit (Daten vor 2006) (44.17),n.a.
-KT_ZH,"TBA SchweizMobil Velo-, Mountainbike-, Skatingrouten (OGD) (202.3)",n.a.
-KT_ZH,Kunstbauten (OGD) (177.2),n.a.
-KT_ZH,Eibenförderobjekte (58.2),n.a.
-KT_ZH,GISZHPUB.WALD_FORSTREVIERE_F (338.6),n.a.
-KT_ZH,Gewässer Unterhaltsgebiete Seen Sektion Gewässerunterhalt (281.2),n.a.
-KT_ZH,Quartiere Zürich und Winterthur (278.2),n.a.
-KT_ZH,Tempo30_Begegnungszonen (verfügt) - OGD (65.2),n.a.
-KT_ZH,Grundwasserleiter (Fläche) (327.11),n.a.
-KT_ZH,Grundwasservorkommen Stauwehr (327.23),n.a.
-KT_ZH,Generalisierte Gemeindegrenzen (96.2),n.a.
+KT_ZH,Eichenförderobjekte (43.2),n.a.
+KT_ZH,Gewässer Prioritäten Erfassung Naturgefahrenkarten (44.1),n.a.
+KT_ZH,Gewässer Gefahrenbereiche Hochwasser (44.2),n.a.
+KT_ZH,Gewässer Hinweisflächen Hochwasser (44.3),n.a.
+KT_ZH,Zwangswechsel 2009 (293.30),n.a.
+KT_ZH,KVA-Abwärmequellen Symbol (172.3),n.a.
+KT_ZH,Naturräume (341.1),n.a.
+KT_ZH,Vorrangfunktion (371.31),n.a.
+KT_ZH,Gewässer Intensitätsflächen Hochwasser 100-jährliche Eintretenswahrscheinlichkeit (44.4),n.a.
 KT_ZH,Gewässer Intensitätsflächen Hochwasser 300-jährliche Eintretenswahrscheinlichkeit (44.5),n.a.
-KT_ZH,Mastersonden (182.1),n.a.
-KT_ZH,Zuständigkeiten Gebietsbeteuer/innen FNS (323.1),n.a.
-KT_ZH,Grundwasservorkommen Quellhorizont (327.21),n.a.
-KT_ZH,Stadtkreise Zürich und Winterthur (278.1),n.a.
-KT_ZH,Gewässer Abflussprozesse (250.1),n.a.
-KT_ZH,Zuströmbereich Zu (167.3),n.a.
-KT_ZH,Probeflächen Avimonitoring 1993 bis 2012 Kanton Zürich (60.1),n.a.
-KT_ZH,Grundwassergebiet (327.9),n.a.
-KT_ZH,Grundwasservorkommen Beschriftung Mittelwasserfall (327.20),n.a.
-KT_ZH,Gemeinden historisch (437.1),n.a.
-KT_ZH,ARA-Fernwärmenetze (172.8),n.a.
-KT_ZH,Forstkreise des Kantons Zürich (226.1),n.a.
-KT_ZH,Regionale Ausbreitungsachsen (293.2),n.a.
-KT_ZH,Leitstruktur (293.8),n.a.
-KT_ZH,Kataster der belasteten Standorte (KbS) (205.1),n.a.
-KT_ZH,Denkmalschutzobjekte (368.1),n.a.
-KT_ZH,Gewässer Unterhaltsgebiete Sektion Gewässerunterhalt (281.1),n.a.
+KT_ZH,Gewässer Intensitätsflächen Hochwasser 30-jährliche Eintretenswahrscheinlichkeit (44.6),n.a.
+KT_ZH,Gewässer Gefahrenbereiche Massenbewegungen (44.7),n.a.
+KT_ZH,Gewässer Hinweisflächen Massenbewegungen (44.8),n.a.
+KT_ZH,Gewässer Intensitätsflächen Massenbewegungen 100-jährliche Eintretenswahrscheinlichkeit (44.9),n.a.
+KT_ZH,Gewässer Intensitätsflächen Massenbewegungen 300-jährliche Eintretenswahrscheinlichkeit (44.10),n.a.
+KT_ZH,Gewässer Intensitätsflächen Massenbewegungen 30-jährliche Eintretenswahrscheinlichkeit (44.11),n.a.
+KT_ZH,Gewässer Intensitätsflächen permanente Rutschungen (Massenbewegungen) (44.12),n.a.
 KT_ZH,Gewässer Synoptische Gefahrenkarte (44.13),n.a.
 KT_ZH,Gewässer Untersuchtes Gebiet Synoptische Gefahrenkarte (44.14),n.a.
-KT_ZH,Lineare Bestimmungen in den Schutzanordnungen (525.2),n.a.
-KT_ZH,Stützpunktfeuerwehr-Adressen (186.2),n.a.
-KT_ZH,Vorrangfunktion (371.31),n.a.
-KT_ZH,Geomorphologische Landschaften des Kantons Zürich (544.1),n.a.
-KT_ZH,Radstreifen (75.2),n.a.
-KT_ZH,Waldstandorte von naturkundlicher Bedeutung WNB (371.3),n.a.
-KT_ZH,Waldareal (371.17),n.a.
-KT_ZH,B6 Waldrandförderung (371.26),n.a.
-KT_ZH,Gewässer Öffentliche und private Stehgewässer (45.10),n.a.
-KT_ZH,ÖREB-Kataster - vereinfachtes Datenmodell ZH - Überlagernde Festlegungen - Flächen (155.1),n.a.
-KT_ZH,ÖREB-Kataster - vereinfachtes Datenmodell ZH - Überlagernde Festlegungen - Flächen projektiert (155.4),n.a.
-KT_ZH,Gewässer Priorisierung Revitalisierungen Fliessgewässer (375.2),n.a.
-KT_ZH,ÖREB-Kataster - vereinfachtes Datenmodell ZH - Lärmempfindlichkeitsstufen (in Nutzungszonen) (154.1),n.a.
-KT_ZH,ÖREB-Kataster - vereinfachtes Datenmodell ZH - Statische Waldgrenzen projektiert (150.2),n.a.
 KT_ZH,Gewässer Koten-/Tiefenwerte Hochwasser (Daten vor 2006) (44.15),n.a.
-KT_ZH,KALTLUFTEINZUGSGEBIET_F (460.5),n.a.
-KT_ZH,Landwirtschaftliche Nutzungseignung (36.2),n.a.
-KT_ZH,Arbeitszonenbewirtschaftung (486.1),n.a.
-KT_ZH,Naturräume (341.1),n.a.
-KT_ZH,Schwerpunktgebiete (445.1),n.a.
-KT_ZH,TBA Signalisierte Geschwindigkeiten (450.4),n.a.
-KT_ZH,AV Gewässer (536.1),n.a.
-KT_ZH,Gewässer Hydrometrische Stationen (483.1),n.a.
-KT_ZH,Ökomorphologie der Seeufer (23.1),n.a.
-KT_ZH,Gewässer Zuständigekeiten Sektionen Bau und Gewässerunterhalt (281.3),n.a.
-KT_ZH,Gewässer Zuständigkeiten Sektionen Planung sowie Beratung und Bewilligung (281.5),n.a.
-KT_ZH,Flächige Barrieren I 2009 (293.22),n.a.
-KT_ZH,Massnahmen 2009 (293.28),n.a.
-KT_ZH,Gemeinden ohne Seen (95.5),n.a.
-KT_ZH,Kantonales Velonetz für den Alltagsverkehr für OGD (408.3),n.a.
-KT_ZH,Zusammengefasste Bahn- und Buslinien des ZVV (108.3),n.a.
+KT_ZH,Gewässer Intensitätsflächen Hochwasser 100-jährliche Eintretenswahrscheinlichkeit (Daten vor 2006) (44.16),n.a.
+KT_ZH,Tempo30_Begegnungszonen (verfügt) - OGD (65.2),n.a.
+KT_ZH,Gewässer Intensitätsflächen Hochwasser 30-jährliche Eintretenswahrscheinlichkeit (Daten vor 2006) (44.17),n.a.
+KT_ZH,Gewässer Intensitätsflächen Hochwasser 300-jährliche Eintretenswahrscheinlichkeit (Daten vor 2006) (44.18),n.a.
+KT_ZH,Gewässer Nicht untersuchtes Gebiet Synoptische Gefahrenkarte (44.30),n.a.
+KT_ZH,Gewässer Öffentliche Fliessgewässer (45.1),n.a.
+KT_ZH,Vektor-Übersichtsplan  - Beschriftung (48.4),n.a.
+KT_ZH,Gewässer Fliessgewässerrouten (45.2),n.a.
+KT_ZH,Gewässer Fliessgewässerbezeichnung (45.3),n.a.
+KT_ZH,Gewässer Fliessgewässerausprägung (45.4),n.a.
+KT_ZH,Gewässer Fliessgewässertyp (45.5),n.a.
+KT_ZH,Räumliche Beschäftigtenstatistik Polygon (142.1),n.a.
+KT_ZH,Räumliche Beschäftigtenstatistik Punkt (142.2),n.a.
+KT_ZH,ÖREB - Kataster der belasteten Standorte (KbS) (144.1),n.a.
+KT_ZH,Umrechnungstabelle kommunale Fliessgewässernummer und Routennummer in kantonale Fliessgewässernummer (45.8),n.a.
+KT_ZH,Gewässer Öffentliche und private Stehgewässer (45.10),n.a.
+KT_ZH,"Zonenpläne, Überbauungs- und Erschliessungsstände der Gemeinden (66.1)",n.a.
+KT_ZH,Gewässer Uferlinien der Stehgewässer (45.11),n.a.
 KT_ZH,Gewässer Öffentliche und private Fliess- und Stehgewässer inkl. Verfügungsangaben (45.15),n.a.
-KT_ZH,Gewässer gelöschte Wasserechtsweiher (51.4),n.a.
-KT_ZH,Grundwasservorkommen Dichtungswand (327.2),n.a.
-KT_ZH,Grundwasserbedeckung (Fläche) (327.7),n.a.
-KT_ZH,Grundwasserleiter See (327.12),n.a.
-KT_ZH,Gewässer Hinweisflächen Hochwasser (44.3),n.a.
+KT_ZH,Waldreservate (46.2),n.a.
+KT_ZH,Fussgängerstreifen OGD (47.3),n.a.
+KT_ZH,Vektor-Übersichtsplan  - Punkt (48.1),n.a.
+KT_ZH,Vektor-Übersichtsplan  - Linie (48.2),n.a.
+KT_ZH,Vektor-Übersichtsplan  - Fläche (48.3),n.a.
+KT_ZH,Stromnetzgebiete (49.1),n.a.
+KT_ZH,Gewässer Wasserechtsweiher (51.1),n.a.
 KT_ZH,Gewässer Wasserrechtskanäle/-leitungen (51.2),n.a.
-KT_ZH,ÖREB-Kataster - vereinfachtes Datenmodell ZH - Statische Waldgrenzen (150.1),n.a.
-KT_ZH,Landschaftschutzobjekte: Hecken (127.3),n.a.
+KT_ZH,Gewässer Wasserrechtsentnahmen und -rückgaben (51.3),n.a.
+KT_ZH,Gewässer gelöschte Wasserechtsweiher (51.4),n.a.
+KT_ZH,Gewässer gelöschte Wasserrechtskanäle/-leitungen (51.5),n.a.
+KT_ZH,Gewässer gelöschte Wasserentnahmen und -rückgaben (51.6),n.a.
+KT_ZH,ÖREB-Kataster - vereinfachtes Datenmodell ZH - Grundwasserschutzzonen (143.1),n.a.
+KT_ZH,ÖREB-Kataster - vereinfachtes Datenmodell ZH - Grundwasserschutzzonen projektiert (143.2),n.a.
+KT_ZH,Veloparkierungsanlagen 2019 OGD (53.3),n.a.
+KT_ZH,Veloparkierungsanlagen 2015 OGD (53.5),n.a.
+KT_ZH,Eibenförderobjekte (58.2),n.a.
+KT_ZH,Probeflächen Avimonitoring 1993 bis 2012 Kanton Zürich (60.1),n.a.
+KT_ZH,Artenbeobachtungen (Revierkartierung) auf Probeflächen Avimonitoring Kanton Zürich 1993 bis 2012 (60.2),n.a.
+KT_ZH,Räumliche Bevölkerungsstatistik (63.1),n.a.
+KT_ZH,Räumliche Bevölkerungsstatistik Punkt (63.2),n.a.
+KT_ZH,Regionaler Richtplan (Punkte) (67.1),n.a.
+KT_ZH,Regionaler Richtplan (Linien) (67.2),n.a.
+KT_ZH,Regionaler Richtplan (Flächen) (67.3),n.a.
+KT_ZH,GISZHPUB.OGD_OEV_GUETEKLASSEN_F (69.2),n.a.
+KT_ZH,Radwege (75.1),n.a.
+KT_ZH,Radstreifen (75.2),n.a.
+KT_ZH,Jagdreviere (84.1),n.a.
+KT_ZH,Jagdbezirke (84.2),n.a.
+KT_ZH,Archäologische Zonenpläne (87.1),n.a.
+KT_ZH,Bodenkartierung der Landwirtschaftsflächen (92.1),n.a.
+KT_ZH,Gemeinden (95.1),n.a.
+KT_ZH,Gemeindegrenzen (95.2),n.a.
+KT_ZH,Gemeinden mit Berücksichtigung von Seen (95.3),n.a.
+KT_ZH,Kanton (95.4),n.a.
+KT_ZH,Lanschaftsschutzobjekte: Heckenreiche Hänge (127.4),n.a.
 KT_ZH,Landschaftsschutzobjekte: Geomorphologische Objekte (127.5),n.a.
-KT_ZH,Zwangswechsel 2009 (293.30),n.a.
-KT_ZH,Für rohrleitungsgebundene Wärmeversorgung geeignete Gebiete  (172.1),n.a.
+KT_ZH,Gemeinden ohne Seen (95.5),n.a.
+KT_ZH,Bezirke (95.6),n.a.
+KT_ZH,Generalisierte Gemeinden (96.1),n.a.
+KT_ZH,Generalisierte Gemeindegrenzen (96.2),n.a.
+KT_ZH,Gemeindebeschriftung (96.3),n.a.
+KT_ZH,Kantonsmaske (Darstellungshilfe) (96.4),n.a.
+KT_ZH,Generalisierte Bezirke (96.5),n.a.
+KT_ZH,TBA Strassen Grundgeometrie (OGD) (102.7),n.a.
+KT_ZH,TBA Strassen Routen (OGD) (102.8),n.a.
+KT_ZH,TBA Strassen Kilometerpunkte (OGD) (102.9),n.a.
+KT_ZH,S-Bahn-Linien des ZVV (108.1),n.a.
+KT_ZH,Einzelne Segmente der Bahn- und Buslinien des ZVV (108.2),n.a.
+KT_ZH,Zusammengefasste Bahn- und Buslinien des ZVV (108.3),n.a.
+KT_ZH,Bestandesdaten (109.2),n.a.
+KT_ZH,Vegetationskundliche Kartierung der Wälder im Kanton Zürich (Waldvegetationskarte) (110.4),n.a.
+KT_ZH,Waldareal (111.4),n.a.
+KT_ZH,Pflegeplandaten aktuelles Jahr (112.101),n.a.
+KT_ZH,Pflegeplandaten vergangenes Jahr (112.102),n.a.
+KT_ZH,Pflegeplandaten vor vergangenes Jahr (zwei Jahre zurück) (112.103),n.a.
+KT_ZH,Umrisse Pflegeplanflächen (112.104),n.a.
+KT_ZH,Inventar der Waldstandorte von naturkundlicher Bedeutung (WNB) (113.1),n.a.
+KT_ZH,Flächen der Feuchtgebietsobjekte der Kartierung 1976/77 (119.1),n.a.
+KT_ZH,Arten pro Feuchgebietsobjekt der Kartierung 1976/77 (119.2),n.a.
+KT_ZH,GISZHPUB.FNS_INVENTARE\GISZHPUB.FEUCHTGEBIETINVVEG_79_90_F (119.5),n.a.
+KT_ZH,Oeffentilche Beleuchtung (OGD) (124.3),n.a.
+KT_ZH,Objektflächen des Trockenstanortinventars 1974 (125.1),n.a.
+KT_ZH,Arten der Trockenstandortobjekte der Kartierung 1974 (125.2),n.a.
+KT_ZH,Naturschutzobjekte (127.1),n.a.
+KT_ZH,Landschaftsschutzobjekte: Findlinge (127.2),n.a.
+KT_ZH,Landschaftschutzobjekte: Hecken (127.3),n.a.
+KT_ZH,Naturschutzobjekte Ergänzungen 95 (127.6),n.a.
+KT_ZH,Inventarflächen des Libelleninventares 1984 (132.1),n.a.
+KT_ZH,Inventarflächen Reptilieninventar 1993 (133.1),n.a.
+KT_ZH,Inventarflächen Tagfalterinventar 1992 (134.1),n.a.
+KT_ZH,Beobachtungspunkte Heuschreckeninventar 1990/98 (136.1),n.a.
+KT_ZH,Inventarflächen Heuschreckeninventar 1990/98  (136.2),n.a.
+KT_ZH,Haltestellen (140.1),n.a.
+KT_ZH,ÖREB-Kataster - vereinfachtes Datenmodell ZH - Grundwasserschutzareale (149.1),n.a.
+KT_ZH,Vereinfachtes Datenmodell ÖREB ZH - Grundwasserschutzareale projektiert (149.2),n.a.
+KT_ZH,ÖREB-Kataster - vereinfachtes Datenmodell ZH - Statische Waldgrenzen (150.1),n.a.
+KT_ZH,ÖREB-Kataster - vereinfachtes Datenmodell ZH - Statische Waldgrenzen projektiert (150.2),n.a.
+KT_ZH,ÖREB-Kataster - vereinfachtes Datenmodell ZH - Waldabstandslinien (152.1),n.a.
+KT_ZH,ÖREB-Kataster - vereinfachtes Datenmodell ZH - Waldabstandslinien projektiert (152.2),n.a.
+KT_ZH,ÖREB-Kataster - vereinfachtes Datenmodell ZH - Gewässerabstandslinien (153.1),n.a.
+KT_ZH,Vereinfachtes Datenmodell ÖREB ZH - Gewässerabstandslinien projektiert (153.2),n.a.
+KT_ZH,Gemeinden mit Stadtkreisen von Zürich und Winterthur (278.3),n.a.
+KT_ZH,ÖREB-Kataster - vereinfachtes Datenmodell ZH - Lärmempfindlichkeitsstufen (in Nutzungszonen) (154.1),n.a.
+KT_ZH,ÖREB-Kataster - vereinfachtes Datenmodell ZH - Lärmempfindlichkeitsstufen (in Nutzungszonen) projektiert (154.2),n.a.
+KT_ZH,ÖREB-Kataster - vereinfachtes Datenmodell ZH - Überlagernde Festlegungen - Flächen (155.1),n.a.
+KT_ZH,ÖREB-Kataster - vereinfachtes Datenmodell ZH - Überlagernde Festlegungen - Linien (155.2),n.a.
+KT_ZH,ÖREB-Kataster - vereinfachtes Datenmodell ZH - Überlagernde Festlegungen - Punkte (155.3),n.a.
+KT_ZH,ÖREB-Kataster - vereinfachtes Datenmodell ZH - Überlagernde Festlegungen - Flächen projektiert (155.4),n.a.
+KT_ZH,ÖREB-Kataster - vereinfachtes Datenmodell ZH - Überlagernde Festlegungen - Linien projektiert (155.5),n.a.
+KT_ZH,Vereinfachtes Datenmodell ÖREB ZH - Sondernutzungszonen (überlagernde Festlegungen) - Punkte projektiert (155.6),n.a.
+KT_ZH,ÖREB-Kataster - vereinfachtes Datenmodell ZH - Nutzungsplanung (Grundnutzung) (156.1),n.a.
+KT_ZH,ÖREB-Kataster - vereinfachtes Datenmodell ZH - Nutzungsplanung (Grundnutzung) projektiert (156.2),n.a.
+KT_ZH,ÖREB-Kataster - vereinfachtes Datenmodell ZH - Kantonale Verkehrsbaulinien (157.1),n.a.
+KT_ZH,ÖREB-Kataster - vereinfachtes Datenmodell ZH - Kantonale Verkehrsbaulinien projektiert (157.2),n.a.
+KT_ZH,ÖREB-Kataster - vereinfachtes Datenmodell ZH - Kommunale Verkehrsbaulinien (158.1),n.a.
+KT_ZH,ÖREB-Kataster - vereinfachtes Datenmodell ZH - Kommunale Verkehrsbaulinien projektiert (158.2),n.a.
+KT_ZH,Altrechtliche Schutzverordnungen (159.1),n.a.
 KT_ZH,Gewässerschutzbereich Au (167.1),n.a.
 KT_ZH,Gewässerschutzbereich Ao (167.2),n.a.
-KT_ZH,Fischereirevier-Stillgewäser (314.3),n.a.
-KT_ZH,Grundwasservorkommen Stockwerkbau (327.24),n.a.
-KT_ZH,Nationale Ausbreitungsachsen  (293.1),n.a.
-KT_ZH,Massnahmen (293.9),n.a.
-KT_ZH,Flächige Barrieren II (293.5),n.a.
-KT_ZH,Gemeindedaten (172.17),n.a.
-KT_ZH,MOpublic Klasse RealEstate (Liegenschaft) (404.1),n.a.
-KT_ZH,MOpublic Klasse LCSurface (BoFlaeche) (401.1),n.a.
-KT_ZH,MOpublic Klasse LCSurfaceProj (ProjBoFlaeche) (401.3),n.a.
-KT_ZH,MOpublic Klasse Surface_element_PosText (FlaechenelementText) (402.2),n.a.
-KT_ZH,MOpublic Klasse Point_element_PosText (PunktelementText) (402.6),n.a.
-KT_ZH,MOpublic Klasse Municipal_boundProj (ProjGemeindegrenze) (405.3),n.a.
-KT_ZH,MOpublic Klasse Municipal_boundary (Gemeindegrenze) (405.2),n.a.
-KT_ZH,MOpublic Klasse Boundary_terr_point (Hoheitsgrenzpunkt) (405.1),n.a.
-KT_ZH,MOpublic Klasse RealEstateProj (ProjLiegenschaft) (404.5),n.a.
-KT_ZH,MOpublic Klasse Names (Namen) (403.1),n.a.
-KT_ZH,MOpublic Klasse DPR_MineProj (ProjSelbstRecht) (404.7),n.a.
-KT_ZH,"MOpublic Klasse Pipelines, Linear_element (RLLinie) (410.3)",n.a.
-KT_ZH,"MOpublic Klasse Pipelines, Point_element (RLPunkt) (410.5)",n.a.
-KT_ZH,AFV_GV.SEILBAHN_SKILIFT_L (529.1),n.a.
-KT_ZH,Vektor-Übersichtsplan  - Punkt (48.1),n.a.
-KT_ZH,Vereinfachtes Datenmodell ÖREB ZH - Gewässerabstandslinien projektiert (153.2),n.a.
-KT_ZH,AFV_GV.SEILBAHN_SKILIFT_P (529.2),n.a.
-KT_ZH,Isohypsen DTM 2017/2018 (346.1),n.a.
-KT_ZH,Waldeigentum (9.2),n.a.
-KT_ZH,Parkierungsanlagen (regionale Richtpläne) (371.15),n.a.
-KT_ZH,Erholungsgebiete (kantonaler Richtplan) (371.11),n.a.
-KT_ZH,Einzelne Segmente der Bahn- und Buslinien des ZVV (108.2),n.a.
-KT_ZH,Grundwasserschutzzonen (371.1),n.a.
-KT_ZH,ÖREB-Kataster - vereinfachtes Datenmodell ZH - Nutzungsplanung (Grundnutzung) projektiert (156.2),n.a.
-KT_ZH,Ortsfeuerwehr-Adressen (186.3),n.a.
-KT_ZH,ÖREB-Kataster - vereinfachtes Datenmodell ZH - Überlagernde Festlegungen - Linien projektiert (155.5),n.a.
-KT_ZH,Stromanlagen (329.3),n.a.
-KT_ZH,ÖREB-Kataster - vereinfachtes Datenmodell ZH - Nutzungsplanung (Grundnutzung) (156.1),n.a.
-KT_ZH,Nutzungsbrachen (306.8),n.a.
-KT_ZH,Pflegeplandaten vor vergangenes Jahr (zwei Jahre zurück) (112.103),n.a.
-KT_ZH,Gewässer Intensitätsflächen Hochwasser 300-jährliche Eintretenswahrscheinlichkeit (Daten vor 2006) (44.18),n.a.
-KT_ZH,Regionale Ausbreitungsachsen 2009 (293.21),n.a.
-KT_ZH,Gebietsauslass (552.2),n.a.
-KT_ZH,Bestandesdaten (109.2),n.a.
-KT_ZH,Leitstruktur 2009 (293.27),n.a.
-KT_ZH,Perimeter 2009 (293.29),n.a.
-KT_ZH,Polygone Inventar Denkmalschutzobjekte Objekte (517.1),n.a.
-KT_ZH,Hydrologische Studien (534.1),n.a.
-KT_ZH,Gewässer gelöschte Wasserentnahmen und -rückgaben (51.6),n.a.
-KT_ZH,"Zonenpläne, Überbauungs- und Erschliessungsstände der Gemeinden (66.1)",n.a.
-KT_ZH,Betreuungsgebiete (428.1),n.a.
-KT_ZH,Grundwasserleiter (Linie) (327.10),n.a.
-KT_ZH,Lanschaftsschutzobjekte: Heckenreiche Hänge (127.4),n.a.
-KT_ZH,Flächen der Feuchtgebietsobjekte der Kartierung 1976/77 (119.1),n.a.
-KT_ZH,Kantonale ÖQV-Fördergebiete  (211.1),n.a.
-KT_ZH,Gewässer Gefahrenbereiche Hochwasser (44.2),n.a.
-KT_ZH,Für Wärmeversorgung aus Oberflächengewässern geeignete Gebiete (172.9),n.a.
-KT_ZH,Ökomorphologie Bauwerke Fliessgewässer (176.6),n.a.
-KT_ZH,Fischereirevier-Gewässernetz (314.2),n.a.
-KT_ZH,Gewässer Intensitätsflächen Massenbewegungen 300-jährliche Eintretenswahrscheinlichkeit (44.10),n.a.
+KT_ZH,Zuströmbereich Zu (167.3),n.a.
+KT_ZH,Zustömbereich Zo (167.4),n.a.
+KT_ZH,Übriger Gewässerschutzbereich (167.5),n.a.
+KT_ZH,Waldrandförderobjekte (169.2),n.a.
+KT_ZH,Gewässer Unmittelbarer Oberflächenabfluss (250.3),n.a.
+KT_ZH,Lichte Wälder Kanton Zürich (255.1),n.a.
+KT_ZH,Gewässer Haupteinzugsgebiete (257.1),n.a.
+KT_ZH,Landwirtschaftliche Nutzungsflächen  (170.1),n.a.
+KT_ZH,Für rohrleitungsgebundene Wärmeversorgung geeignete Gebiete  (172.1),n.a.
 KT_ZH,KVA-Abwärme (172.2),n.a.
-KT_ZH,Generalisierte Gemeinden (96.1),n.a.
-KT_ZH,"Schutzwald, gravitativ (261.1)",n.a.
-KT_ZH,Gewässer Fliessrichtung (35.2),n.a.
-KT_ZH,Barrieren III (293.7),n.a.
-KT_ZH,Grundwasserbereich artesisch Begrenzung (327.27),n.a.
-KT_ZH,Punktuelle Bestimmungen in Schutzanordnungen (525.4),n.a.
-KT_ZH,TBA Kantonsstrassen innerorts und ausserorts (OGD) (458.3),n.a.
-KT_ZH,Erholungsanlagen Reitwege (regionale Richtpläne) (371.14),n.a.
-KT_ZH,Kantonale Naturwaldreservate (371.4),n.a.
-KT_ZH,Inventar der Landschaften und Naturdenkmäler von nationaler Bedeutung BLN (371.7),n.a.
-KT_ZH,Kantonales Wildschonrevier (371.10),n.a.
-KT_ZH,S4 Wald entlang Kantonsstrassen und Autobahnen (371.20),n.a.
-KT_ZH,"Natur- und Landschaftsschutzinventar 1980, Naturschutzobjekte (371.6)",n.a.
-KT_ZH,Prioritäre Potenzialflächen für Feuchtgebiete (PPF) (526.1),n.a.
-KT_ZH,Gewässer Querprofilpunkte (515.1),n.a.
-KT_ZH,Pärke von nationaler Bedeutung Kanton Zürich (31.1),n.a.
-KT_ZH,Landschaftstypologie des Kantons Zürich (545.1),n.a.
-KT_ZH,Waldreservate (46.2),n.a.
-KT_ZH,Stromleitungen (329.4),n.a.
-KT_ZH,Gebäudealter Punkte (415.1),n.a.
-KT_ZH,TBA Verkehrsmessstellen Kantonsstrassen (OGD) (223.2),n.a.
-KT_ZH,Räumliche Bevölkerungsstatistik Punkt (63.2),n.a.
-KT_ZH,Räumliche Gebäudestatistik Punkt (272.2),n.a.
-KT_ZH,Eichenförderobjekte (43.2),n.a.
-KT_ZH,Gewässer Zuständigkeiten Seen Sektion Gewässernutzung (281.8),n.a.
-KT_ZH,Schwachstellen und Netzlücken Velonetz Alltag für OGD (408.4),n.a.
-KT_ZH,Veloparkierungsanlagen 2015 OGD (53.5),n.a.
-KT_ZH,Jagdreviere (84.1),n.a.
+KT_ZH,KVA-Fernwärmenetze (172.4),n.a.
+KT_ZH,Abfallholz- und Klärschlamm-Wärmekraftkopplungsanlagen (172.5),n.a.
+KT_ZH,ARA-Abwärme (172.6),n.a.
+KT_ZH,ARA-Abwärmequellen Symbol (172.7),n.a.
+KT_ZH,ARA-Fernwärmenetze (172.8),n.a.
+KT_ZH,Für Wärmeversorgung aus Oberflächengewässern geeignete Gebiete (172.9),n.a.
+KT_ZH,Holzwärmenetz (172.10),n.a.
+KT_ZH,Holzfeuerungsanlagen (172.13),n.a.
+KT_ZH,Vergärungsanlagen (172.14),n.a.
+KT_ZH,Wärme aus Oberflächengewässern (172.15),n.a.
+KT_ZH,Oberflächengewässer Symbol (172.16),n.a.
+KT_ZH,Gemeindedaten (172.17),n.a.
+KT_ZH,Kantonaler Richtplan (Punkte) (173.31),n.a.
+KT_ZH,Kantonaler Richtplan (Linien) (173.32),n.a.
+KT_ZH,Kantonaler Richtplan (Flächen) (173.33),n.a.
+KT_ZH,Ökomorphologie Abschnitte Fliessgewässer (176.2),n.a.
+KT_ZH,Ökomorphologie Abstürze Fliessgewässer (176.4),n.a.
+KT_ZH,Ökomorphologie Bauwerke Fliessgewässer (176.6),n.a.
+KT_ZH,Kunstbauten (OGD) (177.2),n.a.
+KT_ZH,Mastersonden (182.1),n.a.
+KT_ZH,Sonden (182.2),n.a.
+KT_ZH,Raumplanungsregionen (183.1),n.a.
+KT_ZH,Gewässer Gewässerraum (185.1),n.a.
+KT_ZH,Gewässer Gewässerraum Projektiert (185.2),n.a.
+KT_ZH,Gemeindefeuerwehren (186.1),n.a.
+KT_ZH,Stützpunktfeuerwehr-Adressen (186.2),n.a.
+KT_ZH,Ortsfeuerwehr-Adressen (186.3),n.a.
+KT_ZH,Autodrehleiter und Hubretter (186.4),n.a.
+KT_ZH,Pionier-Strassenrettung (186.5),n.a.
+KT_ZH,"TBA SchweizMobil Velo-, Mountainbike-, Skatingrouten (OGD) (202.3)",n.a.
+KT_ZH,Kataster der belasteten Standorte (KbS) (205.1),n.a.
 KT_ZH,Notariatskreise 1 : 5000 (206.1),n.a.
+KT_ZH,Kantonale ÖQV-Fördergebiete  (211.1),n.a.
+KT_ZH,TBA Verkehrsmessstellen Kantonsstrassen (OGD) (223.2),n.a.
+KT_ZH,Forstkreise des Kantons Zürich (226.1),n.a.
+KT_ZH,Geomorphologische Objekte (239.1),n.a.
+KT_ZH,Gebäudevolumen  (248.2),n.a.
+KT_ZH,Gewässer Abflussprozesse (250.1),n.a.
+KT_ZH,Hinweisflächen für anthropogene Böden mit Potenzial für Fruchtfolgeflächenkompensation (260.2),n.a.
+KT_ZH,"Schutzwald, gravitativ (261.1)",n.a.
+KT_ZH,Gerinnerelevanter Schutzwald (Tobelwälder) (261.4),n.a.
+KT_ZH,Ortschaften und Postleitzahlregionen (268.1),n.a.
+KT_ZH,Räumliche Gebäudestatistik Polygon (272.1),n.a.
+KT_ZH,Räumliche Gebäudestatistik Punkt (272.2),n.a.
+KT_ZH,Adressen GIS-ZH (277.1),n.a.
+KT_ZH,Stadtkreise Zürich und Winterthur (278.1),n.a.
+KT_ZH,Quartiere Zürich und Winterthur (278.2),n.a.
+KT_ZH,Gemeinden mit Quartieren von Zürich und Winterthur (278.4),n.a.
+KT_ZH,Gewässer Unterhaltsgebiete Sektion Gewässerunterhalt (281.1),n.a.
+KT_ZH,Gewässer Unterhaltsgebiete Seen Sektion Gewässerunterhalt (281.2),n.a.
+KT_ZH,Gewässer Zuständigekeiten Sektionen Bau und Gewässerunterhalt (281.3),n.a.
+KT_ZH,Gewässer Werkhöfe AWEL (281.4),n.a.
+KT_ZH,Gewässer Zuständigkeiten Sektionen Planung sowie Beratung und Bewilligung (281.5),n.a.
+KT_ZH,Gewässer Zuständigkeiten Seen Sektion Gewässernutzung (281.8),n.a.
+KT_ZH,Luftbild Bestandesdaten (290.4),n.a.
+KT_ZH,Nationale Ausbreitungsachsen  (293.1),n.a.
+KT_ZH,Regionale Ausbreitungsachsen (293.2),n.a.
+KT_ZH,Flächige Barrieren I (293.3),n.a.
+KT_ZH,Barrieren I (293.4),n.a.
+KT_ZH,Flächige Barrieren II (293.5),n.a.
+KT_ZH,Barrieren II (293.6),n.a.
+KT_ZH,Barrieren III (293.7),n.a.
+KT_ZH,Leitstruktur (293.8),n.a.
+KT_ZH,Massnahmen (293.9),n.a.
+KT_ZH,Perimeter (293.10),n.a.
+KT_ZH,Zwangswechsel (293.11),n.a.
+KT_ZH,Nationale Ausbreitungsachsen 2009 (293.20),n.a.
+KT_ZH,Regionale Ausbreitungsachsen 2009 (293.21),n.a.
+KT_ZH,Flächige Barrieren I 2009 (293.22),n.a.
+KT_ZH,Barrieren I 2009 (293.23),n.a.
+KT_ZH,Flächige Barrieren II 2009 (293.24),n.a.
+KT_ZH,Barrieren II 2009 (293.25),n.a.
+KT_ZH,Barrieren III 2009 (293.26),n.a.
+KT_ZH,Leitstruktur 2009 (293.27),n.a.
+KT_ZH,Massnahmen 2009 (293.28),n.a.
+KT_ZH,Perimeter 2009 (293.29),n.a.
+KT_ZH,Unterhaltsmassnahmen flächig (306.5),n.a.
+KT_ZH,Unterhaltsmassnahmen linear (306.6),n.a.
+KT_ZH,Unterhaltsmassnahmen punktuell (306.7),n.a.
+KT_ZH,Nutzungsbrachen (306.8),n.a.
+KT_ZH,Fischereirevier-Bereiche (314.1),n.a.
+KT_ZH,Lebensraum- und Vegetationskartierflächen (353.1),n.a.
+KT_ZH,Fischereirevier-Gewässernetz (314.2),n.a.
+KT_ZH,Fischereirevier-Stillgewäser (314.3),n.a.
+KT_ZH,Wärmenutzung (316.1),n.a.
+KT_ZH,Erdwärmesonden Auflagen (316.2),n.a.
+KT_ZH,GRUNDWASSERFASSUNGEN (317.2),n.a.
+KT_ZH,GRUNDWASSERPIEZOMETER (317.4),n.a.
+KT_ZH,SAMMELSCHACHT-BECKEN (317.7),n.a.
+KT_ZH,QUELLFASSUNGEN (317.9),n.a.
+KT_ZH,ERDREGISTER (317.11),n.a.
+KT_ZH,TUNNELS  (318.1),n.a.
+KT_ZH,Zuständigkeiten Gebietsbeteuer/innen FNS (323.1),n.a.
+KT_ZH,Grundwasserpegel (326.1),n.a.
+KT_ZH,Limnigraphenstation (326.2),n.a.
+KT_ZH,Grundwasservorkommen Dichtungswand (327.2),n.a.
+KT_ZH,Grundwasservorkommen Entwässerungskanal (327.3),n.a.
 KT_ZH,Grundwasservorkommen Fliessrichtung Hochwasser (327.4),n.a.
 KT_ZH,Grundwasservorkommen Fliessrichtung Mittelwasser (327.5),n.a.
 KT_ZH,Grundwasserbedeckung (Linie) (327.6),n.a.
+KT_ZH,Grundwasserbedeckung (Fläche) (327.7),n.a.
 KT_ZH,Grundwasserbegrenzung (327.8),n.a.
+KT_ZH,Grundwassergebiet (327.9),n.a.
+KT_ZH,Grundwasserleiter (Linie) (327.10),n.a.
+KT_ZH,Grundwasserleiter (Fläche) (327.11),n.a.
+KT_ZH,Grundwasserleiter See (327.12),n.a.
 KT_ZH,Grundwassermächtigkeit (327.13),n.a.
+KT_ZH,Grundwasservorkommen Beschriftung Hochwasserfall (327.14),n.a.
 KT_ZH,Grundwasservorkommen In-/Exfiltration (327.15),n.a.
 KT_ZH,Grundwassergleichen Hochwasser (327.16),n.a.
-KT_ZH,ARA-Abwärme (172.6),n.a.
-KT_ZH,Gewässer Intensitätsflächen Hochwasser 100-jährliche Eintretenswahrscheinlichkeit (44.4),n.a.
-KT_ZH,Gewässer Intensitätsflächen Massenbewegungen 30-jährliche Eintretenswahrscheinlichkeit (44.11),n.a.
-KT_ZH,Badeplatz (1670.1),n.a.
-KT_ZH,Kantonsmaske (Darstellungshilfe) (96.4),n.a.
-KT_ZH,Geomorphologische Objekte (239.1),n.a.
-KT_ZH,Sonden (182.2),n.a.
-KT_ZH,Inventarflächen Tagfalterinventar 1992 (134.1),n.a.
-KT_ZH,Inventarflächen Reptilieninventar 1993 (133.1),n.a.
-KT_ZH,Holzfeuerungsanlagen (172.13),n.a.
-KT_ZH,Vergärungsanlagen (172.14),n.a.
-KT_ZH,Gemeinden (95.1),n.a.
-KT_ZH,Fischereirevier-Bereiche (314.1),n.a.
+KT_ZH,Grundwassergleichen Mittelwasser (327.17),n.a.
+KT_ZH,Grundwassergleichen Mittelwasser (halb) (327.18),n.a.
 KT_ZH,Kiesabbau (327.19),n.a.
-KT_ZH,Gewässer Fliessgewässertyp (45.5),n.a.
-KT_ZH,Gewässer Intensitätsflächen Hochwasser 100-jährliche Eintretenswahrscheinlichkeit (Daten vor 2006) (44.16),n.a.
-KT_ZH,Flächige Barrieren I (293.3),n.a.
-KT_ZH,Grundwasserbereich artesisch (327.26),n.a.
-KT_ZH,Lebensraum- und Vegetationskartierflächen (353.1),n.a.
-KT_ZH,ÖREB-Kataster - vereinfachtes Datenmodell ZH - Grundwasserschutzareale (149.1),n.a.
-KT_ZH,Gewässer Werkhöfe AWEL (281.4),n.a.
-KT_ZH,S5 Wald entlang Bahnen und Leitungen (371.21),n.a.
-KT_ZH,B5 Eibenförderung (371.25),n.a.
-KT_ZH,Öffentliche Gewässer (371.2),n.a.
-KT_ZH,KVA-Abwärmequellen Symbol (172.3),n.a.
-KT_ZH,Pionier-Strassenrettung (186.5),n.a.
-KT_ZH,Raumplanungsregionen (183.1),n.a.
-KT_ZH,ÖREB-Kataster - vereinfachtes Datenmodell ZH - Überlagernde Festlegungen - Linien (155.2),n.a.
-KT_ZH,ÖREB-Kataster - vereinfachtes Datenmodell ZH - Überlagernde Festlegungen - Punkte (155.3),n.a.
-KT_ZH,ÖREB-Kataster - vereinfachtes Datenmodell ZH - Waldabstandslinien (152.1),n.a.
-KT_ZH,GRUENFL_VOLUMENSTROM_PFEILE_P (460.3),n.a.
-KT_ZH,HOHE_ZUNAHME_TROPENNAECHTE_F (460.8),n.a.
-KT_ZH,Unterhaltsmassnahmen linear (306.6),n.a.
-KT_ZH,Unterhaltsmassnahmen punktuell (306.7),n.a.
-KT_ZH,GRUNDWASSERPIEZOMETER (317.4),n.a.
-KT_ZH,Strassenachsen (476.1),n.a.
-KT_ZH,Oeffentilche Beleuchtung (OGD) (124.3),n.a.
-KT_ZH,Gebäudealter Flächen (415.2),n.a.
-KT_ZH,Waldrandförderobjekte (169.2),n.a.
-KT_ZH,Nationale Ausbreitungsachsen 2009 (293.20),n.a.
-KT_ZH,Barrieren I 2009 (293.23),n.a.
-KT_ZH,Grundwasservorkommen Entwässerungskanal (327.3),n.a.
-KT_ZH,Landwirtschaftliche Nutzungsflächen  (170.1),n.a.
-KT_ZH,Landschaftsschutzobjekte: Findlinge (127.2),n.a.
-KT_ZH,Naturschutzobjekte Ergänzungen 95 (127.6),n.a.
-KT_ZH,Beobachtungspunkte Heuschreckeninventar 1990/98 (136.1),n.a.
-KT_ZH,Betriebs- und Sicherheitsausrüstungen auf Staatsstrassen und kantonalen Hochleistungsstrassen (OGD) (523.2),n.a.
-KT_ZH,Gewässer Öffentliche Fliessgewässer (45.1),n.a.
-KT_ZH,Gewässer Wasserechtsweiher (51.1),n.a.
-KT_ZH,Quellstrang und Zuleitung (1676.5),n.a.
-KT_ZH,Adressen GIS-ZH (277.1),n.a.
+KT_ZH,Grundwasservorkommen Beschriftung Mittelwasserfall (327.20),n.a.
+KT_ZH,Grundwasservorkommen Quellhorizont (327.21),n.a.
+KT_ZH,Grundwasservorkommen Seen (327.22),n.a.
+KT_ZH,Grundwasservorkommen Stauwehr (327.23),n.a.
+KT_ZH,Grundwasservorkommen Stockwerkbau (327.24),n.a.
 KT_ZH,Grundwasservorkommen Thur (327.25),n.a.
-KT_ZH,Gewässer Fliessgewässerrouten (45.2),n.a.
-KT_ZH,Gewässer Intensitätsflächen Massenbewegungen 100-jährliche Eintretenswahrscheinlichkeit (44.9),n.a.
-KT_ZH,Gewässer Intensitätsflächen permanente Rutschungen (Massenbewegungen) (44.12),n.a.
-KT_ZH,Abfallholz- und Klärschlamm-Wärmekraftkopplungsanlagen (172.5),n.a.
-KT_ZH,Gerinnerelevanter Schutzwald (Tobelwälder) (261.4),n.a.
-KT_ZH,TBA Strassen Grundgeometrie (OGD) (102.7),n.a.
-KT_ZH,Bodenkartierung der Landwirtschaftsflächen (92.1),n.a.
-KT_ZH,Objekte (525.3),n.a.
+KT_ZH,Grundwasserbereich artesisch (327.26),n.a.
+KT_ZH,Grundwasserbereich artesisch Begrenzung (327.27),n.a.
+KT_ZH,Stromleitungen (329.4),n.a.
+KT_ZH,Generalisierte Gemeinden (337.1),n.a.
+KT_ZH,E3 Erholungswälder durch Gemeinden bezeichnet (371.30),n.a.
+KT_ZH,GISZHPUB.WALD_FORSTREVIERE_F (338.6),n.a.
+KT_ZH,Isohypsen DTM 2017/2018 (346.1),n.a.
+KT_ZH,ZVV_TARIFZONEN (348.1),n.a.
+KT_ZH,Isohypsen/Isobathen DTM - 2014 (349.1),n.a.
+KT_ZH,Denkmalschutzobjekte (368.1),n.a.
+KT_ZH,Grundwasserschutzzonen (371.1),n.a.
+KT_ZH,Öffentliche Gewässer (371.2),n.a.
+KT_ZH,Waldstandorte von naturkundlicher Bedeutung WNB (371.3),n.a.
+KT_ZH,Kantonale Naturwaldreservate (371.4),n.a.
 KT_ZH,"Überkommunale Natur- und Landschaftsschutzverordnungen, Zonen I, II, IV (371.5)",n.a.
+KT_ZH,"Natur- und Landschaftsschutzinventar 1980, Naturschutzobjekte (371.6)",n.a.
+KT_ZH,Inventar der Landschaften und Naturdenkmäler von nationaler Bedeutung BLN (371.7),n.a.
+KT_ZH,Landschaftsschutzgebiet (kantonaler Richtplan) (371.8),n.a.
+KT_ZH,Landschaftsförderungsgebiet (kantonaler Richtplan) (371.9),n.a.
+KT_ZH,Kantonales Wildschonrevier (371.10),n.a.
+KT_ZH,Erholungsgebiete (kantonaler Richtplan) (371.11),n.a.
+KT_ZH,Erholungsanlagen Aussichtspunkte (kantonaler und regionale Richtpläne) (371.12),n.a.
+KT_ZH,"Erholungsanlagen Wanderwege (regionale Richtpläne, Nachführung ZAW) (371.13)",n.a.
+KT_ZH,Erholungsanlagen Reitwege (regionale Richtpläne) (371.14),n.a.
+KT_ZH,Parkierungsanlagen (regionale Richtpläne) (371.15),n.a.
+KT_ZH,Materialgewinnungsgebiet oder Deponie (kantonaler Richtplan) (371.16),n.a.
+KT_ZH,Waldareal (371.17),n.a.
+KT_ZH,S1 Gravitative Naturgefahren (371.18),n.a.
+KT_ZH,S3 Grund- und Trinkwasser (371.19),n.a.
+KT_ZH,S4 Wald entlang Kantonsstrassen und Autobahnen (371.20),n.a.
+KT_ZH,S5 Wald entlang Bahnen und Leitungen (371.21),n.a.
+KT_ZH,H1 Holzproduktion (371.22),n.a.
+KT_ZH,B3 Dauernd lichte Wälder (371.23),n.a.
+KT_ZH,B4 Eichenförderung (371.24),n.a.
+KT_ZH,B5 Eibenförderung (371.25),n.a.
+KT_ZH,B6 Waldrandförderung (371.26),n.a.
+KT_ZH,B7 Wildnispark Zürich (Naturerlebnispark) (371.27),n.a.
+KT_ZH,E1 Häufig begangene Wälder (371.28),n.a.
+KT_ZH,E2 Wenig begangene Wildlebensräume (371.29),n.a.
+KT_ZH,Gewässer Revitalisierungspotenzial Fliessgewässer (375.1),n.a.
+KT_ZH,Gewässer Priorisierung Revitalisierungen Fliessgewässer (375.2),n.a.
+KT_ZH,MOpublic Klasse Control-Point (LFP) (400.1),n.a.
+KT_ZH,MOpublic Klasse LCSurface (BoFlaeche) (401.1),n.a.
+KT_ZH,Objekte (525.3),n.a.
+KT_ZH,MOpublic Klasse LCSurface_PosText (BBText) (401.2),n.a.
+KT_ZH,MOpublic Klasse LCSurfaceProj (ProjBoFlaeche) (401.3),n.a.
+KT_ZH,MOpublic Klasse LCSurfaceProj_PosText (ProjBBText) (401.4),n.a.
+KT_ZH,MOpublic Klasse Surface_element (Flaechenelement) (402.1),n.a.
+KT_ZH,MOpublic Klasse Surface_element_PosText (FlaechenelementText) (402.2),n.a.
+KT_ZH,MOpublic Klasse Linear_element (Linienelement) (402.3),n.a.
+KT_ZH,MOpublic Klasse Linear_element_PosText (LinienelementText) (402.4),n.a.
+KT_ZH,MOpublic Klasse Point_element (Punktelement) (402.5),n.a.
+KT_ZH,MOpublic Klasse Point_element_PosText (PunktelementText) (402.6),n.a.
+KT_ZH,MOpublic Klasse Names (Namen) (403.1),n.a.
+KT_ZH,MOpublic Klasse Names_PosName (NamenPos) (403.2),n.a.
+KT_ZH,MOpublic Klasse RealEstate (Liegenschaft) (404.1),n.a.
+KT_ZH,MOpublic Klasse RealEstate_PosNumber (LiegenschaftPos) (404.2),n.a.
+KT_ZH,Schwerpunktgebiete (445.1),n.a.
+KT_ZH,MOpublic Klasse DPR_Mine (SelbstRecht) (404.3),n.a.
+KT_ZH,MOpublic Klasse DPR_Mine_PosNumber (SelbstRechtPos) (404.4),n.a.
+KT_ZH,MOpublic Klasse RealEstateProj (ProjLiegenschaft) (404.5),n.a.
+KT_ZH,MOpublic Klasse RealEstateProj_PosNumber (ProjLiegenschaftPos) (404.6),n.a.
+KT_ZH,MOpublic Klasse DPR_MineProj (ProjSelbstRecht) (404.7),n.a.
+KT_ZH,MOpublic Klasse DPR_MineProj_PosNumber (ProjSelbstRechtPos) (404.8),n.a.
+KT_ZH,MOpublic Klasse Boundary_point (Grenzpunkt) (404.9),n.a.
+KT_ZH,MOpublic Klasse Boundary_terr_point (Hoheitsgrenzpunkt) (405.1),n.a.
+KT_ZH,MOpublic Klasse Municipal_boundary (Gemeindegrenze) (405.2),n.a.
+KT_ZH,MOpublic Klasse Municipal_boundProj (ProjGemeindegrenze) (405.3),n.a.
+KT_ZH,MOpublic Klasse Other_territ_boundary (Uebrigehoheitsgrenzen) (405.4),n.a.
+KT_ZH,MOpublic Klasse Street_name_Pos (LokalisationsNamePos) (406.2),n.a.
+KT_ZH,MOpublic Klasse Building_entrance (Gebaeudeeingang) (406.3),n.a.
+KT_ZH,MOpublic Klasse Building_entrance_Pos (HausnummerPos) (406.4),n.a.
+KT_ZH,Kantonales Velonetz für den Alltagsverkehr für OGD (408.3),n.a.
+KT_ZH,Schwachstellen und Netzlücken Velonetz Alltag für OGD (408.4),n.a.
+KT_ZH,"MOpublic Klasse Pipelines, Surface_element (RLFlaeche) (410.1)",n.a.
+KT_ZH,"MOpublic Klasse Pipelines, Surface_element_PosName (RLFlaechenelementText) (410.2)",n.a.
+KT_ZH,"MOpublic Klasse Pipelines, Linear_element (RLLinie) (410.3)",n.a.
+KT_ZH,"MOpublic Klasse Pipelines, Linear_element_PosName (RLLinieText) (410.4)",n.a.
+KT_ZH,"MOpublic Klasse Pipelines, Point_element (RLPunkt) (410.5)",n.a.
+KT_ZH,Gebäudealter Punkte (415.1),n.a.
+KT_ZH,Gebäudealter Flächen (415.2),n.a.
+KT_ZH,Betreuungsgebiete (428.1),n.a.
+KT_ZH,Gemeinden historisch (437.1),n.a.
+KT_ZH,"Gemeinden mit Berücksichtigung von Seen, historisch (437.2)",n.a.
+KT_ZH,Fliessgewässertypisierung (440.1),n.a.
+KT_ZH,Inventar der Landschaftsschutzobjekte von überkommunaler Bedeutung - Flächen (442.4),n.a.
+KT_ZH,TBA Signalisierte Geschwindigkeiten (450.4),n.a.
+KT_ZH,TBA Haupt- und Nebenstrassen OGD (452.3),n.a.
+KT_ZH,Geschossflächen auf Quartiersebene (454.2),n.a.
+KT_ZH,TBA Kantonsstrassen innerorts und ausserorts (OGD) (458.3),n.a.
+KT_ZH,Punktuelle Bestimmungen in Schutzanordnungen (525.4),n.a.
+KT_ZH,SIEDLUNGSRAUM_F (460.1),n.a.
+KT_ZH,GRUENFLAECHEN_F (460.2),n.a.
+KT_ZH,GRUENFL_VOLUMENSTROM_PFEILE_P (460.3),n.a.
+KT_ZH,KALTLUFTEINWIRKBEREICH_F (460.4),n.a.
+KT_ZH,KALTLUFTEINZUGSGEBIET_F (460.5),n.a.
+KT_ZH,KALTLUFTLEITBAHNEN_L (460.7),n.a.
+KT_ZH,HOHE_ZUNAHME_TROPENNAECHTE_F (460.8),n.a.
+KT_ZH,WINDFELD_P (475.1),n.a.
+KT_ZH,Überbauungs- und Erschliessungsstände der Gemeinden (481.1),n.a.
+KT_ZH,Gewässer Hydrometrische Stationen (483.1),n.a.
+KT_ZH,Quartieranalyse (485.1),n.a.
+KT_ZH,Arbeitszonenbewirtschaftung (486.1),n.a.
+KT_ZH,Gewerbebauland (487.1),n.a.
+KT_ZH,Werkhöfe des kantonalen Tiefbauamts (OGD) (489.2),n.a.
+KT_ZH,Gewässer Hochwasserrückhaltebecken Stauwerkabflusspunkt (512.1),n.a.
+KT_ZH,Gewässer Querprofilpunkte (515.1),n.a.
+KT_ZH,Gewässer Querprofillinien (515.2),n.a.
+KT_ZH,Gewässer Längsprofillinien (515.3),n.a.
+KT_ZH,Polygone Inventar Denkmalschutzobjekte Objekte (517.1),n.a.
+KT_ZH,Polygone Inventar Denkmalschutzobjekte Umgebung (517.2),n.a.
+KT_ZH,Betriebs- und Sicherheitsausrüstungen auf Staatsstrassen und kantonalen Hochleistungsstrassen (OGD) (523.2),n.a.
+KT_ZH,Anordnungen (525.1),n.a.
+KT_ZH,Lineare Bestimmungen in den Schutzanordnungen (525.2),n.a.
+KT_ZH,Schutzzone (525.5),n.a.
+KT_ZH,Überlagernde Zonen (525.6),n.a.
+KT_ZH,Prioritäre Potenzialflächen für Feuchtgebiete (PPF) (526.1),n.a.
 KT_ZH,Punkte der prioritären Potenzialflächen für Feuchtgebiete (PPF) (526.2),n.a.
 KT_ZH,Synergieflächen zu Gewässeraufwertung (526.3),n.a.
-KT_ZH,Oberflächengewässer Symbol (172.16),n.a.
-KT_ZH,ÖREB-Kataster - vereinfachtes Datenmodell ZH - Lärmempfindlichkeitsstufen (in Nutzungszonen) projektiert (154.2),n.a.
-KT_ZH,Kanton (95.4),n.a.
-KT_ZH,Gemeindefeuerwehren (186.1),n.a.
-KT_ZH,Räumliche Bevölkerungsstatistik (63.1),n.a.
-KT_ZH,ÖREB-Kataster - vereinfachtes Datenmodell ZH - Kommunale Verkehrsbaulinien (158.1),n.a.
-KT_ZH,ÖREB-Kataster - vereinfachtes Datenmodell ZH - Kantonale Verkehrsbaulinien (157.1),n.a.
-KT_ZH,ZVV_TARIFZONEN (348.1),n.a.
-KT_ZH,KALTLUFTLEITBAHNEN_L (460.7),n.a.
-KT_ZH,Pflegeplandaten vergangenes Jahr (112.102),n.a.
+KT_ZH,Perimeter Gesamtplanungsgebiete (526.4),n.a.
+KT_ZH,AFV_GV.SEILBAHN_SKILIFT_L (529.1),n.a.
+KT_ZH,AFV_GV.SEILBAHN_SKILIFT_P (529.2),n.a.
+KT_ZH,Quellenpunkte (532.532),n.a.
+KT_ZH,Hydrologische Studien (534.1),n.a.
+KT_ZH,Hochwasserabflüsse (HQ Werte) (534.2),n.a.
+KT_ZH,AV Gewässer (536.1),n.a.
+KT_ZH,Geomorphologische Landschaften des Kantons Zürich (544.1),n.a.
+KT_ZH,Landschaftstypologie des Kantons Zürich (545.1),n.a.
+KT_ZH,Emissionen Istzustand (547.1),n.a.
+KT_ZH,Emissionen Planungshorizont (549.1),n.a.
 KT_ZH,Teileinzugsgebiete (552.1),n.a.
+KT_ZH,Gebietsauslass (552.2),n.a.
 KT_ZH,Vorfluter Abschnitt (552.3),n.a.
-KT_ZH,GISZHPUB.OGD_OEV_GUETEKLASSEN_F (69.2),n.a.
-KT_ZH,Gewässer Gewässerraum Projektiert (185.2),n.a.
+KT_ZH,Badeplatz (1670.1),n.a.
+KT_ZH,Quellstrang und Zuleitung (1676.5),n.a.
 KT_ZH,Kilometer-Marken,n.a.
 KT_ZH,Strassenachsen,n.a.
 KT_ZH,Bodenbedeckung,n.a.
@@ -13716,7 +13726,6 @@ KT_FR,Carte de danger - Effondrements de falaise,https://test.map.geo.admin.ch/?
 KT_FR,Carte de danger - Glissements de terrain,https://test.map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||Carte de danger - Glissements de terrain||https://geo.fr.ch/ags/services/OpenData/Carte_de_danger___Glissements_de_terrain/MapServer/WMSServer?||0||1.1.1&swisssearch=46.7219835%207.0631465&zoom=7
 KT_FR,Carte de danger - Laves torrentielles,https://test.map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||Carte de danger - Laves torrentielles||https://geo.fr.ch/ags/services/OpenData/Carte_de_danger___Laves_torrentielles/MapServer/WMSServer?||0||1.1.1&swisssearch=46.60051850000001%207.120385000000001&zoom=7
 KT_FR,Carte de protection des eaux,https://test.map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||Carte de protection des eaux||https://geo.fr.ch/ags/services/OpenData/Carte_de_protection_des_eaux/MapServer/WMSServer?||0||1.1.1&swisssearch=46.7237735%207.0592144999999995&zoom=7
-KT_FR,Carte des sols de fondation,https://test.map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||Carte des sols de fondation||https://geo.fr.ch/ags/services/OpenData/Carte_des_sols_de_fondation/MapServer/WMSServer?||0||1.1.1&swisssearch=40.926905500000004%20-5.596934&zoom=7
 KT_FR,Catégorie de protection ISOS,https://test.map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||Catégorie de protection ISOS||https://geo.fr.ch/ags/services/OpenData/Categorie_de_protection_ISOS/MapServer/WMSServer?||0||1.1.1&swisssearch=46.7416805%207.0388895&zoom=7
 KT_FR,Centrales MCT AquaFri,https://test.map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||Centrales MCT AquaFri||https://geo.fr.ch/ags/services/OpenData/Centrales_MCT_AquaFri/MapServer/WMSServer?||0||1.1.1&swisssearch=46.7312445%207.0733595000000005&zoom=7
 KT_FR,Centres d exploitation agricole,https://test.map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||Centres d exploitation agricole||https://geo.fr.ch/ags/services/OpenData/Centres_d_exploitation_agricole/MapServer/WMSServer?||0||1.1.1&swisssearch=46.797251%207.4206325&zoom=7
@@ -14580,6 +14589,7 @@ Bund,Niederschlagserosivität Okt.,https://test.map.geo.admin.ch/?bgLayer=ch.swi
 Bund,Niederschlagserosivität Sep.,https://test.map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||Niederschlagserosivität Sep.||https://wms.geo.admin.ch/??||ch.bafu.niederschlagserosivitaet-sep||1.1.1
 Bund,Ökomorphologie F - Abschnitte,https://test.map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||Ökomorphologie F - Abschnitte||https://wms.geo.admin.ch/??||ch.bafu.oekomorphologie-f_abschnitte||1.1.1
 Bund,Ökomorphologie F - Abstürze,https://test.map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||Ökomorphologie F - Abstürze||https://wms.geo.admin.ch/??||ch.bafu.oekomorphologie-f_abstuerze||1.1.1
+Bund,Einzelobjekte VECTOR25,n.a.
 Bund,Ökomorphologie F - Bauwerke,https://test.map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||Ökomorphologie F - Bauwerke||https://wms.geo.admin.ch/??||ch.bafu.oekomorphologie-f_bauwerke||1.1.1
 Bund,Permafrosthinweiskarte,https://test.map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||Permafrosthinweiskarte||https://wms.geo.admin.ch/??||ch.bafu.permafrost||1.1.1
 Bund,REN  Extensives Landwirtschaftsgebiet,https://test.map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||REN  Extensives Landwirtschaftsgebiet||https://wms.geo.admin.ch/??||ch.bafu.ren-extensive_landwirtschaftsgebiete||1.1.1
@@ -14606,6 +14616,7 @@ Bund,Murgang (SilvaProtect-CH),https://test.map.geo.admin.ch/?bgLayer=ch.swissto
 Bund,Sturz (SilvaProtect-CH),https://test.map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||Sturz (SilvaProtect-CH)||https://wms.geo.admin.ch/??||ch.bafu.silvaprotect-sturz||1.1.1
 Bund,Übersarung (SilvaProtect-CH),https://test.map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||Übersarung (SilvaProtect-CH)||https://wms.geo.admin.ch/??||ch.bafu.silvaprotect-uebersarung||1.1.1
 Bund,Strukturgüte Linkes Ufer,n.a.
+Bund,Armeelogistikcenter ALC,https://test.map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||Armeelogistikcenter ALC||https://wms.geo.admin.ch/??||ch.vbs.armeelogistikcenter||1.1.1
 Bund,Strukturgüte Linkes Umfeld,n.a.
 Bund,Strukturgüte Rechtes Ufer,n.a.
 Bund,Strukturgüte Rechtes Umfeld,n.a.
@@ -14884,12 +14895,14 @@ Bund,Landeskarte 1:10'000 (farbig),n.a.
 Bund,Landeskarte 1:10'000 (grau),n.a.
 Bund,Leichte Basiskarte Relief,https://test.map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||Leichte Basiskarte Relief||https://wms.geo.admin.ch/??||ch.swisstopo.leichte-basiskarte_reliefschattierung||1.1.1
 Bund,Lotabweichungen,https://test.map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||Lotabweichungen||https://wms.geo.admin.ch/??||ch.swisstopo.lotabweichungen||1.1.1
+Bund,Schutzgebiete swissTLMRegio,https://test.map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||Schutzgebiete swissTLMRegio||https://wms.geo.admin.ch/??||ch.swisstopo.vec200-adminboundaries-protectedarea||1.1.1
 Bund,Luftbilder Dritte,https://test.map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||Luftbilder Dritte||https://wms.geo.admin.ch/??||ch.swisstopo.lubis-luftbilder-dritte-firmen||1.1.1
 Bund,Luftbilder Kantone,https://test.map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||Luftbilder Kantone||https://wms.geo.admin.ch/??||ch.swisstopo.lubis-luftbilder-dritte-kantone||1.1.1
 Bund,Luftbilder swisstopo farbig,https://test.map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||Luftbilder swisstopo farbig||https://wms.geo.admin.ch/??||ch.swisstopo.lubis-luftbilder_farbe||1.1.1
 Bund,Luftbilder swisstopo infrarot,https://test.map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||Luftbilder swisstopo infrarot||https://wms.geo.admin.ch/??||ch.swisstopo.lubis-luftbilder_infrarot||1.1.1
 Bund,Luftbilder swisstopo s/w,https://test.map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||Luftbilder swisstopo s/w||https://wms.geo.admin.ch/??||ch.swisstopo.lubis-luftbilder_schwarzweiss||1.1.1
 Bund,Terrestrische Aufnahmen swisstopo,https://test.map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||Terrestrische Aufnahmen swisstopo||https://wms.geo.admin.ch/??||ch.swisstopo.lubis-terrestrische_aufnahmen||1.1.1
+Bund,Anlagen VECTOR25,https://test.map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||Anlagen VECTOR25||https://wms.geo.admin.ch/??||ch.swisstopo.vec25-anlagen||1.1.1
 Bund,Landeskarten (farbig),https://test.map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||Landeskarten (farbig)||https://wms.geo.admin.ch/??||ch.swisstopo.pixelkarte-farbe||1.1.1
 Bund,Landeskarte 1:1 Million,https://test.map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||Landeskarte 1:1 Million||https://wms.geo.admin.ch/??||ch.swisstopo.pixelkarte-farbe-pk1000.noscale||1.1.1
 Bund,Landeskarte 1:100'000 | LK100,n.a.
@@ -14926,7 +14939,6 @@ Bund,Wald swissTLM3D,https://test.map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelka
 Bund,Wanderwege,https://test.map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||Wanderwege||https://wms.geo.admin.ch/??||ch.swisstopo.swisstlm3d-wanderwege||1.1.1
 Bund,LV95 Transformationsgenauigkeit,https://test.map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||LV95 Transformationsgenauigkeit||https://wms.geo.admin.ch/??||ch.swisstopo.transformationsgenauigkeit||1.1.1
 Bund,Spannungsarme Gebiete,https://test.map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||Spannungsarme Gebiete||https://wms.geo.admin.ch/??||ch.swisstopo-vd.spannungsarme-gebiete||1.1.1
-Bund,Schutzgebiete swissTLMRegio,https://test.map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||Schutzgebiete swissTLMRegio||https://wms.geo.admin.ch/??||ch.swisstopo.vec200-adminboundaries-protectedarea||1.1.1
 Bund,Einzelgebäude gen. swissTLMRegio,https://test.map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||Einzelgebäude gen. swissTLMRegio||https://wms.geo.admin.ch/??||ch.swisstopo.vec200-building||1.1.1
 Bund,Gewässernetz swissTLMRegio,https://test.map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||Gewässernetz swissTLMRegio||https://wms.geo.admin.ch/??||ch.swisstopo.vec200-hydrography||1.1.1
 Bund,Bodenbedeckung swissTLMRegio,https://test.map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||Bodenbedeckung swissTLMRegio||https://wms.geo.admin.ch/??||ch.swisstopo.vec200-landcover||1.1.1
@@ -14935,8 +14947,6 @@ Bund,Höhenkoten swissTLMRegio,https://test.map.geo.admin.ch/?bgLayer=ch.swissto
 Bund,Namen swissTLMRegio,https://test.map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||Namen swissTLMRegio||https://wms.geo.admin.ch/??||ch.swisstopo.vec200-names-namedlocation||1.1.1
 Bund,Öffentlicher Verkehr swissTLMRegio,https://test.map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||Öffentlicher Verkehr swissTLMRegio||https://wms.geo.admin.ch/??||ch.swisstopo.vec200-transportation-oeffentliche-verkehr||1.1.1
 Bund,Strassennetz swissTLMRegio,https://test.map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||Strassennetz swissTLMRegio||https://wms.geo.admin.ch/??||ch.swisstopo.vec200-transportation-strassennetz||1.1.1
-Bund,Anlagen VECTOR25,https://test.map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||Anlagen VECTOR25||https://wms.geo.admin.ch/??||ch.swisstopo.vec25-anlagen||1.1.1
-Bund,Einzelobjekte VECTOR25,n.a.
 Bund,Gebäude VECTOR25,https://test.map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||Gebäude VECTOR25||https://wms.geo.admin.ch/??||ch.swisstopo.vec25-gebaeude||1.1.1
 Bund,Gewässernetz VECTOR25,https://test.map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||Gewässernetz VECTOR25||https://wms.geo.admin.ch/??||ch.swisstopo.vec25-gewaessernetz_referenz||1.1.1
 Bund,Hecken und Bäume VECTOR25,n.a.
@@ -14945,14 +14955,13 @@ Bund,LV95 Verschiebungsvektoren TSP1,https://test.map.geo.admin.ch/?bgLayer=ch.s
 Bund,LV95 Verschiebungsvektoren TSP2,https://test.map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||LV95 Verschiebungsvektoren TSP2||https://wms.geo.admin.ch/??||ch.swisstopo.verschiebungsvektoren-tsp2||1.1.1
 Bund,Zeitreise - Kartenwerke,n.a.
 Bund,Armee- und Kriegsdenkmäler,https://test.map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||Armee- und Kriegsdenkmäler||https://wms.geo.admin.ch/??||ch.vbs.armee-kriegsdenkmaeler||1.1.1
-Bund,Armeelogistikcenter ALC,https://test.map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||Armeelogistikcenter ALC||https://wms.geo.admin.ch/??||ch.vbs.armeelogistikcenter||1.1.1
 Bund,Zeus Karte,https://test.map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||Zeus Karte||https://wms.geo.admin.ch/??||ch.vbs.grunddispositiv-zeus||1.1.1
 Bund,Logistikräume ALC,https://test.map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||Logistikräume ALC||https://wms.geo.admin.ch/??||ch.vbs.logistikraeume-armeelogistikcenter||1.1.1
-Bund,Retablierungsstellen,https://test.map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||Retablierungsstellen||https://wms.geo.admin.ch/??||ch.vbs.retablierungsstellen||1.1.1
 Bund,Mil Airspace Chart,https://test.map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||Mil Airspace Chart||https://wms.geo.admin.ch/??||ch.vbs.milairspacechart||1.1.1
 Bund,Panzerverschiebungsrouten,https://test.map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||Panzerverschiebungsrouten||https://wms.geo.admin.ch/??||ch.vbs.panzerverschiebungsrouten||1.1.1
 Bund,Patrouille des Glaciers (A Rennen),https://test.map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||Patrouille des Glaciers (A Rennen)||https://wms.geo.admin.ch/??||ch.vbs.patrouilledesglaciers-a_rennen||1.1.1
 Bund,Patrouille des Glaciers (Z Rennen),https://test.map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||Patrouille des Glaciers (Z Rennen)||https://wms.geo.admin.ch/??||ch.vbs.patrouilledesglaciers-z_rennen||1.1.1
+Bund,Retablierungsstellen,https://test.map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||Retablierungsstellen||https://wms.geo.admin.ch/??||ch.vbs.retablierungsstellen||1.1.1
 Bund,Sperr- und Gefahrenzonenkarte,https://test.map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||Sperr- und Gefahrenzonenkarte||https://wms.geo.admin.ch/??||ch.vbs.sperr-gefahrenzonenkarte||1.1.1
 Bund,SWISS MIL PILOTS CHART,https://test.map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||SWISS MIL PILOTS CHART||https://wms.geo.admin.ch/??||ch.vbs.swissmilpilotschart||1.1.1
 Bund,Waldschadenkarte - Projektil,https://test.map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||Waldschadenkarte - Projektil||https://wms.geo.admin.ch/??||ch.vbs.waldschadenkarte||1.1.1
