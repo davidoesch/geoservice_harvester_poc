@@ -106,8 +106,8 @@ This data is generated and validated daily using automated procedures based on g
 | Provider 	| Status 	| Notes 	|
 |:---------:	|--------	|-------	|
 |     AG    	|  ![ok](https://placehold.jp/b8e186/000000/200x50.png?text=WMS 'ok')      	|      	|
-|     AI    	|  ![ok](https://placehold.jp/b8e186/000000/200x50.png?text=WMS-WFS 'ok')       	| some layers do cover AI AR SG      	|
-|     AR    	|  ![ok](https://placehold.jp/b8e186/000000/200x50.png?text=WMS-WFS 'ok')       	| some layers do cover AI AR SG      	|
+|     AI    	|  ![ok](https://placehold.jp/b8e186/000000/200x50.png?text=WMS 'ok')       	| some layers do cover AI AR SG      	|
+|     AR    	|  ![ok](https://placehold.jp/b8e186/000000/200x50.png?text=WMS 'ok')       	| some layers do cover AI AR SG      	|
 |     BE    	|  ![ok](https://placehold.jp/b8e186/000000/200x50.png?text=WMS 'ok')      	|   FR  to be done   	|
 |     BL    	|  ![ok](https://placehold.jp/b8e186/000000/200x50.png?text=WMS-WMTS 'ok')      	|      	|
 |     BS    	|  ![ok](https://placehold.jp/b8e186/000000/200x50.png?text=WMS-WFS-WMTS 'ok')      	|      	|
