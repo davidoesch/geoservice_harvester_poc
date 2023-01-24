@@ -4534,7 +4534,7 @@ KT_GE,DIP_ECOLE_PRIMAIRE_BATIMENT,https://test.map.geo.admin.ch/?bgLayer=ch.swis
 KT_GE,DIP_CYCLES_ORIENTATION,https://test.map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||DIP_CYCLES_ORIENTATION||https://ge.ch/sitgags1/services/VECTOR/SITG_OPENDATA_01/MapServer/WMSServer?||39||1.1.1&swisssearch=46.22714%206.143727&zoom=7
 KT_GE,DIP_COLLEGES,https://test.map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||DIP_COLLEGES||https://ge.ch/sitgags1/services/VECTOR/SITG_OPENDATA_01/MapServer/WMSServer?||40||1.1.1&swisssearch=46.200469%206.159568&zoom=7
 KT_GE,DIP_BIBLIOTHEQUES_SCOLAIRES,https://test.map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||DIP_BIBLIOTHEQUES_SCOLAIRES||https://ge.ch/sitgags1/services/VECTOR/SITG_OPENDATA_01/MapServer/WMSServer?||41||1.1.1&swisssearch=46.2269405%206.1439&zoom=7
-KT_GE,DGC_OPB_REVETEMENTS_LIGNE,https://test.map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||DGC_OPB_REVETEMENTS_LIGNE||https://ge.ch/sitgags1/services/VECTOR/SITG_OPENDATA_01/MapServer/WMSServer?||42||1.1.1&swisssearch=46.247623000000004%206.119908499999999&zoom=7
+KT_GE,DGC_OPB_REVETEMENTS_LIGNE,https://test.map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||DGC_OPB_REVETEMENTS_LIGNE||https://ge.ch/sitgags1/services/VECTOR/SITG_OPENDATA_01/MapServer/WMSServer?||42||1.1.1&swisssearch=46.2475735%206.1199095&zoom=7
 KT_GE,DGC_OPB_PROCEDURES,https://test.map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||DGC_OPB_PROCEDURES||https://ge.ch/sitgags1/services/VECTOR/SITG_OPENDATA_01/MapServer/WMSServer?||43||1.1.1&swisssearch=46.250909500000006%206.135283&zoom=7
 KT_GE,DGC_OFROU_UHPERI,https://test.map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||DGC_OFROU_UHPERI||https://ge.ch/sitgags1/services/VECTOR/SITG_OPENDATA_01/MapServer/WMSServer?||44||1.1.1&swisssearch=46.2561355%206.131482&zoom=7
 KT_GE,DGC_OFROU_RTE_PRINCIPALE,https://test.map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||DGC_OFROU_RTE_PRINCIPALE||https://ge.ch/sitgags1/services/VECTOR/SITG_OPENDATA_01/MapServer/WMSServer?||45||1.1.1&swisssearch=46.2244565%206.147819999999999&zoom=7
@@ -8940,6 +8940,7 @@ KT_SZ,A105a: Sirenen,https://test.map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelka
 KT_SZ,Wanderwegsperrungen,https://test.map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||Wanderwegsperrungen||https://map.geo.sz.ch/mapserv_proxy?lang=de?||ch.sz.a109b.wanderwegsperrungen||1.1.1&swisssearch=46.7912%208.308985&zoom=7
 KT_SZ,Freienbach: Gemeindeliegenschaft,https://test.map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||Freienbach: Gemeindeliegenschaft||https://map.geo.sz.ch/mapserv_proxy?lang=de?||ch.sz.a110.freienbach2035.gemeindeliegenschaft||1.1.1&swisssearch=47.0561%208.696785&zoom=7
 KT_SZ,Freienbach: Objektinformation,https://test.map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||Freienbach: Objektinformation||https://map.geo.sz.ch/mapserv_proxy?lang=de?||ch.sz.a110.freienbach2035.objektinformation||1.1.1&swisssearch=47.0561%208.696785&zoom=7
+KT_SZ,Rebbaukataster,https://test.map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||Rebbaukataster||https://map.geo.sz.ch/mapserv_proxy?lang=de?||ch.sz.a111a.rebbaukataster.2022||1.1.1&swisssearch=47.0561%208.696785&zoom=7
 KT_SZ,Rebbaukataster,https://test.map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||Rebbaukataster||https://map.geo.sz.ch/mapserv_proxy?lang=de?||ch.sz.a111a.rebbaukataster.2021||1.1.1&swisssearch=47.0561%208.696785&zoom=7
 KT_SZ,Rebbaukataster,https://test.map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||Rebbaukataster||https://map.geo.sz.ch/mapserv_proxy?lang=de?||ch.sz.a111a.rebbaukataster.2020||1.1.1&swisssearch=47.0561%208.696785&zoom=7
 KT_SZ,Rebbaukataster,https://test.map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||Rebbaukataster||https://map.geo.sz.ch/mapserv_proxy?lang=de?||ch.sz.a111a.rebbaukataster.2019||1.1.1&swisssearch=47.0561%208.696785&zoom=7
@@ -10045,6 +10046,8 @@ KT_TI,[AC-005.1] Cancro del platano,n.a.
 KT_TI,[AC-005.1] Cancro del platano,n.a.
 KT_TI,[AC-011.1] Malattia api peste americana - zone di sequestro,n.a.
 KT_TI,[AC-011.1] Malattia api peste europea - zone di sequestro,n.a.
+KT_TI,[AC-064.1] Zone di protezione ittica - tratte,n.a.
+KT_TI,[AC-064.1] Zone di protezione ittica - aree,n.a.
 KT_TI,[CH-040.7] Nomi geografici (misurazione nazionale),https://test.map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||[CH-040.7] Nomi geografici (misurazione nazionale)||https://wms.geo.ti.ch/service?||ch_040_7_v1_0_nomi_geografici||1.1.1&swisssearch=46.227177580134466%208.785723687313254&zoom=7
 KT_TI,[CH-051.1] Piano Registro Fondiario,https://test.map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||[CH-051.1] Piano Registro Fondiario||https://wms.geo.ti.ch/service?||ch.ti.051_1.piano_registro_fondiario||1.1.1&swisssearch=46.227177580134466%208.785723687313254&zoom=7
 KT_TI,[CH-052.1] Piano di base MU-CH,https://test.map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||[CH-052.1] Piano di base MU-CH||https://wms.geo.ti.ch/service?||ch_052_1_v24_0_piano_base_mu_ch||1.1.1&swisssearch=46.227177580134466%208.785723687313254&zoom=7
@@ -10193,6 +10196,8 @@ KT_TI,[TI-028b.1] Cadenazzo-Robasacco - Piano traffico,https://test.map.geo.admi
 KT_TI,[TI-028b.1] Cadenazzo-Robasacco - Piano zone,https://test.map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||[TI-028b.1] Cadenazzo-Robasacco - Piano zone||https://wms.geo.ti.ch/service?||ti.028b_1.ch06f9ke_pz||1.1.1&swisssearch=46.13723574070791%208.95215666937776&zoom=7
 KT_TI,[TI-028b.1] Cadenazzo-Cadenazzo - Piano zone e EAP,https://test.map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||[TI-028b.1] Cadenazzo-Cadenazzo - Piano zone e EAP||https://wms.geo.ti.ch/service?||ti.028b_1.ch06g6x9_pz||1.1.1&swisssearch=46.14927244652708%208.950826693903252&zoom=7
 KT_TI,[TI-028b.1] Cadenazzo-Cadenazzo - Piano gradi sensibilità,https://test.map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||[TI-028b.1] Cadenazzo-Cadenazzo - Piano gradi sensibilità||https://wms.geo.ti.ch/service?||ti.028b_1.ch06g6x9_pgds||1.1.1&swisssearch=46.149067397046956%208.950819808358462&zoom=7
+KT_TI,[TI-028b.1] Gravesano - PZ,https://test.map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||[TI-028b.1] Gravesano - PZ||https://wms.geo.ti.ch/service?||ti.028b_1.ch06rsf9_pz_lst||1.1.1&swisssearch=46.04127498165293%208.918950855720393&zoom=7
+KT_TI,[TI-028b.1] Gravesano - PU,https://test.map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||[TI-028b.1] Gravesano - PU||https://wms.geo.ti.ch/service?||ti.028b_1.ch06rsf9_pu_lst||1.1.1&swisssearch=46.04127498165293%208.918950855720393&zoom=7
 KT_TI,[TI-028b.1] Airolo Lalpt - Piano traffico e EAP PP-SG,https://test.map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||[TI-028b.1] Airolo Lalpt - Piano traffico e EAP PP-SG||https://wms.geo.ti.ch/service?||ti.028b_1.ch06ty8c_pt||1.1.1&swisssearch=46.55709331093708%208.564523322734505&zoom=7
 KT_TI,[TI-028b.1] Airolo Lalpt - Piano paesaggio PP-SG,https://test.map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||[TI-028b.1] Airolo Lalpt - Piano paesaggio PP-SG||https://wms.geo.ti.ch/service?||ti.028b_1.ch06ty8c_ppaes||1.1.1&swisssearch=46.55709331093708%208.564523322734505&zoom=7
 KT_TI,[TI-028b.1] Airolo Lalpt - Piano riordino PP-SG,https://test.map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||[TI-028b.1] Airolo Lalpt - Piano riordino PP-SG||https://wms.geo.ti.ch/service?||ti.028b_1.ch06ty8c_pred||1.1.1&swisssearch=46.55741468071156%208.564719405278609&zoom=7
@@ -10652,7 +10657,6 @@ KT_TI,[TI-009.1] Settori forestali,https://test.map.geo.admin.ch/?bgLayer=ch.swi
 KT_TI,[TI-011.1] Punti di riferimento,https://test.map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||[TI-011.1] Punti di riferimento||https://wms.geo.ti.ch/service?||ti_011_1_v1_1_catasto_strade_cantonali_punti||1.1.1&swisssearch=46.20841558701614%208.76768971553011&zoom=7
 KT_TI,[TI-011.1] Ettometri,https://test.map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||[TI-011.1] Ettometri||https://wms.geo.ti.ch/service?||ti_011_1_v1_1_catasto_strade_cantonali_ettometro||1.1.1&swisssearch=46.20841558701614%208.76768971553011&zoom=7
 KT_TI,[TI-011.1] Assi stradali,https://test.map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||[TI-011.1] Assi stradali||https://wms.geo.ti.ch/service?||ti_011_1_v1_1_catasto_strade_cantonali_assi||1.1.1&swisssearch=46.20841558701614%208.76768971553011&zoom=7
-KT_TI,[AC-001.1] Disponibilità del Catasto RDPP,https://test.map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||[AC-001.1] Disponibilità del Catasto RDPP||https://wms.geo.ti.ch/service?||ac.001_1.disponibilita_catasto_rdpp||1.1.1&swisssearch=46.227177580134466%208.785723687313254&zoom=7
 KT_TI,[AC-002.1] Limiti giurisdizionali indicativi,https://test.map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||[AC-002.1] Limiti giurisdizionali indicativi||https://wms.geo.ti.ch/service?||ac_002_1_v1_1_limiti_giurisdizionali_indicativi||1.1.1&swisssearch=46.227177580134466%208.785723687313254&zoom=7
 KT_TI,[AC-004.1] Guida letteraria della Svizzera italiana,https://test.map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||[AC-004.1] Guida letteraria della Svizzera italiana||https://wms.geo.ti.ch/service?||ac_004_1_v1_0_guida_letteraria||1.1.1&swisssearch=46.21755857207212%209.274056205191979&zoom=7
 KT_TI,[AC-005.1] Cancro del platano,https://test.map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||[AC-005.1] Cancro del platano||https://wms.geo.ti.ch/service?||ac.005_1.cancro_platano||1.1.1&swisssearch=46.227177580134466%208.785723687313254&zoom=7
@@ -10679,6 +10683,7 @@ KT_TI,[AC-050.1] Edifici (misurazione ufficiale),https://test.map.geo.admin.ch/?
 KT_TI,[AC-055.1] Posti di controllo per la selvaggina,https://test.map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||[AC-055.1] Posti di controllo per la selvaggina||https://wms.geo.ti.ch/service?||ac_055_1_v1_0_posti_controllo_selvaggina||1.1.1&swisssearch=46.227177580134466%208.785723687313254&zoom=7
 KT_TI,[AC-057.1] Perimetri di protezione per le condotte,https://test.map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||[AC-057.1] Perimetri di protezione per le condotte||https://wms.geo.ti.ch/service?||ac.057_1.perimetri_protezione_condotte||1.1.1&swisssearch=46.227177580134466%208.785723687313254&zoom=7
 KT_TI,[AC-063.1] Manufatti su strade e piste ciclabili,https://test.map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||[AC-063.1] Manufatti su strade e piste ciclabili||https://wms.geo.ti.ch/service?||ac_063_1_v1_0_manufatti||1.1.1&swisssearch=46.227177580134466%208.785723687313254&zoom=7
+KT_TI,[AC-064.1] Zone di protezione ittica,https://test.map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||[AC-064.1] Zone di protezione ittica||https://wms.geo.ti.ch/service?||ac_064_1_v1_0_zone_protezione_ittica||1.1.1&swisssearch=46.227177580134466%208.785723687313254&zoom=7
 KT_TI,[AC-065a.1] Disponibilità piani di utilizzazione cantonali,https://test.map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||[AC-065a.1] Disponibilità piani di utilizzazione cantonali||https://wms.geo.ti.ch/service?||ac_065a_1_v1_0_disponibilita_piani_utilizzazione||1.1.1&swisssearch=46.227177580134466%208.785723687313254&zoom=7
 KT_TI,[AC-065b.1] Disponibilità piani regolatori,https://test.map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||[AC-065b.1] Disponibilità piani regolatori||https://wms.geo.ti.ch/service?||ac_065b_1_v1_0_disponibilita_piani_regolatori||1.1.1&swisssearch=46.227177580134466%208.785723687313254&zoom=7
 KT_TI,[AC-003.1] Lotti,https://test.map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||[AC-003.1] Lotti||https://wms.geo.ti.ch/service?||ac_003_1_v1_0_suddivisione_lotti_misurazione_ufficiale_lotti||1.1.1&swisssearch=46.227177580134466%208.785723687313254&zoom=7
@@ -10747,6 +10752,7 @@ KT_TI,[AC-050.1] Edifici esistenti,https://test.map.geo.admin.ch/?bgLayer=ch.swi
 KT_TI,[AC-050.1] Edifici in progetto,https://test.map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||[AC-050.1] Edifici in progetto||https://wms.geo.ti.ch/service?||ac.050_1.edifici_progetto||1.1.1&swisssearch=46.227177580134466%208.785723687313254&zoom=7
 KT_TI,[AC 060.1] Cappelle,https://test.map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||[AC 060.1] Cappelle||https://wms.geo.ti.ch/service?||ac_060_1_v1_0_cappelle||1.1.1&swisssearch=46.227177580134466%208.785723687313254&zoom=7
 KT_TI,[AC 060.1] Dipinti murali devozionali,https://test.map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||[AC 060.1] Dipinti murali devozionali||https://wms.geo.ti.ch/service?||ac_060_1_v1_0_dipinti_murali_devozionali||1.1.1&swisssearch=46.227177580134466%208.785723687313254&zoom=7
+KT_UR,ALA (agrigis) Flächenanzeige,https://test.map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||ALA (agrigis) Flächenanzeige||https://geo.ur.ch/wms?||landwirtschaft:ala_agrigis_flaechenanzeige_group||1.1.1&swisssearch=46.76007853878532%208.68405239472784&zoom=7
 KT_UR,Alpen,https://test.map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||Alpen||https://geo.ur.ch/wms?||landwirtschaft:alpen||1.1.1&swisssearch=46.76007853878532%208.68405239472784&zoom=7
 KT_UR,Basemap: Grundbuchplan farbe,https://test.map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||Basemap: Grundbuchplan farbe||https://geo.ur.ch/wms?||basemaps:basemap_av_farbe||1.1.1&swisssearch=46.76007853878532%208.68405239472784&zoom=7
 KT_UR,Basemap: Grundbuchplan schwarz-weiss,https://test.map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||Basemap: Grundbuchplan schwarz-weiss||https://geo.ur.ch/wms?||basemaps:basemap_av_sw||1.1.1&swisssearch=46.76007853878532%208.68405239472784&zoom=7
@@ -10889,6 +10895,7 @@ KT_UR,UR043 Gemeindestrassennetz Gemeindestrassen,https://test.map.geo.admin.ch/
 KT_UR,UR057 Seilbahnen und Skilifte mit kantonaler Konzession,https://test.map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||UR057 Seilbahnen und Skilifte mit kantonaler Konzession||https://geo.ur.ch/wms?||weitere:ur057_seilbahnen_skilifte||1.1.1&swisssearch=46.76007853878532%208.68405239472784&zoom=7
 KT_UR,UR061 (rkr) Gemeindliche Baulinien,https://test.map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||UR061 (rkr) Gemeindliche Baulinien||https://geo.ur.ch/wms?||raumplanung:ur061_rkr_gemeindliche_baulinien||1.1.1&swisssearch=46.760103364048675%208.681713976438523&zoom=7
 KT_UR,UR061 (prj) Gemeindliche Baulinien,https://test.map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||UR061 (prj) Gemeindliche Baulinien||https://geo.ur.ch/wms?||raumplanung:ur061_prj_gemeindliche_baulinien||1.1.1&swisssearch=46.760103364048675%208.681713976438523&zoom=7
+KT_UR,URec: Darstellungslayer,https://test.map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||URec: Darstellungslayer||https://geo.ur.ch/wms?||urec:urec_darstellungslayer||1.1.1&swisssearch=46.76007853878532%208.68405239472784&zoom=7
 KT_UR,Wasser Schutzrohre,https://test.map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||Wasser Schutzrohre||https://geo.ur.ch/wms?||leitungen:was_schutzrohre||1.1.1&swisssearch=46.760103364048675%208.681713976438523&zoom=7
 KT_UR,Wasser Steuerkabel,https://test.map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||Wasser Steuerkabel||https://geo.ur.ch/wms?||leitungen:was_steuerkabel||1.1.1&swisssearch=46.760103364048675%208.681713976438523&zoom=7
 KT_UR,Wasser Anlagen Flächen,https://test.map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||Wasser Anlagen Flächen||https://geo.ur.ch/wms?||leitungen:was_anlage_flaeche||1.1.1&swisssearch=46.760103364048675%208.681713976438523&zoom=7
@@ -10898,6 +10905,8 @@ KT_UR,Wasser Leitungen Text,https://test.map.geo.admin.ch/?bgLayer=ch.swisstopo.
 KT_UR,Wasser Leitungspunkte,https://test.map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||Wasser Leitungspunkte||https://geo.ur.ch/wms?||leitungen:was_leitungspunkte||1.1.1&swisssearch=46.760103364048675%208.681713976438523&zoom=7
 KT_UR,Wasser Leitungspunkte Text,https://test.map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||Wasser Leitungspunkte Text||https://geo.ur.ch/wms?||leitungen:was_leitungspunkte_text||1.1.1&swisssearch=46.760103364048675%208.681713976438523&zoom=7
 KT_UR,Wasser Zugriffstatus,https://test.map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||Wasser Zugriffstatus||https://geo.ur.ch/wms?||leitungen:was_zugriff_status||1.1.1&swisssearch=46.760103364048675%208.681713976438523&zoom=7
+KT_UR,ALA (agrigis) Sömmerungszonen,https://test.map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||ALA (agrigis) Sömmerungszonen||https://geo.ur.ch/wms?||landwirtschaft:ala_agrigis_soemmerungszonen||1.1.1&swisssearch=46.760103364048675%208.681713976438523&zoom=7
+KT_UR,ALA (agrigis) Vernetzungsperimeter,https://test.map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||ALA (agrigis) Vernetzungsperimeter||https://geo.ur.ch/wms?||landwirtschaft:ala_agrigis_vernetzungsperimeter||1.1.1&swisssearch=46.760103364048675%208.681713976438523&zoom=7
 KT_UR,Archäologische Funderwatungsgebiete,https://test.map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||Archäologische Funderwatungsgebiete||https://geo.ur.ch/wms?||weitere:archaeologische_funderwartungsgebiete||1.1.1&swisssearch=46.760103364048675%208.681713976438523&zoom=7
 KT_UR,Baulanddatenbank,https://test.map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||Baulanddatenbank||https://geo.ur.ch/wms?||raumplanung:baulanddatenbank||1.1.1&swisssearch=46.760103364048675%208.681713976438523&zoom=7
 KT_UR,Biodiversitätsförderflächen im Sömmerungsgebiet,https://test.map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||Biodiversitätsförderflächen im Sömmerungsgebiet||https://geo.ur.ch/wms?||landwirtschaft:biodiversitaetsfoerderflaechen_im_soemmerungsgebiet||1.1.1&swisssearch=46.760103364048675%208.681713976438523&zoom=7
@@ -10912,6 +10921,8 @@ KT_UR,CH063 Administrative Einteilung Toleranzstufen,https://test.map.geo.admin.
 KT_UR,CH068 Fruchtfolgeflächen,https://test.map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||CH068 Fruchtfolgeflächen||https://geo.ur.ch/wms?||raumplanung:ch068_fruchtfolgeflaechen||1.1.1&swisssearch=46.760103364048675%208.681713976438523&zoom=7
 KT_UR,CH073A (prj) Kantonale Nutzungsplanung,https://test.map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||CH073A (prj) Kantonale Nutzungsplanung||https://geo.ur.ch/wms?||raumplanung:ch073a_prj_kantonale_nutzungsplanung||1.1.1&swisssearch=46.760103364048675%208.681713976438523&zoom=7
 KT_UR,CH073A (rkr) Kantonale Nutzungsplanung,https://test.map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||CH073A (rkr) Kantonale Nutzungsplanung||https://geo.ur.ch/wms?||raumplanung:ch073a_rkr_kantonale_nutzungsplanung||1.1.1&swisssearch=46.760103364048675%208.681713976438523&zoom=7
+KT_UR,CH073B (rkr) Flächenbezogene Festlegungen orientierend,https://test.map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||CH073B (rkr) Flächenbezogene Festlegungen orientierend||https://geo.ur.ch/wms?||urec:ch073b_rkr_flaechenbezogene_festlegungen_orientierend||1.1.1&swisssearch=46.760103364048675%208.681713976438523&zoom=7
+KT_UR,CH073B (rkr) Grundnutzung Zonenfläche,https://test.map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||CH073B (rkr) Grundnutzung Zonenfläche||https://geo.ur.ch/wms?||urec:ch073b_rkr_grundnutzung_zonenflaeche||1.1.1&swisssearch=46.760103364048675%208.681713976438523&zoom=7
 KT_UR,CH073C (prj) Quartierpläne,https://test.map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||CH073C (prj) Quartierpläne||https://geo.ur.ch/wms?||raumplanung:ch073c_prj_quartierplaene||1.1.1&swisssearch=46.760103364048675%208.681713976438523&zoom=7
 KT_UR,CH073C (rkr) Quartierpläne,https://test.map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||CH073C (rkr) Quartierpläne||https://geo.ur.ch/wms?||raumplanung:ch073c_rkr_quartierplaene||1.1.1&swisssearch=46.760103364048675%208.681713976438523&zoom=7
 KT_UR,CH073D (prj) Quartiergestaltungspläne,https://test.map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||CH073D (prj) Quartiergestaltungspläne||https://geo.ur.ch/wms?||raumplanung:ch073d_prj_quartiergestaltungsplaene||1.1.1&swisssearch=46.760103364048675%208.681713976438523&zoom=7
@@ -13768,7 +13779,7 @@ KT_FR,Catégorie de protection ISOS,https://test.map.geo.admin.ch/?bgLayer=ch.sw
 KT_FR,Centrales MCT AquaFri,https://test.map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||Centrales MCT AquaFri||https://geo.fr.ch/ags/services/OpenData/Centrales_MCT_AquaFri/MapServer/WMSServer?||0||1.1.1&swisssearch=46.7312445%207.0733595000000005&zoom=7
 KT_FR,Centres d exploitation agricole,https://test.map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||Centres d exploitation agricole||https://geo.fr.ch/ags/services/OpenData/Centres_d_exploitation_agricole/MapServer/WMSServer?||0||1.1.1&swisssearch=46.797251%207.4206325&zoom=7
 KT_FR,Centres forestiers,https://test.map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||Centres forestiers||https://geo.fr.ch/ags/services/OpenData/Centres_forestiers/MapServer/WMSServer?||0||1.1.1&swisssearch=46.7241545%207.0665705&zoom=7
-KT_FR,Cercles électoraux des anciennes paroisses catholiques,https://test.map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||Cercles électoraux des anciennes paroisses catholiques||https://geo.fr.ch/ags/services/OpenData/Cercles_electoraux_des_anciennes_paroisses_catholiques/MapServer/WMSServer?||0||1.1.1&swisssearch=46.7192825%207.01482&zoom=7
+KT_FR,Cercles électoraux des anciennes paroisses catholiques,https://test.map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||Cercles électoraux des anciennes paroisses catholiques||https://geo.fr.ch/ags/services/OpenData/Cercles_electoraux_des_anciennes_paroisses_catholiques/MapServer/WMSServer?||0||1.1.1&swisssearch=46.6751015%207.0149435&zoom=7
 KT_FR,Cercles scolaires primaires francophones,https://test.map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||Cercles scolaires primaires francophones||https://geo.fr.ch/ags/services/OpenData/Cercles_scolaires_primaires_francophones/MapServer/WMSServer?||0||1.1.1&swisssearch=46.712918%207.014452&zoom=7
 KT_FR,Cercles scolaires primaires germanophones,https://test.map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||Cercles scolaires primaires germanophones||https://geo.fr.ch/ags/services/OpenData/Cercles_scolaires_primaires_germanophones/MapServer/WMSServer?||0||1.1.1&swisssearch=46.786273%207.2214785&zoom=7
 KT_FR,Cercles scolaires secondaires francophones,https://test.map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||Cercles scolaires secondaires francophones||https://geo.fr.ch/ags/services/OpenData/Cercles_scolaires_secondaires_francophones/MapServer/WMSServer?||0||1.1.1&swisssearch=46.712918%207.014452&zoom=7
@@ -14427,33 +14438,33 @@ Bund,Reisezeit zu Agglos ÖV,https://test.map.geo.admin.ch/?bgLayer=ch.swisstopo
 Bund,Reisezeit zu Zentren Strasse,https://test.map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||Reisezeit zu Zentren Strasse||https://wms.geo.admin.ch/??||ch.are.reisezeit-miv||1.1.1
 Bund,Reisezeit zu Zentren ÖV,https://test.map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||Reisezeit zu Zentren ÖV||https://wms.geo.admin.ch/??||ch.are.reisezeit-oev||1.1.1
 Bund,Wohnungsinventar,https://test.map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||Wohnungsinventar||https://wms.geo.admin.ch/??||ch.are.wohnungsinventar-zweitwohnungsanteil||1.1.1
-Bund,Unfälle pro Einwohner,https://test.map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||Unfälle pro Einwohner||https://wms.geo.admin.ch/??||ch.astra.schwerverunfallte-kanton_pro_einwohner||1.1.1
+Bund,IVS Wegbegleiter,https://test.map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||IVS Wegbegleiter||https://wms.geo.admin.ch/??||ch.astra.ivs-nat_wegbegleiter||1.1.1
 Bund,Hauptstrassennetz,https://test.map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||Hauptstrassennetz||https://wms.geo.admin.ch/??||ch.astra.hauptstrassennetz||1.1.1
 Bund,IVS Geländekarte,https://test.map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||IVS Geländekarte||https://wms.geo.admin.ch/??||ch.astra.ivs-gelaendekarte||1.1.1
 Bund,IVS National,https://test.map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||IVS National||https://wms.geo.admin.ch/??||ch.astra.ivs-nat||1.1.1
 Bund,IVS Abgrenzungen,https://test.map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||IVS Abgrenzungen||https://wms.geo.admin.ch/??||ch.astra.ivs-nat_abgrenzungen||1.1.1
 Bund,IVS nationale Bed. hist. Verlauf,https://test.map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||IVS nationale Bed. hist. Verlauf||https://wms.geo.admin.ch/??||ch.astra.ivs-nat-verlaeufe||1.1.1
-Bund,IVS Wegbegleiter,https://test.map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||IVS Wegbegleiter||https://wms.geo.admin.ch/??||ch.astra.ivs-nat_wegbegleiter||1.1.1
 Bund,IVS Regional und Lokal,https://test.map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||IVS Regional und Lokal||https://wms.geo.admin.ch/??||ch.astra.ivs-reg_loc||1.1.1
 Bund,Mountainbikeland Schweiz,https://test.map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||Mountainbikeland Schweiz||https://wms.geo.admin.ch/??||ch.astra.mountainbikeland||1.1.1
-Bund,Niederschlagserosivität Juli,https://test.map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||Niederschlagserosivität Juli||https://wms.geo.admin.ch/??||ch.bafu.niederschlagserosivitaet-jul||1.1.1
 Bund,Unfälle pro Einwohner - Alkohol,https://test.map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||Unfälle pro Einwohner - Alkohol||https://wms.geo.admin.ch/??||ch.astra.schwerverunfallte-kanton_alkohol||1.1.1
+Bund,Auengebiete - Anhang 2,https://test.map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||Auengebiete - Anhang 2||https://wms.geo.admin.ch/??||ch.bafu.bundesinventare-auen_anhang2||1.1.1
 Bund,Unfälle pro Einwohner - Geschwindig,https://test.map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||Unfälle pro Einwohner - Geschwindig||https://wms.geo.admin.ch/??||ch.astra.schwerverunfallte-kanton_geschwindigkeit||1.1.1
 Bund,Unfälle im Jahresvergleich,https://test.map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||Unfälle im Jahresvergleich||https://wms.geo.admin.ch/??||ch.astra.schwerverunfallte-kanton_jahresvergleich||1.1.1
+Bund,Unfälle pro Einwohner,https://test.map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||Unfälle pro Einwohner||https://wms.geo.admin.ch/??||ch.astra.schwerverunfallte-kanton_pro_einwohner||1.1.1
 Bund,Skatingland Schweiz,https://test.map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||Skatingland Schweiz||https://wms.geo.admin.ch/??||ch.astra.skatingland||1.1.1
 Bund,Verkehrszählung - übergeordnet,https://test.map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||Verkehrszählung - übergeordnet||https://wms.geo.admin.ch/??||ch.astra.strassenverkehrszaehlung-uebergeordnet||1.1.1
-Bund,Niederschlagserosivität Juni,https://test.map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||Niederschlagserosivität Juni||https://wms.geo.admin.ch/??||ch.bafu.niederschlagserosivitaet-jun||1.1.1
 Bund,Unfälle mit Personenschaden,https://test.map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||Unfälle mit Personenschaden||https://wms.geo.admin.ch/??||ch.astra.unfaelle-personenschaeden_alle||1.1.1
 Bund,Unfälle mit Fahrradbeteiligung,https://test.map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||Unfälle mit Fahrradbeteiligung||https://wms.geo.admin.ch/??||ch.astra.unfaelle-personenschaeden_fahrraeder||1.1.1
 Bund,Unfälle mit Fussgängerbeteiligung,https://test.map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||Unfälle mit Fussgängerbeteiligung||https://wms.geo.admin.ch/??||ch.astra.unfaelle-personenschaeden_fussgaenger||1.1.1
+Bund,Niederschlagserosivität Mai,https://test.map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||Niederschlagserosivität Mai||https://wms.geo.admin.ch/??||ch.bafu.niederschlagserosivitaet-mai||1.1.1
 Bund,Unfälle mit Getöteten,https://test.map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||Unfälle mit Getöteten||https://wms.geo.admin.ch/??||ch.astra.unfaelle-personenschaeden_getoetete||1.1.1
 Bund,Unfälle mit Motorradbeteiligung,https://test.map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||Unfälle mit Motorradbeteiligung||https://wms.geo.admin.ch/??||ch.astra.unfaelle-personenschaeden_motorraeder||1.1.1
 Bund,Veloland Schweiz,https://test.map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||Veloland Schweiz||https://wms.geo.admin.ch/??||ch.astra.veloland||1.1.1
 Bund,Wanderland,https://test.map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||Wanderland||https://wms.geo.admin.ch/??||ch.astra.wanderland||1.1.1
 Bund,KGS Inventar,https://test.map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||KGS Inventar||https://wms.geo.admin.ch/??||ch.babs.kulturgueter||1.1.1
 Bund,Alpweiden mit Herdenschutzhunden,https://test.map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||Alpweiden mit Herdenschutzhunden||https://wms.geo.admin.ch/??||ch.bafu.alpweiden-herdenschutzhunde||1.1.1
+Bund,Gefährdungskarte Oberflächenabfluss,https://test.map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||Gefährdungskarte Oberflächenabfluss||https://wms.geo.admin.ch/??||ch.bafu.gefaehrdungskarte-oberflaechenabfluss||1.1.1
 Bund,Amphibienwanderungen mit Konflikten,https://test.map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||Amphibienwanderungen mit Konflikten||https://wms.geo.admin.ch/??||ch.bafu.amphibienwanderung-verkehrskonflikte||1.1.1
-Bund,BLN,https://test.map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||BLN||https://wms.geo.admin.ch/??||ch.bafu.bundesinventare-bln||1.1.1
 Bund,Überschwemmung Aquaprotect 50,https://test.map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||Überschwemmung Aquaprotect 50||https://wms.geo.admin.ch/??||ch.bafu.aquaprotect_050||1.1.1
 Bund,Überschwemmung Aquaprotect 100,https://test.map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||Überschwemmung Aquaprotect 100||https://wms.geo.admin.ch/??||ch.bafu.aquaprotect_100||1.1.1
 Bund,Überschwemmung Aquaprotect 250,https://test.map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||Überschwemmung Aquaprotect 250||https://wms.geo.admin.ch/??||ch.bafu.aquaprotect_250||1.1.1
@@ -14466,14 +14477,14 @@ Bund,Amphibien Ortsfeste Objekte,https://test.map.geo.admin.ch/?bgLayer=ch.swiss
 Bund,Amphibien Anhang 3,n.a.
 Bund,Amphibien Wanderobjekte,https://test.map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||Amphibien Wanderobjekte||https://wms.geo.admin.ch/??||ch.bafu.bundesinventare-amphibien_wanderobjekte||1.1.1
 Bund,Auengebiete,https://test.map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||Auengebiete||https://wms.geo.admin.ch/??||ch.bafu.bundesinventare-auen||1.1.1
-Bund,Auengebiete - Anhang 2,https://test.map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||Auengebiete - Anhang 2||https://wms.geo.admin.ch/??||ch.bafu.bundesinventare-auen_anhang2||1.1.1
+Bund,BLN,https://test.map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||BLN||https://wms.geo.admin.ch/??||ch.bafu.bundesinventare-bln||1.1.1
 Bund,Flachmoore,https://test.map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||Flachmoore||https://wms.geo.admin.ch/??||ch.bafu.bundesinventare-flachmoore||1.1.1
 Bund,Hochmoore,https://test.map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||Hochmoore||https://wms.geo.admin.ch/??||ch.bafu.bundesinventare-hochmoore||1.1.1
 Bund,Jagdbanngebiete,https://test.map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||Jagdbanngebiete||https://wms.geo.admin.ch/??||ch.bafu.bundesinventare-jagdbanngebiete||1.1.1
 Bund,Moorlandschaften,https://test.map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||Moorlandschaften||https://wms.geo.admin.ch/??||ch.bafu.bundesinventare-moorlandschaften||1.1.1
-Bund,Raster Verbreitungskarten,n.a.
 Bund,Trockenwiesen und -weiden (TWW),https://test.map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||Trockenwiesen und -weiden (TWW)||https://wms.geo.admin.ch/??||ch.bafu.bundesinventare-trockenwiesen_trockenweiden||1.1.1
 Bund,TWW Anhang 2,https://test.map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||TWW Anhang 2||https://wms.geo.admin.ch/??||ch.bafu.bundesinventare-trockenwiesen_trockenweiden_anhang2||1.1.1
+Bund,Historische Erdbeben,n.a.
 Bund,Wasser- und Zugvogelreservate,https://test.map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||Wasser- und Zugvogelreservate||https://wms.geo.admin.ch/??||ch.bafu.bundesinventare-vogelreservate||1.1.1
 Bund,Erosionsrisiko Dauergrünland April,https://test.map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||Erosionsrisiko Dauergrünland April||https://wms.geo.admin.ch/??||ch.bafu.erosion-gruenland_bodenabtrag_apr||1.1.1
 Bund,Erosionsrisiko Dauergrünland Aug.,https://test.map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||Erosionsrisiko Dauergrünland Aug.||https://wms.geo.admin.ch/??||ch.bafu.erosion-gruenland_bodenabtrag_aug||1.1.1
@@ -14495,27 +14506,24 @@ Bund,Äschen: Kernzonen,n.a.
 Bund,Äschen: Laichplätze,n.a.
 Bund,Äschen: Larvenhabitate,n.a.
 Bund,Äschen: Verbreitungsgebiet,n.a.
-Bund,Niederschlagserosivität Mai,https://test.map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||Niederschlagserosivität Mai||https://wms.geo.admin.ch/??||ch.bafu.niederschlagserosivitaet-mai||1.1.1
 Bund,Krebspest,n.a.
 Bund,Nasenlaichplätze,n.a.
 Bund,PKD (Proliferative Nierenkrankheit),n.a.
 Bund,Schwingrasen,n.a.
+Bund,Raster Verbreitungskarten,n.a.
 Bund,Atlas Welten&Sutter,n.a.
 Bund,Flussordnung,https://test.map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||Flussordnung||https://wms.geo.admin.ch/??||ch.bafu.flussordnungszahlen-strahler||1.1.1
-Bund,Gefährdungskarte Oberflächenabfluss,https://test.map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||Gefährdungskarte Oberflächenabfluss||https://wms.geo.admin.ch/??||ch.bafu.gefaehrdungskarte-oberflaechenabfluss||1.1.1
-Bund,Niederschlagserosivität März,https://test.map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||Niederschlagserosivität März||https://wms.geo.admin.ch/??||ch.bafu.niederschlagserosivitaet-mrz||1.1.1
 Bund,Basiskarte GIN,https://test.map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||Basiskarte GIN||https://wms.geo.admin.ch/??||ch.bafu.gefahren-basiskarte||1.1.1
 Bund,Seismische Baugrundklassen,n.a.
 Bund,Erdbebenzonen SIA 261,https://test.map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||Erdbebenzonen SIA 261||https://wms.geo.admin.ch/??||ch.bafu.gefahren-gefaehrdungszonen||1.1.1
-Bund,Historische Erdbeben,n.a.
 Bund,Spektrale Mikrozonierung,n.a.
 Bund,Badegewässerqualität,https://test.map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||Badegewässerqualität||https://wms.geo.admin.ch/??||ch.bafu.gewaesserschutz-badewasserqualitaet||1.1.1
-Bund,Stickstoffdeposition,https://test.map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||Stickstoffdeposition||https://wms.geo.admin.ch/??||ch.bafu.luftreinhaltung-stickstoffdeposition||1.1.1
+Bund,Niederschlagserosivität März,https://test.map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||Niederschlagserosivität März||https://wms.geo.admin.ch/??||ch.bafu.niederschlagserosivitaet-mrz||1.1.1
 Bund,Diffuse Phosphoreinträge,https://test.map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||Diffuse Phosphoreinträge||https://wms.geo.admin.ch/??||ch.bafu.gewaesserschutz-diffuse_eintraege_phosphor||1.1.1
 Bund,Diffuse Stickstoffeinträge,https://test.map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||Diffuse Stickstoffeinträge||https://wms.geo.admin.ch/??||ch.bafu.gewaesserschutz-diffuse_eintraege_stickstoff||1.1.1
 Bund,ARA - Abwasserant. an Q347,https://test.map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||ARA - Abwasserant. an Q347||https://wms.geo.admin.ch/??||ch.bafu.gewaesserschutz-klaeranlagen_anteilq347||1.1.1
 Bund,ARA - Ausbaugrösse (EGW),https://test.map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||ARA - Ausbaugrösse (EGW)||https://wms.geo.admin.ch/??||ch.bafu.gewaesserschutz-klaeranlagen_ausbaugroesse||1.1.1
-Bund,Niederschlagserosivität April,https://test.map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||Niederschlagserosivität April||https://wms.geo.admin.ch/??||ch.bafu.niederschlagserosivitaet-apr||1.1.1
+Bund,Niederschlagserosivität Nov.,https://test.map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||Niederschlagserosivität Nov.||https://wms.geo.admin.ch/??||ch.bafu.niederschlagserosivitaet-nov||1.1.1
 Bund,ARA - Reinigungstyp,https://test.map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||ARA - Reinigungstyp||https://wms.geo.admin.ch/??||ch.bafu.gewaesserschutz-klaeranlagen_reinigungstyp||1.1.1
 Bund,Uferbestockung der Flüsse,https://test.map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||Uferbestockung der Flüsse||https://wms.geo.admin.ch/??||ch.bafu.gewaesser-uferbestockung||1.1.1
 Bund,Bestockungskarte,https://test.map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||Bestockungskarte||https://wms.geo.admin.ch/??||ch.bafu.gewaesser-uferbestockung_vegetation||1.1.1
@@ -14525,16 +14533,15 @@ Bund,Übersichtskarte Hydrogeologie,https://test.map.geo.admin.ch/?bgLayer=ch.sw
 Bund,Hydrogeologische Karte 100,https://test.map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||Hydrogeologische Karte 100||https://wms.geo.admin.ch/??||ch.bafu.hydrogeologische-karte_100||1.1.1
 Bund,Messstandorte Gewässerzustand Bund,https://test.map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||Messstandorte Gewässerzustand Bund||https://wms.geo.admin.ch/??||ch.bafu.hydrologie-daueruntersuchung_fliessgewaesser||1.1.1
 Bund,Messstandorte Gewässerzustand CH,https://test.map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||Messstandorte Gewässerzustand CH||https://wms.geo.admin.ch/??||ch.bafu.hydrologie-gewaesserzustandsmessstationen||1.1.1
-Bund,Niederschlagserosivität Aug.,https://test.map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||Niederschlagserosivität Aug.||https://wms.geo.admin.ch/??||ch.bafu.niederschlagserosivitaet-aug||1.1.1
+Bund,Niederschlagserosivität Okt.,https://test.map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||Niederschlagserosivität Okt.||https://wms.geo.admin.ch/??||ch.bafu.niederschlagserosivitaet-okt||1.1.1
 Bund,Hintergrundkarte hydrol. Daten,https://test.map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||Hintergrundkarte hydrol. Daten||https://wms.geo.admin.ch/??||ch.bafu.hydrologie-hintergrundkarte||1.1.1
 Bund,Hochwassergrenzwertpegel,https://test.map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||Hochwassergrenzwertpegel||https://wms.geo.admin.ch/??||ch.bafu.hydrologie-hochwassergrenzwertpegel||1.1.1
 Bund,Hochwasserstatistik,https://test.map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||Hochwasserstatistik||https://wms.geo.admin.ch/??||ch.bafu.hydrologie-hochwasserstatistik||1.1.1
 Bund,Hydrologische Messstationen,https://test.map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||Hydrologische Messstationen||https://wms.geo.admin.ch/??||ch.bafu.hydrologie-hydromessstationen||1.1.1
-Bund,Höhenstufen 2085 trocken,https://test.map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||Höhenstufen 2085 trocken||https://wms.geo.admin.ch/??||ch.bafu.wald-vegetationshoehenstufen_2085_trocken||1.1.1
 Bund,Niedrigwasserstatistik,https://test.map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||Niedrigwasserstatistik||https://wms.geo.admin.ch/??||ch.bafu.hydrologie-niedrigwasserstatistik||1.1.1
 Bund,Grundlagen zur Bestimmung Q347,https://test.map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||Grundlagen zur Bestimmung Q347||https://wms.geo.admin.ch/??||ch.bafu.hydrologie-q347||1.1.1
 Bund,HUG Hydro. Untersuchungsgebiete,https://test.map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||HUG Hydro. Untersuchungsgebiete||https://wms.geo.admin.ch/??||ch.bafu.hydrologie-untersuchungsgebiete||1.1.1
-Bund,Niederschlagserosivität Dez.,https://test.map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||Niederschlagserosivität Dez.||https://wms.geo.admin.ch/??||ch.bafu.niederschlagserosivitaet-dez||1.1.1
+Bund,Niederschlagserosivität Sep.,https://test.map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||Niederschlagserosivität Sep.||https://wms.geo.admin.ch/??||ch.bafu.niederschlagserosivitaet-sep||1.1.1
 Bund,HUG-Messstationen,https://test.map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||HUG-Messstationen||https://wms.geo.admin.ch/??||ch.bafu.hydrologie-untersuchungsgebiete_stationen||1.1.1
 Bund,Messstationen Wassertemperatur,https://test.map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||Messstationen Wassertemperatur||https://wms.geo.admin.ch/??||ch.bafu.hydrologie-wassertemperaturmessstationen||1.1.1
 Bund,Basisgebiet,https://test.map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||Basisgebiet||https://wms.geo.admin.ch/??||ch.bafu.hydrologischer-atlas_basisgebiete||1.1.1
@@ -14544,22 +14551,24 @@ Bund,Kantonale und private Messstationen,n.a.
 Bund,Karstwasservorkommen,https://test.map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||Karstwasservorkommen||https://wms.geo.admin.ch/??||ch.bafu.karst-ausdehnung_grundwasservorkommen||1.1.1
 Bund,Karst-Einzugsgebiete,https://test.map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||Karst-Einzugsgebiete||https://wms.geo.admin.ch/??||ch.bafu.karst-einzugsgebiete||1.1.1
 Bund,Karst-Einzugsgebietseinheiten,https://test.map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||Karst-Einzugsgebietseinheiten||https://wms.geo.admin.ch/??||ch.bafu.karst-einzugsgebietseinheiten||1.1.1
-Bund,Vegetationshöhe LFI,https://test.map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||Vegetationshöhe LFI||https://wms.geo.admin.ch/??||ch.bafu.landesforstinventar-vegetationshoehenmodell||1.1.1
+Bund,Eisenbahnlärm Tag,https://test.map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||Eisenbahnlärm Tag||https://wms.geo.admin.ch/??||ch.bafu.laerm-bahnlaerm_tag||1.1.1
 Bund,Karstquellen und Schwinden,https://test.map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||Karstquellen und Schwinden||https://wms.geo.admin.ch/??||ch.bafu.karst-quellen_schwinden||1.1.1
 Bund,Unterirdische Fliesswege,https://test.map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||Unterirdische Fliesswege||https://wms.geo.admin.ch/??||ch.bafu.karst-unterirdische_fliesswege||1.1.1
 Bund,Eisenbahnlärm Nacht,https://test.map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||Eisenbahnlärm Nacht||https://wms.geo.admin.ch/??||ch.bafu.laerm-bahnlaerm_nacht||1.1.1
-Bund,Eisenbahnlärm Tag,https://test.map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||Eisenbahnlärm Tag||https://wms.geo.admin.ch/??||ch.bafu.laerm-bahnlaerm_tag||1.1.1
 Bund,Strassenverkehrslärm Nacht,https://test.map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||Strassenverkehrslärm Nacht||https://wms.geo.admin.ch/??||ch.bafu.laerm-strassenlaerm_nacht||1.1.1
 Bund,Strassenverkehrslärm Tag,https://test.map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||Strassenverkehrslärm Tag||https://wms.geo.admin.ch/??||ch.bafu.laerm-strassenlaerm_tag||1.1.1
 Bund,Produktionsregionen LFI,https://test.map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||Produktionsregionen LFI||https://wms.geo.admin.ch/??||ch.bafu.landesforstinventar-produktionsregionen||1.1.1
 Bund,Schutzwaldregionen LFI,https://test.map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||Schutzwaldregionen LFI||https://wms.geo.admin.ch/??||ch.bafu.landesforstinventar-schutzwaldregionen||1.1.1
+Bund,Vegetationshöhe LFI,https://test.map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||Vegetationshöhe LFI||https://wms.geo.admin.ch/??||ch.bafu.landesforstinventar-vegetationshoehenmodell||1.1.1
 Bund,Oberflächenmodell LFI,https://test.map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||Oberflächenmodell LFI||https://wms.geo.admin.ch/??||ch.bafu.landesforstinventar-vegetationshoehenmodell_relief||1.1.1
 Bund,Waldmischungsgrad LFI,https://test.map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||Waldmischungsgrad LFI||https://wms.geo.admin.ch/??||ch.bafu.landesforstinventar-waldmischungsgrad||1.1.1
 Bund,Wirtschaftsregionen LFI,https://test.map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||Wirtschaftsregionen LFI||https://wms.geo.admin.ch/??||ch.bafu.landesforstinventar-wirtschaftsregionen||1.1.1
 Bund,Lebensraumkarte,https://test.map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||Lebensraumkarte||https://wms.geo.admin.ch/??||ch.bafu.lebensraumkarte-schweiz||1.1.1
 Bund,Ammoniakkonzentration,https://test.map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||Ammoniakkonzentration||https://wms.geo.admin.ch/??||ch.bafu.luftreinhaltung-ammoniakkonzentration||1.1.1
+Bund,Stickstoffdeposition,https://test.map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||Stickstoffdeposition||https://wms.geo.admin.ch/??||ch.bafu.luftreinhaltung-stickstoffdeposition||1.1.1
 Bund,CLN Überschreitung,https://test.map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||CLN Überschreitung||https://wms.geo.admin.ch/??||ch.bafu.luftreinhaltung-stickstoff_kritischer_eintrag||1.1.1
 Bund,Mittlere Abflüsse (m³/s) und Regime,n.a.
+Bund,Niederschlagserosivität Jan.,https://test.map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||Niederschlagserosivität Jan.||https://wms.geo.admin.ch/??||ch.bafu.niederschlagserosivitaet-jan||1.1.1
 Bund,Mittlere Abflüsse in der Zukunft,https://test.map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||Mittlere Abflüsse in der Zukunft||https://wms.geo.admin.ch/??||ch.bafu.mittlere-abfluesse_zukunft||1.1.1
 Bund,Rote Liste Moose,https://test.map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||Rote Liste Moose||https://wms.geo.admin.ch/??||ch.bafu.moose||1.1.1
 Bund,Messstationen Luftqualität,https://test.map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||Messstationen Luftqualität||https://wms.geo.admin.ch/??||ch.bafu.nabelstationen||1.1.1
@@ -14591,16 +14600,16 @@ Bund,Glattes Zackenschötchen,https://test.map.geo.admin.ch/?bgLayer=ch.swisstop
 Bund,Götterbaum,https://test.map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||Götterbaum||https://wms.geo.admin.ch/??||ch.bafu.neophyten-goetterbaum||1.1.1
 Bund,Grossblütiges Heusenkraut,https://test.map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||Grossblütiges Heusenkraut||https://wms.geo.admin.ch/??||ch.bafu.neophyten-grossbluetiges_heusenkraut||1.1.1
 Bund,Grosser Wassernabel,https://test.map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||Grosser Wassernabel||https://wms.geo.admin.ch/??||ch.bafu.neophyten-grosser_wassernabel||1.1.1
+Bund,Niederschlagserosivität Juli,https://test.map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||Niederschlagserosivität Juli||https://wms.geo.admin.ch/??||ch.bafu.niederschlagserosivitaet-jul||1.1.1
 Bund,Haargurke,https://test.map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||Haargurke||https://wms.geo.admin.ch/??||ch.bafu.neophyten-haargurke||1.1.1
 Bund,Henrys Geissblatt,https://test.map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||Henrys Geissblatt||https://wms.geo.admin.ch/??||ch.bafu.neophyten-henrys_geissblatt||1.1.1
-Bund,Niederschlagserosivität Feb.,https://test.map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||Niederschlagserosivität Feb.||https://wms.geo.admin.ch/??||ch.bafu.niederschlagserosivitaet-feb||1.1.1
 Bund,Herbst-Traubenkirsche,https://test.map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||Herbst-Traubenkirsche||https://wms.geo.admin.ch/??||ch.bafu.neophyten-herbst_traubenkirsche||1.1.1
 Bund,Igelgurke,https://test.map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||Igelgurke||https://wms.geo.admin.ch/??||ch.bafu.neophyten-igelgurke||1.1.1
 Bund,Japanischer Staudenknöterich,https://test.map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||Japanischer Staudenknöterich||https://wms.geo.admin.ch/??||ch.bafu.neophyten-japanischer_staudenknoeterich||1.1.1
 Bund,Japanisches Geissblatt,https://test.map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||Japanisches Geissblatt||https://wms.geo.admin.ch/??||ch.bafu.neophyten-japanisches_geissblatt||1.1.1
-Bund,Niederschlagserosivität Jan.,https://test.map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||Niederschlagserosivität Jan.||https://wms.geo.admin.ch/??||ch.bafu.niederschlagserosivitaet-jan||1.1.1
 Bund,Kanadische Goldrute,https://test.map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||Kanadische Goldrute||https://wms.geo.admin.ch/??||ch.bafu.neophyten-kanadische_goldrute||1.1.1
 Bund,Kanadische Wasserpest,https://test.map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||Kanadische Wasserpest||https://wms.geo.admin.ch/??||ch.bafu.neophyten-kanadische_wasserpest||1.1.1
+Bund,Niederschlagserosivität Juni,https://test.map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||Niederschlagserosivität Juni||https://wms.geo.admin.ch/??||ch.bafu.niederschlagserosivitaet-jun||1.1.1
 Bund,Karolina-Haarnixe,https://test.map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||Karolina-Haarnixe||https://wms.geo.admin.ch/??||ch.bafu.neophyten-karolina_haarnixe||1.1.1
 Bund,Kaukasus-Fettkraut,https://test.map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||Kaukasus-Fettkraut||https://wms.geo.admin.ch/??||ch.bafu.neophyten-kaukasus_fettkraut||1.1.1
 Bund,Kirschlorbeer,https://test.map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||Kirschlorbeer||https://wms.geo.admin.ch/??||ch.bafu.neophyten-kirschlorbeer||1.1.1
@@ -14623,9 +14632,10 @@ Bund,Topinambur,https://test.map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-g
 Bund,Verlotscher Beifuss,https://test.map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||Verlotscher Beifuss||https://wms.geo.admin.ch/??||ch.bafu.neophyten-verlotscher_beifuss||1.1.1
 Bund,Vielähriger Knöterich,https://test.map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||Vielähriger Knöterich||https://wms.geo.admin.ch/??||ch.bafu.neophyten-vielaehriger_knoeterich||1.1.1
 Bund,Vielblättrige Lupine,https://test.map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||Vielblättrige Lupine||https://wms.geo.admin.ch/??||ch.bafu.neophyten-vielblaettrige_lupine||1.1.1
-Bund,Niederschlagserosivität Nov.,https://test.map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||Niederschlagserosivität Nov.||https://wms.geo.admin.ch/??||ch.bafu.niederschlagserosivitaet-nov||1.1.1
-Bund,Niederschlagserosivität Okt.,https://test.map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||Niederschlagserosivität Okt.||https://wms.geo.admin.ch/??||ch.bafu.niederschlagserosivitaet-okt||1.1.1
-Bund,Niederschlagserosivität Sep.,https://test.map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||Niederschlagserosivität Sep.||https://wms.geo.admin.ch/??||ch.bafu.niederschlagserosivitaet-sep||1.1.1
+Bund,Niederschlagserosivität April,https://test.map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||Niederschlagserosivität April||https://wms.geo.admin.ch/??||ch.bafu.niederschlagserosivitaet-apr||1.1.1
+Bund,Niederschlagserosivität Aug.,https://test.map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||Niederschlagserosivität Aug.||https://wms.geo.admin.ch/??||ch.bafu.niederschlagserosivitaet-aug||1.1.1
+Bund,Niederschlagserosivität Dez.,https://test.map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||Niederschlagserosivität Dez.||https://wms.geo.admin.ch/??||ch.bafu.niederschlagserosivitaet-dez||1.1.1
+Bund,Niederschlagserosivität Feb.,https://test.map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||Niederschlagserosivität Feb.||https://wms.geo.admin.ch/??||ch.bafu.niederschlagserosivitaet-feb||1.1.1
 Bund,Ökomorphologie F - Abschnitte,https://test.map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||Ökomorphologie F - Abschnitte||https://wms.geo.admin.ch/??||ch.bafu.oekomorphologie-f_abschnitte||1.1.1
 Bund,Ökomorphologie F - Abstürze,https://test.map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||Ökomorphologie F - Abstürze||https://wms.geo.admin.ch/??||ch.bafu.oekomorphologie-f_abstuerze||1.1.1
 Bund,Ökomorphologie F - Bauwerke,https://test.map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||Ökomorphologie F - Bauwerke||https://wms.geo.admin.ch/??||ch.bafu.oekomorphologie-f_bauwerke||1.1.1
@@ -14634,22 +14644,23 @@ Bund,REN  Extensives Landwirtschaftsgebiet,https://test.map.geo.admin.ch/?bgLaye
 Bund,REN  Feuchtgebiet,https://test.map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||REN  Feuchtgebiet||https://wms.geo.admin.ch/??||ch.bafu.ren-feuchtgebiete||1.1.1
 Bund,REN  Fliessgewässer / Seen,https://test.map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||REN  Fliessgewässer / Seen||https://wms.geo.admin.ch/??||ch.bafu.ren-fliessgewaesser_seen||1.1.1
 Bund,REN  Trockenstandort,https://test.map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||REN  Trockenstandort||https://wms.geo.admin.ch/??||ch.bafu.ren-trockenstandorte||1.1.1
+Bund,Wasserentnahme,https://test.map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||Wasserentnahme||https://wms.geo.admin.ch/??||ch.bafu.wasser-entnahme||1.1.1
 Bund,REN  Wald,https://test.map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||REN  Wald||https://wms.geo.admin.ch/??||ch.bafu.ren-wald||1.1.1
 Bund,Auengebiete AuLaV,https://test.map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||Auengebiete AuLaV||https://wms.geo.admin.ch/??||ch.bafu.schutzgebiete-aulav_auen||1.1.1
 Bund,Jagdbanngebiete AuLaV,https://test.map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||Jagdbanngebiete AuLaV||https://wms.geo.admin.ch/??||ch.bafu.schutzgebiete-aulav_jagdbanngebiete||1.1.1
 Bund,Moorlandschaften AuLaV,https://test.map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||Moorlandschaften AuLaV||https://wms.geo.admin.ch/??||ch.bafu.schutzgebiete-aulav_moorlandschaften||1.1.1
+Bund,Glasfaser FTTB/FTTH,https://test.map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||Glasfaser FTTB/FTTH||https://wms.geo.admin.ch/??||ch.bakom.anschlussart-glasfaser||1.1.1
 Bund,Übrige Schutzgebiete AuLaV,https://test.map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||Übrige Schutzgebiete AuLaV||https://wms.geo.admin.ch/??||ch.bafu.schutzgebiete-aulav_uebrige||1.1.1
 Bund,Biosphärenreservate,https://test.map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||Biosphärenreservate||https://wms.geo.admin.ch/??||ch.bafu.schutzgebiete-biosphaerenreservate||1.1.1
 Bund,Schutzgebiete MIL,n.a.
-Bund,Föhnhäufigkeit,https://test.map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||Föhnhäufigkeit||https://wms.geo.admin.ch/??||ch.bafu.wald-foehnhaeufigkeit_jahr||1.1.1
 Bund,Schweizer Pärke (Zonierung),https://test.map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||Schweizer Pärke (Zonierung)||https://wms.geo.admin.ch/??||ch.bafu.schutzgebiete-paerke_nationaler_bedeutung||1.1.1
+Bund,4G - LTE / LTE-A,https://test.map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||4G - LTE / LTE-A||https://wms.geo.admin.ch/??||ch.bakom.mobilnetz-4g||1.1.1
 Bund,Schweizer Pärke (Perimeter),https://test.map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||Schweizer Pärke (Perimeter)||https://wms.geo.admin.ch/??||ch.bafu.schutzgebiete-paerke_nationaler_bedeutung_perimeter||1.1.1
 Bund,Ramsar,https://test.map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||Ramsar||https://wms.geo.admin.ch/??||ch.bafu.schutzgebiete-ramsar||1.1.1
 Bund,Nationalpark,https://test.map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||Nationalpark||https://wms.geo.admin.ch/??||ch.bafu.schutzgebiete-schweizerischer_nationalpark||1.1.1
 Bund,Smaragd,https://test.map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||Smaragd||https://wms.geo.admin.ch/??||ch.bafu.schutzgebiete-smaragd||1.1.1
 Bund,Hangmuren (SilvaProtect-CH),https://test.map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||Hangmuren (SilvaProtect-CH)||https://wms.geo.admin.ch/??||ch.bafu.silvaprotect-hangmuren||1.1.1
 Bund,Lawinen (SilvaProtect-CH),https://test.map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||Lawinen (SilvaProtect-CH)||https://wms.geo.admin.ch/??||ch.bafu.silvaprotect-lawinen||1.1.1
-Bund,Sturmgefährdung Böenspitzen 100,https://test.map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||Sturmgefährdung Böenspitzen 100||https://wms.geo.admin.ch/??||ch.bafu.sturm-boeenspitzen_100||1.1.1
 Bund,Murgang (SilvaProtect-CH),https://test.map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||Murgang (SilvaProtect-CH)||https://wms.geo.admin.ch/??||ch.bafu.silvaprotect-murgang||1.1.1
 Bund,Sturz (SilvaProtect-CH),https://test.map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||Sturz (SilvaProtect-CH)||https://wms.geo.admin.ch/??||ch.bafu.silvaprotect-sturz||1.1.1
 Bund,Übersarung (SilvaProtect-CH),https://test.map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||Übersarung (SilvaProtect-CH)||https://wms.geo.admin.ch/??||ch.bafu.silvaprotect-uebersarung||1.1.1
@@ -14658,6 +14669,7 @@ Bund,Strukturgüte Linkes Umfeld,n.a.
 Bund,Strukturgüte Rechtes Ufer,n.a.
 Bund,Strukturgüte Rechtes Umfeld,n.a.
 Bund,Strukturgüte Sohle,n.a.
+Bund,Sturmgefährdung Böenspitzen 100,https://test.map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||Sturmgefährdung Böenspitzen 100||https://wms.geo.admin.ch/??||ch.bafu.sturm-boeenspitzen_100||1.1.1
 Bund,Sturmgefährdung Böenspitzen 30,https://test.map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||Sturmgefährdung Böenspitzen 30||https://wms.geo.admin.ch/??||ch.bafu.sturm-boeenspitzen_30||1.1.1
 Bund,Sturmgefährdung Böenspitzen 300,https://test.map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||Sturmgefährdung Böenspitzen 300||https://wms.geo.admin.ch/??||ch.bafu.sturm-boeenspitzen_300||1.1.1
 Bund,Sturmgefährdung Böenspitzen 50,https://test.map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||Sturmgefährdung Böenspitzen 50||https://wms.geo.admin.ch/??||ch.bafu.sturm-boeenspitzen_50||1.1.1
@@ -14666,16 +14678,17 @@ Bund,Sturmgefährdung Staudruck 30,https://test.map.geo.admin.ch/?bgLayer=ch.swi
 Bund,Sturmgefährdung Staudruck 300,https://test.map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||Sturmgefährdung Staudruck 300||https://wms.geo.admin.ch/??||ch.bafu.sturm-staudruck_300||1.1.1
 Bund,Sturmgefährdung Staudruck 50,https://test.map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||Sturmgefährdung Staudruck 50||https://wms.geo.admin.ch/??||ch.bafu.sturm-staudruck_50||1.1.1
 Bund,Schadstoff-Freisetzungen (SwissPRTR),https://test.map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||Schadstoff-Freisetzungen (SwissPRTR)||https://wms.geo.admin.ch/??||ch.bafu.swissprtr||1.1.1
-Bund,Wasserentnahme,https://test.map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||Wasserentnahme||https://wms.geo.admin.ch/??||ch.bafu.wasser-entnahme||1.1.1
 Bund,Typisierung Fliessgewässer,https://test.map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||Typisierung Fliessgewässer||https://wms.geo.admin.ch/??||ch.bafu.typisierung-fliessgewaesser||1.1.1
 Bund,UNESCO-Welterbe Naturstätten,https://test.map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||UNESCO-Welterbe Naturstätten||https://wms.geo.admin.ch/??||ch.bafu.unesco-weltnaturerbe||1.1.1
 Bund,Gewässernetz 1:2 Mio.,n.a.
 Bund,Seen,n.a.
+Bund,Föhnhäufigkeit,https://test.map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||Föhnhäufigkeit||https://wms.geo.admin.ch/??||ch.bafu.wald-foehnhaeufigkeit_jahr||1.1.1
 Bund,Kontinentalität 1000 m 1995,https://test.map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||Kontinentalität 1000 m 1995||https://wms.geo.admin.ch/??||ch.bafu.wald-kontinentalitaet_jahr_1000m_1981_2010||1.1.1
 Bund,Kontinentalität 1000 m Juli 1995,https://test.map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||Kontinentalität 1000 m Juli 1995||https://wms.geo.admin.ch/??||ch.bafu.wald-kontinentalitaet_juli_1000m_1981_2010||1.1.1
 Bund,Lufttemperatur Juli 1961-1990,https://test.map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||Lufttemperatur Juli 1961-1990||https://wms.geo.admin.ch/??||ch.bafu.wald-lufttemperatur_juli_1961_1990||1.1.1
 Bund,Lufttemperatur Juli 1981-2010,https://test.map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||Lufttemperatur Juli 1981-2010||https://wms.geo.admin.ch/??||ch.bafu.wald-lufttemperatur_juli_1981_2010||1.1.1
 Bund,"Lufttemperatur Juli 2085, RCP 2.6","https://test.map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||Lufttemperatur Juli 2085, RCP 2.6||https://wms.geo.admin.ch/??||ch.bafu.wald-lufttemperatur_juli_2085_gering||1.1.1"
+Bund,Bebaute Gebiete VIL,https://test.map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||Bebaute Gebiete VIL||https://wms.geo.admin.ch/??||ch.bazl.bebaute-gebiete_luftfahrtrecht||1.1.1
 Bund,"Lufttemperatur Juli 2085, RCP 4.5","https://test.map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||Lufttemperatur Juli 2085, RCP 4.5||https://wms.geo.admin.ch/??||ch.bafu.wald-lufttemperatur_juli_2085_maessig||1.1.1"
 Bund,"Lufttemperatur Juli 2085, RCP 8.5","https://test.map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||Lufttemperatur Juli 2085, RCP 8.5||https://wms.geo.admin.ch/??||ch.bafu.wald-lufttemperatur_juli_2085_stark||1.1.1"
 Bund,"Niederschlag April-August 2085, RCP 2.6","https://test.map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||Niederschlag April-August 2085, RCP 2.6||https://wms.geo.admin.ch/??||ch.bafu.wald-niederschlag_april_august_2085_gering||1.1.1"
@@ -14688,11 +14701,12 @@ Bund,Obere Waldgrenze,https://test.map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelk
 Bund,"Rel. Luftfeuchte Jahr, 1981-2010","https://test.map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||Rel. Luftfeuchte Jahr, 1981-2010||https://wms.geo.admin.ch/??||ch.bafu.wald-relative_luftfeuchte_jahr_1981_2010||1.1.1"
 Bund,"Rel. Luftfeuchte Juli, 1981-2010","https://test.map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||Rel. Luftfeuchte Juli, 1981-2010||https://wms.geo.admin.ch/??||ch.bafu.wald-relative_luftfeuchte_juli_1981_2010||1.1.1"
 Bund,Sturmschaden Lothar,n.a.
-Bund,Höhenstufen 1995,https://test.map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||Höhenstufen 1995||https://wms.geo.admin.ch/??||ch.bafu.wald-vegetationshoehenstufen_1995||1.1.1
 Bund,Sturmschaden Vivian,n.a.
 Bund,Waldstandortsregionen,https://test.map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||Waldstandortsregionen||https://wms.geo.admin.ch/??||ch.bafu.wald-standortsregionen||1.1.1
 Bund,Tannenareale,https://test.map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||Tannenareale||https://wms.geo.admin.ch/??||ch.bafu.wald-tannenareale||1.1.1
 Bund,Höhenstufen 1975,https://test.map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||Höhenstufen 1975||https://wms.geo.admin.ch/??||ch.bafu.wald-vegetationshoehenstufen_1975||1.1.1
+Bund,Höhenstufen 1995,https://test.map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||Höhenstufen 1995||https://wms.geo.admin.ch/??||ch.bafu.wald-vegetationshoehenstufen_1995||1.1.1
+Bund,Höhenstufen 2085 trocken,https://test.map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||Höhenstufen 2085 trocken||https://wms.geo.admin.ch/??||ch.bafu.wald-vegetationshoehenstufen_2085_trocken||1.1.1
 Bund,Höhenstufen 2085 mässig trocken,https://test.map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||Höhenstufen 2085 mässig trocken||https://wms.geo.admin.ch/??||ch.bafu.wald-vegetationshoehenstufen_2085_weniger_trocken||1.1.1
 Bund,Wasserverfügbarkeit im Boden,https://test.map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||Wasserverfügbarkeit im Boden||https://wms.geo.admin.ch/??||ch.bafu.wald-wasserverfuegbarkeit_boden||1.1.1
 Bund,Wasserverfügbarkeit für Pflanzen,https://test.map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||Wasserverfügbarkeit für Pflanzen||https://wms.geo.admin.ch/??||ch.bafu.wald-wasserverfuegbarkeit_pflanzen||1.1.1
@@ -14714,7 +14728,6 @@ Bund,ISOS - Ortsbildaufnahmen,https://test.map.geo.admin.ch/?bgLayer=ch.swisstop
 Bund,ISOS - Bilder,https://test.map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||ISOS - Bilder||https://wms.geo.admin.ch/??||ch.bak.bundesinventar-schuetzenswerte-ortsbilder_fotos||1.1.1
 Bund,"Plätze für Jenische, Sinti und Roma","https://test.map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||Plätze für Jenische, Sinti und Roma||https://wms.geo.admin.ch/??||ch.bak.halteplaetze-jenische_sinti_roma||1.1.1"
 Bund,Anzahl Dienstanbieter,https://test.map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||Anzahl Dienstanbieter||https://wms.geo.admin.ch/??||ch.bakom.anbieter-eigenes_festnetz||1.1.1
-Bund,Glasfaser FTTB/FTTH,https://test.map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||Glasfaser FTTB/FTTH||https://wms.geo.admin.ch/??||ch.bakom.anschlussart-glasfaser||1.1.1
 Bund,Koaxial-Kabel,https://test.map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||Koaxial-Kabel||https://wms.geo.admin.ch/??||ch.bakom.anschlussart-koaxialkabel||1.1.1
 Bund,Kupfer-Draht,https://test.map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||Kupfer-Draht||https://wms.geo.admin.ch/??||ch.bakom.anschlussart-kupferdraht||1.1.1
 Bund,Download ≥ 10 Mbit/s,n.a.
@@ -14725,7 +14738,6 @@ Bund,Download ≥ 300 Mbit/s,n.a.
 Bund,Download ≥ 500 Mbit/s,n.a.
 Bund,2G - GSM / EDGE,https://test.map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||2G - GSM / EDGE||https://wms.geo.admin.ch/??||ch.bakom.mobilnetz-2g||1.1.1
 Bund,3G - UMTS / HSPA,https://test.map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||3G - UMTS / HSPA||https://wms.geo.admin.ch/??||ch.bakom.mobilnetz-3g||1.1.1
-Bund,4G - LTE / LTE-A,https://test.map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||4G - LTE / LTE-A||https://wms.geo.admin.ch/??||ch.bakom.mobilnetz-4g||1.1.1
 Bund,5G - NR,https://test.map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||5G - NR||https://wms.geo.admin.ch/??||ch.bakom.mobilnetz-5g||1.1.1
 Bund,Notrufe per Gemeinde,https://test.map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||Notrufe per Gemeinde||https://wms.geo.admin.ch/??||ch.bakom.notruf||1.1.1
 Bund,112 Festnetz,https://test.map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||112 Festnetz||https://wms.geo.admin.ch/??||ch.bakom.notruf-112_festnetz||1.1.1
@@ -14756,7 +14768,6 @@ Bund,Upload ≥ 100 Mbit/s,n.a.
 Bund,Upload ≥ 1000 Mbit/s,n.a.
 Bund,Versorgungsgebiete TV,https://test.map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||Versorgungsgebiete TV||https://wms.geo.admin.ch/??||ch.bakom.versorgungsgebiet-tv||1.1.1
 Bund,Versorgungsgebiete Radio,https://test.map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||Versorgungsgebiete Radio||https://wms.geo.admin.ch/??||ch.bakom.versorgungsgebiet-ukw||1.1.1
-Bund,Konsultationsbereiche Rohrleitungen,https://test.map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||Konsultationsbereiche Rohrleitungen||https://wms.geo.admin.ch/??||ch.bfe.rohrleitungen-konsultationsbereiche||1.1.1
 Bund,UNESCO-Welterbe Kulturstätten,https://test.map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||UNESCO-Welterbe Kulturstätten||https://wms.geo.admin.ch/??||ch.bak.schutzgebiete-unesco_weltkulturerbe||1.1.1
 Bund,Sportanlagen NASAK,https://test.map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||Sportanlagen NASAK||https://wms.geo.admin.ch/??||ch.baspo.nationales-sportanlagenkonzept||1.1.1
 Bund,öV-Haltestellen,https://test.map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||öV-Haltestellen||https://wms.geo.admin.ch/??||ch.bav.haltestellen-oev||1.1.1
@@ -14770,7 +14781,6 @@ Bund,"Eisenbahnlärm, zuläss. Immission N","https://test.map.geo.admin.ch/?bgLa
 Bund,"Eisenbahnlärm, zuläss. Immission T","https://test.map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||Eisenbahnlärm, zuläss. Immission T||https://wms.geo.admin.ch/??||ch.bav.laermbelastung-eisenbahn_zulaessige_immissionen_tag||1.1.1"
 Bund,Eisenbahnstrecken StFV,https://test.map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||Eisenbahnstrecken StFV||https://wms.geo.admin.ch/??||ch.bav.lage-stoerfallverordnung_eisenbahnanlagen||1.1.1
 Bund,Schienennetz,https://test.map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||Schienennetz||https://wms.geo.admin.ch/??||ch.bav.schienennetz||1.1.1
-Bund,Bebaute Gebiete VIL,https://test.map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||Bebaute Gebiete VIL||https://wms.geo.admin.ch/??||ch.bazl.bebaute-gebiete_luftfahrtrecht||1.1.1
 Bund,Einschränkungen für Drohnen,https://test.map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||Einschränkungen für Drohnen||https://wms.geo.admin.ch/??||ch.bazl.einschraenkungen-drohnen||1.1.1
 Bund,Flugplätze + Heliports,n.a.
 Bund,Gebirgslandeplätze,n.a.
@@ -14781,23 +14791,27 @@ Bund,Lufträume - FIZ,n.a.
 Bund,Lufträume - CTA,n.a.
 Bund,Lufträume - CTR,n.a.
 Bund,Lufträume - TMA,n.a.
+Bund,Einzelobjekte VECTOR25,n.a.
 Bund,Schutzgebiete Liechtenstein AuLaV,https://test.map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||Schutzgebiete Liechtenstein AuLaV||https://wms.geo.admin.ch/??||ch.bazl.schutzgebiete-aulav_liechtenstein||1.1.1
 Bund,Segelflugkarte,https://test.map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||Segelflugkarte||https://wms.geo.admin.ch/??||ch.bazl.segelflugkarte||1.1.1
+Bund,Armeelogistikcenter ALC,https://test.map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||Armeelogistikcenter ALC||https://wms.geo.admin.ch/??||ch.vbs.armeelogistikcenter||1.1.1
 Bund,Spitallandeplätze,n.a.
 Bund,Nicht-verholzte Biomassen,https://test.map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||Nicht-verholzte Biomassen||https://wms.geo.admin.ch/??||ch.bfe.biomasse-nicht-verholzt||1.1.1
 Bund,Verholzte Biomassen,https://test.map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||Verholzte Biomassen||https://wms.geo.admin.ch/??||ch.bfe.biomasse-verholzt||1.1.1
 Bund,Pilot- und Demonstrationsprojekte,https://test.map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||Pilot- und Demonstrationsprojekte||https://wms.geo.admin.ch/??||ch.bfe.energieforschung||1.1.1
 Bund,Impulsberatung EFH und kleine MFH,https://test.map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||Impulsberatung EFH und kleine MFH||https://wms.geo.admin.ch/??||ch.bfe.erneuerbarheizen||1.1.1
+Bund,KOMO-Projekte,https://test.map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||KOMO-Projekte||https://wms.geo.admin.ch/??||ch.bfe.komo-projekte||1.1.1
 Bund,Potenzial Wärmenutzung ARA,https://test.map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||Potenzial Wärmenutzung ARA||https://wms.geo.admin.ch/??||ch.bfe.fernwaerme-angebot||1.1.1
 Bund,Wärme-/Kältenachfrage Industrie,https://test.map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||Wärme-/Kältenachfrage Industrie||https://wms.geo.admin.ch/??||ch.bfe.fernwaerme-nachfrage_industrie||1.1.1
 Bund,Wärme-/Kältenachfrage Wohnen und DL,https://test.map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||Wärme-/Kältenachfrage Wohnen und DL||https://wms.geo.admin.ch/??||ch.bfe.fernwaerme-nachfrage_wohn_dienstleistungsgebaeude||1.1.1
 Bund,Kehrichtverbrennungsanlagen,https://test.map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||Kehrichtverbrennungsanlagen||https://wms.geo.admin.ch/??||ch.bfe.kehrichtverbrennungsanlagen||1.1.1
 Bund,Kernkraftwerke,https://test.map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||Kernkraftwerke||https://wms.geo.admin.ch/??||ch.bfe.kernkraftwerke||1.1.1
 Bund,Kleinwasserkraftpotentiale,https://test.map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||Kleinwasserkraftpotentiale||https://wms.geo.admin.ch/??||ch.bfe.kleinwasserkraftpotentiale||1.1.1
-Bund,KOMO-Projekte,https://test.map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||KOMO-Projekte||https://wms.geo.admin.ch/??||ch.bfe.komo-projekte||1.1.1
 Bund,Vereisungshäufigkeit,https://test.map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||Vereisungshäufigkeit||https://wms.geo.admin.ch/??||ch.bfe.meteorologische-vereisung||1.1.1
-Bund,Solarenergie: Eignung Dächer,https://test.map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||Solarenergie: Eignung Dächer||https://wms.geo.admin.ch/??||ch.bfe.solarenergie-eignung-daecher||1.1.1
+Bund,Temperaturen 4000 m Tiefe,https://test.map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||Temperaturen 4000 m Tiefe||https://wms.geo.admin.ch/??||ch.swisstopo.geologie-geomol-temperaturverteilung_4000||1.1.1
+Bund,Konsultationsbereiche Rohrleitungen,https://test.map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||Konsultationsbereiche Rohrleitungen||https://wms.geo.admin.ch/??||ch.bfe.rohrleitungen-konsultationsbereiche||1.1.1
 Bund,Solarenergie: Eignung Fassaden,https://test.map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||Solarenergie: Eignung Fassaden||https://wms.geo.admin.ch/??||ch.bfe.solarenergie-eignung-fassaden||1.1.1
+Bund,Solarenergie: Eignung Dächer,https://test.map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||Solarenergie: Eignung Dächer||https://wms.geo.admin.ch/??||ch.bfe.solarenergie-eignung-daecher||1.1.1
 Bund,Statistik Wasserkraft,https://test.map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||Statistik Wasserkraft||https://wms.geo.admin.ch/??||ch.bfe.statistik-wasserkraftanlagen||1.1.1
 Bund,Stauanlagen,https://test.map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||Stauanlagen||https://wms.geo.admin.ch/??||ch.bfe.stauanlagen-bundesaufsicht||1.1.1
 Bund,Windenergieanlagen,https://test.map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||Windenergieanlagen||https://wms.geo.admin.ch/??||ch.bfe.windenergieanlagen||1.1.1
@@ -14831,6 +14845,7 @@ Bund,Fliesswegkarte,https://test.map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkar
 Bund,Erosionsrisiko Acker quantitativ,https://test.map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||Erosionsrisiko Acker quantitativ||https://wms.geo.admin.ch/??||ch.blw.erosion-quantitativ||1.1.1
 Bund,Feldblockkarte,https://test.map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||Feldblockkarte||https://wms.geo.admin.ch/??||ch.blw.feldblockkarte||1.1.1
 Bund,Gewässeranschluss,https://test.map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||Gewässeranschluss||https://wms.geo.admin.ch/??||ch.blw.gewaesseranschlusskarte||1.1.1
+Bund,Spirituosen,https://test.map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||Spirituosen||https://wms.geo.admin.ch/??||ch.blw.ursprungsbezeichnungen-spirituosen||1.1.1
 Bund,Gewässeranschluss erweitert,https://test.map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||Gewässeranschluss erweitert||https://wms.geo.admin.ch/??||ch.blw.gewaesseranschlusskarte-direkt||1.1.1
 Bund,Hanglagen,https://test.map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||Hanglagen||https://wms.geo.admin.ch/??||ch.blw.hang_steillagen||1.1.1
 Bund,Klimaeignung Futterbau,https://test.map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||Klimaeignung Futterbau||https://wms.geo.admin.ch/??||ch.blw.klimaeignung-futterbau||1.1.1
@@ -14842,27 +14857,26 @@ Bund,Klimaeignung Spezialkulturen,https://test.map.geo.admin.ch/?bgLayer=ch.swis
 Bund,Klimaeignung Übersicht,https://test.map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||Klimaeignung Übersicht||https://wms.geo.admin.ch/??||ch.blw.klimaeignung-typ||1.1.1
 Bund,Klimaeignung Zwischenfruchtbau,https://test.map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||Klimaeignung Zwischenfruchtbau||https://wms.geo.admin.ch/??||ch.blw.klimaeignung-zwischenfruchtbau||1.1.1
 Bund,Niederschlagshaushalt,https://test.map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||Niederschlagshaushalt||https://wms.geo.admin.ch/??||ch.blw.niederschlagshaushalt||1.1.1
+Bund,Temperaturen 500 m Tiefe,https://test.map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||Temperaturen 500 m Tiefe||https://wms.geo.admin.ch/??||ch.swisstopo.geologie-geomol-temperaturverteilung_500||1.1.1
 Bund,Rebflächen in Hanglagen,https://test.map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||Rebflächen in Hanglagen||https://wms.geo.admin.ch/??||ch.blw.steil_terrassenlagen_rebbau||1.1.1
 Bund,Fleischware,https://test.map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||Fleischware||https://wms.geo.admin.ch/??||ch.blw.ursprungsbezeichnungen-fleisch||1.1.1
 Bund,Käse,https://test.map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||Käse||https://wms.geo.admin.ch/??||ch.blw.ursprungsbezeichnungen-kaese||1.1.1
 Bund,Konditoreiware,https://test.map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||Konditoreiware||https://wms.geo.admin.ch/??||ch.blw.ursprungsbezeichnungen-konditoreiwaren||1.1.1
 Bund,Pflanzliche Produkte,https://test.map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||Pflanzliche Produkte||https://wms.geo.admin.ch/??||ch.blw.ursprungsbezeichnungen-pflanzen||1.1.1
-Bund,Spirituosen,https://test.map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||Spirituosen||https://wms.geo.admin.ch/??||ch.blw.ursprungsbezeichnungen-spirituosen||1.1.1
 Bund,Zonenpläne für den Notfallschutz,https://test.map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||Zonenpläne für den Notfallschutz||https://wms.geo.admin.ch/??||ch.ensi.zonenplan-notfallschutz-kernanlagen||1.1.1
 Bund,CadastralWebMap,n.a.
 Bund,Niederschlag 1961-1990 (Klimanormwerte),https://test.map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||Niederschlag 1961-1990 (Klimanormwerte)||https://wms.geo.admin.ch/??||ch.meteoschweiz.klimanormwerte-niederschlag_1961_1990||1.1.1
 Bund,Niederschlag 1991-2020 (Klimanormwerte),https://test.map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||Niederschlag 1991-2020 (Klimanormwerte)||https://wms.geo.admin.ch/??||ch.meteoschweiz.klimanormwerte-niederschlag_aktuelle_periode||1.1.1
 Bund,Sonnenscheindauer 1961-1990 (Klimanormwerte),https://test.map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||Sonnenscheindauer 1961-1990 (Klimanormwerte)||https://wms.geo.admin.ch/??||ch.meteoschweiz.klimanormwerte-sonnenscheindauer_1961_1990||1.1.1
-Bund,Temperaturen 4000 m Tiefe,https://test.map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||Temperaturen 4000 m Tiefe||https://wms.geo.admin.ch/??||ch.swisstopo.geologie-geomol-temperaturverteilung_4000||1.1.1
 Bund,Sonnenscheindauer 1991-2020 (Klimanormwerte),https://test.map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||Sonnenscheindauer 1991-2020 (Klimanormwerte)||https://wms.geo.admin.ch/??||ch.meteoschweiz.klimanormwerte-sonnenscheindauer_aktuelle_periode||1.1.1
 Bund,Temperatur 1961-1990 (Klimanormwerte),https://test.map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||Temperatur 1961-1990 (Klimanormwerte)||https://wms.geo.admin.ch/??||ch.meteoschweiz.klimanormwerte-temperatur_1961_1990||1.1.1
 Bund,Temperatur 1991-2020 (Klimanormwerte),https://test.map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||Temperatur 1991-2020 (Klimanormwerte)||https://wms.geo.admin.ch/??||ch.meteoschweiz.klimanormwerte-temperatur_aktuelle_periode||1.1.1
 Bund,Klimaszenarien Raumklima,n.a.
-Bund,Temperaturen 500 m Tiefe,https://test.map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||Temperaturen 500 m Tiefe||https://wms.geo.admin.ch/??||ch.swisstopo.geologie-geomol-temperaturverteilung_500||1.1.1
+Bund,Wärmestromdichte 500,https://test.map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||Wärmestromdichte 500||https://wms.geo.admin.ch/??||ch.swisstopo.geologie-geophysik-geothermie||1.1.1
+Bund,Schneeschuhrouten,https://test.map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||Schneeschuhrouten||https://wms.geo.admin.ch/??||ch.swisstopo-karto.schneeschuhrouten||1.1.1
 Bund,Aeromagnetik Aargau 1100 m 100,n.a.
 Bund,Aeromagnetik Aargau 1500 m 100,n.a.
 Bund,Pro Natura Naturschutzgebiete,https://test.map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||Pro Natura Naturschutzgebiete||https://wms.geo.admin.ch/??||ch.pronatura.naturschutzgebiete||1.1.1
-Bund,Wärmestromdichte 500,https://test.map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||Wärmestromdichte 500||https://wms.geo.admin.ch/??||ch.swisstopo.geologie-geophysik-geothermie||1.1.1
 Bund,Pro Natura Waldreservate,https://test.map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||Pro Natura Waldreservate||https://wms.geo.admin.ch/??||ch.pronatura.waldreservate||1.1.1
 Bund,DHM25 Reliefschattierung,n.a.
 Bund,LV95 Dreiecksvermaschung,https://test.map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||LV95 Dreiecksvermaschung||https://wms.geo.admin.ch/??||ch.swisstopo.dreiecksvermaschung||1.1.1
@@ -14873,7 +14887,6 @@ Bund,Anthrop. Bodenunruhe CH,https://test.map.geo.admin.ch/?bgLayer=ch.swisstopo
 Bund,Terrestrische Strahlung,https://test.map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||Terrestrische Strahlung||https://wms.geo.admin.ch/??||ch.swisstopo.geologie-dosisleistung-terrestrisch||1.1.1
 Bund,Letzteiszeitl. Max. (Vektor) 500,https://test.map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||Letzteiszeitl. Max. (Vektor) 500||https://wms.geo.admin.ch/??||ch.swisstopo.geologie-eiszeit-lgm||1.1.1
 Bund,Letzteiszeitl. Max. (Karte) 500,https://test.map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||Letzteiszeitl. Max. (Karte) 500||https://wms.geo.admin.ch/??||ch.swisstopo.geologie-eiszeit-lgm-raster||1.1.1
-Bund,Schneeschuhrouten,https://test.map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||Schneeschuhrouten||https://wms.geo.admin.ch/??||ch.swisstopo-karto.schneeschuhrouten||1.1.1
 Bund,Höhenmodell der Felsoberfläche,https://test.map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||Höhenmodell der Felsoberfläche||https://wms.geo.admin.ch/??||ch.swisstopo.geologie-felsoberflaeche_hoehenmodell||1.1.1
 Bund,Geol. Generalkarte 200,n.a.
 Bund,GeoCover - Vektordaten,https://test.map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||GeoCover - Vektordaten||https://wms.geo.admin.ch/??||ch.swisstopo.geologie-geocover||1.1.1
@@ -14932,12 +14945,14 @@ Bund,Landeskarte 1:10'000 (farbig),n.a.
 Bund,Landeskarte 1:10'000 (grau),n.a.
 Bund,Leichte Basiskarte Relief,https://test.map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||Leichte Basiskarte Relief||https://wms.geo.admin.ch/??||ch.swisstopo.leichte-basiskarte_reliefschattierung||1.1.1
 Bund,Lotabweichungen,https://test.map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||Lotabweichungen||https://wms.geo.admin.ch/??||ch.swisstopo.lotabweichungen||1.1.1
+Bund,Schutzgebiete swissTLMRegio,https://test.map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||Schutzgebiete swissTLMRegio||https://wms.geo.admin.ch/??||ch.swisstopo.vec200-adminboundaries-protectedarea||1.1.1
 Bund,Luftbilder Dritte,https://test.map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||Luftbilder Dritte||https://wms.geo.admin.ch/??||ch.swisstopo.lubis-luftbilder-dritte-firmen||1.1.1
 Bund,Luftbilder Kantone,https://test.map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||Luftbilder Kantone||https://wms.geo.admin.ch/??||ch.swisstopo.lubis-luftbilder-dritte-kantone||1.1.1
 Bund,Luftbilder swisstopo farbig,https://test.map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||Luftbilder swisstopo farbig||https://wms.geo.admin.ch/??||ch.swisstopo.lubis-luftbilder_farbe||1.1.1
 Bund,Luftbilder swisstopo infrarot,https://test.map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||Luftbilder swisstopo infrarot||https://wms.geo.admin.ch/??||ch.swisstopo.lubis-luftbilder_infrarot||1.1.1
 Bund,Luftbilder swisstopo s/w,https://test.map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||Luftbilder swisstopo s/w||https://wms.geo.admin.ch/??||ch.swisstopo.lubis-luftbilder_schwarzweiss||1.1.1
 Bund,Terrestrische Aufnahmen swisstopo,https://test.map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||Terrestrische Aufnahmen swisstopo||https://wms.geo.admin.ch/??||ch.swisstopo.lubis-terrestrische_aufnahmen||1.1.1
+Bund,Anlagen VECTOR25,https://test.map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||Anlagen VECTOR25||https://wms.geo.admin.ch/??||ch.swisstopo.vec25-anlagen||1.1.1
 Bund,Landeskarten (farbig),https://test.map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||Landeskarten (farbig)||https://wms.geo.admin.ch/??||ch.swisstopo.pixelkarte-farbe||1.1.1
 Bund,Landeskarte 1:1 Million,https://test.map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||Landeskarte 1:1 Million||https://wms.geo.admin.ch/??||ch.swisstopo.pixelkarte-farbe-pk1000.noscale||1.1.1
 Bund,Landeskarte 1:100'000 | LK100,n.a.
@@ -14974,7 +14989,6 @@ Bund,Wald swissTLM3D,https://test.map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelka
 Bund,Wanderwege,https://test.map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||Wanderwege||https://wms.geo.admin.ch/??||ch.swisstopo.swisstlm3d-wanderwege||1.1.1
 Bund,LV95 Transformationsgenauigkeit,https://test.map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||LV95 Transformationsgenauigkeit||https://wms.geo.admin.ch/??||ch.swisstopo.transformationsgenauigkeit||1.1.1
 Bund,Spannungsarme Gebiete,https://test.map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||Spannungsarme Gebiete||https://wms.geo.admin.ch/??||ch.swisstopo-vd.spannungsarme-gebiete||1.1.1
-Bund,Schutzgebiete swissTLMRegio,https://test.map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||Schutzgebiete swissTLMRegio||https://wms.geo.admin.ch/??||ch.swisstopo.vec200-adminboundaries-protectedarea||1.1.1
 Bund,Einzelgebäude gen. swissTLMRegio,https://test.map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||Einzelgebäude gen. swissTLMRegio||https://wms.geo.admin.ch/??||ch.swisstopo.vec200-building||1.1.1
 Bund,Gewässernetz swissTLMRegio,https://test.map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||Gewässernetz swissTLMRegio||https://wms.geo.admin.ch/??||ch.swisstopo.vec200-hydrography||1.1.1
 Bund,Bodenbedeckung swissTLMRegio,https://test.map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||Bodenbedeckung swissTLMRegio||https://wms.geo.admin.ch/??||ch.swisstopo.vec200-landcover||1.1.1
@@ -14983,8 +14997,6 @@ Bund,Höhenkoten swissTLMRegio,https://test.map.geo.admin.ch/?bgLayer=ch.swissto
 Bund,Namen swissTLMRegio,https://test.map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||Namen swissTLMRegio||https://wms.geo.admin.ch/??||ch.swisstopo.vec200-names-namedlocation||1.1.1
 Bund,Öffentlicher Verkehr swissTLMRegio,https://test.map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||Öffentlicher Verkehr swissTLMRegio||https://wms.geo.admin.ch/??||ch.swisstopo.vec200-transportation-oeffentliche-verkehr||1.1.1
 Bund,Strassennetz swissTLMRegio,https://test.map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||Strassennetz swissTLMRegio||https://wms.geo.admin.ch/??||ch.swisstopo.vec200-transportation-strassennetz||1.1.1
-Bund,Anlagen VECTOR25,https://test.map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||Anlagen VECTOR25||https://wms.geo.admin.ch/??||ch.swisstopo.vec25-anlagen||1.1.1
-Bund,Einzelobjekte VECTOR25,n.a.
 Bund,Gebäude VECTOR25,https://test.map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||Gebäude VECTOR25||https://wms.geo.admin.ch/??||ch.swisstopo.vec25-gebaeude||1.1.1
 Bund,Gewässernetz VECTOR25,https://test.map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||Gewässernetz VECTOR25||https://wms.geo.admin.ch/??||ch.swisstopo.vec25-gewaessernetz_referenz||1.1.1
 Bund,Hecken und Bäume VECTOR25,n.a.
@@ -14993,14 +15005,13 @@ Bund,LV95 Verschiebungsvektoren TSP1,https://test.map.geo.admin.ch/?bgLayer=ch.s
 Bund,LV95 Verschiebungsvektoren TSP2,https://test.map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||LV95 Verschiebungsvektoren TSP2||https://wms.geo.admin.ch/??||ch.swisstopo.verschiebungsvektoren-tsp2||1.1.1
 Bund,Zeitreise - Kartenwerke,n.a.
 Bund,Armee- und Kriegsdenkmäler,https://test.map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||Armee- und Kriegsdenkmäler||https://wms.geo.admin.ch/??||ch.vbs.armee-kriegsdenkmaeler||1.1.1
-Bund,Armeelogistikcenter ALC,https://test.map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||Armeelogistikcenter ALC||https://wms.geo.admin.ch/??||ch.vbs.armeelogistikcenter||1.1.1
 Bund,Zeus Karte,https://test.map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||Zeus Karte||https://wms.geo.admin.ch/??||ch.vbs.grunddispositiv-zeus||1.1.1
 Bund,Logistikräume ALC,https://test.map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||Logistikräume ALC||https://wms.geo.admin.ch/??||ch.vbs.logistikraeume-armeelogistikcenter||1.1.1
-Bund,Retablierungsstellen,https://test.map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||Retablierungsstellen||https://wms.geo.admin.ch/??||ch.vbs.retablierungsstellen||1.1.1
 Bund,Mil Airspace Chart,https://test.map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||Mil Airspace Chart||https://wms.geo.admin.ch/??||ch.vbs.milairspacechart||1.1.1
 Bund,Panzerverschiebungsrouten,https://test.map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||Panzerverschiebungsrouten||https://wms.geo.admin.ch/??||ch.vbs.panzerverschiebungsrouten||1.1.1
 Bund,Patrouille des Glaciers (A Rennen),https://test.map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||Patrouille des Glaciers (A Rennen)||https://wms.geo.admin.ch/??||ch.vbs.patrouilledesglaciers-a_rennen||1.1.1
 Bund,Patrouille des Glaciers (Z Rennen),https://test.map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||Patrouille des Glaciers (Z Rennen)||https://wms.geo.admin.ch/??||ch.vbs.patrouilledesglaciers-z_rennen||1.1.1
+Bund,Retablierungsstellen,https://test.map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||Retablierungsstellen||https://wms.geo.admin.ch/??||ch.vbs.retablierungsstellen||1.1.1
 Bund,Sperr- und Gefahrenzonenkarte,https://test.map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||Sperr- und Gefahrenzonenkarte||https://wms.geo.admin.ch/??||ch.vbs.sperr-gefahrenzonenkarte||1.1.1
 Bund,SWISS MIL PILOTS CHART,https://test.map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||SWISS MIL PILOTS CHART||https://wms.geo.admin.ch/??||ch.vbs.swissmilpilotschart||1.1.1
 Bund,Waldschadenkarte - Projektil,https://test.map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||Waldschadenkarte - Projektil||https://wms.geo.admin.ch/??||ch.vbs.waldschadenkarte||1.1.1
