@@ -12,6 +12,9 @@ import importlib
 import glob
 from collections import defaultdict
 from statistics import mean
+import xml.etree.ElementTree as ET
+import re
+
 sys.path.insert(0,config.SOURCE_SCRAPER_DIR)
 
 service_keys=(("WMSGetCap","n.a."),("WMTSGetCap","n.a."),("WFSGetCap","n.a."))
@@ -21,6 +24,19 @@ def service_result_empty():
     "METADATA":"n.a.","UPDATE":"n.a.","LEGEND":"n.a.","SERVICETYPE":"n.a.","MAX_ZOOM":"n.a.",
     "CENTER_LAT":"n.a.","CENTER_LON":"n.a.","MAPGEO":"n.a.","BBOX":"n.a."}
     return SERVICE_RESULT
+
+#Get the Service Version
+def get_version(input_url):
+    response = requests.get(input_url)
+    xml_data = response.content
+
+    root = ET.fromstring(xml_data)
+    try:
+        version = root.attrib["version"]
+    except KeyError:
+        print("version attribute not found.")
+        version == None
+    return(version)
 
 def write_file(input_dict,output_file):
     #Writing the Result file
@@ -91,15 +107,27 @@ def get_service_info(source):
     Returns:
     Variable for each layer
     """
-    
-    # test for specific Version for service whcih needs to be passed to OWSLIB
-    if source['Description'] in config.SOURCE_COLLECTION_VERSION:
-        source_version=config.SOURCE_COLLECTION_VERSION[source['Description']]
-    else:
-        source_version=None
+  
     
     try:
         #Testing if WMS or WMTS/WFS
+            # test for specific Version for service whcih needs to be passed to OWSLIB
+        source_version=get_version(source['URL'])
+        match = re.match(r"^\d+\.\d+\.\d+$", source_version)
+        if match:
+           source_version == source_version
+        else:
+            log_file = open(os.path.join(config.DEAD_SERVICES_PATH,source['Description']+"_error.txt"),  'a+')
+            log_file.write(source['Description']+": "+"invalid service version number, trying default"+"\n")
+            log_file.close()
+            logger.info(source['Description']+": "+"invalid service version number, trying default")
+            source_version == None
+        #if source['Description'] in config.SOURCE_COLLECTION_VERSION:
+        #   source_version=config.SOURCE_COLLECTION_VERSION[source['Description']]
+        #else:
+        #   source_version=None
+
+        #breakpoint()
         try:
             service = WebMapService(source['URL']) if source_version == None else WebMapService(source['URL'],version=source_version)
             child=True #assuming that wms can child/parent relation
@@ -108,7 +136,7 @@ def get_service_info(source):
             try:
                 service = WebMapTileService(source['URL'])
             except:
-                service = WebFeatureService(source['URL'], version='1.1.0') if source_version == None else WebMapService(source['URL'],version=source_version)
+                service = WebFeatureService(source['URL'], version='2.0.0') if source_version == None else WebFeatureService(source['URL'],version=source_version)
             child=False #assuming that wmts can't have child/parent relation
        
         #extract all layer names
@@ -133,7 +161,7 @@ def get_service_info(source):
                     #print(i+" processing parent layer")
                     for j in range(len(service.contents[i].children)):
                         if service.contents[i]._children[j].id not in layers_done :
-                            layertree= source['Description']+"/"+service.identification.title+"/"+i if service.identification.title is not None else source['Description']+"/"+i                
+                            layertree= source['Description']+"/"+service.identification.title+"/"+i.replace('"', '') if service.identification.title is not None else source['Description']+"/"+i.replace('"', '')                
                             #print(str(j)+" "+i+""+service.contents[i]._children[j].id)
                             #breakpoint()
                             write_service_info(source,service,(service.contents[i]._children[j].id),layertree,group=i)
