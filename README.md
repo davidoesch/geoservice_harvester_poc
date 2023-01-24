@@ -117,7 +117,7 @@ This data is generated and validated daily using automated procedures based on g
 |     GR    	|  ![ok](https://placehold.jp/b8e186/000000/200x50.png?text=WMS-WFS 'ok')      	|      	|
 |     JU    	|  ![ok](https://placehold.jp/b8e186/000000/200x50.png?text=WMS-WFS-WMTS 'ok')      	| no love for WebmerCator     	|
 |     LU    	|  ![ok](https://placehold.jp/de77ae/000000/200x50.png?text=no-service 'ok')        	|     	|
-|     NE    	|  ![ok](https://placehold.jp/b8e186/000000/200x50.png?text=WMS 'ok')       	|       	|
+|     NE    	|  ![ok](https://placehold.jp/de77ae/000000/200x50.png?text=no-service 'ok')       	|       	|
 |     NW    	|  ![ok](https://placehold.jp/de77ae/000000/200x50.png?text=no-service 'ok')      	| |
 |     OW    	|  ![ok](https://placehold.jp/de77ae/000000/200x50.png?text=no-service 'ok')      	|         	|
 |     SG    	|  ![ok](https://placehold.jp/b8e186/000000/200x50.png?text=WMS-WFS-WMTS 'ok')      	|       	|
