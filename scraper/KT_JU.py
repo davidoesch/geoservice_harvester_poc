@@ -1,5 +1,10 @@
 #Create OWSLIB configfile 
-
+def remove_newline(toclean):
+    if toclean:
+        test= toclean.replace('\r\n', '')
+    else:
+        test=""
+    return(test)
 #SERVICE WMS
 def scrape(source,service,i,layertree, group,layer_data,prefix):
     type=source['URL']
@@ -9,8 +14,9 @@ def scrape(source,service,i,layertree, group,layer_data,prefix):
         layer_data["TITLE"]= service.contents[i].title
         layer_data["NAME"]= service.contents[i].name
         layer_data["TREE"]= layertree
-        layer_data["GROUP"]= group if group != 0 else ""
-        layer_data["ABSTRACT"]= service.contents[i].abstract
+        layer=service.contents[i]
+        layer_data["GROUP"]= layer.parent.name if layer.parent is not None else ""
+        layer_data["ABSTRACT"]= remove_newline(service.contents[i].abstract)
         layer_data["KEYWORDS"]= ", ".join(service.contents[i].keywords+service.identification.keywords)
         layer_data["LEGEND"]= service.contents[i].styles['default']['legend'] if 'default' in service.contents[i].styles.keys() else ""
         layer_data["CONTACT"]=service.provider.contact
@@ -34,7 +40,7 @@ def scrape(source,service,i,layertree, group,layer_data,prefix):
         layer_data["NAME"]= service.contents[i].name
         layer_data["TREE"]= layertree
         layer_data["GROUP"]= group if group != 0 else ""
-        layer_data["ABSTRACT"]= service.identification.abstract
+        layer_data["ABSTRACT"]= remove_newline(service.identification.abstract)
         layer_data["KEYWORDS"]= ", ".join(service.contents[i].keywords+service.identification.keywords)
         layer_data["LEGEND"]= service.contents[i].styles['default']['legend'] if 'legend' in service.contents[i].styles.keys() else ""
         layer_data["CONTACT"]=service.provider.contact.email
@@ -58,7 +64,7 @@ def scrape(source,service,i,layertree, group,layer_data,prefix):
         layer_data["NAME"]= service.contents[i].id
         layer_data["TREE"]= layertree
         layer_data["GROUP"]= group if group != 0 else ""
-        layer_data["ABSTRACT"]= service.contents[i].abstract
+        layer_data["ABSTRACT"]= remove_newline(service.contents[i].abstract)
         layer_data["KEYWORDS"]= ", ".join(service.contents[i].keywords+service.identification.keywords)
         layer_data["LEGEND"]= ""
         layer_data["CONTACT"]=""

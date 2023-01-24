@@ -1,6 +1,12 @@
 #Create OWSLIB configfile 
 # source scraped them from opendata.swiss API with https://ckan.opendata.swiss/api/3/action/package_search?fq=organization:kanton-thurgau%20AND%20res_format:WMS&rows=10000
 # and https://ckan.opendata.swiss/api/3/action/package_search?fq=organization:kanton-thurgau%20AND%20res_format:WFS&rows=10000 
+def remove_newline(toclean):
+    if toclean:
+        test= toclean.replace('\r\n', '')
+    else:
+        test=""
+    return(test)
 
 #SERVICE WMS
 def scrape(source,service,i,layertree, group,layer_data,prefix):
@@ -11,8 +17,9 @@ def scrape(source,service,i,layertree, group,layer_data,prefix):
         layer_data["TITLE"]= service.contents[i].title
         layer_data["NAME"]= service.contents[i].name
         layer_data["TREE"]= layertree
-        layer_data["GROUP"]= group if group != 0 else ""
-        layer_data["ABSTRACT"]= service.contents[i].abstract
+        layer=service.contents[i]
+        layer_data["GROUP"]= layer.parent.name if layer.parent is not None else ""
+        layer_data["ABSTRACT"]=remove_newline(service.contents[i].parent.abstract)
         layer_data["KEYWORDS"]= ", ".join(service.contents[i].keywords+service.identification.keywords)
         layer_data["LEGEND"]= service.contents[i].styles['default']['legend'] if 'default' in service.contents[i].styles.keys() else ""
         layer_data["CONTACT"]=service.provider.contact.email
@@ -35,7 +42,7 @@ def scrape(source,service,i,layertree, group,layer_data,prefix):
         layer_data["NAME"]= service.contents[i].name
         layer_data["TREE"]= layertree
         layer_data["GROUP"]= group if group != 0 else ""
-        layer_data["ABSTRACT"]= service.identification.abstract+" "+service.identification.accessconstraints
+        layer_data["ABSTRACT"]= remove_newline(service.identification.abstract+" "+service.identification.accessconstraints)
         layer_data["KEYWORDS"]= ", ".join(service.contents[i].keywords+service.identification.keywords)
         layer_data["LEGEND"]= service.contents[i].styles['default']['legend'] if 'legend' in service.contents[i].styles.keys() else ""
         layer_data["CONTACT"]=service.provider.name
@@ -52,14 +59,15 @@ def scrape(source,service,i,layertree, group,layer_data,prefix):
             "%20"+str(layer_data["CENTER_LON"])+"&zoom="+str(layer_data["MAX_ZOOM"])
         return(layer_data)
     elif "WFS" in type:
+        
         layer_data["OWNER"]= source['Description']
         layer_data["TITLE"]= service.contents[i].title
         layer_data["NAME"]= service.contents[i].id
         layer_data["TREE"]= layertree
         layer_data["GROUP"]= group if group != 0 else ""
-        layer_data["ABSTRACT"]= service.contents[i].abstract
+        layer_data["ABSTRACT"]= remove_newline(service.contents[i].abstract)
         layer_data["KEYWORDS"]= ", ".join(service.contents[i].keywords+service.identification.keywords)
-        layer_data["LEGEND"]= service.contents[i].styles['default']['legend'] if len(service.contents[i].styles) == 1 else ""
+        layer_data["LEGEND"] = service.contents[i].styles['default']['legend'] if service.contents[i].styles is not None and len(service.contents[i].styles) == 1 else ""
         layer_data["CONTACT"]=service.provider.contact.email
         layer_data["SERVICELINK"]=service.url
         layer_data["METADATA"]=service.contents[i].metadataUrls[0]['url'] if len(service.contents[i].metadataUrls) == 1 else ""

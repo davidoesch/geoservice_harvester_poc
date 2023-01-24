@@ -2,6 +2,14 @@
 #Valid for scraper in
 #  https://www.agi.dij.be.ch/de/start/geoportal/geodienste/angebot-an-geodiensten.html 
 
+
+def remove_newline(toclean):
+    if toclean:
+        test= toclean.replace('\r\n', '')
+    else:
+        test=""
+    return(test)
+
 #SERVICE WMS
 def scrape(source,service,i,layertree, group,layer_data,prefix):
     type=service.identification.type
@@ -11,13 +19,10 @@ def scrape(source,service,i,layertree, group,layer_data,prefix):
         layer_data["TITLE"]= service.contents[i].title
         layer_data["NAME"]= service.contents[i].name
         layer_data["TREE"]= layertree
-        layer_data["GROUP"]= group if group != 0 else ""
+        layer=service.contents[i]
+        layer_data["GROUP"]= layer.parent.name if layer.parent is not None else ""
         #Catch Bern OEREB grouping
-        if  service.contents[i].parent is not None and service.contents[i].parent.abstract is not None:
-            temp=service.contents[i].abstract+" "+service.contents[i].parent.abstract
-        else:
-            temp=service.contents[i].abstract
-        layer_data["ABSTRACT"]=temp.replace('\n','') 
+        layer_data["ABSTRACT"]=remove_newline((service.contents[i].abstract or "") + " " + (service.contents[i].parent.abstract or ""))
         layer_data["KEYWORDS"]= ", ".join(service.contents[i].keywords+service.identification.keywords)
         #layer_data["KEYWORDS"]=service.contents[i].keywords
         layer_data["LEGEND"]= service.contents[i].styles['default']['legend'] if 'default' in service.contents[i].styles.keys() else ""
@@ -35,6 +40,7 @@ def scrape(source,service,i,layertree, group,layer_data,prefix):
             +service.identification.version+"&swisssearch="+str(layer_data["CENTER_LAT"])+\
             "%20"+str(layer_data["CENTER_LON"])+"&zoom="+str(layer_data["MAX_ZOOM"])
         return(layer_data)
+        
     elif "WMTS" in type:
         print("WMTS detetcted ..add config")        
     elif "STAC" in type:

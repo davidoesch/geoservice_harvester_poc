@@ -1,4 +1,10 @@
 #Create OWSLIB configfile 
+def remove_newline(toclean):
+    if toclean:
+        test= toclean.replace('\r\n', '')
+    else:
+        test=""
+    return(test)
 
 #SERVICE WMS
 def scrape(source,service,i,layertree, group,layer_data,prefix):
@@ -9,8 +15,9 @@ def scrape(source,service,i,layertree, group,layer_data,prefix):
         layer_data["TITLE"]= service.contents[i].title
         layer_data["NAME"]= service.contents[i].name
         layer_data["TREE"]= layertree
-        layer_data["GROUP"]= group if group != 0 else ""
-        layer_data["ABSTRACT"]= service.identification.abstract
+        layer=service.contents[i]
+        layer_data["GROUP"]= layer.parent.name if layer.parent is not None else ""
+        layer_data["ABSTRACT"]= remove_newline(service.identification.abstract)
         layer_data["KEYWORDS"]= ", ".join(service.contents[i].keywords+service.identification.keywords)
         layer_data["LEGEND"]= service.contents[i].styles['default']['legend'] if 'default' in service.contents[i].styles.keys() else ""
         layer_data["CONTACT"]=service.provider.contact.email
@@ -68,10 +75,16 @@ def scrape(source,service,i,layertree, group,layer_data,prefix):
         layer_data["UPDATE"]=""
         layer_data["SERVICETYPE"]=service.identification.type
         layer_data["MAX_ZOOM"]= "" #this is the map.geo.admin.ch map zoom at approx 1:20k
-        layer_data["CENTER_LAT"]=(service[i].boundingBoxWGS84[1]+service[i].boundingBoxWGS84[3])/2
-        layer_data["CENTER_LON"]=(service[i].boundingBoxWGS84[0]+service[i].boundingBoxWGS84[2])/2
-        layer_data["BBOX"]=' '.join([str(elem) for elem in (service.contents[i].boundingBoxWGS84)])
-
+        if service[i].boundingBoxWGS84 is not None:
+            layer_data["CENTER_LAT"] = (service[i].boundingBoxWGS84[1] + service[i].boundingBoxWGS84[3])/2
+            layer_data["CENTER_LON"]=(service[i].boundingBoxWGS84[0]+service[i].boundingBoxWGS84[2])/2
+            layer_data["BBOX"]=' '.join([str(elem) for elem in (service.contents[i].boundingBoxWGS84)])
+        else:
+            layer_data["CENTER_LAT"] = ""
+            layer_data["CENTER_LON"]=""
+            layer_data["BBOX"]= ""
+        
+        
         return(layer_data)               
     elif "STAC" in type:
         print("STAC detetcted ..add config")

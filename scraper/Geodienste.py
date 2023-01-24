@@ -1,6 +1,12 @@
 #Create OWSLIB configfile 
 #
 # Source https://github.com/geoadmin/mf-geoadmin3/blob/master/src/js/ImportController.js
+def remove_newline(toclean):
+    if toclean:
+        test= toclean.replace('\r\n', '')
+    else:
+        test=""
+    return(test)
 
 #SERVICE WMS
 def scrape(source,service,i,layertree, group,layer_data,prefix):
@@ -12,7 +18,8 @@ def scrape(source,service,i,layertree, group,layer_data,prefix):
         layer_data["TITLE"]= service.contents[i].title
         layer_data["NAME"]= service.contents[i].name
         layer_data["TREE"]= layertree
-        layer_data["GROUP"]= group if group != 0 else ""
+        layer=service.contents[i]
+        layer_data["GROUP"]= layer.parent.name if layer.parent is not None else ""
         if  service.contents[i].parent is not None and service.contents[i].parent.abstract is not None:
             temp=str(service.contents[i].abstract)+" "+service.contents[i].parent.abstract
         else:
@@ -43,13 +50,23 @@ def scrape(source,service,i,layertree, group,layer_data,prefix):
         layer_data["NAME"]= service.contents[i].id
         layer_data["TREE"]= layertree
         layer_data["GROUP"]= group if group != 0 else ""
-        if  service.contents[i].parent is not None and service.contents[i].parent.abstract is not None:
-            temp=str(service.contents[i].abstract)+" "+service.contents[i].parent.abstract
+        if hasattr(service.contents[i], 'parent') and service.contents[i].parent is not None and hasattr(service.contents[i].parent, 'abstract') and service.contents[i].parent.abstract is not None:
+            temp = str(service.contents[i].abstract) + " " + service.contents[i].parent.abstract
         else:
-            temp=service.contents[i].abstract
-        layer_data["ABSTRACT"]=temp.replace('\n','') if temp is not None else ""
-        layer_data["KEYWORDS"]= ", ".join(service.contents[i].keywords+service.identification.keywords)
-        layer_data["LEGEND"]= service.contents[i].styles['default']['legend'] if 'default' in service.contents[i].styles.keys() else ""
+            temp = service.contents[i].abstract
+        layer_data["ABSTRACT"] = temp.replace('\n','') if temp is not None else ""
+        if hasattr(service.contents[i], 'keywords') and service.contents[i].keywords is not None and hasattr(service.identification, 'keywords') and service.identification.keywords is not None:
+            keywords = service.contents[i].keywords + service.identification.keywords
+            layer_data["KEYWORDS"] = ", ".join(keywords)
+        else:
+            layer_data["KEYWORDS"] = ""
+        if hasattr(service.contents[i], 'styles') and service.contents[i].styles is not None:
+            if 'default' in service.contents[i].styles.keys():
+                layer_data["LEGEND"]= service.contents[i].styles['default']['legend']
+            else:
+                layer_data["LEGEND"] = ""
+        else:
+            layer_data["LEGEND"] = ""
         layer_data["CONTACT"]=service.provider.contact.name
         layer_data["SERVICELINK"]=service.url
         layer_data["METADATA"]=service.contents[i].metadataUrls[0]['url'] if len(service.contents[i].metadataUrls) == 1 else ""

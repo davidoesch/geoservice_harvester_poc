@@ -1,6 +1,12 @@
 #Create OWSLIB configfile 
 #
 # Source https://www.llv.li/inhalt/11694/amtsstellen/internet-kartendienst-geowebservices
+def remove_newline(toclean):
+    if toclean:
+        test= toclean.replace('\r\n', '')
+    else:
+        test=""
+    return(test)
 
 #SERVICE WMS
 def scrape(source,service,i,layertree, group,layer_data,prefix):
@@ -11,7 +17,8 @@ def scrape(source,service,i,layertree, group,layer_data,prefix):
         layer_data["TITLE"]= service.contents[i].title
         layer_data["NAME"]= service.contents[i].name
         layer_data["TREE"]= layertree
-        layer_data["GROUP"]= group if group != 0 else ""
+        layer=service.contents[i]
+        layer_data["GROUP"]= layer.parent.name if layer.parent is not None else ""
         if  service.contents[i].parent is not None and service.contents[i].parent.abstract is not None:
             temp=str(service.contents[i].abstract)+" "+service.contents[i].parent.abstract
         else:
@@ -40,7 +47,7 @@ def scrape(source,service,i,layertree, group,layer_data,prefix):
         layer_data["NAME"]= service.contents[i].name
         layer_data["TREE"]= layertree
         layer_data["GROUP"]= group if group != 0 else ""
-        layer_data["ABSTRACT"]= service.identification.abstract+" "+service.identification.accessconstraints
+        layer_data["ABSTRACT"]= remove_newline(service.identification.abstract+" "+service.identification.accessconstraints)
         layer_data["KEYWORDS"]= ", ".join(service.contents[i].keywords+service.identification.keywords)
         layer_data["LEGEND"]= service.contents[i].styles['default']['legend'] if 'legend' in service.contents[i].styles.keys() else ""
         layer_data["CONTACT"]=service.provider.name

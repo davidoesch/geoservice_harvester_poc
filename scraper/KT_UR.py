@@ -1,15 +1,23 @@
 #Create OWSLIB configfile 
 # According to https://oereb.ur.ch/?basemap=AV&lat=46.87491213706447&lng=8.645001065327628&zoom=13.75 sources and www.geo.ur.ch
+def remove_newline(toclean):
+    if toclean:
+        test= toclean.replace('\r\n', '')
+    else:
+        test=""
+    return(test)
+    
 #SERVICE WMS
 def scrape(source,service,i,layertree, group,layer_data,prefix):
     type=source['URL']
-    #breakpoint()
+    
     if "wms" in type:
         layer_data["OWNER"]= source['Description']
         layer_data["TITLE"]= service.contents[i].title
         layer_data["NAME"]= service.contents[i].name
         layer_data["TREE"]= layertree
-        layer_data["GROUP"]= group if group != 0 else ""
+        layer=service.contents[i]
+        layer_data["GROUP"]= layer.parent.name if layer.parent is not None else ""
         if  service.contents[i].parent is not None and service.contents[i].parent.abstract is not None:
             temp=str(service.contents[i].abstract)+" "+service.contents[i].parent.abstract
         else:
@@ -26,7 +34,7 @@ def scrape(source,service,i,layertree, group,layer_data,prefix):
         layer_data["LEGEND"]=temp
         layer_data["CONTACT"]=service.provider.contact.email
         layer_data["SERVICELINK"]=service.request
-        layer_data["METADATA"]=layer_data["METADATA"]=service.contents[i].metadataUrls[0]['url'] if 0 in service.contents[i].metadataUrls else ""
+        layer_data["METADATA"]=service.contents[i].metadataUrls[0]['url'] if 0 in service.contents[i].metadataUrls else ""
         layer_data["UPDATE"]=service.updateSequence
         layer_data["SERVICETYPE"]=service.identification.type
         layer_data["MAX_ZOOM"]= 7 #this is the map.geo.admin.ch map zoom at approx 1:20k
@@ -67,29 +75,32 @@ def scrape(source,service,i,layertree, group,layer_data,prefix):
         
         return(layer_data)
     elif "wfs" in type:
+        
         layer_data["OWNER"]= source['Description']
         layer_data["TITLE"]= service.contents[i].title
         layer_data["NAME"]= service.contents[i].id
         layer_data["TREE"]= layertree
         layer_data["GROUP"]= group if group != 0 else ""
-        if  service.contents[i].parent is not None and service.contents[i].parent.abstract is not None:
-            temp=str(service.contents[i].abstract)+" "+service.contents[i].parent.abstract
+        if hasattr(service.contents[i], 'parent') and service.contents[i].parent is not None and hasattr(service.contents[i].parent, 'abstract') and service.contents[i].parent.abstract is not None:
+            temp = str(service.contents[i].abstract) + " " + service.contents[i].parent.abstract
         else:
-            temp=service.contents[i].abstract
-        #temp=temp.replace('\n\n','')
-        layer_data["ABSTRACT"]=temp.replace('\r\n','') if temp is not None else ""
+            temp = service.contents[i].abstract
+        layer_data["ABSTRACT"] = remove_newline(temp.replace('\r', '').replace('\n', '')) if temp is not None else ""
         layer_data["KEYWORDS"]= ", ".join(service.contents[i].keywords+service.identification.keywords)
-        try: 
-            temp=service.contents[i].styles['default-style-'+i]['legend']
-        except KeyError:
+        if hasattr(service.contents[i], 'styles') and service.contents[i].styles is not None:
             try:
-                temp=service.contents[i].styles[i]['legend']
+                temp = service.contents[i].styles['default-style-'+i]['legend']
             except KeyError:
-                temp=""
-        layer_data["LEGEND"]=temp
+                try:
+                    temp = service.contents[i].styles[i]['legend']
+                except KeyError:
+                    temp = ""
+        else:
+            temp = ""
+        layer_data["LEGEND"] = temp
         layer_data["CONTACT"]=service.provider.contact.email
         layer_data["SERVICELINK"]=service.url
-        layer_data["METADATA"]=layer_data["METADATA"]=service.contents[i].metadataUrls[0]['url'] if 0 in service.contents[i].metadataUrls else ""
+        layer_data["METADATA"]=service.contents[i].metadataUrls[0]['url'] if 0 in service.contents[i].metadataUrls else ""
         layer_data["UPDATE"]=service.updateSequence
         layer_data["SERVICETYPE"]=service.identification.type
         layer_data["MAX_ZOOM"]= "" #this is the map.geo.admin.ch map zoom at approx 1:20k
