@@ -1,8 +1,9 @@
 #Create OWSLIB configfile 
 #SOURCE: https://www.baselland.ch/politik-und-behorden/direktionen/volkswirtschafts-und-gesundheitsdirektion/amt-fur-geoinformation/geoportal/geodienste/geowms-bl
+import re
 def remove_newline(toclean):
     if toclean:
-        test= toclean.replace('\r\n', '')
+        test=re.sub(r'[\n\r\t\f\v]', ' ', toclean)
     else:
         test=""
     return(test)

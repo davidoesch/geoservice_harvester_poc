@@ -2,10 +2,10 @@
 #Valid for scraper in
 #  https://www.agi.dij.be.ch/de/start/geoportal/geodienste/angebot-an-geodiensten.html 
 
-
+import re
 def remove_newline(toclean):
     if toclean:
-        test= toclean.replace('\r\n', '')
+        test=re.sub(r'[\n\r\t\f\v]', ' ', toclean)
     else:
         test=""
     return(test)
@@ -22,7 +22,7 @@ def scrape(source,service,i,layertree, group,layer_data,prefix):
         layer=service.contents[i]
         layer_data["GROUP"]= layer.parent.name if layer.parent is not None else ""
         #Catch Bern OEREB grouping
-        layer_data["ABSTRACT"]=remove_newline((service.contents[i].abstract or "") + " " + (service.contents[i].parent.abstract or ""))
+        layer_data["ABSTRACT"]=remove_newline(str((service.contents[i].abstract or " ") + " " + (service.contents[i].parent.abstract or " ")))
         layer_data["KEYWORDS"]= ", ".join(service.contents[i].keywords+service.identification.keywords)
         #layer_data["KEYWORDS"]=service.contents[i].keywords
         layer_data["LEGEND"]= service.contents[i].styles['default']['legend'] if 'default' in service.contents[i].styles.keys() else ""

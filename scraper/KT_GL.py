@@ -1,8 +1,9 @@
 #Create OWSLIB configfile 
 #URSL according to https://www.gl.ch/verwaltung/bau-und-umwelt/hochbau/raumentwicklung-und-geoinformation/geoportal-kanton-glarus.html/808
+import re
 def remove_newline(toclean):
     if toclean:
-        test= toclean.replace('\r\n', '')
+        test=re.sub(r'[\n\r\t\f\v]', ' ', toclean)
     else:
         test=""
     return(test)

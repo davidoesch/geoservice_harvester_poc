@@ -1,8 +1,9 @@
 #Create OWSLIB configfile 
 #source https://www.ne.ch/autorites/DDTE/SGRF/SITN/geoportail/Pages/Service-WMS.aspx
+import re
 def remove_newline(toclean):
     if toclean:
-        test= toclean.replace('\r\n', '')
+        test=re.sub(r'[\n\r\t\f\v]', ' ', toclean)
     else:
         test=""
     return(test)

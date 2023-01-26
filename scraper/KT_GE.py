@@ -3,9 +3,10 @@
 import re
 regex = r"(?i)\b((?:https?://|www\d{0,3}[.]|[a-z0-9.\-]+[.][a-z]{2,4}/)(?:[^\s()<>]+|\(([^\s()<>]+|(\([^\s()<>]+\)))*\))+(?:\(([^\s()<>]+|(\([^\s()<>]+\)))*\)|[^\s`!()\[\]{};:'\".,<>?«»“”‘’]))"
 
+import re
 def remove_newline(toclean):
     if toclean:
-        test= toclean.replace('\r\n', '')
+        test=re.sub(r'[\n\r\t\f\v]', ' ', toclean)
     else:
         test=""
     return(test)
@@ -23,7 +24,7 @@ def scrape(source,service,i,layertree, group,layer_data,prefix):
         layer_data["GROUP"]= layer.parent.name if layer.parent is not None else ""
         if service.contents[i].abstract is not None:
             urlfree = re.sub(regex,"",service.contents[i].abstract)
-            layer_data["ABSTRACT"]=urlfree.replace('\n','') 
+            layer_data["ABSTRACT"]=remove_newline(urlfree)
         else:
             layer_data["ABSTRACT"]=" "
         layer_data["KEYWORDS"]= ", ".join(service.contents[i].keywords+service.identification.keywords)

@@ -1,8 +1,9 @@
 #Create OWSLIB configfile 
 
+import re
 def remove_newline(toclean):
     if toclean:
-        test= toclean.replace('\r\n', '')
+        test=re.sub(r'[\n\r\t\f\v]', ' ', toclean)
     else:
         test=""
     return(test)
@@ -19,7 +20,7 @@ def scrape(source,service,i,layertree, group,layer_data,prefix):
         layer=service.contents[i]
         layer_data["GROUP"]= layer.parent.name if layer.parent is not None else ""
         abstract=service.contents[i].abstract
-        layer_data["ABSTRACT"]= abstract.replace('\r', '').replace('\n', '')
+        layer_data["ABSTRACT"]=remove_newline(abstract)
         layer_data["KEYWORDS"]= ", ".join(service.contents[i].keywords+service.identification.keywords)
         layer_data["LEGEND"]= service.contents[i].styles[i]['legend'] if i in service.contents[i].styles.keys() else ""
         layer_data["CONTACT"]=service.provider.contact.email

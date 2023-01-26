@@ -1,9 +1,10 @@
 #Create OWSLIB configfile 
 #Source: https://www.geo.bs.ch/geodaten/geodienste.html
 
+import re
 def remove_newline(toclean):
     if toclean:
-        test= toclean.replace('\r\n', '')
+        test=re.sub(r'[\n\r\t\f\v]', ' ', toclean)
     else:
         test=""
     return(test)

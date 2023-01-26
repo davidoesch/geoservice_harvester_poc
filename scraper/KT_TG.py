@@ -1,9 +1,10 @@
 #Create OWSLIB configfile 
 # source scraped them from opendata.swiss API with https://ckan.opendata.swiss/api/3/action/package_search?fq=organization:kanton-thurgau%20AND%20res_format:WMS&rows=10000
 # and https://ckan.opendata.swiss/api/3/action/package_search?fq=organization:kanton-thurgau%20AND%20res_format:WFS&rows=10000 
+import re
 def remove_newline(toclean):
     if toclean:
-        test= toclean.replace('\r\n', '')
+        test=re.sub(r'[\n\r\t\f\v]', ' ', toclean)
     else:
         test=""
     return(test)

@@ -1,9 +1,10 @@
 #Create OWSLIB configfile 
 #
 # Source https://github.com/geoadmin/mf-geoadmin3/blob/master/src/js/ImportController.js
+import re
 def remove_newline(toclean):
     if toclean:
-        test= toclean.replace('\r\n', '')
+        test=re.sub(r'[\n\r\t\f\v]', ' ', toclean)
     else:
         test=""
     return(test)
@@ -24,7 +25,7 @@ def scrape(source,service,i,layertree, group,layer_data,prefix):
             temp=str(service.contents[i].abstract)+" "+service.contents[i].parent.abstract
         else:
             temp=service.contents[i].abstract
-        layer_data["ABSTRACT"]=temp.replace('\n','') if temp is not None else ""
+        layer_data["ABSTRACT"]=remove_newline(temp)
         layer_data["KEYWORDS"]= ", ".join(service.contents[i].keywords+service.identification.keywords)
         layer_data["LEGEND"]= service.contents[i].styles['default']['legend'] if 'default' in service.contents[i].styles.keys() else ""
         layer_data["CONTACT"]=service.provider.contact.name

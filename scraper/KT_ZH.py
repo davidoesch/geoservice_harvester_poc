@@ -3,9 +3,10 @@
 # Source https://ckan.opendata.swiss/api/3/action/package_search?fq=organization:geoinformation-kanton-zuerich%20AND%20res_format:WMS&rows=10000
 # 
 #https://ckan.opendata.swiss/api/3/action/package_search?fq=organization:geoinformation-kanton-zuerich%20AND%20res_format:WFS&rows=10000
+import re
 def remove_newline(toclean):
     if toclean:
-        test= toclean.replace('\r\n', '')
+        test=re.sub(r'[\n\r\t\f\v]', ' ', toclean)
     else:
         test=""
     return(test)
@@ -25,7 +26,7 @@ def scrape(source,service,i,layertree, group,layer_data,prefix):
             temp=str(service.contents[i].abstract)+" "+service.contents[i].parent.abstract
         else:
             temp=service.contents[i].abstract
-        layer_data["ABSTRACT"]=temp.replace('\n','') if temp is not None else ""
+        layer_data["ABSTRACT"]=remove_newline(temp)
         layer_data["KEYWORDS"]= ", ".join(service.contents[i].keywords+service.identification.keywords)
         layer_data["LEGEND"]= service.contents[i].styles['default']['legend'] if 'default' in service.contents[i].styles.keys() else ""
         layer_data["CONTACT"]=service.provider.contact.email

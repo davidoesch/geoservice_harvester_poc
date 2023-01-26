@@ -1,6 +1,13 @@
 #Create OWSLIB configfile 
 # source https://www.ai.ch/themen/planen-und-bauen/geodaten-und-plaene/geobasisdaten
-
+import re
+def remove_newline(toclean):
+    if toclean:
+        test=re.sub(r'[\n\r\t\f\v]', ' ', toclean)
+    else:
+        test=""
+    return(test)
+    
 #SERVICE WMS
 def scrape(source,service,i,layertree, group,layer_data,prefix):
     type=source['URL']
@@ -16,7 +23,7 @@ def scrape(source,service,i,layertree, group,layer_data,prefix):
             temp=str(service.contents[i].abstract)+" "+service.contents[i].parent.abstract
         else:
             temp=service.contents[i].abstract
-        layer_data["ABSTRACT"]=temp.replace('\n','') 
+        layer_data["ABSTRACT"]=remove_newline(temp) 
         if service.contents[i].keywords != "[]":
             layer_data["KEYWORDS"]= service.identification.keywords
         elif service.contents[i].keywords[0] != None:

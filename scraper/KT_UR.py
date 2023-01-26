@@ -1,8 +1,10 @@
 #Create OWSLIB configfile 
 # According to https://oereb.ur.ch/?basemap=AV&lat=46.87491213706447&lng=8.645001065327628&zoom=13.75 sources and www.geo.ur.ch
+
+import re
 def remove_newline(toclean):
     if toclean:
-        test= toclean.replace('\r\n', '')
+        test=re.sub(r'[\n\r\t\f\v]', ' ', toclean)
     else:
         test=""
     return(test)
@@ -10,7 +12,7 @@ def remove_newline(toclean):
 #SERVICE WMS
 def scrape(source,service,i,layertree, group,layer_data,prefix):
     type=source['URL']
-    
+    #breakpoint()
     if "wms" in type:
         layer_data["OWNER"]= source['Description']
         layer_data["TITLE"]= service.contents[i].title
@@ -22,7 +24,7 @@ def scrape(source,service,i,layertree, group,layer_data,prefix):
             temp=str(service.contents[i].abstract)+" "+service.contents[i].parent.abstract
         else:
             temp=service.contents[i].abstract
-        layer_data["ABSTRACT"]=temp.replace('\r\n','') if temp is not None else ""
+        layer_data["ABSTRACT"]=remove_newline(temp)
         layer_data["KEYWORDS"]= ", ".join(service.contents[i].keywords+service.identification.keywords)
         try: 
             temp=service.contents[i].styles['default-style-'+i]['legend']
