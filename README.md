@@ -108,13 +108,13 @@ This data is generated and validated daily using automated procedures based on g
 |     AG    	|  ![ok](https://placehold.jp/b8e186/000000/200x50.png?text=WMS 'ok')      	|      	|
 |     AI    	|  ![ok](https://placehold.jp/b8e186/000000/200x50.png?text=WMS 'ok')       	| some layers do cover AI AR SG      	|
 |     AR    	|  ![ok](https://placehold.jp/b8e186/000000/200x50.png?text=WMS 'ok')       	| some layers do cover AI AR SG      	|
-|     BE    	|  ![ok](https://placehold.jp/b8e186/000000/200x50.png?text=WMS 'ok')      	|   FR  to be done   	|
+|     BE    	|  ![ok](https://placehold.jp/b8e186/000000/200x50.png?text=WMS 'ok')      	|   Source https://www.agi.dij.be.ch/de/start/geoportal/geodienste/angebot-an-geodiensten.html FR  to be done   	|
 |     BL    	|  ![ok](https://placehold.jp/b8e186/000000/200x50.png?text=WMS-WMTS 'ok')      	|      	|
-|     BS    	|  ![ok](https://placehold.jp/b8e186/000000/200x50.png?text=WMS-WFS-WMTS 'ok')      	|      	|
-|     FR    	|  ![ok](https://placehold.jp/b8e186/000000/200x50.png?text=WMS-WFS 'ok')      	|      	|
-|     GE    	|  ![ok](https://placehold.jp/b8e186/000000/200x50.png?text=WMS 'ok')      	|  3 datasets can not be parsed, see error log in /tools     	|
-|     GL    	|  ![ok](https://placehold.jp/b8e186/000000/200x50.png?text=WMS-WFS 'ok')      	|  Drops WFS warnings, seems to be ok see error log in /tools     	|
-|     GR    	|  ![ok](https://placehold.jp/b8e186/000000/200x50.png?text=WMS-WFS 'ok')      	|      	|
+|     BS    	|  ![ok](https://placehold.jp/b8e186/000000/200x50.png?text=WMS-WFS-WMTS 'ok')      	| Source: https://www.geo.bs.ch/geodaten/geodienste.html     	|
+|     FR    	|  ![ok](https://placehold.jp/b8e186/000000/200x50.png?text=WMS-WFS 'ok')      	|Source https://geo.fr.ch/ags/rest/services      	|
+|     GE    	|  ![ok](https://placehold.jp/b8e186/000000/200x50.png?text=WMS 'ok')      	| Source: https://ge.ch/sitg/services/services-carto/open-data, 3 datasets can not be parsed, see error log in /tools     	|
+|     GL    	|  ![ok](https://placehold.jp/b8e186/000000/200x50.png?text=WMS-WFS 'ok')      	|  Source https://www.gl.ch/verwaltung/bau-und-umwelt/hochbau/raumentwicklung-und-geoinformation/geoportal-kanton-glarus.html/808 Drops WFS warnings, seems to be ok see error log in /tools     	|
+|     GR    	|  ![ok](https://placehold.jp/b8e186/000000/200x50.png?text=WMS-WFS 'ok')      	| Source https://geo.gr.ch/geodienste/katalog     	|
 |     JU    	|  ![ok](https://placehold.jp/b8e186/000000/200x50.png?text=WMS-WFS-WMTS 'ok')      	| no love for WebmerCator     	|
 |     LU    	|  ![ok](https://placehold.jp/de77ae/000000/200x50.png?text=no-service 'ok')        	|     	|
 |     NE    	|  ![ok](https://placehold.jp/de77ae/000000/200x50.png?text=no-service 'ok')       	|       	|
@@ -122,18 +122,18 @@ This data is generated and validated daily using automated procedures based on g
 |     OW    	|  ![ok](https://placehold.jp/de77ae/000000/200x50.png?text=no-service 'ok')      	|         	|
 |     SG    	|  ![ok](https://placehold.jp/b8e186/000000/200x50.png?text=WMS-WFS-WMTS 'ok')      	|       	|
 |     SH    	|  ![ok](https://placehold.jp/b8e186/000000/200x50.png?text=WMS-WFS 'ok')       	|       	|
-|     SO    	|  ![ok](https://placehold.jp/b8e186/000000/200x50.png?text=WMS-WFS-WMTS 'ok')      	|      	|
-|     SZ    	|  ![ok](https://placehold.jp/b8e186/000000/200x50.png?text=WMS-WFS-WMTS 'ok')      	|      	|
-|     TG    	|  ![ok](https://placehold.jp/b8e186/000000/200x50.png?text=WMS-WFS 'ok')       	|       	|
-|     TI    	|  ![ok](https://placehold.jp/b8e186/000000/200x50.png?text=WMS-WFS-WMTS 'ok')      	|      	|
-|     UR    	|  ![ok](https://placehold.jp/b8e186/000000/200x50.png?text=WMS-WFS 'ok')       	|       	|
-|     VD    	|  ![ok](https://placehold.jp/b8e186/000000/200x50.png?text=WMS 'ok')      	|      	|
+|     SO    	|  ![ok](https://placehold.jp/b8e186/000000/200x50.png?text=WMS-WFS-WMTS 'ok')      	| Source: https://so.ch/verwaltung/bau-und-justizdepartement/amt-fuer-geoinformation/geoportal/geodienste/wmts-web-map-tile-service/     	|
+|     SZ    	|  ![ok](https://placehold.jp/b8e186/000000/200x50.png?text=WMS-WFS-WMTS 'ok')      	|Source: https://www.sz.ch/behoerden/vermessung-geoinformation/geoportal/daten-und-dienste.html/72-416-414-1762-1761       	|
+|     TG    	|  ![ok](https://placehold.jp/b8e186/000000/200x50.png?text=WMS-WFS 'ok')       	| Source: scraped them from opendata.swiss API with https://ckan.opendata.swiss/api/3/action/package_search?fq=organization:kanton-thurgau%20AND%20res_format:WMS&rows=10000 and https://ckan.opendata.swiss/api/3/action/package_search?fq=organization:kanton-thurgau%20AND%20res_format:WFS&rows=10000       	|
+|     TI    	|  ![ok](https://placehold.jp/b8e186/000000/200x50.png?text=WMS-WFS-WMTS 'ok')      	|Source https://www4.ti.ch/dt/sg/sai/ugeo/temi/geoportale-ticino/geoportale/geoservizi/      	|
+|     UR    	|  ![ok](https://placehold.jp/b8e186/000000/200x50.png?text=WMS-WFS 'ok')       	| Source https://oereb.ur.ch/?basemap=AV&lat=46.87491213706447&lng=8.645001065327628&zoom=13.75 sources and www.geo.ur.ch     	|
+|     VD    	|  ![ok](https://placehold.jp/b8e186/000000/200x50.png?text=WMS 'ok')      	|Source: https://www.ogc.vd.ch/public/services/OGC/wmsVD/Mapserver/WMSServer?       	|
 |     VS    	|  ![ok](https://placehold.jp/de77ae/000000/200x50.png?text=no-service 'nok')      	|   |
-|     ZG    	|  ![ok](https://placehold.jp/b8e186/000000/200x50.png?text=WMS-WFS-WMTS 'ok')      	|      	|
-|     ZH    	|  ![ok](https://placehold.jp/b8e186/000000/200x50.png?text=WMS-WFS 'ok')       	|       	|
-|     LI    	|  ![ok](https://placehold.jp/b8e186/000000/200x50.png?text=WMS 'ok')        	|       	|
-|     Geodienste |![ok](https://placehold.jp/b8e186/000000/200x50.png?text=WMS-WFS 'ok')   	|  FR IT  to be done       	|       	
-|     Bund   	|  ![ok](https://placehold.jp/b8e186/000000/200x50.png?text=WMS-WMTS 'ok')   	|  FR IT EN RM to be done       	|   
+|     ZG    	|  ![ok](https://placehold.jp/b8e186/000000/200x50.png?text=WMS-WFS-WMTS 'ok')      	| Source https://www.zg.ch/behoerden/direktion-des-innern/geoportal/geodaten-einbinden     	|
+|     ZH    	|  ![ok](https://placehold.jp/b8e186/000000/200x50.png?text=WMS-WFS 'ok')       	| Source https://ckan.opendata.swiss/api/3/action/package_search?fq=organization:geoinformation-kanton-zuerich%20AND%20res_format:WMS&rows=10000 and https://ckan.opendata.swiss/api/3/action/package_search?fq=organization:geoinformation-kanton-zuerich%20AND%20res_format:WFS&rows=10000       	|
+|     LI    	|  ![ok](https://placehold.jp/b8e186/000000/200x50.png?text=WMS 'ok')        	|  Source https://www.llv.li/inhalt/11694/amtsstellen/internet-kartendienst-geowebservices     	|
+|     Geodienste |![ok](https://placehold.jp/b8e186/000000/200x50.png?text=WMS-WFS 'ok')   	|  Source: Source https://github.com/geoadmin/mf-geoadmin3/blob/master/src/js/ImportController.js FR IT  to be done       	|       	
+|     Bund   	|  ![ok](https://placehold.jp/b8e186/000000/200x50.png?text=WMS-WMTS 'ok')   	|  Source: Source https://www.geo.admin.ch/de/geo-dienstleistungen/geodienste/darstellungsdienste-webmapping-webgis-anwendungen.html FR IT EN RM to be done       	|   
 
 
 
