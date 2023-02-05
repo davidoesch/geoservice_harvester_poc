@@ -1,4 +1,15 @@
 # -*- coding: utf-8 -*-
+"""
+Title: Scraper a.k.a Geoharvester
+Author: David Oesch
+Date: 2022-11-05
+Purpose: Retrieve information about a web map service and save it to a file
+Notes: 
+- Uses the OWSLib library to access the geo services
+- Processes the service information to extract the layer names and other details
+- Writes the extracted information to  files for future use
+"""
+
 import os
 import requests
 import csv
@@ -15,10 +26,26 @@ from statistics import mean
 import xml.etree.ElementTree as ET
 import re
 
+#globals
 sys.path.insert(0,config.SOURCE_SCRAPER_DIR)
 
 service_keys=(("WMSGetCap","n.a."),("WMTSGetCap","n.a."),("WFSGetCap","n.a."))
+
 def service_result_empty():
+    """
+    This function creates a dictionary object with default values for various service related fields.
+
+    The default values are represented by the string "n.a." and are used as placeholders until actual data is available.
+
+    The fields in the dictionary include:
+    OWNER, TITLE, NAME, MAPGEO, TREE, GROUP, ABSTRACT, KEYWORDS, LEGEND, CONTACT,
+    SERVICELINK, METADATA, UPDATE, LEGEND, SERVICETYPE, MAX_ZOOM, CENTER_LAT,
+    CENTER_LON, MAPGEO, BBOX.
+
+    Returns:
+        A dictionary object with default values for various service related fields.
+
+    """
     SERVICE_RESULT={"OWNER":"n.a.","TITLE":"n.a","NAME":"n.a","MAPGEO":"n.a.","TREE":"n.a.","GROUP":"","ABSTRACT":"n.a",
     "KEYWORDS":"n.a.","LEGEND":"n.a.","CONTACT":"n.a.","SERVICELINK":"n.a.",
     "METADATA":"n.a.","UPDATE":"n.a.","LEGEND":"n.a.","SERVICETYPE":"n.a.","MAX_ZOOM":"n.a.",
