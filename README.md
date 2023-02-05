@@ -1,4 +1,5 @@
 [![GitHub commit](https://img.shields.io/github/last-commit/davidoesch/geoservice_harvester_poc)](https://github.com/davidoesch/geoservice_harvester_poc/commits/master)
+[![Run scraper](https://github.com/davidoesch/geoservice_harvester_poc/actions/workflows/scheduler-scraper.yml/badge.svg)](https://github.com/davidoesch/geoservice_harvester_poc/actions/workflows/scheduler-scraper.yml)
 
 # Geoservice Harvester POC  open geo services reported by the Swiss Gov Agencies and Third parties
 
