@@ -96,6 +96,22 @@ This data is generated and validated daily using automated procedures based on g
 | TITLE       | Title of the dataset                                                                                             | Text                        |                             |
 | MAPGEO      | permalink to map.geo.admin.ch                                                                                    | URL                         | in case of a WFS only: link will not work
 
+## Dataset title : geodata_stats_CH.csv
+
+**General description** <br>
+This data is generated and validated daily using automated procedures based on geoservices_CH.csv and is used to show overall [quality stats parameter](https://davidoesch.github.io/geoservice_harvester_poc/#anchor-QualityControl)  
+
+**Data** <br>
+
+>**https://github.com/davidoesch/geoservice_harvester_poc/blob/main/data/geodata_stats_CH.csv** <br>
+>*Description:* This dataset  contains OWNER and the total number datasets and the corresponing completness / existence of parameters. It's sole pupose is to serve as source for https://davidoesch.github.io/geoservice_harvester_poc/#anchor-QualityContro <br>
+>*Spatial unit:* Swiss cantons and Principality of Liechtenstein covered <br>
+>*Updated:* daily <br>
+>*Format:* csv <br>
+>*Additional remark*: )
+
+
+
 ## How to add additonal WMS WMTS Services
 1. Add your service to [sources.csv](https://github.com/davidoesch/geoservice_harvester_poc/sources.csv) follwoing the OWNER Naming Convention and URL (only https) to the service endpoint
 2. copy the [default](https://github.com/davidoesch/geoservice_harvester_poc/scraper/default.py) scraper configuration file, rename it based on the OWNER Naming Convention in 1.)
