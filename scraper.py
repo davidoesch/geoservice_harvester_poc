@@ -52,8 +52,17 @@ def service_result_empty():
     "CENTER_LAT":"n.a.","CENTER_LON":"n.a.","MAPGEO":"n.a.","BBOX":"n.a."}
     return SERVICE_RESULT
 
-#Get the Service Version
+
 def get_version(input_url):
+    """
+    Retrieve the version attribute from an XML response from a geoservice at the input URL.
+
+    Parameters:
+    input_url (str): URL to retrieve XML data from.
+
+    Returns:
+    str or None: The version attribute value or None if not found.
+    """
     response = requests.get(input_url)
     xml_data = response.content
 
@@ -66,7 +75,17 @@ def get_version(input_url):
     return(version)
 
 def write_file(input_dict,output_file):
-    #Writing the Result file
+    """
+    Write a dictionary to a CSV file. If the file exists, the data is appended to it.
+    If the file does not exist, a new file is created with a header.
+
+    Parameters:
+    input_dict (dict): Dictionary to be written to file.
+    output_file (str): Path of the output file.
+
+    Returns:
+    None
+    """
     if os.path.isfile(output_file):
         with open(output_file, "a", encoding="utf-8") as f:
             dict_writer = csv.DictWriter(f, fieldnames=list(input_dict.keys()),
@@ -87,12 +106,10 @@ def load_source_collection():
     """Function to open the file of sources and to load all
     sources  into a list of dicts where each list entry corresponds
     to an individual source (an individual line in the data file).
-
-    Parameters:
-    -
-
+    Load a collection of sources from a CSV file into a list of dictionaries.
+    
     Returns:
-    list: A list of dictionaries with source parameters
+    list: A list of dictionaries, where each dictionary represents a source.
     """
     with open(config.SOURCE_COLLECTION_CSV, mode="r", encoding="utf8") as f:
         sources = list(csv.DictReader(f, delimiter=",",
@@ -100,12 +117,14 @@ def load_source_collection():
     return sources
 
 def test_server(source):
-    """identify, if server is online
+    """
+    Test if a server is online and reachable.
+    
     Parameters:
-    string to server with get capabilities url
+    source (dict): A dictionary with GetCapabilities source parameters, including 'URL'.
+    
     Returns:
-    true: if server is online
-    false: if server is note reachable
+    bool: True if the server is online, False otherwise.
     """
     try:
         request = requests.get(source['URL'])
@@ -128,11 +147,24 @@ def test_server(source):
         return False
 
 def get_service_info(source):
-    """Run OGC GetCap extraction
+    """
+    Extracts information from an OGC web service (WMS, WMTS, WFS) using the OWSLib library.
+    This function takes a dictionary called "source" as input and runs an OGC GetCapabilities extraction. \
+    The function tries to determine if the service is a Web Map Service (WMS), Web Map Tile Service (WMTS),\
+    or Web Feature Service (WFS) based on the version number in the source URL. If the version number is invalid, \
+    the function writes an error message to a log file.
+
+    The function then creates a service object using either WebMapService, WebMapTileService, or WebFeatureService \
+    from the OWSLib library. The function then loops through all the layers in the service contents and checks if the \
+    layer is a parent or child layer. For each layer, the function calls write_service_info to write the service information and layer tree.
+
+    If an error occurs, the function writes an error message to a log file and returns False.
+
     Parameters:
-    string to server with get capabilities url
+        source (dict): A dictionary containing the GetCapabilities URL and Description of the OGC web service.
+        
     Returns:
-    Variable for each layer
+        None
     """
   
     
@@ -217,13 +249,18 @@ def get_service_info(source):
         return False
 
 def write_service_info(source,service,i,layertree, group):
-    """Write OGC GetCap results, can be mapped in the future indicdually to each service
+    """
+    Write OGC GetCap results for a service, using a custom or default scraper based on availability.
+    
     Parameters:
-    Var with source
-    Var with GetCap results 
-    String  with layer name
-    String  with tree
-    String  with Groupname  
+    source (dict): Source information.
+    service (var): GetCap results.
+    i (str): Layer name.
+    layertree (str): Tree structure.
+    group (str): Group name.
+    
+    Returns:
+    bool: Returns `True` if the function runs successfully, `False` otherwise.
     """
     #Load Empty parameter list
     layer_data=service_result_empty()
@@ -258,11 +295,37 @@ def write_service_info(source,service,i,layertree, group):
         return False
 
 def write_dataset_info(csv_filename,output_file,output_simple_file):
-    """bring data in NF1 (erste normalform): one entry per data set , service is an attribut
+    """
+    Writes the processed data in First Normal Form (NF1) to two output files:
+    one with detailed information and one with simple information (title and map geo link)
+    This function reads data from a CSV file and processes it to bring the data into first normal f
+    orm (NF1) with one entry per dataset. The processed data is then written to two output files.
+
+    Inputs
+    csv_filename: the name of the input CSV file
+    output_file: the name of the output file for the full dataset information
+    output_simple_file: the name of the output file for the simplified dataset information
+    
+    Functionality
+    1. Store processed dataset IDs in geo_data_done to avoid processing the same dataset multiple times.
+    2. Loop over all rows in the CSV file and filter for unique datasets by comparing the TITLE, NAME, and OWNER fields.
+    3. For each unique dataset, create a new empty layer using the service_result_empty function and update it with the dataset information.
+    4. If there are multiple datasets with the same TITLE, NAME, and OWNER, combine the information from all datasets into a single layer.
+    5. Perform post-processing on the dataset information, such as removing duplicates from the KEYWORDS field and updating the service links \
+    (WMSGetCap, WMTSGetCap, WFSGetCap) based on the SERVICETYPE and SERVICELINK fields in the CSV file.
+    Write the processed dataset information to the output files using the write_file function, with different keys for each file.
+    6.The full dataset information is written to output_file, while a simplified version containing only the OWNER, TITLE, and MAPGEO fields is written to output_simple_file.
+    
     Parameters:
-    Var with source file
-    Var with Outputfile 
-    Var with simplified output file (just title nad map geo link
+    csv_filename: str
+        Path to the source CSV file
+    output_file: str
+        Path to the output file with detailed information
+    output_simple_file: str
+        Path to the output file with simple information
+
+    Returns:
+    None
     """
     # create an empty list to store already processed  datasetUID
     geo_data_done=[] 
@@ -321,6 +384,21 @@ def write_dataset_info(csv_filename,output_file,output_simple_file):
     return
 
 def write_dataset_stats(csv_filename,output_file):
+    """
+    Processes data from a CSV file and writes summary statistics to an output file.
+
+    The function reads data from a CSV file `csv_filename` and calculates the number of occurrences of each `OWNER`
+    and the counts and percentages of entries with non-empty fields (`KEYWORDS`, `ABSTRACT`, `CONTACT`, `METADATA`) for each `OWNER`.
+
+    The summary statistics are then written to an output file `output_file` in CSV format.
+
+    Parameters:
+    - csv_filename (str): The path to the input CSV file
+    - output_file (str): The path to the output CSV file
+
+    Returns:
+    None
+    """
     # Read in the data from the CSV file
     data = []
     with open(csv_filename, mode="r", encoding="utf8") as f:
@@ -370,18 +448,39 @@ def write_dataset_stats(csv_filename,output_file):
 #Main 
 #--------------------------------------------------------------------
 
+# Initialize the logger
 logger = logging.getLogger("scraper LOG")
+
+# Set the logging level to INFO
 logger.setLevel(logging.INFO)
+
+# Create a file handler for logging
 fh = logging.FileHandler(config.LOG_FILE, "a+", "utf-8")
 fh.setLevel(logging.INFO)
-formatter = logging.Formatter(
-    "%(asctime)s - %(name)s - %(levelname)s - %(message)s")
+
+# Create a formatter for the log messages
+formatter = logging.Formatter("%(asctime)s - %(name)s - %(levelname)s - %(message)s")
 fh.setFormatter(formatter)
+
+# Add the file handler to the logger
 logger.addHandler(fh)
 
 
 if __name__ == "__main__":
-    
+    """
+    This code block is the main function of the script. It performs the following operations:
+
+    1 Clean up: Deletes previous log files and scraped data.
+    2 Load sources: Calls the load_source_collection function to get a list of sources to scrape.
+    3 For each source:
+        a. Check if a scraper exists for the source. If not, it sets a message indicating that the default scraper will be used.
+        b. Prints and logs a message indicating the start of the scraper for the source.
+        c. Calls the test_server function to check if the server is online.
+        d. If the server is online, calls the get_service_info function to get information from the service.
+        e. If the server is not online, logs a message indicating the scraper was aborted.
+    4 Create dataset view and stats: Calls the write_dataset_info and write_dataset_stats functions to generate the dataset files.
+    5 Logs and prints a message indicating that the scraper has completed.
+    """
     #Clean up
     try:
         os.remove(config.GEOSERVICES_CH_CSV)
