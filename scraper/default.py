@@ -1,6 +1,26 @@
-#Create OWSLIB configfile 
+"""
+Title: deafult scraper
+Author: David Oesch
+Date: 2022-11-05
+Purpose: This script is be a part of a larger script that scrapes metadata information from 
+    OGC web service metadata files and stores it in a dictionary called "layer_data". 
+    It uses the OWSLib library to access the metadata information and the re library to 
+    clean up the information (remove newlines, HTML fragments, etc.). The script collects 
+    information such as owner, title, name, tree structure, group, abstract, keywords, and legend of the OGC web service layers.
+"""
+
 import re
 def remove_newline(toclean):
+    """
+    Remove newline characters, enumeration, and HTML fragments from a string.
+
+    Args:
+        toclean (str): The string to be cleaned.
+
+    Returns:
+        str: The cleaned string.
+
+    """
     if toclean:
         #remove newlines and ennumernation
         test=re.sub(r'[\n\r\t\f\v]', ' ', toclean)
@@ -13,6 +33,33 @@ def remove_newline(toclean):
 
 #SERVICE WMS
 def scrape(source,service,i,layertree, group,layer_data,prefix):
+    """
+    Extract metadata information from WMS service and stores it in the `layer_data` dictionary.
+    
+    Parameters:
+    source (dict): A dictionary containing information about the source of the service.
+    service (owslib.wms.WebMapService): A WM(T/F)S service object from the owslib library.
+    i (int): An index value pointing to a particular layer in the service.
+    layertree (str): A string representation of the tree structure of the layer.
+    group (str): The name of the parent layer group.
+    layer_data (dict): A dictionary to store the extracted metadata information.
+    prefix (str): A prefix string to add to each key in the `layer_data` dictionary.
+    
+    Returns:
+    None
+    
+    Notes:
+    The extracted metadata information includes the following fields:
+    - OWNER: Description of the source of the service
+    - TITLE: Title of the layer
+    - NAME: Name of the layer
+    - TREE: Tree structure of the layer
+    - GROUP: Name of the parent layer group
+    - ABSTRACT: Abstract information of the layer and access constraints of the service
+    - KEYWORDS: Keywords associated with the layer and the service
+    - LEGEND: Legend URL of the layer
+    - CONTACT: Contact information of the provider of the service
+    """
     type=source['URL']
     #breakpoint()
     #owner
@@ -172,21 +219,29 @@ def scrape(source,service,i,layertree, group,layer_data,prefix):
         layer_data["SERVICETYPE"]="WMS"    
 
         #mapgeolink
-        layer_data["MAPGEO"]= r""+prefix+"layers=WMS||"+service.contents[i].title+"||"+service.url+"?||"+\
-            service.contents[i].id+"||"\
-            +service.identification.version+"&swisssearch="+str(layer_data["CENTER_LAT"])+\
-            "%20"+str(layer_data["CENTER_LON"])+"&zoom="+str(layer_data["MAX_ZOOM"])
-        #breakpoint()
+        if source['Description'] != "Bund":
+            layer_data["MAPGEO"]= r""+prefix+"layers=WMS||"+service.contents[i].title+"||"+service.url+"?||"+\
+                service.contents[i].id+"||"\
+                +service.identification.version+"&swisssearch="+str(layer_data["CENTER_LAT"])+\
+                "%20"+str(layer_data["CENTER_LON"])+"&zoom="+str(layer_data["MAX_ZOOM"])
+        else:
+            layer_data["MAPGEO"]= r""+prefix+"layers=WMS||"+service.contents[i].title+"||"+service.provider.url+"?||"+\
+            service.contents[i].id+"||"+service.identification.version
         return(layer_data)
 
     elif "WMTS" in type or "wmts" in type:
         #servicetype
         layer_data["SERVICETYPE"]="WMTS"    
 
+
         #mapgeolink
-        layer_data["MAPGEO"]= r""+prefix+"layers=WMTS||"+service.contents[i].id+"||"\
-            +service.url+"&swisssearch="+str(layer_data["CENTER_LAT"])+\
-            "%20"+str(layer_data["CENTER_LON"])+"&zoom="+str(layer_data["MAX_ZOOM"])
+        if source['Description'] != "Bund":
+            layer_data["MAPGEO"]= r""+prefix+"layers=WMTS||"+service.contents[i].id+"||"\
+                +service.url+"&swisssearch="+str(layer_data["CENTER_LAT"])+\
+                "%20"+str(layer_data["CENTER_LON"])+"&zoom="+str(layer_data["MAX_ZOOM"])
+        else:
+            layer_data["MAPGEO"]= r""+prefix+"layers="+service.contents[i].id
+
         return(layer_data)
 
     elif "WFS" in type or "wfs" in type:
