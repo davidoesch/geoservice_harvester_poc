@@ -90,28 +90,12 @@ def scrape(source,service,i,layertree, group,layer_data,prefix):
         layer_data["GROUP"] = ""
 
     #abstract
-    temp = service.contents[i].abstract if hasattr(service.contents[i], 'abstract') and service.contents[i].abstract is not None else ""
-    if hasattr(service.contents[i], 'parent') and hasattr(service.contents[i].parent, 'abstract') and service.contents[i].parent.abstract is not None:
-        temp += " " + service.contents[i].parent.abstract
-    if hasattr(service.identification, 'accessconstraints') and service.identification.accessconstraints is not None:
-        temp += " " + service.identification.accessconstraints
+    temp = service.contents[i].abstract
     layer_data["ABSTRACT"] = remove_newline(temp) if temp else ""
 
-
     #keywords
-    if service.contents[i].keywords and service.identification.keywords:
-        keywords1 = [k for k in service.contents[i].keywords if k is not None]
-        keywords2 = [k for k in service.identification.keywords if k is not None]
-        layer_data["KEYWORDS"] = ", ".join(keywords1 + keywords2)
-    elif service.contents[i].keywords:
-        keywords = [k for k in service.contents[i].keywords if k is not None]
-        layer_data["KEYWORDS"] = ", ".join(keywords)
-    elif service.identification.keywords:
-        keywords = [k for k in service.identification.keywords if k is not None]
-        layer_data["KEYWORDS"] = ", ".join(keywords)
-    else:
-        layer_data["KEYWORDS"] = ""
-
+    keywords = [k for k in service.contents[i].keywords]
+    layer_data["KEYWORDS"] = ", ".join(keywords)    
     
     #legend    
     if service.contents[i].styles is not None:
