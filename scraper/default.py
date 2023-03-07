@@ -1,5 +1,5 @@
 """
-Title: deafult scraper
+Title: default scraper
 Author: David Oesch
 Date: 2022-11-05
 Purpose: This script is be a part of a larger script that scrapes metadata information from 
@@ -62,6 +62,7 @@ def scrape(source,service,i,layertree, group,layer_data,prefix):
     """
     type=source['URL']
     #breakpoint()
+
     #owner
     layer_data["OWNER"]= source['Description']
     
@@ -94,7 +95,7 @@ def scrape(source,service,i,layertree, group,layer_data,prefix):
     layer_data["ABSTRACT"] = remove_newline(temp) if temp else ""
 
     #keywords
-    keywords = [k for k in service.contents[i].keywords]
+    keywords = [k for k in service.contents[i].keywords if k is not None]
     layer_data["KEYWORDS"] = ", ".join(keywords)    
     
     #legend    
