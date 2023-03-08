@@ -208,7 +208,7 @@ def scrape(source,service,i,layertree, group,layer_data,prefix):
             layer_data["MAPGEO"]= r""+prefix+"layers=WMS||"+service.contents[i].title+"||"+service.url+"?||"+\
                 service.contents[i].id+"||"\
                 +service.identification.version+"&swisssearch="+str(layer_data["CENTER_LAT"])+\
-                "%20"+str(layer_data["CENTER_LON"])+"&zoom="+str(layer_data["MAX_ZOOM"])
+                " "+str(layer_data["CENTER_LON"])+"&zoom="+str(layer_data["MAX_ZOOM"])
         else:
             layer_data["MAPGEO"]= r""+prefix+"layers=WMS||"+service.contents[i].title+"||"+service.provider.url+"?||"+\
             service.contents[i].id+"||"+service.identification.version
@@ -223,7 +223,7 @@ def scrape(source,service,i,layertree, group,layer_data,prefix):
         if source['Description'] != "Bund":
             layer_data["MAPGEO"]= r""+prefix+"layers=WMTS||"+service.contents[i].id+"||"\
                 +service.url+"&swisssearch="+str(layer_data["CENTER_LAT"])+\
-                "%20"+str(layer_data["CENTER_LON"])+"&zoom="+str(layer_data["MAX_ZOOM"])
+                " "+str(layer_data["CENTER_LON"])+"&zoom="+str(layer_data["MAX_ZOOM"])
         else:
             layer_data["MAPGEO"]= r""+prefix+"layers="+service.contents[i].id
 
