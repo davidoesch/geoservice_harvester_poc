@@ -1,0 +1,3 @@
+KT_GR https://wms.geo.gr.ch/nutzungsplanung?service=WMS&request=GetCapabilities WMS_Nutzungsplanung: can only concatenate str (not "NoneType") to str
+KT_GR https://wms.geo.gr.ch/nutzungsplanung_kommunal?service=WMS&request=GetCapabilities WMS_Nutzungsplanung_Kommunaler_Darstellungsdienst: can only concatenate str (not "NoneType") to str
+KT_GR https://wms.geo.gr.ch/nutzungsplanungsstand?service=WMS&request=GetCapabilities WMS_Nutzungsplanungsstand: can only concatenate str (not "NoneType") to str
