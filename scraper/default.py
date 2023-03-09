@@ -10,6 +10,7 @@ Purpose: This script is be a part of a larger script that scrapes metadata infor
 """
 
 import re
+import math
 def remove_newline(toclean):
     """
     Remove newline characters, enumeration, and HTML fragments from a string.
@@ -163,9 +164,6 @@ def scrape(source,service,i,layertree, group,layer_data,prefix):
     #update
     layer_data["UPDATE"]=""
 
-    #maxzoom
-    layer_data["MAX_ZOOM"]= 7 #this is the map.geo.admin.ch map zoom at approx 1:20k
-
     #center coords LAT
     
     if 'boundingBoxWGS84' in service.contents[i].__dict__ and service.contents[i].boundingBoxWGS84 is not None and len(service.contents[i].boundingBoxWGS84) == 4:
@@ -196,6 +194,30 @@ def scrape(source,service,i,layertree, group,layer_data,prefix):
         layer_data["BBOX"] = "7.88932 46.78485 7.88932 46.78485"
 
 
+    #maxzoom
+    """
+    Calculates the appropriate zoom level for a bounding box in Web Mercator projection.
+            bbox (tuple): A tuple containing the bounding box coordinates in Web Mercator projection
+            as (xmin, ymin, xmax, ymax).
+        map_width_px (int): The width of the map viewer in pixels.
+        screen_dpi (int): The dots per inch (DPI) of the screen.
+    
+    
+        int: The appropriate zoom level for the given bounding box and screen parameters.
+    """
+    map_width_px =800
+    screen_dpi=72
+    
+
+    # Calculate the distance between the two corners of the bounding box in meters.
+    distance = math.sqrt((bbox[2] - bbox[0])**2 + (bbox[3] - bbox[1])**2)
+    
+    # Calculate the appropriate zoom level using the formula for Web Mercator projection.
+    zoom = math.log2((156543.03 * map_width_px) / (256 * screen_dpi * distance))
+    
+    # Round the zoom level to the nearest integer and return it.
+    layer_data["MAX_ZOOM"]= round(zoom) # 7  is the map.geo.admin.ch map zoom at approx 1:20k
+    
 
 
     #no the service specific stuff
@@ -205,10 +227,16 @@ def scrape(source,service,i,layertree, group,layer_data,prefix):
 
         #mapgeolink
         if source['Description'] != "Bund":
+        # for re3 
+        #    layer_data["MAPGEO"]= r""+prefix+"layers=WMS||"+service.contents[i].title+"||"+service.url+"?||"+\
+        #        service.contents[i].id+"||"\
+        #        +service.identification.version+"&swisssearch="+str(layer_data["CENTER_LAT"])+\
+        #        " "+str(layer_data["CENTER_LON"])+"&zoom="+str(layer_data["MAX_ZOOM"])
+        #for web-mapviewer    
             layer_data["MAPGEO"]= r""+prefix+"layers=WMS||"+service.contents[i].title+"||"+service.url+"?||"+\
                 service.contents[i].id+"||"\
-                +service.identification.version+"&swisssearch="+str(layer_data["CENTER_LAT"])+\
-                " "+str(layer_data["CENTER_LON"])+"&zoom="+str(layer_data["MAX_ZOOM"])
+                +service.identification.version+"&lat="+str(layer_data["CENTER_LAT"])+"&lon="+\
+                str(layer_data["CENTER_LON"])+"&z="+str(layer_data["MAX_ZOOM"])
         else:
             layer_data["MAPGEO"]= r""+prefix+"layers=WMS||"+service.contents[i].title+"||"+service.provider.url+"?||"+\
             service.contents[i].id+"||"+service.identification.version
@@ -221,12 +249,17 @@ def scrape(source,service,i,layertree, group,layer_data,prefix):
 
         #mapgeolink
         if source['Description'] != "Bund":
+        # for re3    
+        #    layer_data["MAPGEO"]= r""+prefix+"layers=WMTS||"+service.contents[i].id+"||"\
+        #        +service.url+"&swisssearch="+str(layer_data["CENTER_LAT"])+\
+        #        " "+str(layer_data["CENTER_LON"])+"&zoom="+str(layer_data["MAX_ZOOM"])
+        #for web-mapviewer
             layer_data["MAPGEO"]= r""+prefix+"layers=WMTS||"+service.contents[i].id+"||"\
-                +service.url+"&swisssearch="+str(layer_data["CENTER_LAT"])+\
-                " "+str(layer_data["CENTER_LON"])+"&zoom="+str(layer_data["MAX_ZOOM"])
+                +service.url+"&lat="+str(layer_data["CENTER_LAT"])+"&lon="+\
+                str(layer_data["CENTER_LON"])+"&z="+str(layer_data["MAX_ZOOM"])
+
         else:
             layer_data["MAPGEO"]= r""+prefix+"layers="+service.contents[i].id
-
         return(layer_data)
 
     elif "WFS" in type or "wfs" in type:
