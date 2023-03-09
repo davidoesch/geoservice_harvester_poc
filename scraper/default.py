@@ -254,7 +254,7 @@ def scrape(source,service,i,layertree, group,layer_data,prefix):
         #        +service.url+"&swisssearch="+str(layer_data["CENTER_LAT"])+\
         #        " "+str(layer_data["CENTER_LON"])+"&zoom="+str(layer_data["MAX_ZOOM"])
         #for web-mapviewer
-            layer_data["MAPGEO"]= r""+prefix+"layers=WMTS||"+service.contents[i].id+"||"\
+            layer_data["MAPGEO"]= r""+prefix+"layers=WMTS||"+service.contents[i].title+"||"\
                 +service.url+"&lat="+str(layer_data["CENTER_LAT"])+"&lon="+\
                 str(layer_data["CENTER_LON"])+"&z="+str(layer_data["MAX_ZOOM"])
 
