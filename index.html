@@ -1,103 +1,166 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 
 <head>
-    <meta charset="utf-8">
-    <meta content="width=device-width, initial-scale=1, shrink-to-fit=no" name="viewport">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>PoC GeoServiceHarvester</title>
-    <meta name="author" content="Derek Eder">
-    <meta content="Display any CSV file as a searchable, filterable, pretty HTML table">
-
-    <!-- Bootstrap core CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS"
-        crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdn.datatables.net/1.10.19/css/dataTables.bootstrap4.min.css">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- Include jQuery, DataTables CSS, and DataTables JS -->
+    <link rel="stylesheet" href="https://cdn.datatables.net/1.11.3/css/jquery.dataTables.min.css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        table.dataTable {
+            width: 100% !important;
+        }
+    </style>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.datatables.net/1.11.3/js/jquery.dataTables.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/papaparse@5.3.0/papaparse.min.js"></script>
+    <script>
+        var cookies = document.cookie.split('; ');
+        for (var i = 0; i < cookies.length; i++) {
+            var parts = cookies[i].split('=');
+            if (parts[0] === 'PHPSESSID') {
+                var sessionId = parts[1];
+                // Do something with sessionId
+                document.cookie = "PHPSESSID=" + sessionId + "; SameSite=None; Secure";
+                break;
+            }
+        }
+        $(document).ready(function() {
+            // Load CSV file with PapaParse and DataTables
+            Papa.parse("https://raw.githubusercontent.com/davidoesch/geoservice_harvester_poc/main/data/geoservices_CH.csv", {
+                download: true,
+                header: true,
+                dynamicTyping: true,
+                skipEmptyLines: true,
+                complete: function(results) {
+                    var table = $('#table').DataTable({
+                        "data": results.data,
+                        "columns": [{
+                            "data": "OWNER",
+                            "title": "Owner"
+                        }, {
+                            "data": "TITLE",
+                            "title": "Title"
+                        }, {
+                            "data": "MAPGEO",
+                            "title": "Map Geo",
+                            "render": function(data, type, row) {
+                                if (row.SERVICETYPE === "WFS") {
+                                    return "WFS";
+                                } else if (type === "display") {
+                                    return "<a href='#' onclick='window.open(\"" + data + "\")'>OpenMap</a>";
+                                }
+                                return data;
+                            }
+                        }, {
+                            "data": "ABSTRACT",
+                            "title": "Abstract"
+                        }, {
+                            "data": "KEYWORDS",
+                            "title": "Keywords"
+                        }, {
+                            "data": "CONTACT",
+                            "title": "Contact"
+                        }, {
+                            "data": "LEGEND",
+                            "title": "Legend",
+                            "render": function(data, type, row) {
+                                if (type === "display") {
+                                    return "<a href='#' onclick='window.open(\"" + data + "\")'>Legend</a>";
+                                }
+                                return data;
+                            }
+                        }, {
+                            "data": "METADATA",
+                            "title": "Metadata",
+                            "render": function(data, type, row) {
+                                if (type === "display") {
+                                    return "<a href='#' onclick='window.open(\"" + data + "\")'>Metadata</a>";
+                                }
+                                return data;
+                            }
+                        }, ],
+                        "order": [
+                            [0, "asc"]
+                        ], // Default sort by 'TITLE' ascending
+                        "paging": true, // Enable pagination
+                        "lengthMenu": [10, 25, 50, 100], //
+                        "columnDefs": [{
+                            "targets": 1,
+                            "width": "60%"
+                        }, {
+                            "targets": 3,
+                            "width": "40%"
+                        }, {
+                            "targets": [0, 2, 4, 5, 6, 7],
+                            "width": "10%"
+                        }],
+                        "responsive": true // added option for responsive table
+                    });
+                    $('#toggle-columns').on('click', function() {
+                        table.columns().visible(!table.column(0).visible());
+                    });
+                }
+            });
+        });
+    </script>
 </head>
 
 <body>
-    <div class="container-fluid">
-        <main class="row">
-            <div class="col">
-                <h1>GeoServiceHarvester POC</h1>
-
-                <p>| All DATA attributes: <a
-                        href="https://github.com/davidoesch/geoservice_harvester_poc/blob/main/data/geodata_CH.csv">download</a> || All SERVICES attributes: <a
-                        href="https://github.com/davidoesch/geoservice_harvester_poc/blob/main/data/geoservices_CH.csv">download</a> || Source Code: <a
-                        href="https://github.com/davidoesch/geoservice_harvester_poc">GitHub</a>
-						|| Quality Control: <a
-                        href="#anchor-QualityControl"> view</a> || Last Update: <img src="https://img.shields.io/github/last-commit/davidoesch/geoservice_harvester_poc" alt="LastUpdate"> |
-						</p>
-                <p> Please be patient - over 15'000 datasets to load takes time.  </a>
-                </p>
-
-                <div id="table-container"></div>
-            </div>
-        </main>
-        <footer class="row">
-            <div class="col">
-                <hr>
-                <p class="text-right"><a href="https://github.com/derekeder/csv-to-html-table">CSV to HTML Table</a> by
-                    <a href="http://derekeder.com">Derek
-                        Eder</a></p>
-            </div>
-        </footer>
-    </div>
-    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.2.1/js/bootstrap.bundle.min.js"></script>
-    <script src="js/jquery.csv.min.js"></script>
-    <script src="https://cdn.datatables.net/1.10.19/js/jquery.dataTables.min.js"></script>
-    <script src="https://cdn.datatables.net/1.10.19/js/dataTables.bootstrap4.min.js"></script>
-    <script src="js/csv_to_html_table.js"></script>
-
-    <script>
-        function format_link_legend(link) {
-            if (link)
-                return "<a href='" + link + "' target='_blank'>Legende</a>";
-            else return "";
-        }
-        function format_link_service(link) {
-            if (link)
-                return "<a href='" + link + "' target='_blank'>GetCap</a>";
-            else return "";
-        }
-        function format_link_metadata(link) {
-            if (link)
-                return "<a href='" + link + "' target='_blank'>Metadata</a>";
-            else return "";
-        }
-	function format_link_mapgeo(link) {
-  	return link === "n.a." ? "-" : link ? "<a href='" + link + "' target='_blank'>Map</a>" : "";
-	}
-
-        CsvToHtmlTable.init({
-            csv_path: "data/geodata_simple_CH.csv",
-            element: "table-container",
-            allow_download: true,
-            csv_options: {
-                separator: ',',
-                delimiter: '"'
-            },
-            datatables_options: {
-                paging: true
-            },
-            custom_formatting: [
-                [10, format_link_service],
-                [8, format_link_legend],
-                [11, format_link_metadata],
-                [2, format_link_mapgeo]
-            ]
-        });
-    </script>
-<p>
-<a id="anchor-QualityControl"><b>Quality Control</b></a>
-<br>
-<iframe title="Completness Average:  KEYWORDS,ABSTRACT, CONTACT and METADATA" aria-label="Balken (gestapelt)" id="datawrapper-chart-DuVHo" src="https://datawrapper.dwcdn.net/DuVHo/1/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="721" data-external="1"></iframe><script type="text/javascript">!function(){"use strict";window.addEventListener("message",(function(e){if(void 0!==e.data["datawrapper-height"]){var t=document.querySelectorAll("iframe");for(var a in e.data["datawrapper-height"])for(var r=0;r<t.length;r++){if(t[r].contentWindow===e.source)t[r].style.height=e.data["datawrapper-height"][a]+"px"}}}))}();
-
-</script>
-<br>
-<iframe title="Completness of KEYWORD ABSTRACT CONTACT AND METADATA dataset in services " aria-label="Balken (separat)" id="datawrapper-chart-XoJn7" src="https://datawrapper.dwcdn.net/XoJn7/1/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="711" data-external="1"></iframe><script type="text/javascript">!function(){"use strict";window.addEventListener("message",(function(e){if(void 0!==e.data["datawrapper-height"]){var t=document.querySelectorAll("iframe");for(var a in e.data["datawrapper-height"])for(var r=0;r<t.length;r++){if(t[r].contentWindow===e.source)t[r].style.height=e.data["datawrapper-height"][a]+"px"}}}))}();
-</script>
+    <h1>GeoServiceHarvester POC</h1>
+    <p>| All DATA attributes: <a href="https://github.com/davidoesch/geoservice_harvester_poc/blob/main/data/geodata_CH.csv">download</a> || All SERVICES attributes: <a href="https://github.com/davidoesch/geoservice_harvester_poc/blob/main/data/geoservices_CH.csv">download</a> || Source Code: <a href="https://github.com/davidoesch/geoservice_harvester_poc">GitHub</a> || Quality Control: <a href="#anchor-QualityControl"> view</a> || Last Update: <img src="https://img.shields.io/github/last-commit/davidoesch/geoservice_harvester_poc" alt="LastUpdate"> | </p>
+    <p> Please be patient - over 15'000 datasets to load takes time. </a>
+    </p>
+    <table id="table" class="display">
+        <thead>
+            <tr>
+                <th>OWNER</th>
+                <th>TITLE</th>
+                <th>ABSTRACT</th>
+                <th>KEYWORDS</th>
+                <th>SERVICELINK</th>
+                <th>CONTACT</th>
+                <th>LEGEND</th>
+                <th>METADATA</th>
+            </tr>
+        </thead>
+    </table>
+    <p>
+        <a id="anchor-QualityControl"><b>Quality Control</b></a>
+        <br>
+        <iframe title="Completness Average:  KEYWORDS,ABSTRACT, CONTACT and METADATA" aria-label="Balken (gestapelt)" id="datawrapper-chart-DuVHo" src="https://datawrapper.dwcdn.net/DuVHo/1/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="721" data-external="1"></iframe>
+        <script type="text/javascript">
+            ! function() {
+                "use strict";
+                window.addEventListener("message", (function(e) {
+                    if (void 0 !== e.data["datawrapper-height"]) {
+                        var t = document.querySelectorAll("iframe");
+                        for (var a in e.data["datawrapper-height"])
+                            for (var r = 0; r < t.length; r++) {
+                                if (t[r].contentWindow === e.source) t[r].style.height = e.data["datawrapper-height"][a] + "px"
+                            }
+                    }
+                }))
+            }();
+        </script>
+        <br>
+        <iframe title="Completness of KEYWORD ABSTRACT CONTACT AND METADATA dataset in services " aria-label="Balken (separat)" id="datawrapper-chart-XoJn7" src="https://datawrapper.dwcdn.net/XoJn7/1/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="711" data-external="1"></iframe>
+        <script type="text/javascript">
+            ! function() {
+                "use strict";
+                window.addEventListener("message", (function(e) {
+                    if (void 0 !== e.data["datawrapper-height"]) {
+                        var t = document.querySelectorAll("iframe");
+                        for (var a in e.data["datawrapper-height"])
+                            for (var r = 0; r < t.length; r++) {
+                                if (t[r].contentWindow === e.source) t[r].style.height = e.data["datawrapper-height"][a] + "px"
+                            }
+                    }
+                }))
+            }();
+        </script>
 </body>
 
 </html>
