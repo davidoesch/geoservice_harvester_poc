@@ -458,7 +458,10 @@ def write_dataset_stats(csv_filename,output_file):
                 row[field + '_COUNT'] = counts[field].get(owner, 0)
                 row[field + '_MISSING'] = owner_counts[owner] - counts[field].get(owner, 0)
                 row[field + '_PERCENTAGE'] = percentage
-            row['TOTAL_PERCENTAGE'] = "{:.1%}".format(mean(total_percentages))
+            if len(total_percentages) > 0:
+                row['TOTAL_PERCENTAGE'] = "{:.1%}".format(mean(total_percentages))
+            else:
+                row['TOTAL_PERCENTAGE'] = "0%"
             writer.writerow(row)
     return
 
