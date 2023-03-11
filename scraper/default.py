@@ -194,10 +194,14 @@ def scrape(source,service,i,layertree, group,layer_data,prefix):
 
     if bbox and len(bbox) == 4:
         layer_data["BBOX"] = ' '.join([str(elem) for elem in bbox])
-    else:
-        layer_data["BBOX"] = "7.88932 46.78485 7.88932 46.78485"
+    else:#set to swiss box swiss bbox
+        coordinates_str="5.88932 45.78485 10.88932 47.78485"
+        layer_data["BBOX"] = coordinates_str 
+        coordinates_list = coordinates_str.split()
+        coordinates_float = [float(coord) for coord in coordinates_list]
+        bbox = tuple(coordinates_float)
 
-
+    
     #maxzoom
     """
     Calculates the appropriate zoom level for a bounding box in Web Mercator projection.
@@ -227,9 +231,12 @@ def scrape(source,service,i,layertree, group,layer_data,prefix):
         # Calculate the distance between the two corners of the bounding box in meters.
         distance = math.sqrt((xmax - xmin)**2 + (ymax - ymin)**2)
         
-        # Calculate the appropriate zoom level using the formula for LV95 projection.
-        zoom = 13 - math.floor(math.log2(distance / (map_width_px * screen_dpi / 96 / 0.0254 / 256)))
-        
+        if math.isnan(distance):
+            zoom=1
+        else:
+            # Calculate the appropriate zoom level using the formula for LV95 projection.
+            zoom = 13 - math.floor(math.log2(distance / (map_width_px * screen_dpi / 96 / 0.0254 / 256)))
+            
         # Ensure the zoom level is within the valid range (0 to 13)
         zoom = max(0, min(zoom, 13))
     # Round the zoom level to the nearest integer and return it.
@@ -238,9 +245,18 @@ def scrape(source,service,i,layertree, group,layer_data,prefix):
 
 
     #now the service specific stuff
-    # Convert the latitude from WGS84 to LV95
-    lon_lv95, lat_lv95 = transformer.transform(layer_data["CENTER_LAT"], layer_data["CENTER_LON"])
-                                          
+
+    #see if we work with mf-geoadmin3
+    if "test." not in prefix:
+        if math.isnan(distance):
+            lon_lv95=2663000 
+            lat_lv95=1189572
+        else:
+            # Convert the latitude from WGS84 to LV95
+            lon_lv95, lat_lv95 = transformer.transform(layer_data["CENTER_LAT"], layer_data["CENTER_LON"])
+        
+
+
     if "WMS" in type or "wms" in type:
         #servicetype
         layer_data["SERVICETYPE"]="WMS"    
