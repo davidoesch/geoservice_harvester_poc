@@ -11,6 +11,10 @@ Purpose: This script is be a part of a larger script that scrapes metadata infor
 
 import re
 import math
+from pyproj import Transformer
+# Define a transformer to convert from WGS84 to LV95
+transformer = Transformer.from_crs("EPSG:4326", 'EPSG:2056')
+
 def remove_newline(toclean):
     """
     Remove newline characters, enumeration, and HTML fragments from a string.
@@ -167,17 +171,17 @@ def scrape(source,service,i,layertree, group,layer_data,prefix):
     #center coords LAT
     
     if 'boundingBoxWGS84' in service.contents[i].__dict__ and service.contents[i].boundingBoxWGS84 is not None and len(service.contents[i].boundingBoxWGS84) == 4:
-        layer_data["CENTER_LAT"]=(service.contents[i].boundingBoxWGS84[1]+service.contents[i].boundingBoxWGS84[3])/2
+        layer_data["CENTER_LAT"]=round((service.contents[i].boundingBoxWGS84[1]+service.contents[i].boundingBoxWGS84[3])/2,2)
     elif 'boundingBox' in service.contents[i].__dict__ and service.contents[i].boundingBox is not None and len(service.contents[i].boundingBox) == 4:
-        layer_data["CENTER_LAT"]=(service.contents[i].boundingBox[1]+service.contents[i].boundingBox[3])/2
+        layer_data["CENTER_LAT"]=round((service.contents[i].boundingBox[1]+service.contents[i].boundingBox[3])/2,2)
     else:
         layer_data["CENTER_LAT"] = 46.78485
 
     #center coords LON
     if 'boundingBoxWGS84' in service.contents[i].__dict__ and service.contents[i].boundingBoxWGS84 is not None and len(service.contents[i].boundingBoxWGS84) == 4:
-        layer_data["CENTER_LON"]=(service.contents[i].boundingBoxWGS84[0]+service.contents[i].boundingBoxWGS84[2])/2
+        layer_data["CENTER_LON"]=round((service.contents[i].boundingBoxWGS84[0]+service.contents[i].boundingBoxWGS84[2])/2,2)
     elif 'boundingBox' in service.contents[i].__dict__ and service.contents[i].boundingBox is not None and len(service.contents[i].boundingBox) == 4:
-        layer_data["CENTER_LON"]=(service.contents[i].boundingBox[0]+service.contents[i].boundingBox[2])/2
+        layer_data["CENTER_LON"]=round((service.contents[i].boundingBox[0]+service.contents[i].boundingBox[2])/2,2)
     else:
         layer_data["CENTER_LON"] = 7.88932
     
@@ -206,21 +210,37 @@ def scrape(source,service,i,layertree, group,layer_data,prefix):
         int: The appropriate zoom level for the given bounding box and screen parameters.
     """
     map_width_px =800
-    screen_dpi=72
+    screen_dpi=96
     
-
     # Calculate the distance between the two corners of the bounding box in meters.
     distance = math.sqrt((bbox[2] - bbox[0])**2 + (bbox[3] - bbox[1])**2)
     
-    # Calculate the appropriate zoom level using the formula for Web Mercator projection.
-    zoom = math.log2((156543.03 * map_width_px) / (256 * screen_dpi * distance))
-    
+    if "test." in prefix: #webmapviewer use case
+        # Calculate the appropriate zoom level using the formula for Web Mercator projection.
+        zoom = math.log2((156543.03 * map_width_px) / (256 * screen_dpi * distance))
+    else: #mf-geoadmin3 use case
+       
+        # Transform the WGS84 bbox to LV95
+        xmin, ymin = transformer.transform(bbox[0], bbox[1])
+        xmax, ymax = transformer.transform(bbox[2], bbox[3])
+        
+        # Calculate the distance between the two corners of the bounding box in meters.
+        distance = math.sqrt((xmax - xmin)**2 + (ymax - ymin)**2)
+        
+        # Calculate the appropriate zoom level using the formula for LV95 projection.
+        zoom = 13 - math.floor(math.log2(distance / (map_width_px * screen_dpi / 96 / 0.0254 / 256)))
+        
+        # Ensure the zoom level is within the valid range (0 to 13)
+        zoom = max(0, min(zoom, 13))
     # Round the zoom level to the nearest integer and return it.
     layer_data["MAX_ZOOM"]= round(zoom) # 7  is the map.geo.admin.ch map zoom at approx 1:20k
-    
+   
 
 
-    #no the service specific stuff
+    #now the service specific stuff
+    # Convert the latitude from WGS84 to LV95
+    lon_lv95, lat_lv95 = transformer.transform(layer_data["CENTER_LAT"], layer_data["CENTER_LON"])
+                                          
     if "WMS" in type or "wms" in type:
         #servicetype
         layer_data["SERVICETYPE"]="WMS"    
@@ -228,15 +248,15 @@ def scrape(source,service,i,layertree, group,layer_data,prefix):
         #mapgeolink
         if source['Description'] != "Bund":
         # for re3 
-        #    layer_data["MAPGEO"]= r""+prefix+"layers=WMS||"+service.contents[i].title+"||"+service.url+"?||"+\
-        #        service.contents[i].id+"||"\
-        #        +service.identification.version+"&swisssearch="+str(layer_data["CENTER_LAT"])+\
-        #        " "+str(layer_data["CENTER_LON"])+"&zoom="+str(layer_data["MAX_ZOOM"])
-        #for web-mapviewer    
             layer_data["MAPGEO"]= r""+prefix+"layers=WMS||"+service.contents[i].title+"||"+service.url+"?||"+\
                 service.contents[i].id+"||"\
-                +service.identification.version+"&lat="+str(layer_data["CENTER_LAT"])+"&lon="+\
-                str(layer_data["CENTER_LON"])+"&z="+str(layer_data["MAX_ZOOM"])
+                +service.identification.version+"&E="+str(lon_lv95)+\
+                "&N="+str(lat_lv95)+"&zoom="+str(layer_data["MAX_ZOOM"])
+        #for web-mapviewer    
+        #    layer_data["MAPGEO"]= r""+prefix+"layers=WMS||"+service.contents[i].title+"||"+service.url+"?||"+\
+        #        service.contents[i].id+"||"\
+        #        +service.identification.version+"&lat="+str(layer_data["CENTER_LAT"])+"&lon="+\
+        #        str(layer_data["CENTER_LON"])+"&z="+str(layer_data["MAX_ZOOM"])
         else:
             layer_data["MAPGEO"]= r""+prefix+"layers=WMS||"+service.contents[i].title+"||"+service.provider.url+"?||"+\
             service.contents[i].id+"||"+service.identification.version
@@ -250,13 +270,13 @@ def scrape(source,service,i,layertree, group,layer_data,prefix):
         #mapgeolink
         if source['Description'] != "Bund":
         # for re3    
-        #    layer_data["MAPGEO"]= r""+prefix+"layers=WMTS||"+service.contents[i].id+"||"\
-        #        +service.url+"&swisssearch="+str(layer_data["CENTER_LAT"])+\
-        #        " "+str(layer_data["CENTER_LON"])+"&zoom="+str(layer_data["MAX_ZOOM"])
-        #for web-mapviewer
             layer_data["MAPGEO"]= r""+prefix+"layers=WMTS||"+service.contents[i].id+"||"\
-                +service.url+"&lat="+str(layer_data["CENTER_LAT"])+"&lon="+\
-                str(layer_data["CENTER_LON"])+"&z="+str(layer_data["MAX_ZOOM"])
+                +service.url+"&E="+str(lon_lv95)+\
+                "&N="+str(lat_lv95)+"&zoom="+str(layer_data["MAX_ZOOM"])
+        #for web-mapviewer
+        #    layer_data["MAPGEO"]= r""+prefix+"layers=WMTS||"+service.contents[i].id+"||"\
+        #        +service.url+"&lat="+str(layer_data["CENTER_LAT"])+"&lon="+\
+        #        str(layer_data["CENTER_LON"])+"&z="+str(layer_data["MAX_ZOOM"])
 
         else:
             layer_data["MAPGEO"]= r""+prefix+"layers="+service.contents[i].id
