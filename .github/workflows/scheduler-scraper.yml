@@ -33,6 +33,8 @@ jobs:
     - name: Run Python script
       run: |
         python scraper.py
+      env: # Set the secrets as env var
+        CLIENT_SECRET: ${{ secrets.CLIENT_SECRET }}
       
     - name: Push log files to repo
       uses: github-actions-x/commit@v2.9
