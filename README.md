@@ -19,14 +19,14 @@ If you have any questions, please don't hestitate to contact us: <br>
 ## Datasets of all services : geoservices_CH.csv
 
 **General description** <br>
-This data is generated and validated daily using automated procedures. Note that we only publish data that are OGC compliant. Thus, gaps might be the case. 
+This data is generated and validated weekly using automated procedures. Note that we only publish data that are OGC compliant. Thus, gaps might be the case. 
 
 **Data** <br>
 
 >**https://github.com/davidoesch/geoservice_harvester_poc/blob/main/data/geoservices_CH.csv** <br>
 >*Description:* Data description for each layer separately  <br>
 >*Spatial unit:* Swiss cantons and Principality of Liechtenstein covered <br>
->*Updated:* daily <br>
+>*Updated:* weekly<br>
 >*Format:* csv <br>
 >*Additional remark*: )
 
@@ -53,14 +53,14 @@ This data is generated and validated daily using automated procedures. Note that
 ## Unified data : geodata_CH.csv
 
 **General description** <br>
-This data is generated and validated daily using automated procedures based on geoservices_CH.csv (1NF / normalization). Note that we only publish data that are OGC compliant. Thus, gaps might be the case. 
+This data is generated and validated weekly using automated procedures based on geoservices_CH.csv (1NF / normalization). Note that we only publish data that are OGC compliant. Thus, gaps might be the case. 
 
 **Data** <br>
 
 >**https://github.com/davidoesch/geoservice_harvester_poc/blob/main/data/geodata_CH.csv** <br>
 >*Description:* This dataset has been aggregated to include data from all of its different services. This means that the information is now more comprehensive and includes all relevant occurrences from each of the services that contribute to the dataset. <br>
 >*Spatial unit:* Swiss cantons and Principality of Liechtenstein covered <br>
->*Updated:* daily <br>
+>*Updated:* weekly <br>
 >*Format:* csv <br>
 >*Additional remark*: )
 
@@ -79,16 +79,16 @@ This data is generated and validated daily using automated procedures based on g
 ## Dataset title : geodata_simple_CH.csv
 
 **General description** <br>
-This data is generated and validated daily using automated procedures based on geodata_CH.csv. Note that we only publish data that are OGC compliant. Thus, gaps might be the case. 
+This data is generated and validated weekly using automated procedures based on geodata_CH.csv. Note that we only publish data that are OGC compliant. Thus, gaps might be the case. 
 
 **Data** <br>
 
 >**https://github.com/davidoesch/geoservice_harvester_poc/blob/main/data/geodata_simple_CH.csv** <br>
->*Description:* This dataset  contains only the title of the datset and a link to map.geo.admin.ch. (no link if only WFS is availbale) . It's sole pupose is to serve as source for https://davidoesch.github.io/geoservice_harvester_poc <br>
+>*Description:* This dataset  contains only the title of the datset and a link to map.geo.admin.ch. (no link if only WFS is availbale) . It's sole pupose was to serve as source for https://davidoesch.github.io/geoservice_harvester_poc <br>
 >*Spatial unit:* Swiss cantons and Principality of Liechtenstein covered <br>
->*Updated:* daily <br>
+>*Updated:* weekly <br>
 >*Format:* csv <br>
->*Additional remark*: )
+>*Additional remark*: will be decomissioned soon, since it is not needed)
 
 | Field Name  | Description                                                                                                      | Format                      | Note                        |
 | ----------- | ---------------------------------------------------------------------------------------------------------------- | --------------------------- | --------------------------- |
@@ -99,14 +99,14 @@ This data is generated and validated daily using automated procedures based on g
 ## Dataset title : geodata_stats_CH.csv
 
 **General description** <br>
-This data is generated and validated daily using automated procedures based on geoservices_CH.csv and is used to show overall [quality stats parameter](https://davidoesch.github.io/geoservice_harvester_poc/#anchor-QualityControl)  
+This data is generated and validated weekly using automated procedures based on geoservices_CH.csv and is used to show overall [quality stats parameter](https://davidoesch.github.io/geoservice_harvester_poc/#anchor-QualityControl)  
 
 **Data** <br>
 
 >**https://github.com/davidoesch/geoservice_harvester_poc/blob/main/data/geodata_stats_CH.csv** <br>
 >*Description:* This dataset  contains OWNER and the total number datasets and the corresponing completness / existence of parameters. It's sole pupose is to serve as source for https://davidoesch.github.io/geoservice_harvester_poc/#anchor-QualityContro <br>
 >*Spatial unit:* Swiss cantons and Principality of Liechtenstein covered <br>
->*Updated:* daily <br>
+>*Updated:* weekly <br>
 >*Format:* csv <br>
 >*Additional remark*: )
 
