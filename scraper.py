@@ -25,6 +25,11 @@ from collections import defaultdict
 from statistics import mean
 import xml.etree.ElementTree as ET
 import re
+from oauth2client.service_account import ServiceAccountCredentials
+from googleapiclient.discovery import build 
+from googleapiclient.http import BatchHttpRequest
+import httplib2
+import json
 
 #globals
 sys.path.insert(0,config.SOURCE_SCRAPER_DIR)
@@ -465,6 +470,53 @@ def write_dataset_stats(csv_filename,output_file):
             writer.writerow(row)
     return
 
+def publish_urls(credentials):
+    """
+    Publishes a list of URLs to the Google Indexing API using the provided credentials.
+
+    Parameters:
+    credentials (google.oauth2.credentials.Credentials): The credentials for accessing the Google Indexing API.
+
+    Returns:
+    None: This function does not return any value.
+
+    Raises:
+    Any errors or exceptions that occur during the execution of the function will be raised.
+    """
+    requests = {
+    'https://davidoesch.github.io/geoservice_harvester_poc/':'URL_UPDATED',
+    'https://davidoesch.github.io/geoservice_harvester_poc/data/geoservices_stats_CH.csv':'URL_UPDATED',
+    'https://davidoesch.github.io/geoservice_harvester_poc/data/geodata_CH.csv':'URL_UPDATED'
+    }
+    
+    JSON_KEY_FILE = "geoharvester-indexing-credentials.json"
+    
+    SCOPES = [ "https://www.googleapis.com/auth/indexing" ]
+    ENDPOINT = "https://indexing.googleapis.com/v3/urlNotifications:publish"
+    
+    # Authorize credentials
+    credentials = credentials
+    http = credentials.authorize(httplib2.Http())
+    
+    # Build service
+    service = build('indexing', 'v3', credentials=credentials)
+    
+    def insert_event(request_id, response, exception):
+        if exception is not None:
+            print(exception)
+            logger.info("ERROR updating Google Index API: "+exception)
+        else:
+            print(response)
+            
+    
+    batch = service.new_batch_http_request(callback=insert_event)
+    
+    for url, api_type in requests.items():
+        batch.add(service.urlNotifications().publish(
+            body={"url": url, "type": api_type}))
+    
+    batch.execute()
+
 #Main 
 #--------------------------------------------------------------------
 
@@ -485,6 +537,20 @@ fh.setFormatter(formatter)
 # Add the file handler to the logger
 logger.addHandler(fh)
 
+#check if we work local env or in github actions
+if os.path.exists('geoharvester-indexing-credentials.json'):
+    github=False
+    #get google secret
+    JSON_KEY_FILE = "geoharvester-indexing-credentials.json"
+    SCOPES = [ "https://www.googleapis.com/auth/indexing" ]
+    credentials = ServiceAccountCredentials.from_json_keyfile_name(JSON_KEY_FILE, scopes=SCOPES)
+else:
+    github=True
+    client_secret = os.environ.get('CLIENT_SECRET')
+    client_secret = json.loads(client_secret)
+    client_secret_str = json.dumps(client_secret)
+    SCOPES = [ "https://www.googleapis.com/auth/indexing" ]
+    credentials  = ServiceAccountCredentials.from_json_keyfile_dict(json.loads(client_secret_str), scopes=SCOPES)
 
 if __name__ == "__main__":
     """
@@ -543,6 +609,9 @@ if __name__ == "__main__":
         pass
     write_dataset_info(config.GEOSERVICES_CH_CSV,config.GEODATA_CH_CSV,config.GEODATA_SIMPLE_CH_CSV)
     write_dataset_stats(config.GEOSERVICES_CH_CSV,config.GEOSERVICES_STATS_CH_CSV)
+
+    #Bublish to Google  Index API
+    publish_urls(credentials)
 
     print("scraper completed")    
     logger.info("scraper completed")
