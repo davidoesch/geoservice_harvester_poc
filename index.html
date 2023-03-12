@@ -62,8 +62,8 @@
                                 if (row.SERVICETYPE === "WFS") {
                                     return "WFS";
                                 } else if (type === "display") {
-                                    return "<a href='#' onclick='window.open(\"" + data + "\")'>OpenMap</a>";
-                                }
+									return "<a href='#' onclick='window.open(\"" + data + "\")'>OpenMap</a>";
+								}
                                 return data;
                             }
                         }, {
@@ -77,26 +77,27 @@
                             "title": "Contact"
                         }, {
                             "data": "LEGEND",
-                            "title": "Legend",
-                            "render": function(data, type, row) {
-                                if (type === "display") {
-                                    return "<a href='#' onclick='window.open(\"" + data + "\")'>Legend</a>";
-                                }
-                                return data;
-                            }
+					"title": "Legend",
+					"render": function(data, type, row) {
+						if (type === "display" && data !== null && data !== "") {
+							return "<a href='#' onclick='window.open(\"" + data + "\")'>Legend</a>";
+						}
+						return data;
+					}
+
                         }, {
                             "data": "METADATA",
                             "title": "Metadata",
-                            "render": function(data, type, row) {
-                                if (type === "display") {
-                                    return "<a href='#' onclick='window.open(\"" + data + "\")'>Metadata</a>";
-                                }
-                                return data;
-                            }
+							"render": function(data, type, row) {
+								if (type === "display" && data !== null && data !== "") {
+									return "<a href='#' onclick='window.open(\"" + data + "\")'>Metadata</a>";
+								}
+								return data;
+							}
                         }, ],
                         "order": [
                             [0, "asc"]
-                        ], // Default sort by 'TITLE' ascending
+                        ], // Default sort by 'OWNER' ascending
                         "paging": true, // Enable pagination
                         "lengthMenu": [10, 25, 50, 100], //
                         "columnDefs": [{
