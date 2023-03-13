@@ -61,7 +61,7 @@
                                 if (row.SERVICETYPE === "WFS") {
                                     return "WFS";
                                 } else if (type === "display") {
-									return "<a href='#' onclick='window.open(\"" + data + "\")'>OpenMap</a>";
+									return "<a href='#' onclick='window.open(\"" + data + "\")'>Karte</a>";
 								}
                                 return data;
                             }
@@ -79,7 +79,7 @@
 					"title": "Legend",
 					"render": function(data, type, row) {
 						if (type === "display" && data !== null && data !== "") {
-							return "<a href='#' onclick='window.open(\"" + data + "\")'>Legend</a>";
+							return "<a href='#' onclick='window.open(\"" + data + "\")'>Legende</a>";
 						}
 						return data;
 					}
