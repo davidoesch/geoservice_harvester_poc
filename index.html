@@ -2,17 +2,16 @@
 <html>
 
 <head>
-    <title>PoC GeoServiceHarvester Connecting Switzerland's Government Geodata</title>
+    <title>GeoHarvester Entdecken Sie die Welt der Geodaten - einfach und zugänglich mit GeoServiceHarvester.</title>
     <meta charset="utf-8" />
     <meta name="google-site-verification" content="hDQtbxFwRrQcdcq96Mb9jZW6YI_NHX_FhjBK1bXksqg" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="description" content="The metadata of geoservices such as WMS, WFS, and WMTS are an unexploited treasure that can play a key role in improving the discoverability of geodata. Despite the existence of various geodata catalogs like geocat.ch and opendata.swiss, many datasets remain unfindable. This is because the data and metadata are treated separately, and manually entered metadata catalogs do not contain all the data available in services. By analyzing the metadata of individual federal and cantonal datasets in geoservices, we can improve SEO and make the data more findable. The good news is that geoservice-harvesting is not expensive rocket science, and it can be done automatically using OGC standards and python libraries like owslib.">
-    <meta name="keywords" content="Switzerland, WMS, WFS, WMTS, government agencies, data collection, geospatial data, spatial data infrastructure, geoharvester, metadata, search engine, map services, open data, data sharing,WMS, WFS, WMTS, metadata, geoservices, discoverability, SwissGeodata, geodata catalogs, findability, geocat.ch, opendata.swiss, national metadata catalog, Switzerland, datasets, SEO, NLP, AI, OGC standards, GetCapabilities, proof-of-concept, Geoservice Harvester, python library owslib, monitoring">
-    <meta name="geo.placename" content="Switzerland, Aargau, Appenzell, Basel, Bern, Fribourg, Geneva, Glarus, Graubunden, Jura, Lucerne, Neuchatel, Nidwalden, Obwalden, St. Gallen, Schaffhausen, Schwyz, Solothurn, Thurgau, Ticino, Uri, Valais, Vaud, Zug, Zurich" />
-    <meta name="geo.region" content="CH" />
+    <meta name="description" content="Die Metadaten von Geodiensten wie WMS, WFS und WMTS sind ein ungenutzter Schatz, der eine Schlüsselrolle bei der Verbesserung der Auffindbarkeit von Geodaten spielen kann. Trotz der Existenz verschiedener Geodatenkataloge wie geocat.ch und opendata.swiss, bleiben viele Datensätze unauffindbar. Das liegt daran, dass die Daten und Metadaten getrennt behandelt werden und die manuell eingegebenen Metadatenkataloge nicht alle in den Diensten verfügbaren Daten enthalten. Durch die Analyse der Metadaten der einzelnen Datensätze des Bundes und der Kantone in geoservices können wir die Suchmaschinenoptimierung verbessern und die Daten besser auffindbar machen. Die gute Nachricht ist, dass das Harvesting von Geodiensten keine teure Raketenwissenschaft ist und mithilfe von OGC-Standards und Python-Bibliotheken wie owslib automatisch durchgeführt werden kann.">
+    <meta name="keywords" content="Schweiz, WMS, WFS, WMTS, Behörden, Datensammlung, Geodaten, Geodateninfrastruktur, Geoharvester, Metadaten, Suchmaschine, Kartendienste, offene Daten, Datenaustausch,WMS, WFS, WMTS, Metadaten, Geodienste, Auffindbarkeit, SwissGeodata, Geodatenkataloge, Auffindbarkeit, geocat. ch, opendata.swiss, nationaler Metadatenkatalog, Schweiz, Datensätze, SEO, NLP, AI, OGC Standards, GetCapabilities, proof-of-concept, Geoservice Harvester, python library owslib, monitoring">
+    <meta name="geo.placename" content="Schweiz, Aargau, Appenzell, Basel, Bern, Freiburg, Genf, Glarus, Graubünden, Jura, Luzern, Neuenburg, Nidwalden, Obwalden, St. Gallen, Schaffhausen, Schwyz, Solothurn, Thurgau, Tessin, Uri, Wallis, Waadt, Zug, Zürich" /><meta name="geo.region" content="CH" />
     <meta name="geo.position" content="46.8182;8.2275" />
     <meta name="ICBM" content="46.8182, 8.2275" />
-    <meta name="language" content="en"/>
+    <meta name="language" content="de"/>
     <meta name="author" content="David Oesch Pasquale diDonato"/>
     <meta name="robots" content="index,follow"/>
     <meta name="revisit-after" content="7 days"/>
@@ -122,12 +121,17 @@
 </head>
 
 <body>
-    <h1>GeoServiceHarvester POC Connecting Switzerland's Government Geodata</h1>
-    <p>| All DATA attributes: <a href="https://davidoesch.github.io/geoservice_harvester_poc/data/geodata_CH.csv">download</a> || All SERVICES attributes: <a href="https://davidoesch.github.io/geoservice_harvester_poc/data/geoservices_CH.csv">download</a> || Source Code: <a href="https://github.com/davidoesch/geoservice_harvester_poc">GitHub</a> || Quality Control: <a href="https://davidoesch.github.io/geoservice_harvester_poc/#anchor-QualityControl"> view</a> || Last Update: <img src="https://img.shields.io/github/last-commit/davidoesch/geoservice_harvester_poc" alt="LastUpdate"> | </p>
+    <div style="text-align: center;">
+  	<h1 style="font-family: 'Montserrat', sans-serif; font-size: 48px; font-weight: 700; color: #333;">GeoHarvester</h1>
+    </div>
+
+    <div style="font-family: 'Montserrat', sans-serif; font-size: 24px; font-weight: 700; text-align: center; color: #333;">Entdecken Sie die Schweizer  Geodaten - einfach und zugänglich mit GeoHarvester.</div>
+
+    <p>| Alle DATA-Attribute:: <a href="https://davidoesch.github.io/geoservice_harvester_poc/data/geodata_CH.csv">download</a> || Alle SERVICES Attribute: <a href="https://davidoesch.github.io/geoservice_harvester_poc/data/geoservices_CH.csv">download</a> || Source Code: <a href="https://github.com/davidoesch/geoservice_harvester_poc">GitHub</a> || Qualitätskontrolle: <a href="https://davidoesch.github.io/geoservice_harvester_poc/#anchor-QualityControl"> ansehen</a> || Letzte Aktualisieurng: <img src="https://img.shields.io/github/last-commit/davidoesch/geoservice_harvester_poc" alt="LastUpdate"> | </p>
     <br>
-    <p>GeoHarvester is a comprehensive geodata portal that connects and consolidates the geospatial data from various government agencies in Switzerland. Our platform offers a user-friendly interface for easy access to public geodata services. We provide metadata and information on datasets, including title, owner, abstract, service link, legends, bounding boxes, and even a preview. The platform also features qualitative statistics to aid users in selecting the best data for their needs. Our goal is to make it easier for everyone to access, discover, and use Swiss government geodata.</p>
+    <p>GeoHarvester ist ein Portal, das die offiziellen Geodaten der Dienste der Schweizer Behörden zusammenführt. Wir bieten eine einfache Möglichkeit, auf öffentliche Geodaten zuzugreifen. Unser Ziel ist es, den Zugang und die Nutzung von Geodaten der Schweizer Behörden für jedermann/frau einfach zu machen. Bei uns finden Sie die Daten als Dienst, Metadaten und Informationen zu den Datensätzen wie Titel, Eigentümer, Zusammenfassung, Service-Link, Legenden und sogar eine KartenAnsicht. Wir bieten auch qualitative Statistiken, um Ihnen bei der Auswahl der besten Daten für Ihre Bedürfnisse zu helfen. Unsere Plattform ist benutzerfreundlich und unser Ziel ist es, Ihnen den direktesten Zugang zu Geodaten zu bieten.</p>
     <br>
-    <p> Please be patient - over 15'000 datasets to load takes time. </p>
+    <p> Bitte haben Sie etwas Geduld - das Laden von über 15'000 Datensätzen braucht seine Zeit </p>
     </p>
     <table id="table" class="display">
         <thead>
