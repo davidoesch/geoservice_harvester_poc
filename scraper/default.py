@@ -11,9 +11,45 @@ Purpose: This script is be a part of a larger script that scrapes metadata infor
 
 import re
 import math
+import requests
+import json
+import time
+from requests.utils import requote_uri
 from pyproj import Transformer
 # Define a transformer to convert from WGS84 to LV95
 transformer = Transformer.from_crs("EPSG:4326", 'EPSG:2056')
+
+def shorten_mapgeo(mapgeo):
+    # Set the API endpoint URL
+    url = "https://s.geo.admin.ch/"
+
+    # Set the headers for the POST request
+    headers = {
+        'content-type': 'application/json; charset=UTF-8',
+        'origin': 'https://map.geo.admin.ch',
+        'referer': 'https://map.geo.admin.ch/',
+        'user-agent': 'GeoHarvester e2e' # Only to be nice
+    }
+
+    # Try the request up to 3 times    
+    for i in range(3):
+        # Make the POST request    
+        r = requests.post(url=url, data=json.dumps({'url': requote_uri(mapgeo)}), headers=headers)
+        # Code to execute if status code is 2xx (i.e. 200, 201, 202, etc.)
+        if r.status_code // 100 == 2:
+            # Convert the response data to a JSON object
+            data = r.json()
+            # Return the response data if the request was successful
+            return data['shorturl']
+        else:
+            # If the response was not successful, print an error message
+            print(f"Request failed with status code {r.status_code}. Retrying...")
+            # Wait for a few seconds before retrying
+            time.sleep(5)
+    # If all retries fail, print an error message and return None
+    print("Request failed after 3 retries. providing no shorted URL")
+    data=mapgeo
+    return data
 
 def remove_newline(toclean):
     """
@@ -264,18 +300,18 @@ def scrape(source,service,i,layertree, group,layer_data,prefix):
         #mapgeolink
         if source['Description'] != "Bund":
         # for re3 
-            layer_data["MAPGEO"]= r""+prefix+"layers=WMS||"+service.contents[i].title+"||"+service.url+"?||"+\
+            layer_data["MAPGEO"]= shorten_mapgeo(r""+prefix+"layers=WMS||"+service.contents[i].title+"||"+service.url+"?||"+\
                 service.contents[i].id+"||"\
                 +service.identification.version+"&E="+str(lon_lv95)+\
-                "&N="+str(lat_lv95)+"&zoom="+str(layer_data["MAX_ZOOM"])
+                "&N="+str(lat_lv95)+"&zoom="+str(layer_data["MAX_ZOOM"]))
         #for web-mapviewer    
-        #    layer_data["MAPGEO"]= r""+prefix+"layers=WMS||"+service.contents[i].title+"||"+service.url+"?||"+\
+        #    layer_data["MAPGEO"]= shorten_mapgeo(r""+prefix+"layers=WMS||"+service.contents[i].title+"||"+service.url+"?||"+\
         #        service.contents[i].id+"||"\
         #        +service.identification.version+"&lat="+str(layer_data["CENTER_LAT"])+"&lon="+\
-        #        str(layer_data["CENTER_LON"])+"&z="+str(layer_data["MAX_ZOOM"])
+        #        str(layer_data["CENTER_LON"])+"&z="+str(layer_data["MAX_ZOOM"]))
         else:
-            layer_data["MAPGEO"]= r""+prefix+"layers=WMS||"+service.contents[i].title+"||"+service.provider.url+"?||"+\
-            service.contents[i].id+"||"+service.identification.version
+            layer_data["MAPGEO"]= shorten_mapgeo(r""+prefix+"layers=WMS||"+service.contents[i].title+"||"+service.provider.url+"?||"+\
+            service.contents[i].id+"||"+service.identification.version)
         return(layer_data)
 
     elif "WMTS" in type or "wmts" in type:
@@ -286,16 +322,16 @@ def scrape(source,service,i,layertree, group,layer_data,prefix):
         #mapgeolink
         if source['Description'] != "Bund":
         # for re3    
-            layer_data["MAPGEO"]= r""+prefix+"layers=WMTS||"+service.contents[i].id+"||"\
+            layer_data["MAPGEO"]= shorten_mapgeo(r""+prefix+"layers=WMTS||"+service.contents[i].id+"||"\
                 +service.url+"&E="+str(lon_lv95)+\
-                "&N="+str(lat_lv95)+"&zoom="+str(layer_data["MAX_ZOOM"])
+                "&N="+str(lat_lv95)+"&zoom="+str(layer_data["MAX_ZOOM"]))
         #for web-mapviewer
-        #    layer_data["MAPGEO"]= r""+prefix+"layers=WMTS||"+service.contents[i].id+"||"\
+        #    layer_data["MAPGEO"]= shorten_mapgeo(r""+prefix+"layers=WMTS||"+service.contents[i].id+"||"\
         #        +service.url+"&lat="+str(layer_data["CENTER_LAT"])+"&lon="+\
-        #        str(layer_data["CENTER_LON"])+"&z="+str(layer_data["MAX_ZOOM"])
+        #        str(layer_data["CENTER_LON"])+"&z="+str(layer_data["MAX_ZOOM"]))
 
         else:
-            layer_data["MAPGEO"]= r""+prefix+"layers="+service.contents[i].id
+            layer_data["MAPGEO"]= shorten_mapgeo(r""+prefix+"layers="+service.contents[i].id)
         return(layer_data)
 
     elif "WFS" in type or "wfs" in type:
