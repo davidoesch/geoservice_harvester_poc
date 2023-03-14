@@ -12,3 +12,6 @@ DEAD_SERVICES_PATH=os.path.join("tools")
 #MAPGEO_PREFIX="https://test.map.geo.admin.ch/?bgLayer=ch.swisstopo.leichte-basiskarte_world.vt&"
 MAPGEO_PREFIX="https://map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&"
 
+#Google Indexing API
+JSON_KEY_FILE = "geoharvester-indexing-credentials.json"
+SCOPES = [ "https://www.googleapis.com/auth/indexing" ]

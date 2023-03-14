@@ -472,7 +472,8 @@ def write_dataset_stats(csv_filename,output_file):
 
 def publish_urls(credentials):
     """
-    Publishes a list of URLs to the Google Indexing API using the provided credentials.
+    Publishes a list of URLs to the Google Indexing API using the provided credentials. 
+    See https://www.jcchouinard.com/google-indexing-api-with-python/
 
     Parameters:
     credentials (google.oauth2.credentials.Credentials): The credentials for accessing the Google Indexing API.
@@ -489,8 +490,7 @@ def publish_urls(credentials):
     'https://davidoesch.github.io/geoservice_harvester_poc/data/geodata_CH.csv':'URL_UPDATED'
     }
     
-    JSON_KEY_FILE = "geoharvester-indexing-credentials.json"
-    
+        
     SCOPES = [ "https://www.googleapis.com/auth/indexing" ]
     ENDPOINT = "https://indexing.googleapis.com/v3/urlNotifications:publish"
     
@@ -538,19 +538,22 @@ fh.setFormatter(formatter)
 logger.addHandler(fh)
 
 #check if we work local env or in github actions
-if os.path.exists('geoharvester-indexing-credentials.json'):
+if os.path.exists(config.JSON_KEY_FILE):
     github=False
     #get google secret
-    JSON_KEY_FILE = "geoharvester-indexing-credentials.json"
-    SCOPES = [ "https://www.googleapis.com/auth/indexing" ]
-    credentials = ServiceAccountCredentials.from_json_keyfile_name(JSON_KEY_FILE, scopes=SCOPES)
+    config.SCOPES
+    if os.path.getsize(config.JSON_KEY_FILE) > 0:
+        credentials = ServiceAccountCredentials.from_json_keyfile_name(config.JSON_KEY_FILE, scopes=config.SCOPES)
+        credentials_valid=True
+    else:
+        credentials_valid=False
 else:
     github=True
     client_secret = os.environ.get('CLIENT_SECRET')
     client_secret = json.loads(client_secret)
     client_secret_str = json.dumps(client_secret)
-    SCOPES = [ "https://www.googleapis.com/auth/indexing" ]
-    credentials  = ServiceAccountCredentials.from_json_keyfile_dict(json.loads(client_secret_str), scopes=SCOPES)
+    credentials  = ServiceAccountCredentials.from_json_keyfile_dict(json.loads(client_secret_str), scopes=config.SCOPES)
+    credentials_valid=True
 
 if __name__ == "__main__":
     """
@@ -611,7 +614,10 @@ if __name__ == "__main__":
     write_dataset_stats(config.GEOSERVICES_CH_CSV,config.GEOSERVICES_STATS_CH_CSV)
 
     #Bublish to Google  Index API
-    publish_urls(credentials)
+    if credentials_valid:
+        publish_urls(credentials)
+    else:
+        logger.info(" Google Indexing API not updated, non valid json (0KB)")
 
     print("scraper completed")    
     logger.info("scraper completed")
