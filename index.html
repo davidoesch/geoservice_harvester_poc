@@ -27,6 +27,23 @@
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="https://cdn.datatables.net/1.11.3/js/jquery.dataTables.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/papaparse@5.3.0/papaparse.min.js"></script>
+	<script>
+function copyLink(data, button) {
+    var input = document.createElement('input');
+    input.setAttribute('value', data);
+    document.body.appendChild(input);
+    input.select();
+    document.execCommand('copy');
+    document.body.removeChild(input);
+    $(button).addClass('btn-danger');
+    setTimeout(function() {
+        $(button).removeClass('btn-danger');
+    }, 1000);
+}
+
+
+
+    </script>
     <script>
         var cookies = document.cookie.split('; ');
         for (var i = 0; i < cookies.length; i++) {
@@ -50,13 +67,13 @@
                         "data": results.data,
                         "columns": [{
                             "data": "OWNER",
-                            "title": "Owner"
+                            "title": "Behörde"
                         }, {
                             "data": "TITLE",
                             "title": "Title"
                         }, {
                             "data": "MAPGEO",
-                            "title": "Map Geo",
+                            "title": "Karte",
                             "render": function(data, type, row) {
                                 if (row.SERVICETYPE === "WFS") {
                                     return "WFS";
@@ -66,23 +83,40 @@
                                 return data;
                             }
                         }, {
+                            "data": "SERVICELINK",
+                            "title": "Dienst",
+							"render": function(data, type, row) {
+									if (row.SERVICETYPE === "WMS") {
+									   return  "<button onclick='copyLink(\"" + data + "\", this)'>Kopiere WMS</button>";
+									}
+									if (row.SERVICETYPE === "WMTS") {
+										return "<button onclick='copyLink(\"" + data + "\", this)'>Kopiere WMTS</button>";
+									}
+									if (row.SERVICETYPE === "WFS") {
+										return "<button onclick='copyLink(\"" + data + "\", this)'>Kopiere WFS</button>";
+									}
+							   
+								return data;
+							}
+
+                        },{
                             "data": "ABSTRACT",
-                            "title": "Abstract"
+                            "title": "Beschreibung"
                         }, {
                             "data": "KEYWORDS",
                             "title": "Keywords"
                         }, {
                             "data": "CONTACT",
-                            "title": "Contact"
+                            "title": "Kontakt"
                         }, {
                             "data": "LEGEND",
-					"title": "Legend",
-					"render": function(data, type, row) {
-						if (type === "display" && data !== null && data !== "") {
-							return "<a href='#' onclick='window.open(\"" + data + "\")'>Legende</a>";
-						}
-						return data;
-					}
+							"title": "Legende",
+							"render": function(data, type, row) {
+								if (type === "display" && data !== null && data !== "") {
+									return "<a href='#' onclick='window.open(\"" + data + "\")'>Legende</a>";
+								}
+								return data;
+							}
 
                         }, {
                             "data": "METADATA",
@@ -114,6 +148,10 @@
                     $('#toggle-columns').on('click', function() {
                         table.columns().visible(!table.column(0).visible());
                     });
+$("button").click(function(){
+  $(this).toggleClass("btn-danger");
+});
+
                 }
             });
         });
@@ -141,6 +179,7 @@
                 <th>OWNER</th>
                 <th>TITLE</th>
                 <th>ABSTRACT</th>
+				<th>SERVICELINK</th>
                 <th>KEYWORDS</th>
                 <th>SERVICELINK</th>
                 <th>CONTACT</th>
