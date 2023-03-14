@@ -164,8 +164,6 @@ def scrape(source,service,i,layertree, group,layer_data,prefix):
     else:
         layer_data["LEGEND"] = ""
 
-
-
     
     #contact
     if hasattr(service, 'provider'):
@@ -176,14 +174,14 @@ def scrape(source,service,i,layertree, group,layer_data,prefix):
     else:
         layer_data["CONTACT"] = ""
 
-
+    
     #servicelink
-    if hasattr(service, 'request'):
-        layer_data["SERVICELINK"] = service.request
-    elif hasattr(service, 'url'):
-        layer_data["SERVICELINK"] = service.url
+    service_link=source['URL']
+    if "?" in service_link:
+        layer_data["SERVICELINK"] = service_link.split("?")[0]
     else:
-        layer_data["SERVICELINK"] = ""
+        layer_data["SERVICELINK"] = source['URL']
+        
 
     #metadata
     try:
