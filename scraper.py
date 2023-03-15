@@ -227,7 +227,7 @@ def get_service_info(source):
                     if "WMS" in source['URL'] or "wms" in source['URL']:
                         try:
                             #check if root layer is loadable, by trying to call a Get Map, if it is blocked it will raise an error
-                            service.getmap(layers=[i], srs='EPSG:4326', bbox=(service.contents[i].boundingBoxWGS84[0],service.contents[i].boundingBoxWGS84[1],service.contents[i].boundingBoxWGS84[2],service.contents[i].boundingBoxWGS84[3]), size=(256,256), format='image/png', transparent=True, timeout=20)
+                            service.getmap(layers=[i], srs='EPSG:4326', bbox=(service.contents[i].boundingBoxWGS84[0],service.contents[i].boundingBoxWGS84[1],service.contents[i].boundingBoxWGS84[2],service.contents[i].boundingBoxWGS84[3]), size=(256,256), format='image/png', transparent=True, timeout=10)
                             #then extract abstract etc
                             layertree= source['Description']+"/"+service.identification.title+"/"+i.replace('"', '') if service.identification.title is not None else source['Description']+"/"+i.replace('"', '')
                             write_service_info(source,service,(service.contents[i].id),layertree,group=i)                
