@@ -5,7 +5,7 @@
       <Option/>
       {{TITLE}}
     </customproperties>
-    <layer-tree-layer name="{{NAME}}" patch_size="-1,-1" providerKey="{{OWNER}}" legend_exp="{{XMAX}} {{YMAX}} {{YMIN} {{XMIN}}} " expanded="1" legend_split_behavior="0" id={{SERVICELINK}} source="contextualWMSLegend=0&amp;crs=EPSG:3857&amp;dpiMode=7&amp;featureCount=10&amp;format=image/png&amp;layers=BI_KirchenReligion
+    <layer-tree-layer name="{{NAME}}" patch_size="-1,-1" providerKey="{{OWNER}}" legend_exp=" " expanded="1" legend_split_behavior="0" id={{SERVICELINK}} source="contextualWMSLegend=0&amp;crs=EPSG:3857&amp;dpiMode=7&amp;featureCount=10&amp;format=image/png&amp;layers=BI_KirchenReligion
 &amp;styles=default&amp;tileDimensions=Time%3Dcurrent&amp;tileMatrixSet=3857_18&amp;tilePixelRatio=0&amp;url=https://wms.geo.bs.ch/" checked="Qt::Checked">
       <customproperties>
         <Option/>
