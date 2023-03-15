@@ -15,10 +15,10 @@
   <maplayers>
     <maplayer refreshOnNotifyEnabled="0" hasScaleBasedVisibilityFlag="0" autoRefreshEnabled="0" styleCategories="AllStyleCategories" refreshOnNotifyMessage="" minScale="1e+08" type="raster" legendPlaceholderImage="" maxScale="0" autoRefreshTime="0">
       <extent>
-        <xmin>572209.12199419806711376</xmin>
-        <ymin>5684426.27722420170903206</ymin>
-        <xmax>1277677.24794415221549571</xmax>
-        <ymax>6145313.08259945549070835</ymax>
+        <xmin>{{XMIN}}</xmin>
+        <ymin>{{YMIN}}</ymin>
+        <xmax>{{XMAX}}</xmax>
+        <ymax>{{YMAX}}/ymax>
       </extent>
       <wgs84extent>
         <xmin>5.14024199999999976</xmin>
