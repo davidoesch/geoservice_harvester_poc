@@ -298,18 +298,27 @@ def scrape(source,service,i,layertree, group,layer_data,prefix):
         #mapgeolink
         if source['Description'] != "Bund":
         # for re3 
-            layer_data["MAPGEO"]= shorten_mapgeo(r""+prefix+"layers=WMS||"+service.contents[i].title+"||"+service.url+"?||"+\
+            # UNCOMMENT THIS SECTION and REMOVE SECTION below when not running on github since shortening takes time!
+            # layer_data["MAPGEO"]= shorten_mapgeo(r""+prefix+"layers=WMS||"+service.contents[i].title+"||"+service.url+"?||"+\
+            #    service.contents[i].id+"||"\
+            #    +service.identification.version+"&E="+str(lon_lv95)+\
+            #    "&N="+str(lat_lv95)+"&zoom="+str(layer_data["MAX_ZOOM"]))
+            layer_data["MAPGEO"]= r""+prefix+"layers=WMS||"+service.contents[i].title+"||"+service.url+"?||"+\
                 service.contents[i].id+"||"\
                 +service.identification.version+"&E="+str(lon_lv95)+\
-                "&N="+str(lat_lv95)+"&zoom="+str(layer_data["MAX_ZOOM"]))
+                "&N="+str(lat_lv95)+"&zoom="+str(layer_data["MAX_ZOOM"])
+            
         #for web-mapviewer    
         #    layer_data["MAPGEO"]= shorten_mapgeo(r""+prefix+"layers=WMS||"+service.contents[i].title+"||"+service.url+"?||"+\
         #        service.contents[i].id+"||"\
         #        +service.identification.version+"&lat="+str(layer_data["CENTER_LAT"])+"&lon="+\
         #        str(layer_data["CENTER_LON"])+"&z="+str(layer_data["MAX_ZOOM"]))
         else:
-            layer_data["MAPGEO"]= shorten_mapgeo(r""+prefix+"layers=WMS||"+service.contents[i].title+"||"+service.provider.url+"?||"+\
-            service.contents[i].id+"||"+service.identification.version)
+            # UNCOMMENT THIS SECTION and REMOVE SECTION below when not running on github since shortening takes time!
+            #layer_data["MAPGEO"]= shorten_mapgeo(r""+prefix+"layers=WMS||"+service.contents[i].title+"||"+service.provider.url+"?||"+\
+            #service.contents[i].id+"||"+service.identification.version)
+            layer_data["MAPGEO"]= r""+prefix+"layers=WMS||"+service.contents[i].title+"||"+service.provider.url+"?||"+\
+            service.contents[i].id+"||"+service.identification.version
         return(layer_data)
 
     elif "WMTS" in type or "wmts" in type:
@@ -320,9 +329,13 @@ def scrape(source,service,i,layertree, group,layer_data,prefix):
         #mapgeolink
         if source['Description'] != "Bund":
         # for re3    
-            layer_data["MAPGEO"]= shorten_mapgeo(r""+prefix+"layers=WMTS||"+service.contents[i].id+"||"\
+         # UNCOMMENT THIS SECTION and REMOVE SECTION below when not running on github since shortening takes time!
+         #   layer_data["MAPGEO"]= shorten_mapgeo(r""+prefix+"layers=WMTS||"+service.contents[i].id+"||"\
+         #       +service.url+"&E="+str(lon_lv95)+\
+         #       "&N="+str(lat_lv95)+"&zoom="+str(layer_data["MAX_ZOOM"]))
+            layer_data["MAPGEO"]= r""+prefix+"layers=WMTS||"+service.contents[i].id+"||"\
                 +service.url+"&E="+str(lon_lv95)+\
-                "&N="+str(lat_lv95)+"&zoom="+str(layer_data["MAX_ZOOM"]))
+                "&N="+str(lat_lv95)+"&zoom="+str(layer_data["MAX_ZOOM"])
         #for web-mapviewer
         #    layer_data["MAPGEO"]= shorten_mapgeo(r""+prefix+"layers=WMTS||"+service.contents[i].id+"||"\
         #        +service.url+"&lat="+str(layer_data["CENTER_LAT"])+"&lon="+\
