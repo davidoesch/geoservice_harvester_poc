@@ -29,7 +29,7 @@
     <script src="https://cdn.jsdelivr.net/npm/papaparse@5.3.0/papaparse.min.js"></script>
 	<script>
 
-function downloadQGISProjectWMS(data,owner, name,title,bbox) {
+function downloadQGISProjectWMS(data,name,owner,title,bbox) {
     var xhr = new XMLHttpRequest();
     xhr.open('GET', "https://raw.githubusercontent.com/davidoesch/geoservice_harvester_poc/main/qgis_wms_template.qlr");
     xhr.responseType = 'text';
@@ -54,7 +54,7 @@ function downloadQGISProjectWMS(data,owner, name,title,bbox) {
             var url = URL.createObjectURL(blob);
             var a = document.createElement("a");
             a.href = url;
-            a.download = name + "_" + owner + ".qgs";
+            a.download = name + "_" + owner + ".qlr";
             document.body.appendChild(a);
             a.click();
             document.body.removeChild(a);
@@ -64,7 +64,7 @@ function downloadQGISProjectWMS(data,owner, name,title,bbox) {
     xhr.send();
 }
 
-function downloadQGISProjectWMTS(data,owner, name,title,bbox) {
+function downloadQGISProjectWMTS(data,name,owner,title,bbox) {
     var xhr = new XMLHttpRequest();
     xhr.open('GET', "https://raw.githubusercontent.com/davidoesch/geoservice_harvester_poc/main/qgis_wmts_template.qlr");
     xhr.responseType = 'text';
@@ -79,6 +79,7 @@ function downloadQGISProjectWMTS(data,owner, name,title,bbox) {
             var projectXml = xhr.responseText;
             projectXml = projectXml.replace("{{SERVICELINK}}", data);
             projectXml = projectXml.replace("{{NAME}}", name);
+			projectXml = projectXml.replace("{{NAME}}", name);
 			projectXml = projectXml.replace("{{TITLE}}", title);
 			projectXml = projectXml.replace("{{OWNER}}", owner);
 			projectXml = projectXml.replace("{{XMAX}}", xmax);
@@ -89,7 +90,7 @@ function downloadQGISProjectWMTS(data,owner, name,title,bbox) {
             var url = URL.createObjectURL(blob);
             var a = document.createElement("a");
             a.href = url;
-            a.download = name + "_" + owner + ".qgs";
+            a.download = name + "_" + owner + ".qlr";
             document.body.appendChild(a);
             a.click();
             document.body.removeChild(a);
@@ -99,7 +100,7 @@ function downloadQGISProjectWMTS(data,owner, name,title,bbox) {
     xhr.send();
 }
 
-function downloadQGISProjectWFS(data,owner, name,title,bbox) {
+function downloadQGISProjectWFS(data,name,owner,title,bbox) {
     var xhr = new XMLHttpRequest();
     xhr.open('GET', "https://raw.githubusercontent.com/davidoesch/geoservice_harvester_poc/main/qgis_wfs_template.qlr");
     xhr.responseType = 'text';
@@ -124,7 +125,7 @@ function downloadQGISProjectWFS(data,owner, name,title,bbox) {
             var url = URL.createObjectURL(blob);
             var a = document.createElement("a");
             a.href = url;
-            a.download = name + "_" + owner + ".qgs";
+            a.download = name + "_" + owner + ".qlr";
             document.body.appendChild(a);
             a.click();
             document.body.removeChild(a);
