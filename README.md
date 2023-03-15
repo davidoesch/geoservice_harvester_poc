@@ -114,9 +114,8 @@ This data is generated and validated weekly using automated procedures based on 
 
 ## How to add additonal WMS WMTS Services
 1. Add your service to [sources.csv](https://github.com/davidoesch/geoservice_harvester_poc/sources.csv) follwoing the OWNER Naming Convention and URL (only https) to the service endpoint
-2. copy the [default](https://github.com/davidoesch/geoservice_harvester_poc/scraper/default.py) scraper configuration file, rename it based on the OWNER Naming Convention in 1.)
-3. Adapt the scraper configuration file. Recommended procedure: Add a breakpoint on the first run, follow your nose to find the correct keys.Don't add parameters
-4. Pray
+2. make a pull request
+
 
 ## Current status Provider & Services
 
