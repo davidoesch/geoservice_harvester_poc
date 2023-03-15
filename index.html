@@ -28,18 +28,132 @@
     <script src="https://cdn.datatables.net/1.11.3/js/jquery.dataTables.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/papaparse@5.3.0/papaparse.min.js"></script>
 	<script>
-function copyLink(data, button) {
-    var input = document.createElement('input');
-    input.setAttribute('value', data);
-    document.body.appendChild(input);
-    input.select();
-    document.execCommand('copy');
-    document.body.removeChild(input);
-    $(button).addClass('btn-danger');
+
+function downloadQGISProjectWMS(data,owner, name,title,bbox) {
+    var xhr = new XMLHttpRequest();
+    xhr.open('GET', "https://raw.githubusercontent.com/davidoesch/geoservice_harvester_poc/main/qgis_wms_template.qlr");
+    xhr.responseType = 'text';
+    xhr.onreadystatechange = function () {
+        if (xhr.readyState === 4 && xhr.status === 200) {
+			var bboxArray = bbox.split(" ");
+			var xmin = bboxArray[0];
+			var ymin = bboxArray[1];
+			var xmax = bboxArray[2];
+			var ymax = bboxArray[3];
+			
+            var projectXml = xhr.responseText;
+            projectXml = projectXml.replace("{{SERVICELINK}}", data);
+            projectXml = projectXml.replace("{{NAME}}", name);
+			projectXml = projectXml.replace("{{TITLE}}", title);
+			projectXml = projectXml.replace("{{OWNER}}", owner);
+			projectXml = projectXml.replace("{{XMAX}}", xmax);
+			projectXml = projectXml.replace("{{YMAX}}", ymax);
+			projectXml = projectXml.replace("{{YMIN}}", ymin);
+			projectXml = projectXml.replace("{{XMIN}}", xmin);
+            var blob = new Blob([projectXml], {type: "application/xml"});
+            var url = URL.createObjectURL(blob);
+            var a = document.createElement("a");
+            a.href = url;
+            a.download = name + "_" + owner + ".qgs";
+            document.body.appendChild(a);
+            a.click();
+            document.body.removeChild(a);
+
+        }
+    };
+    xhr.send();
+}
+
+function downloadQGISProjectWMTS(data,owner, name,title,bbox) {
+    var xhr = new XMLHttpRequest();
+    xhr.open('GET', "https://raw.githubusercontent.com/davidoesch/geoservice_harvester_poc/main/qgis_wmts_template.qlr");
+    xhr.responseType = 'text';
+    xhr.onreadystatechange = function () {
+        if (xhr.readyState === 4 && xhr.status === 200) {
+			var bboxArray = bbox.split(" ");
+			var xmin = bboxArray[0];
+			var ymin = bboxArray[1];
+			var xmax = bboxArray[2];
+			var ymax = bboxArray[3];
+			
+            var projectXml = xhr.responseText;
+            projectXml = projectXml.replace("{{SERVICELINK}}", data);
+            projectXml = projectXml.replace("{{NAME}}", name);
+			projectXml = projectXml.replace("{{TITLE}}", title);
+			projectXml = projectXml.replace("{{OWNER}}", owner);
+			projectXml = projectXml.replace("{{XMAX}}", xmax);
+			projectXml = projectXml.replace("{{YMAX}}", ymax);
+			projectXml = projectXml.replace("{{YMIN}}", ymin);
+			projectXml = projectXml.replace("{{XMIN}}", xmin);
+            var blob = new Blob([projectXml], {type: "application/xml"});
+            var url = URL.createObjectURL(blob);
+            var a = document.createElement("a");
+            a.href = url;
+            a.download = name + "_" + owner + ".qgs";
+            document.body.appendChild(a);
+            a.click();
+            document.body.removeChild(a);
+
+        }
+    };
+    xhr.send();
+}
+
+function downloadQGISProjectWFS(data,owner, name,title,bbox) {
+    var xhr = new XMLHttpRequest();
+    xhr.open('GET', "https://raw.githubusercontent.com/davidoesch/geoservice_harvester_poc/main/qgis_wfs_template.qlr");
+    xhr.responseType = 'text';
+    xhr.onreadystatechange = function () {
+        if (xhr.readyState === 4 && xhr.status === 200) {
+			var bboxArray = bbox.split(" ");
+			var xmin = bboxArray[0];
+			var ymin = bboxArray[1];
+			var xmax = bboxArray[2];
+			var ymax = bboxArray[3];
+			
+            var projectXml = xhr.responseText;
+            projectXml = projectXml.replace("{{SERVICELINK}}", data);
+            projectXml = projectXml.replace("{{NAME}}", name);
+			projectXml = projectXml.replace("{{TITLE}}", title);
+			projectXml = projectXml.replace("{{OWNER}}", owner);
+			projectXml = projectXml.replace("{{XMAX}}", xmax);
+			projectXml = projectXml.replace("{{YMAX}}", ymax);
+			projectXml = projectXml.replace("{{YMIN}}", ymin);
+			projectXml = projectXml.replace("{{XMIN}}", xmin);
+            var blob = new Blob([projectXml], {type: "application/xml"});
+            var url = URL.createObjectURL(blob);
+            var a = document.createElement("a");
+            a.href = url;
+            a.download = name + "_" + owner + ".qgs";
+            document.body.appendChild(a);
+            a.click();
+            document.body.removeChild(a);
+
+        }
+    };
+    xhr.send();
+}
+
+function copyLink(link, button) {
+    var tempInput = document.createElement("input");
+    tempInput.value = link;
+    document.body.appendChild(tempInput);
+    tempInput.select();
+    document.execCommand("copy");
+    document.body.removeChild(tempInput);
+    button.innerHTML = "Kopiert!";
+	    $(button).addClass('btn-danger');
     setTimeout(function() {
         $(button).removeClass('btn-danger');
     }, 1000);
 }
+
+// Usage:
+// Assuming "data" and "row.NAME" are available:
+// var downloadButton = "<button onclick='downloadQGISProject(\"" + data + "\", \"" + row.NAME + "\")'>QGIS DOWNLOAD</button> <button onclick='copyLink(\"" + data + "\", this)'>COPY WMS</button>";
+// Then you can add the "downloadButton" HTML string to a table cell or any other element you want.
+
+
 
 
 
@@ -87,13 +201,13 @@ function copyLink(data, button) {
                             "title": "Dienst",
 							"render": function(data, type, row) {
 									if (row.SERVICETYPE === "WMS") {
-									   return  "<button onclick='copyLink(\"" + data + "\", this)'>Kopiere WMS</button>";
+										return "<button onclick='downloadQGISProjectWMS(\"" + data + "\", \"" + row.NAME + "\", \"" + row.OWNER + "\",\"" + row.TITLE + "\", \"" + row.BBOX + "\")'>Open in QGIS</button> <button onclick='copyLink(\"" + data + "\", this)'>COPY WMS</button>";
 									}
 									if (row.SERVICETYPE === "WMTS") {
-										return "<button onclick='copyLink(\"" + data + "\", this)'>Kopiere WMTS</button>";
+										return "<button onclick='downloadQGISProjectWMTS(\"" + data + "\", \"" + row.NAME + "\", \"" + row.OWNER + "\",\"" + row.TITLE + "\", \"" + row.BBOX + "\")'>Open in QGIS</button> <button onclick='copyLink(\"" + data + "\", this)'>COPY WMTS</button>";
 									}
 									if (row.SERVICETYPE === "WFS") {
-										return "<button onclick='copyLink(\"" + data + "\", this)'>Kopiere WFS</button>";
+										return "<button onclick='downloadQGISProjectWFS(\"" + data + "\", \"" + row.NAME + "\", \"" + row.OWNER + "\",\"" + row.TITLE + "\", \"" + row.BBOX + "\")'>Open in QGIS</button> <button onclick='copyLink(\"" + data + "\", this)'>COPY WFS</button>";
 									}
 							   
 								return data;
