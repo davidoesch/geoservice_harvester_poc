@@ -54,7 +54,7 @@ function downloadQGISProjectWMS(data,name,owner,title,bbox) {
             var url = URL.createObjectURL(blob);
             var a = document.createElement("a");
             a.href = url;
-            a.download = name + "_" + owner + ".qlr";
+            a.download = owner + "_" + name + ".qlr";
             document.body.appendChild(a);
             a.click();
             document.body.removeChild(a);
@@ -90,7 +90,7 @@ function downloadQGISProjectWMTS(data,name,owner,title,bbox) {
             var url = URL.createObjectURL(blob);
             var a = document.createElement("a");
             a.href = url;
-            a.download = name + "_" + owner + ".qlr";
+            a.download = owner + "_" + name + ".qlr";
             document.body.appendChild(a);
             a.click();
             document.body.removeChild(a);
@@ -125,7 +125,7 @@ function downloadQGISProjectWFS(data,name,owner,title,bbox) {
             var url = URL.createObjectURL(blob);
             var a = document.createElement("a");
             a.href = url;
-            a.download = name + "_" + owner + ".qlr";
+            a.download = owner + "_" + name + ".qlr";
             document.body.appendChild(a);
             a.click();
             document.body.removeChild(a);
