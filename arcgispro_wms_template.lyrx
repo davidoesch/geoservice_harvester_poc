@@ -8,7 +8,7 @@
   "layerDefinitions" : [
     {
       "type" : "CIMWMSLayer",
-      "name" : "WMS",
+      "name" : "WMS {{OWNER}}",
       "uRI" : "CIMPATH=",
       "sourceModifiedTime" : {
         "type" : "TimeInstant"
