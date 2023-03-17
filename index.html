@@ -31,7 +31,7 @@
 
 function downloadQGISProjectWMS(data,name,owner,title,bbox) {
     var xhr = new XMLHttpRequest();
-    xhr.open('GET', "https://raw.githubusercontent.com/davidoesch/geoservice_harvester_poc/main/qgis_wms_template.qlr");
+    xhr.open('GET', "https://raw.githubusercontent.com/davidoesch/geoservice_harvester_poc/main/templates/qgis_wms_template.qlr");
     xhr.responseType = 'text';
     xhr.onreadystatechange = function () {
         if (xhr.readyState === 4 && xhr.status === 200) {
@@ -63,10 +63,38 @@ function downloadQGISProjectWMS(data,name,owner,title,bbox) {
     };
     xhr.send();
 }
+function downloadARCGISPROProjectWMS(data,name,owner,title) {
+    var xhr = new XMLHttpRequest();
+    xhr.open('GET', "https://raw.githubusercontent.com/davidoesch/geoservice_harvester_poc/main/templates/arcgispro_wms_template.lyrx");
+    xhr.responseType = 'text';
+    xhr.onreadystatechange = function () {
+        if (xhr.readyState === 4 && xhr.status === 200) {
+
+			
+            var projectXml = xhr.responseText;
+            projectXml = projectXml.replace("{{SERVICELINK}}", data);
+            projectXml = projectXml.replace("{{NAME}}", name);
+			projectXml = projectXml.replace("{{NAME}}", name);
+			projectXml = projectXml.replace("{{TITLE}}", title);
+			projectXml = projectXml.replace("{{OWNER}}", owner);
+
+            var blob = new Blob([projectXml], {type: "application/xml"});
+            var url = URL.createObjectURL(blob);
+            var a = document.createElement("a");
+            a.href = url;
+            a.download = owner + "_" + name + ".lyrx";
+            document.body.appendChild(a);
+            a.click();
+            document.body.removeChild(a);
+
+        }
+    };
+    xhr.send();
+}
 
 function downloadQGISProjectWMTS(data,name,owner,title,bbox) {
     var xhr = new XMLHttpRequest();
-    xhr.open('GET', "https://raw.githubusercontent.com/davidoesch/geoservice_harvester_poc/main/qgis_wmts_template.qlr");
+    xhr.open('GET', "https://raw.githubusercontent.com/davidoesch/geoservice_harvester_poc/main/templates/qgis_wmts_template.qlr");
     xhr.responseType = 'text';
     xhr.onreadystatechange = function () {
         if (xhr.readyState === 4 && xhr.status === 200) {
@@ -99,10 +127,41 @@ function downloadQGISProjectWMTS(data,name,owner,title,bbox) {
     };
     xhr.send();
 }
+function downloadARCGISPROProjectWMTS(data,name,owner,title) {
+    var xhr = new XMLHttpRequest();
+    xhr.open('GET', "https://raw.githubusercontent.com/davidoesch/geoservice_harvester_poc/main/templates/arcgispro_wmts_template.lyrx");
+    xhr.responseType = 'text';
+    xhr.onreadystatechange = function () {
+        if (xhr.readyState === 4 && xhr.status === 200) {
+
+			data = data.trim(); //remove empty spaces
+            var projectXml = xhr.responseText;
+            projectXml = projectXml.replace("{{SERVICELINK}}", data);
+            projectXml = projectXml.replace("{{NAME}}", name);
+			projectXml = projectXml.replace("{{NAME}}", name);
+			projectXml = projectXml.replace("{{TITLE}}", title);
+			
+
+            var blob = new Blob([projectXml], {type: "application/xml"});
+            var url = URL.createObjectURL(blob);
+            var a = document.createElement("a");
+            a.href = url;
+            a.download = owner + "_" + name + ".lyrx";
+            document.body.appendChild(a);
+            a.click();
+            document.body.removeChild(a);
+
+        }
+    };
+    xhr.send();
+}
+
+
+
 
 function downloadQGISProjectWFS(data,name,owner,title,bbox) {
     var xhr = new XMLHttpRequest();
-    xhr.open('GET', "https://raw.githubusercontent.com/davidoesch/geoservice_harvester_poc/main/qgis_wfs_template.qlr");
+    xhr.open('GET', "https://raw.githubusercontent.com/davidoesch/geoservice_harvester_poc/main/templates/qgis_wfs_template.qlr");
     xhr.responseType = 'text';
     xhr.onreadystatechange = function () {
         if (xhr.readyState === 4 && xhr.status === 200) {
@@ -135,6 +194,35 @@ function downloadQGISProjectWFS(data,name,owner,title,bbox) {
     xhr.send();
 }
 
+function downloadARCGISPROProjectWFS(data,name,owner,title) {
+    var xhr = new XMLHttpRequest();
+    xhr.open('GET', "https://raw.githubusercontent.com/davidoesch/geoservice_harvester_poc/main/templates/arcgispro_wfs_template.lyrx");
+    xhr.responseType = 'text';
+    xhr.onreadystatechange = function () {
+        if (xhr.readyState === 4 && xhr.status === 200) {
+			name = name.replace(/ms:/g, ''); // removes all occurrences of "ms:"
+			name = name.replace(/\./g, '_'); // replaces all "." with "_"
+			name = name.replace(/\-/g, '_'); // replaces all "-" with "_"
+			
+            var projectXml = xhr.responseText;
+            projectXml = projectXml.replace("{{SERVICELINK}}", data);
+            projectXml = projectXml.replace("{{NAME}}", name);
+			projectXml = projectXml.replace("{{NAME}}", name);
+			projectXml = projectXml.replace("{{TITLE}}", title);
+            var blob = new Blob([projectXml], {type: "application/xml"});
+            var url = URL.createObjectURL(blob);
+            var a = document.createElement("a");
+            a.href = url;
+            a.download = owner + "_" + name + ".lyrx";
+            document.body.appendChild(a);
+            a.click();
+            document.body.removeChild(a);
+
+        }
+    };
+    xhr.send();
+}
+
 function copyLink(link, button) {
     var tempInput = document.createElement("input");
     tempInput.value = link;
@@ -148,13 +236,6 @@ function copyLink(link, button) {
         $(button).removeClass('btn-danger');
     }, 1000);
 }
-
-// Usage:
-// Assuming "data" and "row.NAME" are available:
-// var downloadButton = "<button onclick='downloadQGISProject(\"" + data + "\", \"" + row.NAME + "\")'>QGIS DOWNLOAD</button> <button onclick='copyLink(\"" + data + "\", this)'>COPY WMS</button>";
-// Then you can add the "downloadButton" HTML string to a table cell or any other element you want.
-
-
 
 
 
@@ -188,7 +269,7 @@ function copyLink(link, button) {
                             "title": "Title"
                         }, {
                             "data": "MAPGEO",
-                            "title": "Karte",
+                            "title": "Web",
                             "render": function(data, type, row) {
                                 if (row.SERVICETYPE === "WFS") {
                                     return "WFS";
@@ -199,16 +280,17 @@ function copyLink(link, button) {
                             }
                         }, {
                             "data": "SERVICELINK",
-                            "title": "Dienst",
+                            "title": "Desktop",
 							"render": function(data, type, row) {
 									if (row.SERVICETYPE === "WMS") {
-										return "<button onclick='downloadQGISProjectWMS(\"" + data + "\", \"" + row.NAME + "\", \"" + row.OWNER + "\",\"" + row.TITLE + "\", \"" + row.BBOX + "\")'>Open in QGIS</button> <button onclick='copyLink(\"" + data + "\", this)'>COPY WMS</button>";
+									  return "<div style='text-align:center;'><button onclick='downloadQGISProjectWMS(\"" + data + "\", \"" + row.NAME + "\", \"" + row.OWNER + "\",\"" + row.TITLE + "\", \"" + row.BBOX + "\")'>Open WMS in QGIS</button> &nbsp; <button onclick='downloadARCGISPROProjectWMS(\"" + data + "\", \"" + row.NAME + "\", \"" + row.OWNER + "\",\"" + row.TITLE + "\")'>Open WMS in ArcGISPro&trade;</button> &nbsp; <button onclick='copyLink(\"" + data + "\", this)'>COPY WMS</button></div>";
 									}
+
 									if (row.SERVICETYPE === "WMTS") {
-										return "<button onclick='downloadQGISProjectWMTS(\"" + data + "\", \"" + row.NAME + "\", \"" + row.OWNER + "\",\"" + row.TITLE + "\", \"" + row.BBOX + "\")'>Open in QGIS</button> <button onclick='copyLink(\"" + data + "\", this)'>COPY WMTS</button>";
+										return "<div style='text-align:center;'><button onclick='downloadQGISProjectWMTS(\"" + data + "\", \"" + row.NAME + "\", \"" + row.OWNER + "\",\"" + row.TITLE + "\", \"" + row.BBOX + "\")'>Open WMTS in QGIS</button>  &nbsp; <button onclick='downloadARCGISPROProjectWMTS(\"" + data + "\", \"" + row.NAME + "\", \"" + row.OWNER + "\",\"" + row.TITLE + "\")'>Open WMTS in ArcGISPro&trade;</button> &nbsp;<button onclick='copyLink(\"" + data + "\", this)'>COPY WMTS</button></div>";
 									}
 									if (row.SERVICETYPE === "WFS") {
-										return "<button onclick='downloadQGISProjectWFS(\"" + data + "\", \"" + row.NAME + "\", \"" + row.OWNER + "\",\"" + row.TITLE + "\", \"" + row.BBOX + "\")'>Open in QGIS</button> <button onclick='copyLink(\"" + data + "\", this)'>COPY WFS</button>";
+										return "<div style='text-align:center;'><button onclick='downloadQGISProjectWFS(\"" + data + "\", \"" + row.NAME + "\", \"" + row.OWNER + "\",\"" + row.TITLE + "\", \"" + row.BBOX + "\")'>Open WFS in QGIS</button> &nbsp; <button onclick='downloadARCGISPROProjectWFS(\"" + data + "\", \"" + row.NAME + "\", \"" + row.OWNER + "\",\"" + row.TITLE + "\")'>Open WFS in ArcGISPro&trade;</button> &nbsp; <button onclick='copyLink(\"" + data + "\", this)'>COPY WFS</button></div>";
 									}
 							   
 								return data;
@@ -284,7 +366,7 @@ $("button").click(function(){
     <p>| Alle DATA-Attribute: <a href="https://davidoesch.github.io/geoservice_harvester_poc/data/geodata_CH.csv">download</a> || Alle SERVICES Attribute: <a href="https://davidoesch.github.io/geoservice_harvester_poc/data/geoservices_CH.csv">download</a> || Source Code: <a href="https://github.com/davidoesch/geoservice_harvester_poc">GitHub</a> || Qualitätskontrolle: <a href="https://davidoesch.github.io/geoservice_harvester_poc/#anchor-QualityControl"> ansehen</a> || Letzte Aktualisieurng: <img src="https://img.shields.io/github/last-commit/davidoesch/geoservice_harvester_poc" alt="LastUpdate"> | </p>
     </div>
     <br>
-    <p>GeoHarvester ist ein Portal, das die offiziellen Geodaten der Dienste der Schweizer Behörden zusammenführt. Wir bieten eine einfache Möglichkeit, auf öffentliche Geodaten zuzugreifen. Unser Ziel ist es, den Zugang und die Nutzung von Geodaten der Schweizer Behörden für jedermann/frau einfach zu machen. Bei uns finden Sie die Daten als Dienst, QGIS Layerdatei, Metadaten und Informationen zu den Datensätzen wie Titel, Eigentümer, Zusammenfassung, Service-Link, Legenden und auch eine KartenAnsicht. Die QGIS Layerdatei kann via Drag&Drop in QGIS geöffent werden. Wir bieten auch qualitative Statistiken, um Ihnen bei der Auswahl der besten Daten für Ihre Bedürfnisse zu helfen. Unsere Plattform ist benutzerfreundlich und unser Ziel ist es, Ihnen den direktesten Zugang zu Geodaten zu bieten.</p>
+    <p>GeoHarvester ist ein Portal, das die offiziellen Geodaten der Dienste der Schweizer Behörden zusammenführt. Wir bieten eine einfache Möglichkeit, auf öffentliche Geodaten zuzugreifen. Unser Ziel ist es, den Zugang und die Nutzung von Geodaten der Schweizer Behörden für jedermann/frau einfach zu machen. Bei uns finden Sie die Daten als Dienst, Metadaten und Informationen zu den Datensätzen wie Titel, Eigentümer, Zusammenfassung, Service-Link, Legenden und sogar eine KartenAnsicht. Wir bieten auch qualitative Statistiken, um Ihnen bei der Auswahl der besten Daten für Ihre Bedürfnisse zu helfen. Unsere Plattform ist benutzerfreundlich und unser Ziel ist es, Ihnen den direktesten Zugang zu Geodaten zu bieten.</p>
     <br>
     <p> Bitte haben Sie etwas Geduld - das Laden von über 15'000 Datensätzen braucht seine Zeit </p>
     </p>
