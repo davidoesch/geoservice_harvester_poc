@@ -225,19 +225,24 @@ def get_service_info(source):
                 if service.contents[i].id not in layers_done :
                     # Some root WMS layers are blocked so no get map is possible, so we check if we can load them as TOPIC (aka al children layer active)
                     if "WMS" in source['URL'] or "wms" in source['URL']:
-                        try:
-                            #check if root layer is loadable, by trying to call a Get Map, if it is blocked it will raise an error
-                            service.getmap(layers=[i], srs='EPSG:4326', bbox=(service.contents[i].boundingBoxWGS84[0],service.contents[i].boundingBoxWGS84[1],service.contents[i].boundingBoxWGS84[2],service.contents[i].boundingBoxWGS84[3]), size=(256,256), format='image/png', transparent=True, timeout=10)
-                            #then extract abstract etc
-                            layertree= source['Description']+"/"+service.identification.title+"/"+i.replace('"', '') if service.identification.title is not None else source['Description']+"/"+i.replace('"', '')
-                            write_service_info(source,service,(service.contents[i].id),layertree,group=i)                
-                            layers_done.append(service.contents[i].id)
-                        except Exception as e:
-                            # Check if the exception indicates that the request was not allowed or forbidden
-                            if any([msg in str(e) for msg in service.exceptions]):
-                                print(i+' GetMap request is blocked for this layer')
-                            else:
-                                print(i+' Unknown error:', e)
+                        #Even some Root layers do not have titles therfore skipping as well
+                        if service.contents[i].title == None:
+                            print(i+"Title is empty, skipping")
+                        else:
+                            try:
+                                
+                                #check if root layer is loadable, by trying to call a Get Map, if it is blocked it will raise an error
+                                service.getmap(layers=[i], srs='EPSG:4326', bbox=(service.contents[i].boundingBoxWGS84[0],service.contents[i].boundingBoxWGS84[1],service.contents[i].boundingBoxWGS84[2],service.contents[i].boundingBoxWGS84[3]), size=(256,256), format='image/png', transparent=True, timeout=10)
+                                #then extract abstract etc
+                                layertree= source['Description']+"/"+service.identification.title+"/"+i.replace('"', '') if service.identification.title is not None else source['Description']+"/"+i.replace('"', '')
+                                write_service_info(source,service,(service.contents[i].id),layertree,group=i)                
+                                layers_done.append(service.contents[i].id)
+                            except Exception as e:
+                                # Check if the exception indicates that the request was not allowed or forbidden
+                                if any([msg in str(e) for msg in service.exceptions]):
+                                    print(i+' GetMap request is blocked for this layer')
+                                else:
+                                    print(i+' Unknown error:', e)
                     else:         
                             layertree= source['Description']+"/"+service.identification.title+"/"+i.replace('"', '') if service.identification.title is not None else source['Description']+"/"+i.replace('"', '')
                             write_service_info(source,service,(service.contents[i].id),layertree,group=i)                
