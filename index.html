@@ -19,7 +19,11 @@
     <!-- Include jQuery, DataTables CSS, and DataTables JS -->
     <link rel="stylesheet" href="https://cdn.datatables.net/1.11.3/css/jquery.dataTables.min.css" />
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-    <style>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+	<style>
         table.dataTable {
             width: 100% !important;
         }
@@ -484,18 +488,28 @@ function copyLink(link, button) {
     <div style="text-align: center;">	
     <p>| Alle DATA-Attribute: <a href="https://davidoesch.github.io/geoservice_harvester_poc/data/geodata_CH.csv"> CSV download</a> || Alle SERVICES Attribute: <a href="https://davidoesch.github.io/geoservice_harvester_poc/data/geoservices_CH.csv"> CSV download</a> || Source Code: <a href="https://github.com/davidoesch/geoservice_harvester_poc">GitHub</a> || Qualitätskontrolle: <a href="https://davidoesch.github.io/geoservice_harvester_poc/#anchor-QualityControl"> ansehen</a> || Letzte Aktualisierung: <img src="https://img.shields.io/github/last-commit/davidoesch/geoservice_harvester_poc" alt="LastUpdate"> | </p>
     </div>
-    <br>
-    <p>GeoHarvester ist ein Portal, das die offiziellen Geodaten der Dienste der Schweizer Behörden zusammenführt. Wir bieten eine einfache Möglichkeit, auf öffentliche Geodaten zuzugreifen. Unser Ziel ist es, den Zugang und die Nutzung von Geodaten der Schweizer Behörden für jedermann/frau einfach zu machen. Bei uns finden Sie die Daten als Dienst, Metadaten und Informationen zu den Datensätzen wie Titel, Eigentümer, Zusammenfassung, Service-Link, Legenden, Karten Ansicht und ArcGISPro&trade; (.lyrx) und QGIS (.qlr) Dateien. Wir bieten auch qualitative Statistiken, um Ihnen bei der Auswahl der besten Daten für Ihre Bedürfnisse zu helfen. Unsere Plattform ist benutzerfreundlich und unser Ziel ist es, Ihnen den direktesten Zugang zu Geodaten zu bieten. 
-	</p>
-	<p>
-	Weitere Datenquelle <a href="https://github.com/davidoesch/geoservice_harvester_poc#how-to-fix--add-additonal-wms-wmts-services">hinzufügen und korrigieren</a>  
-    </p>
+	<div class="container">
+		<div class="container">
+		  <div class="row justify-content-center">
+			<div class="col-auto">
+			  <button class="btn btn-info" type="button" data-toggle="collapse" data-target="#collapseContent" aria-expanded="false" aria-controls="collapseContent">
+				<i class="fas fa-info-circle"></i> Info
+			  </button>
+			  <div class="collapse" id="collapseContent">
+				<div class="card card-body">
+				  <p>GeoHarvester ist ein Portal, das die offiziellen Geodaten der Dienste der Schweizer Behörden zusammenführt. Wir bieten eine einfache Möglichkeit, auf öffentliche Geodaten zuzugreifen. Unser Ziel ist es, den Zugang und die Nutzung von Geodaten der Schweizer Behörden für jedermann/frau einfach zu machen. Bei uns finden Sie die Daten als Dienst, Metadaten und Informationen zu den Datensätzen wie Titel, Eigentümer, Zusammenfassung, Service-Link, Legenden, Karten Ansicht und ArcGISPro&trade; (.lyrx) und QGIS (.qlr) Dateien. Wir bieten auch qualitative Statistiken, um Ihnen bei der Auswahl der besten Daten für Ihre Bedürfnisse zu helfen. Unsere Plattform ist benutzerfreundlich und unser Ziel ist es, Ihnen den direktesten Zugang zu Geodaten zu bieten.</p>
+				  <p>Weitere Datenquelle <a href="https://github.com/davidoesch/geoservice_harvester_poc#how-to-fix--add-additonal-wms-wmts-services">hinzufügen und korrigieren</a></p>
+				</div>
+				</div>
+			</div>
+		</div>
+	</div>
     
 
 	<div id="loader" class="loader"></div>
 	<div class="table-container">
 	  <div class="search-container">
-		<input type="search" id="table-search" placeholder="Suche...z.B Bienen ">
+		<input type="search" id="table-search" placeholder="Suche... z.B Bienen ">
 		
 		<div id="table-info"></div> <!-- Add new div element here -->
 	  </div>
