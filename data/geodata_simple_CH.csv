@@ -398,7 +398,6 @@ KT_AG,SEW: Abwasser Bauwerk,https://map.geo.admin.ch/?bgLayer=ch.swisstopo.pixel
 KT_AG,Abwasser Bauwerk,https://map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||Abwasser Bauwerk||https://wms.geo.ag.ch/public/ows?||ch_ag_geo_atb_sewbauwerk_01||1.3.0&E=2649926.2627545823&N=1250118.9077169392&zoom=4
 KT_AG,SEW: Abwasser Bauwerk Symbol,https://map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||SEW: Abwasser Bauwerk Symbol||https://wms.geo.ag.ch/public/ows?||ch_ag_geo_ATB_SEWBauwerkSymbol||1.3.0&E=2648425.608154048&N=1248994.5925641845&zoom=3
 KT_AG,Abwasser Bauwerk Symbol,https://map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||Abwasser Bauwerk Symbol||https://wms.geo.ag.ch/public/ows?||ch_ag_geo_atb_sewbauwerksymbol_01||1.3.0&E=2648425.608154048&N=1248994.5925641845&zoom=4
-KT_AG,SEW: Abwasser Kanal,https://map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||SEW: Abwasser Kanal||https://wms.geo.ag.ch/public/ows?||ch_ag_geo_ATB_SEWKanalHaltung||1.3.0&E=2649189.841967733&N=1247889.0223953363&zoom=3
 KT_AG,Abwasser Betrieb,https://map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||Abwasser Betrieb||https://wms.geo.ag.ch/public/ows?||ch_ag_geo_atb_sewkanalhaltung_03||1.3.0&E=2648434.6898131077&N=1247882.8057574483&zoom=4
 KT_AG,Abwasser Eigentum,https://map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||Abwasser Eigentum||https://wms.geo.ag.ch/public/ows?||ch_ag_geo_atb_sewkanalhaltung_02||1.3.0&E=2648434.6898131077&N=1247882.8057574483&zoom=4
 KT_AG,Abwasser Leitung,https://map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||Abwasser Leitung||https://wms.geo.ag.ch/public/ows?||ch_ag_geo_atb_sewkanalhaltung_01||1.3.0&E=2648434.6898131077&N=1247882.8057574483&zoom=4
@@ -666,7 +665,6 @@ KT_AG,Naturräumliche Grobeinteilung des Aargaus,https://map.geo.admin.ch/?bgLay
 KT_AG,Niederschlagsstationen,https://map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||Niederschlagsstationen||https://wms.geo.ag.ch/public/ows?||ch_ag_geo_alg_niederschlag||1.3.0&E=2645448.1309095183&N=1243411.7709367094&zoom=3
 KT_AG,Niederschlagmessstationen,https://map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||Niederschlagmessstationen||https://wms.geo.ag.ch/public/ows?||ch_ag_geo_alg_niederschlag_01||1.3.0&E=2645448.1309095183&N=1243411.7709367094&zoom=4
 KT_AG,Gefährdungskarte Oberflächenabfluss,https://map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||Gefährdungskarte Oberflächenabfluss||https://wms.geo.ag.ch/public/ows?||ch_ag_geo_alg_oberflabf_01||1.3.0&E=2649189.841967733&N=1247889.0223953363&zoom=4
-KT_AG,Ökomorphologie Fliessgewässer,https://map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||Ökomorphologie Fliessgewässer||https://wms.geo.ag.ch/public/ows?||ch_ag_geo_alg_oekomorphologie||1.3.0&E=2648434.6898131077&N=1247882.8057574483&zoom=3
 KT_AG,Ökomorphologie Fliessgewässer 5-stufig (international),https://map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||Ökomorphologie Fliessgewässer 5-stufig (international)||https://wms.geo.ag.ch/public/ows?||ch_ag_geo_alg_oekomorphologie_02||1.3.0&E=2648434.6898131077&N=1247882.8057574483&zoom=4
 KT_AG,Ökomorphologie Fliessgewässer 4-stufig (Modul-Stufen-Konzept),https://map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||Ökomorphologie Fliessgewässer 4-stufig (Modul-Stufen-Konzept)||https://wms.geo.ag.ch/public/ows?||ch_ag_geo_alg_oekomorphologie_01||1.3.0&E=2648434.6898131077&N=1247882.8057574483&zoom=4
 KT_AG,Ornithologisches Inventar,https://map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||Ornithologisches Inventar||https://wms.geo.ag.ch/public/ows?||ch_ag_geo_alg_ornithinv||1.3.0&E=2649189.841967733&N=1247889.0223953363&zoom=3
@@ -1183,11 +1181,11 @@ KT_AG,AV: Strassennamen,https://map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkart
 KT_AG,AV: Polizeinummern,https://map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||AV: Polizeinummern||https://wms.geo.ag.ch/public/ows?||ch_ag_geo_va_avwms_va_gebadr_01||1.3.0&E=2648434.6898131077&N=1247882.8057574483&zoom=4
 KT_AG,AV: Parzellen,https://map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||AV: Parzellen||https://wms.geo.ag.ch/public/ows?||ch_ag_geo_va_avwms_va_lsparz_01||1.3.0&E=2649189.841967733&N=1247889.0223953363&zoom=4
 KT_AG,AV: selbständige und dauernde Rechte,https://map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||AV: selbständige und dauernde Rechte||https://wms.geo.ag.ch/public/ows?||ch_ag_geo_va_avwms_va_lssdr_01||1.3.0&E=2648434.6898131077&N=1247882.8057574483&zoom=4
-KT_AG,AV: proj. Parzellen,https://map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||AV: proj. Parzellen||https://wms.geo.ag.ch/public/ows?||ch_ag_geo_va_avwms_va_lsprojparz_01||1.3.0&E=2648434.6898131077&N=1247882.8057574483&zoom=4
+KT_AG,AV: proj. Parzellen,https://map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||AV: proj. Parzellen||https://wms.geo.ag.ch/public/ows?||ch_ag_geo_va_avwms_va_lsprojparz_01||1.3.0&E=2649189.841967733&N=1247889.0223953363&zoom=4
 KT_AG,AV: proj. selbständige und dauernde Rechte,https://map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||AV: proj. selbständige und dauernde Rechte||https://wms.geo.ag.ch/public/ows?||ch_ag_geo_va_avwms_va_lsprojsdr_01||1.3.0&E=2653740.8862221725&N=1245704.7984237664&zoom=4
 KT_AG,AV: Rohrleitungen,https://map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||AV: Rohrleitungen||https://wms.geo.ag.ch/public/ows?||ch_ag_geo_va_avwms_va_rllinie_01||1.3.0&E=2648452.853020124&N=1245659.2423060723&zoom=4
 KT_AG,AV: Parzellennummern,https://map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||AV: Parzellennummern||https://wms.geo.ag.ch/public/ows?||ch_ag_geo_va_avwms_va_lsparznr_01||1.3.0&E=2649189.841967733&N=1247889.0223953363&zoom=4
-KT_AG,AV: proj. Parzellennummern,https://map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||AV: proj. Parzellennummern||https://wms.geo.ag.ch/public/ows?||ch_ag_geo_va_avwms_va_lsprojparznr_01||1.3.0&E=2648434.6898131077&N=1247882.8057574483&zoom=4
+KT_AG,AV: proj. Parzellennummern,https://map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||AV: proj. Parzellennummern||https://wms.geo.ag.ch/public/ows?||ch_ag_geo_va_avwms_va_lsprojparznr_01||1.3.0&E=2649189.841967733&N=1247889.0223953363&zoom=4
 KT_AG,AV: Objektnamen (BB),https://map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||AV: Objektnamen (BB)||https://wms.geo.ag.ch/public/ows?||ch_ag_geo_va_avwms_va_bbobjname_01||1.3.0&E=2648434.6898131077&N=1247882.8057574483&zoom=4
 KT_AG,AV: Assekuranznummern,https://map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||AV: Assekuranznummern||https://wms.geo.ag.ch/public/ows?||ch_ag_geo_va_avwms_va_bbgebnr_01||1.3.0&E=2648434.6898131077&N=1247882.8057574483&zoom=4
 KT_AG,AV: Hoheitsgrenzen,https://map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||AV: Hoheitsgrenzen||https://wms.geo.ag.ch/public/ows?||ch_ag_geo_va_avwms_va_hgr_01||1.3.0&E=2649189.841967733&N=1247889.0223953363&zoom=4
@@ -5426,6 +5424,8 @@ KT_BE,Geschützte botanische Objekte [Flächen],https://map.geo.admin.ch/?bgLaye
 KT_BE,Kantonale Flachmoore [flächig],https://map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||Kantonale Flachmoore [flächig]||http://www.geoservice.apps.be.ch/geoservice2/services/a42geo/a42geo_umweltwms_d_fk/MapServer/WMSServer?||GEODB.FEUGEB_FG_VOLLFARB||1.1.1&E=2619175.013008601&N=1187681.4647741283&zoom=3
 KT_BE,Kantonale Flachmoore [linear],https://map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||Kantonale Flachmoore [linear]||http://www.geoservice.apps.be.ch/geoservice2/services/a42geo/a42geo_umweltwms_d_fk/MapServer/WMSServer?||GEODB.FEUGEB_FG_SCHRAFF||1.1.1&E=2619175.013008601&N=1187681.4647741283&zoom=3
 KT_BE,Belastete Standorte,https://map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||Belastete Standorte||http://www.geoservice.apps.be.ch/geoservice2/services/a42geo/a42geo_umweltwms_d_fk/MapServer/WMSServer?||GEODB.BALISKBS_KBS_KMGDM1||1.1.1&E=2617642.816263455&N=1189900.1558775231&zoom=3
+KT_BE,"Zuständigkeit Feuerverbotsschilder, Übersicht","https://map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||Zuständigkeit Feuerverbotsschilder, Übersicht||http://www.geoservice.apps.be.ch/geoservice2/services/a42geo/a42geo_geologiewms_d_fk/MapServer/WMSServer?||GEODB.WBMFVSS_WBMFVSS_KMGDM2||1.1.1&E=2614598.0222803415&N=1187668.59717409&zoom=3"
+KT_BE,Zuständigkeit Feuerverbotsschilder,https://map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||Zuständigkeit Feuerverbotsschilder||http://www.geoservice.apps.be.ch/geoservice2/services/a42geo/a42geo_geologiewms_d_fk/MapServer/WMSServer?||GEODB.WBMFVSS_WBMFVSS_KMGDM1||1.1.1&E=2614598.0222803415&N=1187668.59717409&zoom=3
 KT_BE,Tracer Verbindungslinien,https://map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||Tracer Verbindungslinien||http://www.geoservice.apps.be.ch/geoservice2/services/a42geo/a42geo_geologiewms_d_fk/MapServer/WMSServer?||GEODB.TRALIN_TRALIN_STANDARD||1.1.1&E=2613074.7730635786&N=1186553.401788473&zoom=3
 KT_BE,Beschriftung Tracer Verbindungslinien,https://map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||Beschriftung Tracer Verbindungslinien||http://www.geoservice.apps.be.ch/geoservice2/services/a42geo/a42geo_geologiewms_d_fk/MapServer/WMSServer?||GEODB.TRALIN_TRALIN_STANDARD_B||1.1.1&E=2613074.7730635786&N=1186553.401788473&zoom=3
 KT_BE,Schutzwaldübersicht,https://map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||Schutzwaldübersicht||http://www.geoservice.apps.be.ch/geoservice2/services/a42geo/a42geo_geologiewms_d_fk/MapServer/WMSServer?||GEODB.SHK_SWUBR_KMGDM1||1.1.1&E=2616120.703380132&N=1188784.1819317124&zoom=3
@@ -5458,7 +5458,6 @@ KT_BE,Beschriftung Gefahrenindex: Sturzgefahren,https://map.geo.admin.ch/?bgLaye
 KT_BE,Gefahrengebiete: Sturzgefahren,https://map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||Gefahrengebiete: Sturzgefahren||http://www.geoservice.apps.be.ch/geoservice2/services/a42geo/a42geo_geologiewms_d_fk/MapServer/WMSServer?||GEODB.GK5_ST_STANDARD||1.1.1&E=2614595.3223027727&N=1188780.282646261&zoom=3
 KT_BE,Gefahrenindex: Rutschgefahren,https://map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||Gefahrenindex: Rutschgefahren||http://www.geoservice.apps.be.ch/geoservice2/services/a42geo/a42geo_geologiewms_d_fk/MapServer/WMSServer?||GEODB.GK5_RUP_STANDARD||1.1.1&E=2614595.3223027727&N=1188780.282646261&zoom=3
 KT_BE,Beschriftung Gefahrenindex: Rutschgefahren,https://map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||Beschriftung Gefahrenindex: Rutschgefahren||http://www.geoservice.apps.be.ch/geoservice2/services/a42geo/a42geo_geologiewms_d_fk/MapServer/WMSServer?||GEODB.GK5_RUP_STANDARD_B||1.1.1&E=2614595.3223027727&N=1188780.282646261&zoom=3
-KT_BE,Gefahrengebiete: Rutschgefahren,https://map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||Gefahrengebiete: Rutschgefahren||http://www.geoservice.apps.be.ch/geoservice2/services/a42geo/a42geo_geologiewms_d_fk/MapServer/WMSServer?||GEODB.GK5_RU_STANDARD||1.1.1&E=2614595.3223027727&N=1188780.282646261&zoom=3
 KT_BE,Projektperimeter GK5,https://map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||Projektperimeter GK5||http://www.geoservice.apps.be.ch/geoservice2/services/a42geo/a42geo_geologiewms_d_fk/MapServer/WMSServer?||GEODB.GK5_PE_STANDARD||1.1.1&E=2614595.3223027727&N=1188780.282646261&zoom=3
 KT_BE,Gefahrenindex: Lawinengefahren,https://map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||Gefahrenindex: Lawinengefahren||http://www.geoservice.apps.be.ch/geoservice2/services/a42geo/a42geo_geologiewms_d_fk/MapServer/WMSServer?||GEODB.GK5_LAP_STANDARD||1.1.1&E=2626843.053492115&N=1178817.327397929&zoom=3
 KT_BE,Beschriftung Gefahrenindex: Lawinengefahren,https://map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||Beschriftung Gefahrenindex: Lawinengefahren||http://www.geoservice.apps.be.ch/geoservice2/services/a42geo/a42geo_geologiewms_d_fk/MapServer/WMSServer?||GEODB.GK5_LAP_STANDARD_B||1.1.1&E=2626843.053492115&N=1178817.327397929&zoom=3
@@ -5823,6 +5822,9 @@ KT_BE,Massnahmengebiete nach Energieträger [Richtplan Energie],https://map.geo.
 KT_BE,Massnahmengebiete mit Wärmeverbund [Richtplan Energie],https://map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||Massnahmengebiete mit Wärmeverbund [Richtplan Energie]||https://www.geoservice.apps.be.ch/geoservice2/services/a42geo/a42geo_versorgungwms_d_fk/MapServer/WMSServer?||GEODB.KOMRPE_RPEMGEB_KMGDM1||1.1.1&E=2608500.0520602996&N=1184321.8352814931&zoom=3
 KT_BE,Leitungsnetze bestehender Gasversorgungen [Richtplan Energie],https://map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||Leitungsnetze bestehender Gasversorgungen [Richtplan Energie]||https://www.geoservice.apps.be.ch/geoservice2/services/a42geo/a42geo_versorgungwms_d_fk/MapServer/WMSServer?||GEODB.KOMRPE_RPEGNETZ_KMGDM1||1.1.1&E=2609241.1147713508&N=1198774.9628055785&zoom=4
 KT_BE,Energiefluss [Richtplan Energie],https://map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||Energiefluss [Richtplan Energie]||https://www.geoservice.apps.be.ch/geoservice2/services/a42geo/a42geo_versorgungwms_d_fk/MapServer/WMSServer?||GEODB.KOMRPE_RPEEFLUS_KMGDM1||1.1.1&E=2609271.848645939&N=1178764.5660906099&zoom=4
+KT_BE,Grundwassernutzung,https://map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||Grundwassernutzung||https://www.geoservice.apps.be.ch/geoservice2/services/a42geo/a42geo_versorgungwms_d_fk/MapServer/WMSServer?||GEODB.GWN_GWN_KMGDM1||1.1.1&E=2616886.5188824222&N=1187674.5931407753&zoom=3
+KT_BE,Status Gewässerschutzbewilligung Erdwärmesonden,https://map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||Status Gewässerschutzbewilligung Erdwärmesonden||https://www.geoservice.apps.be.ch/geoservice2/services/a42geo/a42geo_versorgungwms_d_fk/MapServer/WMSServer?||GEODB.ERDSOND_ERDSONDB_KMGDM1||1.1.1&E=2619937.84377577&N=1187683.949910843&zoom=3
+KT_BE,Zulässigkeit Erdwärmesonden,https://map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||Zulässigkeit Erdwärmesonden||https://www.geoservice.apps.be.ch/geoservice2/services/a42geo/a42geo_versorgungwms_d_fk/MapServer/WMSServer?||GEODB.ERDSOND_ERDSOND_KMGDM1||1.1.1&E=2616886.5188824222&N=1187674.5931407753&zoom=3
 KT_BE,Gasstationen,https://map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||Gasstationen||https://www.geoservice.apps.be.ch/geoservice2/services/a42geo/a42geo_versorgungwms_d_fk/MapServer/WMSServer?||GEODB.ERDGAS_GASST_STANDARD||1.1.1&E=2610748.0182289174&N=1207671.1886327735&zoom=3
 KT_BE,Speicheranlagen,https://map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||Speicheranlagen||https://www.geoservice.apps.be.ch/geoservice2/services/a42geo/a42geo_versorgungwms_d_fk/MapServer/WMSServer?||GEODB.ERDGAS_GASSPEI_STANDARD||1.1.1&E=2611504.033795577&N=1209896.0425126068&zoom=4
 KT_BE,Gasleitungen,https://map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||Gasleitungen||https://www.geoservice.apps.be.ch/geoservice2/services/a42geo/a42geo_versorgungwms_d_fk/MapServer/WMSServer?||GEODB.ERDGAS_GASLEIT_STANDARD||1.1.1&E=2611523.229248912&N=1199890.6124320098&zoom=3
@@ -5928,8 +5930,8 @@ KT_GE,CLIMAT_VENT_200M_4H00_P2,https://map.geo.admin.ch/?bgLayer=ch.swisstopo.pi
 KT_GE,CLIMAT_VENT_200M_4H00_P1B,https://map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||CLIMAT_VENT_200M_4H00_P1B||https://ge.ch/sitgags1/services/VECTOR/SITG_OPENDATA_01/MapServer/WMSServer?||66||1.3.0&E=2499063.4220049577&N=1121794.9363783624&zoom=5
 KT_GE,CLIMAT_VENT_200M_4H00_P1,https://map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||CLIMAT_VENT_200M_4H00_P1||https://ge.ch/sitgags1/services/VECTOR/SITG_OPENDATA_01/MapServer/WMSServer?||67||1.3.0&E=2499063.4220049577&N=1121794.9363783624&zoom=5
 KT_GE,CLIMAT_VENT_200M_4H00_P0,https://map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||CLIMAT_VENT_200M_4H00_P0||https://ge.ch/sitgags1/services/VECTOR/SITG_OPENDATA_01/MapServer/WMSServer?||68||1.3.0&E=2499063.4220049577&N=1121794.9363783624&zoom=5
-KT_GE,CLIMAT_VENT_10M_4H00_P1,https://map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||CLIMAT_VENT_10M_4H00_P1||https://ge.ch/sitgags1/services/VECTOR/SITG_OPENDATA_01/MapServer/WMSServer?||72||1.3.0&E=2499063.4220049577&N=1121794.9363783624&zoom=5
-KT_GE,CAD_PARCELLE_MENSU_HISTO,https://map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||CAD_PARCELLE_MENSU_HISTO||https://ge.ch/sitgags1/services/VECTOR/SITG_OPENDATA_01/MapServer/WMSServer?||90||1.3.0&E=2499853.0826092605&N=1122893.6017428325&zoom=5
+KT_GE,AGR_PLANTE_HOTE_FEU_BACTERIEN,https://map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||AGR_PLANTE_HOTE_FEU_BACTERIEN||https://ge.ch/sitgags1/services/VECTOR/SITG_OPENDATA_01/MapServer/WMSServer?||133||1.3.0&E=2499081.9898634464&N=1122906.433851409&zoom=5
+KT_GE,AGR_PAE_CANTONAL,https://map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||AGR_PAE_CANTONAL||https://ge.ch/sitgags1/services/VECTOR/SITG_OPENDATA_01/MapServer/WMSServer?||134||1.3.0&E=2495978.500721715&N=1121847.2579791595&zoom=6
 KT_GE,AGR_INFECTION_FEU_BACTERIEN,https://map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||AGR_INFECTION_FEU_BACTERIEN||https://ge.ch/sitgags1/services/VECTOR/SITG_OPENDATA_01/MapServer/WMSServer?||135||1.3.0&E=3564947.9928807244&N=1558011.3278906944&zoom=0
 KT_GE,AGR_DRAIN_DRAINAGE,https://map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||AGR_DRAIN_DRAINAGE||https://ge.ch/sitgags1/services/VECTOR/SITG_OPENDATA_01/MapServer/WMSServer?||136||1.3.0&E=2499853.0826092605&N=1122893.6017428325&zoom=5
 KT_GE,AGGLO_ZAFF_SIMPL_EVOL_10_14,https://map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||AGGLO_ZAFF_SIMPL_EVOL_10_14||https://ge.ch/sitgags1/services/VECTOR/SITG_OPENDATA_01/MapServer/WMSServer?||140||1.3.0&E=2498367.0273722257&N=1126253.847301999&zoom=4
@@ -6034,7 +6036,6 @@ KT_GE,GEO_POSTE_PL,https://map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-gra
 KT_GE,GEO_LAC_LEMAN,https://map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||GEO_LAC_LEMAN||https://ge.ch/sitgags1/services/VECTOR/SITG_OPENDATA_02/MapServer/WMSServer?||46||1.3.0&E=2516756.2883952283&N=1118189.9838002254&zoom=3
 KT_GE,GEO_LAC,https://map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||GEO_LAC||https://ge.ch/sitgags1/services/VECTOR/SITG_OPENDATA_02/MapServer/WMSServer?||47||1.3.0&E=2498310.8987784977&N=1122919.364304712&zoom=5
 KT_GE,GEO_GIREC,https://map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||GEO_GIREC||https://ge.ch/sitgags1/services/VECTOR/SITG_OPENDATA_02/MapServer/WMSServer?||48||1.3.0&E=2499081.9898634464&N=1122906.433851409&zoom=5
-KT_GE,GEO_COMMUNES_CH_FR,https://map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||GEO_COMMUNES_CH_FR||https://ge.ch/sitgags1/services/VECTOR/SITG_OPENDATA_02/MapServer/WMSServer?||49||1.3.0&E=2607758.150523879&N=1167645.717977641&zoom=1
 KT_GE,FTI_PERIMETRE,https://map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||FTI_PERIMETRE||https://ge.ch/sitgags1/services/VECTOR/SITG_OPENDATA_02/MapServer/WMSServer?||51||1.3.0&E=2497464.403578444&N=1118486.4198294424&zoom=5
 KT_GE,FFP_ZONE_A_RISQUE_FAUNE_ZONE_B,https://map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||FFP_ZONE_A_RISQUE_FAUNE_ZONE_B||https://ge.ch/sitgags1/services/VECTOR/SITG_OPENDATA_02/MapServer/WMSServer?||52||1.3.0&E=2499081.9898634464&N=1122906.433851409&zoom=5
 KT_GE,FFP_ZONE_A_RISQUE_FAUNE_ZONE_A,https://map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||FFP_ZONE_A_RISQUE_FAUNE_ZONE_A||https://ge.ch/sitgags1/services/VECTOR/SITG_OPENDATA_02/MapServer/WMSServer?||53||1.3.0&E=2499081.9898634464&N=1122906.433851409&zoom=5
@@ -6132,6 +6133,7 @@ KT_GE,OTC_COMPTAGE_TRAFIC,https://map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelka
 KT_GE,OTC_CARTEVELO_ITINERAIRES,https://map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||OTC_CARTEVELO_ITINERAIRES||https://ge.ch/sitgags1/services/VECTOR/SITG_OPENDATA_03/MapServer/WMSServer?||37||1.3.0&E=2499044.8541014227&N=1120683.4384801085&zoom=5
 KT_GE,OTC_AMENAG_TRANSPORT_COLLECTIF,https://map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||OTC_AMENAG_TRANSPORT_COLLECTIF||https://ge.ch/sitgags1/services/VECTOR/SITG_OPENDATA_03/MapServer/WMSServer?||38||1.3.0&E=2501322.7024614587&N=1118422.211573883&zoom=5
 KT_GE,OTC_AMENAG_2ROUES,https://map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||OTC_AMENAG_2ROUES||https://ge.ch/sitgags1/services/VECTOR/SITG_OPENDATA_03/MapServer/WMSServer?||39||1.3.0&E=2499081.9898634464&N=1122906.433851409&zoom=5
+KT_GE,OTC_ACCIDENTS,https://map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||OTC_ACCIDENTS||https://ge.ch/sitgags1/services/VECTOR/SITG_OPENDATA_03/MapServer/WMSServer?||40||1.3.0&E=2500605.892666036&N=1121769.365754368&zoom=4
 KT_GE,OCS_POPULATION_SSECTEUR,https://map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||OCS_POPULATION_SSECTEUR||https://ge.ch/sitgags1/services/VECTOR/SITG_OPENDATA_03/MapServer/WMSServer?||41||1.3.0&E=2499081.9898634464&N=1122906.433851409&zoom=5
 KT_GE,OCS_POPBATLOG_VGE_SECTEUR,https://map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||OCS_POPBATLOG_VGE_SECTEUR||https://ge.ch/sitgags1/services/VECTOR/SITG_OPENDATA_03/MapServer/WMSServer?||42||1.3.0&E=2499779.37794401&N=1118447.5996216745&zoom=7
 KT_GE,OCS_POPBATLOG_COMMUNE,https://map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||OCS_POPBATLOG_COMMUNE||https://ge.ch/sitgags1/services/VECTOR/SITG_OPENDATA_03/MapServer/WMSServer?||43||1.3.0&E=2499081.9898634464&N=1122906.433851409&zoom=5
@@ -6139,6 +6141,16 @@ KT_GE,OCS_EMPLOI_VGE_SECTEUR,https://map.geo.admin.ch/?bgLayer=ch.swisstopo.pixe
 KT_GE,OCS_EMPLOI_COMMUNE,https://map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||OCS_EMPLOI_COMMUNE||https://ge.ch/sitgags1/services/VECTOR/SITG_OPENDATA_03/MapServer/WMSServer?||45||1.3.0&E=2499081.9898634464&N=1122906.433851409&zoom=5
 KT_GE,OCS_BATLOG_SSECTEUR,https://map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||OCS_BATLOG_SSECTEUR||https://ge.ch/sitgags1/services/VECTOR/SITG_OPENDATA_03/MapServer/WMSServer?||46||1.3.0&E=2499081.9898634464&N=1122906.433851409&zoom=5
 KT_GE,OCI_STATIONS_SERVICES,https://map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||OCI_STATIONS_SERVICES||https://ge.ch/sitgags1/services/VECTOR/SITG_OPENDATA_03/MapServer/WMSServer?||47||1.3.0&E=2497483.255096506&N=1119597.913851641&zoom=5
+KT_GE,LCE_OUVRAGES_SURFACIQUE,https://map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||LCE_OUVRAGES_SURFACIQUE||https://ge.ch/sitgags1/services/VECTOR/SITG_OPENDATA_03/MapServer/WMSServer?||62||1.3.0&E=2498273.4794966164&N=1120696.3737406433&zoom=5
+KT_GE,LCE_OUVRAGES_REGULATION,https://map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||LCE_OUVRAGES_REGULATION||https://ge.ch/sitgags1/services/VECTOR/SITG_OPENDATA_03/MapServer/WMSServer?||63||1.3.0&E=2497539.8093670956&N=1122932.3931023346&zoom=5
+KT_GE,LCE_OUVRAGES_PROTECTION,https://map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||LCE_OUVRAGES_PROTECTION||https://ge.ch/sitgags1/services/VECTOR/SITG_OPENDATA_03/MapServer/WMSServer?||64||1.3.0&E=2499081.9898634464&N=1122906.433851409&zoom=5
+KT_GE,LCE_OUVRAGES_LIT,https://map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||LCE_OUVRAGES_LIT||https://ge.ch/sitgags1/services/VECTOR/SITG_OPENDATA_03/MapServer/WMSServer?||65||1.3.0&E=2499081.9898634464&N=1122906.433851409&zoom=5
+KT_GE,LCE_OUVRAGES_FRANCHISSEMENT,https://map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||LCE_OUVRAGES_FRANCHISSEMENT||https://ge.ch/sitgags1/services/VECTOR/SITG_OPENDATA_03/MapServer/WMSServer?||66||1.3.0&E=2499081.9898634464&N=1122906.433851409&zoom=5
+KT_GE,LCE_KM_CURVILIGNE,https://map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||LCE_KM_CURVILIGNE||https://ge.ch/sitgags1/services/VECTOR/SITG_OPENDATA_03/MapServer/WMSServer?||67||1.3.0&E=2502148.3698714287&N=1121744.1885856434&zoom=4
+KT_GE,LCE_KM_ADMINISTRATIF,https://map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||LCE_KM_ADMINISTRATIF||https://ge.ch/sitgags1/services/VECTOR/SITG_OPENDATA_03/MapServer/WMSServer?||68||1.3.0&E=2499081.9898634464&N=1122906.433851409&zoom=5
+KT_GE,LCE_INONDATION_EV_PONCTUEL,https://map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||LCE_INONDATION_EV_PONCTUEL||https://ge.ch/sitgags1/services/VECTOR/SITG_OPENDATA_03/MapServer/WMSServer?||69||1.3.0&E=2500624.1770032574&N=1122880.8679793945&zoom=5
+KT_GE,LCE_INONDATION_EV_ETENDUE,https://map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||LCE_INONDATION_EV_ETENDUE||https://ge.ch/sitgags1/services/VECTOR/SITG_OPENDATA_03/MapServer/WMSServer?||70||1.3.0&E=2500514.47029247&N=1116211.847565001&zoom=6
+KT_GE,LCE_INONDATION_COND,https://map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||LCE_INONDATION_COND||https://ge.ch/sitgags1/services/VECTOR/SITG_OPENDATA_03/MapServer/WMSServer?||71||1.3.0&E=2499081.9898634464&N=1122906.433851409&zoom=5
 KT_GE,LCE_INONDATION_300_ANS,https://map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||LCE_INONDATION_300_ANS||https://ge.ch/sitgags1/services/VECTOR/SITG_OPENDATA_03/MapServer/WMSServer?||72||1.3.0&E=2498310.8987784977&N=1122919.364304712&zoom=5
 KT_GE,LCE_INONDATION_30_ANS,https://map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||LCE_INONDATION_30_ANS||https://ge.ch/sitgags1/services/VECTOR/SITG_OPENDATA_03/MapServer/WMSServer?||73||1.3.0&E=2498310.8987784977&N=1122919.364304712&zoom=5
 KT_GE,LCE_INONDATION_2_ANS,https://map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||LCE_INONDATION_2_ANS||https://ge.ch/sitgags1/services/VECTOR/SITG_OPENDATA_03/MapServer/WMSServer?||74||1.3.0&E=2498310.8987784977&N=1122919.364304712&zoom=5
@@ -6217,6 +6229,7 @@ KT_GE,TPG_SCHEMA_ARRETS,https://map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkart
 KT_GE,TPG_MATS,https://map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||TPG_MATS||https://ge.ch/sitgags1/services/VECTOR/SITG_OPENDATA_04/MapServer/WMSServer?||19||1.3.0&E=2499007.718154707&N=1118460.441273193&zoom=6
 KT_GE,TPG_LIGNES_CONTACT,https://map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||TPG_LIGNES_CONTACT||https://ge.ch/sitgags1/services/VECTOR/SITG_OPENDATA_04/MapServer/WMSServer?||20||1.3.0&E=2499007.718154707&N=1118460.441273193&zoom=6
 KT_GE,TPG_LIGNES,https://map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||TPG_LIGNES||https://ge.ch/sitgags1/services/VECTOR/SITG_OPENDATA_04/MapServer/WMSServer?||21||1.3.0&E=2499871.5086638266&N=1124005.1012091232&zoom=4
+KT_GE,TPG_HAUBANS,https://map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||TPG_HAUBANS||https://ge.ch/sitgags1/services/VECTOR/SITG_OPENDATA_04/MapServer/WMSServer?||22||1.3.0&E=2499007.718154707&N=1118460.441273193&zoom=6
 KT_GE,TPG_ARRETS,https://map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||TPG_ARRETS||https://ge.ch/sitgags1/services/VECTOR/SITG_OPENDATA_04/MapServer/WMSServer?||23||1.3.0&E=2499100.557678016&N=1124017.930932976&zoom=5
 KT_GE,SPD_PERIMETRE_GRAND_PROJET,https://map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||SPD_PERIMETRE_GRAND_PROJET||https://ge.ch/sitgags1/services/VECTOR/SITG_OPENDATA_04/MapServer/WMSServer?||24||1.3.0&E=2499779.37794401&N=1118447.5996216745&zoom=5
 KT_GE,SPD_EQUIPEMENTS_PUBLICS_S,https://map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||SPD_EQUIPEMENTS_PUBLICS_S||https://ge.ch/sitgags1/services/VECTOR/SITG_OPENDATA_04/MapServer/WMSServer?||25||1.3.0&E=2499853.0826092605&N=1122893.6017428325&zoom=5
@@ -6227,11 +6240,9 @@ KT_GE,SPBR_ANTENNE_TELEPHONIE_PUBLIC,https://map.geo.admin.ch/?bgLayer=ch.swisst
 KT_GE,SPAIR_IMMISSIONS_NO2_MOYENNE,https://map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||SPAIR_IMMISSIONS_NO2_MOYENNE||https://ge.ch/sitgags1/services/VECTOR/SITG_OPENDATA_04/MapServer/WMSServer?||30||1.3.0&E=2499081.9898634464&N=1122906.433851409&zoom=5
 KT_GE,SPAIR_IMMISSIONS_NO2,https://map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||SPAIR_IMMISSIONS_NO2||https://ge.ch/sitgags1/services/VECTOR/SITG_OPENDATA_04/MapServer/WMSServer?||31||1.3.0&E=2499081.9898634464&N=1122906.433851409&zoom=5
 KT_GE,SIT_ZONE_AMENAG,https://map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||SIT_ZONE_AMENAG||https://ge.ch/sitgags1/services/VECTOR/SITG_OPENDATA_04/MapServer/WMSServer?||32||1.3.0&E=2499081.9898634464&N=1122906.433851409&zoom=5
-KT_GE,SIT_AUTOR_OBJET,https://map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||SIT_AUTOR_OBJET||https://ge.ch/sitgags1/services/VECTOR/SITG_OPENDATA_04/MapServer/WMSServer?||33||1.3.0&E=2499081.9898634464&N=1122906.433851409&zoom=5
 KT_GE,SIPV_VEGETATION_5000,https://map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||SIPV_VEGETATION_5000||https://ge.ch/sitgags1/services/VECTOR/SITG_OPENDATA_04/MapServer/WMSServer?||35||1.3.0&E=2499081.9898634464&N=1122906.433851409&zoom=5
 KT_GE,SIPV_VEGETATION_25000,https://map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||SIPV_VEGETATION_25000||https://ge.ch/sitgags1/services/VECTOR/SITG_OPENDATA_04/MapServer/WMSServer?||36||1.3.0&E=2499081.9898634464&N=1122906.433851409&zoom=5
 KT_GE,SIPV_SITES_PRIORITAIRES_FLORE,https://map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||SIPV_SITES_PRIORITAIRES_FLORE||https://ge.ch/sitgags1/services/VECTOR/SITG_OPENDATA_04/MapServer/WMSServer?||37||1.3.0&E=2499081.9898634464&N=1122906.433851409&zoom=5
-KT_GE,SIPV_EV_TOIT_VERT,https://map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||SIPV_EV_TOIT_VERT||https://ge.ch/sitgags1/services/VECTOR/SITG_OPENDATA_04/MapServer/WMSServer?||54||1.3.0&E=2498310.8987784977&N=1122919.364304712&zoom=5
 KT_GE,SIPV_ECOPOT_ZA,https://map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||SIPV_ECOPOT_ZA||https://ge.ch/sitgags1/services/VECTOR/SITG_OPENDATA_04/MapServer/WMSServer?||55||1.3.0&E=2499081.9898634464&N=1122906.433851409&zoom=5
 KT_GE,SIPV_ECOPOT_COMMUNE,https://map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||SIPV_ECOPOT_COMMUNE||https://ge.ch/sitgags1/services/VECTOR/SITG_OPENDATA_04/MapServer/WMSServer?||56||1.3.0&E=2499081.9898634464&N=1122906.433851409&zoom=5
 KT_GE,SIG_EAU_POTABLE_DURETE,https://map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||SIG_EAU_POTABLE_DURETE||https://ge.ch/sitgags1/services/VECTOR/SITG_OPENDATA_04/MapServer/WMSServer?||57||1.3.0&E=2499044.8541014227&N=1120683.4384801085&zoom=5
@@ -6241,6 +6252,18 @@ KT_GE,SCI_SECTEUR_RAMONAGE,https://map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelk
 KT_GE,SCI_PBC_OBJET,https://map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||SCI_PBC_OBJET||https://ge.ch/sitgags1/services/VECTOR/SITG_OPENDATA_04/MapServer/WMSServer?||61||1.3.0&E=2498310.8987784977&N=1122919.364304712&zoom=5
 KT_GE,SCI_PBC_COLLECTIONS,https://map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||SCI_PBC_COLLECTIONS||https://ge.ch/sitgags1/services/VECTOR/SITG_OPENDATA_04/MapServer/WMSServer?||62||1.3.0&E=2500514.47029247&N=1116211.847565001&zoom=7
 KT_GE,SCI_DISTRIBUTION_IODE,https://map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||SCI_DISTRIBUTION_IODE||https://ge.ch/sitgags1/services/VECTOR/SITG_OPENDATA_04/MapServer/WMSServer?||63||1.3.0&E=2497539.8093670956&N=1122932.3931023346&zoom=5
+KT_GE,RDPPF_ZONES_DEV,https://map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||RDPPF_ZONES_DEV||https://ge.ch/sitgags1/services/VECTOR/SITG_OPENDATA_04/MapServer/WMSServer?||97||1.3.0&E=2497539.8093670956&N=1122932.3931023346&zoom=5
+KT_GE,RDPPF_SI,https://map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||RDPPF_SI||https://ge.ch/sitgags1/services/VECTOR/SITG_OPENDATA_04/MapServer/WMSServer?||98||1.3.0&E=2499081.9898634464&N=1122906.433851409&zoom=5
+KT_GE,RDPPF_RS,https://map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||RDPPF_RS||https://ge.ch/sitgags1/services/VECTOR/SITG_OPENDATA_04/MapServer/WMSServer?||99||1.3.0&E=2500569.3238574304&N=1119546.3599925966&zoom=5
+KT_GE,RDPPF_PUS,https://map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||RDPPF_PUS||https://ge.ch/sitgags1/services/VECTOR/SITG_OPENDATA_04/MapServer/WMSServer?||100||1.3.0&E=2499760.9516603583&N=1117336.0978588352&zoom=7
+KT_GE,RDPPF_PS,https://map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||RDPPF_PS||https://ge.ch/sitgags1/services/VECTOR/SITG_OPENDATA_04/MapServer/WMSServer?||101||1.3.0&E=2499816.230368269&N=1120670.6016008777&zoom=5
+KT_GE,RDPPF_PNP,https://map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||RDPPF_PNP||https://ge.ch/sitgags1/services/VECTOR/SITG_OPENDATA_04/MapServer/WMSServer?||102||1.3.0&E=2496749.728505946&N=1121834.0300358848&zoom=5
+KT_GE,RDPPF_PLQ,https://map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||RDPPF_PLQ||https://ge.ch/sitgags1/services/VECTOR/SITG_OPENDATA_04/MapServer/WMSServer?||103||1.3.0&E=2497539.8093670956&N=1122932.3931023346&zoom=5
+KT_GE,RDPPF_PLCP,https://map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||RDPPF_PLCP||https://ge.ch/sitgags1/services/VECTOR/SITG_OPENDATA_04/MapServer/WMSServer?||104||1.3.0&E=2500551.0393838272&N=1118434.8563884364&zoom=8
+KT_GE,RDPPF_PLA,https://map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||RDPPF_PLA||https://ge.ch/sitgags1/services/VECTOR/SITG_OPENDATA_04/MapServer/WMSServer?||105||1.3.0&E=2498142.510484739&N=1112915.8905540318&zoom=7
+KT_GE,RDPPF_PDZI,https://map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||RDPPF_PDZI||https://ge.ch/sitgags1/services/VECTOR/SITG_OPENDATA_04/MapServer/WMSServer?||106||1.3.0&E=2499026.286151715&N=1119571.940122958&zoom=6
+KT_GE,RDPPF_PDZAM,https://map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||RDPPF_PDZAM||https://ge.ch/sitgags1/services/VECTOR/SITG_OPENDATA_04/MapServer/WMSServer?||107||1.3.0&E=2499081.9898634464&N=1122906.433851409&zoom=5
+KT_GE,RDPPF_LIMITE_FORET,https://map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||RDPPF_LIMITE_FORET||https://ge.ch/sitgags1/services/VECTOR/SITG_OPENDATA_04/MapServer/WMSServer?||108||1.3.0&E=2498273.4794966164&N=1120696.3737406433&zoom=5
 KT_GE,RDPPF_EXTRACTION_GRAVIERES,https://map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||RDPPF_EXTRACTION_GRAVIERES||https://ge.ch/sitgags1/services/VECTOR/SITG_OPENDATA_04/MapServer/WMSServer?||109||1.3.0&E=2493527.9051478575&N=1114107.1564072648&zoom=6
 KT_GE,RDPPF_DSOPB,https://map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||RDPPF_DSOPB||https://ge.ch/sitgags1/services/VECTOR/SITG_OPENDATA_04/MapServer/WMSServer?||110||1.3.0&E=2499081.9898634464&N=1122906.433851409&zoom=5
 KT_GE,RDPPF_DISTANCES_FORET_S,https://map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||RDPPF_DISTANCES_FORET_S||https://ge.ch/sitgags1/services/VECTOR/SITG_OPENDATA_04/MapServer/WMSServer?||111||1.3.0&E=2499081.9898634464&N=1122906.433851409&zoom=5
@@ -6259,7 +6282,6 @@ KT_GE,RAE_SCHEMA_POINT_REJET,https://map.geo.admin.ch/?bgLayer=ch.swisstopo.pixe
 KT_GE,RAE_SCHEMA_OUVRAGES_TRAITEMENT,https://map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||RAE_SCHEMA_OUVRAGES_TRAITEMENT||https://ge.ch/sitgags1/services/VECTOR/SITG_OPENDATA_04/MapServer/WMSServer?||124||1.3.0&E=2499063.4220049577&N=1121794.9363783624&zoom=5
 KT_GE,RAE_SCHEMA_OUVRAGES_SPECIAUX,https://map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||RAE_SCHEMA_OUVRAGES_SPECIAUX||https://ge.ch/sitgags1/services/VECTOR/SITG_OPENDATA_04/MapServer/WMSServer?||125||1.3.0&E=2497539.8093670956&N=1122932.3931023346&zoom=5
 KT_GE,RAE_SCHEMA_BASSIN_VERSANT,https://map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||RAE_SCHEMA_BASSIN_VERSANT||https://ge.ch/sitgags1/services/VECTOR/SITG_OPENDATA_04/MapServer/WMSServer?||126||1.3.0&E=2502937.4699475244&N=1122843.256763866&zoom=4
-KT_GE,RAE_REGARD_CHAMBRE,https://map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||RAE_REGARD_CHAMBRE||https://ge.ch/sitgags1/services/VECTOR/SITG_OPENDATA_04/MapServer/WMSServer?||127||1.3.0&E=1724229.918562121&N=1784026.432571847&zoom=0
 KT_GE,RAE_PT_REJET,https://map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||RAE_PT_REJET||https://ge.ch/sitgags1/services/VECTOR/SITG_OPENDATA_04/MapServer/WMSServer?||128||1.3.0&E=2499853.0826092605&N=1122893.6017428325&zoom=5
 KT_GE,RAE_PT_RACCORDEMENT,https://map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||RAE_PT_RACCORDEMENT||https://ge.ch/sitgags1/services/VECTOR/SITG_OPENDATA_04/MapServer/WMSServer?||129||1.3.0&E=2499341.9357835855&N=1138467.3727048214&zoom=4
 KT_GE,RAE_PT_MESURE_METROLOGIE,https://map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||RAE_PT_MESURE_METROLOGIE||https://ge.ch/sitgags1/services/VECTOR/SITG_OPENDATA_04/MapServer/WMSServer?||130||1.3.0&E=2499081.9898634464&N=1122906.433851409&zoom=5
@@ -6277,7 +6299,6 @@ KT_GE,RAE_DOCUMENTS_PGEE,https://map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkar
 KT_GE,RAE_DEVERSOIR,https://map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||RAE_DEVERSOIR||https://ge.ch/sitgags1/services/VECTOR/SITG_OPENDATA_04/MapServer/WMSServer?||142||1.3.0&E=2498273.4794966164&N=1120696.3737406433&zoom=5
 KT_GE,RAE_DESCENTE_TOITURE,https://map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||RAE_DESCENTE_TOITURE||https://ge.ch/sitgags1/services/VECTOR/SITG_OPENDATA_04/MapServer/WMSServer?||143||1.3.0&E=2500624.1770032574&N=1122880.8679793945&zoom=5
 KT_GE,RAE_CONTRAINTE_GESTION_EAUX,https://map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||RAE_CONTRAINTE_GESTION_EAUX||https://ge.ch/sitgags1/services/VECTOR/SITG_OPENDATA_04/MapServer/WMSServer?||144||1.3.0&E=2499081.9898634464&N=1122906.433851409&zoom=5
-KT_GE,POL_POSTE_POLICE,https://map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||POL_POSTE_POLICE||https://ge.ch/sitgags1/services/VECTOR/SITG_OPENDATA_04/MapServer/WMSServer?||146||1.3.0&E=2501358.9878373146&N=1120645.2229879072&zoom=6
 KT_GE,PAV_SECTEUR,https://map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||PAV_SECTEUR||https://ge.ch/sitgags1/services/VECTOR/SITG_OPENDATA_04/MapServer/WMSServer?||147||1.3.0&E=2498970.582014281&N=1116237.441960981&zoom=9
 KT_GE,PAV_PERIMETRE,https://map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||PAV_PERIMETRE||https://ge.ch/sitgags1/services/VECTOR/SITG_OPENDATA_04/MapServer/WMSServer?||148||1.3.0&E=2498970.582014281&N=1116237.441960981&zoom=8
 KT_BE,Versorgung und Entsorgung,https://map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||Versorgung und Entsorgung||https://oerebservice.apps.be.ch/cgi-bin/mapserv.fcgi?map=oereb_de?||Versorgung und Entsorgung||1.3.0&E=2619948.9213109366&N=1184348.9114046062&zoom=2
@@ -9659,10 +9680,6 @@ KT_SH,Individualverkehr Zählstellen Velo,https://map.geo.admin.ch/?bgLayer=ch.s
 KT_SH,Verkehr Rettungsachsen,https://map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||Verkehr Rettungsachsen||https://wms.geo.sh.ch/wms?||sh.verkehr.rettungsachsen.achsen||1.3.0&E=2690193.923354994&N=1282843.5317545775&zoom=4
 KT_SH,Verkehr Rettungsachsen Brücken,https://map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||Verkehr Rettungsachsen Brücken||https://wms.geo.sh.ch/wms?||sh.verkehr.rettungsachsen.bruecken||1.3.0&E=2690193.923354994&N=1282843.5317545775&zoom=4
 KT_SH,Verkehr Rettungsachsen Wichtige Punkte,https://map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||Verkehr Rettungsachsen Wichtige Punkte||https://wms.geo.sh.ch/wms?||sh.verkehr.rettungsachsen.wichtige_punkte||1.3.0&E=2696968.4103418333&N=1281839.0734507514&zoom=5
-KT_SH,Richtplan Landschaft Ausgangslage,https://map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||Richtplan Landschaft Ausgangslage||https://wms.geo.sh.ch/wms?||sh.richtplan.landschaft.ausgangslage||1.3.0&E=2690210.948149349&N=1281731.7195371732&zoom=4
-KT_SH,Richtplan Landschaft Fläche,https://map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||Richtplan Landschaft Fläche||https://wms.geo.sh.ch/wms?||sh.richtplan.landschaft.flaeche||1.3.0&E=2690961.7832437768&N=1281743.2646954034&zoom=4
-KT_SH,Richtplan Landschaft Punkt,https://map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||Richtplan Landschaft Punkt||https://wms.geo.sh.ch/wms?||sh.richtplan.landschaft.punkt||1.3.0&E=2690978.9497391907&N=1280631.4590590738&zoom=4
-KT_SH,Richtplan öffentliche Bauten und Anlagen,https://map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||Richtplan öffentliche Bauten und Anlagen||https://wms.geo.sh.ch/wms?||sh.richtplan.oeffentliche_bauten_und_anlagen.punkt||1.3.0&E=2690176.898456452&N=1283955.3484301807&zoom=7
 KT_SH,Richtplan Siedlung Ausgangslage,https://map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||Richtplan Siedlung Ausgangslage||https://wms.geo.sh.ch/wms?||sh.richtplan.siedlung.ausgangslage||1.3.0&E=2690961.7832437768&N=1281743.2646954034&zoom=4
 KT_SH,Richtplan Siedlung Linie,https://map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||Richtplan Siedlung Linie||https://wms.geo.sh.ch/wms?||sh.richtplan.siedlung.linie||1.3.0&E=2692463.449033581&N=1281766.642304733&zoom=5
 KT_SH,Richtplan Siedlung Punkt,https://map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||Richtplan Siedlung Punkt||https://wms.geo.sh.ch/wms?||sh.richtplan.siedlung.punkt||1.3.0&E=2689460.11160466&N=1281720.2701436924&zoom=4
@@ -10130,7 +10147,6 @@ KT_SO,Kantonale Gebäude (Vermögensart),https://map.geo.admin.ch/?bgLayer=ch.sw
 KT_SO,ch.so.agi.hintergrundkarte_sw,https://map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMTS||ch.so.agi.hintergrundkarte_sw||https://geo.so.ch/api/wmts/1.0.0/WMTSCapabilities.xml&E=2634414.8489184165&N=1181618.52102197&zoom=1
 KT_SO,ch.so.agi.hintergrundkarte_farbig,https://map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMTS||ch.so.agi.hintergrundkarte_farbig||https://geo.so.ch/api/wmts/1.0.0/WMTSCapabilities.xml&E=2634414.8489184165&N=1181618.52102197&zoom=1
 KT_SO,ch.so.agi.hintergrundkarte_ortho,https://map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMTS||ch.so.agi.hintergrundkarte_ortho||https://geo.so.ch/api/wmts/1.0.0/WMTSCapabilities.xml&E=2634414.8489184165&N=1181618.52102197&zoom=1
-KT_SO,ÖREB-Kataster V2_0,https://map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||ÖREB-Kataster V2_0||https://geo.so.ch/wms/oereb?||ch.so.agi.oereb||1.3.0&E=2619771.6755333417&N=1237711.7359356135&zoom=4
 KT_SO,Baulinien,https://map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||Baulinien||https://geo.so.ch/wms/oereb?||ch.SO.Baulinien||1.3.0&E=2620528.1251190533&N=1237714.2967368069&zoom=4
 KT_SO,Einzelschutz,https://map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||Einzelschutz||https://geo.so.ch/wms/oereb?||ch.SO.Einzelschutz||1.3.0&E=2619015.225627862&N=1237709.2716179863&zoom=4
 KT_SO,Gewässerraum,https://map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||Gewässerraum||https://geo.so.ch/wms/oereb?||ch.Gewaesserraum||1.3.0&E=2613737.976747087&N=1229912.26733106&zoom=4
@@ -10155,6 +10171,7 @@ KT_SO,Nutzungsplanung überlagernd (Fläche),https://map.geo.admin.ch/?bgLayer=c
 KT_SZ,A001a: Landwirtschaftliche Bewirtschaftungseinheiten,https://map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||A001a: Landwirtschaftliche Bewirtschaftungseinheiten||https://map.geo.sz.ch/mapserv_proxy?lang=de?||A001a: Landwirtschaftliche Bewirtschaftungseinheiten||1.3.0&E=2666531.1427989136&N=1182461.4482838477&zoom=1
 KT_SZ,A002a: Landwirtschaftliche Nutzungsflächen,https://map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||A002a: Landwirtschaftliche Nutzungsflächen||https://map.geo.sz.ch/mapserv_proxy?lang=de?||A002a: Landwirtschaftliche Nutzungsflächen||1.3.0&E=2666531.1427989136&N=1182461.4482838477&zoom=1
 KT_SZ,"ÖREB: Nutzungsplanung kommunal, Aggregation über alle Gemeinden mit ÖREB-Kataster in Kraft","https://map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||ÖREB: Nutzungsplanung kommunal, Aggregation über alle Gemeinden mit ÖREB-Kataster in Kraft||https://map.geo.sz.ch/mapserv_proxy?lang=de?||ch.sz.a005a.oereb.nutzungsplanung_kommunal.aggregiert||1.3.0&E=2666531.1427989136&N=1182461.4482838477&zoom=1"
+KT_SZ,A094b: ÖREB,https://map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||A094b: ÖREB||https://map.geo.sz.ch/mapserv_proxy?lang=de?||A094b: ÖREB||1.3.0&E=2666531.1427989136&N=1182461.4482838477&zoom=1
 KT_SZ,"Eisenbahn, Swiss TLM","https://map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||Eisenbahn, Swiss TLM||https://map.geo.sz.ch/mapserv_proxy?lang=de?||ch.sz.a006.swisstlm3d.oev.eisenbahn||1.3.0&E=2695824.0560417427&N=1212878.1944236394&zoom=4"
 KT_SZ,A007a: Wuhrperimeter,https://map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||A007a: Wuhrperimeter||https://map.geo.sz.ch/mapserv_proxy?lang=de?||A007a: Wuhrperimeter||1.3.0&E=2666531.1427989136&N=1182461.4482838477&zoom=1
 KT_SZ,Stockgrenzen,https://map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||Stockgrenzen||https://map.geo.sz.ch/mapserv_proxy?lang=de?||ch.sz.a010a.stockgrenzen||1.3.0&E=2695824.0560417427&N=1212878.1944236394&zoom=4
@@ -11031,6 +11048,111 @@ KT_SZ,ÖREB: Kommunale Nutzungsplanung Wollerau: Grundnutzung/Zonennutzung,n.a.
 KT_SZ,ÖREB: Kommunale Nutzungsplanung Wollerau: überlagernde Festlegung,n.a.
 KT_SZ,ÖREB: Kommunale Nutzungsplanung Wollerau: Linienbezogene Festlegungen ,n.a.
 KT_SZ,ÖREB: Kommunale Nutzungsplanung Wollerau: Objektbezogene Festlegung,n.a.
+KT_SZ,"ÖREB: Nutzungsplanung kommunal, Grundnutzung Altendorf",n.a.
+KT_SZ,"ÖREB: Nutzungsplanung kommunal,  überlagernde Festlegung Altendorf",n.a.
+KT_SZ,"ÖREB: Nutzungsplanung kommunal, linienbezogene Festlegung Altendorf",n.a.
+KT_SZ,"ÖREB: Nutzungsplanung kommunal, objektbezogene Festlegungen Altendorf",n.a.
+KT_SZ,"ÖREB: Nutzungsplanung kommunal, Grundnutzung Arth",n.a.
+KT_SZ,"ÖREB: Nutzungsplanung kommunal,  überlagernde Festlegung Arth",n.a.
+KT_SZ,"ÖREB: Nutzungsplanung kommunal, linienbezogene Festlegung Arth",n.a.
+KT_SZ,"ÖREB: Nutzungsplanung kommunal, objektbezogene Festlegungen Arth",n.a.
+KT_SZ,"ÖREB: Nutzungsplanung kommunal, Grundnutzung Einsiedeln",n.a.
+KT_SZ,"ÖREB: Nutzungsplanung kommunal,  überlagernde Festlegung Einsiedeln",n.a.
+KT_SZ,"ÖREB: Nutzungsplanung kommunal, linienbezogene Festlegung Einsiedeln",n.a.
+KT_SZ,"ÖREB: Nutzungsplanung kommunal, objektbezogene Festlegungen Einsiedeln",n.a.
+KT_SZ,"ÖREB: Nutzungsplanung kommunal, Grundnutzung Feusisberg",n.a.
+KT_SZ,"ÖREB: Nutzungsplanung kommunal,  überlagernde Festlegung Feusisberg",n.a.
+KT_SZ,"ÖREB: Nutzungsplanung kommunal, linienbezogene Festlegung Feusisberg",n.a.
+KT_SZ,"ÖREB: Nutzungsplanung kommunal, objektbezogene Festlegungen Feusisberg",n.a.
+KT_SZ,"ÖREB: Nutzungsplanung kommunal, Grundnutzung Freienbach",n.a.
+KT_SZ,"ÖREB: Nutzungsplanung kommunal,  überlagernde Festlegung Freienbach",n.a.
+KT_SZ,"ÖREB: Nutzungsplanung kommunal, linienbezogene Festlegung Freienbach",n.a.
+KT_SZ,"ÖREB: Nutzungsplanung kommunal, objektbezogene Festlegungen Freienbach",n.a.
+KT_SZ,"ÖREB: Nutzungsplanung kommunal, Grundnutzung Galgenen",n.a.
+KT_SZ,"ÖREB: Nutzungsplanung kommunal,  überlagernde Festlegung Galgenen",n.a.
+KT_SZ,"ÖREB: Nutzungsplanung kommunal, linienbezogene Festlegung Galgenen",n.a.
+KT_SZ,"ÖREB: Nutzungsplanung kommunal, objektbezogene Festlegungen Galgenen",n.a.
+KT_SZ,"ÖREB: Nutzungsplanung kommunal, Grundnutzung Gersau",n.a.
+KT_SZ,"ÖREB: Nutzungsplanung kommunal,  überlagernde Festlegung Gersau",n.a.
+KT_SZ,"ÖREB: Nutzungsplanung kommunal, linienbezogene Festlegung Gersau",n.a.
+KT_SZ,"ÖREB: Nutzungsplanung kommunal, objektbezogene Festlegungen Gersau",n.a.
+KT_SZ,"ÖREB: Nutzungsplanung kommunal, Grundnutzung Illgau",n.a.
+KT_SZ,"ÖREB: Nutzungsplanung kommunal,  überlagernde Festlegung Illgau",n.a.
+KT_SZ,"ÖREB: Nutzungsplanung kommunal, linienbezogene Festlegung Illgau",n.a.
+KT_SZ,"ÖREB: Nutzungsplanung kommunal, objektbezogene Festlegungen Illgau",n.a.
+KT_SZ,"ÖREB: Nutzungsplanung kommunal, Grundnutzung Ingenbohl",n.a.
+KT_SZ,"ÖREB: Nutzungsplanung kommunal,  überlagernde Festlegung Ingenbohl",n.a.
+KT_SZ,"ÖREB: Nutzungsplanung kommunal, linienbezogene Festlegung Ingenbohl",n.a.
+KT_SZ,"ÖREB: Nutzungsplanung kommunal, objektbezogene Festlegungen Ingenbohl",n.a.
+KT_SZ,"ÖREB: Nutzungsplanung kommunal, Grundnutzung Innerthal",n.a.
+KT_SZ,"ÖREB: Nutzungsplanung kommunal,  überlagernde Festlegung Innerthal",n.a.
+KT_SZ,"ÖREB: Nutzungsplanung kommunal, linienbezogene Festlegung Innerthal",n.a.
+KT_SZ,"ÖREB: Nutzungsplanung kommunal, objektbezogene Festlegungen Innerthal",n.a.
+KT_SZ,"ÖREB: Nutzungsplanung kommunal, Grundnutzung Kuessnacht",n.a.
+KT_SZ,"ÖREB: Nutzungsplanung kommunal,  überlagernde Festlegung Kuessnacht",n.a.
+KT_SZ,"ÖREB: Nutzungsplanung kommunal, linienbezogene Festlegung Kuessnacht",n.a.
+KT_SZ,"ÖREB: Nutzungsplanung kommunal, objektbezogene Festlegungen Kuessnacht",n.a.
+KT_SZ,"ÖREB: Nutzungsplanung kommunal, Grundnutzung Lachen",n.a.
+KT_SZ,"ÖREB: Nutzungsplanung kommunal,  überlagernde Festlegung Lachen",n.a.
+KT_SZ,"ÖREB: Nutzungsplanung kommunal, linienbezogene Festlegung Lachen",n.a.
+KT_SZ,"ÖREB: Nutzungsplanung kommunal, objektbezogene Festlegungen Lachen",n.a.
+KT_SZ,"ÖREB: Nutzungsplanung kommunal, Grundnutzung Lauerz",n.a.
+KT_SZ,"ÖREB: Nutzungsplanung kommunal,  überlagernde Festlegung Lauerz",n.a.
+KT_SZ,"ÖREB: Nutzungsplanung kommunal, linienbezogene Festlegung Lauerz",n.a.
+KT_SZ,"ÖREB: Nutzungsplanung kommunal, objektbezogene Festlegungen Lauerz",n.a.
+KT_SZ,"ÖREB: Nutzungsplanung kommunal, Grundnutzung Morschach",n.a.
+KT_SZ,"ÖREB: Nutzungsplanung kommunal,  überlagernde Festlegung Morschach",n.a.
+KT_SZ,"ÖREB: Nutzungsplanung kommunal, linienbezogene Festlegung Morschach",n.a.
+KT_SZ,"ÖREB: Nutzungsplanung kommunal, objektbezogene Festlegungen Morschach",n.a.
+KT_SZ,"ÖREB: Nutzungsplanung kommunal, Grundnutzung Muotathal",n.a.
+KT_SZ,"ÖREB: Nutzungsplanung kommunal,  überlagernde Festlegung Muotathal",n.a.
+KT_SZ,"ÖREB: Nutzungsplanung kommunal, linienbezogene Festlegung Muotathal",n.a.
+KT_SZ,"ÖREB: Nutzungsplanung kommunal, objektbezogene Festlegungen Muotathal",n.a.
+KT_SZ,"ÖREB: Nutzungsplanung kommunal, objektbezogene Festlegungen Oberiberg",n.a.
+KT_SZ,"ÖREB: Nutzungsplanung kommunal, Grundnutzung Reichenburg",n.a.
+KT_SZ,"ÖREB: Nutzungsplanung kommunal,  überlagernde Festlegung Reichenburg",n.a.
+KT_SZ,"ÖREB: Nutzungsplanung kommunal, linienbezogene Festlegung Reichenburg",n.a.
+KT_SZ,"ÖREB: Nutzungsplanung kommunal, objektbezogene Festlegungen Reichenburg",n.a.
+KT_SZ,"ÖREB: Nutzungsplanung kommunal, Grundnutzung Rothenthurm",n.a.
+KT_SZ,"ÖREB: Nutzungsplanung kommunal,  überlagernde Festlegung Rothenthurm",n.a.
+KT_SZ,"ÖREB: Nutzungsplanung kommunal, linienbezogene Festlegung Rothenthurm",n.a.
+KT_SZ,"ÖREB: Nutzungsplanung kommunal, objektbezogene Festlegungen Rothenthurm",n.a.
+KT_SZ,"ÖREB: Nutzungsplanung kommunal, Grundnutzung Schuebelbach",n.a.
+KT_SZ,"ÖREB: Nutzungsplanung kommunal,  überlagernde Festlegung Schuebelbach",n.a.
+KT_SZ,"ÖREB: Nutzungsplanung kommunal, linienbezogene Festlegung Schuebelbach",n.a.
+KT_SZ,"ÖREB: Nutzungsplanung kommunal, objektbezogene Festlegungen Schuebelbach",n.a.
+KT_SZ,"ÖREB: Nutzungsplanung kommunal, Grundnutzung Sattel",n.a.
+KT_SZ,"ÖREB: Nutzungsplanung kommunal,  überlagernde Festlegung Sattel",n.a.
+KT_SZ,"ÖREB: Nutzungsplanung kommunal, linienbezogene Festlegung Sattel",n.a.
+KT_SZ,"ÖREB: Nutzungsplanung kommunal, objektbezogene Festlegungen Sattel",n.a.
+KT_SZ,"ÖREB: Nutzungsplanung kommunal, Grundnutzung Steinen",n.a.
+KT_SZ,"ÖREB: Nutzungsplanung kommunal,  überlagernde Festlegung Steinen",n.a.
+KT_SZ,"ÖREB: Nutzungsplanung kommunal, linienbezogene Festlegung Steinen",n.a.
+KT_SZ,"ÖREB: Nutzungsplanung kommunal, objektbezogene Festlegungen Steinen",n.a.
+KT_SZ,"ÖREB: Nutzungsplanung kommunal, Grundnutzung Steinerberg",n.a.
+KT_SZ,"ÖREB: Nutzungsplanung kommunal,  überlagernde Festlegung Steinerberg",n.a.
+KT_SZ,"ÖREB: Nutzungsplanung kommunal, linienbezogene Festlegung Steinerberg",n.a.
+KT_SZ,"ÖREB: Nutzungsplanung kommunal, objektbezogene Festlegungen Steinerberg",n.a.
+KT_SZ,"ÖREB: Nutzungsplanung kommunal, Grundnutzung Tuggen",n.a.
+KT_SZ,"ÖREB: Nutzungsplanung kommunal,  überlagernde Festlegung Tuggen",n.a.
+KT_SZ,"ÖREB: Nutzungsplanung kommunal, linienbezogene Festlegung Tuggen",n.a.
+KT_SZ,"ÖREB: Nutzungsplanung kommunal, objektbezogene Festlegungen Tuggen",n.a.
+KT_SZ,"ÖREB: Nutzungsplanung kommunal, Grundnutzung Unteriberg",n.a.
+KT_SZ,"ÖREB: Nutzungsplanung kommunal,  überlagernde Festlegung Unteriberg",n.a.
+KT_SZ,"ÖREB: Nutzungsplanung kommunal, linienbezogene Festlegung Unteriberg",n.a.
+KT_SZ,"ÖREB: Nutzungsplanung kommunal, objektbezogene Festlegungen Unteriberg",n.a.
+KT_SZ,"ÖREB: Nutzungsplanung kommunal, Grundnutzung Vorderthal",n.a.
+KT_SZ,"ÖREB: Nutzungsplanung kommunal,  überlagernde Festlegung Vorderthal",n.a.
+KT_SZ,"ÖREB: Nutzungsplanung kommunal, linienbezogene Festlegung Vorderthal",n.a.
+KT_SZ,"ÖREB: Nutzungsplanung kommunal, objektbezogene Festlegungen Vorderthal",n.a.
+KT_SZ,"ÖREB: Nutzungsplanung kommunal, Grundnutzung Wangen",n.a.
+KT_SZ,"ÖREB: Nutzungsplanung kommunal,  überlagernde Festlegung Wangen",n.a.
+KT_SZ,"ÖREB: Nutzungsplanung kommunal, linienbezogene Festlegung Wangen",n.a.
+KT_SZ,"ÖREB: Nutzungsplanung kommunal, objektbezogene Festlegungen Wangen",n.a.
+KT_SZ,"ÖREB: Nutzungsplanung kommunal, Grundnutzung Wollerau",n.a.
+KT_SZ,"ÖREB: Nutzungsplanung kommunal,  überlagernde Festlegung Wollerau",n.a.
+KT_SZ,"ÖREB: Nutzungsplanung kommunal, linienbezogene Festlegung Wollerau",n.a.
+KT_SZ,"ÖREB: Nutzungsplanung kommunal, objektbezogene Festlegungen Wollerau",n.a.
 KT_SZ,"Eisenbahn, Swiss TLM",n.a.
 KT_SZ,Wuhrperimeter Alp,n.a.
 KT_SZ,Wuhrperimeter Bettbach,n.a.
@@ -12315,7 +12437,7 @@ KT_TI,[CH-081.2] Opere di protezione dai pericoli naturali - Catasto manufatti p
 KT_TI,[CH-184.1] Itinerari cantonali dei trasporti speciali - ostacoli,n.a.
 KT_TI,[CH-067.1] Rete delle piste ciclabili,https://map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||[CH-067.1] Rete delle piste ciclabili||https://wms.geo.ti.ch/service?||ch_067_1_v1_0_rete_piste_ciclabili||1.3.0&E=2702744.673616835&N=1118487.5405937412&zoom=2
 KT_TI,[CH-191.1] Pianificazione rivitalizzazioni corsi d'acqua - Priorità,n.a.
-KT_TI,[CH-009.1] Registro federale degli edifici e delle abitazioni REA,https://map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||[CH-009.1] Registro federale degli edifici e delle abitazioni REA||https://wms.geo.ti.ch/service?||ch_009_1_v1_0_registro_federale_edifici_abitazioni_rea||1.3.0&E=2704249.6863071835&N=1120736.9061639882&zoom=3
+KT_TI,[CH-009.1] Registro federale degli edifici e delle abitazioni REA,https://map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||[CH-009.1] Registro federale degli edifici e delle abitazioni REA||https://wms.geo.ti.ch/service?||ch_009_1_v1_0_registro_federale_edifici_abitazioni_rea||1.3.0&E=2702744.673616835&N=1118487.5405937412&zoom=2
 KT_TI,[CH-160.1] Riserve forestali,https://map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||[CH-160.1] Riserve forestali||https://wms.geo.ti.ch/service?||ch_160_1_v1_1_riserve_forestali||1.3.0&E=2704249.6863071835&N=1120736.9061639882&zoom=3
 KT_TI,[CH-068.1] Superfici per l’avvicendamento delle colture,https://map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||[CH-068.1] Superfici per l’avvicendamento delle colture||https://wms.geo.ti.ch/service?||ch_068_1_v1_0_superfici_avvicendamento_colture||1.3.0&E=2704249.6863071835&N=1120736.9061639882&zoom=3
 KT_TI,[CH-079.1] Segnaletica sentieri,https://map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||[CH-079.1] Segnaletica sentieri||https://wms.geo.ti.ch/service?||ch_079_1_v1_0_reti_percorsi_pedonali_sentieri_segnaletica_sentieri||1.3.0&E=2702744.673616835&N=1118487.5405937412&zoom=2
@@ -12370,14 +12492,14 @@ KT_TI,[AC-059.1] Aree geotermiche,https://map.geo.admin.ch/?bgLayer=ch.swisstopo
 KT_TI,[AC-052.1] Bandite cantonali di caccia,https://map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||[AC-052.1] Bandite cantonali di caccia||https://wms.geo.ti.ch/service?||ac_052_1_v1_0_bandite_cantonali_caccia||1.3.0&E=2702744.673616835&N=1118487.5405937412&zoom=2
 KT_TI,[AC-060.1] Cappelle e dipinti murali devozionali,https://map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||[AC-060.1] Cappelle e dipinti murali devozionali||https://wms.geo.ti.ch/service?||ac_060_1_v1_0_cappelle_dipinti_murali_devozionali||1.3.0&E=2702744.673616835&N=1118487.5405937412&zoom=2
 KT_TI,[AC-004.1] Citazioni,n.a.
-KT_TI,[AC-021.3] Bilancio idrologico - coefficiente di deflusso,https://map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||[AC-021.3] Bilancio idrologico - coefficiente di deflusso||https://wms.geo.ti.ch/service?||ac_021_3_v1_0_bilancio_idrologico_coefficiente_deflusso||1.3.0&E=2704249.6863071835&N=1120736.9061639882&zoom=3
+KT_TI,[AC-021.3] Bilancio idrologico - coefficiente di deflusso,https://map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||[AC-021.3] Bilancio idrologico - coefficiente di deflusso||https://wms.geo.ti.ch/service?||ac_021_3_v1_0_bilancio_idrologico_coefficiente_deflusso||1.3.0&E=2702744.673616835&N=1118487.5405937412&zoom=2
 KT_TI,[AC-021.6] Consorzi di manutenzione dei corsi d'acqua,n.a.
 KT_TI,[AC-037.1] Curve di livello con equidistanza 10m,n.a.
-KT_TI,[AC-021.3] Bilancio idrologico - deflusso specifico,https://map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||[AC-021.3] Bilancio idrologico - deflusso specifico||https://wms.geo.ti.ch/service?||ac_021_3_v1_0_bilancio_idrologico_deflusso_specifico||1.3.0&E=2704249.6863071835&N=1120736.9061639882&zoom=3
+KT_TI,[AC-021.3] Bilancio idrologico - deflusso specifico,https://map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||[AC-021.3] Bilancio idrologico - deflusso specifico||https://wms.geo.ti.ch/service?||ac_021_3_v1_0_bilancio_idrologico_deflusso_specifico||1.3.0&E=2702744.673616835&N=1118487.5405937412&zoom=2
 KT_TI,[AC-001.1] Disponibilità del Catasto RDPP,https://map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||[AC-001.1] Disponibilità del Catasto RDPP||https://wms.geo.ti.ch/service?||ac_001_1_v1_1_disponibilita_catasto_rdpp||1.3.0&E=2702744.673616835&N=1118487.5405937412&zoom=2
 KT_TI,[AC-065a.1] Disponibilità piani di utilizzazione cantonali,n.a.
 KT_TI,[AC-065a.1] Disponibilità piani di utilizzazione cantonali,n.a.
-KT_TI,[AC-021.3] Bilancio idrologico - evaporazione,https://map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||[AC-021.3] Bilancio idrologico - evaporazione||https://wms.geo.ti.ch/service?||ac_021_3_v1_0_bilancio_idrologico_evaporazione||1.3.0&E=2704249.6863071835&N=1120736.9061639882&zoom=3
+KT_TI,[AC-021.3] Bilancio idrologico - evaporazione,https://map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||[AC-021.3] Bilancio idrologico - evaporazione||https://wms.geo.ti.ch/service?||ac_021_3_v1_0_bilancio_idrologico_evaporazione||1.3.0&E=2702744.673616835&N=1118487.5405937412&zoom=2
 KT_TI,[AC-002.1] Limiti giurisdizionali indicativi - Cantone,https://map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||[AC-002.1] Limiti giurisdizionali indicativi - Cantone||https://wms.geo.ti.ch/service?||ac_002_1_v1_1_limiti_giurisdizionali_indicativi_cantone||1.3.0&E=2702744.673616835&N=1118487.5405937412&zoom=2
 KT_TI,[AC-002.1] Limiti giurisdizionali indicativi - Comuni,https://map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||[AC-002.1] Limiti giurisdizionali indicativi - Comuni||https://wms.geo.ti.ch/service?||ac_002_1_v1_1_limiti_giurisdizionali_indicativi_comuni||1.3.0&E=2702744.673616835&N=1118487.5405937412&zoom=2
 KT_TI,[AC-002.1] Limiti giurisdizionali indicativi - Distretti,https://map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||[AC-002.1] Limiti giurisdizionali indicativi - Distretti||https://wms.geo.ti.ch/service?||ac_002_1_v1_1_limiti_giurisdizionali_indicativi_distretti||1.3.0&E=2702744.673616835&N=1118487.5405937412&zoom=2
@@ -12422,7 +12544,6 @@ KT_TI,[AC-008.1] Piani d'evacuazione - Zone di evacuazione,n.a.
 KT_TI,[AC-005.1] Cancro del platano - zona focolaio,n.a.
 KT_TI,[AC-005.1] Cancro del platano - zona tampone,n.a.
 KT_TI,[AC-011.1] Malattia api peste americana - zone di sequestro,n.a.
-KT_TI,Geodati di base di competenza federale,https://map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||Geodati di base di competenza federale||https://wms.geo.ti.ch/service?||geodati_di_base_federali||1.3.0&E=2702744.673616835&N=1118487.5405937412&zoom=2
 KT_TI,[CH-051.1] Piano Registro Fondiario,https://map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||[CH-051.1] Piano Registro Fondiario||https://wms.geo.ti.ch/service?||ch.ti.051_1.piano_registro_fondiario||1.3.0&E=2704249.6863071835&N=1120736.9061639882&zoom=3
 KT_TI,[CH-055.1] Copertura del suolo,https://map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||[CH-055.1] Copertura del suolo||https://wms.geo.ti.ch/service?||ch.ti.055_1.copertura_suolo||1.3.0&E=2704249.6863071835&N=1120736.9061639882&zoom=3
 KT_TI,[CH-056.1] Oggetti singoli,https://map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||[CH-056.1] Oggetti singoli||https://wms.geo.ti.ch/service?||ch.ti.056_1.oggetti_singoli||1.3.0&E=2704249.6863071835&N=1120736.9061639882&zoom=3
@@ -12490,6 +12611,7 @@ KT_TI,[CH-167.1] Scivolamento (aree),https://map.geo.admin.ch/?bgLayer=ch.swisst
 KT_TI,[CH-167.1] Crollo di roccia - caduta sassi (aree),https://map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||[CH-167.1] Crollo di roccia - caduta sassi (aree)||https://wms.geo.ti.ch/service?||ch.ti.167_1.catasto_eventi_naturali_ad_crollo||1.3.0&E=2704249.6863071835&N=1120736.9061639882&zoom=3
 KT_TI,[CH-167.1] Cedimento - sprofondamento (aree),https://map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||[CH-167.1] Cedimento - sprofondamento (aree)||https://wms.geo.ti.ch/service?||ch.ti.167_1.catasto_eventi_naturali_ad_ced_spro||1.3.0&E=2704249.6863071835&N=1120736.9061639882&zoom=3
 KT_TI,[CH-167.1] Altro processo (aree),https://map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||[CH-167.1] Altro processo (aree)||https://wms.geo.ti.ch/service?||ch.ti.167_1.catasto_eventi_naturali_ad_altro||1.3.0&E=2704249.6863071835&N=1120736.9061639882&zoom=3
+KT_TI,[CH-009.1] Registro federale degli edifici e delle abitazioni REA,https://map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||[CH-009.1] Registro federale degli edifici e delle abitazioni REA||https://wms.geo.ti.ch/service?||ch_009_1_v1_0_registro_federale_edifici_abitazioni_rea_punti||1.3.0&E=2702744.673616835&N=1118487.5405937412&zoom=2
 KT_TI,[CH-040.7] Nomi geografici (misurazione nazionale) - Toponimi,https://map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||[CH-040.7] Nomi geografici (misurazione nazionale) - Toponimi||https://wms.geo.ti.ch/service?||ch_040_7_v1_0_nomi_geografici_toponimi_completo||1.3.0&E=2704249.6863071835&N=1120736.9061639882&zoom=3
 KT_TI,[CH-053.1] PFP 1 - Accessibile,https://map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||[CH-053.1] PFP 1 - Accessibile||https://wms.geo.ti.ch/service?||ch_053_1_v24_0_punti_fissi_planimetrici_pfp1_accessibile||1.3.0&E=2704249.6863071835&N=1120736.9061639882&zoom=3
 KT_TI,[CH-053.1] PFP 1 - Inaccessibile,https://map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||[CH-053.1] PFP 1 - Inaccessibile||https://wms.geo.ti.ch/service?||ch_053_1_v24_0_punti_fissi_planimetrici_pfp1_inaccessibile||1.3.0&E=2704249.6863071835&N=1120736.9061639882&zoom=3
@@ -13173,7 +13295,7 @@ KT_TI,[AC-011.1] Malattie delle api,https://map.geo.admin.ch/?bgLayer=ch.swissto
 KT_TI,[AC-012.1] Limitazioni,https://map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||[AC-012.1] Limitazioni||https://wms.geo.ti.ch/service?||ac_012_1_v1_0_limitazioni||1.3.0&E=2702744.673616835&N=1118487.5405937412&zoom=2
 KT_TI,[AC-017.1] Zone di pericolo gradi,https://map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||[AC-017.1] Zone di pericolo gradi||https://wms.geo.ti.ch/service?||ac_017_1_v1_0_zone_pericolo_gradi||1.3.0&E=2704249.6863071835&N=1120736.9061639882&zoom=3
 KT_TI,[AC-017.2] Zone di pericolo indicativo,https://map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||[AC-017.2] Zone di pericolo indicativo||https://wms.geo.ti.ch/service?||ac_017_2_v1_0_zone_pericolo_indicativo||1.3.0&E=2704249.6863071835&N=1120736.9061639882&zoom=3
-KT_TI,[AC-021.3] Bilancio idrologico,https://map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||[AC-021.3] Bilancio idrologico||https://wms.geo.ti.ch/service?||ac_021_3_v1_0_bilancio_idrologico||1.3.0&E=2704249.6863071835&N=1120736.9061639882&zoom=3
+KT_TI,[AC-021.3] Bilancio idrologico,https://map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||[AC-021.3] Bilancio idrologico||https://wms.geo.ti.ch/service?||ac_021_3_v1_0_bilancio_idrologico||1.3.0&E=2702744.673616835&N=1118487.5405937412&zoom=2
 KT_TI,[ac-026.1] Consorzi di manutenzione dei corsi d'acqua,https://map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||[ac-026.1] Consorzi di manutenzione dei corsi d'acqua||https://wms.geo.ti.ch/service?||ac_021_6_v1_0_consorzi_manutenzione_corsi_acqua||1.3.0&E=2702744.673616835&N=1118487.5405937412&zoom=2
 KT_TI,[AC-036.1] Rete dei percorsi in mountainbike,https://map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||[AC-036.1] Rete dei percorsi in mountainbike||https://wms.geo.ti.ch/service?||ac_036_1_v1_0_rete_percorsi_mountain_bike||1.3.0&E=2702744.673616835&N=1118487.5405937412&zoom=2
 KT_TI,[AC-037.1 ] Curve di livello,https://map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||[AC-037.1 ] Curve di livello||https://wms.geo.ti.ch/service?||ac_037_1_v1_0_curve_livello||1.3.0&E=2702744.673616835&N=1118487.5405937412&zoom=2
@@ -13245,10 +13367,10 @@ KT_TI,[AC-017.2] Scivolamento spontaneo indicativo,https://map.geo.admin.ch/?bgL
 KT_TI,[AC-017.2] Scivolamento permanente indicativo,https://map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||[AC-017.2] Scivolamento permanente indicativo||https://wms.geo.ti.ch/service?||ac_017_2_v1_0_zone_pericolo_indicativo_scivolamento_scivolamento_permanente||1.3.0&E=2704249.6863071835&N=1120736.9061639882&zoom=3
 KT_TI,[AC-017.2] Scivolamento - arretramento d'orlo indicativo,https://map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||[AC-017.2] Scivolamento - arretramento d'orlo indicativo||https://wms.geo.ti.ch/service?||ac_017_2_v1_0_zone_pericolo_indicativo_scivolamento_scivolamento_arretramento_orlo||1.3.0&E=2704249.6863071835&N=1120736.9061639882&zoom=3
 KT_TI,[AC-017.2] Valanga indicativa,https://map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||[AC-017.2] Valanga indicativa||https://wms.geo.ti.ch/service?||ac_017_2_v1_0_zone_pericolo_indicativo_valanghe||1.3.0&E=2704249.6863071835&N=1120736.9061639882&zoom=3
-KT_TI,[AC-021.3] Bilancio idrologico - precipitazioni estreme 1h - 100 anni,https://map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||[AC-021.3] Bilancio idrologico - precipitazioni estreme 1h - 100 anni||https://wms.geo.ti.ch/service?||ac_021_3_v1_0_bilancio_idrologico_precipitazioni_estreme_1h_100_anni||1.3.0&E=2704249.6863071835&N=1120736.9061639882&zoom=3
-KT_TI,[AC-021.3] Bilancio idrologico - precipitazioni estreme 1h - 2/33 anni,https://map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||[AC-021.3] Bilancio idrologico - precipitazioni estreme 1h - 2/33 anni||https://wms.geo.ti.ch/service?||ac_021_3_v1_0_bilancio_idrologico_precipitazioni_estreme_1h_2_33_anni||1.3.0&E=2704249.6863071835&N=1120736.9061639882&zoom=3
-KT_TI,[AC-021.3] Bilancio idrologico - precipitazioni estreme 24h - 100 anni,https://map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||[AC-021.3] Bilancio idrologico - precipitazioni estreme 24h - 100 anni||https://wms.geo.ti.ch/service?||ac_021_3_v1_0_bilancio_idrologico_precipitazioni_estreme_24h_100_anni||1.3.0&E=2704249.6863071835&N=1120736.9061639882&zoom=3
-KT_TI,[AC-021.3] Bilancio idrologico - precipitazioni estreme 24h - 2/33 anni,https://map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||[AC-021.3] Bilancio idrologico - precipitazioni estreme 24h - 2/33 anni||https://wms.geo.ti.ch/service?||ac_021_3_v1_0_bilancio_idrologico_precipitazioni_estreme_24h_2_33_anni||1.3.0&E=2704249.6863071835&N=1120736.9061639882&zoom=3
+KT_TI,[AC-021.3] Bilancio idrologico - precipitazioni estreme 24h - 2/33 anni,https://map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||[AC-021.3] Bilancio idrologico - precipitazioni estreme 24h - 2/33 anni||https://wms.geo.ti.ch/service?||ac_021_3_v1_0_bilancio_idrologico_precipitazioni_estreme_24h_2_33_anni||1.3.0&E=2702744.673616835&N=1118487.5405937412&zoom=2
+KT_TI,[AC-021.3] Bilancio idrologico - precipitazioni estreme 24h - 100 anni,https://map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||[AC-021.3] Bilancio idrologico - precipitazioni estreme 24h - 100 anni||https://wms.geo.ti.ch/service?||ac_021_3_v1_0_bilancio_idrologico_precipitazioni_estreme_24h_100_anni||1.3.0&E=2702744.673616835&N=1118487.5405937412&zoom=2
+KT_TI,[AC-021.3] Bilancio idrologico - precipitazioni estreme 1h - 2/33 anni,https://map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||[AC-021.3] Bilancio idrologico - precipitazioni estreme 1h - 2/33 anni||https://wms.geo.ti.ch/service?||ac_021_3_v1_0_bilancio_idrologico_precipitazioni_estreme_1h_2_33_anni||1.3.0&E=2702744.673616835&N=1118487.5405937412&zoom=2
+KT_TI,[AC-021.3] Bilancio idrologico - precipitazioni estreme 1h - 100 anni,https://map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||[AC-021.3] Bilancio idrologico - precipitazioni estreme 1h - 100 anni||https://wms.geo.ti.ch/service?||ac_021_3_v1_0_bilancio_idrologico_precipitazioni_estreme_1h_100_anni||1.3.0&E=2702744.673616835&N=1118487.5405937412&zoom=2
 KT_TI,[ac-026.1] Consorzi di manutenzione dei corsi d'acqua,https://map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||[ac-026.1] Consorzi di manutenzione dei corsi d'acqua||https://wms.geo.ti.ch/service?||ac_021_6_v1_0_consorzi_manutenzione_corsi_acqua_consorzi||1.3.0&E=2702744.673616835&N=1118487.5405937412&zoom=2
 KT_TI,[AC-036.1] Segnaletica mountain bike,https://map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||[AC-036.1] Segnaletica mountain bike||https://wms.geo.ti.ch/service?||ac_036_1_v1_0_rete_percorsi_mountain_bike_segnaletica||1.3.0&E=2702744.673616835&N=1118487.5405937412&zoom=2
 KT_TI,[AC-036.1] Percorsi mountain bike,https://map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||[AC-036.1] Percorsi mountain bike||https://wms.geo.ti.ch/service?||ac_036_1_v1_0_rete_percorsi_mountain_bike_percorsi||1.3.0&E=2702744.673616835&N=1118487.5405937412&zoom=2
@@ -14071,14 +14193,14 @@ KT_ZG,Gemeindliche Naturobjekte Flächen,https://map.geo.admin.ch/?bgLayer=ch.sw
 KT_ZG,Gemeindliche Naturobjekte Linien,https://map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||Gemeindliche Naturobjekte Linien||https://services.geo.zg.ch/ows/Naturobjekte?||zg_gem_naturobjekte_linien||1.3.0&E=2679678.1474608453&N=1227094.5091256916&zoom=6
 KT_ZG,Gemeindliche Naturobjekte Punkte,https://map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||Gemeindliche Naturobjekte Punkte||https://services.geo.zg.ch/ows/Naturobjekte?||zg_gem_naturobjekte_punkte||1.3.0&E=2680435.9509235024&N=1227104.7106606367&zoom=6
 KT_ZG,"Kanton ZG, Naturschutz (WMS/WFS)","https://map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||Kanton ZG, Naturschutz (WMS/WFS)||https://services.geo.zg.ch/ows/Naturschutz?||zg.naturschutz||1.3.0&E=2684256.438273771&N=1224933.868708596&zoom=5"
-KT_ZG,Naturschutz ZG,https://map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||Naturschutz ZG||https://services.geo.zg.ch/ows/Naturschutz?||Naturschutz ZG||1.3.0&E=2684256.438273771&N=1224933.868708596&zoom=5
+KT_ZG,Naturschutz ZG,https://map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||Naturschutz ZG||https://services.geo.zg.ch/ows/Naturschutz?||Naturschutz ZG||1.3.0&E=2684209.2034547254&N=1228268.821861252&zoom=5
 KT_ZG,Naturschutzgebiete,https://map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||Naturschutzgebiete||https://services.geo.zg.ch/ows/Naturschutz?||zg.naturschutzgebiete||1.3.0&E=2684256.438273771&N=1224933.868708596&zoom=5
 KT_ZG,Naturschutzgebiete gemeindlich,https://map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||Naturschutzgebiete gemeindlich||https://services.geo.zg.ch/ows/Naturschutz?||zg.naturschutzgebiet_gemeindlich||1.3.0&E=2682755.737464028&N=1223800.9383026457&zoom=5
 KT_ZG,Naturschutzgebiete kantonal,https://map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||Naturschutzgebiete kantonal||https://services.geo.zg.ch/ows/Naturschutz?||zg.naturschutzgebiete_kantonal||1.3.0&E=2684256.438273771&N=1224933.868708596&zoom=5
 KT_ZG,Naturschutz Vertragsflächen,https://map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||Naturschutz Vertragsflächen||https://services.geo.zg.ch/ows/Naturschutz?||Naturschutz Vertragsflächen||1.3.0&E=2684256.438273771&N=1224933.868708596&zoom=5
 KT_ZG,Naturschutz Vertragsflächen,https://map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||Naturschutz Vertragsflächen||https://services.geo.zg.ch/ows/Naturschutz?||zg.naturschutz_vertragsflaechen||1.3.0&E=2684256.438273771&N=1224933.868708596&zoom=5
-KT_ZG,Naturschutz erweiterte Nutzung,https://map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||Naturschutz erweiterte Nutzung||https://services.geo.zg.ch/ows/Naturschutz?||zg.naturschutz_erweiterte_nutzung||1.3.0&E=2683498.3578982623&N=1224923.1799495022&zoom=5
-KT_ZG,Schonende Mahd,https://map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||Schonende Mahd||https://services.geo.zg.ch/ows/Naturschutz?||zg.schonende_mahd||1.3.0&E=2683498.3578982623&N=1224923.1799495022&zoom=5
+KT_ZG,Naturschutz erweiterte Nutzung,https://map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||Naturschutz erweiterte Nutzung||https://services.geo.zg.ch/ows/Naturschutz?||zg.naturschutz_erweiterte_nutzung||1.3.0&E=2683451.5484077497&N=1228258.139081199&zoom=5
+KT_ZG,Schonende Mahd,https://map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||Schonende Mahd||https://services.geo.zg.ch/ows/Naturschutz?||zg.schonende_mahd||1.3.0&E=2683451.5484077497&N=1228258.139081199&zoom=5
 KT_ZG,Mähbrache,https://map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||Mähbrache||https://services.geo.zg.ch/ows/Naturschutz?||zg.maehbrache||1.3.0&E=2683498.3578982623&N=1224923.1799495022&zoom=5
 KT_ZG,Spätschnitt Stufe 1,https://map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||Spätschnitt Stufe 1||https://services.geo.zg.ch/ows/Naturschutz?||zg.spaetschnitt_stufe_1||1.3.0&E=2683498.3578982623&N=1224923.1799495022&zoom=5
 KT_ZG,Spätschnitt Stufe 2,https://map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||Spätschnitt Stufe 2||https://services.geo.zg.ch/ows/Naturschutz?||zg.spaetschnitt_stufe_2||1.3.0&E=2684256.438273771&N=1224933.868708596&zoom=5
@@ -15331,8 +15453,12 @@ KT_ZH,Spontane Rutschungen,https://map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelk
 KT_ZH,Permanente Rutschungen,https://map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||Permanente Rutschungen||https://wms.zh.ch/AwelRKHWZHWMS?||perm-rutschungen||1.3.0&E=2687520.269415628&N=1260562.7059100897&zoom=3
 KT_ZH,Hangmuren,https://map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||Hangmuren||https://wms.zh.ch/AwelRKHWZHWMS?||hangmuren||1.3.0&E=2687520.269415628&N=1260562.7059100897&zoom=3
 KT_ZH,Massenbewegungen,https://map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||Massenbewegungen||https://wms.zh.ch/AwelRKHWZHWMS?||massenbewegungen||1.3.0&E=2687520.269415628&N=1260562.7059100897&zoom=3
-KT_ZH,Stromanlagen (329.3),n.a.
 KT_ZH,Fruchtfolgeflächen (2.2),n.a.
+KT_ZH,KVA-Abwärmequellen Symbol (172.3),n.a.
+KT_ZH,Stromleitungen (329.4),n.a.
+KT_ZH,Gewässer Fliessrichtung (35.2),n.a.
+KT_ZH,Pionier-Strassenrettung (186.5),n.a.
+KT_ZH,Stromanlagen (329.3),n.a.
 KT_ZH,ÖREB-Kataster - vereinfachtes Datenmodell ZH - Grundwasserschutzzonen (143.1),n.a.
 KT_ZH,Schwerpunktgebiete (445.1),n.a.
 KT_ZH,Waldeigentum (9.2),n.a.
@@ -15341,13 +15467,9 @@ KT_ZH,Ökomorphologie der Seeufer (23.1),n.a.
 KT_ZH,TBA Baustellen auf Kantonsstrassen (OGD) (28.2),n.a.
 KT_ZH,Pärke von nationaler Bedeutung Kanton Zürich (31.1),n.a.
 KT_ZH,Gewässer Gefährdung Oberflächenabfluss (35.1),n.a.
-KT_ZH,Gewässer Fliessrichtung (35.2),n.a.
 KT_ZH,Landwirtschaftliche Nutzungseignung (36.2),n.a.
 KT_ZH,Prüfperimeter für Bodenverschiebungen (38.1),n.a.
 KT_ZH,Eichenförderobjekte (43.2),n.a.
-KT_ZH,KVA-Abwärmequellen Symbol (172.3),n.a.
-KT_ZH,Stromleitungen (329.4),n.a.
-KT_ZH,Gewässer Intensitätsflächen permanente Rutschungen (Massenbewegungen) (44.12),n.a.
 KT_ZH,Gewässer Prioritäten Erfassung Naturgefahrenkarten (44.1),n.a.
 KT_ZH,Gewässer Gefahrenbereiche Hochwasser (44.2),n.a.
 KT_ZH,Gewässer Hinweisflächen Hochwasser (44.3),n.a.
@@ -15359,6 +15481,7 @@ KT_ZH,Gewässer Hinweisflächen Massenbewegungen (44.8),n.a.
 KT_ZH,Gewässer Intensitätsflächen Massenbewegungen 100-jährliche Eintretenswahrscheinlichkeit (44.9),n.a.
 KT_ZH,Gewässer Intensitätsflächen Massenbewegungen 300-jährliche Eintretenswahrscheinlichkeit (44.10),n.a.
 KT_ZH,Gewässer Intensitätsflächen Massenbewegungen 30-jährliche Eintretenswahrscheinlichkeit (44.11),n.a.
+KT_ZH,Gewässer Intensitätsflächen permanente Rutschungen (Massenbewegungen) (44.12),n.a.
 KT_ZH,Gewässer Synoptische Gefahrenkarte (44.13),n.a.
 KT_ZH,Gewässer Untersuchtes Gebiet Synoptische Gefahrenkarte (44.14),n.a.
 KT_ZH,Gewässer Koten-/Tiefenwerte Hochwasser (Daten vor 2006) (44.15),n.a.
@@ -15373,9 +15496,6 @@ KT_ZH,Gewässer Fliessgewässerbezeichnung (45.3),n.a.
 KT_ZH,Gewässer Fliessgewässerausprägung (45.4),n.a.
 KT_ZH,Gewässer Fliessgewässertyp (45.5),n.a.
 KT_ZH,Umrechnungstabelle kommunale Fliessgewässernummer und Routennummer in kantonale Fliessgewässernummer (45.8),n.a.
-KT_ZH,Probeflächen Avimonitoring 1993 bis 2012 Kanton Zürich (60.1),n.a.
-KT_ZH,Artenbeobachtungen (Revierkartierung) auf Probeflächen Avimonitoring Kanton Zürich 1993 bis 2012 (60.2),n.a.
-KT_ZH,Räumliche Bevölkerungsstatistik (63.1),n.a.
 KT_ZH,Gewässer Öffentliche und private Stehgewässer (45.10),n.a.
 KT_ZH,Gewässer Uferlinien der Stehgewässer (45.11),n.a.
 KT_ZH,Gewässer Öffentliche und private Fliess- und Stehgewässer inkl. Verfügungsangaben (45.15),n.a.
@@ -15389,6 +15509,7 @@ KT_ZH,Gewässer Wasserechtsweiher (51.1),n.a.
 KT_ZH,Gewässer Wasserrechtskanäle/-leitungen (51.2),n.a.
 KT_ZH,Gewässer Wasserrechtsentnahmen und -rückgaben (51.3),n.a.
 KT_ZH,Gewässer gelöschte Wasserechtsweiher (51.4),n.a.
+KT_ZH,Naturschutzobjekte (127.1),n.a.
 KT_ZH,Gewässer gelöschte Wasserrechtskanäle/-leitungen (51.5),n.a.
 KT_ZH,Gewässer gelöschte Wasserentnahmen und -rückgaben (51.6),n.a.
 KT_ZH,Räumliche Beschäftigtenstatistik Polygon (142.1),n.a.
@@ -15396,6 +15517,9 @@ KT_ZH,Räumliche Beschäftigtenstatistik Punkt (142.2),n.a.
 KT_ZH,Veloparkierungsanlagen 2019 OGD (53.3),n.a.
 KT_ZH,Veloparkierungsanlagen 2015 OGD (53.5),n.a.
 KT_ZH,Eibenförderobjekte (58.2),n.a.
+KT_ZH,Probeflächen Avimonitoring 1993 bis 2012 Kanton Zürich (60.1),n.a.
+KT_ZH,Artenbeobachtungen (Revierkartierung) auf Probeflächen Avimonitoring Kanton Zürich 1993 bis 2012 (60.2),n.a.
+KT_ZH,Räumliche Bevölkerungsstatistik (63.1),n.a.
 KT_ZH,Räumliche Bevölkerungsstatistik Punkt (63.2),n.a.
 KT_ZH,Tempo30_Begegnungszonen (verfügt) - OGD (65.2),n.a.
 KT_ZH,"Zonenpläne, Überbauungs- und Erschliessungsstände der Gemeinden (66.1)",n.a.
@@ -15415,6 +15539,7 @@ KT_ZH,Gemeinden mit Berücksichtigung von Seen (95.3),n.a.
 KT_ZH,Kanton (95.4),n.a.
 KT_ZH,Lanschaftsschutzobjekte: Heckenreiche Hänge (127.4),n.a.
 KT_ZH,Landschaftsschutzobjekte: Geomorphologische Objekte (127.5),n.a.
+KT_ZH,Landschaftsschutzobjekte: Findlinge (127.2),n.a.
 KT_ZH,Gemeinden ohne Seen (95.5),n.a.
 KT_ZH,Bezirke (95.6),n.a.
 KT_ZH,Generalisierte Gemeinden (96.1),n.a.
@@ -15442,8 +15567,6 @@ KT_ZH,GISZHPUB.FNS_INVENTARE\GISZHPUB.FEUCHTGEBIETINVVEG_79_90_F (119.5),n.a.
 KT_ZH,Oeffentilche Beleuchtung (OGD) (124.3),n.a.
 KT_ZH,Objektflächen des Trockenstanortinventars 1974 (125.1),n.a.
 KT_ZH,Arten der Trockenstandortobjekte der Kartierung 1974 (125.2),n.a.
-KT_ZH,Naturschutzobjekte (127.1),n.a.
-KT_ZH,Landschaftsschutzobjekte: Findlinge (127.2),n.a.
 KT_ZH,Landschaftschutzobjekte: Hecken (127.3),n.a.
 KT_ZH,Naturschutzobjekte Ergänzungen 95 (127.6),n.a.
 KT_ZH,Inventarflächen des Libelleninventares 1984 (132.1),n.a.
@@ -15457,7 +15580,6 @@ KT_ZH,ÖREB - Kataster der belasteten Standorte (KbS) (144.1),n.a.
 KT_ZH,ÖREB-Kataster - vereinfachtes Datenmodell ZH - Grundwasserschutzareale (149.1),n.a.
 KT_ZH,Vereinfachtes Datenmodell ÖREB ZH - Grundwasserschutzareale projektiert (149.2),n.a.
 KT_ZH,ÖREB-Kataster - vereinfachtes Datenmodell ZH - Statische Waldgrenzen (150.1),n.a.
-KT_ZH,Für rohrleitungsgebundene Wärmeversorgung geeignete Gebiete  (172.1),n.a.
 KT_ZH,ÖREB-Kataster - vereinfachtes Datenmodell ZH - Statische Waldgrenzen projektiert (150.2),n.a.
 KT_ZH,ÖREB-Kataster - vereinfachtes Datenmodell ZH - Waldabstandslinien (152.1),n.a.
 KT_ZH,ÖREB-Kataster - vereinfachtes Datenmodell ZH - Waldabstandslinien projektiert (152.2),n.a.
@@ -15485,7 +15607,7 @@ KT_ZH,Zustömbereich Zo (167.4),n.a.
 KT_ZH,Übriger Gewässerschutzbereich (167.5),n.a.
 KT_ZH,Waldrandförderobjekte (169.2),n.a.
 KT_ZH,Landwirtschaftliche Nutzungsflächen  (170.1),n.a.
-KT_ZH,Ortschaften und Postleitzahlregionen (268.1),n.a.
+KT_ZH,Für rohrleitungsgebundene Wärmeversorgung geeignete Gebiete  (172.1),n.a.
 KT_ZH,KVA-Abwärme (172.2),n.a.
 KT_ZH,KVA-Fernwärmenetze (172.4),n.a.
 KT_ZH,Abfallholz- und Klärschlamm-Wärmekraftkopplungsanlagen (172.5),n.a.
@@ -15515,7 +15637,6 @@ KT_ZH,Gemeindefeuerwehren (186.1),n.a.
 KT_ZH,Stützpunktfeuerwehr-Adressen (186.2),n.a.
 KT_ZH,Ortsfeuerwehr-Adressen (186.3),n.a.
 KT_ZH,Autodrehleiter und Hubretter (186.4),n.a.
-KT_ZH,Pionier-Strassenrettung (186.5),n.a.
 KT_ZH,"TBA SchweizMobil Velo-, Mountainbike-, Skatingrouten (OGD) (202.3)",n.a.
 KT_ZH,Kataster der belasteten Standorte (KbS) (205.1),n.a.
 KT_ZH,Notariatskreise 1 : 5000 (206.1),n.a.
@@ -15531,6 +15652,7 @@ KT_ZH,Gewässer Haupteinzugsgebiete (257.1),n.a.
 KT_ZH,Hinweisflächen für anthropogene Böden mit Potenzial für Fruchtfolgeflächenkompensation (260.2),n.a.
 KT_ZH,"Schutzwald, gravitativ (261.1)",n.a.
 KT_ZH,Gerinnerelevanter Schutzwald (Tobelwälder) (261.4),n.a.
+KT_ZH,Ortschaften und Postleitzahlregionen (268.1),n.a.
 KT_ZH,Räumliche Gebäudestatistik Polygon (272.1),n.a.
 KT_ZH,Räumliche Gebäudestatistik Punkt (272.2),n.a.
 KT_ZH,Adressen GIS-ZH (277.1),n.a.
@@ -15612,7 +15734,6 @@ KT_ZH,Grundwasservorkommen Stockwerkbau (327.24),n.a.
 KT_ZH,Grundwasservorkommen Thur (327.25),n.a.
 KT_ZH,Grundwasserbereich artesisch Begrenzung (327.27),n.a.
 KT_ZH,Generalisierte Gemeinden (337.1),n.a.
-KT_ZH,E2 Wenig begangene Wildlebensräume (371.29),n.a.
 KT_ZH,GISZHPUB.WALD_FORSTREVIERE_F (338.6),n.a.
 KT_ZH,Naturräume (341.1),n.a.
 KT_ZH,Isohypsen DTM 2017/2018 (346.1),n.a.
@@ -15648,6 +15769,7 @@ KT_ZH,B5 Eibenförderung (371.25),n.a.
 KT_ZH,B6 Waldrandförderung (371.26),n.a.
 KT_ZH,B7 Wildnispark Zürich (Naturerlebnispark) (371.27),n.a.
 KT_ZH,E1 Häufig begangene Wälder (371.28),n.a.
+KT_ZH,E2 Wenig begangene Wildlebensräume (371.29),n.a.
 KT_ZH,E3 Erholungswälder durch Gemeinden bezeichnet (371.30),n.a.
 KT_ZH,Vorrangfunktion (371.31),n.a.
 KT_ZH,Gewässer Revitalisierungspotenzial Fliessgewässer (375.1),n.a.
@@ -15683,6 +15805,7 @@ KT_ZH,MOpublic Klasse Street_name_Pos (LokalisationsNamePos) (406.2),n.a.
 KT_ZH,MOpublic Klasse Building_entrance (Gebaeudeeingang) (406.3),n.a.
 KT_ZH,MOpublic Klasse Building_entrance_Pos (HausnummerPos) (406.4),n.a.
 KT_ZH,Kantonales Velonetz für den Alltagsverkehr für OGD (408.3),n.a.
+KT_ZH,Strassenachsen (476.1),n.a.
 KT_ZH,Schwachstellen und Netzlücken Velonetz Alltag für OGD (408.4),n.a.
 KT_ZH,"MOpublic Klasse Pipelines, Surface_element (RLFlaeche) (410.1)",n.a.
 KT_ZH,"MOpublic Klasse Pipelines, Surface_element_PosName (RLFlaechenelementText) (410.2)",n.a.
@@ -15709,7 +15832,6 @@ KT_ZH,KALTLUFTEINZUGSGEBIET_F (460.5),n.a.
 KT_ZH,KALTLUFTLEITBAHNEN_L (460.7),n.a.
 KT_ZH,HOHE_ZUNAHME_TROPENNAECHTE_F (460.8),n.a.
 KT_ZH,WINDFELD_P (475.1),n.a.
-KT_ZH,Strassenachsen (476.1),n.a.
 KT_ZH,Überbauungs- und Erschliessungsstände der Gemeinden (481.1),n.a.
 KT_ZH,Gewässer Hydrometrische Stationen (483.1),n.a.
 KT_ZH,Quartieranalyse (485.1),n.a.
@@ -16240,7 +16362,6 @@ KT_VD,vd.reunion_parcellaire,https://map.geo.admin.ch/?bgLayer=ch.swisstopo.pixe
 KT_VD,vd.syndicat_entretien,https://map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||vd.syndicat_entretien||https://www.ogc.vd.ch/public/services/OGC/wmsVD/Mapserver/WMSServer?||vd.syndicat_entretien||1.1.1&E=2543403.56025684&N=1161238.1041381673&zoom=3
 KT_VD,vd.syndicat_AF,https://map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||vd.syndicat_AF||https://www.ogc.vd.ch/public/services/OGC/wmsVD/Mapserver/WMSServer?||vd.syndicat_AF||1.1.1&E=2543403.56025684&N=1161238.1041381673&zoom=3
 KT_VD,vd.surface_assolement,https://map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||vd.surface_assolement||https://www.ogc.vd.ch/public/services/OGC/wmsVD/Mapserver/WMSServer?||vd.surface_assolement||1.1.1&E=2535729.668406413&N=1160203.6736701021&zoom=3
-KT_VD,vd.pac_venoge_prescription_speciale,https://map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||vd.pac_venoge_prescription_speciale||https://www.ogc.vd.ch/public/services/OGC/wmsVD/Mapserver/WMSServer?||vd.pac_venoge_prescription_speciale||1.1.1&E=2526533.7216499527&N=1160309.1907610728&zoom=6
 KT_VD,vd.plan_affectation_cantonal_venoge,https://map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||vd.plan_affectation_cantonal_venoge||https://www.ogc.vd.ch/public/services/OGC/wmsVD/Mapserver/WMSServer?||vd.plan_affectation_cantonal_venoge||1.1.1&E=2523468.443471413&N=1160347.490733213&zoom=5
 KT_VD,vd.protection_lavaux,https://map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||vd.protection_lavaux||https://www.ogc.vd.ch/public/services/OGC/wmsVD/Mapserver/WMSServer?||vd.protection_lavaux||1.1.1&E=2548662.575663538&N=1148962.1297920183&zoom=6
 KT_VD,vd.ombrage,https://map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||vd.ombrage||https://www.ogc.vd.ch/public/services/OGC/wmsVD/Mapserver/WMSServer?||vd.ombrage||1.1.1&E=2539550.163692633&N=1159052.259869167&zoom=3
@@ -16697,7 +16818,7 @@ KT_FR,Emplacement des barrières à batraciens,https://map.geo.admin.ch/?bgLayer
 KT_FR,Entites paysageres CQP,https://map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||Entites paysageres CQP||https://geo.fr.ch/ags/services/OpenData/Entites_paysageres_CQP/MapServer/WMSServer?||0||1.3.0&E=2564131.3032516055&N=1167748.4271760054&zoom=3
 KT_FR,Entreprises approuvées,https://map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||Entreprises approuvées||https://geo.fr.ch/ags/services/OpenData/Entreprises_approuvees/MapServer/WMSServer?||0||1.3.0&E=2571051.9778694194&N=1174381.05487707&zoom=4
 KT_FR,Entreprises en cours,https://map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||Entreprises en cours||https://geo.fr.ch/ags/services/OpenData/Entreprises_en_cours/MapServer/WMSServer?||0||1.3.0&E=2571019.6855913578&N=1167711.1234716782&zoom=4
-KT_FR,Entreprises planifiées,https://map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||Entreprises planifiées||https://geo.fr.ch/ags/services/OpenData/Entreprises_planifiees/MapServer/WMSServer?||0||1.3.0&E=2570276.403036745&N=1172161.4916744593&zoom=4
+KT_FR,Entreprises planifiées,https://map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||Entreprises planifiées||https://geo.fr.ch/ags/services/OpenData/Entreprises_planifiees/MapServer/WMSServer?||0||1.3.0&E=2570265.3553697346&N=1169938.1826900223&zoom=4
 KT_FR,Equipes d arrondissement routes cantonales,https://map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||Equipes d arrondissement routes cantonales||https://geo.fr.ch/ags/services/OpenData/Equipes_d_arrondissement_routes_cantonales/MapServer/WMSServer?||0||1.3.0&E=2571051.9778694194&N=1174381.05487707&zoom=4
 KT_FR,Etat des cartes de dangers,https://map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||Etat des cartes de dangers||https://geo.fr.ch/ags/services/OpenData/Etat_des_cartes_de_dangers/MapServer/WMSServer?||0||1.3.0&E=2574124.5358128073&N=1177702.0180919168&zoom=4
 KT_FR,Etat du registre foncier,https://map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||Etat du registre foncier||https://geo.fr.ch/ags/services/OpenData/Etat_du_registre_foncier/MapServer/WMSServer?||0||1.3.0&E=2571051.9778694194&N=1174381.05487707&zoom=4
@@ -17036,6 +17157,7 @@ FL_LI,Inventar schützenswerter Landschaften,https://map.geo.admin.ch/?bgLayer=c
 FL_LI,Inventar Naturdenkmäler,https://map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||Inventar Naturdenkmäler||https://service.geo.llv.li/service/wms?||li.au.nl_inv_naturdenkmaeler||1.3.0&E=2760085.4527027463&N=1225379.5703946482&zoom=5
 FL_LI,Feld- und Ufergehölze,https://map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||Feld- und Ufergehölze||https://service.geo.llv.li/service/wms?||li.au.nl_feldufergehoelze||1.3.0&E=2760085.4527027463&N=1225379.5703946482&zoom=5
 FL_LI,Erdmandelgras,https://map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||Erdmandelgras||https://service.geo.llv.li/service/wms?||li.au.nl_erdmandelgras||1.3.0&E=2760085.4527027463&N=1225379.5703946482&zoom=5
+FL_LI,Vernetzungsstreifen,https://map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||Vernetzungsstreifen||https://service.geo.llv.li/service/wms?||li.au.nl_vernetzungsstreifen||1.3.0&E=2760085.4527027463&N=1225379.5703946482&zoom=5
 FL_LI,Orthophoto 1995,https://map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||Orthophoto 1995||https://service.geo.llv.li/service/wms?||li.abi.orthophoto1995||1.3.0&E=2760085.4527027463&N=1225379.5703946482&zoom=5
 FL_LI,Orthophoto 2003,https://map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||Orthophoto 2003||https://service.geo.llv.li/service/wms?||li.abi.orthophoto2003||1.3.0&E=2760085.4527027463&N=1225379.5703946482&zoom=5
 FL_LI,Orthophoto 2006,https://map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||Orthophoto 2006||https://service.geo.llv.li/service/wms?||li.abi.orthophoto2006||1.3.0&E=2760085.4527027463&N=1225379.5703946482&zoom=5
@@ -17044,6 +17166,7 @@ FL_LI,Orthophoto 2012,https://map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-
 FL_LI,Orthophoto 2015,https://map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||Orthophoto 2015||https://service.geo.llv.li/service/wms?||li.abi.orthophoto2015||1.3.0&E=2760843.474863537&N=1225400.025780605&zoom=5
 FL_LI,Orthophoto 2018,https://map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||Orthophoto 2018||https://service.geo.llv.li/service/wms?||li.abi.orthophoto2018||1.3.0&E=2760843.474863537&N=1225400.025780605&zoom=5
 FL_LI,Orthophoto 2020,https://map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||Orthophoto 2020||https://service.geo.llv.li/service/wms?||li.abi.orthophoto2020||1.3.0&E=2760813.413897869&N=1226511.3772863292&zoom=5
+FL_LI,Orthophoto 2022 (SwissImage),https://map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||Orthophoto 2022 (SwissImage)||https://service.geo.llv.li/service/wms?||li.abi.orthophoto2022||1.3.0&E=2760813.413897869&N=1226511.3772863292&zoom=5
 FL_LI,Topografische Landeskarte 1:10000 (1989),https://map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||Topografische Landeskarte 1:10000 (1989)||https://service.geo.llv.li/service/wms?||li.abi.pk10_1989||1.3.0&E=2760843.474863537&N=1225400.025780605&zoom=5
 FL_LI,Topografische Landeskarte 1:10000 (1989) Graustufen,https://map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||Topografische Landeskarte 1:10000 (1989) Graustufen||https://service.geo.llv.li/service/wms?||li.abi.pk10_1989sw||1.3.0&E=2760843.474863537&N=1225400.025780605&zoom=5
 FL_LI,Topografische Landeskarte 1:10000 (2008/1989),https://map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||Topografische Landeskarte 1:10000 (2008/1989)||https://service.geo.llv.li/service/wms?||li.abi.pk10_2008||1.3.0&E=2760843.474863537&N=1225400.025780605&zoom=5
@@ -17745,7 +17868,6 @@ Bund,Übrige Schutzgebiete AuLaV,https://map.geo.admin.ch/?bgLayer=ch.swisstopo.
 Bund,Biosphärenreservate,https://map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||Biosphärenreservate||https://wms.geo.admin.ch/??||ch.bafu.schutzgebiete-biosphaerenreservate||1.3.0
 Bund,Schutzgebiete MIL,n.a.
 Bund,Schweizer Pärke (Zonierung),https://map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||Schweizer Pärke (Zonierung)||https://wms.geo.admin.ch/??||ch.bafu.schutzgebiete-paerke_nationaler_bedeutung||1.3.0
-Bund,Armeelogistikcenter ALC,https://map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||Armeelogistikcenter ALC||https://wms.geo.admin.ch/??||ch.vbs.armeelogistikcenter||1.3.0
 Bund,Schweizer Pärke (Perimeter),https://map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||Schweizer Pärke (Perimeter)||https://wms.geo.admin.ch/??||ch.bafu.schutzgebiete-paerke_nationaler_bedeutung_perimeter||1.3.0
 Bund,Ramsar,https://map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||Ramsar||https://wms.geo.admin.ch/??||ch.bafu.schutzgebiete-ramsar||1.3.0
 Bund,Nationalpark,https://map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||Nationalpark||https://wms.geo.admin.ch/??||ch.bafu.schutzgebiete-schweizerischer_nationalpark||1.3.0
@@ -17771,8 +17893,7 @@ Bund,Sturmgefährdung Staudruck 50,https://map.geo.admin.ch/?bgLayer=ch.swisstop
 Bund,Schadstoff-Freisetzungen (SwissPRTR),https://map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||Schadstoff-Freisetzungen (SwissPRTR)||https://wms.geo.admin.ch/??||ch.bafu.swissprtr||1.3.0
 Bund,Tranquillity Gebiete,https://map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||Tranquillity Gebiete||https://wms.geo.admin.ch/??||ch.bafu.tranquillity-gebiete||1.3.0
 Bund,Tranquillity Map,https://map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||Tranquillity Map||https://wms.geo.admin.ch/??||ch.bafu.tranquillity-karte||1.3.0
-Bund,Typisierung Fliessgewässer,n.a.
-Bund,4G - LTE / LTE-A,https://map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||4G - LTE / LTE-A||https://wms.geo.admin.ch/??||ch.bakom.mobilnetz-4g||1.3.0
+Bund,Typisierung Fliessgewässer,https://map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||Typisierung Fliessgewässer||https://wms.geo.admin.ch/??||ch.bafu.typisierung-fliessgewaesser||1.3.0
 Bund,UNESCO-Welterbe Naturstätten,https://map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||UNESCO-Welterbe Naturstätten||https://wms.geo.admin.ch/??||ch.bafu.unesco-weltnaturerbe||1.3.0
 Bund,Gewässernetz 1:2 Mio.,n.a.
 Bund,Seen,n.a.
@@ -17831,11 +17952,11 @@ Bund,Download ≥ 300 Mbit/s,n.a.
 Bund,Download ≥ 500 Mbit/s,n.a.
 Bund,2G - GSM / EDGE,https://map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||2G - GSM / EDGE||https://wms.geo.admin.ch/??||ch.bakom.mobilnetz-2g||1.3.0
 Bund,3G - UMTS / HSPA,https://map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||3G - UMTS / HSPA||https://wms.geo.admin.ch/??||ch.bakom.mobilnetz-3g||1.3.0
+Bund,4G - LTE / LTE-A,https://map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||4G - LTE / LTE-A||https://wms.geo.admin.ch/??||ch.bakom.mobilnetz-4g||1.3.0
 Bund,5G - NR,https://map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||5G - NR||https://wms.geo.admin.ch/??||ch.bakom.mobilnetz-5g||1.3.0
 Bund,Notrufe per Gemeinde,https://map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||Notrufe per Gemeinde||https://wms.geo.admin.ch/??||ch.bakom.notruf||1.3.0
 Bund,112 Festnetz,https://map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||112 Festnetz||https://wms.geo.admin.ch/??||ch.bakom.notruf-112_festnetz||1.3.0
 Bund,112 Mobilnetz,https://map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||112 Mobilnetz||https://wms.geo.admin.ch/??||ch.bakom.notruf-112_mobilnetz||1.3.0
-Bund,143 Alarmzentralen,https://map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||143 Alarmzentralen||https://wms.geo.admin.ch/??||ch.bakom.notruf-143_zentral||1.3.0
 Bund,112 Satellitennetz,https://map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||112 Satellitennetz||https://wms.geo.admin.ch/??||ch.bakom.notruf-112_satellit||1.3.0
 Bund,112 Alarmzentralen,https://map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||112 Alarmzentralen||https://wms.geo.admin.ch/??||ch.bakom.notruf-112_zentral||1.3.0
 Bund,117 Festnetz,https://map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||117 Festnetz||https://wms.geo.admin.ch/??||ch.bakom.notruf-117_festnetz||1.3.0
@@ -17846,6 +17967,7 @@ Bund,118 Mobilnetz,https://map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-gra
 Bund,118 Alarmzentralen,https://map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||118 Alarmzentralen||https://wms.geo.admin.ch/??||ch.bakom.notruf-118_zentral||1.3.0
 Bund,143 Festnetz,https://map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||143 Festnetz||https://wms.geo.admin.ch/??||ch.bakom.notruf-143_festnetz||1.3.0
 Bund,143 Mobilnetz,https://map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||143 Mobilnetz||https://wms.geo.admin.ch/??||ch.bakom.notruf-143_mobilnetz||1.3.0
+Bund,143 Alarmzentralen,https://map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||143 Alarmzentralen||https://wms.geo.admin.ch/??||ch.bakom.notruf-143_zentral||1.3.0
 Bund,144 Festnetz,https://map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||144 Festnetz||https://wms.geo.admin.ch/??||ch.bakom.notruf-144_festnetz||1.3.0
 Bund,144 Mobilnetz,https://map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||144 Mobilnetz||https://wms.geo.admin.ch/??||ch.bakom.notruf-144_mobilnetz||1.3.0
 Bund,144 Alarmzentralen,https://map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||144 Alarmzentralen||https://wms.geo.admin.ch/??||ch.bakom.notruf-144_zentral||1.3.0
@@ -17857,6 +17979,7 @@ Bund,147 Mobilnetz,https://map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-gra
 Bund,147 Alarmzentralen,https://map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||147 Alarmzentralen||https://wms.geo.admin.ch/??||ch.bakom.notruf-147_zentral||1.3.0
 Bund,Upload ≥ 1 Mbit/s,n.a.
 Bund,Upload ≥ 10 Mbit/s,n.a.
+Bund,Armeelogistikcenter ALC,https://map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||Armeelogistikcenter ALC||https://wms.geo.admin.ch/??||ch.vbs.armeelogistikcenter||1.3.0
 Bund,Upload ≥ 100 Mbit/s,n.a.
 Bund,Upload ≥ 1000 Mbit/s,n.a.
 Bund,Versorgungsgebiete TV,https://map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||Versorgungsgebiete TV||https://wms.geo.admin.ch/??||ch.bakom.versorgungsgebiet-tv||1.3.0
@@ -17874,12 +17997,11 @@ Bund,"Eisenbahnlärm, zuläss. Immission N","https://map.geo.admin.ch/?bgLayer=c
 Bund,"Eisenbahnlärm, zuläss. Immission T","https://map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||Eisenbahnlärm, zuläss. Immission T||https://wms.geo.admin.ch/??||ch.bav.laermbelastung-eisenbahn_zulaessige_immissionen_tag||1.3.0"
 Bund,Eisenbahnstrecken StFV,https://map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||Eisenbahnstrecken StFV||https://wms.geo.admin.ch/??||ch.bav.lage-stoerfallverordnung_eisenbahnanlagen||1.3.0
 Bund,Schienennetz,https://map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||Schienennetz||https://wms.geo.admin.ch/??||ch.bav.schienennetz||1.3.0
-Bund,Bebaute Gebiete VIL,n.a.
+Bund,Bebaute Gebiete VIL,https://map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||Bebaute Gebiete VIL||https://wms.geo.admin.ch/??||ch.bazl.bebaute-gebiete_luftfahrtrecht||1.3.0
 Bund,Einschränkungen für Drohnen,https://map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||Einschränkungen für Drohnen||https://wms.geo.admin.ch/??||ch.bazl.einschraenkungen-drohnen||1.3.0
 Bund,Flugplätze + Heliports,n.a.
 Bund,Gebirgslandeplätze,n.a.
 Bund,Landschaftsruhezonen,https://map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||Landschaftsruhezonen||https://wms.geo.admin.ch/??||ch.bazl.landschaftsruhezonen||1.3.0
-Bund,Wärme-/Kältenachfrage Wohnen und DL,https://map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||Wärme-/Kältenachfrage Wohnen und DL||https://wms.geo.admin.ch/??||ch.bfe.fernwaerme-nachfrage_wohn_dienstleistungsgebaeude||1.3.0
 Bund,Luftfahrtkarte ICAO,https://map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||Luftfahrtkarte ICAO||https://wms.geo.admin.ch/??||ch.bazl.luftfahrtkarten-icao||1.3.0
 Bund,Lufträume - FIR,n.a.
 Bund,Lufträume - FIZ,n.a.
@@ -17895,16 +18017,16 @@ Bund,Pilot- und Demonstrationsprojekte,https://map.geo.admin.ch/?bgLayer=ch.swis
 Bund,Impulsberatung EFH und kleine MFH,https://map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||Impulsberatung EFH und kleine MFH||https://wms.geo.admin.ch/??||ch.bfe.erneuerbarheizen||1.3.0
 Bund,Potenzial Wärmenutzung ARA,https://map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||Potenzial Wärmenutzung ARA||https://wms.geo.admin.ch/??||ch.bfe.fernwaerme-angebot||1.3.0
 Bund,Wärme-/Kältenachfrage Industrie,https://map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||Wärme-/Kältenachfrage Industrie||https://wms.geo.admin.ch/??||ch.bfe.fernwaerme-nachfrage_industrie||1.3.0
+Bund,Wärme-/Kältenachfrage Wohnen und DL,https://map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||Wärme-/Kältenachfrage Wohnen und DL||https://wms.geo.admin.ch/??||ch.bfe.fernwaerme-nachfrage_wohn_dienstleistungsgebaeude||1.3.0
 Bund,Kehrichtverbrennungsanlagen,https://map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||Kehrichtverbrennungsanlagen||https://wms.geo.admin.ch/??||ch.bfe.kehrichtverbrennungsanlagen||1.3.0
-Bund,Kernkraftwerke,https://map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||Kernkraftwerke||https://wms.geo.admin.ch/??||ch.bfe.kernkraftwerke||1.3.0
+Bund,Kernkraftwerke,n.a.
+Bund,Solarenergie: Eignung Fassaden,https://map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||Solarenergie: Eignung Fassaden||https://wms.geo.admin.ch/??||ch.bfe.solarenergie-eignung-fassaden||1.3.0
 Bund,Kleinwasserkraftpotentiale,https://map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||Kleinwasserkraftpotentiale||https://wms.geo.admin.ch/??||ch.bfe.kleinwasserkraftpotentiale||1.3.0
 Bund,KOMO-Projekte,https://map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||KOMO-Projekte||https://wms.geo.admin.ch/??||ch.bfe.komo-projekte||1.3.0
 Bund,Vereisungshäufigkeit,https://map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||Vereisungshäufigkeit||https://wms.geo.admin.ch/??||ch.bfe.meteorologische-vereisung||1.3.0
-Bund,Konditoreiware,https://map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||Konditoreiware||https://wms.geo.admin.ch/??||ch.blw.ursprungsbezeichnungen-konditoreiwaren||1.3.0
 Bund,Konsultationsbereiche Rohrleitungen,https://map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||Konsultationsbereiche Rohrleitungen||https://wms.geo.admin.ch/??||ch.bfe.rohrleitungen-konsultationsbereiche||1.3.0
-Bund,Spirituosen,https://map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||Spirituosen||https://wms.geo.admin.ch/??||ch.blw.ursprungsbezeichnungen-spirituosen||1.3.0
+Bund,Erosionsrisiko Acker quantitativ,https://map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||Erosionsrisiko Acker quantitativ||https://wms.geo.admin.ch/??||ch.blw.erosion-quantitativ||1.3.0
 Bund,Solarenergie: Eignung Dächer,https://map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||Solarenergie: Eignung Dächer||https://wms.geo.admin.ch/??||ch.bfe.solarenergie-eignung-daecher||1.3.0
-Bund,Solarenergie: Eignung Fassaden,https://map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||Solarenergie: Eignung Fassaden||https://wms.geo.admin.ch/??||ch.bfe.solarenergie-eignung-fassaden||1.3.0
 Bund,Statistik Wasserkraft,https://map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||Statistik Wasserkraft||https://wms.geo.admin.ch/??||ch.bfe.statistik-wasserkraftanlagen||1.3.0
 Bund,Stauanlagen,https://map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||Stauanlagen||https://wms.geo.admin.ch/??||ch.bfe.stauanlagen-bundesaufsicht||1.3.0
 Bund,Windenergieanlagen,https://map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||Windenergieanlagen||https://wms.geo.admin.ch/??||ch.bfe.windenergieanlagen||1.3.0
@@ -17936,9 +18058,7 @@ Bund,Wasserdurchlässigkeit,https://map.geo.admin.ch/?bgLayer=ch.swisstopo.pixel
 Bund,Wasserspeichervermögen,https://map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||Wasserspeichervermögen||https://wms.geo.admin.ch/??||ch.blw.bodeneignung-wasserspeichervermoegen||1.3.0
 Bund,Erosionsrisiko Acker qualitativ,https://map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||Erosionsrisiko Acker qualitativ||https://wms.geo.admin.ch/??||ch.blw.erosion||1.3.0
 Bund,Fliesswegkarte,https://map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||Fliesswegkarte||https://wms.geo.admin.ch/??||ch.blw.erosion-fliesswegkarte||1.3.0
-Bund,Erosionsrisiko Acker quantitativ,https://map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||Erosionsrisiko Acker quantitativ||https://wms.geo.admin.ch/??||ch.blw.erosion-quantitativ||1.3.0
 Bund,Feldblockkarte,n.a.
-Bund,Pflanzliche Produkte,https://map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||Pflanzliche Produkte||https://wms.geo.admin.ch/??||ch.blw.ursprungsbezeichnungen-pflanzen||1.3.0
 Bund,Gewässeranschluss,https://map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||Gewässeranschluss||https://wms.geo.admin.ch/??||ch.blw.gewaesseranschlusskarte||1.3.0
 Bund,Gewässeranschluss erweitert,https://map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||Gewässeranschluss erweitert||https://wms.geo.admin.ch/??||ch.blw.gewaesseranschlusskarte-direkt||1.3.0
 Bund,Hanglagen,n.a.
@@ -17953,9 +18073,12 @@ Bund,Klimaeignung Zwischenfruchtbau,https://map.geo.admin.ch/?bgLayer=ch.swissto
 Bund,Niederschlagshaushalt,https://map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||Niederschlagshaushalt||https://wms.geo.admin.ch/??||ch.blw.niederschlagshaushalt||1.3.0
 Bund,Rebflächen in Hanglagen,n.a.
 Bund,Fleischware,https://map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||Fleischware||https://wms.geo.admin.ch/??||ch.blw.ursprungsbezeichnungen-fleisch||1.3.0
-Bund,Käse,https://map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||Käse||https://wms.geo.admin.ch/??||ch.blw.ursprungsbezeichnungen-kaese||1.3.0
-Bund,Zonenpläne für den Notfallschutz,https://map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||Zonenpläne für den Notfallschutz||https://wms.geo.admin.ch/??||ch.ensi.zonenplan-notfallschutz-kernanlagen||1.3.0
 Bund,CadastralWebMap,n.a.
+Bund,Käse,https://map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||Käse||https://wms.geo.admin.ch/??||ch.blw.ursprungsbezeichnungen-kaese||1.3.0
+Bund,Konditoreiware,https://map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||Konditoreiware||https://wms.geo.admin.ch/??||ch.blw.ursprungsbezeichnungen-konditoreiwaren||1.3.0
+Bund,Pflanzliche Produkte,https://map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||Pflanzliche Produkte||https://wms.geo.admin.ch/??||ch.blw.ursprungsbezeichnungen-pflanzen||1.3.0
+Bund,Spirituosen,https://map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||Spirituosen||https://wms.geo.admin.ch/??||ch.blw.ursprungsbezeichnungen-spirituosen||1.3.0
+Bund,Zonenpläne für den Notfallschutz,https://map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||Zonenpläne für den Notfallschutz||https://wms.geo.admin.ch/??||ch.ensi.zonenplan-notfallschutz-kernanlagen||1.3.0
 Bund,Niederschlag 1961-1990 (Klimanormwerte),https://map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||Niederschlag 1961-1990 (Klimanormwerte)||https://wms.geo.admin.ch/??||ch.meteoschweiz.klimanormwerte-niederschlag_1961_1990||1.3.0
 Bund,Niederschlag 1991-2020 (Klimanormwerte),https://map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||Niederschlag 1991-2020 (Klimanormwerte)||https://wms.geo.admin.ch/??||ch.meteoschweiz.klimanormwerte-niederschlag_aktuelle_periode||1.3.0
 Bund,Sonnenscheindauer 1961-1990 (Klimanormwerte),https://map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||Sonnenscheindauer 1961-1990 (Klimanormwerte)||https://wms.geo.admin.ch/??||ch.meteoschweiz.klimanormwerte-sonnenscheindauer_1961_1990||1.3.0
@@ -18070,7 +18193,7 @@ Bund,Geografische Namen swissNAMES3D,https://map.geo.admin.ch/?bgLayer=ch.swisst
 Bund,swissSURFACE3D Raster monodirektionales Relief,https://map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||swissSURFACE3D Raster monodirektionales Relief||https://wms.geo.admin.ch/??||ch.swisstopo.swisssurface3d-reliefschattierung_monodirektional||1.3.0
 Bund,swissSURFACE3D Raster multidirektionales Relief,https://map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||swissSURFACE3D Raster multidirektionales Relief||https://wms.geo.admin.ch/??||ch.swisstopo.swisssurface3d-reliefschattierung-multidirektional||1.3.0
 Bund,Eisenbahn swissTLM3D,https://map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||Eisenbahn swissTLM3D||https://wms.geo.admin.ch/??||ch.swisstopo.swisstlm3d-eisenbahnnetz||1.3.0
-Bund,Gewässer swissTLM3D,n.a.
+Bund,Gewässer swissTLM3D,https://map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||Gewässer swissTLM3D||https://wms.geo.admin.ch/??||ch.swisstopo.swisstlm3d-gewaessernetz||1.3.0
 Bund,Karte swissTLM (farbig),https://map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||Karte swissTLM (farbig)||https://wms.geo.admin.ch/??||ch.swisstopo.swisstlm3d-karte-farbe||1.3.0
 Bund,Karte swissTLM für 3D (farbig),n.a.
 Bund,Karte swissTLM (grau),https://map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||Karte swissTLM (grau)||https://wms.geo.admin.ch/??||ch.swisstopo.swisstlm3d-karte-grau||1.3.0
@@ -18082,7 +18205,7 @@ Bund,Wanderwege,https://map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&l
 Bund,LV95 Transformationsgenauigkeit,https://map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||LV95 Transformationsgenauigkeit||https://wms.geo.admin.ch/??||ch.swisstopo.transformationsgenauigkeit||1.3.0
 Bund,Spannungsarme Gebiete,https://map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||Spannungsarme Gebiete||https://wms.geo.admin.ch/??||ch.swisstopo-vd.spannungsarme-gebiete||1.3.0
 Bund,Schutzgebiete swissTLMRegio,https://map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||Schutzgebiete swissTLMRegio||https://wms.geo.admin.ch/??||ch.swisstopo.vec200-adminboundaries-protectedarea||1.3.0
-Bund,Einzelgebäude gen. swissTLMRegio,n.a.
+Bund,Einzelgebäude gen. swissTLMRegio,https://map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||Einzelgebäude gen. swissTLMRegio||https://wms.geo.admin.ch/??||ch.swisstopo.vec200-building||1.3.0
 Bund,Gewässernetz swissTLMRegio,https://map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||Gewässernetz swissTLMRegio||https://wms.geo.admin.ch/??||ch.swisstopo.vec200-hydrography||1.3.0
 Bund,Bodenbedeckung swissTLMRegio,https://map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||Bodenbedeckung swissTLMRegio||https://wms.geo.admin.ch/??||ch.swisstopo.vec200-landcover||1.3.0
 Bund,Einzelobjekte swissTLMRegio,https://map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||Einzelobjekte swissTLMRegio||https://wms.geo.admin.ch/??||ch.swisstopo.vec200-miscellaneous||1.3.0
@@ -18092,7 +18215,7 @@ Bund,Öffentlicher Verkehr swissTLMRegio,https://map.geo.admin.ch/?bgLayer=ch.sw
 Bund,Strassennetz swissTLMRegio,https://map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||Strassennetz swissTLMRegio||https://wms.geo.admin.ch/??||ch.swisstopo.vec200-transportation-strassennetz||1.3.0
 Bund,Gebäude VECTOR25,n.a.
 Bund,Gewässernetz VECTOR25,https://map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||Gewässernetz VECTOR25||https://wms.geo.admin.ch/??||ch.swisstopo.vec25-gewaessernetz_referenz||1.3.0
-Bund,Hecken und Bäume VECTOR25,n.a.
+Bund,Hecken und Bäume VECTOR25,https://map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||Hecken und Bäume VECTOR25||https://wms.geo.admin.ch/??||ch.swisstopo.vec25-heckenbaeume||1.3.0
 Bund,Primärflächen VECTOR25,https://map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||Primärflächen VECTOR25||https://wms.geo.admin.ch/??||ch.swisstopo.vec25-primaerflaechen||1.3.0
 Bund,LV95 Verschiebungsvektoren TSP1,https://map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||LV95 Verschiebungsvektoren TSP1||https://wms.geo.admin.ch/??||ch.swisstopo.verschiebungsvektoren-tsp1||1.3.0
 Bund,LV95 Verschiebungsvektoren TSP2,https://map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||LV95 Verschiebungsvektoren TSP2||https://wms.geo.admin.ch/??||ch.swisstopo.verschiebungsvektoren-tsp2||1.3.0
@@ -18123,7 +18246,6 @@ Bund,Gemeindeinformationen,https://map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelk
 Bund,Stand der amtlichen Vermessung,https://map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||Stand der amtlichen Vermessung||https://wms.geo.admin.ch/??||ch.swisstopo-vd.geometa-standav||1.3.0
 Bund,Grundbuchinformationen,https://map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||Grundbuchinformationen||https://wms.geo.admin.ch/??||ch.swisstopo-vd.geometa-grundbuch||1.3.0
 Bund,Nachführungsgeometer/in,https://map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||Nachführungsgeometer/in||https://wms.geo.admin.ch/??||ch.swisstopo-vd.geometa-nfgeom||1.3.0
-Bund,Amtliches Gebäudeadressverzeichnis,https://map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||Amtliches Gebäudeadressverzeichnis||https://wms.geo.admin.ch/??||ch.swisstopo.amtliches-gebaeudeadressverzeichnis||1.3.0
 Bund,Bohrungen > 500 m,https://map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||Bohrungen > 500 m||https://wms.geo.admin.ch/??||ch.swisstopo.geologie-bohrungen_tiefer_500||1.3.0
 Bund,Felslabore,https://map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||Felslabore||https://wms.geo.admin.ch/??||ch.swisstopo.geologie-felslabore||1.3.0
 Bund,Einteilung Geologische Generalkarte 200 Raster,https://map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||Einteilung Geologische Generalkarte 200 Raster||https://wms.geo.admin.ch/??||ch.swisstopo.geologie-generalkarte-ggk200.metadata||1.3.0
@@ -18184,7 +18306,6 @@ Bund,Lagefixpunkte LFP1,https://map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkart
 Bund,Lagefixpunkte LFP2,https://map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||Lagefixpunkte LFP2||https://wms.geo.admin.ch/??||ch.swisstopo.fixpunkte-lfp2||1.3.0
 Bund,Landsat Mosaik 25,https://map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||Landsat Mosaik 25||https://wms.geo.admin.ch/??||ch.swisstopo.images-landsat25||1.3.0
 Bund,Landeskarte 1:1 Million (grau),https://map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||Landeskarte 1:1 Million (grau)||https://wms.geo.admin.ch/??||ch.swisstopo.pixelkarte-grau-pk1000.noscale||1.3.0
-Bund,Amtliches Strassenverzeichnis,https://map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||Amtliches Strassenverzeichnis||https://wms.geo.admin.ch/??||ch.swisstopo.amtliches-strassenverzeichnis||1.3.0
 Bund,Gebrochene Gesteine: Abbau,https://map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||Gebrochene Gesteine: Abbau||https://wms.geo.admin.ch/??||ch.swisstopo.geologie-rohstoffe-gebrochene_gesteine_abbau||1.3.0
 Bund,Gips: Abbau und Verarbeitung,https://map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||Gips: Abbau und Verarbeitung||https://wms.geo.admin.ch/??||ch.swisstopo.geologie-rohstoffe-gips_abbau_verarbeitung||1.3.0
 Bund,Industrieminerale: Vorkommen,https://map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||Industrieminerale: Vorkommen||https://wms.geo.admin.ch/??||ch.swisstopo.geologie-rohstoffe-industrieminerale||1.3.0
@@ -18239,7 +18360,6 @@ Bund,Lärmbelastung 2. Nachtstunde,https://map.geo.admin.ch/?bgLayer=ch.swisstop
 Bund,Luftfahrthindernisse,https://map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||Luftfahrthindernisse||https://wms.geo.admin.ch/??||ch.bazl.luftfahrthindernis||1.3.0
 Bund,Letzte Hindernisänderungen,https://map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||Letzte Hindernisänderungen||https://wms.geo.admin.ch/??||ch.bazl.luftfahrthindernis-aenderungen||1.3.0
 Bund,Projektierungszonen Flughäfen,https://map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||Projektierungszonen Flughäfen||https://wms.geo.admin.ch/??||ch.bazl.projektierungszonen-flughafenanlagen||1.3.0
-Bund,Projektierungszonen Flughäfen Änd. V2.0 ÖREB,https://map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||Projektierungszonen Flughäfen Änd. V2.0 ÖREB||https://wms.geo.admin.ch/??||ch.bazl.projektierungszonen-flughafenanlagen_aenderung_v2_0.oereb||1.3.0
 Bund,Projektierungszonen Flughäfen V2.0 ÖREB,https://map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||Projektierungszonen Flughäfen V2.0 ÖREB||https://wms.geo.admin.ch/??||ch.bazl.projektierungszonen-flughafenanlagen_v2_0.oereb||1.3.0
 Bund,SIL Anhörung,https://map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||SIL Anhörung||https://wms.geo.admin.ch/??||ch.bazl.sachplan-infrastruktur-luftfahrt_anhorung||1.3.0
 Bund,SP Infrastruktur Luftfahrt,https://map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS||SP Infrastruktur Luftfahrt||https://wms.geo.admin.ch/??||ch.bazl.sachplan-infrastruktur-luftfahrt_kraft||1.3.0
