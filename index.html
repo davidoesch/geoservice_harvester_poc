@@ -59,6 +59,26 @@ table {
 	display: none;
 }
 
+.loader {
+  border: 10px solid #f3f3f3; /* Light grey */
+  border-top: 10px solid #3498db; /* Blue */
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  animation: spin 2s linear infinite;
+  margin: auto;
+  margin-top: 50px;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+.hide {
+  display: none;
+}
+
 
 
     </style>
@@ -68,6 +88,8 @@ table {
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="https://cdn.datatables.net/1.11.3/js/jquery.dataTables.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/papaparse@5.3.0/papaparse.min.js"></script>
+	
+
 	<script>
 
 function downloadQGISProjectWMS(data,name,owner,title,bbox) {
@@ -293,6 +315,13 @@ function copyLink(link, button) {
             }
         }
         $(document).ready(function() {
+			// Show loader while data is being loaded
+			$('#loader').removeClass('hide');
+			  // Hide search field initially
+			  $(".search-container").hide();
+
+			  // Hide iframes initially
+			  $("iframe").hide();
             // Load CSV file with PapaParse and DataTables
             Papa.parse("https://raw.githubusercontent.com/davidoesch/geoservice_harvester_poc/main/data/geoservices_CH.csv", {
                 download: true,
@@ -300,6 +329,8 @@ function copyLink(link, button) {
                 dynamicTyping: true,
                 skipEmptyLines: true,
                 complete: function(results) {
+					 // Hide loader once data is loaded
+					$('#loader').addClass('hide');
                     var table = $('#table').DataTable({
                         "data": results.data,
                         "columns": [{
@@ -366,6 +397,13 @@ function copyLink(link, button) {
 								return data;
 							}
                         }, ],
+						"initComplete": function() {
+						  // Show search field after loading is complete
+						  $(".search-container").show();
+
+						  // Show iframes after loading is complete
+						  $("iframe").show();
+						},
                         "order": [[0, "asc"]], // Default sort by 'OWNER' ascending
 						"pageLength": 10, // Set default number of entries to 10
 						"paging": true, // Enable pagination
@@ -377,8 +415,33 @@ function copyLink(link, button) {
 						],
 						"responsive": true, // added option for responsive table,
 						
-						"searching": true // disable searching
-					});
+						"searching": true, // disable searching
+				        "language": {
+						  "sEmptyTable": "Keine Daten in der Tabelle vorhanden",
+						  "sInfo": "_START_ bis _END_ von _TOTAL_ Einträgen",
+						  "sInfoEmpty": "0 bis 0 von 0 Einträgen",
+						  "sInfoFiltered": "(gefiltert von _MAX_ Einträgen)",
+						  "sInfoPostFix": "",
+						  "sInfoThousands": ".",
+						  "sLengthMenu": "_MENU_ Einträge anzeigen",
+						  "sLoadingRecords": "Wird geladen...",
+						  "sProcessing": "Bitte warten...",
+						  "sSearch": "Suchen",
+						  "sZeroRecords": "Keine Einträge vorhanden.",
+						  "oPaginate": {
+							"sFirst": "Erste",
+							"sPrevious": "Zurück",
+							"sNext": "Nächste",
+							"sLast": "Letzte"
+						  },
+						  "oAria": {
+							"sSortAscending": ": aktivieren, um Spalte aufsteigend zu sortieren",
+							"sSortDescending": ": aktivieren, um Spalte absteigend zu sortieren"
+						  }
+						}
+					  });
+
+					$('#loading').hide(); // Hide loading wheel
                     $('#toggle-columns').on('click', function() {
                         table.columns().visible(!table.column(0).visible());
                     });
@@ -406,35 +469,26 @@ function copyLink(link, button) {
     <p>| Alle DATA-Attribute: <a href="https://davidoesch.github.io/geoservice_harvester_poc/data/geodata_CH.csv">download</a> || Alle SERVICES Attribute: <a href="https://davidoesch.github.io/geoservice_harvester_poc/data/geoservices_CH.csv">download</a> || Source Code: <a href="https://github.com/davidoesch/geoservice_harvester_poc">GitHub</a> || Qualitätskontrolle: <a href="https://davidoesch.github.io/geoservice_harvester_poc/#anchor-QualityControl"> ansehen</a> || Letzte Aktualisieurng: <img src="https://img.shields.io/github/last-commit/davidoesch/geoservice_harvester_poc" alt="LastUpdate"> | </p>
     </div>
     <br>
-    <p>GeoHarvester ist ein Portal, das die offiziellen Geodaten der Dienste der Schweizer Behörden zusammenführt. Wir bieten eine einfache Möglichkeit, auf öffentliche Geodaten zuzugreifen. Unser Ziel ist es, den Zugang und die Nutzung von Geodaten der Schweizer Behörden für jedermann/frau einfach zu machen. Bei uns finden Sie die Daten als Dienst, Metadaten und Informationen zu den Datensätzen wie Titel, Eigentümer, Zusammenfassung, Service-Link, Legenden und sogar eine KartenAnsicht. Wir bieten auch qualitative Statistiken, um Ihnen bei der Auswahl der besten Daten für Ihre Bedürfnisse zu helfen. Unsere Plattform ist benutzerfreundlich und unser Ziel ist es, Ihnen den direktesten Zugang zu Geodaten zu bieten.</p>
+    <p>GeoHarvester ist ein Portal, das die offiziellen Geodaten der Dienste der Schweizer Behörden zusammenführt. Wir bieten eine einfache Möglichkeit, auf öffentliche Geodaten zuzugreifen. Unser Ziel ist es, den Zugang und die Nutzung von Geodaten der Schweizer Behörden für jedermann/frau einfach zu machen. Bei uns finden Sie die Daten als Dienst, Metadaten und Informationen zu den Datensätzen wie Titel, Eigentümer, Zusammenfassung, Service-Link, Legenden, Karten Ansicht und ArcGISPro&trade; (.lyrx) und QGIS (.qlr) Dateien. Wir bieten auch qualitative Statistiken, um Ihnen bei der Auswahl der besten Daten für Ihre Bedürfnisse zu helfen. Unsere Plattform ist benutzerfreundlich und unser Ziel ist es, Ihnen den direktesten Zugang zu Geodaten zu bieten. 
     <br>
-    <p> Bitte haben Sie etwas Geduld - das Laden von über 15'000 Datensätzen braucht seine Zeit </p>
-    </p>
+    
+
+	<div id="loader" class="loader"></div>
 	<div class="table-container">
-		<div class="search-container">
-		  <input type="search" id="table-search" placeholder="Suche...">
-		</div>
-		<table id="table" class="display"></table>
+	  <div class="search-container">
+		<input type="search" id="table-search" placeholder="Suche...z.B Bienen ">
+	  </div>
+	  <table id="table" class="display"></table>
 	</div>
+
  
 	
     <table id="table" class="display">
-        <thead>
-            <tr>
-                <th>OWNER</th>
-                <th>TITLE</th>
-                <th>ABSTRACT</th>
-				<th>SERVICELINK</th>
-                <th>KEYWORDS</th>
-                <th>SERVICELINK</th>
-                <th>CONTACT</th>
-                <th>LEGEND</th>
-                <th>METADATA</th>
-            </tr>
-        </thead>
+
+
     </table>
     <p>
-        <a id="anchor-QualityControl"><b>Quality Control</b></a>
+        <a id="anchor-QualityControl"></a>
         <br>
         <iframe title="Durchschnitt Vollständigkeit :  SCHLÜSSELWÖRTER, ABSTRACT, KONTAKT und METADATEN" aria-label="Balken (gestapelt)" id="datawrapper-chart-DuVHo" src="https://datawrapper.dwcdn.net/DuVHo/1/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="721" data-external="1"></iframe>
         <script type="text/javascript">
