@@ -265,7 +265,7 @@ def scrape(source,service,i,layertree, group,layer_data,prefix):
         # Calculate the distance between the two corners of the bounding box in meters.
         distance = math.sqrt((xmax - xmin)**2 + (ymax - ymin)**2)
         
-        if math.isnan(distance):
+        if math.isnan(distance) or distance <= 0:
             zoom=1
         else:
             # Calculate the appropriate zoom level using the formula for LV95 projection.
@@ -303,6 +303,7 @@ def scrape(source,service,i,layertree, group,layer_data,prefix):
             #    service.contents[i].id+"||"\
             #    +service.identification.version+"&E="+str(lon_lv95)+\
             #    "&N="+str(lat_lv95)+"&zoom="+str(layer_data["MAX_ZOOM"]))
+
             layer_data["MAPGEO"]= r""+prefix+"layers=WMS||"+service.contents[i].title+"||"+service.url+"?||"+\
                 service.contents[i].id+"||"\
                 +service.identification.version+"&E="+str(lon_lv95)+\
@@ -333,6 +334,7 @@ def scrape(source,service,i,layertree, group,layer_data,prefix):
          #   layer_data["MAPGEO"]= shorten_mapgeo(r""+prefix+"layers=WMTS||"+service.contents[i].id+"||"\
          #       +service.url+"&E="+str(lon_lv95)+\
          #       "&N="+str(lat_lv95)+"&zoom="+str(layer_data["MAX_ZOOM"]))
+            
             layer_data["MAPGEO"]= r""+prefix+"layers=WMTS||"+service.contents[i].id+"||"\
                 +service.url+"&E="+str(lon_lv95)+\
                 "&N="+str(lat_lv95)+"&zoom="+str(layer_data["MAX_ZOOM"])
