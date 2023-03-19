@@ -23,7 +23,48 @@
         table.dataTable {
             width: 100% !important;
         }
+		.search-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 30px;
+  margin-bottom: 20px;
+}
+
+#table-search {
+  width: 50%;
+  height: 50px;
+  font-size: 24px;
+  padding: 10px;
+  border-radius: 10px;
+  border: none;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+  text-align: center;
+  outline: none;
+}
+
+.dataTables_wrapper .dataTables_filter {
+	display: none;
+}
+.table-container {
+	text-align: center;
+	margin-top: 20px;
+}
+
+table {
+	margin: 0 auto;
+}
+
+.dataTables_wrapper .dataTables_filter {
+	display: none;
+}
+
+
+
     </style>
+	
+	
+	
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="https://cdn.datatables.net/1.11.3/js/jquery.dataTables.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/papaparse@5.3.0/papaparse.min.js"></script>
@@ -325,30 +366,29 @@ function copyLink(link, button) {
 								return data;
 							}
                         }, ],
-                        "order": [
-                            [0, "asc"]
-                        ], // Default sort by 'OWNER' ascending
-                        "paging": true, // Enable pagination
-                        "lengthMenu": [10, 25, 50, 100], //
-                        "columnDefs": [{
-                            "targets": 1,
-                            "width": "60%"
-                        }, {
-                            "targets": 3,
-                            "width": "40%"
-                        }, {
-                            "targets": [0, 2, 4, 5, 6, 7],
-                            "width": "10%"
-                        }],
-                        "responsive": true // added option for responsive table
-                    });
+                        "order": [[0, "asc"]], // Default sort by 'OWNER' ascending
+						"pageLength": 10, // Set default number of entries to 10
+						"paging": true, // Enable pagination
+						"lengthChange": false, // Remove "Show [x] entries" dropdown
+						"columnDefs": [
+							{"targets": 1, "width": "60%"},
+							{"targets": 3, "width": "40%"},
+							{"targets": [0, 2, 4, 5, 6, 7], "width": "10%"}
+						],
+						"responsive": true, // added option for responsive table,
+						
+						"searching": true // disable searching
+					});
                     $('#toggle-columns').on('click', function() {
                         table.columns().visible(!table.column(0).visible());
                     });
-$("button").click(function(){
-  $(this).toggleClass("btn-danger");
-});
-
+					$("button").click(function(){
+					  $(this).toggleClass("btn-danger");
+					});
+					$('#table-search').on('keyup', function () {
+					  table.search(this.value).draw();
+					});
+					$('#table-search').focus(); // Set the focus to the search field
                 }
             });
         });
@@ -370,6 +410,14 @@ $("button").click(function(){
     <br>
     <p> Bitte haben Sie etwas Geduld - das Laden von über 15'000 Datensätzen braucht seine Zeit </p>
     </p>
+	<div class="table-container">
+		<div class="search-container">
+		  <input type="search" id="table-search" placeholder="Suche...">
+		</div>
+		<table id="table" class="display"></table>
+	</div>
+ 
+	
     <table id="table" class="display">
         <thead>
             <tr>
