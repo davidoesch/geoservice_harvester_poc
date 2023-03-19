@@ -112,8 +112,8 @@ This data is generated and validated weekly using automated procedures based on 
 
 
 
-## How to add additonal WMS WMTS Services
-1. Add your service to [sources.csv](https://github.com/davidoesch/geoservice_harvester_poc/sources.csv) follwoing the OWNER Naming Convention and URL (only https) to the service endpoint
+## How to fix / add additonal WMS WMTS Services
+1. Fix / add your service to [sources.csv](https://github.com/davidoesch/geoservice_harvester_poc/sources.csv) following the OWNER Naming Convention and URL (only https) to the service endpoint
 2. make a pull request
 
 
