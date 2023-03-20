@@ -120,7 +120,7 @@ function downloadQGISProjectWMS(data,name,owner,title,bbox) {
 			var ymin = bboxArray[1];
 			var xmax = bboxArray[2];
 			var ymax = bboxArray[3];
-			
+	    data = data.trim(); //remove empty spaces		
             var projectXml = xhr.responseText;
             projectXml = projectXml.replace("{{SERVICELINK}}", data);
             projectXml = projectXml.replace("{{NAME}}", name);
@@ -150,7 +150,7 @@ function downloadARCGISPROProjectWMS(data,name,owner,title) {
     xhr.onreadystatechange = function () {
         if (xhr.readyState === 4 && xhr.status === 200) {
 
-			
+	    data = data.trim(); //remove empty spaces		
             var projectXml = xhr.responseText;
             projectXml = projectXml.replace("{{SERVICELINK}}", data);
             projectXml = projectXml.replace("{{NAME}}", name);
@@ -183,7 +183,7 @@ function downloadQGISProjectWMTS(data,name,owner,title,bbox) {
 			var ymin = bboxArray[1];
 			var xmax = bboxArray[2];
 			var ymax = bboxArray[3];
-			
+	    data = data.trim(); //remove empty spaces		
             var projectXml = xhr.responseText;
             projectXml = projectXml.replace("{{SERVICELINK}}", data);
             projectXml = projectXml.replace("{{NAME}}", name);
@@ -214,7 +214,7 @@ function downloadARCGISPROProjectWMTS(data,name,owner,title) {
     xhr.onreadystatechange = function () {
         if (xhr.readyState === 4 && xhr.status === 200) {
 
-			data = data.trim(); //remove empty spaces
+	    data = data.trim(); //remove empty spaces
             var projectXml = xhr.responseText;
             projectXml = projectXml.replace("{{SERVICELINK}}", data);
             projectXml = projectXml.replace("{{NAME}}", name);
@@ -250,7 +250,7 @@ function downloadQGISProjectWFS(data,name,owner,title,bbox) {
 			var ymin = bboxArray[1];
 			var xmax = bboxArray[2];
 			var ymax = bboxArray[3];
-			
+	    data = data.trim(); //remove empty spaces		
             var projectXml = xhr.responseText;
             projectXml = projectXml.replace("{{SERVICELINK}}", data);
             projectXml = projectXml.replace("{{NAME}}", name);
@@ -283,7 +283,7 @@ function downloadARCGISPROProjectWFS(data,name,owner,title) {
 			name = name.replace(/ms:/g, ''); // removes all occurrences of "ms:"
 			name = name.replace(/\./g, '_'); // replaces all "." with "_"
 			name = name.replace(/\-/g, '_'); // replaces all "-" with "_"
-			
+	    data = data.trim(); //remove empty spaces		
             var projectXml = xhr.responseText;
             projectXml = projectXml.replace("{{SERVICELINK}}", data);
             projectXml = projectXml.replace("{{NAME}}", name);
