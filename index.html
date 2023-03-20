@@ -310,7 +310,7 @@ function copyLink(link, button) {
     tempInput.select();
     document.execCommand("copy");
     document.body.removeChild(tempInput);
-    button.innerHTML = "Kopiert!";
+    button.innerHTML = "Service und Name kopiert!";
 	    $(button).addClass('btn-danger');
     setTimeout(function() {
         $(button).removeClass('btn-danger');
@@ -372,14 +372,14 @@ function copyLink(link, button) {
                             "title": "Desktop",
 							"render": function(data, type, row) {
 									if (row.SERVICETYPE === "WMS") {
-									  return "<div style='text-align:center;'><button onclick='downloadQGISProjectWMS(\"" + data + "\", \"" + row.NAME + "\", \"" + row.OWNER + "\",\"" + row.TITLE + "\", \"" + row.BBOX + "\")'>Open WMS in QGIS</button> &nbsp; <button onclick='downloadARCGISPROProjectWMS(\"" + data + "\", \"" + row.NAME + "\", \"" + row.OWNER + "\",\"" + row.TITLE + "\")'>Open WMS in ArcGISPro&trade;</button> &nbsp; <button onclick='copyLink(\"" + data + "\", this)'>COPY WMS</button></div>";
+									  return "<div style='text-align:center;'><button onclick='downloadQGISProjectWMS(\"" + data + "\", \"" + row.NAME + "\", \"" + row.OWNER + "\",\"" + row.TITLE + "\", \"" + row.BBOX + "\")'>Open WMS in QGIS</button> &nbsp; <button onclick='downloadARCGISPROProjectWMS(\"" + data + "\", \"" + row.NAME + "\", \"" + row.OWNER + "\",\"" + row.TITLE + "\")'>Open WMS in ArcGISPro&trade;</button> &nbsp; <button onclick='copyLink(\"" + data + "  Layer:  " + row.NAME + "\", this)'>COPY WMS</button></div>";
 									}
 
 									if (row.SERVICETYPE === "WMTS") {
-										return "<div style='text-align:center;'><button onclick='downloadQGISProjectWMTS(\"" + data + "\", \"" + row.NAME + "\", \"" + row.OWNER + "\",\"" + row.TITLE + "\", \"" + row.BBOX + "\")'>Open WMTS in QGIS</button>  &nbsp; <button onclick='downloadARCGISPROProjectWMTS(\"" + data + "\", \"" + row.NAME + "\", \"" + row.OWNER + "\",\"" + row.TITLE + "\")'>Open WMTS in ArcGISPro&trade;</button> &nbsp;<button onclick='copyLink(\"" + data + "\", this)'>COPY WMTS</button></div>";
+										return "<div style='text-align:center;'><button onclick='downloadQGISProjectWMTS(\"" + data + "\", \"" + row.NAME + "\", \"" + row.OWNER + "\",\"" + row.TITLE + "\", \"" + row.BBOX + "\")'>Open WMTS in QGIS</button>  &nbsp; <button onclick='downloadARCGISPROProjectWMTS(\"" + data + "\", \"" + row.NAME + "\", \"" + row.OWNER + "\",\"" + row.TITLE + "\")'>Open WMTS in ArcGISPro&trade;</button> &nbsp;<button onclick='copyLink(\"" + data + "  Layer:  " + row.NAME + "\", this)'>COPY WMTS</button></div>";
 									}
 									if (row.SERVICETYPE === "WFS") {
-										return "<div style='text-align:center;'><button onclick='downloadQGISProjectWFS(\"" + data + "\", \"" + row.NAME + "\", \"" + row.OWNER + "\",\"" + row.TITLE + "\", \"" + row.BBOX + "\")'>Open WFS in QGIS</button> &nbsp; <button onclick='downloadARCGISPROProjectWFS(\"" + data + "\", \"" + row.NAME + "\", \"" + row.OWNER + "\",\"" + row.TITLE + "\")'>Open WFS in ArcGISPro&trade;</button> &nbsp; <button onclick='copyLink(\"" + data + "\", this)'>COPY WFS</button></div>";
+										return "<div style='text-align:center;'><button onclick='downloadQGISProjectWFS(\"" + data + "\", \"" + row.NAME + "\", \"" + row.OWNER + "\",\"" + row.TITLE + "\", \"" + row.BBOX + "\")'>Open WFS in QGIS</button> &nbsp; <button onclick='downloadARCGISPROProjectWFS(\"" + data + "\", \"" + row.NAME + "\", \"" + row.OWNER + "\",\"" + row.TITLE + "\")'>Open WFS in ArcGISPro&trade;</button> &nbsp; <button onclick='copyLink(\"" + data + "  Layer:  " + row.NAME + "\", this)'>COPY WFS</button></div>";
 									}
 							   
 								return data;
