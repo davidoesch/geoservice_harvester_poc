@@ -23,82 +23,95 @@
 	<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 
-	<style>
-        table.dataTable {
-            width: 100% !important;
-        }
-		.search-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-top: 30px;
-  margin-bottom: 20px;
-  flex-direction: column;
+<style>table.dataTable {
+    width: 100% !important;
+}
+
+.search-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    flex-direction: column;
 }
 
 #table-info {
-  text-align: center;
+    text-align: center;
 }
 
 #table-search {
-  width: 50%;
-  height: 50px;
-  font-size: 24px;
-  padding: 10px;
-  border-radius: 10px;
-  border: 2px solid #ccc;
-  box-shadow: 0 0 10px rgba(255, 0, 0, 0.3);
-  text-align: left;
-  outline: none;
-  color: #555555;
+    width: 50%;
+    height: 50px;
+    font-size: 24px;
+    padding: 10px;
+    border-radius: 10px;
+    border: 2px solid #ccc;
+    box-shadow: 0 0 10px rgba(255, 0, 0, 0.3);
+    text-align: left;
+    outline: none;
+    color: #555555;
 }
 
 #table-search::placeholder {
-  color: #D7D7D7; /* Change this to the color you want */
+    color: #D7D7D7;
+    /* Change this to the color you want */
 }
 
 .dataTables_wrapper .dataTables_filter {
-	display: none;
+    display: none;
 }
+
 .table-container {
-	text-align: center;
-	margin-top: 20px;
+    text-align: center;
+    margin-top: 20px;
 }
 
 table {
-	margin: 0 auto;
+    margin: 0 auto;
 }
 
 .dataTables_wrapper .dataTables_filter {
-	display: none;
+    display: none;
 }
 
 .loader {
-  border: 10px solid #f3f3f3; /* Light grey */
-  border-top: 10px solid #3498db; /* Blue */
-  border-radius: 50%;
-  width: 50px;
-  height: 50px;
-  animation: spin 2s linear infinite;
-  margin: auto;
-  margin-top: 50px;
+    border: 10px solid #f3f3f3;
+    /* Light grey */
+    border-top: 10px solid #3498db;
+    /* Blue */
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    animation: spin 2s linear infinite;
+    margin: auto;
+    margin-top: 50px;
 }
 
 @keyframes spin {
-  0% { transform: rotate(0deg); }
-  100% { transform: rotate(360deg); }
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
 }
 
 .hide {
-  display: none;
+    display: none;
 }
 
-.container, .container-lg, .container-md, .container-sm, .container-xl {
+.container,
+.container-lg,
+.container-md,
+.container-sm,
+.container-xl {
     max-width: 100%;
 }
 
 
-    </style>
+</style>
 	
 	
 	
@@ -107,58 +120,69 @@ table {
     <script src="https://cdn.jsdelivr.net/npm/papaparse@5.3.0/papaparse.min.js"></script>
 	
 
-	<script>
+<script >
+/**
+* This is a JavaScript code that defines four functions: downloadQGISProjectWMS(), downloadARCGISPROProjectWMS(), downloadQGISProjectWMTS(), and downloadARCGISPROProjectWMTS(). These functions download and generate QGIS and ArcGIS Pro project files for WMS and WMTS services.
+* 
+* Each function uses an XMLHttpRequest() to retrieve a template file from a GitHub repository, and then replaces placeholders in the file with parameters provided to the function. The resulting XML file is then downloaded as a Blob using the URL.createObjectURL() and document.createElement() methods. Finally, the temporary a element used for the download is removed from the document using document.body.removeChild(a).
+* 
+* Note that the functions are assuming that the service URL and parameters being passed as arguments are valid and formatted correctly.
+*/
+    function downloadQGISProjectWMS(data, name, owner, title, bbox) {
+        var xhr = new XMLHttpRequest();
+        xhr.open('GET', "https://raw.githubusercontent.com/davidoesch/geoservice_harvester_poc/main/templates/qgis_wms_template.qlr");
+        xhr.responseType = 'text';
+        xhr.onreadystatechange = function() {
+            if (xhr.readyState === 4 && xhr.status === 200) {
+                var bboxArray = bbox.split(" ");
+                var xmin = bboxArray[0];
+                var ymin = bboxArray[1];
+                var xmax = bboxArray[2];
+                var ymax = bboxArray[3];
+                data = data.trim(); //remove empty spaces		
+                var projectXml = xhr.responseText;
+                projectXml = projectXml.replace("{{SERVICELINK}}", data);
+                projectXml = projectXml.replace("{{NAME}}", name);
+                projectXml = projectXml.replace("{{TITLE}}", title);
+                projectXml = projectXml.replace("{{OWNER}}", owner);
+                projectXml = projectXml.replace("{{XMAX}}", xmax);
+                projectXml = projectXml.replace("{{YMAX}}", ymax);
+                projectXml = projectXml.replace("{{YMIN}}", ymin);
+                projectXml = projectXml.replace("{{XMIN}}", xmin);
+                var blob = new Blob([projectXml], {
+                    type: "application/xml"
+                });
+                var url = URL.createObjectURL(blob);
+                var a = document.createElement("a");
+                a.href = url;
+                a.download = owner + "_" + name + ".qlr";
+                document.body.appendChild(a);
+                a.click();
+                document.body.removeChild(a);
 
-function downloadQGISProjectWMS(data,name,owner,title,bbox) {
-    var xhr = new XMLHttpRequest();
-    xhr.open('GET', "https://raw.githubusercontent.com/davidoesch/geoservice_harvester_poc/main/templates/qgis_wms_template.qlr");
-    xhr.responseType = 'text';
-    xhr.onreadystatechange = function () {
-        if (xhr.readyState === 4 && xhr.status === 200) {
-			var bboxArray = bbox.split(" ");
-			var xmin = bboxArray[0];
-			var ymin = bboxArray[1];
-			var xmax = bboxArray[2];
-			var ymax = bboxArray[3];
-	    data = data.trim(); //remove empty spaces		
-            var projectXml = xhr.responseText;
-            projectXml = projectXml.replace("{{SERVICELINK}}", data);
-            projectXml = projectXml.replace("{{NAME}}", name);
-			projectXml = projectXml.replace("{{TITLE}}", title);
-			projectXml = projectXml.replace("{{OWNER}}", owner);
-			projectXml = projectXml.replace("{{XMAX}}", xmax);
-			projectXml = projectXml.replace("{{YMAX}}", ymax);
-			projectXml = projectXml.replace("{{YMIN}}", ymin);
-			projectXml = projectXml.replace("{{XMIN}}", xmin);
-            var blob = new Blob([projectXml], {type: "application/xml"});
-            var url = URL.createObjectURL(blob);
-            var a = document.createElement("a");
-            a.href = url;
-            a.download = owner + "_" + name + ".qlr";
-            document.body.appendChild(a);
-            a.click();
-            document.body.removeChild(a);
+            }
+        };
+        xhr.send();
+    }
 
-        }
-    };
-    xhr.send();
-}
-function downloadARCGISPROProjectWMS(data,name,owner,title) {
+function downloadARCGISPROProjectWMS(data, name, owner, title) {
     var xhr = new XMLHttpRequest();
     xhr.open('GET', "https://raw.githubusercontent.com/davidoesch/geoservice_harvester_poc/main/templates/arcgispro_wms_template.lyrx");
     xhr.responseType = 'text';
-    xhr.onreadystatechange = function () {
+    xhr.onreadystatechange = function() {
         if (xhr.readyState === 4 && xhr.status === 200) {
 
-	    data = data.trim(); //remove empty spaces		
+            data = data.trim(); //remove empty spaces		
             var projectXml = xhr.responseText;
             projectXml = projectXml.replace("{{SERVICELINK}}", data);
             projectXml = projectXml.replace("{{NAME}}", name);
-			projectXml = projectXml.replace("{{NAME}}", name);
-			projectXml = projectXml.replace("{{TITLE}}", title);
-			projectXml = projectXml.replace("{{OWNER}}", owner);
+            projectXml = projectXml.replace("{{NAME}}", name);
+            projectXml = projectXml.replace("{{TITLE}}", title);
+            projectXml = projectXml.replace("{{OWNER}}", owner);
 
-            var blob = new Blob([projectXml], {type: "application/xml"});
+            var blob = new Blob([projectXml], {
+                type: "application/xml"
+            });
             var url = URL.createObjectURL(blob);
             var a = document.createElement("a");
             a.href = url;
@@ -172,29 +196,31 @@ function downloadARCGISPROProjectWMS(data,name,owner,title) {
     xhr.send();
 }
 
-function downloadQGISProjectWMTS(data,name,owner,title,bbox) {
+function downloadQGISProjectWMTS(data, name, owner, title, bbox) {
     var xhr = new XMLHttpRequest();
     xhr.open('GET', "https://raw.githubusercontent.com/davidoesch/geoservice_harvester_poc/main/templates/qgis_wmts_template.qlr");
     xhr.responseType = 'text';
-    xhr.onreadystatechange = function () {
+    xhr.onreadystatechange = function() {
         if (xhr.readyState === 4 && xhr.status === 200) {
-			var bboxArray = bbox.split(" ");
-			var xmin = bboxArray[0];
-			var ymin = bboxArray[1];
-			var xmax = bboxArray[2];
-			var ymax = bboxArray[3];
-	    data = data.trim(); //remove empty spaces		
+            var bboxArray = bbox.split(" ");
+            var xmin = bboxArray[0];
+            var ymin = bboxArray[1];
+            var xmax = bboxArray[2];
+            var ymax = bboxArray[3];
+            data = data.trim(); //remove empty spaces		
             var projectXml = xhr.responseText;
             projectXml = projectXml.replace("{{SERVICELINK}}", data);
             projectXml = projectXml.replace("{{NAME}}", name);
-			projectXml = projectXml.replace("{{NAME}}", name);
-			projectXml = projectXml.replace("{{TITLE}}", title);
-			projectXml = projectXml.replace("{{OWNER}}", owner);
-			projectXml = projectXml.replace("{{XMAX}}", xmax);
-			projectXml = projectXml.replace("{{YMAX}}", ymax);
-			projectXml = projectXml.replace("{{YMIN}}", ymin);
-			projectXml = projectXml.replace("{{XMIN}}", xmin);
-            var blob = new Blob([projectXml], {type: "application/xml"});
+            projectXml = projectXml.replace("{{NAME}}", name);
+            projectXml = projectXml.replace("{{TITLE}}", title);
+            projectXml = projectXml.replace("{{OWNER}}", owner);
+            projectXml = projectXml.replace("{{XMAX}}", xmax);
+            projectXml = projectXml.replace("{{YMAX}}", ymax);
+            projectXml = projectXml.replace("{{YMIN}}", ymin);
+            projectXml = projectXml.replace("{{XMIN}}", xmin);
+            var blob = new Blob([projectXml], {
+                type: "application/xml"
+            });
             var url = URL.createObjectURL(blob);
             var a = document.createElement("a");
             a.href = url;
@@ -207,22 +233,25 @@ function downloadQGISProjectWMTS(data,name,owner,title,bbox) {
     };
     xhr.send();
 }
-function downloadARCGISPROProjectWMTS(data,name,owner,title) {
+
+function downloadARCGISPROProjectWMTS(data, name, owner, title) {
     var xhr = new XMLHttpRequest();
     xhr.open('GET', "https://raw.githubusercontent.com/davidoesch/geoservice_harvester_poc/main/templates/arcgispro_wmts_template.lyrx");
     xhr.responseType = 'text';
-    xhr.onreadystatechange = function () {
+    xhr.onreadystatechange = function() {
         if (xhr.readyState === 4 && xhr.status === 200) {
 
-	    data = data.trim(); //remove empty spaces
+            data = data.trim(); //remove empty spaces
             var projectXml = xhr.responseText;
             projectXml = projectXml.replace("{{SERVICELINK}}", data);
             projectXml = projectXml.replace("{{NAME}}", name);
-			projectXml = projectXml.replace("{{NAME}}", name);
-			projectXml = projectXml.replace("{{TITLE}}", title);
-			
+            projectXml = projectXml.replace("{{NAME}}", name);
+            projectXml = projectXml.replace("{{TITLE}}", title);
 
-            var blob = new Blob([projectXml], {type: "application/xml"});
+
+            var blob = new Blob([projectXml], {
+                type: "application/xml"
+            });
             var url = URL.createObjectURL(blob);
             var a = document.createElement("a");
             a.href = url;
@@ -239,28 +268,30 @@ function downloadARCGISPROProjectWMTS(data,name,owner,title) {
 
 
 
-function downloadQGISProjectWFS(data,name,owner,title,bbox) {
+function downloadQGISProjectWFS(data, name, owner, title, bbox) {
     var xhr = new XMLHttpRequest();
     xhr.open('GET', "https://raw.githubusercontent.com/davidoesch/geoservice_harvester_poc/main/templates/qgis_wfs_template.qlr");
     xhr.responseType = 'text';
-    xhr.onreadystatechange = function () {
+    xhr.onreadystatechange = function() {
         if (xhr.readyState === 4 && xhr.status === 200) {
-			var bboxArray = bbox.split(" ");
-			var xmin = bboxArray[0];
-			var ymin = bboxArray[1];
-			var xmax = bboxArray[2];
-			var ymax = bboxArray[3];
-	    data = data.trim(); //remove empty spaces		
+            var bboxArray = bbox.split(" ");
+            var xmin = bboxArray[0];
+            var ymin = bboxArray[1];
+            var xmax = bboxArray[2];
+            var ymax = bboxArray[3];
+            data = data.trim(); //remove empty spaces		
             var projectXml = xhr.responseText;
             projectXml = projectXml.replace("{{SERVICELINK}}", data);
             projectXml = projectXml.replace("{{NAME}}", name);
-			projectXml = projectXml.replace("{{TITLE}}", title);
-			projectXml = projectXml.replace("{{OWNER}}", owner);
-			projectXml = projectXml.replace("{{XMAX}}", xmax);
-			projectXml = projectXml.replace("{{YMAX}}", ymax);
-			projectXml = projectXml.replace("{{YMIN}}", ymin);
-			projectXml = projectXml.replace("{{XMIN}}", xmin);
-            var blob = new Blob([projectXml], {type: "application/xml"});
+            projectXml = projectXml.replace("{{TITLE}}", title);
+            projectXml = projectXml.replace("{{OWNER}}", owner);
+            projectXml = projectXml.replace("{{XMAX}}", xmax);
+            projectXml = projectXml.replace("{{YMAX}}", ymax);
+            projectXml = projectXml.replace("{{YMIN}}", ymin);
+            projectXml = projectXml.replace("{{XMIN}}", xmin);
+            var blob = new Blob([projectXml], {
+                type: "application/xml"
+            });
             var url = URL.createObjectURL(blob);
             var a = document.createElement("a");
             a.href = url;
@@ -274,22 +305,24 @@ function downloadQGISProjectWFS(data,name,owner,title,bbox) {
     xhr.send();
 }
 
-function downloadARCGISPROProjectWFS(data,name,owner,title) {
+function downloadARCGISPROProjectWFS(data, name, owner, title) {
     var xhr = new XMLHttpRequest();
     xhr.open('GET', "https://raw.githubusercontent.com/davidoesch/geoservice_harvester_poc/main/templates/arcgispro_wfs_template.lyrx");
     xhr.responseType = 'text';
-    xhr.onreadystatechange = function () {
+    xhr.onreadystatechange = function() {
         if (xhr.readyState === 4 && xhr.status === 200) {
-			name = name.replace(/ms:/g, ''); // removes all occurrences of "ms:"
-			name = name.replace(/\./g, '_'); // replaces all "." with "_"
-			name = name.replace(/\-/g, '_'); // replaces all "-" with "_"
-	    data = data.trim(); //remove empty spaces		
+            name = name.replace(/ms:/g, ''); // removes all occurrences of "ms:"
+            name = name.replace(/\./g, '_'); // replaces all "." with "_"
+            name = name.replace(/\-/g, '_'); // replaces all "-" with "_"
+            data = data.trim(); //remove empty spaces		
             var projectXml = xhr.responseText;
             projectXml = projectXml.replace("{{SERVICELINK}}", data);
             projectXml = projectXml.replace("{{NAME}}", name);
-			projectXml = projectXml.replace("{{NAME}}", name);
-			projectXml = projectXml.replace("{{TITLE}}", title);
-            var blob = new Blob([projectXml], {type: "application/xml"});
+            projectXml = projectXml.replace("{{NAME}}", name);
+            projectXml = projectXml.replace("{{TITLE}}", title);
+            var blob = new Blob([projectXml], {
+                type: "application/xml"
+            });
             var url = URL.createObjectURL(blob);
             var a = document.createElement("a");
             a.href = url;
@@ -311,7 +344,7 @@ function copyLink(link, button) {
     document.execCommand("copy");
     document.body.removeChild(tempInput);
     button.innerHTML = "Service und Name kopiert!";
-	    $(button).addClass('btn-danger');
+    $(button).addClass('btn-danger');
     setTimeout(function() {
         $(button).removeClass('btn-danger');
     }, 1000);
@@ -319,174 +352,210 @@ function copyLink(link, button) {
 
 
 
-    </script>
-    <script>
-        var cookies = document.cookie.split('; ');
-        for (var i = 0; i < cookies.length; i++) {
-            var parts = cookies[i].split('=');
-            if (parts[0] === 'PHPSESSID') {
-                var sessionId = parts[1];
-                // Do something with sessionId
-                document.cookie = "PHPSESSID=" + sessionId + "; SameSite=None; Secure";
-                break;
-            }
-        }
-        $(document).ready(function() {
-			// Show loader while data is being loaded
-			$('#loader').removeClass('hide');
-			  // Hide search field initially
-			  $(".search-container").hide();
+</script>
 
-			  // Hide iframes initially
-			  $("iframe").hide();
-            // Load CSV file with PapaParse and DataTables
-            Papa.parse("https://raw.githubusercontent.com/davidoesch/geoservice_harvester_poc/main/data/geoservices_CH.csv", {
-                download: true,
-                header: true,
-                dynamicTyping: true,
-                skipEmptyLines: true,
-                complete: function(results) {
-					 // Hide loader once data is loaded
-					$('#loader').addClass('hide');
-                    var table = $('#table').DataTable({
-                        "data": results.data,
-                        "columns": [{
-                            "data": "OWNER",
-                            "title": "Behörde"
-                        }, {
-                            "data": "TITLE",
-                            "title": "Title"
-                        }, {
-                            "data": "MAPGEO",
-                            "title": "Web",
-                            "render": function(data, type, row) {
-                                if (row.SERVICETYPE === "WFS") {
-                                    return "WFS";
-                                } else if (type === "display") {
-									return "<a href='#' onclick='window.open(\"" + data + "\")'>Karte</a>";
-								}
-                                return data;
-                            }
-                        }, {
-                            "data": "SERVICELINK",
-                            "title": "Desktop",
-							"render": function(data, type, row) {
-									if (row.SERVICETYPE === "WMS") {
-									  return "<div style='text-align:center;'><button onclick='downloadQGISProjectWMS(\"" + data + "\", \"" + row.NAME + "\", \"" + row.OWNER + "\",\"" + row.TITLE + "\", \"" + row.BBOX + "\")'>Open WMS in QGIS</button> &nbsp; <button onclick='downloadARCGISPROProjectWMS(\"" + data + "\", \"" + row.NAME + "\", \"" + row.OWNER + "\",\"" + row.TITLE + "\")'>Open WMS in ArcGISPro&trade;</button> &nbsp; <button onclick='copyLink(\"" + data + "  Layer:  " + row.NAME + "\", this)'>COPY WMS</button></div>";
-									}
+<script >
 
-									if (row.SERVICETYPE === "WMTS") {
-										return "<div style='text-align:center;'><button onclick='downloadQGISProjectWMTS(\"" + data + "\", \"" + row.NAME + "\", \"" + row.OWNER + "\",\"" + row.TITLE + "\", \"" + row.BBOX + "\")'>Open WMTS in QGIS</button>  &nbsp; <button onclick='downloadARCGISPROProjectWMTS(\"" + data + "\", \"" + row.NAME + "\", \"" + row.OWNER + "\",\"" + row.TITLE + "\")'>Open WMTS in ArcGISPro&trade;</button> &nbsp;<button onclick='copyLink(\"" + data + "  Layer:  " + row.NAME + "\", this)'>COPY WMTS</button></div>";
-									}
-									if (row.SERVICETYPE === "WFS") {
-										return "<div style='text-align:center;'><button onclick='downloadQGISProjectWFS(\"" + data + "\", \"" + row.NAME + "\", \"" + row.OWNER + "\",\"" + row.TITLE + "\", \"" + row.BBOX + "\")'>Open WFS in QGIS</button> &nbsp; <button onclick='downloadARCGISPROProjectWFS(\"" + data + "\", \"" + row.NAME + "\", \"" + row.OWNER + "\",\"" + row.TITLE + "\")'>Open WFS in ArcGISPro&trade;</button> &nbsp; <button onclick='copyLink(\"" + data + "  Layer:  " + row.NAME + "\", this)'>COPY WFS</button></div>";
-									}
-							   
-								return data;
-							}
+/**
+ * Updates the PHPSESSID cookie with the SameSite and Secure attributes.
+ * 
+ * This lines retrieves the PHPSESSID cookie from the current document's cookie string, 
+ * sets a new cookie with the SameSite and Secure attributes, and overwrites the original 
+ * PHPSESSID cookie with the new one.
+ * 
+ * 
+ */
+    var cookies = document.cookie.split('; ');
+for (var i = 0; i < cookies.length; i++) {
+    var parts = cookies[i].split('=');
+    if (parts[0] === 'PHPSESSID') {
+        var sessionId = parts[1];
+        // Do something with sessionId
+        document.cookie = "PHPSESSID=" + sessionId + "; SameSite=None; Secure";
+        break;
+    }
+}
+/**
+* This is a JavaScript function that loads a CSV file with PapaParse and DataTables and displays the data in an HTML table with various features such as sorting, *pagination, and search. It also includes some custom rendering for some columns, such as creating links and buttons for certain data.
+*
+* The function first shows a loader while the data is being loaded and hides the search field and iframes initially. Then it uses PapaParse to download and parse the *CSV file with the specified options, and creates a DataTable using the parsed data.
+*
+* The DataTable is initialized with various options, such as the default sort order, number of entries per page, and whether to enable pagination or not. It also *includes custom rendering functions for some columns, such as creating buttons and links with onclick handlers.
+*
+* Finally, the function shows the search field and iframes after the DataTable is fully loaded using the "initComplete" callback function.
+*/
 
-                        },{
-                            "data": "ABSTRACT",
-                            "title": "Beschreibung"
-                        }, {
-                            "data": "KEYWORDS",
-                            "title": "Keywords"
-                        }, {
-                            "data": "CONTACT",
-                            "title": "Kontakt"
-                        }, {
-                            "data": "LEGEND",
-							"title": "Legende",
-							"render": function(data, type, row) {
-								if (type === "display" && data !== null && data !== "") {
-									return "<a href='#' onclick='window.open(\"" + data + "\")'>Legende</a>";
-								}
-								return data;
-							}
+$(document).ready(function() {
+    // Show loader while data is being loaded
+    $('#loader').removeClass('hide');
+    // Hide search field initially
+    $(".search-container").hide();
 
-                        }, {
-                            "data": "METADATA",
-                            "title": "Metadata",
-							"render": function(data, type, row) {
-								if (type === "display" && data !== null && data !== "") {
-									return "<a href='#' onclick='window.open(\"" + data + "\")'>Metadata</a>";
-								}
-								return data;
-							}
-                        }, ],
-						"initComplete": function() {
-						  // Show search field after loading is complete
-						  $(".search-container").show();
+    // Hide iframes initially
+    $("iframe").hide();
+    // Load CSV file with PapaParse and DataTables
+    Papa.parse("https://raw.githubusercontent.com/davidoesch/geoservice_harvester_poc/main/data/geoservices_CH.csv", {
+        download: true,
+        header: true,
+        dynamicTyping: true,
+        skipEmptyLines: true,
+        complete: function(results) {
+            // Hide loader once data is loaded
+            $('#loader').addClass('hide');
+            var table = $('#table').DataTable({
+                "data": results.data,
+                "columns": [{
+                    "data": "OWNER",
+                    "title": "Behörde"
+                }, {
+                    "data": "TITLE",
+                    "title": "Title"
+                }, {
+                    "data": "MAPGEO",
+                    "title": "Web",
+                    "render": function(data, type, row) {
+                        if (row.SERVICETYPE === "WFS") {
+                            return "WFS";
+                        } else if (type === "display") {
+                            return "<a href='#' onclick='window.open(\"" + data + "\")'>Karte</a>";
+                        }
+                        return data;
+                    }
+                }, {
+                    "data": "SERVICELINK",
+                    "title": "Desktop",
+                    "render": function(data, type, row) {
+                        if (row.SERVICETYPE === "WMS") {
+                            return "<div style='text-align:center;'><button onclick='downloadQGISProjectWMS(\"" + data + "\", \"" + row.NAME + "\", \"" + row.OWNER + "\",\"" + row.TITLE + "\", \"" + row.BBOX + "\")'>Open WMS in QGIS</button> &nbsp; <button onclick='downloadARCGISPROProjectWMS(\"" + data + "\", \"" + row.NAME + "\", \"" + row.OWNER + "\",\"" + row.TITLE + "\")'>Open WMS in ArcGISPro&trade;</button> &nbsp; <button onclick='copyLink(\"" + data + "  Layer:  " + row.NAME + "\", this)'>COPY WMS</button></div>";
+                        }
 
-						  // Show iframes after loading is complete
-						  $("iframe").show();
-						},
-                        "order": [[2, "asc"]], // Default sort by 'OWNER' ascending
-						"pageLength": 10, // Set default number of entries to 10
-						"paging": true, // Enable pagination
-						"lengthChange": false, // Remove "Show [x] entries" dropdown
-						"columnDefs": [
-							{"targets": 1, "width": "60%"},
-							{"targets": 3, "width": "40%"},
-							{"targets": [0, 2, 4, 5, 6, 7], "width": "10%"}
-						],
-						"responsive": true, // added option for responsive table,
-						
-						"searching": true, // disable searching
-				        "language": {
-						  "sEmptyTable": "Keine Daten in der Tabelle vorhanden",
-						  "sInfo": "_START_ bis _END_ von _TOTAL_ Einträgen",
-						  "sInfoEmpty": "0 bis 0 von 0 Einträgen",
-						  "sInfoFiltered": "(gefiltert von _MAX_ Einträgen)",
-						  "sInfoPostFix": "",
-						  "sInfoThousands": ".",
-						  "sLengthMenu": "_MENU_ Einträge anzeigen",
-						  "sLoadingRecords": "Wird geladen...",
-						  "sProcessing": "Bitte warten...",
-						  "sSearch": "Suchen",
-						  "sZeroRecords": "Keine Einträge vorhanden.",
-						  "oPaginate": {
-							"sFirst": "Erste",
-							"sPrevious": "Zurück",
-							"sNext": "Nächste",
-							"sLast": "Letzte"
-						  },
-						  "oAria": {
-							"sSortAscending": ": aktivieren, um Spalte aufsteigend zu sortieren",
-							"sSortDescending": ": aktivieren, um Spalte absteigend zu sortieren"
-						  }
-						}
-					  });
+                        if (row.SERVICETYPE === "WMTS") {
+                            return "<div style='text-align:center;'><button onclick='downloadQGISProjectWMTS(\"" + data + "\", \"" + row.NAME + "\", \"" + row.OWNER + "\",\"" + row.TITLE + "\", \"" + row.BBOX + "\")'>Open WMTS in QGIS</button>  &nbsp; <button onclick='downloadARCGISPROProjectWMTS(\"" + data + "\", \"" + row.NAME + "\", \"" + row.OWNER + "\",\"" + row.TITLE + "\")'>Open WMTS in ArcGISPro&trade;</button> &nbsp;<button onclick='copyLink(\"" + data + "  Layer:  " + row.NAME + "\", this)'>COPY WMTS</button></div>";
+                        }
+                        if (row.SERVICETYPE === "WFS") {
+                            return "<div style='text-align:center;'><button onclick='downloadQGISProjectWFS(\"" + data + "\", \"" + row.NAME + "\", \"" + row.OWNER + "\",\"" + row.TITLE + "\", \"" + row.BBOX + "\")'>Open WFS in QGIS</button> &nbsp; <button onclick='downloadARCGISPROProjectWFS(\"" + data + "\", \"" + row.NAME + "\", \"" + row.OWNER + "\",\"" + row.TITLE + "\")'>Open WFS in ArcGISPro&trade;</button> &nbsp; <button onclick='copyLink(\"" + data + "  Layer:  " + row.NAME + "\", this)'>COPY WFS</button></div>";
+                        }
 
-					$('#loading').hide(); // Hide loading wheel
-                    $('#toggle-columns').on('click', function() {
-                        table.columns().visible(!table.column(0).visible());
-                    });
-					$("button").click(function(){
-					  $(this).toggleClass("btn-danger");
-					});
-					$('#table-search').on('keyup', function () {
-					  table.search(this.value).draw();
-   				      var info = table.page.info();
-					  var totalRows = info.recordsTotal;
-					  var filteredRows = info.recordsDisplay;
-					  var text = `${info.start + 1} bis ${info.end} von <strong>${filteredRows}</strong> Datensätzen (gefiltert von ${totalRows} Datensätzen)`;
-					  $('#table-info').html(text);
-					});
-					// Set initial text
-					var info = table.page.info();
-					var totalRows = info.recordsTotal;
-					var filteredRows = info.recordsDisplay;
-					var text = `Suche in <strong>${filteredRows}</strong> Datensätzen`;
-					$('#table-info').html(text);
-					$('#table-search').focus(); // Set the focus to the search field
+                        return data;
+                    }
+
+                }, {
+                    "data": "ABSTRACT",
+                    "title": "Beschreibung"
+                }, {
+                    "data": "KEYWORDS",
+                    "title": "Keywords"
+                }, {
+                    "data": "CONTACT",
+                    "title": "Kontakt"
+                }, {
+                    "data": "LEGEND",
+                    "title": "Legende",
+                    "render": function(data, type, row) {
+                        if (type === "display" && data !== null && data !== "") {
+                            return "<a href='#' onclick='window.open(\"" + data + "\")'>Legende</a>";
+                        }
+                        return data;
+                    }
+
+                }, {
+                    "data": "METADATA",
+                    "title": "Metadata",
+                    "render": function(data, type, row) {
+                        if (type === "display" && data !== null && data !== "") {
+                            return "<a href='#' onclick='window.open(\"" + data + "\")'>Metadata</a>";
+                        }
+                        return data;
+                    }
+                }, ],
+                "initComplete": function() {
+                    // Show search field after loading is complete
+                    $(".search-container").show();
+
+                    // Show iframes after loading is complete
+                    $("iframe").show();
+                },
+                "order": [
+                    [2, "asc"]
+                ], // Default sort by 'OWNER' ascending
+                "pageLength": 10, // Set default number of entries to 10
+                "paging": true, // Enable pagination
+                "lengthChange": false, // Remove "Show [x] entries" dropdown
+                "columnDefs": [{
+                        "targets": 1,
+                        "width": "60%"
+                    },
+                    {
+                        "targets": 3,
+                        "width": "40%"
+                    },
+                    {
+                        "targets": [0, 2, 4, 5, 6, 7],
+                        "width": "10%"
+                    }
+                ],
+                "responsive": true, // added option for responsive table,
+
+                "searching": true, // disable searching
+                "language": {
+                    "sEmptyTable": "Keine Daten in der Tabelle vorhanden",
+                    "sInfo": "_START_ bis _END_ von _TOTAL_ Einträgen",
+                    "sInfoEmpty": "0 bis 0 von 0 Einträgen",
+                    "sInfoFiltered": "(gefiltert von _MAX_ Einträgen)",
+                    "sInfoPostFix": "",
+                    "sInfoThousands": ".",
+                    "sLengthMenu": "_MENU_ Einträge anzeigen",
+                    "sLoadingRecords": "Wird geladen...",
+                    "sProcessing": "Bitte warten...",
+                    "sSearch": "Suchen",
+                    "sZeroRecords": "Keine Einträge vorhanden.",
+                    "oPaginate": {
+                        "sFirst": "Erste",
+                        "sPrevious": "Zurück",
+                        "sNext": "Nächste",
+                        "sLast": "Letzte"
+                    },
+                    "oAria": {
+                        "sSortAscending": ": aktivieren, um Spalte aufsteigend zu sortieren",
+                        "sSortDescending": ": aktivieren, um Spalte absteigend zu sortieren"
+                    }
                 }
             });
-        });
-    </script>
+
+            $('#loading').hide(); // Hide loading wheel
+            $('#toggle-columns').on('click', function() {
+                table.columns().visible(!table.column(0).visible());
+            });
+            $("button").click(function() {
+                $(this).toggleClass("btn-danger");
+            });
+            $('#table-search').on('keyup', function() {
+                table.search(this.value).draw();
+                var info = table.page.info();
+                var totalRows = info.recordsTotal;
+                var filteredRows = info.recordsDisplay;
+                var text = `${info.start + 1} bis ${info.end} von <strong>${filteredRows}</strong> Datensätzen (gefiltert von ${totalRows} Datensätzen)`;
+                $('#table-info').html(text);
+            });
+            // Set initial text
+            var info = table.page.info();
+            var totalRows = info.recordsTotal;
+            var filteredRows = info.recordsDisplay;
+            var text = `Suche in <strong>${filteredRows}</strong> Datensätzen`;
+            $('#table-info').html(text);
+            $('#table-search').focus(); // Set the focus to the search field
+        }
+    });
+});
+</script>
 </head>
 
 <body>
+<!-- 
+This HTML code includes a website page with a header, a navigation button for the "Info" section, a search bar, and a table. The header includes a title and a subtitle, both center-aligned. Below the header, there is a link to a "Qualitätskontrolle" section, a loading spinner, and a table container. The table container includes a search bar and an empty table. There are also two charts embedded in the page.
+
+The "Info" section is collapsed by default and includes a description of the GeoHarvester portal, information on the available data, and links to download the data and source code. The "Qualitätskontrolle" section includes two charts.
+-->
 <div style="text-align: center;">
   	<h1 style="font-family: 'Montserrat', sans-serif; font-size: 48px; font-weight: 700; color: #333;">GeoHarvester</h1>
     <h2 style="font-size: 14px; text-transform: lowercase;">Proof of Concept</h2>
