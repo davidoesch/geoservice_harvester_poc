@@ -122,7 +122,7 @@ table {
 
 <script >
 /**
-* This is a JavaScript code that defines four functions: downloadQGISProjectWMS(), downloadARCGISPROProjectWMS(), downloadQGISProjectWMTS(), and downloadARCGISPROProjectWMTS(). These functions download and generate QGIS and ArcGIS Pro project files for WMS and WMTS services.
+* This is a JavaScript code that defines five  functions: downloadQGISProjectWMS(), downloadARCGISPROProjectWMS(), downloadQGISProjectWMTS(),downloadQGISProjectWFS and downloadARCGISPROProjectWMTS(). These functions download and generate QGIS and ArcGIS Pro project files for WMS and WMTS services.
 * 
 * Each function uses an XMLHttpRequest() to retrieve a template file from a GitHub repository, and then replaces placeholders in the file with parameters provided to the function. The resulting XML file is then downloaded as a Blob using the URL.createObjectURL() and document.createElement() methods. Finally, the temporary a element used for the download is removed from the document using document.body.removeChild(a).
 * 
@@ -305,6 +305,7 @@ function downloadQGISProjectWFS(data, name, owner, title, bbox) {
     xhr.send();
 }
 
+//Currently not used Too many stuff to be defined in the template, e.g. if the geometry is point or line or polygon, then style etc….
 function downloadARCGISPROProjectWFS(data, name, owner, title) {
     var xhr = new XMLHttpRequest();
     xhr.open('GET', "https://raw.githubusercontent.com/davidoesch/geoservice_harvester_poc/main/templates/arcgispro_wfs_template.lyrx");
@@ -433,7 +434,7 @@ $(document).ready(function() {
                             return "<div style='text-align:center;'><button onclick='downloadQGISProjectWMTS(\"" + data + "\", \"" + row.NAME + "\", \"" + row.OWNER + "\",\"" + row.TITLE + "\", \"" + row.BBOX + "\")'>Open WMTS in QGIS</button>  &nbsp; <button onclick='downloadARCGISPROProjectWMTS(\"" + data + "\", \"" + row.NAME + "\", \"" + row.OWNER + "\",\"" + row.TITLE + "\")'>Open WMTS in ArcGISPro&trade;</button> &nbsp;<button onclick='copyLink(\"" + data + "  Layer:  " + row.NAME + "\", this)'>COPY WMTS</button></div>";
                         }
                         if (row.SERVICETYPE === "WFS") {
-                            return "<div style='text-align:center;'><button onclick='downloadQGISProjectWFS(\"" + data + "\", \"" + row.NAME + "\", \"" + row.OWNER + "\",\"" + row.TITLE + "\", \"" + row.BBOX + "\")'>Open WFS in QGIS</button> &nbsp; <button onclick='downloadARCGISPROProjectWFS(\"" + data + "\", \"" + row.NAME + "\", \"" + row.OWNER + "\",\"" + row.TITLE + "\")'>Open WFS in ArcGISPro&trade;</button> &nbsp; <button onclick='copyLink(\"" + data + "  Layer:  " + row.NAME + "\", this)'>COPY WFS</button></div>";
+                            return "<div style='text-align:center;'><button onclick='downloadQGISProjectWFS(\"" + data + "\", \"" + row.NAME + "\", \"" + row.OWNER + "\",\"" + row.TITLE + "\", \"" + row.BBOX + "\")'>Open WFS in QGIS</button> &nbsp; <button onclick='copyLink(\"" + data + "  Layer:  " + row.NAME + "\", this)'>COPY WFS</button></div>";
                         }
 
                         return data;
