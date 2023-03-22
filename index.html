@@ -338,13 +338,16 @@ function downloadARCGISPROProjectWFS(data, name, owner, title) {
 }
 
 function copyLink(link, button) {
-    var tempInput = document.createElement("input");
-    tempInput.value = link;
+    var startIndex = link.indexOf("Layer: "); 
+	var endIndex = link.length;
+	var layer = link.substring(startIndex, endIndex);
+	var tempInput = document.createElement("input");
+	tempInput.value = link;
     document.body.appendChild(tempInput);
     tempInput.select();
     document.execCommand("copy");
     document.body.removeChild(tempInput);
-    button.innerHTML = "Service und Name kopiert!";
+    button.innerHTML = "Service für " + layer + " kopiert!";
     $(button).addClass('btn-danger');
     setTimeout(function() {
         $(button).removeClass('btn-danger');
