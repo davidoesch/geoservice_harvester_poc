@@ -468,7 +468,12 @@ $(document).ready(function() {
                         }
                         return data;
                     }
-                }, ],
+                }, {
+                    "data": "NAME",
+                    "title": "techname",
+                    "searchable": true,
+					"visible": false
+                },],
                 "initComplete": function() {
                     // Show search field after loading is complete
                     $(".search-container").show();
