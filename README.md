@@ -32,23 +32,24 @@ This data is generated and validated weekly using automated procedures. Note tha
 
 | Field Name  | Description                                                                                                      | Format                      | Note                        |
 | ----------- | ---------------------------------------------------------------------------------------------------------------- | --------------------------- | --------------------------- |
-| OWNER       | Both Owner type and Owner Name are reflected,they corespond as well to the corrsponing py file with scraper info | Text <OwnerType\_OwnerName> |                             |
-| TITLE       | Title of the dataset                                                                                             | Text                        |                             |
-| NAME        | Name of the dataset                                                                                              | Text                        |                             |
-| TREE        | Layertree derived from service info                                                                              | Text , tree separator „/“   |                             |
-| GROUP       | Group Name of agreggated datasets                                                                                | Text                        | only applicable for WMS     |
-| ABSTRACT    | Abstract                                                                                                         | Text                        |                             |
-| KEYWORDS    | Keywords                                                                                                         | keywords, commaseparated    |                             |
-| LEGEND      | Legend                                                                                                           | URL to Image                |                             |
-| CONTACT     | Contact info                                                                                                     | Text, email                 |                             |
+| OWNER       | Both Owner type and Owner Name are reflected,they corespond as well to the corrsponing py file with scraper info.The owner of the data, likely an organization or agency that created or manages the data | Text <OwnerType\_OwnerName> |                             |
+| TITLE       | The title of the dataset, which provides a brief description of what the data represents.                                                                                            | Text                        |                             |
+| NAME        | The name or identifier for this particular data layer or feature within the larger dataset                                                                                             | Text                        |                             |
+| TREE        | Layertree derived from service info.A hierarchical category or grouping for this data layer                                                                              | Text , tree separator „/“   |                             |
+| GROUP       | Group Name of agreggated datasets. A grouping or category for this data layer, which may be used for organization or visualization purposes                                                                                | Text                        | only applicable for WMS     |
+| ABSTRACT    | A brief summary or abstract of the data, which may provide additional context or details beyond the title.                                                                                                         | Text                        |                             |
+| KEYWORDS    | A list of relevant keywords or tags associated with this data layer, which can help users discover and filter relevant data.                                                                                                         | keywords, commaseparated    |                             |
+| LEGEND      | Link to legend for the symbols or colors used to represent this data layer, which can aid in interpreting the data.                                                                                                         | URL to Image                |                             |
+| CONTACT     |The contact information for the individual or organization responsible for maintaining or providing access to the da                                                                                                    | Text, email                 |                             |
 | SERVICELINK | Link to Get Capabilities                                                                                         | URL to Image                |                             |
-| METADATA    | Link to Metadata                                                                                                 | URL                         |                             |
+| METADATA    | A link or URL to additional metadata or documentation about the data, such as data dictionaries or technical specifications                                                                                               | URL                         |                             |
 | UPDATE      | Publication Date                                                                                                 | Text                        |                             |
-| SERVICETYPE | OGC Service type                                                                                                 | Text                        | WMTS WMS and STAC           |
-| MAX ZOOM    | Zoom level (mapzoom) on which the data is visible                                                                | Int                         | Currently set to 7 globally |
+| SERVICETYPE | OGC Service type                                                                                                 | Text                        | WMTS WMS and WFS           |
+| MAX ZOOM    | Zoom level (mapzoom) on which the data is visible                                                                | Int                         |  |
 | CENTER\_LAT | Lat center of data WGS84                                                                                         | Float                       |                             |
 | CENTER\_LON | Lon center of data WGS84                                                                                         | Float                       |                             |
 | MAPGEO      | permalink to map.geo.admin.ch                                                                                    | URL                         |                             |
+| BBOX     | The bounding box or extent of this data layer, represented as a list of four coordinates in the order west, south, east, and north.                                                                                   | Textt                         |                             |
 
 ## Unified data : geodata_CH.csv
 
