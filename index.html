@@ -417,6 +417,7 @@ $(document).ready(function() {
                 }, {
                     "data": "MAPGEO",
                     "title": "Web",
+					"searchable": false,
                     "render": function(data, type, row) {
                         if (row.SERVICETYPE === "WFS") {
                             return "WFS";
@@ -455,6 +456,7 @@ $(document).ready(function() {
                 }, {
                     "data": "LEGEND",
                     "title": "Legende",
+					"searchable": false,
                     "render": function(data, type, row) {
                         if (type === "display" && data !== null && data !== "") {
                             return "<a href='#' onclick='window.open(\"" + data + "\")'>Legende</a>";
@@ -465,6 +467,7 @@ $(document).ready(function() {
                 }, {
                     "data": "METADATA",
                     "title": "Metadata",
+					"searchable": false,
                     "render": function(data, type, row) {
                         if (type === "display" && data !== null && data !== "") {
                             return "<a href='#' onclick='window.open(\"" + data + "\")'>Metadata</a>";
@@ -472,6 +475,11 @@ $(document).ready(function() {
                         return data;
                     }
                 }, {
+                    "data": "TREE",
+                    "title": "order",
+                    "searchable": true,
+					"visible": false
+                },{
                     "data": "NAME",
                     "title": "techname",
                     "searchable": true,
