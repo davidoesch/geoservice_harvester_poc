@@ -5,6 +5,7 @@ Author: David Oesch
 Date: 2022-11-05
 Purpose: Retrieve information about a web map service and save it to a file
 Notes: 
+- Uses Python 3.9
 - Uses the OWSLib library to access the geo services
 - Processes the service information to extract the layer names and other details
 - Writes the extracted information to  files for future use
