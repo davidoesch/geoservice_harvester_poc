@@ -4,7 +4,7 @@ Title: Scraper a.k.a Geoharvester
 Author: David Oesch
 Date: 2022-11-05
 Purpose: Retrieve information about a web map service and save it to a file
-Notes: 
+Notes:
 - Uses Python 3.9
 - Uses the OWSLib library to access the geo services
 - Processes the service information to extract the layer names and other details
@@ -41,19 +41,19 @@ service_keys = (("WMSGetCap", "n.a."),
 
 def service_result_empty():
     """
-    This function creates a dictionary object with default values for various 
+    This function creates a dictionary object with default values for various
     service related fields.
 
-    The default values are represented by the string "n.a." and are used as 
+    The default values are represented by the string "n.a." and are used as
     placeholders until actual data is available.
 
     The fields in the dictionary include:
-    OWNER, TITLE, NAME, MAPGEO, TREE, GROUP, ABSTRACT, KEYWORDS, LEGEND, 
-    CONTACT, SERVICELINK, METADATA, UPDATE, LEGEND, SERVICETYPE, MAX_ZOOM, 
+    OWNER, TITLE, NAME, MAPGEO, TREE, GROUP, ABSTRACT, KEYWORDS, LEGEND,
+    CONTACT, SERVICELINK, METADATA, UPDATE, LEGEND, SERVICETYPE, MAX_ZOOM,
     CENTER_LAT, CENTER_LON, MAPGEO, BBOX.
 
     Returns:
-        A dictionary object with default values for various service related 
+        A dictionary object with default values for various service related
         fields.
 
     """
@@ -70,7 +70,7 @@ def service_result_empty():
 
 def get_version(input_url):
     """
-    Retrieve the version attribute from an XML response from a geoservice at 
+    Retrieve the version attribute from an XML response from a geoservice at
     the input URL.
 
     Parameters:
@@ -93,7 +93,7 @@ def get_version(input_url):
 
 def write_file(input_dict, output_file):
     """
-    Write a dictionary to a CSV file. If the file exists, the data is appended 
+    Write a dictionary to a CSV file. If the file exists, the data is appended
     to it. If the file does not exist, a new file is created with a header.
 
     Parameters:
@@ -140,35 +140,40 @@ def test_server(source):
     Test if a server is online and reachable.
 
     Parameters:
-    source (dict): A dictionary with GetCapabilities source parameters, 
-    including 'URL'.
+    source (dict): A dictionary with GetCapabilities source parameters,
+        including 'URL'.
 
     Returns:
     bool: True if the server is online, False otherwise.
     """
+    server_operator = source['Description']
+    server_url = source['URL']
     try:
-        request = requests.get(source['URL'])
+        request = requests.get(server_url)
         if request.status_code == 200:
-            return True
+            success = True
         else:
-
-            log_file = open(os.path.join(config.DEAD_SERVICES_PATH,
-                            source['Description']+"_error.txt"), 'a+')
-            log_file.write(source['Description']+" " +
-                           source['URL']+": "+str(request.status_code))
-            log_file.close()
-            print(source['Description']+": "+str(request.status_code))
-            return False
+            success = False
+            error_details = "%s %s: %s" % (server_operator, server_url,
+                                           request.status_code)
     except Exception as e_request:
-        log_file = open(os.path.join(config.DEAD_SERVICES_PATH,
-                        source['Description']+"_error.txt"),  'a+')
-        log_file.write(source['Description']+" " +
-                       source['URL']+": "+str(e_request)+"\n")
-        log_file.close()
-        logger.info(source['Description']+source['URL']+": "+str(e_request))
-        print(e_request)
+        success = False
+        error_details = "%s %s: %s" % (server_operator, server_url,
+                                       e_request)
+        logger.info(error_details)
 
-        return False
+    # If there has been a problem, add the details to the operator's error
+    # log file
+    if not success:
+        log_file_name = "%s_error.txt" % server_operator
+        log_file_path = os.path.join(config.DEAD_SERVICES_PATH, log_file_name)
+
+        with open(log_file_path, "a+") as f:
+            f.write(error_details + "\n")
+
+        print(error_details)
+
+    return success
 
 
 def get_service_info(source):
