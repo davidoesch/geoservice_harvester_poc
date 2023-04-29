@@ -151,7 +151,8 @@ def test_server(source):
             success = True
         else:
             success = False
-            error_details = request.status_code
+            error_details = ("GET requested yielded HTTP response status "
+                             "code %s" % request.status_code)
     except Exception as e_request:
         success = False
         error_details = e_request
