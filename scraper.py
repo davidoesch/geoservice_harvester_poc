@@ -161,13 +161,13 @@ def test_server(source):
     # If there has been a problem, add the details to the operator's error
     # log file
     if not success:
-        print(error_log)
-
         log_file_name = "%s_error.txt" % server_operator
         log_file_path = os.path.join(config.DEAD_SERVICES_PATH, log_file_name)
         error_log = "%s %s: %s" % (server_operator, server_url, error_details)
         with open(log_file_path, "a+") as f:
             f.write(error_log + "\n")
+
+        print(error_log)
     return success
 
 
