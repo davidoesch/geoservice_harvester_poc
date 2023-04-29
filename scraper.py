@@ -185,7 +185,7 @@ def get_service_info(source):
             log_file.write(source['Description']+": "+"invalid service version number, trying default"+"\n")
             log_file.close()
             logger.info(source['Description']+": "+"invalid service version number, trying default")
-            source_version == None
+            source_version = None
         #if source['Description'] in config.SOURCE_COLLECTION_VERSION:
         #   source_version=config.SOURCE_COLLECTION_VERSION[source['Description']]
         #else:
