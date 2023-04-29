@@ -103,20 +103,17 @@ def write_file(input_dict, output_file):
     Returns:
     None
     """
-    if os.path.isfile(output_file):
-        with open(output_file, "a", encoding="utf-8") as f:
-            dict_writer = csv.DictWriter(f, fieldnames=list(input_dict.keys()),
-                                         delimiter=",", quotechar='"',
-                                         lineterminator="\n")
-            dict_writer.writerow(input_dict)
+    append_or_write = "a" if os.path.isfile(output_file) else "w"
 
-    else:
-        with open(output_file, "w", encoding="utf-8") as f:
-            dict_writer = csv.DictWriter(f, fieldnames=list(input_dict.keys()),
-                                         delimiter=",", quotechar='"',
-                                         lineterminator="\n")
+    with open(output_file, append_or_write, encoding="utf-8") as f:
+        dict_writer = csv.DictWriter(f, fieldnames=list(input_dict.keys()),
+                                     delimiter=",", quotechar='"',
+                                     lineterminator="\n")
+        if append_or_write == "w":
             dict_writer.writeheader()
-            dict_writer.writerow(input_dict)
+
+        dict_writer.writerow(input_dict)
+
     return
 
 
