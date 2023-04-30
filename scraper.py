@@ -31,6 +31,8 @@ from googleapiclient.discovery import build
 from googleapiclient.http import BatchHttpRequest
 import httplib2
 import json
+import pytz
+from datetime import datetime, timezone
 
 # globals
 sys.path.insert(0, config.SOURCE_SCRAPER_DIR)
@@ -161,12 +163,18 @@ def test_server(source):
     # If there has been a problem, add the details to the operator's error
     # log file
     if not success:
-        log_file_name = "%s_error.txt" % server_operator
-        log_file_path = os.path.join(config.DEAD_SERVICES_PATH, log_file_name)
-        error_log = "%s %s: %s" % (server_operator, server_url, error_details)
-        with open(log_file_path, "a+") as f:
-            f.write(error_log + "\n")
+        CET = pytz.timezone('Europe/Zurich')
+        timestamp = datetime.now(timezone.utc).astimezone(CET).isoformat()
 
+        log_file_name = "%s_errors.csv" % server_operator
+        log_file_path = os.path.join(config.DEAD_SERVICES_PATH, log_file_name)
+        error_log = '%s,%s,%s,"%s"' % (timestamp, server_operator, server_url,
+                                       error_details)
+        append_or_write = "a" if os.path.isfile(log_file_path) else "w"
+        with open(log_file_path, append_or_write, encoding="utf-8") as f:
+            if append_or_write == "w":
+                f.write("Timestamp,Operator,URL,Issue\n")
+            f.write(error_log + "\n")
         print(error_log)
     return success
 
