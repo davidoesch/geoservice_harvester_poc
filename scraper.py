@@ -727,7 +727,7 @@ if __name__ == "__main__":
     try:
         os.remove(config.GEOSERVICES_CH_CSV)
         fileList = glob.glob(os.path.join(
-            config.DEAD_SERVICES_PATH, "*_error.txt"))
+            config.DEAD_SERVICES_PATH, "*_error.csv"))
         for filePath in fileList:
             os.remove(filePath)
     except OSError:
