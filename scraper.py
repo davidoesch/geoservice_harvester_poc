@@ -326,8 +326,15 @@ def get_service_info(source):
                         for j in range(number_children):
                             this_layer = service.contents[i]._children[j].id
                             if this_layer not in layers_done:
-                                layertree = server_operator+"/"+service.identification.title+"/"+i.replace(
-                                    '"', '') if service.identification.title is not None else server_operator+"/"+i.replace('"', '')
+                                service_title = service.identification.title
+                                if service_title is not None:
+                                    layertree = "%s/%s/%s" % (server_operator,
+                                                              service_title,
+                                                              i.replace('"', ''))
+                                else:
+                                    layertree = "%s/%s" % (server_operator,
+                                                           i.replace('"', ''))
+
                                 write_service_info(source, service, this_layer,
                                                    layertree, group=i)
                                 layers_done.append(this_layer)
