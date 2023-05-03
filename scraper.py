@@ -209,7 +209,6 @@ def get_service_info(source):
     server_url = source['URL']
     log_file_name = "%s_errors.csv" % server_operator
     log_file_path = os.path.join(config.DEAD_SERVICES_PATH, log_file_name)
-    append_or_write = "a" if os.path.isfile(log_file_path) else "w"
     CET = pytz.timezone('Europe/Zurich')
     timestamp = datetime.now(timezone.utc).astimezone(CET).isoformat()
 
@@ -222,6 +221,7 @@ def get_service_info(source):
             error_details = "Invalid service version number. Scraper will try the default."
             error_log = '%s,%s,%s,"%s"' % (timestamp, server_operator,
                                            server_url, error_details)
+            append_or_write = "a" if os.path.isfile(log_file_path) else "w"
             with open(log_file_path, append_or_write, encoding="utf-8") as f:
                 if append_or_write == "w":
                     f.write("Timestamp,Operator,URL,Issue\n")
@@ -348,13 +348,16 @@ def get_service_info(source):
             pass
 
     except Exception as e_request:
-        log_file = open(os.path.join(config.DEAD_SERVICES_PATH,
-                        server_operator+"_error.txt"),  'a+')
-        log_file.write(server_operator+": "+str(e_request)+"\n")
-        log_file.close()
-        logger.info(server_operator+": "+str(e_request))
-        print(e_request)
-
+        error_details = str(e_request)
+        error_log = '%s,%s,%s,"%s"' % (timestamp, server_operator,
+                                       server_url, error_details)
+        append_or_write = "a" if os.path.isfile(log_file_path) else "w"
+        with open(log_file_path, append_or_write, encoding="utf-8") as f:
+            if append_or_write == "w":
+                f.write("Timestamp,Operator,URL,Issue\n")
+            f.write(error_log + "\n")
+        logger.info("%s, %s: %s" %
+                    (server_operator, server_url, error_details))
         return False
 
 
