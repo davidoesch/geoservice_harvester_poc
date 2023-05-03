@@ -205,29 +205,34 @@ def get_service_info(source):
     Returns:
         None
     """
+    server_operator = source['Description']
+    server_url = source['URL']
+    log_file_name = "%s_errors.csv" % server_operator
+    log_file_path = os.path.join(config.DEAD_SERVICES_PATH, log_file_name)
+    append_or_write = "a" if os.path.isfile(log_file_path) else "w"
+    CET = pytz.timezone('Europe/Zurich')
+    timestamp = datetime.now(timezone.utc).astimezone(CET).isoformat()
 
     try:
-        # Testing if WMS or WMTS/WFS
-        # test for specific Version for service whcih needs to be passed to
-        # OWSLIB
+        # Check if this service has a valid service version number. If not,
+        # set version to None (i.e., use default)
         source_version = get_version(source['URL'])
         match = re.match(r"^\d+\.\d+\.\d+$", source_version)
-        if match:
-            source_version == source_version
-        else:
-            log_file = open(os.path.join(config.DEAD_SERVICES_PATH,
-                            source['Description']+"_error.txt"),  'a+')
-            log_file.write(
-                source['Description']+": "+"invalid service version number, trying default"+"\n")
-            log_file.close()
-            logger.info(source['Description']+": "+"invalid service version number, trying default")
+        if not match:
+            error_details = "Invalid service version number. Scraper will try the default."
+            error_log = '%s,%s,%s,"%s"' % (timestamp, server_operator,
+                                           server_url, error_details)
+            with open(log_file_path, append_or_write, encoding="utf-8") as f:
+                if append_or_write == "w":
+                    f.write("Timestamp,Operator,URL,Issue\n")
+                f.write(error_log + "\n")
+
+            logger.info("%s, %s: %s" % (server_operator, server_url,
+                                        error_details))
             source_version = None
-        #if source['Description'] in config.SOURCE_COLLECTION_VERSION:
-        #   source_version=config.SOURCE_COLLECTION_VERSION[source['Description']]
-        # else:
-        #   source_version=None
 
         # breakpoint()
+        # Testing if WMS or WMTS/WFS
         try:
             service = WebMapService(source['URL']) if source_version == None else WebMapService(
                 source['URL'], version=source_version)
