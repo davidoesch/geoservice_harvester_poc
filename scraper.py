@@ -83,7 +83,6 @@ def get_version(input_url):
     """
     response = requests.get(input_url)
     xml_data = response.content
-
     root = ET.fromstring(xml_data)
     try:
         version = root.attrib["version"]
@@ -106,16 +105,13 @@ def write_file(input_dict, output_file):
     None
     """
     append_or_write = "a" if os.path.isfile(output_file) else "w"
-
     with open(output_file, append_or_write, encoding="utf-8") as f:
         dict_writer = csv.DictWriter(f, fieldnames=list(input_dict.keys()),
                                      delimiter=",", quotechar='"',
                                      lineterminator="\n")
         if append_or_write == "w":
             dict_writer.writeheader()
-
         dict_writer.writerow(input_dict)
-
     return
 
 
@@ -129,8 +125,9 @@ def load_source_collection():
     list: A list of dictionaries, where each dictionary represents a source.
     """
     with open(config.SOURCE_COLLECTION_CSV, mode="r", encoding="utf8") as f:
-        sources = list(csv.DictReader(f, delimiter=",",
-                                      quotechar='"', lineterminator="\n"))
+        sources = csv.DictReader(f, delimiter=",", quotechar='"',
+                                 lineterminator="\n")
+        sources = list(sources)
     return sources
 
 
@@ -196,8 +193,6 @@ def get_service_info(source):
     """
     server_operator = source['Description']
     server_url = source['URL']
-    CET = pytz.timezone('Europe/Zurich')
-    timestamp = datetime.now(timezone.utc).astimezone(CET).isoformat()
 
     try:
         # Check if this service has a valid service version number. If not,
@@ -776,11 +771,11 @@ if __name__ == "__main__":
     write_dataset_stats(config.GEOSERVICES_CH_CSV,
                         config.GEOSERVICES_STATS_CH_CSV)
 
-    # Bublish to Google  Index API
+    # Publish to Google Index API
     if credentials_valid:
         publish_urls(credentials)
     else:
-        logger.info(" Google Indexing API not updated, non valid json (0KB)")
+        logger.info("Google Index API not updated due to non valid credentials")
 
-    print("scraper completed")
-    logger.info("scraper completed")
+    print("Scraper run completed")
+    logger.info("Scraper run completed")
