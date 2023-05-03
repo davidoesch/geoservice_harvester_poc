@@ -9,7 +9,7 @@ GEOSERVICES_STATS_CH_CSV = os.path.join("data", "geoservices_stats_CH.csv")
 GEODATA_CH_CSV = os.path.join("data", "geodata_CH.csv")
 GEODATA_SIMPLE_CH_CSV = os.path.join("data", "geodata_simple_CH.csv")
 LOG_FILE = os.path.join("tools", "debug.log")
-DEAD_SERVICES_PATH = os.path.join("tools")
+DEAD_SERVICES_PATH = "tools"
 # MAPGEO_PREFIX = "https://test.map.geo.admin.ch/?bgLayer=ch.swisstopo.leichte-basiskarte_world.vt&"
 MAPGEO_PREFIX = "https://map.geo.admin.ch/?bgLayer=ch.swisstopo.pixelkarte-grau&"
 
