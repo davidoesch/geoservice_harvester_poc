@@ -343,8 +343,10 @@ def get_service_info(source):
                     # This layer has already been processed
                     pass
         else:
-            # Service does not seem to be a valid WMS, WMTS or WFS...
-            error_details = "Service does not seem to be a valid WMS, WMTS or WFS"
+            # Service could not be identified as valid WMS, WMTS or WFS by
+            # OWSLib
+            error_details = ("Service does not seem to be a valid WMS, ")(
+                "WMTS or WFS")
             error_log = '%s,%s,%s,"%s"' % (timestamp, server_operator,
                                            server_url, error_details)
             append_or_write = "a" if os.path.isfile(log_file_path) else "w"
