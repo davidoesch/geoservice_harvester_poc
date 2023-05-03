@@ -165,17 +165,9 @@ def test_server(source):
     if not success:
         CET = pytz.timezone('Europe/Zurich')
         timestamp = datetime.now(timezone.utc).astimezone(CET).isoformat()
-
-        log_file_name = "%s_errors.csv" % server_operator
-        log_file_path = os.path.join(config.DEAD_SERVICES_PATH, log_file_name)
-        error_log = '%s,%s,%s,"%s"' % (timestamp, server_operator, server_url,
-                                       error_details)
-        append_or_write = "a" if os.path.isfile(log_file_path) else "w"
-        with open(log_file_path, append_or_write, encoding="utf-8") as f:
-            if append_or_write == "w":
-                f.write("Timestamp,Operator,URL,Issue\n")
-            f.write(error_log + "\n")
-        print(error_log)
+        log_to_operator_csv(timestamp, server_operator,
+                            server_url, error_details)
+        print("%s %s: %s" % (server_operator, server_url, error_details))
     return success
 
 
@@ -207,8 +199,6 @@ def get_service_info(source):
     """
     server_operator = source['Description']
     server_url = source['URL']
-    log_file_name = "%s_errors.csv" % server_operator
-    log_file_path = os.path.join(config.DEAD_SERVICES_PATH, log_file_name)
     CET = pytz.timezone('Europe/Zurich')
     timestamp = datetime.now(timezone.utc).astimezone(CET).isoformat()
 
@@ -219,14 +209,8 @@ def get_service_info(source):
         match = re.match(r"^\d+\.\d+\.\d+$", source_version)
         if not match:
             error_details = "Invalid service version number. Scraper will try the default."
-            error_log = '%s,%s,%s,"%s"' % (timestamp, server_operator,
-                                           server_url, error_details)
-            append_or_write = "a" if os.path.isfile(log_file_path) else "w"
-            with open(log_file_path, append_or_write, encoding="utf-8") as f:
-                if append_or_write == "w":
-                    f.write("Timestamp,Operator,URL,Issue\n")
-                f.write(error_log + "\n")
-
+            log_to_operator_csv(timestamp, server_operator, server_url,
+                                error_details)
             logger.info("%s, %s: %s" % (server_operator, server_url,
                                         error_details))
             source_version = None
@@ -364,30 +348,33 @@ def get_service_info(source):
         else:
             # Service could not be identified as valid WMS, WMTS or WFS by
             # OWSLib
-            error_details = ("Service does not seem to be a valid WMS, "
-                             "WMTS or WFS")
-            error_log = '%s,%s,%s,"%s"' % (timestamp, server_operator,
-                                           server_url, error_details)
-            append_or_write = "a" if os.path.isfile(log_file_path) else "w"
-            with open(log_file_path, append_or_write, encoding="utf-8") as f:
-                if append_or_write == "w":
-                    f.write("Timestamp,Operator,URL,Issue\n")
-                f.write(error_log + "\n")
+            error_details = "Service does not seem to be a valid WMS, WMTS or WFS"
+            log_to_operator_csv(timestamp, server_operator, server_url,
+                                error_details)
             logger.info("%s, %s: %s" %
                         (server_operator, server_url, error_details))
 
     except Exception as e_request:
         error_details = str(e_request)
-        error_log = '%s,%s,%s,"%s"' % (timestamp, server_operator,
-                                       server_url, error_details)
-        append_or_write = "a" if os.path.isfile(log_file_path) else "w"
-        with open(log_file_path, append_or_write, encoding="utf-8") as f:
-            if append_or_write == "w":
-                f.write("Timestamp,Operator,URL,Issue\n")
-            f.write(error_log + "\n")
+        log_to_operator_csv(timestamp, server_operator,
+                            server_url, error_details)
         logger.info("%s, %s: %s" %
                     (server_operator, server_url, error_details))
         return False
+
+
+def log_to_operator_csv(timestamp, server_operator, server_url, error_details):
+    log_file_name = "%s_errors.csv" % server_operator
+    log_file_path = os.path.join(config.DEAD_SERVICES_PATH, log_file_name)
+
+    error_log = '%s,%s,%s,"%s"' % (timestamp, server_operator, server_url,
+                                   error_details)
+    append_or_write = "a" if os.path.isfile(log_file_path) else "w"
+    with open(log_file_path, append_or_write, encoding="utf-8") as f:
+        if append_or_write == "w":
+            f.write("Timestamp,Operator,URL,Issue\n")
+        f.write(error_log + "\n")
+    return
 
 
 def write_service_info(source, service, i, layertree, group):
