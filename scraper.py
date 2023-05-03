@@ -231,89 +231,114 @@ def get_service_info(source):
                                         error_details))
             source_version = None
 
-        # breakpoint()
-        # Testing if WMS or WMTS/WFS
+        # Check if this service is a WMS, a WMTS or a WFS
+        service_type = None
         try:
-            service = WebMapService(source['URL']) if source_version == None else WebMapService(
-                source['URL'], version=source_version)
-            child = True  # assuming that wms can child/parent relation
+            if source_version is not None:
+                service = WebMapService(server_url, version=source_version)
+            else:
+                service = WebMapService(server_url)
+            service_type = "WMS"
+            # We assume WMSs can have child/parent relations
+            children_possible = True
         except:
-            child = False  # assuming that wmts can't have child/parent relation
+            pass
+
+        if service_type is None:
             try:
-                service = WebMapTileService(source['URL'])
+                service = WebMapTileService(server_url)
+                service_type = "WMTS"
+                # We assume WMTSs can't have child/parent relations
+                children_possible = False  
             except:
-                service = WebFeatureService(source['URL'], version='2.0.0') if source_version == None else WebFeatureService(
-                    source['URL'], version=source_version)
-            child = False  # assuming that wmts can't have child/parent relation
+                pass
 
-        # extract all layer names
-        layers = list(service.contents)
-        layers_done = []
-        for i in layers:
-            # check if we did not yet have processed that layer as child before
-            # breakpoint()
-            if i not in layers_done:
-                # print(i+" processing...")
+        if service_type is None:
+            try:
+                if source_version is None:
+                    service = WebFeatureService(server_url, version='2.0.0')
+                else: 
+                    service = WebFeatureService(server_url, 
+                                                version=source_version)
+                service_type = "WFS"
+                # We assume WFSs can't have child/parent relations
+                children_possible = False
+            except:
+                pass
 
-                if child == True:
-                    children = len(service.contents[i].children)
-                else:
-                    children = 0
-                # breakpoint()
+        if service_type is not None:
+            # I.e., we have found a valid service endpoint of type WMS, WTMS or 
+            # WFS
 
-                # get root layer / extracting the description for simple layer
-                if service.contents[i].id not in layers_done:
-                    # Some root WMS layers are blocked so no get map is
-                    # possible, so we check if we can load them as TOPIC
-                    # (aka al children layer active)
-                    if "WMS" in source['URL'] or "wms" in source['URL']:
-                        # Even some Root layers do not have titles therfore
-                        # skipping as well
-                        if service.contents[i].title == None:
-                            print(i+"Title is empty, skipping")
+            # Extract all layer names
+            layers = list(service.contents)
+            layers_done = []
+            for i in layers:
+                # Check that we have not yet processed this layer as a child of 
+                # another layer before
+                if i not in layers_done:
+                    # get root layer / extracting the description for simple layer
+                    if service.contents[i].id not in layers_done:
+                        # Some root WMS layers are blocked so no get map is
+                        # possible, so we check if we can load them as TOPIC
+                        # (aka al children layer active)
+                        if "WMS" in source['URL'] or "wms" in source['URL']:
+                            # Even some Root layers do not have titles therfore
+                            # skipping as well
+                            if service.contents[i].title == None:
+                                print(i+"Title is empty, skipping")
+                            else:
+                                try:
+                                    # check if root layer is loadable, by trying to
+                                    # call a Get Map, if it is blocked it will
+                                    # raise an error
+                                    service.getmap(layers=[i], srs='EPSG:4326', bbox=(service.contents[i].boundingBoxWGS84[0], service.contents[i].boundingBoxWGS84[1],
+                                                service.contents[i].boundingBoxWGS84[2], service.contents[i].boundingBoxWGS84[3]), size=(256, 256), format='image/png', transparent=True, timeout=10)
+                                    # then extract abstract etc
+                                    layertree = source['Description']+"/"+service.identification.title+"/"+i.replace(
+                                        '"', '') if service.identification.title is not None else source['Description']+"/"+i.replace('"', '')
+                                    write_service_info(
+                                        source, service, (service.contents[i].id), layertree, group=i)
+                                    layers_done.append(service.contents[i].id)
+                                except Exception as e:
+                                    # Check if the exception indicates that the request was not allowed or forbidden
+                                    if any([msg in str(e) for msg in service.exceptions]):
+                                        print(
+                                            i+' GetMap request is blocked for this layer')
+                                    else:
+                                        print(i+' Unknown error:', e)
                         else:
-                            try:
-                                # check if root layer is loadable, by trying to
-                                # call a Get Map, if it is blocked it will
-                                # raise an error
-                                service.getmap(layers=[i], srs='EPSG:4326', bbox=(service.contents[i].boundingBoxWGS84[0], service.contents[i].boundingBoxWGS84[1],
-                                               service.contents[i].boundingBoxWGS84[2], service.contents[i].boundingBoxWGS84[3]), size=(256, 256), format='image/png', transparent=True, timeout=10)
-                                # then extract abstract etc
-                                layertree = source['Description']+"/"+service.identification.title+"/"+i.replace(
-                                    '"', '') if service.identification.title is not None else source['Description']+"/"+i.replace('"', '')
-                                write_service_info(
-                                    source, service, (service.contents[i].id), layertree, group=i)
-                                layers_done.append(service.contents[i].id)
-                            except Exception as e:
-                                # Check if the exception indicates that the request was not allowed or forbidden
-                                if any([msg in str(e) for msg in service.exceptions]):
-                                    print(
-                                        i+' GetMap request is blocked for this layer')
-                                else:
-                                    print(i+' Unknown error:', e)
-                    else:
-                        layertree = source['Description']+"/"+service.identification.title+"/"+i.replace(
-                            '"', '') if service.identification.title is not None else source['Description']+"/"+i.replace('"', '')
-                        write_service_info(
-                            source, service, (service.contents[i].id), layertree, group=i)
-                        layers_done.append(service.contents[i].id)
-
-                # check for parent layer, when yes use  it for tree
-                if children > 0:
-                    # print(i+" processing parent layer")
-                    for j in range(len(service.contents[i].children)):
-                        if service.contents[i]._children[j].id not in layers_done:
                             layertree = source['Description']+"/"+service.identification.title+"/"+i.replace(
                                 '"', '') if service.identification.title is not None else source['Description']+"/"+i.replace('"', '')
-                            # print(str(j)+" "+i+""+service.contents[i]._children[j].id)
-                            # breakpoint()
                             write_service_info(
-                                source, service, (service.contents[i]._children[j].id), layertree, group=i)
-                            layers_done.append(
-                                service.contents[i]._children[j].id)
+                                source, service, (service.contents[i].id), layertree, group=i)
+                            layers_done.append(service.contents[i].id)
 
-            else:
-                print(i+" already processed")
+                    # Check if this layer is parent to child layers. If it is,
+                    # check the child layers
+                    if children_possible:
+                        children = len(service.contents[i].children)
+                    else:
+                        children = 0
+
+                    if children > 0:
+                        # print(i+" processing parent layer")
+                        for j in range(len(service.contents[i].children)):
+                            if service.contents[i]._children[j].id not in layers_done:
+                                layertree = source['Description']+"/"+service.identification.title+"/"+i.replace(
+                                    '"', '') if service.identification.title is not None else source['Description']+"/"+i.replace('"', '')
+                                # print(str(j)+" "+i+""+service.contents[i]._children[j].id)
+                                # breakpoint()
+                                write_service_info(
+                                    source, service, (service.contents[i]._children[j].id), layertree, group=i)
+                                layers_done.append(
+                                    service.contents[i]._children[j].id)
+
+                else:
+                    # This layer has already been processed
+        else:
+            # Service does not seem to be a valid WMS, WMTS or WFS...
+            # ...
 
     except Exception as e_request:
         log_file = open(os.path.join(config.DEAD_SERVICES_PATH,
