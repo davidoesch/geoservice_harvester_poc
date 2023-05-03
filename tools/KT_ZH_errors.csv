@@ -1,0 +1,4 @@
+Timestamp,Operator,URL,Issue
+2023-05-03T20:38:48.946529+02:00,KT_ZH,DPRSF,"can only concatenate str (not "NoneType") to str"
+2023-05-03T20:39:16.164651+02:00,KT_ZH,https://wms.zh.ch/AwelWindpotenzialZHWMS?service=WMS&request=GetCapabilities,"expected string or bytes-like object"
+2023-05-03T20:40:45.439433+02:00,KT_ZH,https://maps.zh.ch/wfs/AwelWbAbflussZHWFS?service=WFS&request=GetCapabilities,"expected string or bytes-like object"
