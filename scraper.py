@@ -318,22 +318,19 @@ def get_service_info(source):
                     # check the child layers
                     if children_possible:
                         try:
-                            children = len(service.contents[i].children)
+                            number_children = len(service.contents[i].children)
                         except AttributeError:
-                            children = 0
+                            number_children = 0
 
-                    if children_possible and children > 0:
-                        # print(i+" processing parent layer")
-                        for j in range(len(service.contents[i].children)):
-                            if service.contents[i]._children[j].id not in layers_done:
+                    if children_possible and number_children > 0:
+                        for j in range(number_children):
+                            this_layer = service.contents[i]._children[j].id
+                            if this_layer not in layers_done:
                                 layertree = source['Description']+"/"+service.identification.title+"/"+i.replace(
                                     '"', '') if service.identification.title is not None else source['Description']+"/"+i.replace('"', '')
-                                # print(str(j)+" "+i+""+service.contents[i]._children[j].id)
-                                # breakpoint()
-                                write_service_info(
-                                    source, service, (service.contents[i]._children[j].id), layertree, group=i)
-                                layers_done.append(
-                                    service.contents[i]._children[j].id)
+                                write_service_info(source, service, this_layer,
+                                                   layertree, group=i)
+                                layers_done.append(this_layer)
 
                 else:
                     # This layer has already been processed
