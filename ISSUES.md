@@ -1,7 +1,7 @@
 # Issues found during the last run
 
-- tools/KT_BE_errors.csv: [14 issue(s)](tools/KT_BE_errors.csv)
-- tools/KT_FR_errors.csv: [7 issue(s)](tools/KT_FR_errors.csv)
-- tools/KT_GE_errors.csv: [2 issue(s)](tools/KT_GE_errors.csv)
-- tools/KT_TG_errors.csv: [2 issue(s)](tools/KT_TG_errors.csv)
-- tools/KT_ZH_errors.csv: [3 issue(s)](tools/KT_ZH_errors.csv)
+- KT_BE: [14 issue(s)](tools/KT_BE_errors.csv)
+- KT_FR: [7 issue(s)](tools/KT_FR_errors.csv)
+- KT_GE: [2 issue(s)](tools/KT_GE_errors.csv)
+- KT_TG: [2 issue(s)](tools/KT_TG_errors.csv)
+- KT_ZH: [3 issue(s)](tools/KT_ZH_errors.csv)
