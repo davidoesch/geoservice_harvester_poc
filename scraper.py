@@ -88,9 +88,9 @@ def get_version(input_url):
     try:
         version = root.attrib["version"]
     except KeyError:
-        print("version attribute not found.")
-        version == None
-    return (version)
+        logger.warn("%s: Version attribute not found" % (input_url))
+        version = None
+    return version
 
 
 def write_file(input_dict, output_file):
