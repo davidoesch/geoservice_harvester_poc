@@ -249,7 +249,7 @@ def get_service_info(source):
                 service = WebMapTileService(server_url)
                 service_type = "WMTS"
                 # We assume WMTSs can't have child/parent relations
-                children_possible = False  
+                children_possible = False
             except:
                 pass
 
@@ -257,8 +257,8 @@ def get_service_info(source):
             try:
                 if source_version is None:
                     service = WebFeatureService(server_url, version='2.0.0')
-                else: 
-                    service = WebFeatureService(server_url, 
+                else:
+                    service = WebFeatureService(server_url,
                                                 version=source_version)
                 service_type = "WFS"
                 # We assume WFSs can't have child/parent relations
@@ -267,14 +267,14 @@ def get_service_info(source):
                 pass
 
         if service_type is not None:
-            # I.e., we have found a valid service endpoint of type WMS, WTMS or 
+            # I.e., we have found a valid service endpoint of type WMS, WTMS or
             # WFS
 
             # Extract all layer names
             layers = list(service.contents)
             layers_done = []
             for i in layers:
-                # Check that we have not yet processed this layer as a child of 
+                # Check that we have not yet processed this layer as a child of
                 # another layer before
                 if i not in layers_done:
                     # get root layer / extracting the description for simple layer
@@ -293,7 +293,7 @@ def get_service_info(source):
                                     # call a Get Map, if it is blocked it will
                                     # raise an error
                                     service.getmap(layers=[i], srs='EPSG:4326', bbox=(service.contents[i].boundingBoxWGS84[0], service.contents[i].boundingBoxWGS84[1],
-                                                service.contents[i].boundingBoxWGS84[2], service.contents[i].boundingBoxWGS84[3]), size=(256, 256), format='image/png', transparent=True, timeout=10)
+                                                                                      service.contents[i].boundingBoxWGS84[2], service.contents[i].boundingBoxWGS84[3]), size=(256, 256), format='image/png', transparent=True, timeout=10)
                                     # then extract abstract etc
                                     layertree = source['Description']+"/"+service.identification.title+"/"+i.replace(
                                         '"', '') if service.identification.title is not None else source['Description']+"/"+i.replace('"', '')
@@ -317,11 +317,12 @@ def get_service_info(source):
                     # Check if this layer is parent to child layers. If it is,
                     # check the child layers
                     if children_possible:
-                        children = len(service.contents[i].children)
-                    else:
-                        children = 0
+                        try:
+                            children = len(service.contents[i].children)
+                        except AttributeError:
+                            children = 0
 
-                    if children > 0:
+                    if children_possible and children > 0:
                         # print(i+" processing parent layer")
                         for j in range(len(service.contents[i].children)):
                             if service.contents[i]._children[j].id not in layers_done:
@@ -336,9 +337,11 @@ def get_service_info(source):
 
                 else:
                     # This layer has already been processed
+                    pass
         else:
             # Service does not seem to be a valid WMS, WMTS or WFS...
             # ...
+            pass
 
     except Exception as e_request:
         log_file = open(os.path.join(config.DEAD_SERVICES_PATH,
