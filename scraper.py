@@ -771,6 +771,19 @@ if __name__ == "__main__":
     write_dataset_stats(config.GEOSERVICES_CH_CSV,
                         config.GEOSERVICES_STATS_CH_CSV)
 
+    # Collate operator-specific statistics
+    error_files = glob.glob(os.path.join(
+        config.DEAD_SERVICES_PATH, "*_errors.csv"))
+    with open("ISSUES.md", "w", encoding="utf-8") as f:
+        f.write("# Issues found during the last run\n\n")
+        for error_file in error_files:
+            server_operator = error_file.replace(
+                "_errors.csv", "").replace("tools/", "")
+            with open(error_file, "r", encoding="utf-8") as in_file:
+                error_data = in_file.readlines()[1:]
+            f.write("- %s: [%s issue(s)](%s)\n" %
+                    (server_operator, len(error_data), error_file))
+
     # Publish to Google Index API
     if credentials_valid:
         publish_urls(credentials)
