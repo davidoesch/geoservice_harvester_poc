@@ -295,8 +295,8 @@ def get_service_info(source):
                                     service.getmap(layers=[i], srs='EPSG:4326', bbox=(service.contents[i].boundingBoxWGS84[0], service.contents[i].boundingBoxWGS84[1],
                                                                                       service.contents[i].boundingBoxWGS84[2], service.contents[i].boundingBoxWGS84[3]), size=(256, 256), format='image/png', transparent=True, timeout=10)
                                     # then extract abstract etc
-                                    layertree = source['Description']+"/"+service.identification.title+"/"+i.replace(
-                                        '"', '') if service.identification.title is not None else source['Description']+"/"+i.replace('"', '')
+                                    layertree = server_operator+"/"+service.identification.title+"/"+i.replace(
+                                        '"', '') if service.identification.title is not None else server_operator+"/"+i.replace('"', '')
                                     write_service_info(
                                         source, service, (service.contents[i].id), layertree, group=i)
                                     layers_done.append(service.contents[i].id)
@@ -308,8 +308,8 @@ def get_service_info(source):
                                     else:
                                         print(i+' Unknown error:', e)
                         else:
-                            layertree = source['Description']+"/"+service.identification.title+"/"+i.replace(
-                                '"', '') if service.identification.title is not None else source['Description']+"/"+i.replace('"', '')
+                            layertree = server_operator+"/"+service.identification.title+"/"+i.replace(
+                                '"', '') if service.identification.title is not None else server_operator+"/"+i.replace('"', '')
                             write_service_info(
                                 source, service, (service.contents[i].id), layertree, group=i)
                             layers_done.append(service.contents[i].id)
@@ -326,8 +326,8 @@ def get_service_info(source):
                         for j in range(number_children):
                             this_layer = service.contents[i]._children[j].id
                             if this_layer not in layers_done:
-                                layertree = source['Description']+"/"+service.identification.title+"/"+i.replace(
-                                    '"', '') if service.identification.title is not None else source['Description']+"/"+i.replace('"', '')
+                                layertree = server_operator+"/"+service.identification.title+"/"+i.replace(
+                                    '"', '') if service.identification.title is not None else server_operator+"/"+i.replace('"', '')
                                 write_service_info(source, service, this_layer,
                                                    layertree, group=i)
                                 layers_done.append(this_layer)
@@ -342,10 +342,10 @@ def get_service_info(source):
 
     except Exception as e_request:
         log_file = open(os.path.join(config.DEAD_SERVICES_PATH,
-                        source['Description']+"_error.txt"),  'a+')
-        log_file.write(source['Description']+": "+str(e_request)+"\n")
+                        server_operator+"_error.txt"),  'a+')
+        log_file.write(server_operator+": "+str(e_request)+"\n")
         log_file.close()
-        logger.info(source['Description']+": "+str(e_request))
+        logger.info(server_operator+": "+str(e_request))
         print(e_request)
 
         return False
