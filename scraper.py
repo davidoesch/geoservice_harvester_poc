@@ -344,8 +344,16 @@ def get_service_info(source):
                     pass
         else:
             # Service does not seem to be a valid WMS, WMTS or WFS...
-            # ...
-            pass
+            error_details = "Service does not seem to be a valid WMS, WMTS or WFS"
+            error_log = '%s,%s,%s,"%s"' % (timestamp, server_operator,
+                                           server_url, error_details)
+            append_or_write = "a" if os.path.isfile(log_file_path) else "w"
+            with open(log_file_path, append_or_write, encoding="utf-8") as f:
+                if append_or_write == "w":
+                    f.write("Timestamp,Operator,URL,Issue\n")
+                f.write(error_log + "\n")
+            logger.info("%s, %s: %s" %
+                        (server_operator, server_url, error_details))
 
     except Exception as e_request:
         error_details = str(e_request)
