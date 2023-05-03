@@ -163,10 +163,7 @@ def test_server(source):
     # If there has been a problem, add the details to the operator's error
     # log file
     if not success:
-        CET = pytz.timezone('Europe/Zurich')
-        timestamp = datetime.now(timezone.utc).astimezone(CET).isoformat()
-        log_to_operator_csv(timestamp, server_operator,
-                            server_url, error_details)
+        log_to_operator_csv(server_operator, server_url, error_details)
         print("%s %s: %s" % (server_operator, server_url, error_details))
     return success
 
@@ -209,8 +206,7 @@ def get_service_info(source):
         match = re.match(r"^\d+\.\d+\.\d+$", source_version)
         if not match:
             error_details = "Invalid service version number. Scraper will try the default."
-            log_to_operator_csv(timestamp, server_operator, server_url,
-                                error_details)
+            log_to_operator_csv(server_operator, server_url, error_details)
             logger.info("%s, %s: %s" % (server_operator, server_url,
                                         error_details))
             source_version = None
@@ -349,21 +345,22 @@ def get_service_info(source):
             # Service could not be identified as valid WMS, WMTS or WFS by
             # OWSLib
             error_details = "Service does not seem to be a valid WMS, WMTS or WFS"
-            log_to_operator_csv(timestamp, server_operator, server_url,
-                                error_details)
+            log_to_operator_csv(server_operator, server_url, error_details)
             logger.info("%s, %s: %s" %
                         (server_operator, server_url, error_details))
 
     except Exception as e_request:
         error_details = str(e_request)
-        log_to_operator_csv(timestamp, server_operator,
-                            server_url, error_details)
+        log_to_operator_csv(server_operator, server_url, error_details)
         logger.info("%s, %s: %s" %
                     (server_operator, server_url, error_details))
         return False
 
 
-def log_to_operator_csv(timestamp, server_operator, server_url, error_details):
+def log_to_operator_csv(server_operator, server_url, error_details):
+    CET = pytz.timezone('Europe/Zurich')
+    timestamp = datetime.now(timezone.utc).astimezone(CET).isoformat()
+
     log_file_name = "%s_errors.csv" % server_operator
     log_file_path = os.path.join(config.DEAD_SERVICES_PATH, log_file_name)
 
@@ -420,13 +417,11 @@ def write_service_info(source, service, i, layertree, group):
         return True
 
     except Exception as e_request:
-        log_file = open(os.path.join(config.DEAD_SERVICES_PATH,
-                        source['Description']+"_error.txt"),  'a+')
-        log_file.write(source['Description']+" " +
-                       source['URL']+" "+i+": "+str(e_request)+"\n")
-        log_file.close()
-        logger.info(source['Description']+i+": "+str(e_request))
-        print(e_request)
+        server_operator = source['Description']
+        error_details = str(e_request)
+        log_to_operator_csv(server_operator, i, error_details)
+        logger.info("%s, %s: %s" % (server_operator, i, error_details))
+        print(error_details)
         return False
 
 
