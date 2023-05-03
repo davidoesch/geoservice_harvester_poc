@@ -282,7 +282,7 @@ def get_service_info(source):
                         # Some root WMS layers are blocked so no get map is
                         # possible, so we check if we can load them as TOPIC
                         # (aka al children layer active)
-                        if "WMS" in source['URL'] or "wms" in source['URL']:
+                        if "wms" in server_url.lower():
                             # Even some Root layers do not have titles therfore
                             # skipping as well
                             if service.contents[i].title is None:
