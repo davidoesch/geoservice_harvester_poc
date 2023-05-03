@@ -285,7 +285,7 @@ def get_service_info(source):
                         if "WMS" in source['URL'] or "wms" in source['URL']:
                             # Even some Root layers do not have titles therfore
                             # skipping as well
-                            if service.contents[i].title == None:
+                            if service.contents[i].title is None:
                                 print(i+"Title is empty, skipping")
                             else:
                                 try:
