@@ -713,12 +713,12 @@ if __name__ == "__main__":
         os.remove(config.GEOSERVICES_CH_CSV)
     except OSError as e:
         logger.error("Could not delete %s: %s" % (config.GEOSERVICES_CH_CSV, e))
-    try:
-        error_log_files = glob.glob(os.path.join(config.DEAD_SERVICES_PATH, "*_error.csv"))
-        for error_log_file in error_log_files:
+    error_log_files = glob.glob(os.path.join(config.DEAD_SERVICES_PATH, "*_error.csv"))
+    for error_log_file in error_log_files:
+        try:
             os.remove(error_log_file)
-    except OSError as e:
-        logger.error("Could not delete one or all of %s: %s" % (", ".join(error_log_files), e))
+        except OSError as e:
+            logger.error("Could not delete %s: %s" % (error_log_file, e))
 
     # Load sources
     sources = load_source_collection()
