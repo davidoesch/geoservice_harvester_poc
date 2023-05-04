@@ -708,15 +708,17 @@ if __name__ == "__main__":
         google_credentials = ServiceAccountCredentials.from_json_keyfile_dict(
             json.loads(client_secret_str), scopes=config.SCOPES)
 
-    # Clean up
+    # Clean up main data file and operator-specific error log files
     try:
         os.remove(config.GEOSERVICES_CH_CSV)
-        fileList = glob.glob(os.path.join(
-            config.DEAD_SERVICES_PATH, "*_error.csv"))
-        for filePath in fileList:
-            os.remove(filePath)
-    except OSError:
-        pass
+    except OSError as e:
+        logger.error("Could not delete %s: %s" % (config.GEOSERVICES_CH_CSV, e))
+    try:
+        error_log_files = glob.glob(os.path.join(config.DEAD_SERVICES_PATH, "*_error.csv"))
+        for error_log_file in error_log_files:
+            os.remove(error_log_file)
+    except OSError as e:
+        logger.error("Could not delete one or all of %s: %s" % (", ".join(error_log_files), e))
 
     # Load sources
     sources = load_source_collection()
