@@ -659,47 +659,6 @@ def publish_urls(credentials):
 
     batch.execute()
 
-# Main
-# --------------------------------------------------------------------
-
-
-# Initialize the logger
-logger = logging.getLogger("scraper LOG")
-
-# Set the logging level to INFO
-logger.setLevel(logging.INFO)
-
-# Create a file handler for logging
-fh = logging.FileHandler(config.LOG_FILE, "a+", "utf-8")
-fh.setLevel(logging.INFO)
-
-# Create a formatter for the log messages
-formatter = logging.Formatter(
-    "%(asctime)s - %(name)s - %(filename)s > %(funcName)20s(): Line %(lineno)s -  - %(levelname)s - %(message)s")
-fh.setFormatter(formatter)
-
-# Add the file handler to the logger
-logger.addHandler(fh)
-
-# check if we work local env or in github actions
-if os.path.exists(config.JSON_KEY_FILE):
-    github = False
-    # get google secret
-    config.SCOPES
-    if os.path.getsize(config.JSON_KEY_FILE) > 0:
-        credentials = ServiceAccountCredentials.from_json_keyfile_name(
-            config.JSON_KEY_FILE, scopes=config.SCOPES)
-        credentials_valid = True
-    else:
-        credentials_valid = False
-else:
-    github = True
-    client_secret = os.environ.get('CLIENT_SECRET')
-    client_secret = json.loads(client_secret)
-    client_secret_str = json.dumps(client_secret)
-    credentials = ServiceAccountCredentials.from_json_keyfile_dict(
-        json.loads(client_secret_str), scopes=config.SCOPES)
-    credentials_valid = True
 
 if __name__ == "__main__":
     """
@@ -723,6 +682,36 @@ if __name__ == "__main__":
       write_dataset_stats functions to generate the dataset files.
     5 Logs and prints a message indicating that the scraper has completed.
     """
+    # Initialize and configure the logger
+    logger = logging.getLogger("scraper LOG")
+    logger.setLevel(logging.INFO)
+    fh = logging.FileHandler(config.LOG_FILE, "a+", "utf-8")
+    fh.setLevel(logging.INFO)
+    formatter = logging.Formatter(
+        "%(asctime)s - %(name)s - %(filename)s > %(funcName)20s(): Line %(lineno)s -  - %(levelname)s - %(message)s")
+    fh.setFormatter(formatter)
+    logger.addHandler(fh)
+
+    # check if we work local env or in github actions
+    if os.path.exists(config.JSON_KEY_FILE):
+        github = False
+        # get google secret
+        config.SCOPES
+        if os.path.getsize(config.JSON_KEY_FILE) > 0:
+            credentials = ServiceAccountCredentials.from_json_keyfile_name(
+                config.JSON_KEY_FILE, scopes=config.SCOPES)
+            credentials_valid = True
+        else:
+            credentials_valid = False
+    else:
+        github = True
+        client_secret = os.environ.get('CLIENT_SECRET')
+        client_secret = json.loads(client_secret)
+        client_secret_str = json.dumps(client_secret)
+        credentials = ServiceAccountCredentials.from_json_keyfile_dict(
+            json.loads(client_secret_str), scopes=config.SCOPES)
+        credentials_valid = True
+
     # Clean up
     try:
         os.remove(config.GEOSERVICES_CH_CSV)
