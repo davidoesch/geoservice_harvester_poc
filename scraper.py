@@ -735,7 +735,7 @@ if __name__ == "__main__":
         else:
             scraper_type = "default"
 
-        status_msg = "Starting %s scraper on %s > %s (%s/%s)" % (
+        status_msg = "Starting %s scraper on %s > %s (source %s/%s)" % (
             scraper_type, server_operator, server_url, n, num_sources)
         print(status_msg)
         logger.info(status_msg)
@@ -750,13 +750,14 @@ if __name__ == "__main__":
         n += 1
 
     # Create dataset view and stats
-    print("Creating dataset files ...")
+    print("Creating dataset files")
+    for f in [config.GEODATA_CH_CSV, config.GEODATA_SIMPLE_CH_CSV,
+        config.GEOSERVICES_STATS_CH_CSV]:
     try:
-        os.remove(config.GEODATA_CH_CSV)
-        os.remove(config.GEODATA_SIMPLE_CH_CSV)
-        os.remove(config.GEOSERVICES_STATS_CH_CSV)
-    except OSError:
-        pass
+        os.remove(f)
+    except OSError e:
+        logger.error("Could not delete %s: %s" % (f, e))
+
     write_dataset_info(config.GEOSERVICES_CH_CSV,
                        config.GEODATA_CH_CSV, config.GEODATA_SIMPLE_CH_CSV)
     write_dataset_stats(config.GEOSERVICES_CH_CSV,
