@@ -675,7 +675,7 @@ fh.setLevel(logging.INFO)
 
 # Create a formatter for the log messages
 formatter = logging.Formatter(
-    "%(asctime)s - %(name)s - %(levelname)s - %(message)s")
+    "%(asctime)s - %(name)s - %(filename)s > %(funcName)20s(): Line %(lineno)s -  - %(levelname)s - %(message)s")
 fh.setFormatter(formatter)
 
 # Add the file handler to the logger
