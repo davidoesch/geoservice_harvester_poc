@@ -692,25 +692,21 @@ if __name__ == "__main__":
     fh.setFormatter(formatter)
     logger.addHandler(fh)
 
-    # check if we work local env or in github actions
+    # Get the credentials for the Google Index API. The approach depends on 
+    # whether this script is running on GitHub (via GitHub Actions) or 
+    # locally. In the latter case you need a valid config.JSON_KEY_FILE in 
+    # this repo.
     if os.path.exists(config.JSON_KEY_FILE):
-        github = False
-        # get google secret
-        config.SCOPES
-        if os.path.getsize(config.JSON_KEY_FILE) > 0:
-            credentials = ServiceAccountCredentials.from_json_keyfile_name(
-                config.JSON_KEY_FILE, scopes=config.SCOPES)
-            credentials_valid = True
-        else:
-            credentials_valid = False
+        # This script is running locally
+        google_credentials = ServiceAccountCredentials.from_json_keyfile_name(
+            config.JSON_KEY_FILE, scopes=config.SCOPES)
     else:
-        github = True
+        # This script is running on GitHub
         client_secret = os.environ.get('CLIENT_SECRET')
         client_secret = json.loads(client_secret)
         client_secret_str = json.dumps(client_secret)
-        credentials = ServiceAccountCredentials.from_json_keyfile_dict(
+        google_credentials = ServiceAccountCredentials.from_json_keyfile_dict(
             json.loads(client_secret_str), scopes=config.SCOPES)
-        credentials_valid = True
 
     # Clean up
     try:
@@ -774,10 +770,7 @@ if __name__ == "__main__":
                     (server_operator, len(error_data), error_file))
 
     # Publish to Google Index API
-    if credentials_valid:
-        publish_urls(credentials)
-    else:
-        logger.info("Google Index API not updated due to non valid credentials")
+    publish_urls(google_credentials)
 
     print("Scraper run completed")
     logger.info("Scraper run completed")
