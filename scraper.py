@@ -131,7 +131,7 @@ def load_source_collection():
     return sources
 
 
-def test_server(source):
+def is_online(source):
     """
     Test if a server is online and reachable.
 
@@ -673,7 +673,7 @@ if __name__ == "__main__":
            indicating that the default scraper will be used.
         b. Prints and logs a message indicating the start of the scraper for 
            the source.
-        c. Calls the test_server function to check if the server is online.
+        c. Calls the is_online function to check if the server is online.
         d. If the server is online, calls the get_service_info function to get 
            information from the service.
         e. If the server is not online, logs a message indicating the scraper 
@@ -722,29 +722,33 @@ if __name__ == "__main__":
 
     # Load sources
     sources = load_source_collection()
+    num_sources = len(sources)
+    n = 1
 
     for source in sources:
-
-        # check if scraper exists for source
+        server_operator = source['Description']
+        server_url = source['URL']
+        # Check if a custom scraper exists for this source
         if os.path.isfile(os.path.join(config.SOURCE_SCRAPER_DIR,
-                                       source['Description'])+".py") == True:
-            scraper_info = ""
+                                       "%s.py" % server_operator):
+            scraper_type = "custom"
         else:
-            scraper_info = "trying DEFAULT scraper "
+            scraper_type = "default"
 
-        print("Starting scraper  %s" %
-              source['Description']+" with "+source['URL']+" "+scraper_info)
-        logger.info("Starting scraper  %s" %
-                    source['Description']+" with "+source['URL']+" "+scraper_info)
-        # Is server online?
-        if test_server(source) == True:
+        status_msg = "Starting %s scraper on %s > %s (%s/%s)" % (
+            scraper_type, server_operator, server_url, n, num_sources)
+        print(status_msg)
+        logger.info(status_msg)
 
-            # GetInfo From services per layer
+        # Check if this server is online. If yes, proceed to gather 
+        # information
+        if is_online(source):
             get_service_info(source)
-
         else:
-            logger.info(source['Description']+" with " +
-                        source['URL']+" aborted")
+            logger.warn("Scraping %s > %s aborted" % (
+                server_operator, server_url))
+        n += 1
+
     # Create dataset view and stats
     print("Creating dataset files ...")
     try:
