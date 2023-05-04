@@ -1,0 +1,8 @@
+Timestamp,Operator,URL,Issue
+2023-05-03T20:44:11.114297+02:00,KT_FR,https://geo.fr.ch/ags/services/OpenData/Arrondissements_d_inspectorat_ecoles/MapServer/WFSServer?request=GetCapabilities&service=WFS,"Service does not seem to be a valid WMS, WMTS or WFS"
+2023-05-03T20:44:49.760273+02:00,KT_FR,https://geo.fr.ch/ags/services/OpenData/Carte_de_danger___Avalanches/MapServer/WFSServer?request=GetCapabilities&service=WFS,"Service does not seem to be a valid WMS, WMTS or WFS"
+2023-05-03T20:50:44.154034+02:00,KT_FR,https://geo.fr.ch/ags/services/OpenData/Unites_d_exploitation/MapServer/WFSServer?request=GetCapabilities&service=WFS,"mismatched tag: line 1, column 907"
+2023-05-03T20:50:52.033065+02:00,KT_FR,https://geo.fr.ch/ags/services/OpenData/Zones_a_batir_et_perimetre_d_habitat_a_maintenir_amenagement_local_PAZ/MapServer/WFSServer?request=GetCapabilities&service=WFS,"GET requested yielded HTTP response status code 499"
+2023-05-03T20:55:43.369036+02:00,KT_FR,https://geo.fr.ch/ags/services/OpenData/Routes_Cantonales_LR/MapServer/WMSServer?request=GetCapabilities&service=WMS,"GET requested yielded HTTP response status code 499"
+2023-05-03T20:56:53.084563+02:00,KT_FR,https://geo.fr.ch/ags/services/OpenData/Zones_a_batir_et_perimetre_d_habitat_a_maintenir_amenagement_local_PAZ/MapServer/WMSServer?request=GetCapabilities&service=WMS,"GET requested yielded HTTP response status code 499"
+2023-05-03T20:57:10.503528+02:00,KT_FR,https://geo.fr.ch/ags/services/OpenData/Zones_reservees_routes_cantonales/MapServer/WMSServer?request=GetCapabilities&service=WMS,"GET requested yielded HTTP response status code 499"

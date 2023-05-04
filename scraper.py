@@ -83,14 +83,13 @@ def get_version(input_url):
     """
     response = requests.get(input_url)
     xml_data = response.content
-
     root = ET.fromstring(xml_data)
     try:
         version = root.attrib["version"]
     except KeyError:
-        print("version attribute not found.")
-        version == None
-    return (version)
+        logger.warn("%s: Version attribute not found" % (input_url))
+        version = None
+    return version
 
 
 def write_file(input_dict, output_file):
@@ -106,16 +105,13 @@ def write_file(input_dict, output_file):
     None
     """
     append_or_write = "a" if os.path.isfile(output_file) else "w"
-
     with open(output_file, append_or_write, encoding="utf-8") as f:
         dict_writer = csv.DictWriter(f, fieldnames=list(input_dict.keys()),
                                      delimiter=",", quotechar='"',
                                      lineterminator="\n")
         if append_or_write == "w":
             dict_writer.writeheader()
-
         dict_writer.writerow(input_dict)
-
     return
 
 
@@ -129,8 +125,9 @@ def load_source_collection():
     list: A list of dictionaries, where each dictionary represents a source.
     """
     with open(config.SOURCE_COLLECTION_CSV, mode="r", encoding="utf8") as f:
-        sources = list(csv.DictReader(f, delimiter=",",
-                                      quotechar='"', lineterminator="\n"))
+        sources = csv.DictReader(f, delimiter=",", quotechar='"',
+                                 lineterminator="\n")
+        sources = list(sources)
     return sources
 
 
@@ -163,19 +160,8 @@ def test_server(source):
     # If there has been a problem, add the details to the operator's error
     # log file
     if not success:
-        CET = pytz.timezone('Europe/Zurich')
-        timestamp = datetime.now(timezone.utc).astimezone(CET).isoformat()
-
-        log_file_name = "%s_errors.csv" % server_operator
-        log_file_path = os.path.join(config.DEAD_SERVICES_PATH, log_file_name)
-        error_log = '%s,%s,%s,"%s"' % (timestamp, server_operator, server_url,
-                                       error_details)
-        append_or_write = "a" if os.path.isfile(log_file_path) else "w"
-        with open(log_file_path, append_or_write, encoding="utf-8") as f:
-            if append_or_write == "w":
-                f.write("Timestamp,Operator,URL,Issue\n")
-            f.write(error_log + "\n")
-        print(error_log)
+        log_to_operator_csv(server_operator, server_url, error_details)
+        print("%s %s: %s" % (server_operator, server_url, error_details))
     return success
 
 
@@ -205,120 +191,182 @@ def get_service_info(source):
     Returns:
         None
     """
+    server_operator = source['Description']
+    server_url = source['URL']
 
     try:
-        # Testing if WMS or WMTS/WFS
-        # test for specific Version for service whcih needs to be passed to
-        # OWSLIB
+        # Check if this service has a valid service version number. If not,
+        # set version to None (i.e., use default)
         source_version = get_version(source['URL'])
         match = re.match(r"^\d+\.\d+\.\d+$", source_version)
-        if match:
-            source_version == source_version
-        else:
-            log_file = open(os.path.join(config.DEAD_SERVICES_PATH,
-                            source['Description']+"_error.txt"),  'a+')
-            log_file.write(
-                source['Description']+": "+"invalid service version number, trying default"+"\n")
-            log_file.close()
-            logger.info(source['Description']+": "+"invalid service version number, trying default")
+        if not match:
+            error_details = "Invalid service version number. Scraper will try the default."
+            log_to_operator_csv(server_operator, server_url, error_details)
+            logger.info("%s, %s: %s" % (server_operator, server_url,
+                                        error_details))
             source_version = None
-        #if source['Description'] in config.SOURCE_COLLECTION_VERSION:
-        #   source_version=config.SOURCE_COLLECTION_VERSION[source['Description']]
-        # else:
-        #   source_version=None
 
-        # breakpoint()
+        # Check if this service is a WMS, a WMTS or a WFS
+        service_type = None
         try:
-            service = WebMapService(source['URL']) if source_version == None else WebMapService(
-                source['URL'], version=source_version)
-            child = True  # assuming that wms can child/parent relation
+            if source_version is not None:
+                service = WebMapService(server_url, version=source_version)
+            else:
+                service = WebMapService(server_url)
+            service_type = "WMS"
+            # We assume WMSs can have child/parent relations
+            children_possible = True
         except:
-            child = False  # assuming that wmts can't have child/parent relation
+            pass
+
+        if service_type is None:
             try:
-                service = WebMapTileService(source['URL'])
+                service = WebMapTileService(server_url)
+                service_type = "WMTS"
+                # We assume WMTSs can't have child/parent relations
+                children_possible = False
             except:
-                service = WebFeatureService(source['URL'], version='2.0.0') if source_version == None else WebFeatureService(
-                    source['URL'], version=source_version)
-            child = False  # assuming that wmts can't have child/parent relation
+                pass
 
-        # extract all layer names
-        layers = list(service.contents)
-        layers_done = []
-        for i in layers:
-            # check if we did not yet have processed that layer as child before
-            # breakpoint()
-            if i not in layers_done:
-                # print(i+" processing...")
-
-                if child == True:
-                    children = len(service.contents[i].children)
+        if service_type is None:
+            try:
+                if source_version is None:
+                    service = WebFeatureService(server_url, version='2.0.0')
                 else:
-                    children = 0
-                # breakpoint()
+                    service = WebFeatureService(server_url,
+                                                version=source_version)
+                service_type = "WFS"
+                # We assume WFSs can't have child/parent relations
+                children_possible = False
+            except:
+                pass
 
-                # get root layer / extracting the description for simple layer
-                if service.contents[i].id not in layers_done:
+        if service_type is not None:
+            # I.e., we have found a valid service endpoint of type WMS, WTMS or
+            # WFS
+            service_title = service.identification.title
+
+            # Extract all layer names
+            layers = list(service.contents)
+            layers_done = []
+            for i in layers:
+                this_layer = service.contents[i].id
+                # Check that we have not yet processed this layer as a child of
+                # another layer before
+                if this_layer not in layers_done:
+                    # get root layer / extracting the description for simple layer
                     # Some root WMS layers are blocked so no get map is
                     # possible, so we check if we can load them as TOPIC
                     # (aka al children layer active)
-                    if "WMS" in source['URL'] or "wms" in source['URL']:
+                    if "wms" in server_url.lower():
                         # Even some Root layers do not have titles therfore
                         # skipping as well
-                        if service.contents[i].title == None:
+                        if service.contents[i].title is None:
                             print(i+"Title is empty, skipping")
                         else:
                             try:
                                 # check if root layer is loadable, by trying to
                                 # call a Get Map, if it is blocked it will
                                 # raise an error
-                                service.getmap(layers=[i], srs='EPSG:4326', bbox=(service.contents[i].boundingBoxWGS84[0], service.contents[i].boundingBoxWGS84[1],
-                                               service.contents[i].boundingBoxWGS84[2], service.contents[i].boundingBoxWGS84[3]), size=(256, 256), format='image/png', transparent=True, timeout=10)
-                                # then extract abstract etc
-                                layertree = source['Description']+"/"+service.identification.title+"/"+i.replace(
-                                    '"', '') if service.identification.title is not None else source['Description']+"/"+i.replace('"', '')
-                                write_service_info(
-                                    source, service, (service.contents[i].id), layertree, group=i)
-                                layers_done.append(service.contents[i].id)
+                                service.getmap(layers=[i], srs='EPSG:4326',
+                                               bbox=(service.contents[i].boundingBoxWGS84[0],
+                                                     service.contents[i].boundingBoxWGS84[1],
+                                                     service.contents[i].boundingBoxWGS84[2],
+                                                     service.contents[i].boundingBoxWGS84[3]),
+                                               size=(256, 256), format='image/png',
+                                               transparent=True, timeout=10)
+                                # Then extract abstract etc
+                                if service_title is not None:
+                                    layertree = "%s/%s/%s" % (server_operator,
+                                                              service_title,
+                                                              i.replace('"', ''))
+                                else:
+                                    layertree = "%s/%s" % (server_operator,
+                                                           i.replace('"', ''))
+
+                                write_service_info(source, service,
+                                                   this_layer,
+                                                   layertree, group=i)
+                                layers_done.append(this_layer)
                             except Exception as e:
-                                # Check if the exception indicates that the request was not allowed or forbidden
+                                # Check if the exception indicates that the
+                                # request was not allowed or forbidden
                                 if any([msg in str(e) for msg in service.exceptions]):
                                     print(
                                         i+' GetMap request is blocked for this layer')
                                 else:
                                     print(i+' Unknown error:', e)
                     else:
-                        layertree = source['Description']+"/"+service.identification.title+"/"+i.replace(
-                            '"', '') if service.identification.title is not None else source['Description']+"/"+i.replace('"', '')
-                        write_service_info(
-                            source, service, (service.contents[i].id), layertree, group=i)
-                        layers_done.append(service.contents[i].id)
+                        if service_title is not None:
+                            layertree = "%s/%s/%s" % (server_operator,
+                                                      service_title,
+                                                      i.replace('"', ''))
+                        else:
+                            layertree = "%s/%s" % (server_operator,
+                                                   i.replace('"', ''))
+                        write_service_info(source, service, this_layer,
+                                           layertree, group=i)
+                        layers_done.append(this_layer)
 
-                # check for parent layer, when yes use  it for tree
-                if children > 0:
-                    # print(i+" processing parent layer")
-                    for j in range(len(service.contents[i].children)):
-                        if service.contents[i]._children[j].id not in layers_done:
-                            layertree = source['Description']+"/"+service.identification.title+"/"+i.replace(
-                                '"', '') if service.identification.title is not None else source['Description']+"/"+i.replace('"', '')
-                            # print(str(j)+" "+i+""+service.contents[i]._children[j].id)
-                            # breakpoint()
-                            write_service_info(
-                                source, service, (service.contents[i]._children[j].id), layertree, group=i)
-                            layers_done.append(
-                                service.contents[i]._children[j].id)
+                    # Check if this layer is parent to child layers. If it is,
+                    # check the child layers
+                    if children_possible:
+                        try:
+                            number_children = len(service.contents[i].children)
+                        except AttributeError:
+                            number_children = 0
 
-            else:
-                print(i+" already processed")
+                    if children_possible and number_children > 0:
+                        for j in range(number_children):
+                            this_child_layer = service.contents[i]._children[j].id
+                            if this_child_layer not in layers_done:
+                                if service_title is not None:
+                                    layertree = "%s/%s/%s" % (server_operator,
+                                                              service_title,
+                                                              i.replace('"', ''))
+                                else:
+                                    layertree = "%s/%s" % (server_operator,
+                                                           i.replace('"', ''))
+
+                                write_service_info(source, service,
+                                                   this_child_layer, layertree,
+                                                   group=i)
+                                layers_done.append(this_child_layer)
+
+                else:
+                    # This layer has already been processed
+                    pass
+        else:
+            # Service could not be identified as valid WMS, WMTS or WFS by
+            # OWSLib
+            error_details = "Service does not seem to be a valid WMS, WMTS or WFS"
+            log_to_operator_csv(server_operator, server_url, error_details)
+            logger.info("%s, %s: %s" %
+                        (server_operator, server_url, error_details))
 
     except Exception as e_request:
-        log_file = open(os.path.join(config.DEAD_SERVICES_PATH,
-                        source['Description']+"_error.txt"),  'a+')
-        log_file.write(source['Description']+": "+str(e_request)+"\n")
-        log_file.close()
-        logger.info(source['Description']+": "+str(e_request))
-        print(e_request)
-
+        error_details = str(e_request)
+        log_to_operator_csv(server_operator, server_url, error_details)
+        logger.info("%s, %s: %s" %
+                    (server_operator, server_url, error_details))
         return False
+
+
+def log_to_operator_csv(server_operator, server_url, error_details):
+    CET = pytz.timezone('Europe/Zurich')
+    timestamp = datetime.now(timezone.utc).astimezone(CET).isoformat()
+
+    log_file_name = "%s_errors.csv" % server_operator
+    log_file_path = os.path.join(config.DEAD_SERVICES_PATH, log_file_name)
+
+    error_log = '%s,%s,%s,"%s"' % (timestamp, server_operator, server_url,
+                                   error_details)
+    append_or_write = "a" if os.path.isfile(log_file_path) else "w"
+    with open(log_file_path, append_or_write, encoding="utf-8") as f:
+        if append_or_write == "w":
+            f.write("Timestamp,Operator,URL,Issue\n")
+        f.write(error_log + "\n")
+    return
 
 
 def write_service_info(source, service, i, layertree, group):
@@ -364,13 +412,11 @@ def write_service_info(source, service, i, layertree, group):
         return True
 
     except Exception as e_request:
-        log_file = open(os.path.join(config.DEAD_SERVICES_PATH,
-                        source['Description']+"_error.txt"),  'a+')
-        log_file.write(source['Description']+" " +
-                       source['URL']+" "+i+": "+str(e_request)+"\n")
-        log_file.close()
-        logger.info(source['Description']+i+": "+str(e_request))
-        print(e_request)
+        server_operator = source['Description']
+        error_details = str(e_request)
+        log_to_operator_csv(server_operator, i, error_details)
+        logger.info("%s, %s: %s" % (server_operator, i, error_details))
+        print(error_details)
         return False
 
 
@@ -681,7 +727,7 @@ if __name__ == "__main__":
     try:
         os.remove(config.GEOSERVICES_CH_CSV)
         fileList = glob.glob(os.path.join(
-            config.DEAD_SERVICES_PATH, "*_error.txt"))
+            config.DEAD_SERVICES_PATH, "*_error.csv"))
         for filePath in fileList:
             os.remove(filePath)
     except OSError:
@@ -725,11 +771,24 @@ if __name__ == "__main__":
     write_dataset_stats(config.GEOSERVICES_CH_CSV,
                         config.GEOSERVICES_STATS_CH_CSV)
 
-    # Bublish to Google  Index API
+    # Collate operator-specific statistics
+    error_files = glob.glob(os.path.join(
+        config.DEAD_SERVICES_PATH, "*_errors.csv"))
+    with open("ISSUES.md", "w", encoding="utf-8") as f:
+        f.write("# Issues found during the last run\n\n")
+        for error_file in error_files:
+            server_operator = error_file.replace(
+                "_errors.csv", "").replace("tools/", "")
+            with open(error_file, "r", encoding="utf-8") as in_file:
+                error_data = in_file.readlines()[1:]
+            f.write("- %s: [%s issue(s)](%s)\n" %
+                    (server_operator, len(error_data), error_file))
+
+    # Publish to Google Index API
     if credentials_valid:
         publish_urls(credentials)
     else:
-        logger.info(" Google Indexing API not updated, non valid json (0KB)")
+        logger.info("Google Index API not updated due to non valid credentials")
 
-    print("scraper completed")
-    logger.info("scraper completed")
+    print("Scraper run completed")
+    logger.info("Scraper run completed")
