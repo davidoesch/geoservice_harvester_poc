@@ -36,7 +36,7 @@ jobs:
         uses: github-actions-x/commit@v2.9
         with:
           push-branch: 'main'
-          commit-message: 'Change statistics calculated'
+          commit-message: 'Calculate hange statistics'
           force-add: 'true'
           files: data/geoservices_changestats_CH.csv
           name: Q/A
