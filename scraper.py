@@ -33,6 +33,7 @@ import httplib2
 import json
 import pytz
 from datetime import datetime, timezone
+import shutil
 
 # globals
 sys.path.insert(0, config.SOURCE_SCRAPER_DIR)
@@ -579,9 +580,11 @@ def write_dataset_stats(csv_filename, output_file):
             percentages[field][owner] = count / owner_counts[owner]
 
     # Write the results to a CSV file
+    CET = pytz.timezone('Europe/Zurich')
+    datestamp = datetime.now(timezone.utc).astimezone(CET).strftime("%Y-%m-%d")
     with open(output_file, mode="w", encoding="utf8") as f:
         writer = csv.DictWriter(f, fieldnames=[
-            'OWNER', 'DATASET_COUNT', 'KEYWORDS_COUNT', 'KEYWORDS_MISSING',
+            'DATE', 'OWNER', 'DATASET_COUNT', 'KEYWORDS_COUNT', 'KEYWORDS_MISSING',
             'KEYWORDS_PERCENTAGE', 'ABSTRACT_COUNT', 'ABSTRACT_MISSING',
             'ABSTRACT_PERCENTAGE', 'CONTACT_COUNT', 'CONTACT_MISSING',
             'CONTACT_PERCENTAGE', 'METADATA_COUNT', 'METADATA_MISSING',
@@ -589,6 +592,7 @@ def write_dataset_stats(csv_filename, output_file):
         writer.writeheader()
         for owner in owner_counts.keys():
             row = {
+                'DATE': datestamp
                 'OWNER': owner,
                 'DATASET_COUNT': owner_counts[owner],
             }
@@ -610,6 +614,12 @@ def write_dataset_stats(csv_filename, output_file):
             else:
                 row['TOTAL_PERCENTAGE'] = "0%"
             writer.writerow(row)
+
+    # Keep a timestamped copy of this statistics file
+    path, file_with_ext = os.path.split(output_file)
+    copy_file = os.path.join(path, "%s %s" % (datestamp, file_with_ext))
+    shutil.copy(output_file, copy_file)
+
     return
 
 
