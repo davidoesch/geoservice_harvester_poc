@@ -384,17 +384,17 @@ def write_service_info(source, service, i, layertree, group):
     Returns:
     bool: Returns `True` if the function runs successfully, `False` otherwise.
     """
+    server_operator = source['Description']
     # Load Empty parameter list
     layer_data = service_result_empty()
 
     try:
         # check if custom scraper is available
-        scraper_spec = importlib.util.find_spec(source['Description'])
+        scraper_spec = importlib.util.find_spec(server_operator)
 
         # run custom scraper
         if scraper_spec is not None:
-            scraper = importlib.import_module(
-                source['Description'], package=None)
+            scraper = importlib.import_module(server_operator], package=None)
             layer_data = scraper.scrape(source, service, i, layertree, group,
                                         layer_data, config.MAPGEO_PREFIX)
 
@@ -410,7 +410,6 @@ def write_service_info(source, service, i, layertree, group):
         return True
 
     except Exception as e_request:
-        server_operator = source['Description']
         error_details = str(e_request)
         log_to_operator_csv(server_operator, i, error_details)
         logger.error("%s, %s: %s" % (server_operator, i, error_details))
