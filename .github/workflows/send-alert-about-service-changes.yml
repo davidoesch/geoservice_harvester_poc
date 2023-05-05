@@ -36,7 +36,7 @@ jobs:
           echo ${{ env.FileHasChanged }}
 
       - name: Send mail (if file change occurred)
-        if: ${{ env.FileHasChanged }}
+        if: ${{ env.FileHasChanged == 'true' }}
         uses: dawidd6/action-send-mail@v3        
         with:
           server_address: ${{secrets.MAIL_SMTP_SERVER}}
