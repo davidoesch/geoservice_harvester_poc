@@ -70,12 +70,11 @@ if __name__ == "__main__":
     df = duckdb.sql(
         """SELECT * FROM stats WHERE Classification LIKE '%Suspicious%'""").pl()
 
-    # if len(df) > 0:
-    if 1 > 0:
-        print("Found significant changes")
+    if len(df) > 0:
+        print("\nFound significant changes")
         # We have at least one "suspicious" entry
         try:
-            print("Sending e-mail")
+            print("\nSending e-mail")
             smtp_server = os.environ.get('MAIL_SMTP_SERVER')
             user_name = os.environ.get('MAIL_USER_NAME')
             password = os.environ.get('MAIL_PASSWORD')
