@@ -2,7 +2,6 @@ name: Mail services alert
 
 on:
   push:
-    types: [created, edited]
     paths:
       - 'data/geoservices_changestats_CH.csv'
   # Allows you to run this workflow manually from the Actions tab
@@ -28,5 +27,5 @@ jobs:
         body: Geoservice Harvester has found significant changes in geoservices availability in its last run. This might mean that some data owners have changed endpoints of their geoservices. Check the [statistics](https://github.com/rastrau/geoservice_harvester_poc/blob/main/data/geoservices_changestats_CH.csv) or the attached file.
         ignore_cert: true
         convert_markdown: true
-        attachments: data/geoservices_changestats_CH.csv
+        attachments: ./data/geoservices_changestats_CH.csv
         priority: normal
