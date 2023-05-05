@@ -84,17 +84,13 @@ if __name__ == "__main__":
             with smtplib.SMTP_SSL(smtp_server, port, context=context) as \
                     server:
                 server.login(user_name, password)
-                message = """
-                Subject: Significant changes in geoservices availability
+                message = """Subject: Significant changes in geoservices availability
                 
-                Hello
+                Hi
                 
-                Geoservice Harvester has found significant changes in 
-                geoservices availability in its last run. 
-                This might mean that some data owners have changed 
-                endpoints of their geoservices. 
-                Check the geoservice availability change statistics at:
-                https://github.com/rastrau/geoservice_harvester_poc/blob/main/data/geoservices_changestats_CH.csv
+                Geoservice Harvester has found significant changes in geoservices availability in its last run. 
+                This might mean that some data owners have changed endpoints of their geoservices. 
+                Check the geoservice availability change statistics at https://github.com/rastrau/geoservice_harvester_poc/blob/main/data/geoservices_changestats_CH.csv.
                 """
 
                 server.sendmail(user_name,
