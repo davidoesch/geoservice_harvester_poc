@@ -29,8 +29,7 @@ jobs:
         run: |
           echo "One or more files in the docs folder has changed."
           echo "List all the files that have changed: ${{ steps.changed-files-specific.outputs.all_changed_files }}"
-          echo "CHANGED" >> "$GITHUB_OUTPUT"
-          echo "::set-output name=flag::true"
+          echo "FileHasChanged=TRUE" >> $GITHUB_OUTPUT
   
   sendNotificationMail:
     runs-on: ubuntu-latest
@@ -38,10 +37,10 @@ jobs:
     steps:
       - name: Print $GITHUB_OUTPUT
         run: |
-          echo "$GITHUB_OUTPUT is: " 
-          echo $GITHUB_OUTPUT
+          echo "Has the file changed?" 
+          echo ${{ steps.checkChangeStatsFile.outputs.FileHasChanged }}
       - uses: dawidd6/action-send-mail@v3
-        if: $GITHUB_OUTPUT == "CHANGED"
+        if: ${{ steps.checkChangeStatsFile.outputs.FileHasChanged }} == "TRUE"
         with:
           server_address: ${{secrets.MAIL_SMTP_SERVER}}
           server_port: 465
