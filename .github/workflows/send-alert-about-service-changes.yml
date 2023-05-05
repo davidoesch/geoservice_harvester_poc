@@ -23,6 +23,10 @@ jobs:
         with:
           files: data/*changestats*.csv
 
+      - name: Set FileHasChanged to default value (FALSE)
+        run: |
+          echo "FileHasChanged=FALSE" >> $GITHUB_OUTPUT
+
       - id: ChangeStatsFileIsChanged
         name: Run step if any file(s) in the docs folder change
         if: steps.changed-files-specific.outputs.any_changed == 'true'
