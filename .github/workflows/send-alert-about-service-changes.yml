@@ -12,20 +12,25 @@ jobs:
     # cf. https://docs.github.com/en/github/setting-up-and-managing-billing-and-payments-on-github/about-billing-for-github-actions
     runs-on: ubuntu-latest
 
+    name: Test changed-files
     steps:
-    - name: Send mail
-      uses: dawidd6/action-send-mail@v3
-      with:
-        server_address: ${{secrets.MAIL_SMTP_SERVER}}
-        server_port: 465
-        secure: true
-        username: ${{secrets.MAIL_USER_NAME}}
-        password: ${{secrets.MAIL_PASSWORD}}
-        subject: Significant changes in geoservices availability
-        to: mail@ralphstraumann.ch
-        from: Geoservice Harvester
-        body: Geoservice Harvester has found significant changes in geoservices availability in its last run. This might mean that some data owners have changed endpoints of their geoservices. Check the [statistics](https://github.com/rastrau/geoservice_harvester_poc/blob/main/data/geoservices_changestats_CH.csv) or the attached file.
-        ignore_cert: true
-        convert_markdown: true
-        attachments: ./data/geoservices_changestats_CH.csv
-        priority: normal
+      - uses: actions/checkout@v3
+        with:
+          fetch-depth: 0
+          
+      - name: List all changed files
+        run: |
+          for file in ${{ steps.changed-files.outputs.all_changed_files }}; do
+            echo "$file was changed"
+          done
+
+      - name: Get changed files in the data folder
+        id: changed-specific-file
+        uses: tj-actions/changed-files@v35
+        with:
+          files: docs/geoservices_changestats_CH.csv
+
+      - name: Run step if any file(s) in the docs folder change
+        if: steps.changed-specific-file.outputs.any_changed == 'true'
+        run: |
+          echo "The file has been changed."
