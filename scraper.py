@@ -201,7 +201,7 @@ def get_service_info(source):
         if not match:
             error_details = "Invalid service version number. Scraper will try the default."
             log_to_operator_csv(server_operator, server_url, error_details)
-            logger.info("%s, %s: %s" % (server_operator, server_url,
+            logger.warn("%s, %s: %s" % (server_operator, server_url,
                                         error_details))
             source_version = None
 
@@ -291,11 +291,12 @@ def get_service_info(source):
                                 # Check if the exception indicates that the
                                 # request was not allowed or forbidden
                                 if any([msg in str(e) for msg in service.exceptions]):
-                                    logger.error(
+                                    logger.warn(
                                         "%s: GetMap request is blocked for this layer" % i)
                                 else:
                                     logger.error(
-                                        "%s: Unknown error: %s" % (i, e))
+                                        "%s: %s" % (
+                                            i, e.replace('\n', ' ').replace('\r', '')))
                     else:
                         if service_title is not None:
                             layertree = "%s/%s/%s" % (server_operator,
@@ -304,6 +305,9 @@ def get_service_info(source):
                         else:
                             layertree = "%s/%s" % (server_operator,
                                                    i.replace('"', ''))
+                        logger.info("Analysing %s > %s > %s" % (server_operator,
+                                                                server_url,
+                                                                this_layer))
                         write_service_info(source, service, this_layer,
                                            layertree, group=i)
                         layers_done.append(this_layer)
@@ -327,7 +331,9 @@ def get_service_info(source):
                                 else:
                                     layertree = "%s/%s" % (server_operator,
                                                            i.replace('"', ''))
-
+                                logger.info("Analysing %s > %s > %s >> %s" % (
+                                    server_operator, server_url, this_layer,
+                                    this_child_layer))
                                 write_service_info(source, service,
                                                    this_child_layer, layertree,
                                                    group=i)
@@ -341,14 +347,14 @@ def get_service_info(source):
             # OWSLib
             error_details = "Service does not seem to be a valid WMS, WMTS or WFS"
             log_to_operator_csv(server_operator, server_url, error_details)
-            logger.info("%s, %s: %s" %
+            logger.warn("%s > %s: %s" %
                         (server_operator, server_url, error_details))
 
     except Exception as e_request:
         error_details = str(e_request)
         log_to_operator_csv(server_operator, server_url, error_details)
-        logger.info("%s, %s: %s" %
-                    (server_operator, server_url, error_details))
+        logger.error("%s > %s: %s" %
+                     (server_operator, server_url, error_details))
         return False
 
 
@@ -394,7 +400,7 @@ def write_service_info(source, service, i, layertree, group):
 
         # run custom scraper
         if scraper_spec is not None:
-            scraper = importlib.import_module(server_operator], package=None)
+            scraper = importlib.import_module(server_operator, package=None)
             layer_data = scraper.scrape(source, service, i, layertree, group,
                                         layer_data, config.MAPGEO_PREFIX)
 
@@ -708,12 +714,12 @@ if __name__ == "__main__":
     5 Logs and prints a message indicating that the scraper has completed.
     """
     # Initialize and configure the logger
-    logger = logging.getLogger("scraper LOG")
+    logger = logging.getLogger("Scraping log")
     logger.setLevel(logging.INFO)
     fh = logging.FileHandler(config.LOG_FILE, "w", "utf-8")
     fh.setLevel(logging.INFO)
     formatter = logging.Formatter("%(asctime)s - %(name)s - %(filename)s >"
-                                  "%(funcName)20s(): Line %(lineno)s - "
+                                  "%(funcName)17s(): Line %(lineno)s - "
                                   "%(levelname)s - %(message)s")
     fh.setFormatter(formatter)
     logger.addHandler(fh)
