@@ -42,7 +42,8 @@ jobs:
       - name: Print $GITHUB_OUTPUT
         run: |
           echo "Has the file changed?" 
-          echo ${{ steps.checkChangeStatsFile.outputs.FileHasChanged }}
+          echo "${{ steps.checkChangeStatsFile.outputs.FileHasChanged }}"
+          echo "$GITHUB_OUTPUT"
       - uses: dawidd6/action-send-mail@v3
         if: ${{ steps.checkChangeStatsFile.outputs.FileHasChanged }} == "TRUE"
         with:
