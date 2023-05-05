@@ -730,7 +730,7 @@ if __name__ == "__main__":
         server_url = source['URL']
         # Check if a custom scraper exists for this source
         if os.path.isfile(os.path.join(config.SOURCE_SCRAPER_DIR,
-                                       "%s.py" % server_operator):
+                                       "%s.py" % server_operator)):
             scraper_type = "custom"
         else:
             scraper_type = "default"
