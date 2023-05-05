@@ -17,8 +17,8 @@ jobs:
         with:
           fetch-depth: 0
 
-      - name: Set environment variable regarding file change to default (FALSE)
-        run: echo "FileHasChanged=FALSE" >> $GITHUB_ENV
+      - name: Set environment variable regarding file change to default (false)
+        run: echo "FileHasChanged=false" >> $GITHUB_ENV
 
       - name: Get changed CSV files in the data folder
         id: changed-files-specific
@@ -28,7 +28,7 @@ jobs:
                 
       - name: Set environment variable regarding file change to TRUE if file has been changed
         if: steps.changed-files-specific.outputs.any_changed == 'true'
-        run: echo "FileHasChanged=TRUE" >> $GITHUB_ENV
+        run: echo "FileHasChanged=true" >> $GITHUB_ENV
 
       - name: Print status of file change
         run: |
@@ -36,7 +36,7 @@ jobs:
           echo ${{ env.FileHasChanged }}
           
       - uses: dawidd6/action-send-mail@v3
-        if: ${{ env.FileHasChanged }} == "TRUE"
+        if: ${{ env.FileHasChanged }}
         with:
           server_address: ${{secrets.MAIL_SMTP_SERVER}}
           server_port: 465
