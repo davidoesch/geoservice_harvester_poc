@@ -692,9 +692,9 @@ if __name__ == "__main__":
     fh.setFormatter(formatter)
     logger.addHandler(fh)
 
-    # Get the credentials for the Google Index API. The approach depends on 
-    # whether this script is running on GitHub (via GitHub Actions) or 
-    # locally. In the latter case you need a valid config.JSON_KEY_FILE in 
+    # Get the credentials for the Google Index API. The approach depends on
+    # whether this script is running on GitHub (via GitHub Actions) or
+    # locally. In the latter case you need a valid config.JSON_KEY_FILE in
     # this repo.
     if os.path.exists(config.JSON_KEY_FILE):
         # This script is running locally
@@ -712,8 +712,10 @@ if __name__ == "__main__":
     try:
         os.remove(config.GEOSERVICES_CH_CSV)
     except OSError as e:
-        logger.error("Could not delete %s: %s" % (config.GEOSERVICES_CH_CSV, e))
-    error_log_files = glob.glob(os.path.join(config.DEAD_SERVICES_PATH, "*_error.csv"))
+        logger.error("Could not delete %s: %s" %
+                     (config.GEOSERVICES_CH_CSV, e))
+    error_log_files = glob.glob(os.path.join(
+        config.DEAD_SERVICES_PATH, "*_error.csv"))
     for error_log_file in error_log_files:
         try:
             os.remove(error_log_file)
@@ -740,7 +742,7 @@ if __name__ == "__main__":
         print(status_msg)
         logger.info(status_msg)
 
-        # Check if this server is online. If yes, proceed to gather 
+        # Check if this server is online. If yes, proceed to gather
         # information
         if is_online(source):
             get_service_info(source)
@@ -752,11 +754,11 @@ if __name__ == "__main__":
     # Create dataset view and stats
     print("Creating dataset files")
     for f in [config.GEODATA_CH_CSV, config.GEODATA_SIMPLE_CH_CSV,
-        config.GEOSERVICES_STATS_CH_CSV]:
-    try:
-        os.remove(f)
-    except OSError e:
-        logger.error("Could not delete %s: %s" % (f, e))
+              config.GEOSERVICES_STATS_CH_CSV]:
+        try:
+            os.remove(f)
+        except OSError as e:
+            logger.error("Could not delete %s: %s" % (f, e))
 
     write_dataset_info(config.GEOSERVICES_CH_CSV,
                        config.GEODATA_CH_CSV, config.GEODATA_SIMPLE_CH_CSV)
