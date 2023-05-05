@@ -4,7 +4,7 @@ on:
   push:
     paths:
       - 'data/geoservices_changestats_CH.csv'
-    types: 
+    types:
       - created
       - edited
   # Allows you to run this workflow manually from the Actions tab
