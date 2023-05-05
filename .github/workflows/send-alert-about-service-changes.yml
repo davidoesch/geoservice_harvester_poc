@@ -18,12 +18,14 @@ jobs:
         with:
           fetch-depth: 0
           
-      - name: Get changed files
-        id: changed-files
+      - name: Get changed CSV files in the data folder
+        id: changed-files-specific
         uses: tj-actions/changed-files@v35
-        
-      - name: List all changed files
+        with:
+          files: data/*changestats*.csv
+
+      - name: Run step if any file(s) in the docs folder change
+        if: steps.changed-files-specific.outputs.any_changed == 'true'
         run: |
-          for file in ${{ steps.changed-files.outputs.all_changed_files }}; do
-            echo "$file was changed"
-          done
+          echo "One or more files in the docs folder has changed."
+          echo "List all the files that have changed: ${{ steps.changed-files-specific.outputs.all_changed_files }}"
