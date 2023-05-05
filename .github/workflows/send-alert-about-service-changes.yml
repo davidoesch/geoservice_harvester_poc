@@ -28,7 +28,7 @@ jobs:
         id: changed-specific-file
         uses: tj-actions/changed-files@v35
         with:
-          files: docs/geoservices_changestats_CH.csv
+          files: data/geoservices_changestats_CH.csv
 
       - name: Run step if any file(s) in the docs folder change
         if: steps.changed-specific-file.outputs.any_changed == 'true'
