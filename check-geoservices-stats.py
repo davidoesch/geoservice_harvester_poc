@@ -46,7 +46,7 @@ if __name__ == "__main__":
         DATE as Date, 
         DATASET_COUNT as "Current dataset count", 
         MEAN_DATASET_COUNT as "Mean dataset count over last 30 days", 
-        DATASET_COUNT / MEAN_DATASET_COUNT * 100 AS "Dataset ratio (percent)",
+        ROUND(DATASET_COUNT / MEAN_DATASET_COUNT * 100, 1) AS "Dataset ratio (percent)",
         ROUND("Dataset ratio (percent)" - 100, 1) as "Dataset change (percent)",
         CASE
             WHEN "Dataset ratio (percent)" == 100 THEN 'Stable'
