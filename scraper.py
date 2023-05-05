@@ -611,6 +611,39 @@ def write_dataset_stats(csv_filename, output_file):
     return
 
 
+def write_operator_stats(out_file):
+    """
+    Collates error statistics per server operator (if they had errors in this 
+    scraper run) based on the files named "*_errors.csv" in 
+    <config.DEAD_SERVICES_PATH>. Writes the overview statistics into a 
+    markdown file that can comfortably viewed on GitHub
+
+    Parameters:
+    out_file: Name of the output markdown file (should end in "*.md" so that 
+    GitHub recognizes it as such.
+
+    Returns:
+    None: This function does not return any value.
+
+    """
+    error_files = glob.glob(os.path.join(
+        config.DEAD_SERVICES_PATH, "*_errors.csv"))
+
+    CET = pytz.timezone('Europe/Zurich')
+    datestamp = datetime.now(timezone.utc).astimezone(CET).strftime("%d.%m.%Y")
+
+    with open(out_file, "w", encoding="utf-8") as f:
+        f.write("# Issues found during the last run (%s)\n\n" % datestamp)
+        for error_file in error_files:
+            server_operator = error_file.replace(
+                "_errors.csv", "").replace("tools/", "")
+            with open(error_file, "r", encoding="utf-8") as in_file:
+                error_data = in_file.readlines()[1:]
+            f.write("- %s: [%s issue(s)](%s)\n" %
+                    (server_operator, len(error_data), error_file))
+    return
+
+
 def publish_urls(credentials):
     """
     Publishes a list of URLs to the Google Indexing API using the provided 
@@ -765,18 +798,7 @@ if __name__ == "__main__":
     write_dataset_stats(config.GEOSERVICES_CH_CSV,
                         config.GEOSERVICES_STATS_CH_CSV)
 
-    # Collate operator-specific statistics
-    error_files = glob.glob(os.path.join(
-        config.DEAD_SERVICES_PATH, "*_errors.csv"))
-    with open("ISSUES.md", "w", encoding="utf-8") as f:
-        f.write("# Issues found during the last run\n\n")
-        for error_file in error_files:
-            server_operator = error_file.replace(
-                "_errors.csv", "").replace("tools/", "")
-            with open(error_file, "r", encoding="utf-8") as in_file:
-                error_data = in_file.readlines()[1:]
-            f.write("- %s: [%s issue(s)](%s)\n" %
-                    (server_operator, len(error_data), error_file))
+    write_operator_stats(config.OPERATOR_STATS_FILE)
 
     # Publish to Google Index API
     publish_urls(google_credentials)
