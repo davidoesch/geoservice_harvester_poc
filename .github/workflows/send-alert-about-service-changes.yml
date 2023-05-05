@@ -22,6 +22,9 @@ jobs:
         uses: tj-actions/changed-files@v35
         with:
           files: data/*changestats*.csv
+          
+      - name: Set environment variable regarding file change to default (FALSE)
+        run: echo "FileHasChanged=FALSE" >> $GITHUB_ENV
       
       - name: Set environment variable regarding file change
         if: steps.changed-files-specific.outputs.any_changed == 'true'
