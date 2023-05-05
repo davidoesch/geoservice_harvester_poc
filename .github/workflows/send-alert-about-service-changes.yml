@@ -8,11 +8,10 @@ on:
   workflow_dispatch:
   
 jobs:
-  build:
-    # cf. https://docs.github.com/en/github/setting-up-and-managing-billing-and-payments-on-github/about-billing-for-github-actions
+  checkChangeStatsFile:
     runs-on: ubuntu-latest
-
-    name: Test changed-files
+    outputs:
+      output1: ${{ steps.ChangeStatsFileIsChanged.outputs.flag }}
     steps:
       - uses: actions/checkout@v3
         with:
@@ -24,25 +23,30 @@ jobs:
         with:
           files: data/*changestats*.csv
 
-      - name: Run step if any file(s) in the docs folder change
+      - id: ChangeStatsFileIsChanged
+        name: Run step if any file(s) in the docs folder change
         if: steps.changed-files-specific.outputs.any_changed == 'true'
         run: |
           echo "One or more files in the docs folder has changed."
           echo "List all the files that have changed: ${{ steps.changed-files-specific.outputs.all_changed_files }}"
-
-          - name: Send mail
-          uses: dawidd6/action-send-mail@v3
-          with:
-            server_address: ${{secrets.MAIL_SMTP_SERVER}}
-            server_port: 465
-            secure: true
-            username: ${{secrets.MAIL_USER_NAME}}
-            password: ${{secrets.MAIL_PASSWORD}}
-            subject: Significant changes in geoservices availability
-            to: mail@ralphstraumann.ch
-            from: Geoservice Harvester
-            body: Geoservice Harvester has found significant changes in geoservices availability in its last run. This might mean that some data owners have changed endpoints of their geoservices. Check the [statistics](https://github.com/rastrau/geoservice_harvester_poc/blob/main/data/geoservices_changestats_CH.csv) or the attached file.
-            ignore_cert: true
-            convert_markdown: true
-            attachments: ./data/geoservices_changestats_CH.csv
-            priority: normal
+          echo "::set-output name=flag::true"
+  
+  sendNotificationMail:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: dawidd6/action-send-mail@v3
+        if: steps.checkChangeStatsFile.output.flag == true
+        with:
+          server_address: ${{secrets.MAIL_SMTP_SERVER}}
+          server_port: 465
+          secure: true
+          username: ${{secrets.MAIL_USER_NAME}}
+          password: ${{secrets.MAIL_PASSWORD}}
+          subject: Significant changes in geoservices availability
+          to: mail@ralphstraumann.ch
+          from: Geoservice Harvester
+          body: Geoservice Harvester has found significant changes in geoservices availability in its last run. This might mean that some data owners have changed endpoints of their geoservices. Check the [statistics](https://github.com/rastrau/geoservice_harvester_poc/blob/main/data/geoservices_changestats_CH.csv) or the attached file.
+          ignore_cert: true
+          convert_markdown: true
+          attachments: ./data/geoservices_changestats_CH.csv
+          priority: normal
