@@ -10,7 +10,7 @@ GEOSERVICES_STATS_CH_PATTERN = os.path.join(
     "data", "* geoservices_stats_CH.csv")
 GEOSERVICES_CHANGESTATS_CH_CSV = os.path.join(
     "data", "geoservices_changestats_CH.csv")
-GEOSERVICES_CHANGESTATS_ALERT_RECIPIENTS = "ralph.straumann@hey.com"
+GEOSERVICES_CHANGESTATS_ALERT_RECIPIENTS = "mail@ralphstraumann.ch"
 GEODATA_CH_CSV = os.path.join("data", "geodata_CH.csv")
 GEODATA_SIMPLE_CH_CSV = os.path.join("data", "geodata_simple_CH.csv")
 LOG_FILE = os.path.join("tools", "debug.log")
