@@ -592,9 +592,9 @@ def write_dataset_stats(csv_filename, output_file):
         writer.writeheader()
         for owner in owner_counts.keys():
             row = {
-                'DATE': datestamp
+                'DATE': datestamp,
                 'OWNER': owner,
-                'DATASET_COUNT': owner_counts[owner],
+                'DATASET_COUNT': owner_counts[owner]
             }
             total_percentages = []
             for field in fields:
