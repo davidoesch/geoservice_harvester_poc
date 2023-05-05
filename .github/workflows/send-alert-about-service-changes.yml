@@ -34,9 +34,10 @@ jobs:
         run: |
           echo "Has the file changed?" 
           echo ${{ env.FileHasChanged }}
-          
-      - uses: dawidd6/action-send-mail@v3
+
+      - name: Send mail (if file change occurred)
         if: ${{ env.FileHasChanged }}
+        uses: dawidd6/action-send-mail@v3        
         with:
           server_address: ${{secrets.MAIL_SMTP_SERVER}}
           server_port: 465
