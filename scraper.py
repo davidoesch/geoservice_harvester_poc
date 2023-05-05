@@ -667,9 +667,6 @@ def publish_urls(credentials):
         'https://davidoesch.github.io/geoservice_harvester_poc/data/geodata_CH.csv': 'URL_UPDATED'
     }
 
-    SCOPES = ["https://www.googleapis.com/auth/indexing"]
-    ENDPOINT = "https://indexing.googleapis.com/v3/urlNotifications:publish"
-
     # Authorize credentials
     credentials = credentials
     http = credentials.authorize(httplib2.Http())
@@ -680,7 +677,7 @@ def publish_urls(credentials):
     def insert_event(request_id, response, exception):
         if exception is not None:
             print(exception)
-            logger.info("ERROR updating Google Index API: "+exception)
+            logger.error("Failed to update Google Index API: %s" % exception)
         else:
             print(response)
 
@@ -718,10 +715,11 @@ if __name__ == "__main__":
     # Initialize and configure the logger
     logger = logging.getLogger("scraper LOG")
     logger.setLevel(logging.INFO)
-    fh = logging.FileHandler(config.LOG_FILE, "a+", "utf-8")
+    fh = logging.FileHandler(config.LOG_FILE, "w", "utf-8")
     fh.setLevel(logging.INFO)
-    formatter = logging.Formatter(
-        "%(asctime)s - %(name)s - %(filename)s > %(funcName)20s(): Line %(lineno)s -  - %(levelname)s - %(message)s")
+    formatter = logging.Formatter("%(asctime)s - %(name)s - %(filename)s >"
+                                  "%(funcName)20s(): Line %(lineno)s - "
+                                  "%(levelname)s - %(message)s")
     fh.setFormatter(formatter)
     logger.addHandler(fh)
 
