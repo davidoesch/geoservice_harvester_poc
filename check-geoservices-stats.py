@@ -72,8 +72,10 @@ if __name__ == "__main__":
 
     # if len(df) > 0:
     if 1 > 0:
+        print("Found significant changes")
         # We have at least one "suspicious" entry
         try:
+            print("Sending e-mail")
             smtp_server = os.environ.get('MAIL_SMTP_SERVER')
             user_name = os.environ.get('MAIL_USER_NAME')
             password = os.environ.get('MAIL_PASSWORD')
