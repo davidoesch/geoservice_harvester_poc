@@ -1,0 +1,32 @@
+name: Mail services alert
+
+on:
+  push:
+    paths:
+      - 'data/geoservices_changestats_CH.csv'
+    types: [created, edited]  
+  # Allows you to run this workflow manually from the Actions tab
+  workflow_dispatch:
+  
+jobs:
+  build:
+    # cf. https://docs.github.com/en/github/setting-up-and-managing-billing-and-payments-on-github/about-billing-for-github-actions
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Send mail
+      uses: dawidd6/action-send-mail@v3
+      with:
+        server_address: ${{secrets.MAIL_SMTP_SERVER}}
+        server_port: 465
+        secure: true
+        username: ${{secrets.MAIL_USER_NAME}}
+        password: ${{secrets.MAIL_PASSWORD}}
+        subject: Significant changes in geoservices availability
+        to: mail@ralphstraumann.ch
+        from: Geoservice Harvester
+        body: Geoservice Harvester has found significant changes in geoservices availability in its last run. This might mean that some data owners have changed endpoints of their geoservices. Check the [statistics](https://github.com/rastrau/geoservice_harvester_poc/blob/main/data/data/geoservices_changestats_CH.csv) or the attached file.
+        ignore_cert: true
+        convert_markdown: true
+        attachments: data/geoservices_changestats_CH.csv
+        priority: normal
