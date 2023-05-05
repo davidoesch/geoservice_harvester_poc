@@ -161,7 +161,6 @@ def is_online(source):
     # log file
     if not success:
         log_to_operator_csv(server_operator, server_url, error_details)
-        print("%s %s: %s" % (server_operator, server_url, error_details))
     return success
 
 
@@ -262,7 +261,7 @@ def get_service_info(source):
                         # Even some Root layers do not have titles therfore
                         # skipping as well
                         if service.contents[i].title is None:
-                            print(i+"Title is empty, skipping")
+                            logger.warn("%s: Title is empty. Skipping." % i)
                         else:
                             try:
                                 # check if root layer is loadable, by trying to
@@ -292,10 +291,11 @@ def get_service_info(source):
                                 # Check if the exception indicates that the
                                 # request was not allowed or forbidden
                                 if any([msg in str(e) for msg in service.exceptions]):
-                                    print(
-                                        i+' GetMap request is blocked for this layer')
+                                    logger.error(
+                                        "%s: GetMap request is blocked for this layer" % i)
                                 else:
-                                    print(i+' Unknown error:', e)
+                                    logger.error(
+                                        "%s: Unknown error: %s" % (i, e))
                     else:
                         if service_title is not None:
                             layertree = "%s/%s/%s" % (server_operator,
@@ -387,7 +387,6 @@ def write_service_info(source, service, i, layertree, group):
     # Load Empty parameter list
     layer_data = service_result_empty()
 
-    # print(i)
     try:
         # check if custom scraper is available
         scraper_spec = importlib.util.find_spec(source['Description'])
@@ -401,7 +400,6 @@ def write_service_info(source, service, i, layertree, group):
 
         # run default scraper
         else:
-            # print ("...trying default scraper" )
             scraper = importlib.import_module('default', package=None)
             layer_data = scraper.scrape(source, service, i, layertree, group,
                                         layer_data, config.MAPGEO_PREFIX)
@@ -415,8 +413,7 @@ def write_service_info(source, service, i, layertree, group):
         server_operator = source['Description']
         error_details = str(e_request)
         log_to_operator_csv(server_operator, i, error_details)
-        logger.info("%s, %s: %s" % (server_operator, i, error_details))
-        print(error_details)
+        logger.error("%s, %s: %s" % (server_operator, i, error_details))
         return False
 
 
@@ -676,7 +673,6 @@ def publish_urls(credentials):
 
     def insert_event(request_id, response, exception):
         if exception is not None:
-            print(exception)
             logger.error("Failed to update Google Index API: %s" % exception)
         else:
             print(response)
@@ -768,7 +764,7 @@ if __name__ == "__main__":
         else:
             scraper_type = "default"
 
-        status_msg = "Starting %s scraper on %s > %s (source %s/%s)" % (
+        status_msg = "Running %s scraper on %s > %s (source %s/%s)" % (
             scraper_type, server_operator, server_url, n, num_sources)
         print(status_msg)
         logger.info(status_msg)
@@ -783,7 +779,7 @@ if __name__ == "__main__":
         n += 1
 
     # Create dataset view and stats
-    print("Creating dataset files")
+    print("\nCreating dataset files")
     for f in [config.GEODATA_CH_CSV, config.GEODATA_SIMPLE_CH_CSV,
               config.GEOSERVICES_STATS_CH_CSV]:
         try:
@@ -801,5 +797,5 @@ if __name__ == "__main__":
     # Publish to Google Index API
     publish_urls(google_credentials)
 
-    print("Scraper run completed")
+    print("\nScraper run completed")
     logger.info("Scraper run completed")
