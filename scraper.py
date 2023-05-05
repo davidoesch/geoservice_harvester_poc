@@ -87,7 +87,7 @@ def get_version(input_url):
     try:
         version = root.attrib["version"]
     except KeyError:
-        logger.warn("%s: Version attribute not found" % (input_url))
+        logger.warning("%s: Version attribute not found" % (input_url))
         version = None
     return version
 
@@ -201,8 +201,8 @@ def get_service_info(source):
         if not match:
             error_details = "Invalid service version number. Scraper will try the default."
             log_to_operator_csv(server_operator, server_url, error_details)
-            logger.warn("%s, %s: %s" % (server_operator, server_url,
-                                        error_details))
+            logger.warning("%s, %s: %s" % (server_operator, server_url,
+                                           error_details))
             source_version = None
 
         # Check if this service is a WMS, a WMTS or a WFS
@@ -261,7 +261,7 @@ def get_service_info(source):
                         # Even some Root layers do not have titles therfore
                         # skipping as well
                         if service.contents[i].title is None:
-                            logger.warn("%s: Title is empty. Skipping." % i)
+                            logger.warning("%s: Title is empty. Skipping." % i)
                         else:
                             try:
                                 # check if root layer is loadable, by trying to
@@ -291,7 +291,7 @@ def get_service_info(source):
                                 # Check if the exception indicates that the
                                 # request was not allowed or forbidden
                                 if any([msg in str(e) for msg in service.exceptions]):
-                                    logger.warn(
+                                    logger.warning(
                                         "%s: GetMap request is blocked for this layer" % i)
                                 else:
                                     logger.error(
@@ -347,8 +347,8 @@ def get_service_info(source):
             # OWSLib
             error_details = "Service does not seem to be a valid WMS, WMTS or WFS"
             log_to_operator_csv(server_operator, server_url, error_details)
-            logger.warn("%s > %s: %s" %
-                        (server_operator, server_url, error_details))
+            logger.warning("%s > %s: %s" %
+                           (server_operator, server_url, error_details))
 
     except Exception as e_request:
         error_details = str(e_request)
@@ -779,7 +779,7 @@ if __name__ == "__main__":
         if is_online(source):
             get_service_info(source)
         else:
-            logger.warn("Scraping %s > %s aborted" % (
+            logger.warning("Scraping %s > %s aborted" % (
                 server_operator, server_url))
         n += 1
 
