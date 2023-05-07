@@ -33,6 +33,7 @@ import httplib2
 import json
 import pytz
 from datetime import datetime, timezone
+import shutil
 
 # globals
 sys.path.insert(0, config.SOURCE_SCRAPER_DIR)
@@ -87,7 +88,7 @@ def get_version(input_url):
     try:
         version = root.attrib["version"]
     except KeyError:
-        logger.warn("%s: Version attribute not found" % (input_url))
+        logger.warning("%s: Version attribute not found" % (input_url))
         version = None
     return version
 
@@ -131,7 +132,7 @@ def load_source_collection():
     return sources
 
 
-def test_server(source):
+def is_online(source):
     """
     Test if a server is online and reachable.
 
@@ -161,7 +162,6 @@ def test_server(source):
     # log file
     if not success:
         log_to_operator_csv(server_operator, server_url, error_details)
-        print("%s %s: %s" % (server_operator, server_url, error_details))
     return success
 
 
@@ -202,8 +202,8 @@ def get_service_info(source):
         if not match:
             error_details = "Invalid service version number. Scraper will try the default."
             log_to_operator_csv(server_operator, server_url, error_details)
-            logger.info("%s, %s: %s" % (server_operator, server_url,
-                                        error_details))
+            logger.warning("%s, %s: %s" % (server_operator, server_url,
+                                           error_details))
             source_version = None
 
         # Check if this service is a WMS, a WMTS or a WFS
@@ -262,7 +262,7 @@ def get_service_info(source):
                         # Even some Root layers do not have titles therfore
                         # skipping as well
                         if service.contents[i].title is None:
-                            print(i+"Title is empty, skipping")
+                            logger.warning("%s: Title is empty. Skipping." % i)
                         else:
                             try:
                                 # check if root layer is loadable, by trying to
@@ -292,10 +292,12 @@ def get_service_info(source):
                                 # Check if the exception indicates that the
                                 # request was not allowed or forbidden
                                 if any([msg in str(e) for msg in service.exceptions]):
-                                    print(
-                                        i+' GetMap request is blocked for this layer')
+                                    logger.warning(
+                                        "%s: GetMap request is blocked for this layer" % i)
                                 else:
-                                    print(i+' Unknown error:', e)
+                                    logger.error(
+                                        "%s: %s" % (
+                                            i, str(e).replace('\n', ' ').replace('\r', '')))
                     else:
                         if service_title is not None:
                             layertree = "%s/%s/%s" % (server_operator,
@@ -304,6 +306,9 @@ def get_service_info(source):
                         else:
                             layertree = "%s/%s" % (server_operator,
                                                    i.replace('"', ''))
+                        logger.info("Analysing %s > %s > %s" % (server_operator,
+                                                                server_url,
+                                                                this_layer))
                         write_service_info(source, service, this_layer,
                                            layertree, group=i)
                         layers_done.append(this_layer)
@@ -327,7 +332,9 @@ def get_service_info(source):
                                 else:
                                     layertree = "%s/%s" % (server_operator,
                                                            i.replace('"', ''))
-
+                                logger.info("Analysing %s > %s > %s >> %s" % (
+                                    server_operator, server_url, this_layer,
+                                    this_child_layer))
                                 write_service_info(source, service,
                                                    this_child_layer, layertree,
                                                    group=i)
@@ -341,14 +348,14 @@ def get_service_info(source):
             # OWSLib
             error_details = "Service does not seem to be a valid WMS, WMTS or WFS"
             log_to_operator_csv(server_operator, server_url, error_details)
-            logger.info("%s, %s: %s" %
-                        (server_operator, server_url, error_details))
+            logger.warning("%s > %s: %s" %
+                           (server_operator, server_url, error_details))
 
     except Exception as e_request:
         error_details = str(e_request)
         log_to_operator_csv(server_operator, server_url, error_details)
-        logger.info("%s, %s: %s" %
-                    (server_operator, server_url, error_details))
+        logger.error("%s > %s: %s" %
+                     (server_operator, server_url, error_details))
         return False
 
 
@@ -384,24 +391,22 @@ def write_service_info(source, service, i, layertree, group):
     Returns:
     bool: Returns `True` if the function runs successfully, `False` otherwise.
     """
+    server_operator = source['Description']
     # Load Empty parameter list
     layer_data = service_result_empty()
 
-    # print(i)
     try:
         # check if custom scraper is available
-        scraper_spec = importlib.util.find_spec(source['Description'])
+        scraper_spec = importlib.util.find_spec(server_operator)
 
         # run custom scraper
         if scraper_spec is not None:
-            scraper = importlib.import_module(
-                source['Description'], package=None)
+            scraper = importlib.import_module(server_operator, package=None)
             layer_data = scraper.scrape(source, service, i, layertree, group,
                                         layer_data, config.MAPGEO_PREFIX)
 
         # run default scraper
         else:
-            # print ("...trying default scraper" )
             scraper = importlib.import_module('default', package=None)
             layer_data = scraper.scrape(source, service, i, layertree, group,
                                         layer_data, config.MAPGEO_PREFIX)
@@ -412,11 +417,9 @@ def write_service_info(source, service, i, layertree, group):
         return True
 
     except Exception as e_request:
-        server_operator = source['Description']
         error_details = str(e_request)
         log_to_operator_csv(server_operator, i, error_details)
-        logger.info("%s, %s: %s" % (server_operator, i, error_details))
-        print(error_details)
+        logger.error("%s, %s: %s" % (server_operator, i, error_details))
         return False
 
 
@@ -577,9 +580,11 @@ def write_dataset_stats(csv_filename, output_file):
             percentages[field][owner] = count / owner_counts[owner]
 
     # Write the results to a CSV file
+    CET = pytz.timezone('Europe/Zurich')
+    datestamp = datetime.now(timezone.utc).astimezone(CET).strftime("%Y-%m-%d")
     with open(output_file, mode="w", encoding="utf8") as f:
         writer = csv.DictWriter(f, fieldnames=[
-            'OWNER', 'DATASET_COUNT', 'KEYWORDS_COUNT', 'KEYWORDS_MISSING',
+            'DATE', 'OWNER', 'DATASET_COUNT', 'KEYWORDS_COUNT', 'KEYWORDS_MISSING',
             'KEYWORDS_PERCENTAGE', 'ABSTRACT_COUNT', 'ABSTRACT_MISSING',
             'ABSTRACT_PERCENTAGE', 'CONTACT_COUNT', 'CONTACT_MISSING',
             'CONTACT_PERCENTAGE', 'METADATA_COUNT', 'METADATA_MISSING',
@@ -587,8 +592,9 @@ def write_dataset_stats(csv_filename, output_file):
         writer.writeheader()
         for owner in owner_counts.keys():
             row = {
+                'DATE': datestamp,
                 'OWNER': owner,
-                'DATASET_COUNT': owner_counts[owner],
+                'DATASET_COUNT': owner_counts[owner]
             }
             total_percentages = []
             for field in fields:
@@ -608,6 +614,45 @@ def write_dataset_stats(csv_filename, output_file):
             else:
                 row['TOTAL_PERCENTAGE'] = "0%"
             writer.writerow(row)
+
+    # Keep a timestamped copy of this statistics file
+    path, file_with_ext = os.path.split(output_file)
+    copy_file = os.path.join(path, "%s %s" % (datestamp, file_with_ext))
+    shutil.copy(output_file, copy_file)
+
+    return
+
+
+def write_operator_stats(out_file):
+    """
+    Collates error statistics per server operator (if they had errors in this 
+    scraper run) based on the files named "*_errors.csv" in 
+    <config.DEAD_SERVICES_PATH>. Writes the overview statistics into a 
+    markdown file that can comfortably viewed on GitHub
+
+    Parameters:
+    out_file: Name of the output markdown file (should end in "*.md" so that 
+    GitHub recognizes it as such.
+
+    Returns:
+    None: This function does not return any value.
+
+    """
+    error_files = glob.glob(os.path.join(
+        config.DEAD_SERVICES_PATH, "*_errors.csv"))
+
+    CET = pytz.timezone('Europe/Zurich')
+    datestamp = datetime.now(timezone.utc).astimezone(CET).strftime("%d.%m.%Y")
+
+    with open(out_file, "w", encoding="utf-8") as f:
+        f.write("# Issues found during the last run (%s)\n\n" % datestamp)
+        for error_file in error_files:
+            server_operator = error_file.replace(
+                "_errors.csv", "").replace("tools/", "")
+            with open(error_file, "r", encoding="utf-8") as in_file:
+                error_data = in_file.readlines()[1:]
+            f.write("- %s: [%s issue(s)](%s)\n" %
+                    (server_operator, len(error_data), error_file))
     return
 
 
@@ -634,9 +679,6 @@ def publish_urls(credentials):
         'https://davidoesch.github.io/geoservice_harvester_poc/data/geodata_CH.csv': 'URL_UPDATED'
     }
 
-    SCOPES = ["https://www.googleapis.com/auth/indexing"]
-    ENDPOINT = "https://indexing.googleapis.com/v3/urlNotifications:publish"
-
     # Authorize credentials
     credentials = credentials
     http = credentials.authorize(httplib2.Http())
@@ -646,8 +688,7 @@ def publish_urls(credentials):
 
     def insert_event(request_id, response, exception):
         if exception is not None:
-            print(exception)
-            logger.info("ERROR updating Google Index API: "+exception)
+            logger.error("Failed to update Google Index API: %s" % exception)
         else:
             print(response)
 
@@ -659,47 +700,6 @@ def publish_urls(credentials):
 
     batch.execute()
 
-# Main
-# --------------------------------------------------------------------
-
-
-# Initialize the logger
-logger = logging.getLogger("scraper LOG")
-
-# Set the logging level to INFO
-logger.setLevel(logging.INFO)
-
-# Create a file handler for logging
-fh = logging.FileHandler(config.LOG_FILE, "a+", "utf-8")
-fh.setLevel(logging.INFO)
-
-# Create a formatter for the log messages
-formatter = logging.Formatter(
-    "%(asctime)s - %(name)s - %(levelname)s - %(message)s")
-fh.setFormatter(formatter)
-
-# Add the file handler to the logger
-logger.addHandler(fh)
-
-# check if we work local env or in github actions
-if os.path.exists(config.JSON_KEY_FILE):
-    github = False
-    # get google secret
-    config.SCOPES
-    if os.path.getsize(config.JSON_KEY_FILE) > 0:
-        credentials = ServiceAccountCredentials.from_json_keyfile_name(
-            config.JSON_KEY_FILE, scopes=config.SCOPES)
-        credentials_valid = True
-    else:
-        credentials_valid = False
-else:
-    github = True
-    client_secret = os.environ.get('CLIENT_SECRET')
-    client_secret = json.loads(client_secret)
-    client_secret_str = json.dumps(client_secret)
-    credentials = ServiceAccountCredentials.from_json_keyfile_dict(
-        json.loads(client_secret_str), scopes=config.SCOPES)
-    credentials_valid = True
 
 if __name__ == "__main__":
     """
@@ -714,7 +714,7 @@ if __name__ == "__main__":
            indicating that the default scraper will be used.
         b. Prints and logs a message indicating the start of the scraper for 
            the source.
-        c. Calls the test_server function to check if the server is online.
+        c. Calls the is_online function to check if the server is online.
         d. If the server is online, calls the get_service_info function to get 
            information from the service.
         e. If the server is not online, logs a message indicating the scraper 
@@ -723,72 +723,94 @@ if __name__ == "__main__":
       write_dataset_stats functions to generate the dataset files.
     5 Logs and prints a message indicating that the scraper has completed.
     """
-    # Clean up
+    # Initialize and configure the logger
+    logger = logging.getLogger("Scraping log")
+    logger.setLevel(logging.INFO)
+    fh = logging.FileHandler(config.LOG_FILE, "w", "utf-8")
+    fh.setLevel(logging.INFO)
+    formatter = logging.Formatter("%(asctime)s - %(name)s - %(filename)s >"
+                                  "%(funcName)17s(): Line %(lineno)s - "
+                                  "%(levelname)s - %(message)s")
+    fh.setFormatter(formatter)
+    logger.addHandler(fh)
+
+    # Get the credentials for the Google Index API. The approach depends on
+    # whether this script is running on GitHub (via GitHub Actions) or
+    # locally. In the latter case you need a valid config.JSON_KEY_FILE in
+    # this repo.
+    if os.path.exists(config.JSON_KEY_FILE):
+        # This script is running locally
+        google_credentials = ServiceAccountCredentials.from_json_keyfile_name(
+            config.JSON_KEY_FILE, scopes=config.SCOPES)
+    else:
+        # This script is running on GitHub
+        client_secret = os.environ.get('CLIENT_SECRET')
+        client_secret = json.loads(client_secret)
+        client_secret_str = json.dumps(client_secret)
+        google_credentials = ServiceAccountCredentials.from_json_keyfile_dict(
+            json.loads(client_secret_str), scopes=config.SCOPES)
+
+    # Clean up main data file and operator-specific error log files
     try:
         os.remove(config.GEOSERVICES_CH_CSV)
-        fileList = glob.glob(os.path.join(
-            config.DEAD_SERVICES_PATH, "*_error.csv"))
-        for filePath in fileList:
-            os.remove(filePath)
-    except OSError:
-        pass
+    except OSError as e:
+        logger.error("Could not delete %s: %s" %
+                     (config.GEOSERVICES_CH_CSV, e))
+    error_log_files = glob.glob(os.path.join(
+        config.DEAD_SERVICES_PATH, "*_error.csv"))
+    for error_log_file in error_log_files:
+        try:
+            os.remove(error_log_file)
+        except OSError as e:
+            logger.error("Could not delete %s: %s" % (error_log_file, e))
 
     # Load sources
     sources = load_source_collection()
+    num_sources = len(sources)
+    n = 1
 
     for source in sources:
-
-        # check if scraper exists for source
+        server_operator = source['Description']
+        server_url = source['URL']
+        # Check if a custom scraper exists for this source
         if os.path.isfile(os.path.join(config.SOURCE_SCRAPER_DIR,
-                                       source['Description'])+".py") == True:
-            scraper_info = ""
+                                       "%s.py" % server_operator)):
+            scraper_type = "custom"
         else:
-            scraper_info = "trying DEFAULT scraper "
+            scraper_type = "default"
 
-        print("Starting scraper  %s" %
-              source['Description']+" with "+source['URL']+" "+scraper_info)
-        logger.info("Starting scraper  %s" %
-                    source['Description']+" with "+source['URL']+" "+scraper_info)
-        # Is server online?
-        if test_server(source) == True:
+        status_msg = "Running %s scraper on %s > %s (source %s/%s)" % (
+            scraper_type, server_operator, server_url, n, num_sources)
+        print(status_msg)
+        logger.info(status_msg)
 
-            # GetInfo From services per layer
+        # Check if this server is online. If yes, proceed to gather
+        # information
+        if is_online(source):
             get_service_info(source)
-
         else:
-            logger.info(source['Description']+" with " +
-                        source['URL']+" aborted")
+            logger.warning("Scraping %s > %s aborted" % (
+                server_operator, server_url))
+        n += 1
+
     # Create dataset view and stats
-    print("Creating dataset files ...")
-    try:
-        os.remove(config.GEODATA_CH_CSV)
-        os.remove(config.GEODATA_SIMPLE_CH_CSV)
-        os.remove(config.GEOSERVICES_STATS_CH_CSV)
-    except OSError:
-        pass
+    print("\nCreating dataset files")
+    for f in [config.GEODATA_CH_CSV, config.GEODATA_SIMPLE_CH_CSV,
+              config.GEOSERVICES_STATS_CH_CSV]:
+        try:
+            os.remove(f)
+        except OSError as e:
+            logger.error("Could not delete %s: %s" % (f, e))
+
     write_dataset_info(config.GEOSERVICES_CH_CSV,
                        config.GEODATA_CH_CSV, config.GEODATA_SIMPLE_CH_CSV)
     write_dataset_stats(config.GEOSERVICES_CH_CSV,
                         config.GEOSERVICES_STATS_CH_CSV)
 
-    # Collate operator-specific statistics
-    error_files = glob.glob(os.path.join(
-        config.DEAD_SERVICES_PATH, "*_errors.csv"))
-    with open("ISSUES.md", "w", encoding="utf-8") as f:
-        f.write("# Issues found during the last run\n\n")
-        for error_file in error_files:
-            server_operator = error_file.replace(
-                "_errors.csv", "").replace("tools/", "")
-            with open(error_file, "r", encoding="utf-8") as in_file:
-                error_data = in_file.readlines()[1:]
-            f.write("- %s: [%s issue(s)](%s)\n" %
-                    (server_operator, len(error_data), error_file))
+    write_operator_stats(config.OPERATOR_STATS_FILE)
 
     # Publish to Google Index API
-    if credentials_valid:
-        publish_urls(credentials)
-    else:
-        logger.info("Google Index API not updated due to non valid credentials")
+    publish_urls(google_credentials)
 
-    print("Scraper run completed")
+    print("\nScraper run completed")
     logger.info("Scraper run completed")
