@@ -757,7 +757,7 @@ if __name__ == "__main__":
         logger.error("Could not delete %s: %s" %
                      (config.GEOSERVICES_CH_CSV, e))
     error_log_files = glob.glob(os.path.join(
-        config.DEAD_SERVICES_PATH, "*_error.csv"))
+        config.DEAD_SERVICES_PATH, "*_errors.csv"))
     for error_log_file in error_log_files:
         try:
             os.remove(error_log_file)
