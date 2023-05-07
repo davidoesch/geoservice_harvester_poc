@@ -297,7 +297,7 @@ def get_service_info(source):
                                 else:
                                     logger.error(
                                         "%s: %s" % (
-                                            i, e.replace('\n', ' ').replace('\r', '')))
+                                            i, str(e).replace('\n', ' ').replace('\r', '')))
                     else:
                         if service_title is not None:
                             layertree = "%s/%s/%s" % (server_operator,
