@@ -7,7 +7,7 @@ on:
   workflow_dispatch:
     
 jobs:
-  checkChangeStats:
+  createParquetFiles:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout the repository
@@ -27,7 +27,7 @@ jobs:
         run: |
           python format-converter.py
       
-      - name: Push change stats file to repo
+      - name: Push Parquet files to repo
         uses: github-actions-x/commit@v2.9
         with:
           push-branch: 'main'
