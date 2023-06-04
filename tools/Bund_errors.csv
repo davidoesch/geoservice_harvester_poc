@@ -1,0 +1,5 @@
+Timestamp,Operator,URL,Issue
+2023-06-04T07:55:37.416972+02:00,Bund,ch.are.belastung-personenverkehr-bahn_zukunft,"('Connection aborted.', OSError(107, 'Transport endpoint is not connected'))"
+2023-06-04T07:55:38.144067+02:00,Bund,ch.are.erreichbarkeit-miv,"('Connection aborted.', ConnectionResetError(104, 'Connection reset by peer'))"
+2023-06-04T07:55:41.969016+02:00,Bund,ch.astra.ivs-gelaendekarte,"('Connection aborted.', OSError(107, 'Transport endpoint is not connected'))"
+2023-06-04T07:55:46.738144+02:00,Bund,ch.astra.unfaelle-personenschaeden_fussgaenger,"('Connection aborted.', ConnectionResetError(104, 'Connection reset by peer'))"
