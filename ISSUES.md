@@ -1,4 +1,4 @@
-# Issues found during the last run (20.08.2023)
+# Issues found during the last run (27.08.2023)
 
 - KT_GE: [1 issue(s)](tools/KT_GE_errors.csv)
 - KT_BL: [1 issue(s)](tools/KT_BL_errors.csv)
