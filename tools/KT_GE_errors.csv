@@ -1,5 +1,2 @@
 Timestamp,Operator,URL,Issue
-2023-12-24T02:46:56.823524+01:00,KT_GE,https://ge.ch/sitgags1/services/VECTOR/SITG_OPENDATA_01/MapServer/WMSServer?request=GetCapabilities&service=WMS,"expected string or bytes-like object"
-2023-12-24T02:47:00.142722+01:00,KT_GE,https://ge.ch/sitgags1/services/VECTOR/SITG_OPENDATA_02/MapServer/WMSServer?request=GetCapabilities&service=WMS,"expected string or bytes-like object"
-2023-12-24T02:47:03.260936+01:00,KT_GE,https://ge.ch/sitgags1/services/VECTOR/SITG_OPENDATA_03/MapServer/WMSServer?request=GetCapabilities&service=WMS,"expected string or bytes-like object"
-2023-12-24T02:47:06.583924+01:00,KT_GE,https://ge.ch/sitgags1/services/VECTOR/SITG_OPENDATA_04/MapServer/WMSServer?request=GetCapabilities&service=WMS,"expected string or bytes-like object"
+2023-12-31T03:12:39.648030+01:00,KT_GE,https://ge.ch/sitgags1/services/VECTOR/SITG_OPENDATA_03/MapServer/WMSServer?request=GetCapabilities&service=WMS,"GET requested yielded HTTP response status code 400"
