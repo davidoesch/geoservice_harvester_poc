@@ -1,0 +1,5 @@
+Timestamp,Operator,URL,Issue
+2024-02-11T04:07:04.139131+01:00,KT_SO,https://geo.so.ch/api/wfs?SERVICE=WFS&REQUEST=GetCapabilities,"undefined entity: line 3, column 32"
+2024-02-11T04:07:25.620385+01:00,KT_SO,https://geo.so.ch/api/wms?SERVICE=WMS&REQUEST=GetCapabilities,"undefined entity: line 3, column 32"
+2024-02-11T04:07:47.280780+01:00,KT_SO,https://geo.so.ch/api/wmts/1.0.0/WMTSCapabilities.xml,"undefined entity: line 3, column 32"
+2024-02-11T04:08:09.161297+01:00,KT_SO,https://geo.so.ch/wms/oereb?SERVICE=WMS&REQUEST=GetCapabilities,"undefined entity: line 3, column 32"
