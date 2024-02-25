@@ -1,4 +1,4 @@
 Timestamp,Operator,URL,Issue
-2024-02-18T06:11:19.325413+01:00,KT_ZH,https://wms.zh.ch/kkgeo_gws_zh?service=WMS&request=GetCapabilities,"expected string or bytes-like object"
-2024-02-18T06:12:41.410245+01:00,KT_ZH,https://wms.zh.ch/AwelWindpotenzialZHWMS?service=WMS&request=GetCapabilities,"expected string or bytes-like object"
-2024-02-18T06:15:45.601941+01:00,KT_ZH,https://maps.zh.ch/wfs/AwelWbAbflussZHWFS?service=WFS&request=GetCapabilities,"expected string or bytes-like object"
+2024-02-25T04:14:27.953951+01:00,KT_ZH,https://wms.zh.ch/kkgeo_gws_zh?service=WMS&request=GetCapabilities,"expected string or bytes-like object"
+2024-02-25T04:15:41.374753+01:00,KT_ZH,https://wms.zh.ch/AwelWindpotenzialZHWMS?service=WMS&request=GetCapabilities,"expected string or bytes-like object"
+2024-02-25T04:18:28.993704+01:00,KT_ZH,https://maps.zh.ch/wfs/AwelWbAbflussZHWFS?service=WFS&request=GetCapabilities,"expected string or bytes-like object"
