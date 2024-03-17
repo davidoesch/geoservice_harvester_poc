@@ -1,25 +1,25 @@
 Owner,Date,Current dataset count,Mean dataset count over last 30 days,Dataset ratio (percent),Dataset change (percent),Classification
-KT_AI,10.03.2024,213,211.0,100.9,0.9,Improved
-KT_AR,10.03.2024,237,235.0,100.9,0.9,Improved
-KT_AG,10.03.2024,897,895.25,100.2,0.2,Improved
-KT_BL,10.03.2024,1341,1341.0,100.0,0.0,Stable
-KT_BS,10.03.2024,995,2012.75,49.4,-50.6,Suspicious. Maybe services endpoints have changed?
-KT_BE,10.03.2024,1024,1008.25,101.6,1.6,Improved
-KT_GE,10.03.2024,141,291.75,48.3,-51.7,Suspicious. Maybe services endpoints have changed?
-KT_GL,10.03.2024,446,444.5,100.3,0.3,Improved
-KT_GR,10.03.2024,1931,1928.0,100.2,0.2,Improved
-KT_JU,10.03.2024,1158,1156.0,100.2,0.2,Improved
-KT_SG,10.03.2024,655,655.0,100.0,0.0,Stable
-KT_SH,10.03.2024,188,187.5,100.3,0.3,Improved
-KT_SO,10.03.2024,652,644.3333333333334,101.2,1.2,Improved
-KT_SZ,10.03.2024,2163,2204.75,98.1,-1.9,Decreased
-KT_TG,10.03.2024,1061,1061.0,100.0,0.0,Stable
-KT_TI,10.03.2024,1362,1357.75,100.3,0.3,Improved
-KT_UR,10.03.2024,534,533.5,100.1,0.1,Improved
-KT_ZG,10.03.2024,814,816.0,99.8,-0.2,Decreased
-KT_ZH,10.03.2024,1973,1973.5,100.0,0.0,Stable
-KT_VD,10.03.2024,351,351.25,99.9,-0.1,Decreased
-KT_FR,10.03.2024,693,692.25,100.1,0.1,Improved
-FL_LI,10.03.2024,113,92.0,122.8,22.8,Improved
-Geodienste,10.03.2024,656,656.0,100.0,0.0,Stable
-Bund,10.03.2024,1402,1402.5,100.0,0.0,Stable
+KT_AI,17.03.2024,213,211.75,100.6,0.6,Improved
+KT_AR,17.03.2024,238,235.75,101.0,1.0,Improved
+KT_AG,17.03.2024,898,895.5,100.3,0.3,Improved
+KT_BL,17.03.2024,1341,1341.0,100.0,0.0,Stable
+KT_BS,17.03.2024,995,1570.75,63.3,-36.7,Suspicious. Maybe services endpoints have changed?
+KT_BE,17.03.2024,1025,1008.5,101.6,1.6,Improved
+KT_GE,17.03.2024,132,240.5,54.9,-45.1,Suspicious. Maybe services endpoints have changed?
+KT_GL,17.03.2024,446,445.0,100.2,0.2,Improved
+KT_GR,17.03.2024,1931,1928.75,100.1,0.1,Improved
+KT_JU,17.03.2024,1170,1156.75,101.1,1.1,Improved
+KT_SG,17.03.2024,655,655.0,100.0,0.0,Stable
+KT_SH,17.03.2024,189,187.25,100.9,0.9,Improved
+KT_SO,17.03.2024,652,646.25,100.9,0.9,Improved
+KT_SZ,17.03.2024,1904,2190.0,86.9,-13.1,Strongly decreased
+KT_TG,17.03.2024,1061,1061.0,100.0,0.0,Stable
+KT_TI,17.03.2024,1367,1361.0,100.4,0.4,Improved
+KT_UR,17.03.2024,534,533.75,100.0,0.0,Stable
+KT_ZG,17.03.2024,815,815.0,100.0,0.0,Stable
+KT_ZH,17.03.2024,1976,1973.75,100.1,0.1,Improved
+KT_VD,17.03.2024,350,351.25,99.6,-0.4,Decreased
+KT_FR,17.03.2024,694,692.25,100.3,0.3,Improved
+FL_LI,17.03.2024,113,97.25,116.2,16.2,Improved
+Geodienste,17.03.2024,656,656.0,100.0,0.0,Stable
+Bund,17.03.2024,1403,1402.5,100.0,0.0,Stable
