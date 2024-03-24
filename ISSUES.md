@@ -1,6 +1,6 @@
-# Issues found during the last run (17.03.2024)
+# Issues found during the last run (24.03.2024)
 
-- KT_ZH: [4 issue(s)](tools/KT_ZH_errors.csv)
+- KT_ZH: [5 issue(s)](tools/KT_ZH_errors.csv)
 - KT_SO: [2 issue(s)](tools/KT_SO_errors.csv)
 - KT_BS: [1 issue(s)](tools/KT_BS_errors.csv)
 - KT_FR: [35 issue(s)](tools/KT_FR_errors.csv)
