@@ -50,11 +50,6 @@ def remove_identical_lines(input_file, output_file):
 
 
 
-
-
-import csv
-import requests
-
 def get_ogc_services_for_canton(canton_organization, csv_file, canton_short, rows=1000):
     """
     Retrieves a list of all WMS, WFS, and WMTS services for a specified canton from the Open Data Swiss API
@@ -142,4 +137,34 @@ def extract_urls_with_getcapabilities(source_url, csv_file, canton):
         for url in urls_with_get_capabilities:
             writer.writerow([canton, url])
 
+def delete_matching_lines(file1_path, file2_path):
+    """
+    Delete lines in file1 that are also present in file2.
+
+    Parameters:
+    file1_path (str): Path to the first file.
+    file2_path (str): Path to the second file.
+
+    # Example usage:
+        delete_matching_lines('path/to/file1.txt', 'path/to/file2.txt')
+    """
+    # Read file2 and store its lines in a set for quick lookup
+    with open(file2_path, 'r') as file2:
+        file2_lines = set(file2.readlines())
+
+    # Read file1 and filter out lines that are also in file2
+    with open(file1_path, 'r') as file1:
+        file1_lines = file1.readlines()
+
+    # Create a list to store the new content of file1
+    new_file1_lines = [line for line in file1_lines if line not in file2_lines]
+
+    # Write the filtered content back to file1
+    with open(file1_path, 'w') as file1:
+        file1.writelines(new_file1_lines)
+
+    print(f"Lines from {file1_path} that are also in {file2_path} have been deleted.")
+
+breakpoint()
+print("testinh")
 

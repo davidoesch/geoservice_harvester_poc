@@ -310,7 +310,7 @@ def get_service_info(source):
                                                      service.contents[i].boundingBoxWGS84[2],
                                                      service.contents[i].boundingBoxWGS84[3]),
                                                size=(256, 256), format='image/png',
-                                               transparent=True, timeout=12)
+                                               transparent=True, timeout=10)
                                 # Then extract abstract etc
                                 if service_title is not None:
                                     layertree = "%s/%s/%s" % (server_operator,
