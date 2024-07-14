@@ -1,4 +1,4 @@
 Timestamp,Operator,URL,Issue
-2024-07-07T05:44:52.804050+02:00,KT_GE,https://ge.ch/sitgags1/services/VECTOR/SITG_OPENDATA_01/MapServer/WMSServer?request=GetCapabilities&service=WMS,"expected string or bytes-like object"
-2024-07-07T05:44:56.025695+02:00,KT_GE,https://ge.ch/sitgags1/services/VECTOR/SITG_OPENDATA_02/MapServer/WMSServer?request=GetCapabilities&service=WMS,"expected string or bytes-like object"
-2024-07-07T05:44:59.106936+02:00,KT_GE,https://ge.ch/sitgags1/services/VECTOR/SITG_OPENDATA_04/MapServer/WMSServer?request=GetCapabilities&service=WMS,"expected string or bytes-like object"
+2024-07-14T05:56:37.388612+02:00,KT_GE,https://ge.ch/sitgags1/services/VECTOR/SITG_OPENDATA_01/MapServer/WMSServer?request=GetCapabilities&service=WMS,"expected string or bytes-like object"
+2024-07-14T05:56:41.239103+02:00,KT_GE,https://ge.ch/sitgags1/services/VECTOR/SITG_OPENDATA_02/MapServer/WMSServer?request=GetCapabilities&service=WMS,"expected string or bytes-like object"
+2024-07-14T05:56:45.252189+02:00,KT_GE,https://ge.ch/sitgags1/services/VECTOR/SITG_OPENDATA_04/MapServer/WMSServer?request=GetCapabilities&service=WMS,"expected string or bytes-like object"
