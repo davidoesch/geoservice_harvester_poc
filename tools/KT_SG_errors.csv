@@ -1,2 +1,4 @@
 Timestamp,Operator,URL,Issue
-2024-08-11T06:21:13.874808+02:00,KT_SG,https://services.geo.sg.ch/wss/service/SG00019_WMS/guest?REQUEST=GetCapabilities,"Service does not seem to be a valid WMS, WMTS or WFS"
+2024-08-18T05:56:34.684243+02:00,KT_SG,https://services.geo.sg.ch/wss/service/SG00019_WMS/guest?REQUEST=GetCapabilities,"GET requested yielded HTTP response status code 403"
+2024-08-18T05:57:00.170131+02:00,KT_SG,https://services.geo.sg.ch/wss/service/SG00034_WFS/guest?REQUEST=GetCapabilities,"Service does not seem to be a valid WMS, WMTS or WFS"
+2024-08-18T05:57:01.590644+02:00,KT_SG,https://services.geo.sg.ch/wss/service/SG00034_WMS/guest?REQUEST=GetCapabilities,"Service does not seem to be a valid WMS, WMTS or WFS"
