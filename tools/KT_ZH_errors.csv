@@ -1,7 +1,6 @@
 Timestamp,Operator,URL,Issue
-2024-08-18T06:35:42.550616+02:00,KT_ZH,https://wms.zh.ch/OGDAwelLHKlimaanalyseZH?service=WMS&request=GetCapabilities,"expected string or bytes-like object"
-2024-08-18T06:38:04.443497+02:00,KT_ZH,https://maps.zh.ch/wfs/OerebKatasterZHWFS?service=WFS&request=GetCapabilities,"GET requested yielded HTTP response status code 401"
-2024-08-18T06:38:07.485145+02:00,KT_ZH,https://maps.zh.ch/wfs/SportanlagenZHWFS?service=WFS&request=GetCapabilities,"GET requested yielded HTTP response status code 401"
-2024-08-18T06:38:20.202244+02:00,KT_ZH,https://maps.zh.ch/wfs/TbaBaustellenZHWFS?service=WFS&request=GetCapabilities,"GET requested yielded HTTP response status code 401"
-2024-08-18T06:38:27.884075+02:00,KT_ZH,https://maps.zh.ch/wfs/TBAVMSZHWFS?service=WFS&request=GetCapabilities,"GET requested yielded HTTP response status code 401"
-2024-08-18T06:38:40.223729+02:00,KT_ZH,https://maps.zh.ch/wfs/TBA9ZHWFS?service=WFS&request=GetCapabilities,"GET requested yielded HTTP response status code 401"
+2024-08-25T07:14:23.621339+02:00,KT_ZH,https://wms.zh.ch/OGDAwelLHKlimaanalyseZH?service=WMS&request=GetCapabilities,"expected string or bytes-like object"
+2024-08-25T07:17:40.431854+02:00,KT_ZH,https://maps.zh.ch/wfs/SportanlagenZHWFS?service=WFS&request=GetCapabilities,"GET requested yielded HTTP response status code 401"
+2024-08-25T07:17:59.119767+02:00,KT_ZH,https://maps.zh.ch/wfs/TbaBaustellenZHWFS?service=WFS&request=GetCapabilities,"GET requested yielded HTTP response status code 401"
+2024-08-25T07:18:10.660549+02:00,KT_ZH,https://maps.zh.ch/wfs/TBAVMSZHWFS?service=WFS&request=GetCapabilities,"GET requested yielded HTTP response status code 401"
+2024-08-25T07:18:29.459399+02:00,KT_ZH,https://maps.zh.ch/wfs/TBA9ZHWFS?service=WFS&request=GetCapabilities,"GET requested yielded HTTP response status code 401"
