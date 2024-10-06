@@ -1,0 +1,3 @@
+Timestamp,Operator,URL,Issue
+2024-10-06T07:34:02.111857+02:00,KT_FR,https://geo.fr.ch/ags/services/OpenData/Limites_forestieres_statiques/MapServer/WFSServer?request=GetCapabilities&service=WFS,"GET requested yielded HTTP response status code 499"
+2024-10-06T07:55:10.410249+02:00,KT_FR,https://geo.fr.ch/ags/services/OpenData/Limites_forestieres_statiques/MapServer/WMSServer?request=GetCapabilities&service=WMS,"GET requested yielded HTTP response status code 499"
