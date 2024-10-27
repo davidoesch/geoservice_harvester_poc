@@ -1,0 +1,3 @@
+Timestamp,Operator,URL,Issue
+2024-10-27T08:00:23.928731+01:00,Geodienste,https://geodienste.ch/db/av_situationsplan/deu?SERVICE=WFS&REQUEST=GetCapabilities,"Service does not seem to be a valid WMS, WMTS or WFS"
+2024-10-27T08:00:27.974616+01:00,Geodienste,https://geodienste.ch/db/gefahrenkarten_v1_3_0/deu?SERVICE=WFS&REQUEST=GetCapabilities,"not well-formed (invalid token): line 6, column 31"
