@@ -1,4 +1,4 @@
-# Issues found during the last run (03.11.2024)
+# Issues found during the last run (10.11.2024)
 
 - KT_SG: [1 issue(s)](tools/KT_SG_errors.csv)
 - KT_TG: [4 issue(s)](tools/KT_TG_errors.csv)
