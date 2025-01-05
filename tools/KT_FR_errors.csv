@@ -1,7 +1,7 @@
 Timestamp,Operator,URL,Issue
-2024-12-29T06:41:40.696217+01:00,KT_FR,https://geo.fr.ch/ags/services/OpenData/Limites_forestieres_statiques/MapServer/WFSServer?request=GetCapabilities&service=WFS,"GET requested yielded HTTP response status code 499"
-2024-12-29T06:48:56.835504+01:00,KT_FR,https://geo.fr.ch/ags/services/OpenData/Stations_meteo_degres_jours_et_temperatures_moyennes/MapServer/WFSServer?request=GetCapabilities&service=WFS,"GET requested yielded HTTP response status code 499"
-2024-12-29T06:51:13.550795+01:00,KT_FR,https://geo.fr.ch/ags/services/OpenData/Zones_alluviales/MapServer/WFSServer?request=GetCapabilities&service=WFS,"GET requested yielded HTTP response status code 499"
-2024-12-29T07:06:57.380166+01:00,KT_FR,https://geo.fr.ch/ags/services/OpenData/Zones_alluviales/MapServer/WMSServer?request=GetCapabilities&service=WMS,"GET requested yielded HTTP response status code 499"
-2024-12-29T07:07:16.359089+01:00,KT_FR,https://geo.fr.ch/ags/services/OpenData/Limites_forestieres_statiques/MapServer/WMSServer?request=GetCapabilities&service=WMS,"GET requested yielded HTTP response status code 499"
-2024-12-29T07:10:49.297785+01:00,KT_FR,https://geo.fr.ch/ags/services/OpenData/Stations_meteo_degres_jours_et_temperatures_moyennes/MapServer/WMSServer?request=GetCapabilities&service=WMS,"GET requested yielded HTTP response status code 499"
+2025-01-05T06:44:45.213691+01:00,KT_FR,https://geo.fr.ch/ags/services/OpenData/Limites_forestieres_statiques/MapServer/WFSServer?request=GetCapabilities&service=WFS,"GET requested yielded HTTP response status code 499"
+2025-01-05T06:52:45.212082+01:00,KT_FR,https://geo.fr.ch/ags/services/OpenData/Stations_meteo_degres_jours_et_temperatures_moyennes/MapServer/WFSServer?request=GetCapabilities&service=WFS,"GET requested yielded HTTP response status code 499"
+2025-01-05T06:55:14.673855+01:00,KT_FR,https://geo.fr.ch/ags/services/OpenData/Zones_alluviales/MapServer/WFSServer?request=GetCapabilities&service=WFS,"GET requested yielded HTTP response status code 499"
+2025-01-05T07:12:33.725548+01:00,KT_FR,https://geo.fr.ch/ags/services/OpenData/Zones_alluviales/MapServer/WMSServer?request=GetCapabilities&service=WMS,"GET requested yielded HTTP response status code 499"
+2025-01-05T07:12:54.034495+01:00,KT_FR,https://geo.fr.ch/ags/services/OpenData/Limites_forestieres_statiques/MapServer/WMSServer?request=GetCapabilities&service=WMS,"GET requested yielded HTTP response status code 499"
+2025-01-05T07:16:49.173345+01:00,KT_FR,https://geo.fr.ch/ags/services/OpenData/Stations_meteo_degres_jours_et_temperatures_moyennes/MapServer/WMSServer?request=GetCapabilities&service=WMS,"GET requested yielded HTTP response status code 499"
