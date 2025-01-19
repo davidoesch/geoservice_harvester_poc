@@ -1,7 +1,8 @@
-# Issues found during the last run (12.01.2025)
+# Issues found during the last run (19.01.2025)
 
 - KT_SO: [2 issue(s)](tools/KT_SO_errors.csv)
 - KT_ZG: [131 issue(s)](tools/KT_ZG_errors.csv)
+- KT_AG: [1 issue(s)](tools/KT_AG_errors.csv)
 - KT_FR: [10 issue(s)](tools/KT_FR_errors.csv)
 - KT_TG: [4 issue(s)](tools/KT_TG_errors.csv)
 - KT_SG: [2 issue(s)](tools/KT_SG_errors.csv)
