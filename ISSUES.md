@@ -1,4 +1,4 @@
-# Issues found during the last run (02.02.2025)
+# Issues found during the last run (09.02.2025)
 
 - KT_FR: [10 issue(s)](tools/KT_FR_errors.csv)
 - KT_SG: [2 issue(s)](tools/KT_SG_errors.csv)
