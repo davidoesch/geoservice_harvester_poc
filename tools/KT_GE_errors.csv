@@ -1,4 +1,4 @@
 Timestamp,Operator,URL,Issue
-2025-04-13T07:20:40.292788+02:00,KT_GE,https://ge.ch/sitgags1/services/VECTOR/SITG_OPENDATA_01/MapServer/WMSServer?request=GetCapabilities&service=WMS,"GET requested yielded HTTP response status code 502"
-2025-04-13T07:20:40.974196+02:00,KT_GE,https://ge.ch/sitgags1/services/VECTOR/SITG_OPENDATA_02/MapServer/WMSServer?request=GetCapabilities&service=WMS,"GET requested yielded HTTP response status code 502"
-2025-04-13T07:20:41.643245+02:00,KT_GE,https://ge.ch/sitgags1/services/VECTOR/SITG_OPENDATA_04/MapServer/WMSServer?request=GetCapabilities&service=WMS,"GET requested yielded HTTP response status code 502"
+2025-04-20T05:48:32.026367+02:00,KT_GE,https://ge.ch/sitgags1/services/VECTOR/SITG_OPENDATA_01/MapServer/WMSServer?request=GetCapabilities&service=WMS,"GET requested yielded HTTP response status code 404"
+2025-04-20T05:48:32.609264+02:00,KT_GE,https://ge.ch/sitgags1/services/VECTOR/SITG_OPENDATA_02/MapServer/WMSServer?request=GetCapabilities&service=WMS,"GET requested yielded HTTP response status code 404"
+2025-04-20T05:48:33.363958+02:00,KT_GE,https://ge.ch/sitgags1/services/VECTOR/SITG_OPENDATA_04/MapServer/WMSServer?request=GetCapabilities&service=WMS,"GET requested yielded HTTP response status code 404"
