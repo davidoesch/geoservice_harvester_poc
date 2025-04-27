@@ -1,5 +1,6 @@
 Timestamp,Operator,URL,Issue
-2025-04-20T06:26:18.720043+02:00,KT_TG,https://ows.geo.tg.ch/geofy_access_proxy/waldreservate?service=WMS&version=1.3.0&request=GetCapabilities,"GET requested yielded HTTP response status code 401"
-2025-04-20T06:26:19.352053+02:00,KT_TG,https://ows.geo.tg.ch/geofy_access_proxy/waldreservate?service=WMS&version=1.3.0&request=GetCapabilities,"GET requested yielded HTTP response status code 401"
-2025-04-20T06:30:59.791392+02:00,KT_TG,https://ows.geo.tg.ch/geofy_access_proxy/waldreservate?service=WFS&version=2.0.0&request=GetCapabilities,"GET requested yielded HTTP response status code 401"
-2025-04-20T06:31:00.424727+02:00,KT_TG,https://ows.geo.tg.ch/geofy_access_proxy/waldreservate?service=WFS&version=2.0.0&request=GetCapabilities,"GET requested yielded HTTP response status code 401"
+2025-04-27T07:09:44.020474+02:00,KT_TG,https://ows.geo.tg.ch/geofy_access_proxy/waldreservate?service=WMS&version=1.3.0&request=GetCapabilities,"GET requested yielded HTTP response status code 401"
+2025-04-27T07:09:44.861035+02:00,KT_TG,https://ows.geo.tg.ch/geofy_access_proxy/waldreservate?service=WMS&version=1.3.0&request=GetCapabilities,"GET requested yielded HTTP response status code 401"
+2025-04-27T07:11:51.448188+02:00,KT_TG,https://ows.geo.tg.ch/geofy_access_proxy/hintergrundplan?Service=WMS&Version=1.3.0&Request=GetCapabilities,"GET requested yielded HTTP response status code 401"
+2025-04-27T07:16:12.249881+02:00,KT_TG,https://ows.geo.tg.ch/geofy_access_proxy/waldreservate?service=WFS&version=2.0.0&request=GetCapabilities,"GET requested yielded HTTP response status code 401"
+2025-04-27T07:16:13.075476+02:00,KT_TG,https://ows.geo.tg.ch/geofy_access_proxy/waldreservate?service=WFS&version=2.0.0&request=GetCapabilities,"GET requested yielded HTTP response status code 401"
