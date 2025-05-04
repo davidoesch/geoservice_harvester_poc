@@ -1,4 +1,5 @@
 Timestamp,Operator,URL,Issue
-2025-04-27T06:40:25.547951+02:00,KT_SG,https://services.geo.sg.ch/wss/service/SG00008_WMS/guest?REQUEST=GetCapabilities,"GET requested yielded HTTP response status code 404"
-2025-04-27T06:43:09.359372+02:00,KT_SG,https://services.geo.sg.ch/wss/service/SG00038_WMS/guest?REQUEST=GetCapabilities,"GET requested yielded HTTP response status code 404"
-2025-04-27T06:45:56.914287+02:00,KT_SG,https://services.geo.sg.ch/wss/service/SG00019_WMS/guest?REQUEST=GetCapabilities,"GET requested yielded HTTP response status code 403"
+2025-05-04T06:25:29.803461+02:00,KT_SG,https://services.geo.sg.ch/wss/service/SG00008_WMS/guest?REQUEST=GetCapabilities,"GET requested yielded HTTP response status code 404"
+2025-05-04T06:27:20.117864+02:00,KT_SG,https://services.geo.sg.ch/wss/service/SG00038_WMS/guest?REQUEST=GetCapabilities,"GET requested yielded HTTP response status code 404"
+2025-05-04T06:29:20.605512+02:00,KT_SG,https://services.geo.sg.ch/wss/service/SG00019_WMS/guest?REQUEST=GetCapabilities,"GET requested yielded HTTP response status code 403"
+2025-05-04T06:29:52.376228+02:00,KT_SG,https://services.geo.sg.ch/wss/service/SG00052_WMS/guest?REQUEST=GetCapabilities,"'NoneType' object has no attribute 'identification'"
