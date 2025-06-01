@@ -1,3 +1,4 @@
 Timestamp,Operator,URL,Issue
-2025-05-25T07:44:14.374151+02:00,Geodienste,https://geodienste.ch/db/planungszonen_v1_0_0/deu?SERVICE=WMS&REQUEST=GetCapabilities,"GET requested yielded HTTP response status code 400"
-2025-05-25T07:45:04.350456+02:00,Geodienste,https://geodienste.ch/db/planungszonen_v1_0_0/deu?SERVICE=WFS&REQUEST=GetCapabilities,"GET requested yielded HTTP response status code 400"
+2025-06-01T08:00:08.726008+02:00,Geodienste,https://geodienste.ch/db/kataster_belasteter_standorte/deu?SERVICE=WMS&REQUEST=GetCapabilities,"'NoneType' object has no attribute 'identification'"
+2025-06-01T08:01:06.171239+02:00,Geodienste,https://geodienste.ch/db/planungszonen_v1_0_0/deu?SERVICE=WMS&REQUEST=GetCapabilities,"GET requested yielded HTTP response status code 400"
+2025-06-01T08:01:51.646994+02:00,Geodienste,https://geodienste.ch/db/planungszonen_v1_0_0/deu?SERVICE=WFS&REQUEST=GetCapabilities,"GET requested yielded HTTP response status code 400"
