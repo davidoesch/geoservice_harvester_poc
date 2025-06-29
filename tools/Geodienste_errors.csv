@@ -1,3 +1,7 @@
 Timestamp,Operator,URL,Issue
-2025-06-22T07:46:38.419768+02:00,Geodienste,https://geodienste.ch/db/planungszonen_v1_0_0/deu?SERVICE=WMS&REQUEST=GetCapabilities,"GET requested yielded HTTP response status code 400"
-2025-06-22T07:47:22.006068+02:00,Geodienste,https://geodienste.ch/db/planungszonen_v1_0_0/deu?SERVICE=WFS&REQUEST=GetCapabilities,"GET requested yielded HTTP response status code 400"
+2025-06-29T08:08:13.229255+02:00,Geodienste,https://geodienste.ch/db/planungszonen_v1_0_0/deu?SERVICE=WMS&REQUEST=GetCapabilities,"GET requested yielded HTTP response status code 400"
+2025-06-29T08:09:00.815297+02:00,Geodienste,https://geodienste.ch/db/av/deu?SERVICE=WFS&REQUEST=GetCapabilities,"not well-formed (invalid token): line 5, column 32"
+2025-06-29T08:09:02.998046+02:00,Geodienste,https://geodienste.ch/db/av_situationsplan/deu?SERVICE=WFS&REQUEST=GetCapabilities,"Service does not seem to be a valid WMS, WMTS or WFS"
+2025-06-29T08:09:07.915262+02:00,Geodienste,https://geodienste.ch/db/gefahrenkarten_v1_3_0/deu?SERVICE=WFS&REQUEST=GetCapabilities,"Service does not seem to be a valid WMS, WMTS or WFS"
+2025-06-29T08:09:10.110248+02:00,Geodienste,https://geodienste.ch/db/kantonale_ausnahmetransportrouten/deu?SERVICE=WFS&REQUEST=GetCapabilities,"Service does not seem to be a valid WMS, WMTS or WFS"
+2025-06-29T08:09:40.891569+02:00,Geodienste,https://geodienste.ch/db/planungszonen_v1_0_0/deu?SERVICE=WFS&REQUEST=GetCapabilities,"GET requested yielded HTTP response status code 400"
