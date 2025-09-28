@@ -1,5 +1,3 @@
 Timestamp,Operator,URL,Issue
-2025-09-21T07:51:57.968192+02:00,Geodienste,https://geodienste.ch/db/planungszonen_v1_0_0/deu?SERVICE=WMS&REQUEST=GetCapabilities,"GET requested yielded HTTP response status code 400"
-2025-09-21T07:52:43.829643+02:00,Geodienste,https://geodienste.ch/db/npl_waldabstandslinien/deu?SERVICE=WFS&REQUEST=GetCapabilities,"Service does not seem to be a valid WMS, WMTS or WFS"
-2025-09-21T07:52:45.996115+02:00,Geodienste,https://geodienste.ch/db/planungszonen_v1_0_0/deu?SERVICE=WFS&REQUEST=GetCapabilities,"GET requested yielded HTTP response status code 400"
-2025-09-21T07:52:48.725583+02:00,Geodienste,https://geodienste.ch/db/stromversorgungssicherheit_netzgebiete_v1_2_0/deu?SERVICE=WFS&REQUEST=GetCapabilities,"not well-formed (invalid token): line 5, column 32"
+2025-09-28T08:33:54.347275+02:00,Geodienste,https://geodienste.ch/db/planungszonen_v1_0_0/deu?SERVICE=WMS&REQUEST=GetCapabilities,"GET requested yielded HTTP response status code 400"
+2025-09-28T08:35:00.966209+02:00,Geodienste,https://geodienste.ch/db/planungszonen_v1_0_0/deu?SERVICE=WFS&REQUEST=GetCapabilities,"GET requested yielded HTTP response status code 400"
