@@ -1,6 +1,6 @@
 Timestamp,Operator,URL,Issue
-2025-10-26T06:18:44.940018+01:00,KT_ZH,https://wms.zh.ch/VeloparkieranlagenZHWMS?service=WMS&request=GetCapabilities,"expected string or bytes-like object"
-2025-10-26T06:19:06.455668+01:00,KT_ZH,https://wms.zh.ch/OGDFuJ2ZH?service=WMS&request=GetCapabilities,"expected string or bytes-like object"
-2025-10-26T06:20:58.005811+01:00,KT_ZH,https://wms.zh.ch/OGDAwelLHKlimaanalyseZH?service=WMS&request=GetCapabilities,"expected string or bytes-like object"
-2025-10-26T06:23:45.783888+01:00,KT_ZH,https://maps.zh.ch/wfs/VeloparkieranlagenZHWFS?service=WFS&request=GetCapabilities,"expected string or bytes-like object"
-2025-10-26T06:23:48.525398+01:00,KT_ZH,https://maps.zh.ch/wfs/ALNWaldarealZHWFS?service=WFS&request=GetCapabilities,"GET requested yielded HTTP response status code 401"
+2025-11-02T06:23:07.777793+01:00,KT_ZH,https://wms.zh.ch/VeloparkieranlagenZHWMS?service=WMS&request=GetCapabilities,"expected string or bytes-like object"
+2025-11-02T06:23:34.848266+01:00,KT_ZH,https://wms.zh.ch/OGDFuJ2ZH?service=WMS&request=GetCapabilities,"expected string or bytes-like object"
+2025-11-02T06:25:54.637990+01:00,KT_ZH,https://wms.zh.ch/OGDAwelLHKlimaanalyseZH?service=WMS&request=GetCapabilities,"expected string or bytes-like object"
+2025-11-02T06:29:20.990290+01:00,KT_ZH,https://maps.zh.ch/wfs/VeloparkieranlagenZHWFS?service=WFS&request=GetCapabilities,"expected string or bytes-like object"
+2025-11-02T06:29:24.565388+01:00,KT_ZH,https://maps.zh.ch/wfs/ALNWaldarealZHWFS?service=WFS&request=GetCapabilities,"GET requested yielded HTTP response status code 401"
