@@ -1,5 +1,5 @@
 Timestamp,Operator,URL,Issue
-2025-12-07T05:22:17.182103+01:00,KT_GR,https://wms.geo.gr.ch/regionen?service=WMS&request=GetCapabilities,"expected string or bytes-like object"
-2025-12-07T05:22:36.686783+01:00,KT_GR,https://wms.geo.gr.ch/bienenseuchen?service=WMS&request=GetCapabilities,"GET requested yielded HTTP response status code 404"
-2025-12-07T05:37:53.242446+01:00,KT_GR,https://wms.geo.gr.ch/regionen?service=WMS&request=GetCapabilities,"expected string or bytes-like object"
-2025-12-07T05:39:47.326119+01:00,KT_GR,https://wms.geo.gr.ch/uebersichtsplan?service=WMS&request=GetCapabilities,"GET requested yielded HTTP response status code 404"
+2025-12-21T05:31:06.957252+01:00,KT_GR,https://wms.geo.gr.ch/regionen?service=WMS&request=GetCapabilities,"expected string or bytes-like object"
+2025-12-21T05:31:22.544564+01:00,KT_GR,https://wms.geo.gr.ch/bienenseuchen?service=WMS&request=GetCapabilities,"GET requested yielded HTTP response status code 404"
+2025-12-21T05:43:30.829153+01:00,KT_GR,https://wms.geo.gr.ch/regionen?service=WMS&request=GetCapabilities,"expected string or bytes-like object"
+2025-12-21T05:45:01.566598+01:00,KT_GR,https://wms.geo.gr.ch/uebersichtsplan?service=WMS&request=GetCapabilities,"GET requested yielded HTTP response status code 404"
