@@ -1,7 +1,7 @@
-# Issues found during the last run (28.12.2025)
+# Issues found during the last run (04.01.2026)
 
 - KT_SG: [3 issue(s)](tools/KT_SG_errors.csv)
-- Geodienste: [2 issue(s)](tools/Geodienste_errors.csv)
+- Geodienste: [3 issue(s)](tools/Geodienste_errors.csv)
 - KT_TG: [5 issue(s)](tools/KT_TG_errors.csv)
 - KT_GR: [4 issue(s)](tools/KT_GR_errors.csv)
 - KT_GE: [3 issue(s)](tools/KT_GE_errors.csv)
