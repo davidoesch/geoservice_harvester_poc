@@ -1,2 +1,0 @@
-Timestamp,Operator,URL,Issue
-2026-01-18T03:06:35.751458+01:00,KT_AI,https://www.geoportal.ch/services/wms/ktai?SERVICE=WMS&REQUEST=GetCapabilities,"HTTPSConnectionPool(host='www.geoportal.ch', port=443): Max retries exceeded with url: /services/wms/ktai?SERVICE=WMS&REQUEST=GetCapabilities (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7f4b9a4b1c70>: Failed to establish a new connection: [Errno 110] Connection timed out'))"
