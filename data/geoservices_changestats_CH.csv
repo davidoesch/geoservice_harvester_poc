@@ -1,22 +1,23 @@
 Owner,Date,Current dataset count,Mean dataset count over last 30 days,Dataset ratio (percent),Dataset change (percent),Classification
-KT_AI,01.03.2026,240,407.75,58.9,-41.1,Suspicious. Maybe services endpoints have changed?
-KT_AR,01.03.2026,431,434.0,99.3,-0.7,Decreased
-KT_AG,01.03.2026,949,948.5,100.1,0.1,Improved
-KT_BL,01.03.2026,1410,1408.0,100.1,0.1,Improved
-KT_BS,01.03.2026,3075,2789.25,110.2,10.2,Improved
-KT_GL,01.03.2026,460,460.0,100.0,0.0,Stable
-KT_GR,01.03.2026,1995,1995.0,100.0,0.0,Stable
-KT_JU,01.03.2026,1547,1489.25,103.9,3.9,Improved
-KT_SG,01.03.2026,646,646.0,100.0,0.0,Stable
-KT_SH,01.03.2026,222,222.0,100.0,0.0,Stable
-KT_SO,01.03.2026,759,746.5,101.7,1.7,Improved
-KT_SZ,01.03.2026,2163,2170.0,99.7,-0.3,Decreased
-KT_TG,01.03.2026,1032,1032.0,100.0,0.0,Stable
-KT_TI,01.03.2026,1359,1358.25,100.1,0.1,Improved
-KT_UR,01.03.2026,915,906.5,100.9,0.9,Improved
-KT_ZH,01.03.2026,1893,1888.5,100.2,0.2,Improved
-KT_VD,01.03.2026,402,402.0,100.0,0.0,Stable
-KT_FR,01.03.2026,13,346.5,3.8,-96.2,Suspicious. Maybe services endpoints have changed?
-FL_LI,01.03.2026,151,150.5,100.3,0.3,Improved
-Geodienste,01.03.2026,672,672.0,100.0,0.0,Stable
-Bund,01.03.2026,1552,1551.75,100.0,0.0,Stable
+KT_AI,08.03.2026,242,364.5,66.4,-33.6,Suspicious. Maybe services endpoints have changed?
+KT_AR,08.03.2026,431,432.0,99.8,-0.2,Decreased
+KT_AG,08.03.2026,949,949.0,100.0,0.0,Stable
+KT_BL,08.03.2026,1410,1408.25,100.1,0.1,Improved
+KT_BS,08.03.2026,3075,2942.25,104.5,4.5,Improved
+KT_BE,08.03.2026,1460,1459.0,100.1,0.1,Improved
+KT_GL,08.03.2026,460,460.0,100.0,0.0,Stable
+KT_GR,08.03.2026,1995,1995.0,100.0,0.0,Stable
+KT_JU,08.03.2026,1547,1547.0,100.0,0.0,Stable
+KT_SG,08.03.2026,646,646.0,100.0,0.0,Stable
+KT_SH,08.03.2026,222,222.0,100.0,0.0,Stable
+KT_SO,08.03.2026,756,749.0,100.9,0.9,Improved
+KT_SZ,08.03.2026,2152,2167.5,99.3,-0.7,Decreased
+KT_TG,08.03.2026,1032,1032.0,100.0,0.0,Stable
+KT_TI,08.03.2026,1362,1359.0,100.2,0.2,Improved
+KT_UR,08.03.2026,915,909.75,100.6,0.6,Improved
+KT_ZH,08.03.2026,1879,1890.75,99.4,-0.6,Decreased
+KT_VD,08.03.2026,402,402.0,100.0,0.0,Stable
+KT_FR,08.03.2026,13,178.5,7.3,-92.7,Suspicious. Maybe services endpoints have changed?
+FL_LI,08.03.2026,151,151.0,100.0,0.0,Stable
+Geodienste,08.03.2026,672,672.0,100.0,0.0,Stable
+Bund,08.03.2026,1552,1552.25,100.0,0.0,Stable
