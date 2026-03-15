@@ -1,4 +1,4 @@
-# Issues found during the last run (08.03.2026)
+# Issues found during the last run (15.03.2026)
 
 - KT_SG: [3 issue(s)](tools/KT_SG_errors.csv)
 - KT_GE: [3 issue(s)](tools/KT_GE_errors.csv)
