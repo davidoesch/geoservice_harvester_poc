@@ -1,4 +1,4 @@
-# Issues found during the last run (19.04.2026)
+# Issues found during the last run (26.04.2026)
 
 - KT_SO: [3 issue(s)](tools/KT_SO_errors.csv)
 - KT_ZG: [131 issue(s)](tools/KT_ZG_errors.csv)
