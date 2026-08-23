@@ -1,4 +1,4 @@
-# Issues found during the last run (16.08.2026)
+# Issues found during the last run (23.08.2026)
 
 - KT_ZH: [10 issue(s)](tools/KT_ZH_errors.csv)
 - KT_TG: [11 issue(s)](tools/KT_TG_errors.csv)
@@ -10,5 +10,4 @@
 - Geodienste: [2 issue(s)](tools/Geodienste_errors.csv)
 - KT_GE: [3 issue(s)](tools/KT_GE_errors.csv)
 - KT_SG: [9 issue(s)](tools/KT_SG_errors.csv)
-- KT_AG: [1 issue(s)](tools/KT_AG_errors.csv)
 - KT_ZG: [131 issue(s)](tools/KT_ZG_errors.csv)
