@@ -1,4 +1,4 @@
-# Issues found during the last run (23.08.2026)
+# Issues found during the last run (30.08.2026)
 
 - KT_ZH: [10 issue(s)](tools/KT_ZH_errors.csv)
 - KT_TG: [11 issue(s)](tools/KT_TG_errors.csv)
