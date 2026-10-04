@@ -1,23 +1,23 @@
 Owner,Date,Current dataset count,Mean dataset count over last 30 days,Dataset ratio (percent),Dataset change (percent),Classification
-KT_AI,27.09.2026,231,230.25,100.3,0.3,Improved
-KT_AR,27.09.2026,263,263.75,99.7,-0.3,Decreased
-KT_AG,27.09.2026,969,973.5,99.5,-0.5,Decreased
-KT_BL,27.09.2026,1412,1424.0,99.2,-0.8,Decreased
-KT_BS,27.09.2026,2393,2547.0,94.0,-6.0,Decreased
-KT_BE,27.09.2026,1462,1461.75,100.0,0.0,Stable
-KT_GL,27.09.2026,443,394.25,112.4,12.4,Improved
-KT_GR,27.09.2026,1995,2025.0,98.5,-1.5,Decreased
-KT_JU,27.09.2026,1594,1596.0,99.9,-0.1,Decreased
-KT_SG,27.09.2026,608,608.0,100.0,0.0,Stable
-KT_SH,27.09.2026,236,236.0,100.0,0.0,Stable
-KT_SO,27.09.2026,796,783.75,101.6,1.6,Improved
-KT_SZ,27.09.2026,2206,2203.75,100.1,0.1,Improved
-KT_TG,27.09.2026,1021,1021.0,100.0,0.0,Stable
-KT_TI,27.09.2026,1203,1213.25,99.2,-0.8,Decreased
-KT_UR,27.09.2026,1058,1022.75,103.4,3.4,Improved
-KT_ZH,27.09.2026,1837,1835.25,100.1,0.1,Improved
-KT_VD,27.09.2026,419,419.0,100.0,0.0,Stable
-KT_FR,27.09.2026,13,13.0,100.0,0.0,Stable
-FL_LI,27.09.2026,155,154.5,100.3,0.3,Improved
-Geodienste,27.09.2026,673,673.0,100.0,0.0,Stable
-Bund,27.09.2026,1581,1580.75,100.0,0.0,Stable
+KT_AI,04.10.2026,176,230.0,76.5,-23.5,Suspicious. Maybe services endpoints have changed?
+KT_AR,04.10.2026,209,263.0,79.5,-20.5,Suspicious. Maybe services endpoints have changed?
+KT_AG,04.10.2026,578,972.0,59.5,-40.5,Suspicious. Maybe services endpoints have changed?
+KT_BL,04.10.2026,1412,1412.0,100.0,0.0,Stable
+KT_BS,04.10.2026,2324,2458.0,94.5,-5.5,Decreased
+KT_BE,04.10.2026,1463,1461.75,100.1,0.1,Improved
+KT_GL,04.10.2026,443,395.0,112.2,12.2,Improved
+KT_GR,04.10.2026,1995,2017.5,98.9,-1.1,Decreased
+KT_JU,04.10.2026,1594,1594.0,100.0,0.0,Stable
+KT_SG,04.10.2026,608,608.0,100.0,0.0,Stable
+KT_SH,04.10.2026,236,236.0,100.0,0.0,Stable
+KT_SO,04.10.2026,795,789.0,100.8,0.8,Improved
+KT_SZ,04.10.2026,2205,2205.5,100.0,0.0,Stable
+KT_TG,04.10.2026,1021,1021.0,100.0,0.0,Stable
+KT_TI,04.10.2026,1193,1207.5,98.8,-1.2,Decreased
+KT_UR,04.10.2026,1058,1034.5,102.3,2.3,Improved
+KT_ZH,04.10.2026,1386,1835.75,75.5,-24.5,Suspicious. Maybe services endpoints have changed?
+KT_VD,04.10.2026,424,419.0,101.2,1.2,Improved
+KT_FR,04.10.2026,13,13.0,100.0,0.0,Stable
+FL_LI,04.10.2026,155,155.0,100.0,0.0,Stable
+Geodienste,04.10.2026,673,673.0,100.0,0.0,Stable
+Bund,04.10.2026,1578,1580.75,99.8,-0.2,Decreased
