@@ -1,7 +1,7 @@
-# Issues found during the last run (18.10.2026)
+# Issues found during the last run (25.10.2026)
 
 - KT_VD: [1 issue(s)](tools/KT_VD_errors.csv)
-- KT_TI: [2 issue(s)](tools/KT_TI_errors.csv)
+- KT_TI: [4 issue(s)](tools/KT_TI_errors.csv)
 - KT_GE: [3 issue(s)](tools/KT_GE_errors.csv)
 - KT_SG: [9 issue(s)](tools/KT_SG_errors.csv)
 - KT_SO: [3 issue(s)](tools/KT_SO_errors.csv)
