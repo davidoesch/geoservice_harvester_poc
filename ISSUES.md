@@ -1,5 +1,10 @@
 # Issues found during the last run (08.11.2026)
 
-- CITY_Geneve: [3 issue(s)](tools/CITY_Geneve_errors.csv)
-- KT_GE: [30 issue(s)](tools/KT_GE_errors.csv)
-- KT_LU: [3 issue(s)](tools/KT_LU_errors.csv)
+- CITY_Emmen: [2 issue(s)](tools/CITY_Emmen_errors.csv)
+- CITY_Geneve: [1 issue(s)](tools/CITY_Geneve_errors.csv)
+- CITY_Pully: [3 issue(s)](tools/CITY_Pully_errors.csv)
+- CITY_Winterthur: [39 issue(s)](tools/CITY_Winterthur_errors.csv)
+- KT_GE: [5 issue(s)](tools/KT_GE_errors.csv)
+- KT_LU: [4 issue(s)](tools/KT_LU_errors.csv)
+- KT_TI: [2 issue(s)](tools/KT_TI_errors.csv)
+- KT_ZG: [107 issue(s)](tools/KT_ZG_errors.csv)

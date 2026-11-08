@@ -1,0 +1,4 @@
+Timestamp,Operator,URL,Issue
+2026-11-08T19:50:59.170341+01:00,CITY_Pully,https://www.sigip.ch/mapserv_proxy?ogcserver=ows&SERVICE=WFS&REQUEST=GetCapabilities,Connection timed out
+2026-11-08T19:54:03.841839+01:00,CITY_Pully,https://www.sigip.ch/mapserv_proxy?ogcserver=ows&SERVICE=WMS&REQUEST=GetCapabilities,Connection timed out
+2026-11-08T19:57:08.913346+01:00,CITY_Pully,https://www.sigip.ch/tiles/1.0.0/WMTSCapabilities.xml,Connection timed out

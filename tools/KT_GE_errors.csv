@@ -1,31 +1,6 @@
 Timestamp,Operator,URL,Issue
-2026-11-08T17:44:32.300514+01:00,KT_GE,https://vector.sitg.ge.ch/arcgis/services/PDCN_LIGNES_ELECTRIQUES_L/MapServer/WMSServer?SERVICE=WMS&REQUEST=GetCapabilities,GET request yielded HTTP response status code 400
-2026-11-08T17:44:32.447191+01:00,KT_GE,https://vector.sitg.ge.ch/arcgis/services/OTC_NORMES_STATIONNEMENT_PRIVE/MapServer/WFSServer?SERVICE=WFS&REQUEST=GetCapabilities,GET request yielded HTTP response status code 400
-2026-11-08T17:44:33.142558+01:00,KT_GE,https://vector.sitg.ge.ch/arcgis/services/RPU_COURS_EAU_S_ADOPT/MapServer/WMSServer?SERVICE=WMS&REQUEST=GetCapabilities,GET request yielded HTTP response status code 400
-2026-11-08T17:44:35.204581+01:00,KT_GE,https://vector.sitg.ge.ch/arcgis/services/CAD_ADRESSE_ARCHIVE/MapServer/WFSServer?SERVICE=WFS&REQUEST=GetCapabilities,GET request yielded HTTP response status code 400
-2026-11-08T17:44:36.490707+01:00,KT_GE,https://vector.sitg.ge.ch/arcgis/services/FFP_IE_HEXAGONE_200M/MapServer/WMSServer?SERVICE=WMS&REQUEST=GetCapabilities,GET request yielded HTTP response status code 400
-2026-11-08T17:44:37.150549+01:00,KT_GE,https://vector.sitg.ge.ch/arcgis/services/SCANE_CONDUCTIVITE_50_ISOL/MapServer/WMSServer?SERVICE=WMS&REQUEST=GetCapabilities,GET request yielded HTTP response status code 400
-2026-11-08T17:44:51.786556+01:00,KT_GE,https://vector.sitg.ge.ch/arcgis/services/CLIMAT_VENT_10M_4H00_P1B/MapServer/WFSServer?SERVICE=WFS&REQUEST=GetCapabilities,GET request yielded HTTP response status code 400
-2026-11-08T17:44:51.874688+01:00,KT_GE,https://vector.sitg.ge.ch/arcgis/services/LCE_OUVRAGES_REGULATION/MapServer/WFSServer?SERVICE=WFS&REQUEST=GetCapabilities,GET request yielded HTTP response status code 400
-2026-11-08T17:44:51.902930+01:00,KT_GE,https://vector.sitg.ge.ch/arcgis/services/RPU_PERCEE_VUE_ADOPT/MapServer/WFSServer?SERVICE=WFS&REQUEST=GetCapabilities,GET request yielded HTTP response status code 400
-2026-11-08T17:44:51.906011+01:00,KT_GE,https://vector.sitg.ge.ch/arcgis/services/AGGLO_PP2_ESP_ENJEU_PAYSAGE/MapServer/WFSServer?SERVICE=WFS&REQUEST=GetCapabilities,GET request yielded HTTP response status code 400
-2026-11-08T17:44:52.602168+01:00,KT_GE,https://vector.sitg.ge.ch/arcgis/services/REG_ENTREPRISE_ETABLISSEMENT/MapServer/WFSServer?SERVICE=WFS&REQUEST=GetCapabilities,GET request yielded HTTP response status code 400
-2026-11-08T17:44:52.625787+01:00,KT_GE,https://vector.sitg.ge.ch/arcgis/services/GEO_SANTE_LIEUX_VACCINATION/MapServer/WFSServer?SERVICE=WFS&REQUEST=GetCapabilities,GET request yielded HTTP response status code 400
-2026-11-08T17:45:32.615142+01:00,KT_GE,https://vector.sitg.ge.ch/arcgis/services/OTC_NORMES_STATIONNEMENT_PRIVE/MapServer/WMSServer?SERVICE=WMS&REQUEST=GetCapabilities,GET request yielded HTTP response status code 400
-2026-11-08T17:45:33.311185+01:00,KT_GE,https://vector.sitg.ge.ch/arcgis/services/RPU_DAB/MapServer/WFSServer?SERVICE=WFS&REQUEST=GetCapabilities,GET request yielded HTTP response status code 400
-2026-11-08T17:45:35.373598+01:00,KT_GE,https://vector.sitg.ge.ch/arcgis/services/CAD_ADRESSE_ARCHIVE/MapServer/WMSServer?SERVICE=WMS&REQUEST=GetCapabilities,GET request yielded HTTP response status code 400
-2026-11-08T17:45:37.350083+01:00,KT_GE,https://vector.sitg.ge.ch/arcgis/services/SCANE_CONDUCTIVITE_QUAT/MapServer/WFSServer?SERVICE=WFS&REQUEST=GetCapabilities,GET request yielded HTTP response status code 400
-2026-11-08T17:46:53.941999+01:00,KT_GE,https://vector.sitg.ge.ch/arcgis/services/PDCN_PARCS_PROJETS_P/MapServer/WMSServer?SERVICE=WMS&REQUEST=GetCapabilities,GET request yielded HTTP response status code 400
-2026-11-08T17:46:54.532661+01:00,KT_GE,https://vector.sitg.ge.ch/arcgis/services/OTC_PARKING/MapServer/WMSServer?SERVICE=WMS&REQUEST=GetCapabilities,GET request yielded HTTP response status code 400
-2026-11-08T17:46:56.380863+01:00,KT_GE,https://vector.sitg.ge.ch/arcgis/services/CAD_ADRESSE_NON_POSTALE/MapServer/WMSServer?SERVICE=WMS&REQUEST=GetCapabilities,GET request yielded HTTP response status code 400
-2026-11-08T17:47:06.023379+01:00,KT_GE,https://vector.sitg.ge.ch/arcgis/services/CLIMAT_VENT_10M_4H00_P2/MapServer/WFSServer?SERVICE=WFS&REQUEST=GetCapabilities,GET request yielded HTTP response status code 400
-2026-11-08T17:47:07.235963+01:00,KT_GE,https://vector.sitg.ge.ch/arcgis/services/LCE_OUVRAGES_SURFACIQUE/MapServer/WFSServer?SERVICE=WFS&REQUEST=GetCapabilities,GET request yielded HTTP response status code 400
-2026-11-08T17:47:07.838326+01:00,KT_GE,https://vector.sitg.ge.ch/arcgis/services/RPU_PERIMETRE_VALIDITE/MapServer/WFSServer?SERVICE=WFS&REQUEST=GetCapabilities,GET request yielded HTTP response status code 400
-2026-11-08T17:47:08.454060+01:00,KT_GE,https://vector.sitg.ge.ch/arcgis/services/AGGLO_PRE_EMPIRE_ROMAIN/MapServer/WFSServer?SERVICE=WFS&REQUEST=GetCapabilities,GET request yielded HTTP response status code 400
-2026-11-08T17:47:09.671961+01:00,KT_GE,https://vector.sitg.ge.ch/arcgis/services/GEO_SANTE_VACCINATION_PHARM/MapServer/WFSServer?SERVICE=WFS&REQUEST=GetCapabilities,GET request yielded HTTP response status code 400
-2026-11-08T17:47:15.302451+01:00,KT_GE,https://vector.sitg.ge.ch/arcgis/services/RPU_DAB_ADOPT/MapServer/WFSServer?SERVICE=WFS&REQUEST=GetCapabilities,GET request yielded HTTP response status code 400
-2026-11-08T17:47:56.553049+01:00,KT_GE,https://vector.sitg.ge.ch/arcgis/services/CAD_BATI3D_BASE/MapServer/WFSServer?SERVICE=WFS&REQUEST=GetCapabilities,GET request yielded HTTP response status code 400
-2026-11-08T17:47:57.169195+01:00,KT_GE,https://vector.sitg.ge.ch/arcgis/services/FFP_IE_HEXAGONE_25M/MapServer/WMSServer?SERVICE=WMS&REQUEST=GetCapabilities,Connection timed out
-2026-11-08T17:48:08.645132+01:00,KT_GE,https://vector.sitg.ge.ch/arcgis/services/AGGLO_PRE_EMPIRE_ROMAIN/MapServer/WMSServer?SERVICE=WMS&REQUEST=GetCapabilities,GET request yielded HTTP response status code 400
-2026-11-08T17:48:09.237179+01:00,KT_GE,https://vector.sitg.ge.ch/arcgis/services/RFO_SERVITUDE_LIGNE/MapServer/WFSServer?SERVICE=WFS&REQUEST=GetCapabilities,Connection timed out
-2026-11-08T17:48:18.496654+01:00,KT_GE,https://vector.sitg.ge.ch/arcgis/services/SCANE_CONDUCTIVITE_QUAT_ISOL/MapServer/WFSServer?SERVICE=WFS&REQUEST=GetCapabilities,GET request yielded HTTP response status code 400
+2026-11-08T19:52:55.863789+01:00,KT_GE,https://vector.sitg.ge.ch/arcgis/services/VIT_VIGNOBLE_FEDERAL/MapServer/WMSServer?SERVICE=WMS&REQUEST=GetCapabilities,Connection timed out
+2026-11-08T19:53:14.752615+01:00,KT_GE,https://vector.sitg.ge.ch/arcgis/services/CLIMAT_VENT_10M_4H00_P2/MapServer/WFSServer?SERVICE=WFS&REQUEST=GetCapabilities,Connection timed out
+2026-11-08T19:53:15.517590+01:00,KT_GE,https://vector.sitg.ge.ch/arcgis/services/OTC_SL_EQUIPEMENT_DETECTEUR/MapServer/WFSServer?SERVICE=WFS&REQUEST=GetCapabilities,Connection timed out
+2026-11-08T19:55:15.708170+01:00,KT_GE,https://vector.sitg.ge.ch/arcgis/services/CLIMAT_VENT_10M_4H00_P2/MapServer/WMSServer?SERVICE=WMS&REQUEST=GetCapabilities,Connection timed out
+2026-11-08T19:55:16.920689+01:00,KT_GE,https://vector.sitg.ge.ch/arcgis/services/OTC_SL_EQUIPEMENT_DETECTEUR/MapServer/WMSServer?SERVICE=WMS&REQUEST=GetCapabilities,Connection timed out

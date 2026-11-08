@@ -1,4 +1,2 @@
 Timestamp,Operator,URL,Issue
-2026-11-08T17:44:51.882289+01:00,CITY_Geneve,https://vector.sitg.ge.ch/arcgis/services/EIL_CARTE_PEDO_SOLS_AGRICOLES/MapServer/WFSServer?SERVICE=WFS&REQUEST=GetCapabilities,GET request yielded HTTP response status code 400
-2026-11-08T17:47:06.590790+01:00,CITY_Geneve,https://vector.sitg.ge.ch/arcgis/services/SIPV_EV_TOIT_VERT_2015/MapServer/WFSServer?SERVICE=WFS&REQUEST=GetCapabilities,GET request yielded HTTP response status code 400
-2026-11-08T17:48:06.759007+01:00,CITY_Geneve,https://vector.sitg.ge.ch/arcgis/services/SIPV_EV_TOIT_VERT_2015/MapServer/WMSServer?SERVICE=WMS&REQUEST=GetCapabilities,GET request yielded HTTP response status code 400
+2026-11-08T19:54:57.094836+01:00,CITY_Geneve,https://vector.sitg.ge.ch/arcgis/services/EIL_CARTE_PEDO_SOLS_AGRICOLES/MapServer/WFSServer?SERVICE=WFS&REQUEST=GetCapabilities,Connection timed out
