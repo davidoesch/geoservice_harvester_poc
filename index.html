@@ -131,21 +131,23 @@
         </div>
 
         <div class="selection-card" id="selection-card">
-          <div class="selection-head">
-            <h2><span data-i18n="selection">Meine Karte</span> <span class="count-badge" id="selection-count">0</span></h2>
-            <button type="button" class="btn btn-ghost btn-sm" id="clear-selection" data-i18n="clear">Leeren</button>
+          <div class="selection-top">
+            <div class="selection-head">
+              <h2><span data-i18n="selection">Meine Karte</span> <span class="count-badge" id="selection-count">0</span></h2>
+              <button type="button" class="btn btn-ghost btn-sm" id="clear-selection" data-i18n="clear">Leeren</button>
+            </div>
+            <div class="export-row" id="export-row" hidden>
+              <a class="btn btn-primary" id="open-mapgeo" target="_blank" rel="noopener">
+                <span data-i18n="openMapGeo">In map.geo.admin.ch öffnen</span>
+              </a>
+              <button type="button" class="btn" id="dl-qgis">QGIS (.qlr)</button>
+              <button type="button" class="btn" id="dl-arcgis">ArcGIS Pro (.lyrx)</button>
+              <button type="button" class="btn btn-ghost" id="share-link" data-i18n="share">Link teilen</button>
+            </div>
+            <p class="hint small" id="export-note" hidden></p>
           </div>
           <p class="hint" id="selection-empty" data-i18n="selectionEmpty">Füge Datensätze mit «Zur Karte» hinzu. Sie erscheinen hier und auf der Karte – auch aus verschiedenen Kantonen und Städten gleichzeitig.</p>
           <ul class="selection-list" id="selection-list"></ul>
-          <div class="export-row" id="export-row" hidden>
-            <a class="btn btn-primary" id="open-mapgeo" target="_blank" rel="noopener">
-              <span data-i18n="openMapGeo">In map.geo.admin.ch öffnen</span>
-            </a>
-            <button type="button" class="btn" id="dl-qgis">QGIS (.qlr)</button>
-            <button type="button" class="btn" id="dl-arcgis">ArcGIS Pro (.lyrx)</button>
-            <button type="button" class="btn btn-ghost" id="share-link" data-i18n="share">Link teilen</button>
-          </div>
-          <p class="hint small" id="export-note"></p>
         </div>
       </aside>
     </section>

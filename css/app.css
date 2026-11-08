@@ -263,11 +263,18 @@ details.more .menu a:hover, details.more .menu button:hover { background: var(--
 @keyframes shimmer { to { background-position: -200% 0; } }
 
 /* ---------- map pane ---------- */
-.map-pane { position: sticky; top: 66px; display: grid; gap: 14px; }
+/* The right column scrolls independently of the result list */
+.map-pane {
+  position: sticky; top: 66px; display: flex; flex-direction: column; gap: 14px;
+  max-height: calc(100vh - 78px); overflow-y: auto; overscroll-behavior: contain;
+  scrollbar-gutter: stable; padding-bottom: 2px;
+}
+.map-pane > * { flex: none; }
 .map-card, .selection-card {
   background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius); box-shadow: var(--shadow);
-  position: relative; overflow: hidden;
+  position: relative;
 }
+.map-card { overflow: hidden; }
 .map-toolbar { display: flex; justify-content: space-between; align-items: center; gap: 8px; padding: 8px 10px; border-bottom: 1px solid var(--border); flex-wrap: wrap; }
 .map { height: min(56vh, 560px); min-height: 320px; background: #eceae4; }
 .map-tooltip {
@@ -293,7 +300,7 @@ details.more .menu a:hover, details.more .menu button:hover { background: var(--
 .count-badge { display: inline-grid; place-items: center; min-width: 22px; height: 20px; padding: 0 6px; border-radius: 999px; background: var(--accent); color: var(--accent-ink); font-size: 12px; font-weight: 700; font-variant-numeric: tabular-nums; }
 .hint { color: var(--ink-2); font-size: 13.5px; margin: 8px 0 0; }
 .hint.small { font-size: 12.5px; color: var(--ink-3); }
-.selection-list { list-style: none; margin: 8px 0 0; padding: 0; display: grid; gap: 2px; max-height: 34vh; overflow: auto; }
+.selection-list { list-style: none; margin: 8px 0 0; padding: 0; display: grid; gap: 2px; }
 .sel-item { display: grid; grid-template-columns: auto minmax(0, 1fr) auto; gap: 4px 10px; align-items: center; padding: 7px 4px; border-bottom: 1px solid var(--border); }
 .sel-item:last-child { border-bottom: 0; }
 .sel-item input[type="checkbox"] { width: 16px; height: 16px; accent-color: var(--accent); }
@@ -309,7 +316,14 @@ details.more .menu a:hover, details.more .menu button:hover { background: var(--
 .status.loading { color: var(--ink-3); }
 .sel-legend { grid-column: 2 / 4; }
 .sel-legend img { max-width: 100%; background: #fff; border-radius: 6px; margin-top: 4px; }
-.export-row { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 12px; }
+.export-row { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 10px; }
+/* header and export buttons stay visible while the layer list scrolls */
+.selection-top {
+  position: sticky; top: 0; z-index: 4; background: var(--surface);
+  margin: -12px -14px 0; padding: 12px 14px 10px; border-bottom: 1px solid var(--border);
+  border-radius: var(--radius) var(--radius) 0 0;
+}
+.selection-top .hint.small { margin-top: 8px; }
 
 /* ---------- info sections ---------- */
 .info { max-width: 1100px; margin: 64px auto 0; }
@@ -351,7 +365,8 @@ table.quality { width: 100%; border-collapse: collapse; font-size: 13.5px; }
 /* ---------- responsive ---------- */
 @media (max-width: 960px) {
   .workspace { grid-template-columns: minmax(0, 1fr); }
-  .map-pane { position: static; }
+  .map-pane { position: static; max-height: none; overflow: visible; }
+  .selection-top { position: static; }
   .topnav { display: none; }
   .mobile-tabs {
     display: flex; position: sticky; top: 55px; z-index: 12; margin: 14px 0 0; padding: 4px;

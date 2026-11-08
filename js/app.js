@@ -17,8 +17,10 @@
   const CATALOG_URL = "data/catalog.json";
   const BOUNDARIES_URL = "data/boundaries.json";
   const PAGE_SIZE = 40;
-  const MAX_SELECTION = 40;
-  const ADD_ALL_MAX = 25;
+  // Upper limit of layers on the map at once: every layer is one image
+  // request per pan/zoom to the provider's server.
+  const MAX_SELECTION = 200;
+  const MANY_LAYERS = 50;
   const CANTONS = ["ZH", "BE", "LU", "UR", "SZ", "OW", "NW", "GL", "ZG", "FR",
     "SO", "BS", "BL", "SH", "AR", "AI", "SG", "GR", "AG", "TG", "TI", "VD", "VS",
     "NE", "GE", "JU"];
@@ -45,7 +47,9 @@
       results: (n) => n === 1 ? "1 Datensatz" : `${fmt(n)} Datensätze`,
       browse: (n) => `${fmt(n)} Datensätze im Katalog`,
       covSummary: (c, m, f) => [`Daten aus ${c} von 26 Kantonen`, m ? `${m} ${m === 1 ? "Stadt" : "Städte"}` : "", f ? `${f} national/kantonsübergreifend` : ""].filter(Boolean).join(" · "),
-      addAll: (n) => `Alle ${n} zur Karte`, exportCsv: "Treffer als CSV",
+      addAll: (n) => `Alle ${fmt(n)} zur Karte`, addAllCapped: (m, n) => `Alle zur Karte (erste ${fmt(m)} von ${fmt(n)})`,
+      addedN: (n) => `${fmt(n)} Layer zur Karte hinzugefügt`,
+      noteMany: "Bei sehr vielen Layern wird map.geo.admin.ch langsam – für grosse Auswahlen besser QGIS oder ArcGIS Pro verwenden.", exportCsv: "Treffer als CSV",
       addToMap: "+ Karte", onMap: "✓ Karte", addToMapLabel: "Zur Karte hinzufügen",
       openMapGeo: "In map.geo.admin.ch öffnen", mapgeo: "map.geo.admin.ch",
       more: "mehr", less: "weniger", moreMenu: "Links ▾",
@@ -103,7 +107,9 @@
       results: (n) => n === 1 ? "1 jeu de données" : `${fmt(n)} jeux de données`,
       browse: (n) => `${fmt(n)} jeux de données dans le catalogue`,
       covSummary: (c, m, f) => [`Données de ${c} cantons sur 26`, m ? `${m} ${m === 1 ? "ville" : "villes"}` : "", f ? `${f} nationaux/intercantonaux` : ""].filter(Boolean).join(" · "),
-      addAll: (n) => `Ajouter les ${n} à la carte`, exportCsv: "Résultats en CSV",
+      addAll: (n) => `Ajouter les ${fmt(n)} à la carte`, addAllCapped: (m, n) => `Tout ajouter à la carte (${fmt(m)} premiers sur ${fmt(n)})`,
+      addedN: (n) => `${fmt(n)} couches ajoutées à la carte`,
+      noteMany: "Avec beaucoup de couches, map.geo.admin.ch devient lent – pour de grandes sélections, préférez QGIS ou ArcGIS Pro.", exportCsv: "Résultats en CSV",
       addToMap: "+ Carte", onMap: "✓ Carte", addToMapLabel: "Ajouter à la carte",
       openMapGeo: "Ouvrir dans map.geo.admin.ch", mapgeo: "map.geo.admin.ch",
       more: "plus", less: "moins", moreMenu: "Liens ▾",
@@ -161,7 +167,9 @@
       results: (n) => n === 1 ? "1 set di dati" : `${fmt(n)} set di dati`,
       browse: (n) => `${fmt(n)} set di dati nel catalogo`,
       covSummary: (c, m, f) => [`Dati da ${c} cantoni su 26`, m ? `${m} ${m === 1 ? "città" : "città"}` : "", f ? `${f} nazionali/intercantonali` : ""].filter(Boolean).join(" · "),
-      addAll: (n) => `Aggiungi tutti i ${n} alla carta`, exportCsv: "Risultati in CSV",
+      addAll: (n) => `Aggiungi tutti i ${fmt(n)} alla carta`, addAllCapped: (m, n) => `Aggiungi tutti alla carta (primi ${fmt(m)} di ${fmt(n)})`,
+      addedN: (n) => `${fmt(n)} livelli aggiunti alla carta`,
+      noteMany: "Con molti livelli map.geo.admin.ch diventa lento – per selezioni grandi meglio QGIS o ArcGIS Pro.", exportCsv: "Risultati in CSV",
       addToMap: "+ Carta", onMap: "✓ Carta", addToMapLabel: "Aggiungi alla carta",
       openMapGeo: "Apri in map.geo.admin.ch", mapgeo: "map.geo.admin.ch",
       more: "di più", less: "di meno", moreMenu: "Link ▾",
@@ -219,7 +227,9 @@
       results: (n) => n === 1 ? "1 dataset" : `${fmt(n)} datasets`,
       browse: (n) => `${fmt(n)} datasets in the catalogue`,
       covSummary: (c, m, f) => [`Data from ${c} of 26 cantons`, m ? `${m} ${m === 1 ? "city" : "cities"}` : "", f ? `${f} national/intercantonal` : ""].filter(Boolean).join(" · "),
-      addAll: (n) => `Add all ${n} to map`, exportCsv: "Results as CSV",
+      addAll: (n) => `Add all ${fmt(n)} to map`, addAllCapped: (m, n) => `Add all to map (first ${fmt(m)} of ${fmt(n)})`,
+      addedN: (n) => `${fmt(n)} layers added to the map`,
+      noteMany: "With very many layers map.geo.admin.ch gets slow – for large selections QGIS or ArcGIS Pro work better.", exportCsv: "Results as CSV",
       addToMap: "+ Map", onMap: "✓ Map", addToMapLabel: "Add to map",
       openMapGeo: "Open in map.geo.admin.ch", mapgeo: "map.geo.admin.ch",
       more: "more", less: "less", moreMenu: "Links ▾",
@@ -872,10 +882,20 @@
     }
   }
 
+  // Extent of a dataset (with a margin) so that a layer only requests images
+  // while its area is in view - important with many layers on the map.
+  function layerExtent(i) {
+    const d = D[i];
+    const e = d && d.bbox ? bboxToLv95(d.bbox) : null;
+    if (!e || !e.every(Number.isFinite)) return undefined;
+    const pad = Math.max(e[2] - e[0], e[3] - e[1]) * 0.1 + 500;
+    return ol.extent.buffer(e, pad);
+  }
+
   function makeWmsLayer(i, svc, ls) {
     const attempts = [["EPSG:2056", "1.3.0"], ["EPSG:3857", "1.3.0"], ["EPSG:2056", "1.1.1"], ["EPSG:4326", "1.1.1"]];
     let n = 0;
-    const layer = new ol.layer.Image({ opacity: ls.opacity, visible: ls.visible });
+    const layer = new ol.layer.Image({ opacity: ls.opacity, visible: ls.visible, extent: layerExtent(i) });
     const setSource = () => {
       const [crs, version] = attempts[n];
       const src = new ol.source.ImageWMS({
@@ -917,7 +937,7 @@
   }
 
   function makeWmtsLayer(i, svc, ls) {
-    const layer = new ol.layer.Tile({ opacity: ls.opacity, visible: ls.visible });
+    const layer = new ol.layer.Tile({ opacity: ls.opacity, visible: ls.visible, extent: layerExtent(i) });
     setStatus(i, "loading");
     wmtsCapabilities(capabilitiesUrl(svc)).then((caps) => {
       const matrixSet = chooseMatrixSet(caps, svc.layer);
@@ -1114,7 +1134,12 @@
     const a = $("#open-mapgeo");
     if (url) { a.href = url; a.removeAttribute("aria-disabled"); a.hidden = false; }
     else { a.hidden = true; }
-    $("#export-note").textContent = skipped ? T("noteWfs", skipped) : "";
+    const notes = [];
+    if (skipped) notes.push(T("noteWfs", skipped));
+    if (list.length > MANY_LAYERS) notes.push(T("noteMany"));
+    const note = $("#export-note");
+    note.textContent = notes.join(" ");
+    note.hidden = !notes.length;
   }
 
   const xmlEsc = (s) => String(s).replace(/[<>&'"]/g, (c) => ({ "<": "&lt;", ">": "&gt;", "&": "&amp;", "'": "&apos;", '"': "&quot;" }[c]));
@@ -1259,11 +1284,15 @@ ${layers.join("\n")}
     const cov = computeCoverage(hasCriteria ? state.results : D);
     $("#coverage-summary").textContent = hasCriteria && total ? T("covSummary", cov.cantons, cov.cities, cov.national + cov.inter) : "";
 
-    const addable = state.results.filter((d) => d.types.length).slice(0, ADD_ALL_MAX);
     const addAll = $("#add-all");
     addAll.hidden = !hasCriteria || total < 2;
-    addAll.textContent = T("addAll", Math.min(total, ADD_ALL_MAX));
-    addAll.onclick = () => addToSelection(addable.map((d) => d.i), { fit: true });
+    addAll.textContent = total <= MAX_SELECTION ? T("addAll", total) : T("addAllCapped", MAX_SELECTION, total);
+    addAll.onclick = () => {
+      const before = state.selection.length;
+      addToSelection(state.results.slice(0, MAX_SELECTION).map((d) => d.i), { fit: true });
+      const added = state.selection.length - before;
+      if (added > 1) toast(T("addedN", added));
+    };
     $("#export-csv").hidden = !hasCriteria || !total;
 
     renderFacets(hasCriteria);
