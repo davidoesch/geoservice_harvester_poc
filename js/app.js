@@ -43,7 +43,8 @@
       searchLabel: "Suche", searchPlaceholder: "Thema suchen, z. B. Bienen, Lärm, Wald …",
       topics: ["Bienen", "Lärm", "Wald", "Velo", "Solar", "Naturgefahren", "Bäume", "Grundwasser", "Denkmal", "Parkplätze"],
       kind_federal: "Bund", kind_canton: "Kantone", kind_city: "Städte", kind_intercantonal: "geodienste.ch",
-      allRegions: "Alle Regionen", region: "Region", tabList: "Liste", tabMap: "Karte",
+      allRegions: "Alle Regionen", region: "Region",
+      inView: "Nur im Kartenausschnitt", inViewShort: "Im Ausschnitt suchen", inViewSuffix: "im Kartenausschnitt", tabList: "Liste", tabMap: "Karte",
       results: (n) => n === 1 ? "1 Datensatz" : `${fmt(n)} Datensätze`,
       browse: (n) => `${fmt(n)} Datensätze im Katalog`,
       covSummary: (c, m, f) => [`Daten aus ${c} von 26 Kantonen`, m ? `${m} ${m === 1 ? "Stadt" : "Städte"}` : "", f ? `${f} national/kantonsübergreifend` : ""].filter(Boolean).join(" · "),
@@ -103,7 +104,8 @@
       searchLabel: "Recherche", searchPlaceholder: "Chercher un thème, p. ex. abeilles, bruit, forêt …",
       topics: ["Abeilles", "Bruit", "Forêt", "Vélo", "Solaire", "Dangers naturels", "Arbres", "Eaux souterraines", "Patrimoine", "Parking"],
       kind_federal: "Confédération", kind_canton: "Cantons", kind_city: "Villes", kind_intercantonal: "geodienste.ch",
-      allRegions: "Toutes les régions", region: "Région", tabList: "Liste", tabMap: "Carte",
+      allRegions: "Toutes les régions", region: "Région",
+      inView: "Uniquement dans l'extrait de carte", inViewShort: "Chercher dans l'extrait", inViewSuffix: "dans l'extrait de carte", tabList: "Liste", tabMap: "Carte",
       results: (n) => n === 1 ? "1 jeu de données" : `${fmt(n)} jeux de données`,
       browse: (n) => `${fmt(n)} jeux de données dans le catalogue`,
       covSummary: (c, m, f) => [`Données de ${c} cantons sur 26`, m ? `${m} ${m === 1 ? "ville" : "villes"}` : "", f ? `${f} nationaux/intercantonaux` : ""].filter(Boolean).join(" · "),
@@ -163,7 +165,8 @@
       searchLabel: "Ricerca", searchPlaceholder: "Cerca un tema, p. es. api, rumore, bosco …",
       topics: ["Apicoltura", "Rumore", "Bosco", "Bicicletta", "Solare", "Pericoli naturali", "Alberi", "Acque sotterranee", "Beni culturali", "Posteggi"],
       kind_federal: "Confederazione", kind_canton: "Cantoni", kind_city: "Città", kind_intercantonal: "geodienste.ch",
-      allRegions: "Tutte le regioni", region: "Regione", tabList: "Elenco", tabMap: "Carta",
+      allRegions: "Tutte le regioni", region: "Regione",
+      inView: "Solo nell'area della carta", inViewShort: "Cerca nell'area", inViewSuffix: "nell'area della carta", tabList: "Elenco", tabMap: "Carta",
       results: (n) => n === 1 ? "1 set di dati" : `${fmt(n)} set di dati`,
       browse: (n) => `${fmt(n)} set di dati nel catalogo`,
       covSummary: (c, m, f) => [`Dati da ${c} cantoni su 26`, m ? `${m} ${m === 1 ? "città" : "città"}` : "", f ? `${f} nazionali/intercantonali` : ""].filter(Boolean).join(" · "),
@@ -223,7 +226,8 @@
       searchLabel: "Search", searchPlaceholder: "Search a topic, e.g. bees, noise, forest …",
       topics: ["Bees", "Noise", "Forest", "Cycling", "Solar", "Natural hazards", "Trees", "Groundwater", "Heritage", "Parking"],
       kind_federal: "Federal", kind_canton: "Cantons", kind_city: "Cities", kind_intercantonal: "geodienste.ch",
-      allRegions: "All regions", region: "Region", tabList: "List", tabMap: "Map",
+      allRegions: "All regions", region: "Region",
+      inView: "Only in map view", inViewShort: "Search in view", inViewSuffix: "in map view", tabList: "List", tabMap: "Map",
       results: (n) => n === 1 ? "1 dataset" : `${fmt(n)} datasets`,
       browse: (n) => `${fmt(n)} datasets in the catalogue`,
       covSummary: (c, m, f) => [`Data from ${c} of 26 cantons`, m ? `${m} ${m === 1 ? "city" : "cities"}` : "", f ? `${f} national/intercantonal` : ""].filter(Boolean).join(" · "),
@@ -349,6 +353,7 @@
     types: new Set(),
     region: "",
     owner: "",
+    inView: false,           // only datasets intersecting the map view
     shown: PAGE_SIZE,
     results: [],
     selection: [],           // dataset indices
@@ -363,6 +368,7 @@
   let regionsGeo = null;
   let map = null;
   let idIndex = new Map();  // stable id -> dataset index
+  let hashExtent = null;    // map extent from a shared link
 
   // ----------------------------------------------------------------- helpers
   const $ = (sel, root = document) => root.querySelector(sel);
@@ -532,6 +538,7 @@
     if (state.kinds.size && !state.kinds.has(filterKind(o))) return false;
     if (state.types.size && !d.types.some((t) => state.types.has(t))) return false;
     if (state.owner && o.code !== state.owner) return false;
+    if (state.inView && viewExtent && !ol.extent.intersects(datasetExtent(d), viewExtent)) return false;
     if (state.region) {
       const r = state.region;
       if (o.kind === "federal") return false;
@@ -541,13 +548,23 @@
     return true;
   }
 
+  function hasCriteria() {
+    return !!(state.q || state.kinds.size || state.types.size || state.region || state.owner || state.inView);
+  }
+
   function runSearch() {
     const groups = expandTerms(state.q);
     const out = [];
     if (!groups.length) {
-      if (state.kinds.size || state.types.size || state.region || state.owner) {
+      if (hasCriteria()) {
         for (const d of D) if (passesFilters(d)) out.push({ d, s: 0 });
-        out.sort((a, b) => a.d.o - b.d.o || a.d.title.localeCompare(b.d.title));
+        if (state.inView) {
+          // "What is here?": most local datasets first
+          out.forEach((r) => { r.s = ol.extent.getArea(datasetExtent(r.d)); });
+          out.sort((a, b) => a.s - b.s || a.d.title.localeCompare(b.d.title));
+        } else {
+          out.sort((a, b) => a.d.o - b.d.o || a.d.title.localeCompare(b.d.title));
+        }
       }
     } else {
       for (const d of D) {
@@ -597,8 +614,7 @@
 
   function coverageList() {
     if (state.coverageMode === "selection") return state.selection.map((i) => D[i]);
-    if (!state.q && !state.kinds.size && !state.types.size && !state.region && !state.owner) return D;
-    return state.results;
+    return hasCriteria() ? state.results : D;
   }
 
   function binOf(n) {
@@ -738,6 +754,8 @@
     });
     fitExtent(CH_EXTENT, false);
     setBasemap(state.basemap);
+    computeRegionExtents();
+    map.on("moveend", onViewChanged);
 
     const tip = $("#map-tooltip");
     map.on("pointermove", (evt) => {
@@ -856,6 +874,47 @@
     list.forEach((d) => { if (d.bbox) { const e = bboxToLv95(d.bbox); if (e) ol.extent.extend(ext, e); } });
     if (ol.extent.isEmpty(ext)) return;
     fitExtent(ext);
+  }
+
+  // ------------------------------------------- extents for the view filter
+  const regionExtents = {};
+  let viewExtent = null;
+
+  function computeRegionExtents() {
+    const q = regionsGeo.quantisation || 10;
+    for (const [code, polys] of Object.entries(regionsGeo.regions)) {
+      const pts = [];
+      decodeRegion(polys, q).forEach((rings) => rings[0].forEach((pt) => pts.push(pt)));
+      if (pts.length) regionExtents[code] = ol.extent.boundingExtent(pts);
+    }
+  }
+
+  // Extent of a dataset in LV95: the bounding box reported by the service or,
+  // if there is none, the area of its owner (canton, city, Switzerland).
+  // Many cantonal services report the whole of Switzerland for every layer,
+  // so cantonal / city datasets are clipped to their owner's area (+5 km).
+  function datasetExtent(d) {
+    if (d._ext) return d._ext;
+    const o = d.owner;
+    const region = regionExtents[o.region];
+    let e = d.bbox ? bboxToLv95(d.bbox) : null;
+    if (!e || !e.every(Number.isFinite)) {
+      e = region || regionExtents.CH || CH_EXTENT;
+    } else if (region && ["canton", "city", "principality"].includes(o.kind)) {
+      const clipped = ol.extent.getIntersection(e, ol.extent.buffer(region, 5000));
+      e = ol.extent.isEmpty(clipped) ? region : clipped;
+    }
+    d._ext = e;
+    return e;
+  }
+
+  let viewTimer = null;
+  function onViewChanged() {
+    if (!map || !mapVisible()) return;
+    viewExtent = map.getView().calculateExtent(map.getSize());
+    if (!state.inView) return;
+    clearTimeout(viewTimer);
+    viewTimer = setTimeout(() => update(), 250);
   }
 
   // ---------------------------------------------- data layers on the map
@@ -1277,15 +1336,17 @@ ${layers.join("\n")}
   function renderResults() {
     const list = $("#results");
     const total = state.results.length;
-    const hasCriteria = !!(state.q || state.kinds.size || state.types.size || state.region || state.owner);
-    document.body.classList.toggle("has-query", hasCriteria);
+    const criteria = hasCriteria();
+    document.body.classList.toggle("has-query", criteria);
 
-    $("#results-count").textContent = hasCriteria ? T("results", total) : T("browse", D.length);
-    const cov = computeCoverage(hasCriteria ? state.results : D);
-    $("#coverage-summary").textContent = hasCriteria && total ? T("covSummary", cov.cantons, cov.cities, cov.national + cov.inter) : "";
+    $("#results-count").textContent = criteria
+      ? T("results", total) + (state.inView ? " " + T("inViewSuffix") : "")
+      : T("browse", D.length);
+    const cov = computeCoverage(criteria ? state.results : D);
+    $("#coverage-summary").textContent = criteria && total ? T("covSummary", cov.cantons, cov.cities, cov.national + cov.inter) : "";
 
     const addAll = $("#add-all");
-    addAll.hidden = !hasCriteria || total < 2;
+    addAll.hidden = !criteria || total < 2;
     addAll.textContent = total <= MAX_SELECTION ? T("addAll", total) : T("addAllCapped", MAX_SELECTION, total);
     addAll.onclick = () => {
       const before = state.selection.length;
@@ -1293,12 +1354,12 @@ ${layers.join("\n")}
       const added = state.selection.length - before;
       if (added > 1) toast(T("addedN", added));
     };
-    $("#export-csv").hidden = !hasCriteria || !total;
+    $("#export-csv").hidden = !criteria || !total;
 
-    renderFacets(hasCriteria);
+    renderFacets(criteria);
 
     const empty = $("#empty-state");
-    if (!hasCriteria) {
+    if (!criteria) {
       list.innerHTML = "";
       empty.innerHTML = `<h3>${esc(T("startTitle"))}</h3><p>${esc(T("startHint"))}</p>`;
       empty.hidden = false;
@@ -1383,6 +1444,7 @@ ${layers.join("\n")}
     $("#region-filter").innerHTML = `<option value="">${esc(T("allRegions"))}</option>` +
       regions.map(([c, l]) => `<option value="${c}" ${state.region === c ? "selected" : ""}>${esc(l)}</option>`).join("");
     $("#basemap").innerHTML = ["grau", "farbe", "luftbild", "none"].map((b) => `<option value="${b}" ${state.basemap === b ? "selected" : ""}>${esc(T("bg_" + b))}</option>`).join("");
+    document.querySelectorAll(".inview-toggle").forEach((c) => { c.checked = state.inView; });
     $("#topics").innerHTML = T("topics").map((t) => `<button type="button" data-topic="${esc(t)}">${esc(t)}</button>`).join("");
   }
 
@@ -1434,6 +1496,10 @@ ${layers.join("\n")}
     if (state.owner) p.set("o", state.owner);
     if (state.kinds.size) p.set("k", [...state.kinds].join(","));
     if (state.types.size) p.set("t", [...state.types].join(","));
+    if (state.inView) {
+      p.set("v", "1");
+      if (viewExtent) p.set("x", viewExtent.map((n) => Math.round(n)).join(","));
+    }
     if (state.selection.length) p.set("sel", state.selection.map((i) => D[i].id).join("."));
     const h = p.toString();
     history.replaceState(null, "", h ? "#" + h : location.pathname + location.search);
@@ -1446,6 +1512,9 @@ ${layers.join("\n")}
     state.owner = p.get("o") || "";
     state.kinds = new Set((p.get("k") || "").split(",").filter(Boolean));
     state.types = new Set((p.get("t") || "").split(",").filter(Boolean));
+    state.inView = p.get("v") === "1";
+    const x = (p.get("x") || "").split(",").map(Number);
+    hashExtent = x.length === 4 && x.every(Number.isFinite) ? x : null;
     const sel = (p.get("sel") || "").split(".").filter(Boolean).map((id) => idIndex.get(id)).filter((i) => i !== undefined);
     return sel;
   }
@@ -1506,6 +1575,11 @@ ${layers.join("\n")}
       update();
     });
     $("#region-filter").addEventListener("change", (e) => { state.region = e.target.value; state.owner = ""; update(); });
+    document.querySelectorAll(".inview-toggle").forEach((c) => c.addEventListener("change", (e) => {
+      state.inView = e.target.checked;
+      if (state.inView) onViewChanged();
+      update();
+    }));
     $("#facets").addEventListener("click", (e) => {
       const b = e.target.closest("[data-owner]");
       if (!b) return;
@@ -1653,6 +1727,7 @@ ${layers.join("\n")}
     $("#q").value = state.q;
     renderFilters();
     try { initMap(); } catch (e) { console.error("Map init failed", e); }
+    if (hashExtent && map) { fitExtent(hashExtent, false); viewExtent = hashExtent; }
     bindEvents();
     setCoverageMode("results");
     renderInfo();
@@ -1664,6 +1739,7 @@ ${layers.join("\n")}
   // Small scripting API (handy for testing and power users)
   window.GeoHarvester = {
     datasets: () => D,
+    map: () => map,
     selection: () => state.selection.map((i) => D[i]),
     search: (q) => { state.q = q; $("#q").value = q; update(); return state.results; },
     mapGeoUrl: (list) => mapGeoUrl(list || state.selection.map((i) => D[i])).url,

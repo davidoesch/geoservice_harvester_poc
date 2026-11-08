@@ -84,6 +84,10 @@
           <span class="visually-hidden" data-i18n="region">Region</span>
           <select id="region-filter"></select>
         </label>
+        <label class="chip chip-check">
+          <input type="checkbox" class="inview-toggle">
+          <span data-i18n="inView">Nur im Kartenausschnitt</span>
+        </label>
       </div>
     </section>
 
@@ -120,6 +124,10 @@
               <button type="button" data-mode="selection" data-i18n="coverageSelection">Meine Karte</button>
               <button type="button" data-mode="off" data-i18n="coverageOff">Aus</button>
             </div>
+            <label class="chip chip-check chip-sm">
+              <input type="checkbox" class="inview-toggle">
+              <span data-i18n="inViewShort">Im Ausschnitt suchen</span>
+            </label>
             <label class="select select-sm">
               <span class="visually-hidden" data-i18n="basemap">Hintergrund</span>
               <select id="basemap"></select>

@@ -17,6 +17,9 @@ In the web app you can
   *Bienen* also finds *abeilles*, *apicoltura* and *bees*),
 - **see the coverage** on a map: which cantons and cities publish data on the
   topic and where nothing is available,
+- **search only in the map view** (checkbox): results are limited to datasets
+  whose bounding box intersects the visible map extent and follow as you pan
+  and zoom – without a search term this answers *"which data exists here?"*,
 - **combine** datasets of different providers on one map (e.g. bee hives of
   Graubünden, the City of Zurich and Valais at the same time),
 - **open** them all at once in [map.geo.admin.ch](https://map.geo.admin.ch),

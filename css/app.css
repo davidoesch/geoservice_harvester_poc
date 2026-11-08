@@ -178,6 +178,11 @@ body.has-query .topics { display: none; }
 }
 .chip:hover { color: var(--ink); }
 .chip[aria-pressed="true"] { background: var(--ink); border-color: var(--ink); color: var(--surface); }
+.chip-check { user-select: none; }
+.chip-check input { width: 15px; height: 15px; margin: 0; accent-color: var(--accent); }
+.chip-check:has(input:checked) { background: var(--accent-soft); border-color: var(--accent); color: var(--ink); }
+.chip-check:focus-within { outline: 2px solid var(--focus); outline-offset: 2px; }
+.chip-sm { font-size: 12.5px; padding: 3px 10px; }
 .chip .n { font-variant-numeric: tabular-nums; opacity: .7; font-size: 12px; }
 .select select {
   appearance: none; border: 1px solid var(--border-strong); background: var(--surface);
