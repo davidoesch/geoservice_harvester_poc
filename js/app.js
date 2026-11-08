@@ -485,9 +485,12 @@
   // ---------------------------------------------------------------- search
   function expandTerms(q) {
     const terms = norm(q).split(" ").filter((t) => t && !STOPWORDS.has(t));
+    // synonyms go through the same normalisation as the indexed text
+    // (e.g. "aerienne" -> "arienne")
+    if (!expandTerms.groups) expandTerms.groups = SYNONYMS.map((g) => [...new Set(g.map(norm))]);
     return terms.map((t) => {
       const variants = [{ v: t, w: 1 }];
-      for (const group of SYNONYMS) {
+      for (const group of expandTerms.groups) {
         const hit = group.some((v) => t === v || (v.length >= 4 && t.startsWith(v)) || (t.length >= 4 && v.startsWith(t)));
         if (hit) {
           for (const v of group) {

@@ -8,7 +8,7 @@
 GeoHarvester automatically harvests the metadata of all open **WMS, WMTS and WFS**
 services of the Swiss Confederation, all 26 cantons, cities and the Principality
 of Liechtenstein – every week. The result is a searchable catalogue of
-<!-- STATS:datasets -->33'600<!-- /STATS --> datasets from <!-- STATS:endpoints -->5'079<!-- /STATS --> service endpoints, including
+<!-- STATS:datasets -->32'200<!-- /STATS --> datasets from <!-- STATS:endpoints -->5'127<!-- /STATS --> service endpoints, including
 many datasets that are not listed in any metadata catalogue.
 
 In the web app you can
@@ -46,26 +46,26 @@ problems of the last run are listed in [`ISSUES.md`](ISSUES.md)).
 | Canton of Basel-Landschaft | `KT_BL` | 1 | 1 | 1 | 2'481 |
 | Canton of Basel-Stadt | `KT_BS` | 1 | 2 | 1 | 2'804 |
 | Canton of Fribourg | `KT_FR` | 482 |  | 391 | 915 |
-| Canton of Geneva | `KT_GE` | 878 |  | 879 | 1'630 |
-| Canton of Glarus | `KT_GL` | 2 |  | 2 | 886 |
+| Canton of Geneva | `KT_GE` | 883 |  | 879 | 1'635 |
+| Canton of Glarus | `KT_GL` | 1 |  | 1 | 443 |
 | Canton of Graubünden | `KT_GR` | 53 |  | 12 | 1'994 |
 | Canton of Jura | `KT_JU` | 2 | 1 | 2 | 2'913 |
-| Canton of Lucerne | `KT_LU` | 219 | 1 | 218 | 1'834 |
+| Canton of Lucerne | `KT_LU` | 220 | 1 | 218 | 1'838 |
 | Canton of Neuchâtel | `KT_NE` | 2 | 1 |  | 865 |
 | Canton of Nidwalden | `KT_NW` | 1 |  |  | 140 |
 | Canton of Obwalden | `KT_OW` | 1 |  |  | 105 |
 | Canton of St. Gallen | `KT_SG` | 87 | 13 | 25 | 690 |
 | Canton of Schaffhausen | `KT_SH` | 2 |  | 1 | 432 |
 | Canton of Solothurn | `KT_SO` | 2 | 1 | 1 | 796 |
-| Canton of Schwyz | `KT_SZ` | 3 | 1 | 2 | 4'450 |
-| Canton of Thurgau | `KT_TG` | 96 |  | 91 | 1'348 |
+| Canton of Schwyz | `KT_SZ` | 2 | 1 | 1 | 2'246 |
+| Canton of Thurgau | `KT_TG` | 96 |  | 90 | 1'343 |
 | Canton of Ticino | `KT_TI` | 1 | 1 |  | 1'214 |
 | Canton of Uri | `KT_UR` | 1 |  | 1 | 1'073 |
 | Canton of Vaud | `KT_VD` | 2 | 1 |  | 520 |
 | Canton of Valais | `KT_VS` | 24 |  | 1 | 367 |
-| Canton of Zug | `KT_ZG` | 34 | 1 | 26 | 1'048 |
+| Canton of Zug | `KT_ZG` | 56 | 1 | 50 | 1'390 |
 | Canton of Zurich | `KT_ZH` | 127 |  | 24 | 2'114 |
-| Principality of Liechtenstein | `FL_LI` | 5 |  |  | 670 |
+| Principality of Liechtenstein | `FL_LI` | 3 |  |  | 358 |
 | City of Bern | `CITY_Bern` | 212 | 78 | 83 | 1'979 |
 | Municipality of Emmen | `CITY_Emmen` | 1 |  | 1 | 123 |
 | City of Geneva | `CITY_Geneve` | 34 |  | 34 | 52 |
@@ -74,8 +74,9 @@ problems of the last run are listed in [`ISSUES.md`](ISSUES.md)).
 | City of Lucerne | `CITY_Luzern` | 73 |  | 73 | 154 |
 | Pully (SIGIP) | `CITY_Pully` | 1 | 1 | 1 | 615 |
 | City of Winterthur | `CITY_Winterthur` | 35 |  | 4 | 254 |
-| City of Zurich | `CITY_Zuerich` | 281 | 1 | 213 | 4'096 |
+| City of Zurich | `CITY_Zuerich` | 282 | 2 | 213 | 4'376 |
 | City of Zug | `CITY_Zug` | 10 |  | 10 | 171 |
+| Swiss OpenStreetMap Association (SOSM) | `SOSM` |  | 1 |  | 4 |
 <!-- /PROVIDERS -->
 
 Owner codes: `KT_<canton>` = canton, `CITY_<name>` = city/municipality,

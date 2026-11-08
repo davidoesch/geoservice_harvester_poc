@@ -223,12 +223,21 @@ def fetch_capabilities(url, service_type=None, timeout=60):
 
 def content_fingerprint(root, service_type, title):
     """
-    Fingerprint of a service's content (type, title, layer names and
-    titles). Two URLs with the same fingerprint serve the same layers, e.g.
-    a WMTS reachable via KVP and via its RESTful capabilities document.
+    Fingerprint of a service's content: type, title, layer names and titles
+    and the URLs the document advertises (OnlineResource, operation and
+    ResourceURL links). Two URLs with the same fingerprint serve the same
+    layers, e.g. a WMTS reachable via KVP and via its RESTful capabilities
+    document. Including the advertised URLs keeps apart services whose layer
+    lists are identical but whose data differs (e.g. yearly snapshots).
     """
-    layers = []
+    layers, links = [], set()
+    xlink = "{http://www.w3.org/1999/xlink}href"
     for el in root.iter():
+        href = el.attrib.get(xlink) or el.attrib.get("template")
+        if href:
+            base, kept, _ = split_url(href.strip())
+            links.add((base.replace("http://", "https://").rstrip("/?")
+                       + "?" + urlencode(sorted(kept))).lower())
         if _local(el.tag) not in ("Layer", "FeatureType"):
             continue
         name = layer_title = ""
@@ -242,7 +251,8 @@ def content_fingerprint(root, service_type, title):
             layers.append(name + "\x1f" + layer_title)
     if not layers:
         return None
-    text = "\x1e".join([service_type, title or ""] + sorted(layers))
+    text = "\x1e".join([service_type, title or ""] + sorted(layers) +
+                        sorted(links))
     return hashlib.sha1(text.encode("utf-8")).hexdigest()
 
 
