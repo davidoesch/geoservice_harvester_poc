@@ -7,8 +7,12 @@ Purpose: Find WMS / WMTS / WFS endpoints of Swiss public authorities, validate
 Sources of candidate endpoints
 - sources.csv itself (curated entries are always re-validated)
 - opendata.swiss (CKAN API, all resources of format WMS / WFS / WMTS)
-- geocat.ch (national metadata catalogue, OGC links of all records)
+- geocat.ch (national metadata catalogue: service links of all ~21k
+  records, recognised by protocol or URL pattern; ArcGIS REST links are
+  converted to their WMS/WFS endpoints)
 - geodienste.ch (official list of intercantonal services)
+- the sources.csv of the FHNW Geoharvester project
+  (https://github.com/FHNW-IGEO/Geoharvester)
 - ArcGIS Server REST catalogues of cantonal and municipal portals
 - a small list of manually researched endpoints (MANUAL_SOURCES)
 
@@ -28,6 +32,7 @@ import csv
 import logging
 import math
 import os
+import re
 import sys
 from collections import defaultdict
 from concurrent.futures import ThreadPoolExecutor
@@ -88,7 +93,8 @@ HOST_OWNERS = [
     ("www.gis-daten.ch/wms/ow", "KT_OW"),
     ("public.geo.lu.ch", "KT_LU"),
     ("sitn.ne.ch", "KT_NE"),
-    ("vector.sitg.ge.ch", "KT_GE"), ("app2.ge.ch", "KT_GE"),
+    ("vector.sitg.ge.ch", "KT_GE"), ("raster.sitg.ge.ch", "KT_GE"),
+    ("app2.ge.ch", "KT_GE"),
     ("wms.geo.ag.ch", "KT_AG"),
     ("map.bern.ch", "CITY_Bern"),
     ("ows.geo.tg.ch", "KT_TG"), ("ows-raster.geo.tg.ch", "KT_TG"),
@@ -101,6 +107,8 @@ HOST_OWNERS = [
     ("www.geoservice.apps.be.ch", "KT_BE"),
     ("stadtplan.winterthur.ch", "CITY_Winterthur"),
     ("www.ogd.stadt-zuerich.ch", "CITY_Zuerich"),
+    ("www.ogc.stadt-zuerich.ch", "CITY_Zuerich"),
+    ("tile.osm.ch", "SOSM"),
     ("wms.geo.gr.ch", "KT_GR"), ("wfs.geo.gr.ch", "KT_GR"),
     ("sit.vs.ch", "KT_VS"),
     ("service.geo.llv.li", "FL_LI"), ("geoservices.llv.li", "FL_LI"),
@@ -258,34 +266,96 @@ def collect_opendata_swiss():
     return out
 
 
+GEOCAT_API = "https://www.geocat.ch/geonetwork/srv/api/search/records/_search"
+SERVICE_URL = re.compile(
+    r"(service=(wms|wfs|wmts))|wmtscapabilities\.xml|/(wms|wfs)server|"
+    r"/(wms|wfs|wmts|ows)(\?|/|$)|mapserv", re.I)
+ARCGIS_REST = re.compile(
+    r"^(https?://[^?#]+?)/rest/services/(.+?)/(MapServer|ImageServer)\b", re.I)
+# Hosts in geocat.ch that are covered elsewhere or out of scope
+GEOCAT_SKIP_HOSTS = ("api3.geo.admin.ch", "map.geo.admin.ch", "lgrb-bw.de",
+                     "georhena.eu")
+
+
+def service_candidates(url, protocol=""):
+    """
+    Turn a catalogue link into (service_type, url) candidates. ArcGIS REST
+    links (.../rest/services/X/MapServer) become WMS and WFS endpoints;
+    GetMap / GetLegendGraphic requests are reduced to the service URL.
+    """
+    m = ARCGIS_REST.match(url)
+    if m:
+        base = "%s/services/%s/%s" % m.groups()
+        out = [("WMS", base + "/WMSServer")]
+        if m.group(3).lower() == "mapserver":
+            out.append(("WFS", base + "/WFSServer"))
+        return out
+    proto = protocol.upper()
+    if not (SERVICE_URL.search(url) or
+            any(k in proto for k in ("WMS", "WFS", "WMTS"))):
+        return []
+    url = ogc_utils.service_base_url(url) \
+        if re.search(r"request=(getmap|getlegendgraphic|getfeature)", url, re.I) \
+        else url
+    low = url.lower()
+    if "WMTS" in proto or "wmts" in low:
+        stype = "WMTS"
+    elif "WFS" in proto or "/wfs" in low or "service=wfs" in low:
+        stype = "WFS"
+    else:
+        stype = "WMS"
+    return [(stype, url)]
+
+
 def collect_geocat():
-    api = "https://www.geocat.ch/geonetwork/srv/api/search/records/_search"
-    protocols = ["OGC:WMS", "OGC:WFS", "OGC:WMTS",
-                 "OGC:WMS-http-get-capabilities",
-                 "OGC:WFS-http-get-capabilities",
-                 "OGC:WMTS-http-get-capabilities"]
-    out, frm = [], 0
+    """All service links of all geocat.ch records (paged with search_after)."""
+    out, after = [], None
     while True:
-        query = {"from": frm, "size": 500, "_source": ["link"],
-                 "query": {"terms": {"linkProtocol": protocols}}}
-        r = requests.post(api, json=query, timeout=120,
+        query = {"size": 1000, "_source": ["link"], "sort": [{"uuid": "asc"}],
+                 "query": {"match_all": {}}}
+        if after:
+            query["search_after"] = after
+        r = requests.post(GEOCAT_API, json=query, timeout=120,
                           headers={"Accept": "application/json"})
         r.raise_for_status()
         hits = r.json()["hits"]["hits"]
-        for hit in hits:
-            for link in hit["_source"].get("link", []):
-                proto = link.get("protocol") or ""
-                url = ((link.get("urlObject") or {}).get("default") or "")
-                if proto not in protocols or not url.startswith("http"):
-                    continue
-                url = unwrap_url(url.strip())
-                owner = owner_for_url(url)
-                if owner:
-                    stype = proto.split(":")[1].split("-")[0]
-                    out.append((owner, stype, url, "geocat.ch"))
-        frm += 500
-        if len(hits) < 500:
+        if not hits:
             break
+        after = hits[-1]["sort"]
+        for hit in hits:
+            for link in hit["_source"].get("link") or []:
+                url = ((link.get("urlObject") or {}).get("default") or "").strip()
+                if not url.startswith("http"):
+                    continue
+                url = unwrap_url(url)
+                host = urlsplit(url).netloc.lower()
+                if any(h in host for h in GEOCAT_SKIP_HOSTS):
+                    continue
+                for stype, cand in service_candidates(
+                        url, link.get("protocol") or ""):
+                    owner = owner_for_url(cand)
+                    if owner:
+                        out.append((owner, stype, cand, "geocat.ch"))
+    return out
+
+
+FHNW_SOURCES = ("https://raw.githubusercontent.com/FHNW-IGEO/Geoharvester/"
+                "main/scraper/sources.csv")
+FHNW_OWNERS = {"ST_ZH": "CITY_Zuerich", "ST_BE": "CITY_Bern",
+               "ASIT": "KT_VD", "SOSM": "SOSM"}
+
+
+def collect_fhnw():
+    """Endpoints of the FHNW Geoharvester project."""
+    r = requests.get(FHNW_SOURCES, timeout=120)
+    r.raise_for_status()
+    out = []
+    for row in csv.DictReader(r.text.splitlines()):
+        url = (row.get("URL") or "").strip()
+        owner = (row.get("Description") or "").strip()
+        owner = FHNW_OWNERS.get(owner, owner)
+        if url.startswith("http") and owner:
+            out.append((owner, None, url, "fhnw"))
     return out
 
 
@@ -346,6 +416,7 @@ def validate_group(candidates):
         cand["detected"] = cap["type"] or ""
         cand["error"] = cap["error"] or ""
         cand["title"] = cap["title"] or ""
+        cand["fingerprint"] = cap.get("fingerprint")
         if cap["ok"]:
             cand["type"] = cap["type"]
             cand["url"] = ogc_utils.capabilities_url(cand["url"], cap["type"])
@@ -392,14 +463,15 @@ def main():
     parser.add_argument("--keep-invalid", action="store_true",
                         help="keep curated sources.csv entries that fail")
     parser.add_argument("--skip", nargs="*", default=[],
-                        choices=["ods", "geocat", "geodienste", "arcgis"])
+                        choices=["ods", "geocat", "geodienste", "arcgis",
+                                 "fhnw"])
     args = parser.parse_args()
     logging.basicConfig(level=logging.INFO, format="%(message)s")
 
     collected = collect_existing() + collect_manual()
     collectors = [("ods", collect_opendata_swiss), ("geocat", collect_geocat),
                   ("geodienste", collect_geodienste),
-                  ("arcgis", collect_arcgis)]
+                  ("arcgis", collect_arcgis), ("fhnw", collect_fhnw)]
     for name, func in collectors:
         if name in args.skip:
             continue
@@ -436,14 +508,22 @@ def main():
 
     # A curated entry whose detected type differs may now duplicate another
     # valid entry: deduplicate again on the detected type.
-    final, seen = [], set()
+    # Endpoints serving identical content under another URL (e.g. a WMTS
+    # via KVP and via its RESTful capabilities) are duplicates as well.
+    final, seen, fingerprints = [], set(), {}
     for r in sorted(results, key=lambda r: (not r["valid"],
                                             r["origin"] != "sources.csv")):
         key = ogc_utils.canonical_key(r["url"], r["type"])
+        fp = r.get("fingerprint")
         if r["valid"] and key in seen:
             r["valid"], r["error"] = False, "duplicate"
+        elif r["valid"] and fp and fp in fingerprints:
+            r["valid"] = False
+            r["error"] = "same content as %s" % fingerprints[fp]
         if r["valid"]:
             seen.add(key)
+            if fp:
+                fingerprints[fp] = r["url"]
         final.append(r)
 
     os.makedirs(os.path.dirname(REPORT_FILE), exist_ok=True)

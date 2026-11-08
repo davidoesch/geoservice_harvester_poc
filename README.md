@@ -80,7 +80,8 @@ problems of the last run are listed in [`ISSUES.md`](ISSUES.md)).
 
 Owner codes: `KT_<canton>` = canton, `CITY_<name>` = city/municipality,
 `FL_LI` = Liechtenstein, `Bund` = federal services (geo.admin.ch and BAFU),
-`Geodienste` = intercantonal services of [geodienste.ch](https://www.geodienste.ch).
+`Geodienste` = intercantonal services of [geodienste.ch](https://www.geodienste.ch),
+`SOSM` = Swiss OpenStreetMap Association (third party).
 Display names and regions of all owners are defined in [`owners.json`](owners.json).
 
 Known limitations
@@ -97,10 +98,12 @@ Known limitations
 
 ```
  opendata.swiss ─┐
- geocat.ch ──────┤                  ┌──────────────┐   data/geoservices_CH.csv  (one row per service layer)
- geodienste.ch ──┼─ discover_   ──► │ sources.csv  │──► scraper.py ──► data/geodata_CH.csv     (one row per dataset)
- ArcGIS portals ─┤  sources.py      └──────────────┘                   data/geoservices_stats_CH.csv
- manual research ┘  (validates every endpoint)                         tools/*_errors.csv, ISSUES.md
+ geocat.ch ──────┤
+ geodienste.ch ──┤                  ┌──────────────┐   data/geoservices_CH.csv  (one row per service layer)
+ ArcGIS portals ─┼─ discover_   ──► │ sources.csv  │──► scraper.py ──► data/geodata_CH.csv     (one row per dataset)
+ FHNW Geo-       │  sources.py      └──────────────┘                   data/geoservices_stats_CH.csv
+ harvester ──────┤  (validates every endpoint)                         tools/*_errors.csv, ISSUES.md
+ manual research ┘
                                                                              │
                                           build_catalog.py ◄─────────────────┘
                                                  │
@@ -134,8 +137,12 @@ published if a `GetMap` request for it succeeds.
 2. Open a pull request.
 
 Alternatively add the endpoint to `MANUAL_SOURCES` (or a whole portal to
-`ARCGIS_CATALOGUES`) in [`discover_sources.py`](discover_sources.py) and run it;
-it re-validates every endpoint and rewrites `sources.csv`. The full validation
+`ARCGIS_CATALOGUES`) in [`discover_sources.py`](discover_sources.py) and run it.
+It collects candidates from opendata.swiss, all records of geocat.ch,
+geodienste.ch, ArcGIS REST catalogues and the
+[FHNW Geoharvester](https://github.com/FHNW-IGEO/Geoharvester) source list,
+re-validates every endpoint (dropping duplicates that serve identical content
+under another URL) and rewrites `sources.csv`. The full validation
 report is written to [`tools/sources_report.csv`](tools/sources_report.csv).
 
 ## Run it locally

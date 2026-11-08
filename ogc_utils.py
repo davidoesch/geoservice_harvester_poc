@@ -11,6 +11,7 @@ misleading, e.g. ".../av_wms?service=WFS"), and hand the XML to OWSLib so it
 does not have to download it again.
 """
 
+import hashlib
 import re
 import threading
 import xml.etree.ElementTree as ET
@@ -173,7 +174,8 @@ def fetch_capabilities(url, service_type=None, timeout=60):
     """
     cap_url = capabilities_url(url, service_type)
     result = {"ok": False, "type": None, "version": None, "xml": None,
-              "url": cap_url, "status": None, "error": None, "title": None}
+              "url": cap_url, "status": None, "error": None, "title": None,
+              "fingerprint": None}
     try:
         resp = session().get(cap_url, timeout=timeout)
     except requests.exceptions.RequestException as e:
@@ -215,7 +217,33 @@ def fetch_capabilities(url, service_type=None, timeout=60):
         if _local(el.tag) in ("Title",) and el.text and el.text.strip():
             result["title"] = el.text.strip()
             break
+    result["fingerprint"] = content_fingerprint(root, stype, result["title"])
     return result
+
+
+def content_fingerprint(root, service_type, title):
+    """
+    Fingerprint of a service's content (type, title, layer names and
+    titles). Two URLs with the same fingerprint serve the same layers, e.g.
+    a WMTS reachable via KVP and via its RESTful capabilities document.
+    """
+    layers = []
+    for el in root.iter():
+        if _local(el.tag) not in ("Layer", "FeatureType"):
+            continue
+        name = layer_title = ""
+        for child in el:
+            tag = _local(child.tag)
+            if tag in ("Name", "Identifier") and child.text:
+                name = child.text.strip()
+            elif tag == "Title" and child.text:
+                layer_title = child.text.strip()
+        if name:
+            layers.append(name + "\x1f" + layer_title)
+    if not layers:
+        return None
+    text = "\x1e".join([service_type, title or ""] + sorted(layers))
+    return hashlib.sha1(text.encode("utf-8")).hexdigest()
 
 
 def open_service(url, cap):
