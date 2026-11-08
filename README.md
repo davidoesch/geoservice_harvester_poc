@@ -1,163 +1,220 @@
-[![GitHub commit](https://img.shields.io/github/last-commit/davidoesch/geoservice_harvester_poc)](https://github.com/davidoesch/geoservice_harvester_poc/commits/master)
+[![GitHub commit](https://img.shields.io/github/last-commit/davidoesch/geoservice_harvester_poc)](https://github.com/davidoesch/geoservice_harvester_poc/commits/main)
 [![Run scraper](https://github.com/davidoesch/geoservice_harvester_poc/actions/workflows/run-scraper.yml/badge.svg)](https://github.com/davidoesch/geoservice_harvester_poc/actions/workflows/run-scraper.yml)
 
-# Geoservice Harvester POC  open geo services reported by the Swiss Gov Agencies and Third parties
+# GeoHarvester – every open geoservice in Switzerland, one search
 
-### Important note
-> Find and use **high quality data published by our data colleagues of the [SWISS FEDERAL ADMINSTRATION](https://www.geo.admin.ch) [CANTONS](https://www.geodienste.ch)** for all Cantons and FL:
-> 1. GeoServiceHarvesterPOC visualized (Dashboard): https://davidoesch.github.io/geoservice_harvester_poc
-> 2. geo.admin.ch visualized (Dashboard): https://docs.google.com/spreadsheets/d/1QdxYv6RYWe9PFIq5XQ-BNLnKfgtFcDkfZ58ftZ_Va9I/edit?usp=sharing
-> 3. all published as 'open government data': https://opendata.swiss/de/dataset/?groups=geography
+**➜ App: https://davidoesch.github.io/geoservice_harvester_poc**
 
-## Aim of this repository
+GeoHarvester automatically harvests the metadata of all open **WMS, WMTS and WFS**
+services of the Swiss Confederation, all 26 cantons, cities and the Principality
+of Liechtenstein – every week. The result is a searchable catalogue of
+<!-- STATS:datasets -->33'600<!-- /STATS --> datasets from <!-- STATS:endpoints -->5'079<!-- /STATS --> service endpoints, including
+many datasets that are not listed in any metadata catalogue.
 
-The aim of this repository is to provide a POC to open OGC Compliant geodata services  provided by the Swiss Confederation, Cantons Municipalities, the Principality of Liechtenstein and third parties. Inspired by the pre-POC [wmsChecker](https://github.com/davidoesch/wmschecker) and driven by the [ 4th Geounconference Workshop: Sujet / Thema 16 –– Service-Verzeichnis](https://github.com/GeoUnconference/discussions/discussions/38). For key findings, dive into the [ blog post](https://www.linkedin.com/pulse/geoharvesting-unexploiting-seo-treasures-geoservices-david-oesch/). Updates of services are infrequent.
+In the web app you can
 
-If you have any questions, please don't hestitate to contact us: <br>
-- https://twitter.com/davidoesch (follow us, we send you a private Direct Message, thanks!) <br>
+- **search** any topic (synonyms in German, French, Italian and English, e.g.
+  *Bienen* also finds *abeilles*, *apicoltura* and *bees*),
+- **see the coverage** on a map: which cantons and cities publish data on the
+  topic and where nothing is available,
+- **combine** datasets of different providers on one map (e.g. bee hives of
+  Graubünden, the City of Zurich and Valais at the same time),
+- **open** them all at once in [map.geo.admin.ch](https://map.geo.admin.ch),
+  **QGIS** (`.qlr`) or **ArcGIS Pro** (`.lyrx`), or copy the service URLs,
+- **share** a link that restores your search and your map.
 
-## Datasets of all services : geoservices_CH.csv
+The project started as a proof of concept at the
+[4th GeoUnconference](https://github.com/GeoUnconference/discussions/discussions/38).
+Background: [blog post](https://www.linkedin.com/pulse/geoharvesting-unexploiting-seo-treasures-geoservices-david-oesch/).
+Questions, ideas and bug reports: [GitHub issues](https://github.com/davidoesch/geoservice_harvester_poc/issues).
 
-**General description** <br>
-This data is generated and validated weekly using automated procedures. Note that we only publish data that are OGC compliant. Thus, gaps might be the case. 
+## Providers
 
-**Data** <br>
+Service endpoints in [`sources.csv`](sources.csv) and harvested layers per
+provider (run of 8 November 2026; the weekly run updates the data,
+problems of the last run are listed in [`ISSUES.md`](ISSUES.md)).
 
->**https://github.com/davidoesch/geoservice_harvester_poc/blob/main/data/geoservices_CH.csv** <br>
->*Description:* Data description for each layer separately  <br>
->*Spatial unit:* Swiss cantons and Principality of Liechtenstein covered <br>
->*Updated:* weekly<br>
->*Format:* csv <br>
->*Additional remark*: )
+<!-- PROVIDERS -->
+| Provider | Owner code | WMS | WMTS | WFS | Layers harvested |
+| -------- | ---------- | --: | ---: | --: | ---------------: |
+| Federal Government (geo.admin.ch) | `Bund` | 4 | 1 |  | 1'583 |
+| geodienste.ch (intercantonal) | `Geodienste` | 48 |  | 47 | 1'290 |
+| Canton of Aargau | `KT_AG` | 1 |  |  | 973 |
+| Canton of Appenzell Innerrhoden | `KT_AI` | 1 |  |  | 182 |
+| Canton of Appenzell Ausserrhoden | `KT_AR` | 1 |  |  | 212 |
+| Canton of Bern | `KT_BE` | 49 |  | 48 | 2'511 |
+| Canton of Basel-Landschaft | `KT_BL` | 1 | 1 | 1 | 2'481 |
+| Canton of Basel-Stadt | `KT_BS` | 1 | 2 | 1 | 2'804 |
+| Canton of Fribourg | `KT_FR` | 482 |  | 391 | 915 |
+| Canton of Geneva | `KT_GE` | 878 |  | 879 | 1'630 |
+| Canton of Glarus | `KT_GL` | 2 |  | 2 | 886 |
+| Canton of Graubünden | `KT_GR` | 53 |  | 12 | 1'994 |
+| Canton of Jura | `KT_JU` | 2 | 1 | 2 | 2'913 |
+| Canton of Lucerne | `KT_LU` | 219 | 1 | 218 | 1'834 |
+| Canton of Neuchâtel | `KT_NE` | 2 | 1 |  | 865 |
+| Canton of Nidwalden | `KT_NW` | 1 |  |  | 140 |
+| Canton of Obwalden | `KT_OW` | 1 |  |  | 105 |
+| Canton of St. Gallen | `KT_SG` | 87 | 13 | 25 | 690 |
+| Canton of Schaffhausen | `KT_SH` | 2 |  | 1 | 432 |
+| Canton of Solothurn | `KT_SO` | 2 | 1 | 1 | 796 |
+| Canton of Schwyz | `KT_SZ` | 3 | 1 | 2 | 4'450 |
+| Canton of Thurgau | `KT_TG` | 96 |  | 91 | 1'348 |
+| Canton of Ticino | `KT_TI` | 1 | 1 |  | 1'214 |
+| Canton of Uri | `KT_UR` | 1 |  | 1 | 1'073 |
+| Canton of Vaud | `KT_VD` | 2 | 1 |  | 520 |
+| Canton of Valais | `KT_VS` | 24 |  | 1 | 367 |
+| Canton of Zug | `KT_ZG` | 34 | 1 | 26 | 1'048 |
+| Canton of Zurich | `KT_ZH` | 127 |  | 24 | 2'114 |
+| Principality of Liechtenstein | `FL_LI` | 5 |  |  | 670 |
+| City of Bern | `CITY_Bern` | 212 | 78 | 83 | 1'979 |
+| Municipality of Emmen | `CITY_Emmen` | 1 |  | 1 | 123 |
+| City of Geneva | `CITY_Geneve` | 34 |  | 34 | 52 |
+| Municipality of Köniz | `CITY_Koeniz` | 4 |  |  | 4 |
+| City of Lausanne | `CITY_Lausanne` | 1 |  |  | 538 |
+| City of Lucerne | `CITY_Luzern` | 73 |  | 73 | 154 |
+| Pully (SIGIP) | `CITY_Pully` | 1 | 1 | 1 | 615 |
+| City of Winterthur | `CITY_Winterthur` | 35 |  | 4 | 254 |
+| City of Zurich | `CITY_Zuerich` | 281 | 1 | 213 | 4'096 |
+| City of Zug | `CITY_Zug` | 10 |  | 10 | 171 |
+<!-- /PROVIDERS -->
 
-| Field Name  | Description                                                                                                      | Format                      | Note                        |
-| ----------- | ---------------------------------------------------------------------------------------------------------------- | --------------------------- | --------------------------- |
-| OWNER       | Both Owner type and Owner Name are reflected,they corespond as well to the corrsponing py file with scraper info.The owner of the data, likely an organization or agency that created or manages the data | Text <OwnerType\_OwnerName> |                             |
-| TITLE       | The title of the dataset, which provides a brief description of what the data represents.                                                                                            | Text                        |                             |
-| NAME        | The name or identifier for this particular data layer or feature within the larger dataset                                                                                             | Text                        |                             |
-| TREE        | Layertree derived from service info.A hierarchical category or grouping for this data layer                                                                              | Text , tree separator „/“   |                             |
-| GROUP       | Group Name of agreggated datasets. A grouping or category for this data layer, which may be used for organization or visualization purposes                                                                                | Text                        | only applicable for WMS     |
-| ABSTRACT    | A brief summary or abstract of the data, which may provide additional context or details beyond the title.                                                                                                         | Text                        |                             |
-| KEYWORDS    | A list of relevant keywords or tags associated with this data layer, which can help users discover and filter relevant data.                                                                                                         | keywords, commaseparated    |                             |
-| LEGEND      | Link to legend for the symbols or colors used to represent this data layer, which can aid in interpreting the data.                                                                                                         | URL to Image                |                             |
-| CONTACT     |The contact information for the individual or organization responsible for maintaining or providing access to the da                                                                                                    | Text, email                 |                             |
-| SERVICELINK | Link to Get Capabilities                                                                                         | URL to Image                |                             |
-| METADATA    | A link or URL to additional metadata or documentation about the data, such as data dictionaries or technical specifications                                                                                               | URL                         |                             |
-| UPDATE      | Publication Date                                                                                                 | Text                        |                             |
-| SERVICETYPE | OGC Service type                                                                                                 | Text                        | WMTS WMS and WFS           |
-| MAX ZOOM    | Zoom level (mapzoom) on which the data is visible                                                                | Int                         |  |
-| CENTER\_LAT | Lat center of data WGS84                                                                                         | Float                       |                             |
-| CENTER\_LON | Lon center of data WGS84                                                                                         | Float                       |                             |
-| MAPGEO      | permalink to map.geo.admin.ch                                                                                    | URL                         |                             |
-| BBOX     | The bounding box or extent of this data layer, represented as a list of four coordinates in the order west, south, east, and north.                                                                                   | Textt                         |                             |
+Owner codes: `KT_<canton>` = canton, `CITY_<name>` = city/municipality,
+`FL_LI` = Liechtenstein, `Bund` = federal services (geo.admin.ch and BAFU),
+`Geodienste` = intercantonal services of [geodienste.ch](https://www.geodienste.ch).
+Display names and regions of all owners are defined in [`owners.json`](owners.json).
 
-## Unified data : geodata_CH.csv
+Known limitations
 
-**General description** <br>
-This data is generated and validated weekly using automated procedures based on geoservices_CH.csv (1NF / normalization). Note that we only publish data that are OGC compliant. Thus, gaps might be the case. 
+- Services that require a login or token (HTTP 401/499) are not included.
+- Canton Ticino's servers do not answer requests from outside Switzerland. The
+  weekly GitHub run (US-based runners) therefore cannot reach them; Ticino
+  data is available when the harvester runs from a Swiss network.
+- A browser preview of WFS-only and WMTS-only datasets needs CORS headers on
+  the provider's server. Without them, the layers can still be opened in QGIS
+  or ArcGIS Pro.
 
-**Data** <br>
+## How it works
 
->**https://github.com/davidoesch/geoservice_harvester_poc/blob/main/data/geodata_CH.csv** <br>
->*Description:* This dataset has been aggregated to include data from all of its different services. This means that the information is now more comprehensive and includes all relevant occurrences from each of the services that contribute to the dataset. <br>
->*Spatial unit:* Swiss cantons and Principality of Liechtenstein covered <br>
->*Updated:* weekly <br>
->*Format:* csv <br>
->*Additional remark*: )
+```
+ opendata.swiss ─┐
+ geocat.ch ──────┤                  ┌──────────────┐   data/geoservices_CH.csv  (one row per service layer)
+ geodienste.ch ──┼─ discover_   ──► │ sources.csv  │──► scraper.py ──► data/geodata_CH.csv     (one row per dataset)
+ ArcGIS portals ─┤  sources.py      └──────────────┘                   data/geoservices_stats_CH.csv
+ manual research ┘  (validates every endpoint)                         tools/*_errors.csv, ISSUES.md
+                                                                             │
+                                          build_catalog.py ◄─────────────────┘
+                                                 │
+                                          data/catalog.json ──► index.html (GitHub Pages)
+```
 
-| Field Name  | Description                                                                                                      | Format                      | Note                        |
-| ----------- | ---------------------------------------------------------------------------------------------------------------- | --------------------------- | --------------------------- |
-| OWNER       | Both Owner type and Owner Name are reflected,they corespond as well to the corrsponing py file with scraper info | Text <OwnerType\_OwnerName> |                             |
-| TITLE       | Title of the dataset                                                                                             | Text                        |                             |
-| NAME        | Name of the dataset                                                                                              | Text                        |                             |
-| MAPGEO      | permalink to map.geo.admin.ch                                                                                    | URL                         |                             |
-| CONTACT     | Contact info                                                                                                     | Text, email                 |                             |
-| WMSGetCap | Link to WMSGetCap      | Link                        |            |
-| WMTSGetCap | Link to WMTSGetCap      | Link                        |            |
-| WFSGetCap | Link to WFSGetCap      | Link                        |            |
+| Step | Script | When |
+| ---- | ------ | ---- |
+| Find and validate service endpoints | [`discover_sources.py`](discover_sources.py) | manually, now and then |
+| Harvest all layers of all endpoints | [`scraper.py`](scraper.py) (+ [`scraper/default.py`](scraper/default.py)) | weekly (GitHub Action) |
+| Build the search index of the app | [`build_catalog.py`](build_catalog.py) | weekly |
+| Compare with the last 30 days, e-mail alert on big drops | [`check-geoservices-stats.py`](check-geoservices-stats.py) | weekly |
+| Convert CSV to Parquet | [`format-converter.py`](format-converter.py) | weekly |
+| Outlines of cantons / cities for the coverage map | [`build_boundaries.py`](build_boundaries.py) | when owners change |
 
+The weekly pipeline runs in one job ([`.github/workflows/run-scraper.yml`](.github/workflows/run-scraper.yml),
+Sundays 00:03 UTC, Python 3.13) and commits all results in a single commit.
+The other two workflows are kept for manual re-runs.
 
-## Dataset title : geodata_simple_CH.csv
+The scraper fetches each GetCapabilities document once, detects the service
+type from the XML (not from the URL), and processes the sources in parallel
+with at most three concurrent requests per server. A WMS layer is only
+published if a `GetMap` request for it succeeds.
 
-**General description** <br>
-This data is generated and validated weekly using automated procedures based on geodata_CH.csv. Note that we only publish data that are OGC compliant. Thus, gaps might be the case. 
+## Add or fix a service
 
-**Data** <br>
+1. Add the GetCapabilities URL to [`sources.csv`](sources.csv)
+   (`"Description","URL"` – the description is the owner code, e.g. `KT_LU`,
+   URLs must use `https`). For a new owner add an entry to
+   [`owners.json`](owners.json) (and, for a new city, run `build_boundaries.py`).
+2. Open a pull request.
 
->**https://github.com/davidoesch/geoservice_harvester_poc/blob/main/data/geodata_simple_CH.csv** <br>
->*Description:* This dataset  contains only the title of the datset and a link to map.geo.admin.ch. (no link if only WFS is availbale) . It's sole pupose was to serve as source for https://davidoesch.github.io/geoservice_harvester_poc <br>
->*Spatial unit:* Swiss cantons and Principality of Liechtenstein covered <br>
->*Updated:* weekly <br>
->*Format:* csv <br>
->*Additional remark*: will be decomissioned soon, since it is not needed)
+Alternatively add the endpoint to `MANUAL_SOURCES` (or a whole portal to
+`ARCGIS_CATALOGUES`) in [`discover_sources.py`](discover_sources.py) and run it;
+it re-validates every endpoint and rewrites `sources.csv`. The full validation
+report is written to [`tools/sources_report.csv`](tools/sources_report.csv).
 
-| Field Name  | Description                                                                                                      | Format                      | Note                        |
-| ----------- | ---------------------------------------------------------------------------------------------------------------- | --------------------------- | --------------------------- |
-| OWNER       | Both Owner type and Owner Name are reflected,they corespond as well to the corrsponing py file with scraper info | Text <OwnerType\_OwnerName> |                             |
-| TITLE       | Title of the dataset                                                                                             | Text                        |                             |
-| MAPGEO      | permalink to map.geo.admin.ch                                                                                    | URL                         | in case of a WFS only: link will not work
+## Run it locally
 
-## Dataset title : geodata_stats_CH.csv
+```bash
+python3.13 -m venv .venv && source .venv/bin/activate
+pip install -r requirements.txt
 
-**General description** <br>
-This data is generated and validated weekly using automated procedures based on geoservices_CH.csv and is used to show overall [quality stats parameter](https://davidoesch.github.io/geoservice_harvester_poc/#anchor-QualityControl)  
+python scraper.py --owner KT_LU KT_NE   # harvest some owners only (fast)
+python scraper.py                       # full run
+python build_catalog.py                 # build data/catalog.json
+python -m http.server 8000              # app at http://localhost:8000
 
-**Data** <br>
+pip install shapely && python build_boundaries.py   # only when owners.json changes
+python discover_sources.py --dry-run                # check for new / dead endpoints
+```
 
->**https://github.com/davidoesch/geoservice_harvester_poc/blob/main/data/geodata_stats_CH.csv** <br>
->*Description:* This dataset  contains OWNER and the total number datasets and the corresponing completness / existence of parameters. It's sole pupose is to serve as source for https://davidoesch.github.io/geoservice_harvester_poc/#anchor-QualityContro <br>
->*Spatial unit:* Swiss cantons and Principality of Liechtenstein covered <br>
->*Updated:* weekly <br>
->*Format:* csv <br>
->*Additional remark*: )
+## Data
 
+All files are open and updated weekly. Every CSV is also available as Parquet.
 
+### geoservices_CH.csv – one row per service layer
 
-## How to fix / add additonal WMS WMTS Services
-1. Fix / add your service to [sources.csv](https://github.com/davidoesch/geoservice_harvester_poc/sources.csv) following the OWNER Naming Convention and URL (only https) to the service endpoint
-2. make a pull request
+[`data/geoservices_CH.csv`](data/geoservices_CH.csv) · [Parquet](data/geoservices_CH.parquet)
 
+| Field | Description | Format |
+| ----- | ----------- | ------ |
+| OWNER | Owner code (`<OwnerType>_<OwnerName>`, e.g. `KT_GR`, `CITY_Bern`, `Bund`) | Text |
+| TITLE | Title of the layer | Text |
+| NAME | Name / identifier of the layer in the service | Text |
+| MAPGEO | Permalink to [map.geo.admin.ch](https://map.geo.admin.ch) showing the layer (empty for WFS) | URL |
+| TREE | Layer tree derived from the service: `owner/service title/group` | Text, separator `/` |
+| GROUP | Name of the parent (group) layer | Text |
+| ABSTRACT | Description of the layer | Text |
+| KEYWORDS | Keywords of the layer | Text, comma separated |
+| LEGEND | Link to the legend image | URL |
+| CONTACT | E-mail or name of the service provider | Text |
+| SERVICELINK | Base URL of the service (for WMTS: the GetCapabilities URL) | URL |
+| METADATA | Link to the metadata of the layer or service | URL |
+| UPDATE | Publication date (mostly not provided by services) | Text |
+| SERVICETYPE | `WMS`, `WMTS` or `WFS` | Text |
+| MAX_ZOOM | map.geo.admin.ch zoom level (0–13) that fits the layer extent | Integer |
+| CENTER_LAT | Latitude of the layer's centre (WGS84) | Float |
+| CENTER_LON | Longitude of the layer's centre (WGS84) | Float |
+| BBOX | Extent of the layer: west south east north (WGS84) | Text |
 
-## Current status Provider & Services
+### geodata_CH.csv – one row per dataset
 
-| Provider 	| Status 	| Notes 	|
-|:---------:	|--------	|-------	|
-|     AG    	|  ![ok](https://placehold.jp/b8e186/000000/200x50.png?text=WMS 'ok')      	| Source: https://www.ag.ch/de/verwaltung/dfr/geoportal/geodienste-(wms)     	|
-|     AI    	|  ![ok](https://placehold.jp/b8e186/000000/200x50.png?text=WMS 'ok')       	| Source: https://www.ai.ch/themen/planen-und-bauen/geodaten-und-plaene/geobasisdaten some layers do cover AI AR SG      	|
-|     AR    	|  ![ok](https://placehold.jp/b8e186/000000/200x50.png?text=WMS 'ok')       	| Source: reverse engineered from AI some layers do cover AI AR SG      	|
-|     BE    	|  ![ok](https://placehold.jp/b8e186/000000/200x50.png?text=WMS 'ok')      	|   Source https://www.agi.dij.be.ch/de/start/geoportal/geodienste/angebot-an-geodiensten.html FR  to be done   	|
-|     BL    	|  ![ok](https://placehold.jp/b8e186/000000/200x50.png?text=WMS-WMTS 'ok')      	| Source: https://www.baselland.ch/politik-und-behorden/direktionen/volkswirtschafts-und-gesundheitsdirektion/amt-fur-geoinformation/geoportal/geodienste     	|
-|     BS    	|  ![ok](https://placehold.jp/b8e186/000000/200x50.png?text=WMS-WFS-WMTS 'ok')      	| Source: https://www.geo.bs.ch/geodaten/geodienste.html     	|
-|     FR    	|  ![ok](https://placehold.jp/b8e186/000000/200x50.png?text=WMS-WFS 'ok')      	|Source https://geo.fr.ch/ags/rest/services      	|
-|     GE    	|  ![ok](https://placehold.jp/b8e186/000000/200x50.png?text=WMS 'ok')      	| Source: https://ge.ch/sitg/services/services-carto/open-data, 3 datasets can not be parsed, see error log in /tools     	|
-|     GL    	|  ![ok](https://placehold.jp/b8e186/000000/200x50.png?text=WMS-WFS 'ok')      	|  Source https://www.gl.ch/verwaltung/bau-und-umwelt/hochbau/raumentwicklung-und-geoinformation/geoportal-kanton-glarus.html/808 Drops WFS warnings, seems to be ok see error log in /tools     	|
-|     GR    	|  ![ok](https://placehold.jp/b8e186/000000/200x50.png?text=WMS-WFS 'ok')      	| Source https://geo.gr.ch/geodienste/katalog     	|
-|     JU    	|  ![ok](https://placehold.jp/b8e186/000000/200x50.png?text=WMS-WFS-WMTS 'ok')      	|Source: reverse engineered from the once working NE, no love for WebmerCator     	|
-|     LU    	|  ![ok](https://placehold.jp/de77ae/000000/200x50.png?text=no-service 'ok')        	|     	|
-|     NE    	|  ![ok](https://placehold.jp/de77ae/000000/200x50.png?text=no-service 'ok')       	|       	|
-|     NW    	|  ![ok](https://placehold.jp/de77ae/000000/200x50.png?text=no-service 'ok')      	| |
-|     OW    	|  ![ok](https://placehold.jp/de77ae/000000/200x50.png?text=no-service 'ok')      	|         	|
-|     SG    	|  ![ok](https://placehold.jp/b8e186/000000/200x50.png?text=WMS-WFS-WMTS 'ok')      	|Source: extracted the PDf from https://www.sg.ch/bauen/geoinformation/gi/geodienste.html       	|
-|     SH    	|  ![ok](https://placehold.jp/b8e186/000000/200x50.png?text=WMS-WFS 'ok')       	| Soiurce: https://sh.ch/CMS/Webseite/Kanton-Schaffhausen/Beh-rde/Verwaltung/Volkswirtschaftsdepartement/Amt-f-r-Geoinformation-2303920-DE.html      	|
-|     SO    	|  ![ok](https://placehold.jp/b8e186/000000/200x50.png?text=WMS-WFS-WMTS 'ok')      	| Source: https://so.ch/verwaltung/bau-und-justizdepartement/amt-fuer-geoinformation/geoportal/geodienste/wmts-web-map-tile-service/     	|
-|     SZ    	|  ![ok](https://placehold.jp/b8e186/000000/200x50.png?text=WMS-WFS-WMTS 'ok')      	|Source: https://www.sz.ch/behoerden/vermessung-geoinformation/geoportal/daten-und-dienste.html/72-416-414-1762-1761       	|
-|     TG    	|  ![ok](https://placehold.jp/b8e186/000000/200x50.png?text=WMS-WFS 'ok')       	| Source: scraped them from opendata.swiss API with https://ckan.opendata.swiss/api/3/action/package_search?fq=organization:kanton-thurgau%20AND%20res_format:WMS&rows=10000 and https://ckan.opendata.swiss/api/3/action/package_search?fq=organization:kanton-thurgau%20AND%20res_format:WFS&rows=10000       	|
-|     TI    	|  ![ok](https://placehold.jp/b8e186/000000/200x50.png?text=WMS-WFS-WMTS 'ok')      	|Source https://www4.ti.ch/dt/sg/sai/ugeo/temi/geoportale-ticino/geoportale/geoservizi/      	|
-|     UR    	|  ![ok](https://placehold.jp/b8e186/000000/200x50.png?text=WMS-WFS 'ok')       	| Source: https://oereb.ur.ch/?basemap=AV&lat=46.87491213706447&lng=8.645001065327628&zoom=13.75 sources and www.geo.ur.ch     	|
-|     VD    	|  ![ok](https://placehold.jp/b8e186/000000/200x50.png?text=WMS 'ok')      	|Source: https://www.ogc.vd.ch/public/services/OGC/wmsVD/Mapserver/WMSServer?       	|
-|     VS    	|  ![ok](https://placehold.jp/de77ae/000000/200x50.png?text=no-service 'nok')      	|   |
-|     ZG    	|  ![ok](https://placehold.jp/b8e186/000000/200x50.png?text=WMS-WFS-WMTS 'ok')      	| Source https://www.zg.ch/behoerden/direktion-des-innern/geoportal/geodaten-einbinden     	|
-|     ZH    	|  ![ok](https://placehold.jp/b8e186/000000/200x50.png?text=WMS-WFS 'ok')       	| Source https://ckan.opendata.swiss/api/3/action/package_search?fq=organization:geoinformation-kanton-zuerich%20AND%20res_format:WMS&rows=10000 and https://ckan.opendata.swiss/api/3/action/package_search?fq=organization:geoinformation-kanton-zuerich%20AND%20res_format:WFS&rows=10000       	|
-|     LI    	|  ![ok](https://placehold.jp/b8e186/000000/200x50.png?text=WMS 'ok')        	|  Source https://www.llv.li/inhalt/11694/amtsstellen/internet-kartendienst-geowebservices     	|
-|     Geodienste |![ok](https://placehold.jp/b8e186/000000/200x50.png?text=WMS-WFS 'ok')   	|  Source: Source https://github.com/geoadmin/mf-geoadmin3/blob/master/src/js/ImportController.js FR IT  to be done       	|       	
-|     Bund   	|  ![ok](https://placehold.jp/b8e186/000000/200x50.png?text=WMS-WMTS 'ok')   	|  Source: Source https://www.geo.admin.ch/de/geo-dienstleistungen/geodienste/darstellungsdienste-webmapping-webgis-anwendungen.html FR IT EN RM to be done       	|   
+[`data/geodata_CH.csv`](data/geodata_CH.csv) · [Parquet](data/geodata_CH.parquet)
 
+The layers of `geoservices_CH.csv` aggregated per dataset (OWNER + TITLE + NAME),
+with the links to all services that offer the dataset.
 
+| Field | Description | Format |
+| ----- | ----------- | ------ |
+| OWNER | Owner code | Text |
+| TITLE | Title of the dataset | Text |
+| NAME | Name of the dataset | Text |
+| MAPGEO | Permalink to map.geo.admin.ch (WMS preferred, then WMTS) | URL |
+| ABSTRACT | Description | Text |
+| KEYWORDS | Keywords | Text, comma separated |
+| CONTACT | Contact | Text |
+| WMSGetCap | Base URL of the WMS offering the dataset, or `n.a.` | URL |
+| WMTSGetCap | GetCapabilities URL of the WMTS offering the dataset, or `n.a.` | URL |
+| WFSGetCap | Base URL of the WFS offering the dataset, or `n.a.` | URL |
 
-## Operation
-Automated daily run of [scraper.py](https://github.com/davidoesch/geoservice_harvester_poc/scraper.py) via GithubAction [scheduler](https://github.com/davidoesch/geoservice_harvester_poc/blob/main/.github/workflows/scheduler-scraper.yml). The scraper results are logged in [debug.log](https://github.com/davidoesch/geoservice_harvester_poc/blob/main/tools/debug.log), faulty or offline services in [sources.csv](https://github.com/davidoesch/geoservice_harvester_poc/blob/main/sources.csv) are logged in [tools](https://github.com/davidoesch/geoservice_harvester_poc/tree/main/tools). Harvested data in [geoservices_CH.csv](https://github.com/davidoesch/geoservice_harvester_poc/blob/main/data/geoservices_CH.csv)
+### Other files
 
-## Roadmap and Ideas
-Are collected in [Issues](https://github.com/davidoesch/geoservice_harvester_poc/issues)
+| File | Content |
+| ---- | ------- |
+| [`data/geodata_simple_CH.csv`](data/geodata_simple_CH.csv) | OWNER, TITLE and MAPGEO only (kept for compatibility) |
+| [`data/geoservices_stats_CH.csv`](data/geoservices_stats_CH.csv) | Per owner: number of layers and share of layers with keywords, abstract, contact and metadata link; a dated copy is kept for every run |
+| [`data/geoservices_changestats_CH.csv`](data/geoservices_changestats_CH.csv) | Number of layers per owner compared with the mean of the last 30 days |
+| [`data/catalog.json`](data/catalog.json) | Compact search index of the web app (datasets merged across WMS/WMTS/WFS, with coverage regions) |
+| [`data/boundaries.json`](data/boundaries.json) | Simplified outlines (LV95) of cantons, Liechtenstein and cities for the coverage map |
+| [`tools/*_errors.csv`](tools) | Services that failed in the last run, per owner (summary in [`ISSUES.md`](ISSUES.md)) |
+| [`tools/sources_report.csv`](tools/sources_report.csv) | Validation report of `discover_sources.py` (all candidate endpoints and why some were rejected) |
 
+## License
 
+[GPL-3.0](LICENSE). The harvested metadata belongs to the respective providers;
+please respect their terms of use. Basemap © [swisstopo](https://www.swisstopo.admin.ch).

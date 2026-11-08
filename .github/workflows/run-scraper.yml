@@ -1,57 +1,78 @@
 name: Run scraper
 
+# Weekly pipeline: harvest all services in sources.csv, build the web
+# catalogue, compute change statistics, convert to Parquet and commit the
+# results in a single commit. Running everything in one job avoids the race
+# conditions of the former cron-chained workflows (the scraper can take hours).
+
 on:
   schedule:
-  - cron:  '3 0 * * 0'
+    - cron: '3 0 * * 0'
   # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
-  
+
+permissions:
+  contents: write
+
+concurrency:
+  group: data-pipeline
+  cancel-in-progress: false
+
 jobs:
-  build:
-    # cf. https://docs.github.com/en/github/setting-up-and-managing-billing-and-payments-on-github/about-billing-for-github-actions
+  harvest:
     runs-on: ubuntu-latest
+    timeout-minutes: 350
 
     steps:
-    - name: Checkout the repository
-      uses: actions/checkout@v3
-    
-    - name: Increase git buffer size
-      run: |
-        git config --global http.postBuffer 1048576000
-    
-    - name: Set up Python 3.9
-      uses: actions/setup-python@v4
-      with:
-        python-version: 3.9
-    
-    - name: Install dependencies
-      run: |
-        python -m pip install --upgrade pip
-        pip install -r requirements.txt
-    
-    - name: Run Python script
-      run: |
-        python scraper.py
-      env: # Set the secrets as env var
-        CLIENT_SECRET: ${{ secrets.CLIENT_SECRET }}
-      
-    - name: Push log files to repo
-      uses: github-actions-x/commit@v2.9
-      with:
-        push-branch: 'main'
-        commit-message: 'Scraper done'
-        force-add: 'true'
-        files: tools/
-        name: autoupdate
-    
-    # Subsequent "on push" Actions are only triggered if this
-    # push is done with a Personal Access Token (PAT) 
-    - name: Push contents of data folder to repo
-      uses: github-actions-x/commit@v2.9
-      with:
-        push-branch: 'main'
-        commit-message: 'Scraper done'
-        force-add: 'true'
-        files: data/ ISSUES.md
-        name: autoupdate
-        
+      - name: Checkout the repository
+        uses: actions/checkout@v7
+
+      - name: Set up Python
+        uses: actions/setup-python@v7
+        with:
+          python-version: '3.13'
+          cache: pip
+
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r requirements.txt
+
+      - name: Run scraper
+        run: python scraper.py
+        env:
+          # Optional: Google Indexing API service account (JSON). The scraper
+          # skips the indexing step if the secret is not set.
+          CLIENT_SECRET: ${{ secrets.CLIENT_SECRET }}
+
+      - name: Build web catalogue
+        run: python build_catalog.py
+
+      - name: Check change statistics
+        # A failing e-mail alert must not block publishing the data
+        continue-on-error: true
+        run: python check-geoservices-stats.py
+        env:
+          MAIL_SMTP_SERVER: ${{ secrets.MAIL_SMTP_SERVER }}
+          MAIL_USER_NAME: ${{ secrets.MAIL_USER_NAME }}
+          MAIL_PASSWORD: ${{ secrets.MAIL_PASSWORD }}
+
+      - name: Create Parquet files
+        run: python format-converter.py
+
+      - name: Commit and push results
+        run: |
+          git config user.name "autoupdate"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -A data/ tools/ ISSUES.md
+          if git diff --staged --quiet; then
+            echo "No changes to commit"
+            exit 0
+          fi
+          git commit -m "Scraper done"
+          for i in 1 2 3; do
+            git pull --rebase --strategy-option=theirs origin "${GITHUB_REF_NAME}" && \
+              git push origin "HEAD:${GITHUB_REF_NAME}" && exit 0
+            sleep 10
+          done
+          exit 1

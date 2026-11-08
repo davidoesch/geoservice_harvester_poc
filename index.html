@@ -1,659 +1,190 @@
 <!DOCTYPE html>
-<html>
-
+<html lang="de">
 <head>
-    <title>GeoHarvester Entdecken Sie die Welt der Geodaten - einfach und zugänglich mit GeoServiceHarvester.</title>
-    <meta charset="utf-8" />
-    <meta name="google-site-verification" content="hDQtbxFwRrQcdcq96Mb9jZW6YI_NHX_FhjBK1bXksqg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="description" content="Die Metadaten von Geodiensten wie WMS, WFS und WMTS sind ein ungenutzter Schatz, der eine Schlüsselrolle bei der Verbesserung der Auffindbarkeit von Geodaten spielen kann. Trotz der Existenz verschiedener Geodatenkataloge wie geocat.ch und opendata.swiss, bleiben viele Datensätze unauffindbar. Das liegt daran, dass die Daten und Metadaten getrennt behandelt werden und die manuell eingegebenen Metadatenkataloge nicht alle in den Diensten verfügbaren Daten enthalten. Durch die Analyse der Metadaten der einzelnen Datensätze des Bundes und der Kantone in geoservices können wir die Suchmaschinenoptimierung verbessern und die Daten besser auffindbar machen. Die gute Nachricht ist, dass das Harvesting von Geodiensten keine teure Raketenwissenschaft ist und mithilfe von OGC-Standards und Python-Bibliotheken wie owslib automatisch durchgeführt werden kann.">
-    <meta name="keywords" content="Schweiz, WMS, WFS, WMTS, Behörden, Datensammlung, Geodaten, Geodateninfrastruktur, Geoharvester, Metadaten, Suchmaschine, Kartendienste, offene Daten, Datenaustausch,WMS, WFS, WMTS, Metadaten, Geodienste, Auffindbarkeit, SwissGeodata, Geodatenkataloge, Auffindbarkeit, geocat. ch, opendata.swiss, nationaler Metadatenkatalog, Schweiz, Datensätze, SEO, NLP, AI, OGC Standards, GetCapabilities, proof-of-concept, Geoservice Harvester, python library owslib, monitoring">
-    <meta name="geo.placename" content="Schweiz, Aargau, Appenzell, Basel, Bern, Freiburg, Genf, Glarus, Graubünden, Jura, Luzern, Neuenburg, Nidwalden, Obwalden, St. Gallen, Schaffhausen, Schwyz, Solothurn, Thurgau, Tessin, Uri, Wallis, Waadt, Zug, Zürich" /><meta name="geo.region" content="CH" />
-    <meta name="geo.position" content="46.8182;8.2275" />
-    <meta name="ICBM" content="46.8182, 8.2275" />
-    <meta name="language" content="de"/>
-    <meta name="lang" content="de"/>
-    <meta name="author" content="David Oesch Pasquale diDonato"/>
-    <meta name="robots" content="index,follow"/>
-    <meta name="revisit-after" content="7 days"/>
-    
-    <!-- Include jQuery, DataTables CSS, and DataTables JS -->
-    <link rel="stylesheet" href="https://cdn.datatables.net/1.11.3/css/jquery.dataTables.min.css" />
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-	<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-
-<style>table.dataTable {
-    width: 100% !important;
-}
-
-.search-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 30px;
-    margin-bottom: 20px;
-    flex-direction: column;
-}
-
-#table-info {
-    text-align: center;
-}
-
-#table-search {
-    width: 50%;
-    height: 50px;
-    font-size: 24px;
-    padding: 10px;
-    border-radius: 10px;
-    border: 2px solid #ccc;
-    box-shadow: 0 0 10px rgba(255, 0, 0, 0.3);
-    text-align: left;
-    outline: none;
-    color: #555555;
-}
-
-#table-search::placeholder {
-    color: #D7D7D7;
-    /* Change this to the color you want */
-}
-
-.dataTables_wrapper .dataTables_filter {
-    display: none;
-}
-
-.table-container {
-    text-align: center;
-    margin-top: 20px;
-}
-
-table {
-    margin: 0 auto;
-}
-
-.dataTables_wrapper .dataTables_filter {
-    display: none;
-}
-
-.loader {
-    border: 10px solid #f3f3f3;
-    /* Light grey */
-    border-top: 10px solid #3498db;
-    /* Blue */
-    border-radius: 50%;
-    width: 50px;
-    height: 50px;
-    animation: spin 2s linear infinite;
-    margin: auto;
-    margin-top: 50px;
-}
-
-@keyframes spin {
-    0% {
-        transform: rotate(0deg);
-    }
-
-    100% {
-        transform: rotate(360deg);
-    }
-}
-
-.hide {
-    display: none;
-}
-
-.container,
-.container-lg,
-.container-md,
-.container-sm,
-.container-xl {
-    max-width: 100%;
-}
-
-
-</style>
-	
-	
-	
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script src="https://cdn.datatables.net/1.11.3/js/jquery.dataTables.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/papaparse@5.3.0/papaparse.min.js"></script>
-	
-
-<script >
-/**
-* This is a JavaScript code that defines five  functions: downloadQGISProjectWMS(), downloadARCGISPROProjectWMS(), downloadQGISProjectWMTS(),downloadQGISProjectWFS and downloadARCGISPROProjectWMTS(). These functions download and generate QGIS and ArcGIS Pro project files for WMS and WMTS services.
-* 
-* Each function uses an XMLHttpRequest() to retrieve a template file from a GitHub repository, and then replaces placeholders in the file with parameters provided to the function. The resulting XML file is then downloaded as a Blob using the URL.createObjectURL() and document.createElement() methods. Finally, the temporary a element used for the download is removed from the document using document.body.removeChild(a).
-* 
-* Note that the functions are assuming that the service URL and parameters being passed as arguments are valid and formatted correctly.
-*/
-    function downloadQGISProjectWMS(data, name, owner, title, bbox) {
-        var xhr = new XMLHttpRequest();
-        xhr.open('GET', "https://raw.githubusercontent.com/davidoesch/geoservice_harvester_poc/main/templates/qgis_wms_template.qlr");
-        xhr.responseType = 'text';
-        xhr.onreadystatechange = function() {
-            if (xhr.readyState === 4 && xhr.status === 200) {
-                var bboxArray = bbox.split(" ");
-                var xmin = bboxArray[0];
-                var ymin = bboxArray[1];
-                var xmax = bboxArray[2];
-                var ymax = bboxArray[3];
-                data = data.trim(); //remove empty spaces		
-                var projectXml = xhr.responseText;
-                projectXml = projectXml.replace("{{SERVICELINK}}", data);
-                projectXml = projectXml.replace("{{NAME}}", name);
-                projectXml = projectXml.replace("{{TITLE}}", title);
-                projectXml = projectXml.replace("{{OWNER}}", owner);
-                projectXml = projectXml.replace("{{XMAX}}", xmax);
-                projectXml = projectXml.replace("{{YMAX}}", ymax);
-                projectXml = projectXml.replace("{{YMIN}}", ymin);
-                projectXml = projectXml.replace("{{XMIN}}", xmin);
-                var blob = new Blob([projectXml], {
-                    type: "application/xml"
-                });
-                var url = URL.createObjectURL(blob);
-                var a = document.createElement("a");
-                a.href = url;
-                a.download = owner + "_" + name + ".qlr";
-                document.body.appendChild(a);
-                a.click();
-                document.body.removeChild(a);
-
-            }
-        };
-        xhr.send();
-    }
-
-function downloadARCGISPROProjectWMS(data, name, owner, title) {
-    var xhr = new XMLHttpRequest();
-    xhr.open('GET', "https://raw.githubusercontent.com/davidoesch/geoservice_harvester_poc/main/templates/arcgispro_wms_template.lyrx");
-    xhr.responseType = 'text';
-    xhr.onreadystatechange = function() {
-        if (xhr.readyState === 4 && xhr.status === 200) {
-
-            data = data.trim(); //remove empty spaces		
-            var projectXml = xhr.responseText;
-            projectXml = projectXml.replace("{{SERVICELINK}}", data);
-            projectXml = projectXml.replace("{{NAME}}", name);
-            projectXml = projectXml.replace("{{NAME}}", name);
-            projectXml = projectXml.replace("{{TITLE}}", title);
-            projectXml = projectXml.replace("{{OWNER}}", owner);
-
-            var blob = new Blob([projectXml], {
-                type: "application/xml"
-            });
-            var url = URL.createObjectURL(blob);
-            var a = document.createElement("a");
-            a.href = url;
-            a.download = owner + "_" + name + ".lyrx";
-            document.body.appendChild(a);
-            a.click();
-            document.body.removeChild(a);
-
-        }
-    };
-    xhr.send();
-}
-
-function downloadQGISProjectWMTS(data, name, owner, title, bbox) {
-    var xhr = new XMLHttpRequest();
-    xhr.open('GET', "https://raw.githubusercontent.com/davidoesch/geoservice_harvester_poc/main/templates/qgis_wmts_template.qlr");
-    xhr.responseType = 'text';
-    xhr.onreadystatechange = function() {
-        if (xhr.readyState === 4 && xhr.status === 200) {
-            var bboxArray = bbox.split(" ");
-            var xmin = bboxArray[0];
-            var ymin = bboxArray[1];
-            var xmax = bboxArray[2];
-            var ymax = bboxArray[3];
-            data = data.trim(); //remove empty spaces		
-            var projectXml = xhr.responseText;
-            projectXml = projectXml.replace("{{SERVICELINK}}", data);
-            projectXml = projectXml.replace("{{NAME}}", name);
-            projectXml = projectXml.replace("{{NAME}}", name);
-            projectXml = projectXml.replace("{{TITLE}}", title);
-            projectXml = projectXml.replace("{{OWNER}}", owner);
-            projectXml = projectXml.replace("{{XMAX}}", xmax);
-            projectXml = projectXml.replace("{{YMAX}}", ymax);
-            projectXml = projectXml.replace("{{YMIN}}", ymin);
-            projectXml = projectXml.replace("{{XMIN}}", xmin);
-            var blob = new Blob([projectXml], {
-                type: "application/xml"
-            });
-            var url = URL.createObjectURL(blob);
-            var a = document.createElement("a");
-            a.href = url;
-            a.download = owner + "_" + name + ".qlr";
-            document.body.appendChild(a);
-            a.click();
-            document.body.removeChild(a);
-
-        }
-    };
-    xhr.send();
-}
-
-function downloadARCGISPROProjectWMTS(data, name, owner, title) {
-    var xhr = new XMLHttpRequest();
-    xhr.open('GET', "https://raw.githubusercontent.com/davidoesch/geoservice_harvester_poc/main/templates/arcgispro_wmts_template.lyrx");
-    xhr.responseType = 'text';
-    xhr.onreadystatechange = function() {
-        if (xhr.readyState === 4 && xhr.status === 200) {
-
-            data = data.trim(); //remove empty spaces
-            var projectXml = xhr.responseText;
-            projectXml = projectXml.replace("{{SERVICELINK}}", data);
-            projectXml = projectXml.replace("{{NAME}}", name);
-            projectXml = projectXml.replace("{{NAME}}", name);
-            projectXml = projectXml.replace("{{TITLE}}", title);
-
-
-            var blob = new Blob([projectXml], {
-                type: "application/xml"
-            });
-            var url = URL.createObjectURL(blob);
-            var a = document.createElement("a");
-            a.href = url;
-            a.download = owner + "_" + name + ".lyrx";
-            document.body.appendChild(a);
-            a.click();
-            document.body.removeChild(a);
-
-        }
-    };
-    xhr.send();
-}
-
-
-
-
-function downloadQGISProjectWFS(data, name, owner, title, bbox) {
-    var xhr = new XMLHttpRequest();
-    xhr.open('GET', "https://raw.githubusercontent.com/davidoesch/geoservice_harvester_poc/main/templates/qgis_wfs_template.qlr");
-    xhr.responseType = 'text';
-    xhr.onreadystatechange = function() {
-        if (xhr.readyState === 4 && xhr.status === 200) {
-            var bboxArray = bbox.split(" ");
-            var xmin = bboxArray[0];
-            var ymin = bboxArray[1];
-            var xmax = bboxArray[2];
-            var ymax = bboxArray[3];
-            data = data.trim(); //remove empty spaces		
-            var projectXml = xhr.responseText;
-            projectXml = projectXml.replace("{{SERVICELINK}}", data);
-            projectXml = projectXml.replace("{{NAME}}", name);
-            projectXml = projectXml.replace("{{TITLE}}", title);
-            projectXml = projectXml.replace("{{OWNER}}", owner);
-            projectXml = projectXml.replace("{{XMAX}}", xmax);
-            projectXml = projectXml.replace("{{YMAX}}", ymax);
-            projectXml = projectXml.replace("{{YMIN}}", ymin);
-            projectXml = projectXml.replace("{{XMIN}}", xmin);
-            var blob = new Blob([projectXml], {
-                type: "application/xml"
-            });
-            var url = URL.createObjectURL(blob);
-            var a = document.createElement("a");
-            a.href = url;
-            a.download = owner + "_" + name + ".qlr";
-            document.body.appendChild(a);
-            a.click();
-            document.body.removeChild(a);
-
-        }
-    };
-    xhr.send();
-}
-
-//Currently not used Too many stuff to be defined in the template, e.g. if the geometry is point or line or polygon, then style etc….
-function downloadARCGISPROProjectWFS(data, name, owner, title) {
-    var xhr = new XMLHttpRequest();
-    xhr.open('GET', "https://raw.githubusercontent.com/davidoesch/geoservice_harvester_poc/main/templates/arcgispro_wfs_template.lyrx");
-    xhr.responseType = 'text';
-    xhr.onreadystatechange = function() {
-        if (xhr.readyState === 4 && xhr.status === 200) {
-            name = name.replace(/ms:/g, ''); // removes all occurrences of "ms:"
-            name = name.replace(/\./g, '_'); // replaces all "." with "_"
-            name = name.replace(/\-/g, '_'); // replaces all "-" with "_"
-            data = data.trim(); //remove empty spaces		
-            var projectXml = xhr.responseText;
-            projectXml = projectXml.replace("{{SERVICELINK}}", data);
-            projectXml = projectXml.replace("{{NAME}}", name);
-            projectXml = projectXml.replace("{{NAME}}", name);
-            projectXml = projectXml.replace("{{TITLE}}", title);
-            var blob = new Blob([projectXml], {
-                type: "application/xml"
-            });
-            var url = URL.createObjectURL(blob);
-            var a = document.createElement("a");
-            a.href = url;
-            a.download = owner + "_" + name + ".lyrx";
-            document.body.appendChild(a);
-            a.click();
-            document.body.removeChild(a);
-
-        }
-    };
-    xhr.send();
-}
-
-function copyLink(link, button) {
-    var startIndex = link.indexOf("Layer: "); 
-	var endIndex = link.length;
-	var layer = link.substring(startIndex, endIndex);
-	var tempInput = document.createElement("input");
-	tempInput.value = link;
-    document.body.appendChild(tempInput);
-    tempInput.select();
-    document.execCommand("copy");
-    document.body.removeChild(tempInput);
-    button.innerHTML = "Service für " + layer + " kopiert!";
-    $(button).addClass('btn-danger');
-    setTimeout(function() {
-        $(button).removeClass('btn-danger');
-    }, 1000);
-}
-
-
-
-</script>
-
-<script >
-
-/**
- * Updates the PHPSESSID cookie with the SameSite and Secure attributes.
- * 
- * This lines retrieves the PHPSESSID cookie from the current document's cookie string, 
- * sets a new cookie with the SameSite and Secure attributes, and overwrites the original 
- * PHPSESSID cookie with the new one.
- * 
- * 
- */
-    var cookies = document.cookie.split('; ');
-for (var i = 0; i < cookies.length; i++) {
-    var parts = cookies[i].split('=');
-    if (parts[0] === 'PHPSESSID') {
-        var sessionId = parts[1];
-        // Do something with sessionId
-        document.cookie = "PHPSESSID=" + sessionId + "; SameSite=None; Secure";
-        break;
-    }
-}
-/**
-* This is a JavaScript function that loads a CSV file with PapaParse and DataTables and displays the data in an HTML table with various features such as sorting, *pagination, and search. It also includes some custom rendering for some columns, such as creating links and buttons for certain data.
-*
-* The function first shows a loader while the data is being loaded and hides the search field and iframes initially. Then it uses PapaParse to download and parse the *CSV file with the specified options, and creates a DataTable using the parsed data.
-*
-* The DataTable is initialized with various options, such as the default sort order, number of entries per page, and whether to enable pagination or not. It also *includes custom rendering functions for some columns, such as creating buttons and links with onclick handlers.
-*
-* Finally, the function shows the search field and iframes after the DataTable is fully loaded using the "initComplete" callback function.
-*/
-
-$(document).ready(function() {
-    // Show loader while data is being loaded
-    $('#loader').removeClass('hide');
-    // Hide search field initially
-    $(".search-container").hide();
-
-    // Hide iframes initially
-    $("iframe").hide();
-    // Load CSV file with PapaParse and DataTables
-    Papa.parse("https://raw.githubusercontent.com/davidoesch/geoservice_harvester_poc/main/data/geoservices_CH.csv", {
-        download: true,
-        header: true,
-        dynamicTyping: true,
-        skipEmptyLines: true,
-        complete: function(results) {
-            // Hide loader once data is loaded
-            $('#loader').addClass('hide');
-            var table = $('#table').DataTable({
-                "data": results.data,
-                "columns": [{
-                    "data": "OWNER",
-                    "title": "Behörde"
-                }, {
-                    "data": "TITLE",
-                    "title": "Title"
-                }, {
-                    "data": "MAPGEO",
-                    "title": "Web",
-					"searchable": false,
-                    "render": function(data, type, row) {
-                        if (row.SERVICETYPE === "WFS") {
-                            return "WFS";
-                        } else if (type === "display") {
-                            return "<a href='#' onclick='window.open(\"" + data + "\")'>Karte</a>";
-                        }
-                        return data;
-                    }
-                }, {
-                    "data": "SERVICELINK",
-                    "title": "Desktop",
-                    "render": function(data, type, row) {
-                        if (row.SERVICETYPE === "WMS") {
-                            return "<div style='text-align:center;'><button onclick='downloadQGISProjectWMS(\"" + data + "\", \"" + row.NAME + "\", \"" + row.OWNER + "\",\"" + row.TITLE + "\", \"" + row.BBOX + "\")'>Open WMS in QGIS</button> &nbsp; <button onclick='downloadARCGISPROProjectWMS(\"" + data + "\", \"" + row.NAME + "\", \"" + row.OWNER + "\",\"" + row.TITLE + "\")'>Open WMS in ArcGISPro&trade;</button> &nbsp; <button onclick='copyLink(\"" + data + "  Layer:  " + row.NAME + "\", this)'>COPY WMS</button></div>";
-                        }
-
-                        if (row.SERVICETYPE === "WMTS") {
-                            return "<div style='text-align:center;'><button onclick='downloadQGISProjectWMTS(\"" + data + "\", \"" + row.NAME + "\", \"" + row.OWNER + "\",\"" + row.TITLE + "\", \"" + row.BBOX + "\")'>Open WMTS in QGIS</button>  &nbsp; <button onclick='downloadARCGISPROProjectWMTS(\"" + data + "\", \"" + row.NAME + "\", \"" + row.OWNER + "\",\"" + row.TITLE + "\")'>Open WMTS in ArcGISPro&trade;</button> &nbsp;<button onclick='copyLink(\"" + data + "  Layer:  " + row.NAME + "\", this)'>COPY WMTS</button></div>";
-                        }
-                        if (row.SERVICETYPE === "WFS") {
-                            return "<div style='text-align:center;'><button onclick='downloadQGISProjectWFS(\"" + data + "\", \"" + row.NAME + "\", \"" + row.OWNER + "\",\"" + row.TITLE + "\", \"" + row.BBOX + "\")'>Open WFS in QGIS</button> &nbsp; <button onclick='copyLink(\"" + data + "  Layer:  " + row.NAME + "\", this)'>COPY WFS</button></div>";
-                        }
-
-                        return data;
-                    }
-
-                }, {
-                    "data": "ABSTRACT",
-                    "title": "Beschreibung"
-                }, {
-                    "data": "KEYWORDS",
-                    "title": "Keywords"
-                }, {
-                    "data": "CONTACT",
-                    "title": "Kontakt"
-                }, {
-                    "data": "LEGEND",
-                    "title": "Legende",
-					"searchable": false,
-                    "render": function(data, type, row) {
-                        if (type === "display" && data !== null && data !== "") {
-                            return "<a href='#' onclick='window.open(\"" + data + "\")'>Legende</a>";
-                        }
-                        return data;
-                    }
-
-                }, {
-                    "data": "METADATA",
-                    "title": "Metadata",
-					"searchable": false,
-                    "render": function(data, type, row) {
-                        if (type === "display" && data !== null && data !== "") {
-                            return "<a href='#' onclick='window.open(\"" + data + "\")'>Metadata</a>";
-                        }
-                        return data;
-                    }
-                }, {
-                    "data": "TREE",
-                    "title": "order",
-                    "searchable": true,
-					"visible": false
-                },{
-                    "data": "NAME",
-                    "title": "techname",
-                    "searchable": true,
-					"visible": false
-                },],
-                "initComplete": function() {
-                    // Show search field after loading is complete
-                    $(".search-container").show();
-
-                    // Show iframes after loading is complete
-                    $("iframe").show();
-                },
-                "order": [
-                    [2, "asc"]
-                ], // Default sort by 'OWNER' ascending
-                "pageLength": 10, // Set default number of entries to 10
-                "paging": true, // Enable pagination
-                "lengthChange": false, // Remove "Show [x] entries" dropdown
-                "columnDefs": [{
-                        "targets": 1,
-                        "width": "60%"
-                    },
-                    {
-                        "targets": 3,
-                        "width": "40%"
-                    },
-                    {
-                        "targets": [0, 2, 4, 5, 6, 7],
-                        "width": "10%"
-                    }
-                ],
-                "responsive": true, // added option for responsive table,
-
-                "searching": true, // disable searching
-                "language": {
-                    "sEmptyTable": "Keine Daten in der Tabelle vorhanden",
-                    "sInfo": "_START_ bis _END_ von _TOTAL_ Einträgen",
-                    "sInfoEmpty": "0 bis 0 von 0 Einträgen",
-                    "sInfoFiltered": "(gefiltert von _MAX_ Einträgen)",
-                    "sInfoPostFix": "",
-                    "sInfoThousands": ".",
-                    "sLengthMenu": "_MENU_ Einträge anzeigen",
-                    "sLoadingRecords": "Wird geladen...",
-                    "sProcessing": "Bitte warten...",
-                    "sSearch": "Suchen",
-                    "sZeroRecords": "Keine Einträge vorhanden.",
-                    "oPaginate": {
-                        "sFirst": "Erste",
-                        "sPrevious": "Zurück",
-                        "sNext": "Nächste",
-                        "sLast": "Letzte"
-                    },
-                    "oAria": {
-                        "sSortAscending": ": aktivieren, um Spalte aufsteigend zu sortieren",
-                        "sSortDescending": ": aktivieren, um Spalte absteigend zu sortieren"
-                    }
-                }
-            });
-
-            $('#loading').hide(); // Hide loading wheel
-            $('#toggle-columns').on('click', function() {
-                table.columns().visible(!table.column(0).visible());
-            });
-            $("button").click(function() {
-                $(this).toggleClass("btn-danger");
-            });
-            $('#table-search').on('keyup', function() {
-                table.search(this.value).draw();
-                var info = table.page.info();
-                var totalRows = info.recordsTotal;
-                var filteredRows = info.recordsDisplay;
-                var text = `${info.start + 1} bis ${info.end} von <strong>${filteredRows}</strong> Datensätzen (gefiltert von ${totalRows} Datensätzen)`;
-                $('#table-info').html(text);
-            });
-            // Set initial text
-            var info = table.page.info();
-            var totalRows = info.recordsTotal;
-            var filteredRows = info.recordsDisplay;
-            var text = `Suche in <strong>${filteredRows}</strong> Datensätzen`;
-            $('#table-info').html(text);
-            $('#table-search').focus(); // Set the focus to the search field
-        }
-    });
-});
-</script>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>GeoHarvester – Geodienste der Schweiz</title>
+  <meta name="description" content="Durchsuche über 33'000 offene Geodatensätze aus WMS-, WMTS- und WFS-Diensten von Bund, allen Kantonen, Städten und dem Fürstentum Liechtenstein. Öffne sie direkt in map.geo.admin.ch, QGIS oder ArcGIS Pro und sieh auf einen Blick, wo Daten fehlen.">
+  <meta name="keywords" content="Schweiz, Geodaten, Geodienste, WMS, WMTS, WFS, Kantone, Gemeinden, map.geo.admin.ch, QGIS, ArcGIS Pro, opendata.swiss, geocat.ch, geodienste.ch, OGC, Metadaten, Geoharvester">
+  <meta name="google-site-verification" content="hDQtbxFwRrQcdcq96Mb9jZW6YI_NHX_FhjBK1bXksqg">
+  <meta name="geo.region" content="CH">
+  <meta name="geo.position" content="46.8182;8.2275">
+  <meta name="ICBM" content="46.8182, 8.2275">
+  <meta name="author" content="David Oesch">
+  <meta name="robots" content="index,follow">
+  <meta property="og:title" content="GeoHarvester – Geodienste der Schweiz">
+  <meta property="og:description" content="Alle offenen Geodienste von Bund, Kantonen und Städten durchsuchen, kombinieren und Lücken in der Abdeckung erkennen.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://davidoesch.github.io/geoservice_harvester_poc/">
+  <meta name="theme-color" content="#f6f6f4" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#0d0d0d" media="(prefers-color-scheme: dark)">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%231c5cab'/%3E%3Cpath d='M9 22l5-12 4 8 2-4 3 8z' fill='white'/%3E%3C/svg%3E">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/ol@10.11.0/ol.css">
+  <link rel="stylesheet" href="css/app.css">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "DataCatalog",
+    "name": "GeoHarvester – Geodienste der Schweiz",
+    "url": "https://davidoesch.github.io/geoservice_harvester_poc/",
+    "description": "Automatisch geerntete Metadaten aller offenen WMS-, WMTS- und WFS-Dienste von Bund, Kantonen, Städten und Liechtenstein.",
+    "spatialCoverage": "Schweiz und Fürstentum Liechtenstein",
+    "license": "https://github.com/davidoesch/geoservice_harvester_poc/blob/main/LICENSE",
+    "distribution": [
+      {"@type": "DataDownload", "encodingFormat": "text/csv", "contentUrl": "https://davidoesch.github.io/geoservice_harvester_poc/data/geoservices_CH.csv"},
+      {"@type": "DataDownload", "encodingFormat": "text/csv", "contentUrl": "https://davidoesch.github.io/geoservice_harvester_poc/data/geodata_CH.csv"}
+    ]
+  }
+  </script>
 </head>
-
 <body>
-<!-- 
-This HTML code includes a website page with a header, a navigation button for the "Info" section, a search bar, and a table. The header includes a title and a subtitle, both center-aligned. Below the header, there is a link to a "Qualitätskontrolle" section, a loading spinner, and a table container. The table container includes a search bar and an empty table. There are also two charts embedded in the page.
+  <a class="skip-link" href="#q" data-i18n="skip">Zur Suche springen</a>
 
-The "Info" section is collapsed by default and includes a description of the GeoHarvester portal, information on the available data, and links to download the data and source code. The "Qualitätskontrolle" section includes two charts.
--->
-<div style="text-align: center;">
-  	<h1 style="font-family: 'Montserrat', sans-serif; font-size: 48px; font-weight: 700; color: #333;">GeoHarvester</h1>
-    <h2 style="font-size: 14px; text-transform: lowercase;">Proof of Concept</h2>
-
-</div>
-
-    <div style="font-family: 'Parisienne', cursive; font-size: 18px; font-weight: 700; text-align: center; color: #333;">Entdecke die Schweizer Geodaten - einfach  zugänglich.</div>
-
-    <div style="text-align: center;">	
-    <p>| <a href="https://davidoesch.github.io/geoservice_harvester_poc/#anchor-QualityControl"> Qualitätskontrolle </a> ||  <img src="https://img.shields.io/github/last-commit/davidoesch/geoservice_harvester_poc" alt="LastUpdate"> | </p>
+  <header class="topbar">
+    <a class="brand" href="./" aria-label="GeoHarvester">
+      <svg viewBox="0 0 32 32" width="28" height="28" aria-hidden="true"><rect width="32" height="32" rx="8" fill="currentColor"/><path d="M9 22l5-12 4 8 2-4 3 8z" fill="var(--surface)"/></svg>
+      <span>GeoHarvester</span>
+    </a>
+    <nav class="topnav" aria-label="Navigation">
+      <a href="#about" data-i18n="navAbout">Über</a>
+      <a href="#quality" data-i18n="navQuality">Qualität</a>
+      <a href="#data" data-i18n="navData">Daten</a>
+      <a href="https://github.com/davidoesch/geoservice_harvester_poc" rel="noopener">GitHub</a>
+    </nav>
+    <div class="topbar-tools">
+      <div class="seg" role="group" aria-label="Sprache / Langue / Lingua / Language" id="lang-switch">
+        <button type="button" data-lang="de">DE</button>
+        <button type="button" data-lang="fr">FR</button>
+        <button type="button" data-lang="it">IT</button>
+        <button type="button" data-lang="en">EN</button>
+      </div>
+      <button type="button" class="icon-btn" id="theme-toggle" aria-label="Theme">
+        <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path fill="currentColor" d="M12 3a9 9 0 1 0 9 9 7 7 0 0 1-9-9z"/></svg>
+      </button>
     </div>
-	<div class="container">
-		<div class="container">
-		  <div class="row justify-content-center">
-			<div class="col-auto">
-			  <button class="btn btn-info" type="button" data-toggle="collapse" data-target="#collapseContent" aria-expanded="false" aria-controls="collapseContent">
-				<i class="fas fa-info-circle"></i> Info
-			  </button>
-			  <div class="collapse" id="collapseContent">
-				<div class="card card-body">
-				  <p>GeoHarvester ist ein Portal, das die offiziellen Geodaten der Dienste der Schweizer Behörden zusammenführt. Wir bieten eine einfache Möglichkeit, auf öffentliche Geodaten zuzugreifen. Unser Ziel ist es, den Zugang und die Nutzung von Geodaten der Schweizer Behörden für jedermann/frau einfach zu machen. Bei uns finden Sie die Daten als Dienst, Metadaten und Informationen zu den Datensätzen wie Titel, Eigentümer, Zusammenfassung, Service-Link, Legenden, Karten Ansicht und ArcGISPro&trade; (.lyrx) und QGIS (.qlr) Dateien. Wir bieten auch qualitative Statistiken, um Ihnen bei der Auswahl der besten Daten für Ihre Bedürfnisse zu helfen. Unsere Plattform ist benutzerfreundlich und unser Ziel ist es, Ihnen den direktesten Zugang zu Geodaten zu bieten.</p>
-				  <p>| Alle DATA-Attribute: <a href="https://davidoesch.github.io/geoservice_harvester_poc/data/geodata_CH.csv"> CSV download</a> || Alle SERVICES Attribute: <a href="https://davidoesch.github.io/geoservice_harvester_poc/data/geoservices_CH.csv"> CSV download</a> || Source Code: <a href="https://github.com/davidoesch/geoservice_harvester_poc">GitHub</a> || Datenquelle <a href="https://github.com/davidoesch/geoservice_harvester_poc#how-to-fix--add-additonal-wms-wmts-services">hinzufügen und korrigieren </a>|</p>
-				</div>
-				</div>
-			</div>
-		</div>
-	</div>
-    
+  </header>
 
-	<div id="loader" class="loader"></div>
-	<div class="table-container">
-	  <div class="search-container">
-		<div id="search-text" style="color: #cccccc;"> Suche nach Fixpunkt UND KT_BS mit: ""fixpunkt" "KT_BS""</div> 
-		<input type="search" id="table-search" placeholder="Suche... z.B Bienen ">
-		
-		<div id="table-info"></div> <!-- Add new div element here -->
-	  </div>
-	  <table id="table" class="display"></table>
-	</div>
+  <main>
+    <section class="hero" id="search-section">
+      <h1 data-i18n="heroTitle">Alle Geodienste der Schweiz. Eine Suche.</h1>
+      <p class="lede" data-i18n="heroLede">Bund, 26 Kantone, Städte und Liechtenstein – durchsuchen, kombinieren und sehen, wo Daten fehlen.</p>
 
- 
-	
-    <table id="table" class="display">
+      <form class="searchbox" role="search" id="search-form" autocomplete="off">
+        <svg class="searchbox-icon" viewBox="0 0 24 24" width="22" height="22" aria-hidden="true"><path fill="currentColor" d="M10 2a8 8 0 0 1 6.32 12.9l5.39 5.4-1.41 1.4-5.4-5.38A8 8 0 1 1 10 2zm0 2a6 6 0 1 0 0 12 6 6 0 0 0 0-12z"/></svg>
+        <label for="q" class="visually-hidden" data-i18n="searchLabel">Suche</label>
+        <input id="q" type="search" name="q" data-i18n-placeholder="searchPlaceholder" placeholder="Thema suchen, z. B. Bienen, Lärm, Wald …" spellcheck="false">
+        <kbd class="kbd-hint" aria-hidden="true">/</kbd>
+      </form>
+      <div class="topics" id="topics" aria-label="Themen"></div>
 
+      <div class="filters" id="filters">
+        <div class="chip-group" role="group" id="kind-filter" aria-label="Anbieter"></div>
+        <div class="chip-group" role="group" id="type-filter" aria-label="Dienst"></div>
+        <label class="select">
+          <span class="visually-hidden" data-i18n="region">Region</span>
+          <select id="region-filter"></select>
+        </label>
+      </div>
+    </section>
 
-    </table>
-    <p>
-        <a id="anchor-QualityControl"></a>
-        <br>
-        <iframe title="Durchschnitt Vollständigkeit :  SCHLÜSSELWÖRTER, ABSTRACT, KONTAKT und METADATEN" aria-label="Balken (gestapelt)" id="datawrapper-chart-DuVHo" src="https://datawrapper.dwcdn.net/DuVHo/1/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="721" data-external="1"></iframe>
-        <script type="text/javascript">
-            ! function() {
-                "use strict";
-                window.addEventListener("message", (function(e) {
-                    if (void 0 !== e.data["datawrapper-height"]) {
-                        var t = document.querySelectorAll("iframe");
-                        for (var a in e.data["datawrapper-height"])
-                            for (var r = 0; r < t.length; r++) {
-                                if (t[r].contentWindow === e.source) t[r].style.height = e.data["datawrapper-height"][a] + "px"
-                            }
-                    }
-                }))
-            }();
-        </script>
-        <br>
-        <iframe title="Vollständigkeit des KEYWORD ABSTRACT CONTACT AND METADATA-Datensatzes in Dienstleistungen " aria-label="Balken (separat)" id="datawrapper-chart-XoJn7" src="https://datawrapper.dwcdn.net/XoJn7/1/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="711" data-external="1"></iframe>
-        <script type="text/javascript">
-            ! function() {
-                "use strict";
-                window.addEventListener("message", (function(e) {
-                    if (void 0 !== e.data["datawrapper-height"]) {
-                        var t = document.querySelectorAll("iframe");
-                        for (var a in e.data["datawrapper-height"])
-                            for (var r = 0; r < t.length; r++) {
-                                if (t[r].contentWindow === e.source) t[r].style.height = e.data["datawrapper-height"][a] + "px"
-                            }
-                    }
-                }))
-            }();
-        </script>
+    <div class="mobile-tabs" role="tablist" id="mobile-tabs">
+      <button type="button" role="tab" data-tab="list" aria-selected="true" data-i18n="tabList">Liste</button>
+      <button type="button" role="tab" data-tab="map" aria-selected="false"><span data-i18n="tabMap">Karte</span> <span class="count-badge" id="tab-map-count" hidden></span></button>
+    </div>
+
+    <section class="workspace" id="workspace">
+      <div class="results-pane" id="results-pane">
+        <div class="results-head">
+          <div>
+            <p class="results-count" id="results-count" aria-live="polite"></p>
+            <p class="coverage-summary" id="coverage-summary"></p>
+          </div>
+          <div class="results-actions">
+            <button type="button" class="btn btn-primary" id="add-all" hidden></button>
+            <button type="button" class="btn btn-ghost" id="export-csv" hidden data-i18n="exportCsv">Treffer als CSV</button>
+          </div>
+        </div>
+        <div class="facets" id="facets"></div>
+        <ol class="results" id="results"></ol>
+        <div class="results-foot">
+          <button type="button" class="btn btn-ghost" id="show-more" hidden></button>
+        </div>
+        <div class="empty" id="empty-state"></div>
+      </div>
+
+      <aside class="map-pane" id="map-pane" aria-label="Karte">
+        <div class="map-card">
+          <div class="map-toolbar">
+            <div class="seg" role="group" id="coverage-mode" aria-label="Abdeckung">
+              <button type="button" data-mode="results" data-i18n="coverageResults">Suchresultate</button>
+              <button type="button" data-mode="selection" data-i18n="coverageSelection">Meine Karte</button>
+              <button type="button" data-mode="off" data-i18n="coverageOff">Aus</button>
+            </div>
+            <label class="select select-sm">
+              <span class="visually-hidden" data-i18n="basemap">Hintergrund</span>
+              <select id="basemap"></select>
+            </label>
+          </div>
+          <div class="map" id="map" tabindex="0" aria-label="Karte der Schweiz"></div>
+          <div class="map-tooltip" id="map-tooltip" role="tooltip" hidden></div>
+          <div class="map-legend" id="map-legend"></div>
+        </div>
+
+        <div class="selection-card" id="selection-card">
+          <div class="selection-head">
+            <h2><span data-i18n="selection">Meine Karte</span> <span class="count-badge" id="selection-count">0</span></h2>
+            <button type="button" class="btn btn-ghost btn-sm" id="clear-selection" data-i18n="clear">Leeren</button>
+          </div>
+          <p class="hint" id="selection-empty" data-i18n="selectionEmpty">Füge Datensätze mit «Zur Karte» hinzu. Sie erscheinen hier und auf der Karte – auch aus verschiedenen Kantonen und Städten gleichzeitig.</p>
+          <ul class="selection-list" id="selection-list"></ul>
+          <div class="export-row" id="export-row" hidden>
+            <a class="btn btn-primary" id="open-mapgeo" target="_blank" rel="noopener">
+              <span data-i18n="openMapGeo">In map.geo.admin.ch öffnen</span>
+            </a>
+            <button type="button" class="btn" id="dl-qgis">QGIS (.qlr)</button>
+            <button type="button" class="btn" id="dl-arcgis">ArcGIS Pro (.lyrx)</button>
+            <button type="button" class="btn btn-ghost" id="share-link" data-i18n="share">Link teilen</button>
+          </div>
+          <p class="hint small" id="export-note"></p>
+        </div>
+      </aside>
+    </section>
+
+    <section class="info" id="about">
+      <h2 data-i18n="aboutTitle">Über GeoHarvester</h2>
+      <div class="info-grid">
+        <div class="prose" id="about-text"></div>
+        <dl class="kpis" id="kpis"></dl>
+      </div>
+    </section>
+
+    <section class="info" id="quality">
+      <h2 data-i18n="qualityTitle">Qualität der Metadaten</h2>
+      <p class="prose" data-i18n="qualityIntro">Wie vollständig beschreiben die Anbieter ihre Layer? Anteil der Layer mit Beschreibung, Stichwörtern, Link zu Metadaten und Kontaktangabe. Klicke auf eine Spalte zum Sortieren.</p>
+      <div class="table-wrap">
+        <table class="quality" id="quality-table"></table>
+      </div>
+    </section>
+
+    <section class="info" id="data">
+      <h2 data-i18n="dataTitle">Daten &amp; Mitmachen</h2>
+      <div class="prose" id="data-text"></div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p><span id="footer-updated"></span> · <a href="https://github.com/davidoesch/geoservice_harvester_poc">GitHub</a> · <a href="https://github.com/davidoesch/geoservice_harvester_poc/blob/main/ISSUES.md" data-i18n="footerIssues">Dienste mit Problemen</a> · <span data-i18n="footerBase">Hintergrundkarte © swisstopo</span></p>
+  </footer>
+
+  <div class="toast" id="toast" role="status" aria-live="polite" hidden></div>
+
+  <noscript>
+    <p class="noscript">Diese Anwendung benötigt JavaScript. Die Daten sind auch als CSV verfügbar:
+      <a href="data/geodata_CH.csv">geodata_CH.csv</a>, <a href="data/geoservices_CH.csv">geoservices_CH.csv</a>.</p>
+  </noscript>
+
+  <script src="https://cdn.jsdelivr.net/npm/proj4@2.22.0/dist/proj4.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/ol@10.11.0/dist/ol.js"></script>
+  <script src="js/app.js"></script>
 </body>
-
 </html>

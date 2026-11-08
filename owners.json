@@ -1,0 +1,453 @@
+{
+ "Bund": {
+  "kind": "federal",
+  "region": "CH",
+  "label": {
+   "de": "Bund (geo.admin.ch)",
+   "fr": "Confédération (geo.admin.ch)",
+   "it": "Confederazione (geo.admin.ch)",
+   "en": "Federal Government (geo.admin.ch)"
+  },
+  "website": "https://www.geo.admin.ch"
+ },
+ "Geodienste": {
+  "kind": "intercantonal",
+  "region": "CH",
+  "label": {
+   "de": "geodienste.ch (kantonsübergreifend)",
+   "fr": "geodienste.ch (intercantonal)",
+   "it": "geodienste.ch (intercantonale)",
+   "en": "geodienste.ch (intercantonal)"
+  },
+  "website": "https://www.geodienste.ch"
+ },
+ "KT_AG": {
+  "kind": "canton",
+  "region": "AG",
+  "canton": "AG",
+  "label": {
+   "de": "Kanton Aargau",
+   "fr": "Canton d'Argovie",
+   "it": "Cantone Argovia",
+   "en": "Canton of Aargau"
+  }
+ },
+ "KT_AI": {
+  "kind": "canton",
+  "region": "AI",
+  "canton": "AI",
+  "label": {
+   "de": "Kanton Appenzell Innerrhoden",
+   "fr": "Canton d'Appenzell Rhodes-Intérieures",
+   "it": "Cantone Appenzello Interno",
+   "en": "Canton of Appenzell Innerrhoden"
+  }
+ },
+ "KT_AR": {
+  "kind": "canton",
+  "region": "AR",
+  "canton": "AR",
+  "label": {
+   "de": "Kanton Appenzell Ausserrhoden",
+   "fr": "Canton d'Appenzell Rhodes-Extérieures",
+   "it": "Cantone Appenzello Esterno",
+   "en": "Canton of Appenzell Ausserrhoden"
+  }
+ },
+ "KT_BE": {
+  "kind": "canton",
+  "region": "BE",
+  "canton": "BE",
+  "label": {
+   "de": "Kanton Bern",
+   "fr": "Canton de Berne",
+   "it": "Cantone Berna",
+   "en": "Canton of Bern"
+  }
+ },
+ "KT_BL": {
+  "kind": "canton",
+  "region": "BL",
+  "canton": "BL",
+  "label": {
+   "de": "Kanton Basel-Landschaft",
+   "fr": "Canton de Bâle-Campagne",
+   "it": "Cantone Basilea Campagna",
+   "en": "Canton of Basel-Landschaft"
+  }
+ },
+ "KT_BS": {
+  "kind": "canton",
+  "region": "BS",
+  "canton": "BS",
+  "label": {
+   "de": "Kanton Basel-Stadt",
+   "fr": "Canton de Bâle-Ville",
+   "it": "Cantone Basilea Città",
+   "en": "Canton of Basel-Stadt"
+  }
+ },
+ "KT_FR": {
+  "kind": "canton",
+  "region": "FR",
+  "canton": "FR",
+  "label": {
+   "de": "Kanton Freiburg",
+   "fr": "Canton de Fribourg",
+   "it": "Cantone Friburgo",
+   "en": "Canton of Fribourg"
+  }
+ },
+ "KT_GE": {
+  "kind": "canton",
+  "region": "GE",
+  "canton": "GE",
+  "label": {
+   "de": "Kanton Genf",
+   "fr": "Canton de Genève",
+   "it": "Cantone Ginevra",
+   "en": "Canton of Geneva"
+  }
+ },
+ "KT_GL": {
+  "kind": "canton",
+  "region": "GL",
+  "canton": "GL",
+  "label": {
+   "de": "Kanton Glarus",
+   "fr": "Canton de Glaris",
+   "it": "Cantone Glarona",
+   "en": "Canton of Glarus"
+  }
+ },
+ "KT_GR": {
+  "kind": "canton",
+  "region": "GR",
+  "canton": "GR",
+  "label": {
+   "de": "Kanton Graubünden",
+   "fr": "Canton des Grisons",
+   "it": "Cantone dei Grigioni",
+   "en": "Canton of Graubünden"
+  }
+ },
+ "KT_JU": {
+  "kind": "canton",
+  "region": "JU",
+  "canton": "JU",
+  "label": {
+   "de": "Kanton Jura",
+   "fr": "Canton du Jura",
+   "it": "Cantone Giura",
+   "en": "Canton of Jura"
+  }
+ },
+ "KT_LU": {
+  "kind": "canton",
+  "region": "LU",
+  "canton": "LU",
+  "label": {
+   "de": "Kanton Luzern",
+   "fr": "Canton de Lucerne",
+   "it": "Cantone Lucerna",
+   "en": "Canton of Lucerne"
+  }
+ },
+ "KT_NE": {
+  "kind": "canton",
+  "region": "NE",
+  "canton": "NE",
+  "label": {
+   "de": "Kanton Neuenburg",
+   "fr": "Canton de Neuchâtel",
+   "it": "Cantone Neuchâtel",
+   "en": "Canton of Neuchâtel"
+  }
+ },
+ "KT_NW": {
+  "kind": "canton",
+  "region": "NW",
+  "canton": "NW",
+  "label": {
+   "de": "Kanton Nidwalden",
+   "fr": "Canton de Nidwald",
+   "it": "Cantone Nidvaldo",
+   "en": "Canton of Nidwalden"
+  }
+ },
+ "KT_OW": {
+  "kind": "canton",
+  "region": "OW",
+  "canton": "OW",
+  "label": {
+   "de": "Kanton Obwalden",
+   "fr": "Canton d'Obwald",
+   "it": "Cantone Obvaldo",
+   "en": "Canton of Obwalden"
+  }
+ },
+ "KT_SG": {
+  "kind": "canton",
+  "region": "SG",
+  "canton": "SG",
+  "label": {
+   "de": "Kanton St. Gallen",
+   "fr": "Canton de Saint-Gall",
+   "it": "Cantone San Gallo",
+   "en": "Canton of St. Gallen"
+  }
+ },
+ "KT_SH": {
+  "kind": "canton",
+  "region": "SH",
+  "canton": "SH",
+  "label": {
+   "de": "Kanton Schaffhausen",
+   "fr": "Canton de Schaffhouse",
+   "it": "Cantone Sciaffusa",
+   "en": "Canton of Schaffhausen"
+  }
+ },
+ "KT_SO": {
+  "kind": "canton",
+  "region": "SO",
+  "canton": "SO",
+  "label": {
+   "de": "Kanton Solothurn",
+   "fr": "Canton de Soleure",
+   "it": "Cantone Soletta",
+   "en": "Canton of Solothurn"
+  }
+ },
+ "KT_SZ": {
+  "kind": "canton",
+  "region": "SZ",
+  "canton": "SZ",
+  "label": {
+   "de": "Kanton Schwyz",
+   "fr": "Canton de Schwytz",
+   "it": "Cantone Svitto",
+   "en": "Canton of Schwyz"
+  }
+ },
+ "KT_TG": {
+  "kind": "canton",
+  "region": "TG",
+  "canton": "TG",
+  "label": {
+   "de": "Kanton Thurgau",
+   "fr": "Canton de Thurgovie",
+   "it": "Cantone Turgovia",
+   "en": "Canton of Thurgau"
+  }
+ },
+ "KT_TI": {
+  "kind": "canton",
+  "region": "TI",
+  "canton": "TI",
+  "label": {
+   "de": "Kanton Tessin",
+   "fr": "Canton du Tessin",
+   "it": "Cantone Ticino",
+   "en": "Canton of Ticino"
+  }
+ },
+ "KT_UR": {
+  "kind": "canton",
+  "region": "UR",
+  "canton": "UR",
+  "label": {
+   "de": "Kanton Uri",
+   "fr": "Canton d'Uri",
+   "it": "Cantone Uri",
+   "en": "Canton of Uri"
+  }
+ },
+ "KT_VD": {
+  "kind": "canton",
+  "region": "VD",
+  "canton": "VD",
+  "label": {
+   "de": "Kanton Waadt",
+   "fr": "Canton de Vaud",
+   "it": "Cantone Vaud",
+   "en": "Canton of Vaud"
+  }
+ },
+ "KT_VS": {
+  "kind": "canton",
+  "region": "VS",
+  "canton": "VS",
+  "label": {
+   "de": "Kanton Wallis",
+   "fr": "Canton du Valais",
+   "it": "Cantone Vallese",
+   "en": "Canton of Valais"
+  }
+ },
+ "KT_ZG": {
+  "kind": "canton",
+  "region": "ZG",
+  "canton": "ZG",
+  "label": {
+   "de": "Kanton Zug",
+   "fr": "Canton de Zoug",
+   "it": "Cantone Zugo",
+   "en": "Canton of Zug"
+  }
+ },
+ "KT_ZH": {
+  "kind": "canton",
+  "region": "ZH",
+  "canton": "ZH",
+  "label": {
+   "de": "Kanton Zürich",
+   "fr": "Canton de Zurich",
+   "it": "Cantone Zurigo",
+   "en": "Canton of Zurich"
+  }
+ },
+ "FL_LI": {
+  "kind": "principality",
+  "region": "LI",
+  "label": {
+   "de": "Fürstentum Liechtenstein",
+   "fr": "Principauté de Liechtenstein",
+   "it": "Principato del Liechtenstein",
+   "en": "Principality of Liechtenstein"
+  },
+  "website": "https://www.llv.li"
+ },
+ "CITY_Zuerich": {
+  "kind": "city",
+  "region": "CITY_Zuerich",
+  "canton": "ZH",
+  "municipality": "Zürich",
+  "label": {
+   "de": "Stadt Zürich",
+   "fr": "Ville de Zurich",
+   "it": "Città di Zurigo",
+   "en": "City of Zurich"
+  }
+ },
+ "CITY_Bern": {
+  "kind": "city",
+  "region": "CITY_Bern",
+  "canton": "BE",
+  "municipality": "Bern",
+  "label": {
+   "de": "Stadt Bern",
+   "fr": "Ville de Berne",
+   "it": "Città di Berna",
+   "en": "City of Bern"
+  }
+ },
+ "CITY_Luzern": {
+  "kind": "city",
+  "region": "CITY_Luzern",
+  "canton": "LU",
+  "municipality": "Luzern",
+  "label": {
+   "de": "Stadt Luzern",
+   "fr": "Ville de Lucerne",
+   "it": "Città di Lucerna",
+   "en": "City of Lucerne"
+  }
+ },
+ "CITY_Winterthur": {
+  "kind": "city",
+  "region": "CITY_Winterthur",
+  "canton": "ZH",
+  "municipality": "Winterthur",
+  "label": {
+   "de": "Stadt Winterthur",
+   "fr": "Ville de Winterthour",
+   "it": "Città di Winterthur",
+   "en": "City of Winterthur"
+  }
+ },
+ "CITY_Zug": {
+  "kind": "city",
+  "region": "CITY_Zug",
+  "canton": "ZG",
+  "municipality": "Zug",
+  "label": {
+   "de": "Stadt Zug",
+   "fr": "Ville de Zoug",
+   "it": "Città di Zugo",
+   "en": "City of Zug"
+  }
+ },
+ "CITY_Geneve": {
+  "kind": "city",
+  "region": "CITY_Geneve",
+  "canton": "GE",
+  "municipality": "Genève",
+  "label": {
+   "de": "Stadt Genf",
+   "fr": "Ville de Genève",
+   "it": "Città di Ginevra",
+   "en": "City of Geneva"
+  }
+ },
+ "CITY_Lausanne": {
+  "kind": "city",
+  "region": "CITY_Lausanne",
+  "canton": "VD",
+  "municipality": "Lausanne",
+  "label": {
+   "de": "Stadt Lausanne",
+   "fr": "Ville de Lausanne",
+   "it": "Città di Losanna",
+   "en": "City of Lausanne"
+  }
+ },
+ "CITY_Biel": {
+  "kind": "city",
+  "region": "CITY_Biel",
+  "canton": "BE",
+  "municipality": "Biel/Bienne",
+  "label": {
+   "de": "Stadt Biel/Bienne",
+   "fr": "Ville de Bienne",
+   "it": "Città di Bienne",
+   "en": "City of Biel/Bienne"
+  }
+ },
+ "CITY_Koeniz": {
+  "kind": "city",
+  "region": "CITY_Koeniz",
+  "canton": "BE",
+  "municipality": "Köniz",
+  "label": {
+   "de": "Gemeinde Köniz",
+   "fr": "Commune de Köniz",
+   "it": "Comune di Köniz",
+   "en": "Municipality of Köniz"
+  }
+ },
+ "CITY_Emmen": {
+  "kind": "city",
+  "region": "CITY_Emmen",
+  "canton": "LU",
+  "municipality": "Emmen",
+  "label": {
+   "de": "Gemeinde Emmen",
+   "fr": "Commune d'Emmen",
+   "it": "Comune di Emmen",
+   "en": "Municipality of Emmen"
+  }
+ },
+ "CITY_Pully": {
+  "kind": "city",
+  "region": "CITY_Pully",
+  "canton": "VD",
+  "municipality": "Pully",
+  "label": {
+   "de": "Pully (SIGIP)",
+   "fr": "Pully (SIGIP)",
+   "it": "Pully (SIGIP)",
+   "en": "Pully (SIGIP)"
+  }
+ }
+}

@@ -1,22 +1,31 @@
 name: Create Parquet files from CSV files
 
+# Runs automatically as part of "Run scraper". This workflow is kept for
+# manual re-runs from the Actions tab.
+
 on:
-  schedule:
-  - cron:  '0 8 * * 0'
-  # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
-    
+
+permissions:
+  contents: write
+
+concurrency:
+  group: data-pipeline
+  cancel-in-progress: false
+
 jobs:
   createParquetFiles:
     runs-on: ubuntu-latest
+    timeout-minutes: 15
     steps:
       - name: Checkout the repository
-        uses: actions/checkout@v3
+        uses: actions/checkout@v7
 
-      - name: Set up Python 3.9
-        uses: actions/setup-python@v4
+      - name: Set up Python
+        uses: actions/setup-python@v7
         with:
-          python-version: 3.9
+          python-version: '3.13'
+          cache: pip
 
       - name: Install dependencies
         run: |
@@ -24,14 +33,14 @@ jobs:
           pip install -r requirements.txt
 
       - name: Run Python script
+        run: python format-converter.py
+
+      - name: Commit and push Parquet files
         run: |
-          python format-converter.py
-      
-      - name: Push Parquet files to repo
-        uses: github-actions-x/commit@v2.9
-        with:
-          push-branch: 'main'
-          commit-message: 'Create Parquet files'
-          force-add: 'true'
-          files: data/*
-          name: Format converter
+          git config user.name "Format converter"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -A data/
+          git diff --staged --quiet && exit 0
+          git commit -m "Create Parquet files"
+          git pull --rebase origin "${GITHUB_REF_NAME}"
+          git push origin "HEAD:${GITHUB_REF_NAME}"
