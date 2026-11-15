@@ -1,6 +1,5 @@
 Timestamp,Operator,URL,Issue
-2026-11-08T19:52:55.863789+01:00,KT_GE,https://vector.sitg.ge.ch/arcgis/services/VIT_VIGNOBLE_FEDERAL/MapServer/WMSServer?SERVICE=WMS&REQUEST=GetCapabilities,Connection timed out
-2026-11-08T19:53:14.752615+01:00,KT_GE,https://vector.sitg.ge.ch/arcgis/services/CLIMAT_VENT_10M_4H00_P2/MapServer/WFSServer?SERVICE=WFS&REQUEST=GetCapabilities,Connection timed out
-2026-11-08T19:53:15.517590+01:00,KT_GE,https://vector.sitg.ge.ch/arcgis/services/OTC_SL_EQUIPEMENT_DETECTEUR/MapServer/WFSServer?SERVICE=WFS&REQUEST=GetCapabilities,Connection timed out
-2026-11-08T19:55:15.708170+01:00,KT_GE,https://vector.sitg.ge.ch/arcgis/services/CLIMAT_VENT_10M_4H00_P2/MapServer/WMSServer?SERVICE=WMS&REQUEST=GetCapabilities,Connection timed out
-2026-11-08T19:55:16.920689+01:00,KT_GE,https://vector.sitg.ge.ch/arcgis/services/OTC_SL_EQUIPEMENT_DETECTEUR/MapServer/WMSServer?SERVICE=WMS&REQUEST=GetCapabilities,Connection timed out
+2026-11-15T06:40:53.237791+01:00,KT_GE,https://vector.sitg.ge.ch/arcgis/services/OTC_SL_EQUIPEMENT_MAT/MapServer/WFSServer?SERVICE=WFS&REQUEST=GetCapabilities,Connection timed out
+2026-11-15T06:40:53.245036+01:00,KT_GE,https://vector.sitg.ge.ch/arcgis/services/CLIMAT_VENT_10M_4H00_P2/MapServer/WFSServer?SERVICE=WFS&REQUEST=GetCapabilities,Connection timed out
+2026-11-15T06:47:26.414487+01:00,KT_GE,https://vector.sitg.ge.ch/arcgis/services/OTC_SV_SUPPORT/MapServer/WMSServer?SERVICE=WMS&REQUEST=GetCapabilities,Connection timed out
+2026-11-15T06:47:41.086144+01:00,KT_GE,https://vector.sitg.ge.ch/arcgis/services/DAC_SECTEUR_INSPECT_CHANTIER/MapServer/WFSServer?SERVICE=WFS&REQUEST=GetCapabilities,Connection timed out
