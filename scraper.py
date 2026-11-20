@@ -30,6 +30,7 @@ import json
 import logging
 import math
 import os
+import re
 import shutil
 import sys
 import threading
@@ -100,6 +101,59 @@ class ErrorLog:
 
 ERRORS = ErrorLog()
 
+# Carry-over: layers of the previous run, used when an endpoint fails in
+# this run (outage, or a server that blocks the cloud machines running the
+# weekly GitHub Action). Failing endpoints are tracked with the date of
+# their first failure in FAILING_SINCE_FILE so dead services stay visible.
+FAILING_SINCE_FILE = os.path.join("tools", "failing_since.json")
+PREVIOUS = defaultdict(list)
+FAILING = {}
+_FAILING_LOCK = threading.Lock()
+
+
+def source_key(operator, url, stype=None):
+    """(owner, type, SERVICELINK) of a source, as written by the scraper."""
+    stype = stype or ogc_utils.guess_service_type(url)
+    link = ogc_utils.capabilities_url(url, "WMTS") if stype == "WMTS" \
+        else ogc_utils.service_base_url(url)
+    return (operator, stype, link)
+
+
+def load_previous(csv_file):
+    """Index the layers of the previous run by source."""
+    PREVIOUS.clear()
+    if not os.path.exists(csv_file):
+        return
+    with open(csv_file, encoding="utf-8") as f:
+        for row in csv.DictReader(f):
+            PREVIOUS[(row["OWNER"], row["SERVICETYPE"],
+                      row["SERVICELINK"])].append(row)
+
+
+def load_failing_since():
+    try:
+        with open(FAILING_SINCE_FILE, encoding="utf-8") as f:
+            return json.load(f)
+    except (OSError, ValueError):
+        return {}
+
+
+def source_failed(operator, url, issue):
+    """Log a failed endpoint and return its layers of the previous run."""
+    today = datetime.now(TZ).strftime("%Y-%m-%d")
+    with _FAILING_LOCK:
+        since = FAILING.setdefault(url, PREVIOUS_FAILING.get(url, today))
+    rows = PREVIOUS.get(source_key(operator, url), [])
+    note = " (failing since %s" % since
+    note += "; %d layers of the previous run kept)" % len(rows) if rows \
+        else ")"
+    ERRORS.add(operator, url, issue + note)
+    logger.warning("%s > %s: %s%s", operator, url, issue, note)
+    return [dict(r) for r in rows]
+
+
+PREVIOUS_FAILING = {}
+
 
 def load_scraper(operator):
     """Return the custom scraper module for an operator or the default."""
@@ -131,16 +185,12 @@ def harvest_source(source):
     rows = []
     cap = ogc_utils.fetch_capabilities(url)
     if not cap["ok"]:
-        ERRORS.add(operator, url, cap["error"])
-        logger.warning("%s > %s: %s", operator, url, cap["error"])
-        return rows
+        return source_failed(operator, url, cap["error"])
     try:
         service = ogc_utils.open_service(url, cap)
     except Exception as e:
-        ERRORS.add(operator, url, "OWSLib could not parse capabilities: %s"
-                   % e)
-        logger.error("%s > %s: %s", operator, url, e)
-        return rows
+        return source_failed(operator, url,
+                             "OWSLib could not parse capabilities: %s" % e)
 
     stype = cap["type"]
     src = dict(source, SERVICETYPE=stype)
@@ -331,12 +381,27 @@ def write_operator_stats(out_file):
         f.write("# Issues found during the last run (%s)\n\n" % datestamp)
         if not error_files:
             f.write("No issues found.\n")
+        else:
+            f.write("Endpoints that fail keep the layers of the previous "
+                    "run. Endpoints failing for a long time should be "
+                    "checked and removed from sources.csv.\n\n")
         for error_file in error_files:
             operator = os.path.basename(error_file).replace("_errors.csv", "")
             with open(error_file, "r", encoding="utf-8") as in_file:
-                n = max(0, sum(1 for _ in in_file) - 1)
-            f.write("- %s: [%s issue(s)](%s)\n" % (
-                operator, n, error_file.replace(os.sep, "/")))
+                issues = list(csv.DictReader(in_file))
+            since = sorted(re.findall(r"failing since (\d{4}-\d{2}-\d{2})",
+                                      " ".join(i["Issue"] for i in issues)))
+            kept = sum(int(n) for n in re.findall(
+                r"(\d+) layers of the previous run kept",
+                " ".join(i["Issue"] for i in issues)))
+            extra = []
+            if since:
+                extra.append("failing since %s" % since[0])
+            if kept:
+                extra.append("%d layers kept from the previous run" % kept)
+            f.write("- %s: [%s issue(s)](%s)%s\n" % (
+                operator, len(issues), error_file.replace(os.sep, "/"),
+                " – " + ", ".join(extra) if extra else ""))
 
 
 def publish_urls():
@@ -408,9 +473,14 @@ def main():
                                                       args.workers))
     logger.info("Harvesting %d sources", len(sources))
 
+    load_previous(config.GEOSERVICES_CH_CSV)
+    PREVIOUS_FAILING.update(load_failing_since())
     rows = harvest_all(sources, workers=args.workers)
     write_csv(rows, config.GEOSERVICES_CH_CSV, FIELDNAMES)
     ERRORS.write(config.DEAD_SERVICES_PATH)
+    if not args.owner:
+        with open(FAILING_SINCE_FILE, "w", encoding="utf-8") as f:
+            json.dump(dict(sorted(FAILING.items())), f, indent=1)
     print("\n%d layers harvested in %.0f min" % (
         len(rows), (time.time() - started) / 60))
 

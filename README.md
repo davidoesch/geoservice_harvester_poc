@@ -91,9 +91,15 @@ Display names and regions of all owners are defined in [`owners.json`](owners.js
 Known limitations
 
 - Services that require a login or token (HTTP 401/499) are not included.
-- Canton Ticino's servers do not answer requests from outside Switzerland. The
-  weekly GitHub run (US-based runners) therefore cannot reach them; Ticino
-  data is available when the harvester runs from a Swiss network.
+- Some servers do not answer the cloud machines that run the weekly GitHub
+  Action, although they work fine from Switzerland (seen for Zug, Winterthur,
+  Pully, Emmen and at times Ticino). When an endpoint fails, the scraper keeps
+  its layers from the previous run, logs the issue with the date of the first
+  failure (`tools/failing_since.json`, summary in [`ISSUES.md`](ISSUES.md)) and
+  retries next week. Endpoints that keep failing from a Swiss network as well
+  should be removed from `sources.csv` (`discover_sources.py` does that).
+  To refresh blocked providers, run `python scraper.py` from a Swiss network,
+  or use a self-hosted runner in Switzerland.
 - A browser preview of WFS-only and WMTS-only datasets needs CORS headers on
   the provider's server. Without them, the layers can still be opened in QGIS
   or ArcGIS Pro.

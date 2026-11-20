@@ -1,9 +1,3 @@
-# Issues found during the last run (15.11.2026)
+# Issues found during the last run (20.11.2026)
 
-- CITY_Emmen: [2 issue(s)](tools/CITY_Emmen_errors.csv)
-- CITY_Geneve: [2 issue(s)](tools/CITY_Geneve_errors.csv)
-- CITY_Pully: [3 issue(s)](tools/CITY_Pully_errors.csv)
-- CITY_Winterthur: [39 issue(s)](tools/CITY_Winterthur_errors.csv)
-- KT_GE: [4 issue(s)](tools/KT_GE_errors.csv)
-- KT_LU: [4 issue(s)](tools/KT_LU_errors.csv)
-- KT_ZG: [107 issue(s)](tools/KT_ZG_errors.csv)
+No issues found.
