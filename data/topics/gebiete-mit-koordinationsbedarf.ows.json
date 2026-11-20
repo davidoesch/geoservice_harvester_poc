@@ -1,0 +1,169 @@
+{
+ "type": "FeatureCollection",
+ "id": "https://davidoesch.github.io/geoservice_harvester_poc/data/topics/gebiete-mit-koordinationsbedarf.ows.json",
+ "properties": {
+  "lang": "de",
+  "title": "Gebiete mit Koordinationsbedarf",
+  "updated": "2026-11-20T16:05:37+01:00",
+  "subtitle": "GeoHarvester topic: 3 providers",
+  "links": {
+   "profiles": [
+    {
+     "href": "http://www.opengis.net/spec/owc-geojson/1.0/req/core"
+    }
+   ]
+  }
+ },
+ "features": [
+  {
+   "type": "Feature",
+   "id": "https://www.ogd.stadt-zuerich.ch/wms/geoportal/Kommunale_Energieplanung___Energieplankarten_A_D__STRB_#Koordinationsgebiete",
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       8.466,
+       47.335
+      ],
+      [
+       8.566,
+       47.335
+      ],
+      [
+       8.566,
+       47.404
+      ],
+      [
+       8.466,
+       47.404
+      ],
+      [
+       8.466,
+       47.335
+      ]
+     ]
+    ]
+   },
+   "properties": {
+    "title": "Koordinationsgebiete",
+    "updated": "2026-11-20T16:05:37+01:00",
+    "publisher": "Stadt Zürich",
+    "layer": "Koordinationsgebiete",
+    "offerings": [
+     {
+      "code": "http://www.opengis.net/spec/owc-geojson/1.0/req/wms",
+      "operations": [
+       {
+        "code": "GetCapabilities",
+        "method": "GET",
+        "type": "application/xml",
+        "href": "https://www.ogd.stadt-zuerich.ch/wms/geoportal/Kommunale_Energieplanung___Energieplankarten_A_D__STRB_?SERVICE=WMS&REQUEST=GetCapabilities"
+       }
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": "https://wms.geo.bs.ch/#EP_Energierichtplan_Nachbargemeinde",
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       7.239,
+       47.264
+      ],
+      [
+       8.105,
+       47.264
+      ],
+      [
+       8.105,
+       47.761
+      ],
+      [
+       7.239,
+       47.761
+      ],
+      [
+       7.239,
+       47.264
+      ]
+     ]
+    ]
+   },
+   "properties": {
+    "title": "Koordination mit Nachbargemeinde",
+    "updated": "2026-11-20T16:05:37+01:00",
+    "publisher": "Kanton Basel-Stadt",
+    "layer": "EP_Energierichtplan_Nachbargemeinde",
+    "offerings": [
+     {
+      "code": "http://www.opengis.net/spec/owc-geojson/1.0/req/wms",
+      "operations": [
+       {
+        "code": "GetCapabilities",
+        "method": "GET",
+        "type": "application/xml",
+        "href": "https://wms.geo.bs.ch/?SERVICE=WMS&REQUEST=GetCapabilities"
+       }
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": "https://public.geo.lu.ch/ogd/services/managed/ENERPLAN_COL_V6_MP/MapServer/WMSServer#7",
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       8.261,
+       47.022
+      ],
+      [
+       8.306,
+       47.022
+      ],
+      [
+       8.306,
+       47.042
+      ],
+      [
+       8.261,
+       47.042
+      ],
+      [
+       8.261,
+       47.022
+      ]
+     ]
+    ]
+   },
+   "properties": {
+    "title": "Gebiete mit Koordinationsbedarf",
+    "updated": "2026-11-20T16:05:37+01:00",
+    "publisher": "Kanton Luzern",
+    "layer": "7",
+    "offerings": [
+     {
+      "code": "http://www.opengis.net/spec/owc-geojson/1.0/req/wms",
+      "operations": [
+       {
+        "code": "GetCapabilities",
+        "method": "GET",
+        "type": "application/xml",
+        "href": "https://public.geo.lu.ch/ogd/services/managed/ENERPLAN_COL_V6_MP/MapServer/WMSServer?SERVICE=WMS&REQUEST=GetCapabilities"
+       }
+      ]
+     }
+    ]
+   }
+  }
+ ]
+}

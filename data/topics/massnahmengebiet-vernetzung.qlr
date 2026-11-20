@@ -1,0 +1,36 @@
+<!DOCTYPE qgis-layer-definition>
+<qlr>
+  <layer-tree-group expanded="1" checked="Qt::Checked" name="">
+    <layer-tree-group expanded="1" checked="Qt::Checked" name="GeoHarvester – Massnahmengebiet Vernetzung">
+      <layer-tree-layer expanded="0" checked="Qt::Checked" id="geoharvester_massnahmengebiet-vernetzung_0" name="Massnahmengebiete (Luzern)" source="contextualWMSLegend=0&amp;crs=EPSG:2056&amp;dpiMode=7&amp;featureCount=10&amp;format=image/png&amp;layers=0&amp;styles&amp;url=https://map.stadtluzern.ch/server/services/OGD/energieplanung_massnahmengebiet/MapServer/WMSServer" providerKey="wms"/>
+      <layer-tree-layer expanded="0" checked="Qt::Checked" id="geoharvester_massnahmengebiet-vernetzung_1" name="Massnahmengebiete_OGD (Zürich)" source="contextualWMSLegend=0&amp;crs=EPSG:2056&amp;dpiMode=7&amp;featureCount=10&amp;format=image/png&amp;layers=Massnahmengebiete_OGD&amp;styles&amp;url=https://www.ogd.stadt-zuerich.ch/wms/geoportal/Fachplanung_Hitzeminderung_OGD" providerKey="wms"/>
+      <layer-tree-layer expanded="0" checked="Qt::Checked" id="geoharvester_massnahmengebiet-vernetzung_2" name="Massnahmengebiet Vernetzung (BE)" source="contextualWMSLegend=0&amp;crs=EPSG:2056&amp;dpiMode=7&amp;featureCount=10&amp;format=image/png&amp;layers=VERNETZ_MG_VW_1724&amp;styles&amp;url=https://www.geoservice.apps.be.ch/geoservice3/services/a42geo/of_farming03_de_ms_wms/MapServer/WMSServer" providerKey="wms"/>
+    </layer-tree-group>
+  </layer-tree-group>
+  <maplayers>
+    <maplayer type="raster" hasScaleBasedVisibilityFlag="0" minScale="1e+08" maxScale="0" styleCategories="AllStyleCategories">
+      <extent><xmin>2658409</xmin><ymin>1208725</ymin><xmax>2669964</xmax><ymax>1215298</ymax></extent>
+      <id>geoharvester_massnahmengebiet-vernetzung_0</id>
+      <datasource>contextualWMSLegend=0&amp;crs=EPSG:2056&amp;dpiMode=7&amp;featureCount=10&amp;format=image/png&amp;layers=0&amp;styles&amp;url=https://map.stadtluzern.ch/server/services/OGD/energieplanung_massnahmengebiet/MapServer/WMSServer</datasource>
+      <layername>Massnahmengebiete (Luzern)</layername>
+      <srs><spatialrefsys><proj4>+proj=somerc +lat_0=46.9524055555556 +lon_0=7.43958333333333 +k_0=1 +x_0=2600000 +y_0=1200000 +ellps=bessel +towgs84=674.374,15.056,405.346,0,0,0,0 +units=m +no_defs</proj4><srid>2056</srid><authid>EPSG:2056</authid><description>CH1903+ / LV95</description><projectionacronym>somerc</projectionacronym><ellipsoidacronym>EPSG:7004</ellipsoidacronym><geographicflag>false</geographicflag></spatialrefsys></srs>
+      <provider>wms</provider>
+    </maplayer>
+    <maplayer type="raster" hasScaleBasedVisibilityFlag="0" minScale="1e+08" maxScale="0" styleCategories="AllStyleCategories">
+      <extent><xmin>2677516</xmin><ymin>1241743</ymin><xmax>2689424</xmax><ymax>1254253</ymax></extent>
+      <id>geoharvester_massnahmengebiet-vernetzung_1</id>
+      <datasource>contextualWMSLegend=0&amp;crs=EPSG:2056&amp;dpiMode=7&amp;featureCount=10&amp;format=image/png&amp;layers=Massnahmengebiete_OGD&amp;styles&amp;url=https://www.ogd.stadt-zuerich.ch/wms/geoportal/Fachplanung_Hitzeminderung_OGD</datasource>
+      <layername>Massnahmengebiete_OGD (Zürich)</layername>
+      <srs><spatialrefsys><proj4>+proj=somerc +lat_0=46.9524055555556 +lon_0=7.43958333333333 +k_0=1 +x_0=2600000 +y_0=1200000 +ellps=bessel +towgs84=674.374,15.056,405.346,0,0,0,0 +units=m +no_defs</proj4><srid>2056</srid><authid>EPSG:2056</authid><description>CH1903+ / LV95</description><projectionacronym>somerc</projectionacronym><ellipsoidacronym>EPSG:7004</ellipsoidacronym><geographicflag>false</geographicflag></spatialrefsys></srs>
+      <provider>wms</provider>
+    </maplayer>
+    <maplayer type="raster" hasScaleBasedVisibilityFlag="0" minScale="1e+08" maxScale="0" styleCategories="AllStyleCategories">
+      <extent><xmin>2555697</xmin><ymin>1134565</ymin><xmax>2672041</xmax><ymax>1244342</ymax></extent>
+      <id>geoharvester_massnahmengebiet-vernetzung_2</id>
+      <datasource>contextualWMSLegend=0&amp;crs=EPSG:2056&amp;dpiMode=7&amp;featureCount=10&amp;format=image/png&amp;layers=VERNETZ_MG_VW_1724&amp;styles&amp;url=https://www.geoservice.apps.be.ch/geoservice3/services/a42geo/of_farming03_de_ms_wms/MapServer/WMSServer</datasource>
+      <layername>Massnahmengebiet Vernetzung (BE)</layername>
+      <srs><spatialrefsys><proj4>+proj=somerc +lat_0=46.9524055555556 +lon_0=7.43958333333333 +k_0=1 +x_0=2600000 +y_0=1200000 +ellps=bessel +towgs84=674.374,15.056,405.346,0,0,0,0 +units=m +no_defs</proj4><srid>2056</srid><authid>EPSG:2056</authid><description>CH1903+ / LV95</description><projectionacronym>somerc</projectionacronym><ellipsoidacronym>EPSG:7004</ellipsoidacronym><geographicflag>false</geographicflag></spatialrefsys></srs>
+      <provider>wms</provider>
+    </maplayer>
+  </maplayers>
+</qlr>

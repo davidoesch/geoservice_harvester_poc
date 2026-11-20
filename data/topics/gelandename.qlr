@@ -1,0 +1,63 @@
+<!DOCTYPE qgis-layer-definition>
+<qlr>
+  <layer-tree-group expanded="1" checked="Qt::Checked" name="">
+    <layer-tree-group expanded="1" checked="Qt::Checked" name="GeoHarvester – Geländename">
+      <layer-tree-layer expanded="0" checked="Qt::Checked" id="geoharvester_gelandename_0" name="KESB Seeland (BE)" source="contextualWMSLegend=0&amp;crs=EPSG:2056&amp;dpiMode=7&amp;featureCount=10&amp;format=image/png&amp;layers=ADMKESB_KREIS_VW_26409&amp;styles&amp;url=https://www.geoservice.apps.be.ch/geoservice3/services/a42geo/of_boundaries06_de_ms_wms/MapServer/WMSServer" providerKey="wms"/>
+      <layer-tree-layer expanded="0" checked="Qt::Checked" id="geoharvester_gelandename_1" name="Geländename (BS)" source="contextualWMSLegend=0&amp;crs=EPSG:2056&amp;dpiMode=7&amp;featureCount=10&amp;format=image/png&amp;layers=BS_Nomenklatur_Gelaendename&amp;styles&amp;url=https://wms.geo.bs.ch/" providerKey="wms"/>
+      <layer-tree-layer expanded="0" checked="Qt::Checked" id="geoharvester_gelandename_2" name="Landesnamen (GR)" source="contextualWMSLegend=0&amp;crs=EPSG:2056&amp;dpiMode=7&amp;featureCount=10&amp;format=image/png&amp;layers=Landesnamen&amp;styles&amp;url=https://wms.geo.gr.ch/admineinteilung" providerKey="wms"/>
+      <layer-tree-layer expanded="0" checked="Qt::Checked" id="geoharvester_gelandename_3" name="Geländename (SZ)" source="contextualWMSLegend=0&amp;crs=EPSG:2056&amp;dpiMode=7&amp;featureCount=10&amp;format=image/png&amp;layers=ch.sz.a018.amtliche_vermessung.nomenklatur.gelaendename&amp;styles&amp;url=https://map.geo.sz.ch/mapserv_proxy" providerKey="wms"/>
+      <layer-tree-layer expanded="0" checked="Qt::Checked" id="geoharvester_gelandename_4" name="Geländename (VS)" source="contextualWMSLegend=0&amp;crs=EPSG:2056&amp;dpiMode=7&amp;featureCount=10&amp;format=image/png&amp;layers=22&amp;styles&amp;url=https://sit.vs.ch/arcgis/services/AV/MapServer/WMSServer" providerKey="wms"/>
+      <layer-tree-layer expanded="0" checked="Qt::Checked" id="geoharvester_gelandename_5" name="Geländename (ZG)" source="contextualWMSLegend=0&amp;crs=EPSG:2056&amp;dpiMode=7&amp;featureCount=10&amp;format=image/png&amp;layers=zg.av_gelaendename&amp;styles&amp;url=https://services.geo.zg.ch/ows/BasisplanFarbe" providerKey="wms"/>
+    </layer-tree-group>
+  </layer-tree-group>
+  <maplayers>
+    <maplayer type="raster" hasScaleBasedVisibilityFlag="0" minScale="1e+08" maxScale="0" styleCategories="AllStyleCategories">
+      <extent><xmin>2555435</xmin><ymin>1130343</ymin><xmax>2677782</xmax><ymax>1244526</ymax></extent>
+      <id>geoharvester_gelandename_0</id>
+      <datasource>contextualWMSLegend=0&amp;crs=EPSG:2056&amp;dpiMode=7&amp;featureCount=10&amp;format=image/png&amp;layers=ADMKESB_KREIS_VW_26409&amp;styles&amp;url=https://www.geoservice.apps.be.ch/geoservice3/services/a42geo/of_boundaries06_de_ms_wms/MapServer/WMSServer</datasource>
+      <layername>KESB Seeland (BE)</layername>
+      <srs><spatialrefsys><proj4>+proj=somerc +lat_0=46.9524055555556 +lon_0=7.43958333333333 +k_0=1 +x_0=2600000 +y_0=1200000 +ellps=bessel +towgs84=674.374,15.056,405.346,0,0,0,0 +units=m +no_defs</proj4><srid>2056</srid><authid>EPSG:2056</authid><description>CH1903+ / LV95</description><projectionacronym>somerc</projectionacronym><ellipsoidacronym>EPSG:7004</ellipsoidacronym><geographicflag>false</geographicflag></spatialrefsys></srs>
+      <provider>wms</provider>
+    </maplayer>
+    <maplayer type="raster" hasScaleBasedVisibilityFlag="0" minScale="1e+08" maxScale="0" styleCategories="AllStyleCategories">
+      <extent><xmin>2584892</xmin><ymin>1234808</ymin><xmax>2649963</xmax><ymax>1290260</ymax></extent>
+      <id>geoharvester_gelandename_1</id>
+      <datasource>contextualWMSLegend=0&amp;crs=EPSG:2056&amp;dpiMode=7&amp;featureCount=10&amp;format=image/png&amp;layers=BS_Nomenklatur_Gelaendename&amp;styles&amp;url=https://wms.geo.bs.ch/</datasource>
+      <layername>Geländename (BS)</layername>
+      <srs><spatialrefsys><proj4>+proj=somerc +lat_0=46.9524055555556 +lon_0=7.43958333333333 +k_0=1 +x_0=2600000 +y_0=1200000 +ellps=bessel +towgs84=674.374,15.056,405.346,0,0,0,0 +units=m +no_defs</proj4><srid>2056</srid><authid>EPSG:2056</authid><description>CH1903+ / LV95</description><projectionacronym>somerc</projectionacronym><ellipsoidacronym>EPSG:7004</ellipsoidacronym><geographicflag>false</geographicflag></spatialrefsys></srs>
+      <provider>wms</provider>
+    </maplayer>
+    <maplayer type="raster" hasScaleBasedVisibilityFlag="0" minScale="1e+08" maxScale="0" styleCategories="AllStyleCategories">
+      <extent><xmin>2605056</xmin><ymin>1007111</ymin><xmax>2914690</xmax><ymax>1333665</ymax></extent>
+      <id>geoharvester_gelandename_2</id>
+      <datasource>contextualWMSLegend=0&amp;crs=EPSG:2056&amp;dpiMode=7&amp;featureCount=10&amp;format=image/png&amp;layers=Landesnamen&amp;styles&amp;url=https://wms.geo.gr.ch/admineinteilung</datasource>
+      <layername>Landesnamen (GR)</layername>
+      <srs><spatialrefsys><proj4>+proj=somerc +lat_0=46.9524055555556 +lon_0=7.43958333333333 +k_0=1 +x_0=2600000 +y_0=1200000 +ellps=bessel +towgs84=674.374,15.056,405.346,0,0,0,0 +units=m +no_defs</proj4><srid>2056</srid><authid>EPSG:2056</authid><description>CH1903+ / LV95</description><projectionacronym>somerc</projectionacronym><ellipsoidacronym>EPSG:7004</ellipsoidacronym><geographicflag>false</geographicflag></spatialrefsys></srs>
+      <provider>wms</provider>
+    </maplayer>
+    <maplayer type="raster" hasScaleBasedVisibilityFlag="0" minScale="1e+08" maxScale="0" styleCategories="AllStyleCategories">
+      <extent><xmin>2669090</xmin><ymin>1192274</ymin><xmax>2722081</xmax><ymax>1233040</ymax></extent>
+      <id>geoharvester_gelandename_3</id>
+      <datasource>contextualWMSLegend=0&amp;crs=EPSG:2056&amp;dpiMode=7&amp;featureCount=10&amp;format=image/png&amp;layers=ch.sz.a018.amtliche_vermessung.nomenklatur.gelaendename&amp;styles&amp;url=https://map.geo.sz.ch/mapserv_proxy</datasource>
+      <layername>Geländename (SZ)</layername>
+      <srs><spatialrefsys><proj4>+proj=somerc +lat_0=46.9524055555556 +lon_0=7.43958333333333 +k_0=1 +x_0=2600000 +y_0=1200000 +ellps=bessel +towgs84=674.374,15.056,405.346,0,0,0,0 +units=m +no_defs</proj4><srid>2056</srid><authid>EPSG:2056</authid><description>CH1903+ / LV95</description><projectionacronym>somerc</projectionacronym><ellipsoidacronym>EPSG:7004</ellipsoidacronym><geographicflag>false</geographicflag></spatialrefsys></srs>
+      <provider>wms</provider>
+    </maplayer>
+    <maplayer type="raster" hasScaleBasedVisibilityFlag="0" minScale="1e+08" maxScale="0" styleCategories="AllStyleCategories">
+      <extent><xmin>2547987</xmin><ymin>1078931</ymin><xmax>2679855</xmax><ymax>1168171</ymax></extent>
+      <id>geoharvester_gelandename_4</id>
+      <datasource>contextualWMSLegend=0&amp;crs=EPSG:2056&amp;dpiMode=7&amp;featureCount=10&amp;format=image/png&amp;layers=22&amp;styles&amp;url=https://sit.vs.ch/arcgis/services/AV/MapServer/WMSServer</datasource>
+      <layername>Geländename (VS)</layername>
+      <srs><spatialrefsys><proj4>+proj=somerc +lat_0=46.9524055555556 +lon_0=7.43958333333333 +k_0=1 +x_0=2600000 +y_0=1200000 +ellps=bessel +towgs84=674.374,15.056,405.346,0,0,0,0 +units=m +no_defs</proj4><srid>2056</srid><authid>EPSG:2056</authid><description>CH1903+ / LV95</description><projectionacronym>somerc</projectionacronym><ellipsoidacronym>EPSG:7004</ellipsoidacronym><geographicflag>false</geographicflag></spatialrefsys></srs>
+      <provider>wms</provider>
+    </maplayer>
+    <maplayer type="raster" hasScaleBasedVisibilityFlag="0" minScale="1e+08" maxScale="0" styleCategories="AllStyleCategories">
+      <extent><xmin>2672777</xmin><ymin>1214998</ymin><xmax>2695518</xmax><ymax>1231887</ymax></extent>
+      <id>geoharvester_gelandename_5</id>
+      <datasource>contextualWMSLegend=0&amp;crs=EPSG:2056&amp;dpiMode=7&amp;featureCount=10&amp;format=image/png&amp;layers=zg.av_gelaendename&amp;styles&amp;url=https://services.geo.zg.ch/ows/BasisplanFarbe</datasource>
+      <layername>Geländename (ZG)</layername>
+      <srs><spatialrefsys><proj4>+proj=somerc +lat_0=46.9524055555556 +lon_0=7.43958333333333 +k_0=1 +x_0=2600000 +y_0=1200000 +ellps=bessel +towgs84=674.374,15.056,405.346,0,0,0,0 +units=m +no_defs</proj4><srid>2056</srid><authid>EPSG:2056</authid><description>CH1903+ / LV95</description><projectionacronym>somerc</projectionacronym><ellipsoidacronym>EPSG:7004</ellipsoidacronym><geographicflag>false</geographicflag></spatialrefsys></srs>
+      <provider>wms</provider>
+    </maplayer>
+  </maplayers>
+</qlr>

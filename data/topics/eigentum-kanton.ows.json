@@ -1,0 +1,119 @@
+{
+ "type": "FeatureCollection",
+ "id": "https://davidoesch.github.io/geoservice_harvester_poc/data/topics/eigentum-kanton.ows.json",
+ "properties": {
+  "lang": "de",
+  "title": "Eigentum Kanton",
+  "updated": "2026-11-20T16:05:37+01:00",
+  "subtitle": "GeoHarvester topic: 2 providers",
+  "links": {
+   "profiles": [
+    {
+     "href": "http://www.opengis.net/spec/owc-geojson/1.0/req/core"
+    }
+   ]
+  }
+ },
+ "features": [
+  {
+   "type": "Feature",
+   "id": "https://map.geo.gl.ch/ows/mainmap#ch.gl.cadastre.eigentum-kanton",
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       8.898,
+       46.903
+      ],
+      [
+       9.191,
+       46.903
+      ],
+      [
+       9.191,
+       47.168
+      ],
+      [
+       8.898,
+       47.168
+      ],
+      [
+       8.898,
+       46.903
+      ]
+     ]
+    ]
+   },
+   "properties": {
+    "title": "Eigentum Kanton",
+    "updated": "2026-11-20T16:05:37+01:00",
+    "publisher": "Kanton Glarus",
+    "layer": "ch.gl.cadastre.eigentum-kanton",
+    "offerings": [
+     {
+      "code": "http://www.opengis.net/spec/owc-geojson/1.0/req/wms",
+      "operations": [
+       {
+        "code": "GetCapabilities",
+        "method": "GET",
+        "type": "application/xml",
+        "href": "https://map.geo.gl.ch/ows/mainmap?SERVICE=WMS&REQUEST=GetCapabilities"
+       }
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": "https://wms.geo.gr.ch/kantonalesstrassennetz#Eigentum_Achse",
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       8.615,
+       45.994
+      ],
+      [
+       10.547,
+       45.994
+      ],
+      [
+       10.547,
+       47.324
+      ],
+      [
+       8.615,
+       47.324
+      ],
+      [
+       8.615,
+       45.994
+      ]
+     ]
+    ]
+   },
+   "properties": {
+    "title": "Eigentum Achse",
+    "updated": "2026-11-20T16:05:37+01:00",
+    "publisher": "Kanton Graubünden",
+    "layer": "Eigentum_Achse",
+    "offerings": [
+     {
+      "code": "http://www.opengis.net/spec/owc-geojson/1.0/req/wms",
+      "operations": [
+       {
+        "code": "GetCapabilities",
+        "method": "GET",
+        "type": "application/xml",
+        "href": "https://wms.geo.gr.ch/kantonalesstrassennetz?SERVICE=WMS&REQUEST=GetCapabilities"
+       }
+      ]
+     }
+    ]
+   }
+  }
+ ]
+}

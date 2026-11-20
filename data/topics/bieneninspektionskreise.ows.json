@@ -1,0 +1,119 @@
+{
+ "type": "FeatureCollection",
+ "id": "https://davidoesch.github.io/geoservice_harvester_poc/data/topics/bieneninspektionskreise.ows.json",
+ "properties": {
+  "lang": "de",
+  "title": "Bieneninspektionskreise",
+  "updated": "2026-11-20T16:05:37+01:00",
+  "subtitle": "GeoHarvester topic: 2 providers",
+  "links": {
+   "profiles": [
+    {
+     "href": "http://www.opengis.net/spec/owc-geojson/1.0/req/core"
+    }
+   ]
+  }
+ },
+ "features": [
+  {
+   "type": "Feature",
+   "id": "https://wms.geo.ag.ch/public/ows#ch_ag_geo_kai_regbienen",
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       7.579,
+       47.046
+      ],
+      [
+       8.596,
+       47.046
+      ],
+      [
+       8.596,
+       47.713
+      ],
+      [
+       7.579,
+       47.713
+      ],
+      [
+       7.579,
+       47.046
+      ]
+     ]
+    ]
+   },
+   "properties": {
+    "title": "Bieneninspektionskreise",
+    "updated": "2026-11-20T16:05:37+01:00",
+    "publisher": "Kanton Aargau",
+    "layer": "ch_ag_geo_kai_regbienen",
+    "offerings": [
+     {
+      "code": "http://www.opengis.net/spec/owc-geojson/1.0/req/wms",
+      "operations": [
+       {
+        "code": "GetCapabilities",
+        "method": "GET",
+        "type": "application/xml",
+        "href": "https://wms.geo.ag.ch/public/ows?SERVICE=WMS&REQUEST=GetCapabilities"
+       }
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": "https://public.geo.lu.ch/ogd/services/managed/GRZADMIN_COL_V8_MP/MapServer/WMSServer#16",
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       7.834,
+       46.773
+      ],
+      [
+       8.521,
+       46.773
+      ],
+      [
+       8.521,
+       47.291
+      ],
+      [
+       7.834,
+       47.291
+      ],
+      [
+       7.834,
+       46.773
+      ]
+     ]
+    ]
+   },
+   "properties": {
+    "title": "Bieneninspektionskreise",
+    "updated": "2026-11-20T16:05:37+01:00",
+    "publisher": "Kanton Luzern",
+    "layer": "16",
+    "offerings": [
+     {
+      "code": "http://www.opengis.net/spec/owc-geojson/1.0/req/wms",
+      "operations": [
+       {
+        "code": "GetCapabilities",
+        "method": "GET",
+        "type": "application/xml",
+        "href": "https://public.geo.lu.ch/ogd/services/managed/GRZADMIN_COL_V8_MP/MapServer/WMSServer?SERVICE=WMS&REQUEST=GetCapabilities"
+       }
+      ]
+     }
+    ]
+   }
+  }
+ ]
+}

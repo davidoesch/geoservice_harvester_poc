@@ -1,0 +1,119 @@
+{
+ "type": "FeatureCollection",
+ "id": "https://davidoesch.github.io/geoservice_harvester_poc/data/topics/drones-restrictions-federales.ows.json",
+ "properties": {
+  "lang": "de",
+  "title": "Drones : restrictions fédérales",
+  "updated": "2026-11-20T16:05:37+01:00",
+  "subtitle": "GeoHarvester topic: 2 providers",
+  "links": {
+   "profiles": [
+    {
+     "href": "http://www.opengis.net/spec/owc-geojson/1.0/req/core"
+    }
+   ]
+  }
+ },
+ "features": [
+  {
+   "type": "Feature",
+   "id": "https://maps.fr.ch/ags/services/OpenData/Drones___restrictions_federales/MapServer/WMSServer#0",
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       6.736,
+       46.491
+      ],
+      [
+       7.535,
+       46.491
+      ],
+      [
+       7.535,
+       47.026
+      ],
+      [
+       6.736,
+       47.026
+      ],
+      [
+       6.736,
+       46.491
+      ]
+     ]
+    ]
+   },
+   "properties": {
+    "title": "Drones : restrictions fédérales",
+    "updated": "2026-11-20T16:05:37+01:00",
+    "publisher": "Kanton Freiburg",
+    "layer": "0",
+    "offerings": [
+     {
+      "code": "http://www.opengis.net/spec/owc-geojson/1.0/req/wms",
+      "operations": [
+       {
+        "code": "GetCapabilities",
+        "method": "GET",
+        "type": "application/xml",
+        "href": "https://maps.fr.ch/ags/services/OpenData/Drones___restrictions_federales/MapServer/WMSServer?SERVICE=WMS&REQUEST=GetCapabilities"
+       }
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": "https://geo.jura.ch/mapserv_proxy?ogcserver=Main_PNG#ofac_09_33_restrictions_pour_drones",
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       6.696,
+       47.107
+      ],
+      [
+       7.644,
+       47.107
+      ],
+      [
+       7.644,
+       47.535
+      ],
+      [
+       6.696,
+       47.535
+      ],
+      [
+       6.696,
+       47.107
+      ]
+     ]
+    ]
+   },
+   "properties": {
+    "title": "ofac_09_33_restrictions_pour_drones",
+    "updated": "2026-11-20T16:05:37+01:00",
+    "publisher": "Kanton Jura",
+    "layer": "ofac_09_33_restrictions_pour_drones",
+    "offerings": [
+     {
+      "code": "http://www.opengis.net/spec/owc-geojson/1.0/req/wms",
+      "operations": [
+       {
+        "code": "GetCapabilities",
+        "method": "GET",
+        "type": "application/xml",
+        "href": "https://geo.jura.ch/mapserv_proxy?ogcserver=Main_PNG&SERVICE=WMS&REQUEST=GetCapabilities"
+       }
+      ]
+     }
+    ]
+   }
+  }
+ ]
+}

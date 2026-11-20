@@ -1,0 +1,319 @@
+{
+ "type": "FeatureCollection",
+ "id": "https://davidoesch.github.io/geoservice_harvester_poc/data/topics/naturschutzobjekte.ows.json",
+ "properties": {
+  "lang": "de",
+  "title": "Naturschutzobjekte",
+  "updated": "2026-11-20T16:05:37+01:00",
+  "subtitle": "GeoHarvester topic: 6 providers",
+  "links": {
+   "profiles": [
+    {
+     "href": "http://www.opengis.net/spec/owc-geojson/1.0/req/core"
+    }
+   ]
+  }
+ },
+ "features": [
+  {
+   "type": "Feature",
+   "id": "https://stadtplan.winterthur.ch/wms/NaturLandschaftsschutzinventar#NaturschutzobjektHecke",
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       8.632,
+       47.446
+      ],
+      [
+       8.833,
+       47.446
+      ],
+      [
+       8.833,
+       47.548
+      ],
+      [
+       8.632,
+       47.548
+      ],
+      [
+       8.632,
+       47.446
+      ]
+     ]
+    ]
+   },
+   "properties": {
+    "title": "Naturschutzobjekt Hecke",
+    "updated": "2026-11-20T16:05:37+01:00",
+    "publisher": "Stadt Winterthur",
+    "layer": "NaturschutzobjektHecke",
+    "offerings": [
+     {
+      "code": "http://www.opengis.net/spec/owc-geojson/1.0/req/wms",
+      "operations": [
+       {
+        "code": "GetCapabilities",
+        "method": "GET",
+        "type": "application/xml",
+        "href": "https://stadtplan.winterthur.ch/wms/NaturLandschaftsschutzinventar?SERVICE=WMS&REQUEST=GetCapabilities"
+       }
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": "https://www.ogd.stadt-zuerich.ch/wms/geoportal/Inventar_der_Natur__und_Landschaftsschutzobjekte_von_kommunaler_Bedeutung#Naturschutzobjekte",
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       8.461,
+       47.32
+      ],
+      [
+       8.62,
+       47.32
+      ],
+      [
+       8.62,
+       47.434
+      ],
+      [
+       8.461,
+       47.434
+      ],
+      [
+       8.461,
+       47.32
+      ]
+     ]
+    ]
+   },
+   "properties": {
+    "title": "Naturschutzobjekte",
+    "updated": "2026-11-20T16:05:37+01:00",
+    "publisher": "Stadt Zürich",
+    "layer": "Naturschutzobjekte",
+    "offerings": [
+     {
+      "code": "http://www.opengis.net/spec/owc-geojson/1.0/req/wms",
+      "operations": [
+       {
+        "code": "GetCapabilities",
+        "method": "GET",
+        "type": "application/xml",
+        "href": "https://www.ogd.stadt-zuerich.ch/wms/geoportal/Inventar_der_Natur__und_Landschaftsschutzobjekte_von_kommunaler_Bedeutung?SERVICE=WMS&REQUEST=GetCapabilities"
+       }
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": "https://wms.geo.ag.ch/public/ows#ch_ag_geo_are_bznatur_01",
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       7.721,
+       47.166
+      ],
+      [
+       8.428,
+       47.166
+      ],
+      [
+       8.428,
+       47.602
+      ],
+      [
+       7.721,
+       47.602
+      ],
+      [
+       7.721,
+       47.166
+      ]
+     ]
+    ]
+   },
+   "properties": {
+    "title": "geschützte Naturobjekte innerhalb der Bauzone",
+    "updated": "2026-11-20T16:05:37+01:00",
+    "publisher": "Kanton Aargau",
+    "layer": "ch_ag_geo_are_bznatur_01",
+    "offerings": [
+     {
+      "code": "http://www.opengis.net/spec/owc-geojson/1.0/req/wms",
+      "operations": [
+       {
+        "code": "GetCapabilities",
+        "method": "GET",
+        "type": "application/xml",
+        "href": "https://wms.geo.ag.ch/public/ows?SERVICE=WMS&REQUEST=GetCapabilities"
+       }
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": "https://geowms.bl.ch/#inventar_geschuetzter_naturobjekte",
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       7.306,
+       47.309
+      ],
+      [
+       8.037,
+       47.309
+      ],
+      [
+       8.037,
+       47.626
+      ],
+      [
+       7.306,
+       47.626
+      ],
+      [
+       7.306,
+       47.309
+      ]
+     ]
+    ]
+   },
+   "properties": {
+    "title": "Inv. der geschützten Naturobjekte",
+    "updated": "2026-11-20T16:05:37+01:00",
+    "publisher": "Kanton Basel-Landschaft",
+    "layer": "inventar_geschuetzter_naturobjekte",
+    "offerings": [
+     {
+      "code": "http://www.opengis.net/spec/owc-geojson/1.0/req/wms",
+      "operations": [
+       {
+        "code": "GetCapabilities",
+        "method": "GET",
+        "type": "application/xml",
+        "href": "https://geowms.bl.ch/?SERVICE=WMS&REQUEST=GetCapabilities"
+       }
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": "https://geo.so.ch/api/wms#ch.so.arp.naturschutzobjekte",
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       7.353,
+       47.073
+      ],
+      [
+       8.037,
+       47.073
+      ],
+      [
+       8.037,
+       47.507
+      ],
+      [
+       7.353,
+       47.507
+      ],
+      [
+       7.353,
+       47.073
+      ]
+     ]
+    ]
+   },
+   "properties": {
+    "title": "Naturschutzobjekte",
+    "updated": "2026-11-20T16:05:37+01:00",
+    "publisher": "Kanton Solothurn",
+    "layer": "ch.so.arp.naturschutzobjekte",
+    "offerings": [
+     {
+      "code": "http://www.opengis.net/spec/owc-geojson/1.0/req/wms",
+      "operations": [
+       {
+        "code": "GetCapabilities",
+        "method": "GET",
+        "type": "application/xml",
+        "href": "https://geo.so.ch/api/wms?SERVICE=WMS&REQUEST=GetCapabilities"
+       }
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": "https://wms.zh.ch/FnsInvZHWMS#naturschutzobjekte-ergaenzungen-95",
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       8.157,
+       47.142
+      ],
+      [
+       9.042,
+       47.142
+      ],
+      [
+       9.042,
+       47.848
+      ],
+      [
+       8.157,
+       47.848
+      ],
+      [
+       8.157,
+       47.142
+      ]
+     ]
+    ]
+   },
+   "properties": {
+    "title": "Naturschutzobjekte Ergänzungen 95",
+    "updated": "2026-11-20T16:05:37+01:00",
+    "publisher": "Kanton Zürich",
+    "layer": "naturschutzobjekte-ergaenzungen-95",
+    "offerings": [
+     {
+      "code": "http://www.opengis.net/spec/owc-geojson/1.0/req/wms",
+      "operations": [
+       {
+        "code": "GetCapabilities",
+        "method": "GET",
+        "type": "application/xml",
+        "href": "https://wms.zh.ch/FnsInvZHWMS?SERVICE=WMS&REQUEST=GetCapabilities"
+       }
+      ]
+     }
+    ]
+   }
+  }
+ ]
+}

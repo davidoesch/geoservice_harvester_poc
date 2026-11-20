@@ -1,0 +1,119 @@
+{
+ "type": "FeatureCollection",
+ "id": "https://davidoesch.github.io/geoservice_harvester_poc/data/topics/reseau-hydrographique.ows.json",
+ "properties": {
+  "lang": "de",
+  "title": "Réseau hydrographique",
+  "updated": "2026-11-20T16:13:33+01:00",
+  "subtitle": "GeoHarvester topic: 2 providers",
+  "links": {
+   "profiles": [
+    {
+     "href": "http://www.opengis.net/spec/owc-geojson/1.0/req/core"
+    }
+   ]
+  }
+ },
+ "features": [
+  {
+   "type": "Feature",
+   "id": "https://maps.fr.ch/ags/services/OpenData/Reseau_hydrographique/MapServer/WMSServer#0",
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       6.705,
+       46.33
+      ],
+      [
+       7.482,
+       46.33
+      ],
+      [
+       7.482,
+       47.033
+      ],
+      [
+       6.705,
+       47.033
+      ],
+      [
+       6.705,
+       46.33
+      ]
+     ]
+    ]
+   },
+   "properties": {
+    "title": "Réseau hydrographique",
+    "updated": "2026-11-20T16:13:33+01:00",
+    "publisher": "Kanton Freiburg",
+    "layer": "0",
+    "offerings": [
+     {
+      "code": "http://www.opengis.net/spec/owc-geojson/1.0/req/wms",
+      "operations": [
+       {
+        "code": "GetCapabilities",
+        "method": "GET",
+        "type": "application/xml",
+        "href": "https://maps.fr.ch/ags/services/OpenData/Reseau_hydrographique/MapServer/WMSServer?SERVICE=WMS&REQUEST=GetCapabilities"
+       }
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": "https://geo.jura.ch/mapserv_proxy?ogcserver=Main_PNG#env_06_04_reseau_hydrographique",
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       6.696,
+       47.107
+      ],
+      [
+       7.644,
+       47.107
+      ],
+      [
+       7.644,
+       47.535
+      ],
+      [
+       6.696,
+       47.535
+      ],
+      [
+       6.696,
+       47.107
+      ]
+     ]
+    ]
+   },
+   "properties": {
+    "title": "env_06_04_reseau_hydrographique",
+    "updated": "2026-11-20T16:13:33+01:00",
+    "publisher": "Kanton Jura",
+    "layer": "env_06_04_reseau_hydrographique",
+    "offerings": [
+     {
+      "code": "http://www.opengis.net/spec/owc-geojson/1.0/req/wms",
+      "operations": [
+       {
+        "code": "GetCapabilities",
+        "method": "GET",
+        "type": "application/xml",
+        "href": "https://geo.jura.ch/mapserv_proxy?ogcserver=Main_PNG&SERVICE=WMS&REQUEST=GetCapabilities"
+       }
+      ]
+     }
+    ]
+   }
+  }
+ ]
+}

@@ -1,0 +1,169 @@
+{
+ "type": "FeatureCollection",
+ "id": "https://davidoesch.github.io/geoservice_harvester_poc/data/topics/abweichende-bestimmungen.ows.json",
+ "properties": {
+  "lang": "de",
+  "title": "Abweichende Bestimmungen",
+  "updated": "2026-11-20T16:05:37+01:00",
+  "subtitle": "GeoHarvester topic: 3 providers",
+  "links": {
+   "profiles": [
+    {
+     "href": "http://www.opengis.net/spec/owc-geojson/1.0/req/core"
+    }
+   ]
+  }
+ },
+ "features": [
+  {
+   "type": "Feature",
+   "id": "https://public.geo.lu.ch/ogd/services/managed/ZONPLANX_COL_V3_MP/MapServer/WMSServer#15",
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       8.014,
+       46.934
+      ],
+      [
+       8.287,
+       46.934
+      ],
+      [
+       8.287,
+       47.149
+      ],
+      [
+       8.014,
+       47.149
+      ],
+      [
+       8.014,
+       46.934
+      ]
+     ]
+    ]
+   },
+   "properties": {
+    "title": "Überlagerungen, Beschriftungen",
+    "updated": "2026-11-20T16:05:37+01:00",
+    "publisher": "Kanton Luzern",
+    "layer": "15",
+    "offerings": [
+     {
+      "code": "http://www.opengis.net/spec/owc-geojson/1.0/req/wms",
+      "operations": [
+       {
+        "code": "GetCapabilities",
+        "method": "GET",
+        "type": "application/xml",
+        "href": "https://public.geo.lu.ch/ogd/services/managed/ZONPLANX_COL_V3_MP/MapServer/WMSServer?SERVICE=WMS&REQUEST=GetCapabilities"
+       }
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": "https://map.geo.sz.ch/mapserv_proxy#ch.sz.a086a.freienbach.sia405.werkinformation_abwasser.normschacht.beschriftung",
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       5.697,
+       45.553
+      ],
+      [
+       10.923,
+       45.553
+      ],
+      [
+       10.923,
+       48.032
+      ],
+      [
+       5.697,
+       48.032
+      ],
+      [
+       5.697,
+       45.553
+      ]
+     ]
+    ]
+   },
+   "properties": {
+    "title": "Normschacht Beschriftung",
+    "updated": "2026-11-20T16:05:37+01:00",
+    "publisher": "Kanton Schwyz",
+    "layer": "ch.sz.a086a.freienbach.sia405.werkinformation_abwasser.normschacht.beschriftung",
+    "offerings": [
+     {
+      "code": "http://www.opengis.net/spec/owc-geojson/1.0/req/wms",
+      "operations": [
+       {
+        "code": "GetCapabilities",
+        "method": "GET",
+        "type": "application/xml",
+        "href": "https://map.geo.sz.ch/mapserv_proxy?SERVICE=WMS&REQUEST=GetCapabilities"
+       }
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": "https://services.geo.zg.ch/ows/nutzungsplanung#zg_abweichende_bestimmungen",
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       8.512,
+       47.096
+      ],
+      [
+       8.524,
+       47.096
+      ],
+      [
+       8.524,
+       47.185
+      ],
+      [
+       8.512,
+       47.185
+      ],
+      [
+       8.512,
+       47.096
+      ]
+     ]
+    ]
+   },
+   "properties": {
+    "title": "Abweichende Bestimmungen",
+    "updated": "2026-11-20T16:05:37+01:00",
+    "publisher": "Kanton Zug",
+    "layer": "zg_abweichende_bestimmungen",
+    "offerings": [
+     {
+      "code": "http://www.opengis.net/spec/owc-geojson/1.0/req/wms",
+      "operations": [
+       {
+        "code": "GetCapabilities",
+        "method": "GET",
+        "type": "application/xml",
+        "href": "https://services.geo.zg.ch/ows/nutzungsplanung?SERVICE=WMS&REQUEST=GetCapabilities"
+       }
+      ]
+     }
+    ]
+   }
+  }
+ ]
+}

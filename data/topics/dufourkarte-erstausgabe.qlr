@@ -1,0 +1,54 @@
+<!DOCTYPE qgis-layer-definition>
+<qlr>
+  <layer-tree-group expanded="1" checked="Qt::Checked" name="">
+    <layer-tree-group expanded="1" checked="Qt::Checked" name="GeoHarvester – Dufourkarte Erstausgabe">
+      <layer-tree-layer expanded="0" checked="Qt::Checked" id="geoharvester_dufourkarte-erstausgabe_0" name="Dufourkarte Erstausgabe (Bund)" source="contextualWMSLegend=0&amp;crs=EPSG:2056&amp;dpiMode=7&amp;featureCount=10&amp;format=image/png&amp;layers=ch.swisstopo.hiks-dufour&amp;styles&amp;url=https://wms.geo.admin.ch/" providerKey="wms"/>
+      <layer-tree-layer expanded="0" checked="Qt::Checked" id="geoharvester_dufourkarte-erstausgabe_1" name="Dufourkarte Erstausgabe (BL)" source="contextualWMSLegend=0&amp;crs=EPSG:2056&amp;dpiMode=7&amp;featureCount=10&amp;format=image/png&amp;layers=ch.swisstopo.hiks-dufour&amp;styles&amp;url=https://geowms.bl.ch/" providerKey="wms"/>
+      <layer-tree-layer expanded="0" checked="Qt::Checked" id="geoharvester_dufourkarte-erstausgabe_2" name="Einteilung Dufourkarte (GR)" source="contextualWMSLegend=0&amp;crs=EPSG:2056&amp;dpiMode=7&amp;featureCount=10&amp;format=image/png&amp;layers=Blatteinteilung_Dufourkarte&amp;styles&amp;url=https://wms.geo.gr.ch/historischekarten" providerKey="wms"/>
+      <layer-tree-layer expanded="0" checked="Qt::Checked" id="geoharvester_dufourkarte-erstausgabe_3" name="Dufourkarte (SG)" source="contextualWMSLegend=0&amp;crs=EPSG:2056&amp;dpiMode=7&amp;featureCount=10&amp;format=image/png&amp;layers=Dufourkarte&amp;styles&amp;url=https://services.geo.sg.ch/wss/service/SG00055_WMS/guest" providerKey="wms"/>
+      <layer-tree-layer expanded="0" checked="Qt::Checked" id="geoharvester_dufourkarte-erstausgabe_4" name="Dufourkarte Erstausgabe 1845-65 (ZH)" source="contextualWMSLegend=0&amp;crs=EPSG:2056&amp;dpiMode=7&amp;featureCount=10&amp;format=image/png&amp;layers=dufour-erst&amp;styles&amp;url=https://wms.zh.ch/HistKartenZHWMS" providerKey="wms"/>
+    </layer-tree-group>
+  </layer-tree-group>
+  <maplayers>
+    <maplayer type="raster" hasScaleBasedVisibilityFlag="0" minScale="1e+08" maxScale="0" styleCategories="AllStyleCategories">
+      <extent><xmin>2270616</xmin><ymin>888855</ymin><xmax>3098222</xmax><ymax>1471872</ymax></extent>
+      <id>geoharvester_dufourkarte-erstausgabe_0</id>
+      <datasource>contextualWMSLegend=0&amp;crs=EPSG:2056&amp;dpiMode=7&amp;featureCount=10&amp;format=image/png&amp;layers=ch.swisstopo.hiks-dufour&amp;styles&amp;url=https://wms.geo.admin.ch/</datasource>
+      <layername>Dufourkarte Erstausgabe (Bund)</layername>
+      <srs><spatialrefsys><proj4>+proj=somerc +lat_0=46.9524055555556 +lon_0=7.43958333333333 +k_0=1 +x_0=2600000 +y_0=1200000 +ellps=bessel +towgs84=674.374,15.056,405.346,0,0,0,0 +units=m +no_defs</proj4><srid>2056</srid><authid>EPSG:2056</authid><description>CH1903+ / LV95</description><projectionacronym>somerc</projectionacronym><ellipsoidacronym>EPSG:7004</ellipsoidacronym><geographicflag>false</geographicflag></spatialrefsys></srs>
+      <provider>wms</provider>
+    </maplayer>
+    <maplayer type="raster" hasScaleBasedVisibilityFlag="0" minScale="1e+08" maxScale="0" styleCategories="AllStyleCategories">
+      <extent><xmin>2589971</xmin><ymin>1239800</ymin><xmax>2644979</xmax><ymax>1275208</ymax></extent>
+      <id>geoharvester_dufourkarte-erstausgabe_1</id>
+      <datasource>contextualWMSLegend=0&amp;crs=EPSG:2056&amp;dpiMode=7&amp;featureCount=10&amp;format=image/png&amp;layers=ch.swisstopo.hiks-dufour&amp;styles&amp;url=https://geowms.bl.ch/</datasource>
+      <layername>Dufourkarte Erstausgabe (BL)</layername>
+      <srs><spatialrefsys><proj4>+proj=somerc +lat_0=46.9524055555556 +lon_0=7.43958333333333 +k_0=1 +x_0=2600000 +y_0=1200000 +ellps=bessel +towgs84=674.374,15.056,405.346,0,0,0,0 +units=m +no_defs</proj4><srid>2056</srid><authid>EPSG:2056</authid><description>CH1903+ / LV95</description><projectionacronym>somerc</projectionacronym><ellipsoidacronym>EPSG:7004</ellipsoidacronym><geographicflag>false</geographicflag></spatialrefsys></srs>
+      <provider>wms</provider>
+    </maplayer>
+    <maplayer type="raster" hasScaleBasedVisibilityFlag="0" minScale="1e+08" maxScale="0" styleCategories="AllStyleCategories">
+      <extent><xmin>2650094</xmin><ymin>1054344</ymin><xmax>2869868</xmax><ymax>1286113</ymax></extent>
+      <id>geoharvester_dufourkarte-erstausgabe_2</id>
+      <datasource>contextualWMSLegend=0&amp;crs=EPSG:2056&amp;dpiMode=7&amp;featureCount=10&amp;format=image/png&amp;layers=Blatteinteilung_Dufourkarte&amp;styles&amp;url=https://wms.geo.gr.ch/historischekarten</datasource>
+      <layername>Einteilung Dufourkarte (GR)</layername>
+      <srs><spatialrefsys><proj4>+proj=somerc +lat_0=46.9524055555556 +lon_0=7.43958333333333 +k_0=1 +x_0=2600000 +y_0=1200000 +ellps=bessel +towgs84=674.374,15.056,405.346,0,0,0,0 +units=m +no_defs</proj4><srid>2056</srid><authid>EPSG:2056</authid><description>CH1903+ / LV95</description><projectionacronym>somerc</projectionacronym><ellipsoidacronym>EPSG:7004</ellipsoidacronym><geographicflag>false</geographicflag></spatialrefsys></srs>
+      <provider>wms</provider>
+    </maplayer>
+    <maplayer type="raster" hasScaleBasedVisibilityFlag="0" minScale="1e+08" maxScale="0" styleCategories="AllStyleCategories">
+      <extent><xmin>2690085</xmin><ymin>1180212</ymin><xmax>2777552</xmax><ymax>1280158</ymax></extent>
+      <id>geoharvester_dufourkarte-erstausgabe_3</id>
+      <datasource>contextualWMSLegend=0&amp;crs=EPSG:2056&amp;dpiMode=7&amp;featureCount=10&amp;format=image/png&amp;layers=Dufourkarte&amp;styles&amp;url=https://services.geo.sg.ch/wss/service/SG00055_WMS/guest</datasource>
+      <layername>Dufourkarte (SG)</layername>
+      <srs><spatialrefsys><proj4>+proj=somerc +lat_0=46.9524055555556 +lon_0=7.43958333333333 +k_0=1 +x_0=2600000 +y_0=1200000 +ellps=bessel +towgs84=674.374,15.056,405.346,0,0,0,0 +units=m +no_defs</proj4><srid>2056</srid><authid>EPSG:2056</authid><description>CH1903+ / LV95</description><projectionacronym>somerc</projectionacronym><ellipsoidacronym>EPSG:7004</ellipsoidacronym><geographicflag>false</geographicflag></spatialrefsys></srs>
+      <provider>wms</provider>
+    </maplayer>
+    <maplayer type="raster" hasScaleBasedVisibilityFlag="0" minScale="1e+08" maxScale="0" styleCategories="AllStyleCategories">
+      <extent><xmin>2409967</xmin><ymin>1025617</ymin><xmax>2899570</xmax><ymax>1357705</ymax></extent>
+      <id>geoharvester_dufourkarte-erstausgabe_4</id>
+      <datasource>contextualWMSLegend=0&amp;crs=EPSG:2056&amp;dpiMode=7&amp;featureCount=10&amp;format=image/png&amp;layers=dufour-erst&amp;styles&amp;url=https://wms.zh.ch/HistKartenZHWMS</datasource>
+      <layername>Dufourkarte Erstausgabe 1845-65 (ZH)</layername>
+      <srs><spatialrefsys><proj4>+proj=somerc +lat_0=46.9524055555556 +lon_0=7.43958333333333 +k_0=1 +x_0=2600000 +y_0=1200000 +ellps=bessel +towgs84=674.374,15.056,405.346,0,0,0,0 +units=m +no_defs</proj4><srid>2056</srid><authid>EPSG:2056</authid><description>CH1903+ / LV95</description><projectionacronym>somerc</projectionacronym><ellipsoidacronym>EPSG:7004</ellipsoidacronym><geographicflag>false</geographicflag></spatialrefsys></srs>
+      <provider>wms</provider>
+    </maplayer>
+  </maplayers>
+</qlr>

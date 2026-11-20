@@ -1,0 +1,419 @@
+{
+ "type": "FeatureCollection",
+ "id": "https://davidoesch.github.io/geoservice_harvester_poc/data/topics/grundnutzung.ows.json",
+ "properties": {
+  "lang": "de",
+  "title": "Grundnutzung",
+  "updated": "2026-11-20T16:05:37+01:00",
+  "subtitle": "GeoHarvester topic: 8 providers",
+  "links": {
+   "profiles": [
+    {
+     "href": "http://www.opengis.net/spec/owc-geojson/1.0/req/core"
+    }
+   ]
+  }
+ },
+ "features": [
+  {
+   "type": "Feature",
+   "id": "https://stadtplan.winterthur.ch/wms/RichtplanSiedlungLandschaft#Grundnutzung",
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       8.632,
+       47.446
+      ],
+      [
+       8.833,
+       47.446
+      ],
+      [
+       8.833,
+       47.548
+      ],
+      [
+       8.632,
+       47.548
+      ],
+      [
+       8.632,
+       47.446
+      ]
+     ]
+    ]
+   },
+   "properties": {
+    "title": "Grundnutzung",
+    "updated": "2026-11-20T16:05:37+01:00",
+    "publisher": "Stadt Winterthur",
+    "layer": "Grundnutzung",
+    "offerings": [
+     {
+      "code": "http://www.opengis.net/spec/owc-geojson/1.0/req/wms",
+      "operations": [
+       {
+        "code": "GetCapabilities",
+        "method": "GET",
+        "type": "application/xml",
+        "href": "https://stadtplan.winterthur.ch/wms/RichtplanSiedlungLandschaft?SERVICE=WMS&REQUEST=GetCapabilities"
+       }
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": "https://geodienste.ch/db/npl_nutzungsplanung_v1_2_0/deu#grundnutzung",
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       5.703,
+       45.74
+      ],
+      [
+       10.645,
+       45.74
+      ],
+      [
+       10.645,
+       47.852
+      ],
+      [
+       5.703,
+       47.852
+      ],
+      [
+       5.703,
+       45.74
+      ]
+     ]
+    ]
+   },
+   "properties": {
+    "title": "Grundnutzung",
+    "updated": "2026-11-20T16:05:37+01:00",
+    "publisher": "geodienste.ch (kantonsübergreifend)",
+    "layer": "grundnutzung",
+    "offerings": [
+     {
+      "code": "http://www.opengis.net/spec/owc-geojson/1.0/req/wms",
+      "operations": [
+       {
+        "code": "GetCapabilities",
+        "method": "GET",
+        "type": "application/xml",
+        "href": "https://geodienste.ch/db/npl_nutzungsplanung_v1_2_0/deu?SERVICE=WMS&REQUEST=GetCapabilities"
+       }
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": "https://wms.geo.gr.ch/nutzungsplanung_kommunal#Grundnutzung_Aufstufung_ES",
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       8.641,
+       46.144
+      ],
+      [
+       10.517,
+       46.144
+      ],
+      [
+       10.517,
+       47.078
+      ],
+      [
+       8.641,
+       47.078
+      ],
+      [
+       8.641,
+       46.144
+      ]
+     ]
+    ]
+   },
+   "properties": {
+    "title": "Grundnutzung - Aufstufung ES",
+    "updated": "2026-11-20T16:05:37+01:00",
+    "publisher": "Kanton Graubünden",
+    "layer": "Grundnutzung_Aufstufung_ES",
+    "offerings": [
+     {
+      "code": "http://www.opengis.net/spec/owc-geojson/1.0/req/wms",
+      "operations": [
+       {
+        "code": "GetCapabilities",
+        "method": "GET",
+        "type": "application/xml",
+        "href": "https://wms.geo.gr.ch/nutzungsplanung_kommunal?SERVICE=WMS&REQUEST=GetCapabilities"
+       }
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": "https://public.geo.lu.ch/ogd/services/managed/ZONPLANX_COL_V3_MP/MapServer/WMSServer#1",
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       7.834,
+       46.773
+      ],
+      [
+       8.521,
+       46.773
+      ],
+      [
+       8.521,
+       47.291
+      ],
+      [
+       7.834,
+       47.291
+      ],
+      [
+       7.834,
+       46.773
+      ]
+     ]
+    ]
+   },
+   "properties": {
+    "title": "Grundnutzung",
+    "updated": "2026-11-20T16:05:37+01:00",
+    "publisher": "Kanton Luzern",
+    "layer": "1",
+    "offerings": [
+     {
+      "code": "http://www.opengis.net/spec/owc-geojson/1.0/req/wms",
+      "operations": [
+       {
+        "code": "GetCapabilities",
+        "method": "GET",
+        "type": "application/xml",
+        "href": "https://public.geo.lu.ch/ogd/services/managed/ZONPLANX_COL_V3_MP/MapServer/WMSServer?SERVICE=WMS&REQUEST=GetCapabilities"
+       }
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": "https://services.geo.sg.ch/wss/service/SG00032_WMS/guest#Grundnutzung",
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       8.788,
+       46.87
+      ],
+      [
+       9.681,
+       46.87
+      ],
+      [
+       9.681,
+       47.541
+      ],
+      [
+       8.788,
+       47.541
+      ],
+      [
+       8.788,
+       46.87
+      ]
+     ]
+    ]
+   },
+   "properties": {
+    "title": "Grundnutzung",
+    "updated": "2026-11-20T16:05:37+01:00",
+    "publisher": "Kanton St. Gallen",
+    "layer": "Grundnutzung",
+    "offerings": [
+     {
+      "code": "http://www.opengis.net/spec/owc-geojson/1.0/req/wms",
+      "operations": [
+       {
+        "code": "GetCapabilities",
+        "method": "GET",
+        "type": "application/xml",
+        "href": "https://services.geo.sg.ch/wss/service/SG00032_WMS/guest?SERVICE=WMS&REQUEST=GetCapabilities"
+       }
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": "https://sit.vs.ch/arcgis/services/ZNP/MapServer/WMSServer#0",
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       6.768,
+       45.855
+      ],
+      [
+       8.482,
+       45.855
+      ],
+      [
+       8.482,
+       46.659
+      ],
+      [
+       6.768,
+       46.659
+      ],
+      [
+       6.768,
+       45.855
+      ]
+     ]
+    ]
+   },
+   "properties": {
+    "title": "Grundnutzungszonen",
+    "updated": "2026-11-20T16:05:37+01:00",
+    "publisher": "Kanton Wallis",
+    "layer": "0",
+    "offerings": [
+     {
+      "code": "http://www.opengis.net/spec/owc-geojson/1.0/req/wms",
+      "operations": [
+       {
+        "code": "GetCapabilities",
+        "method": "GET",
+        "type": "application/xml",
+        "href": "https://sit.vs.ch/arcgis/services/ZNP/MapServer/WMSServer?SERVICE=WMS&REQUEST=GetCapabilities"
+       }
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": "https://services.geo.zg.ch/ows/nutzungsplanung#zg_grundnutzung",
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       8.36,
+       47.052
+      ],
+      [
+       8.733,
+       47.052
+      ],
+      [
+       8.733,
+       47.262
+      ],
+      [
+       8.36,
+       47.262
+      ],
+      [
+       8.36,
+       47.052
+      ]
+     ]
+    ]
+   },
+   "properties": {
+    "title": "Grundnutzung",
+    "updated": "2026-11-20T16:05:37+01:00",
+    "publisher": "Kanton Zug",
+    "layer": "zg_grundnutzung",
+    "offerings": [
+     {
+      "code": "http://www.opengis.net/spec/owc-geojson/1.0/req/wms",
+      "operations": [
+       {
+        "code": "GetCapabilities",
+        "method": "GET",
+        "type": "application/xml",
+        "href": "https://services.geo.zg.ch/ows/nutzungsplanung?SERVICE=WMS&REQUEST=GetCapabilities"
+       }
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": "https://wms.zh.ch/RegRichtSLAZHWMS#kanton-basisnutzung",
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       8.157,
+       47.142
+      ],
+      [
+       9.042,
+       47.142
+      ],
+      [
+       9.042,
+       47.848
+      ],
+      [
+       8.157,
+       47.848
+      ],
+      [
+       8.157,
+       47.142
+      ]
+     ]
+    ]
+   },
+   "properties": {
+    "title": "Basisnutzung (Kanton)",
+    "updated": "2026-11-20T16:05:37+01:00",
+    "publisher": "Kanton Zürich",
+    "layer": "kanton-basisnutzung",
+    "offerings": [
+     {
+      "code": "http://www.opengis.net/spec/owc-geojson/1.0/req/wms",
+      "operations": [
+       {
+        "code": "GetCapabilities",
+        "method": "GET",
+        "type": "application/xml",
+        "href": "https://wms.zh.ch/RegRichtSLAZHWMS?SERVICE=WMS&REQUEST=GetCapabilities"
+       }
+      ]
+     }
+    ]
+   }
+  }
+ ]
+}

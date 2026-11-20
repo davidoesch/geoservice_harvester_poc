@@ -1,0 +1,419 @@
+{
+ "type": "FeatureCollection",
+ "id": "https://davidoesch.github.io/geoservice_harvester_poc/data/topics/orthofoto.ows.json",
+ "properties": {
+  "lang": "de",
+  "title": "Orthofoto",
+  "updated": "2026-11-20T16:05:37+01:00",
+  "subtitle": "GeoHarvester topic: 8 providers",
+  "links": {
+   "profiles": [
+    {
+     "href": "http://www.opengis.net/spec/owc-geojson/1.0/req/core"
+    }
+   ]
+  }
+ },
+ "features": [
+  {
+   "type": "Feature",
+   "id": "https://map.bern.ch/arcgis/rest/services/Geoportal/Orthofoto_1999/MapServer/WMTS/1.0.0/WMTSCapabilities.xml#Geoportal_Orthofoto_1999",
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       7.294,
+       46.92
+      ],
+      [
+       7.501,
+       46.92
+      ],
+      [
+       7.501,
+       46.993
+      ],
+      [
+       7.294,
+       46.993
+      ],
+      [
+       7.294,
+       46.92
+      ]
+     ]
+    ]
+   },
+   "properties": {
+    "title": "Geoportal_Orthofoto_1999",
+    "updated": "2026-11-20T16:05:37+01:00",
+    "publisher": "Stadt Bern",
+    "layer": "Geoportal_Orthofoto_1999",
+    "offerings": [
+     {
+      "code": "http://www.opengis.net/spec/owc-geojson/1.0/req/wmts",
+      "operations": [
+       {
+        "code": "GetCapabilities",
+        "method": "GET",
+        "type": "application/xml",
+        "href": "https://map.bern.ch/arcgis/rest/services/Geoportal/Orthofoto_1999/MapServer/WMTS/1.0.0/WMTSCapabilities.xml"
+       }
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": "https://www.ogc.stadt-zuerich.ch/mapproxy/service#orthofoto",
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       8.32,
+       47.129
+      ],
+      [
+       9.034,
+       47.129
+      ],
+      [
+       9.034,
+       47.717
+      ],
+      [
+       8.32,
+       47.717
+      ],
+      [
+       8.32,
+       47.129
+      ]
+     ]
+    ]
+   },
+   "properties": {
+    "title": "orthofoto",
+    "updated": "2026-11-20T16:05:37+01:00",
+    "publisher": "Stadt Zürich",
+    "layer": "orthofoto",
+    "offerings": [
+     {
+      "code": "http://www.opengis.net/spec/owc-geojson/1.0/req/wms",
+      "operations": [
+       {
+        "code": "GetCapabilities",
+        "method": "GET",
+        "type": "application/xml",
+        "href": "https://www.ogc.stadt-zuerich.ch/mapproxy/service?SERVICE=WMS&REQUEST=GetCapabilities"
+       }
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": "https://www.geoportal.ch/services/wms/ktai#ch.geoportal.basiskarten_bodenbedeckung_bilddaten.162.0.orthofoto",
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       9.297,
+       47.225
+      ],
+      [
+       9.632,
+       47.225
+      ],
+      [
+       9.632,
+       47.453
+      ],
+      [
+       9.297,
+       47.453
+      ],
+      [
+       9.297,
+       47.225
+      ]
+     ]
+    ]
+   },
+   "properties": {
+    "title": "Orthofoto",
+    "updated": "2026-11-20T16:05:37+01:00",
+    "publisher": "Kanton Appenzell Innerrhoden",
+    "layer": "ch.geoportal.basiskarten_bodenbedeckung_bilddaten.162.0.orthofoto",
+    "offerings": [
+     {
+      "code": "http://www.opengis.net/spec/owc-geojson/1.0/req/wms",
+      "operations": [
+       {
+        "code": "GetCapabilities",
+        "method": "GET",
+        "type": "application/xml",
+        "href": "https://www.geoportal.ch/services/wms/ktai?SERVICE=WMS&REQUEST=GetCapabilities"
+       }
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": "https://www.geoportal.ch/services/wms/ktar#ch.geoportal.basiskarten_bodenbedeckung_bilddaten.162.0.orthofoto",
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       9.178,
+       47.238
+      ],
+      [
+       9.644,
+       47.238
+      ],
+      [
+       9.644,
+       47.478
+      ],
+      [
+       9.178,
+       47.478
+      ],
+      [
+       9.178,
+       47.238
+      ]
+     ]
+    ]
+   },
+   "properties": {
+    "title": "Orthofoto",
+    "updated": "2026-11-20T16:05:37+01:00",
+    "publisher": "Kanton Appenzell Ausserrhoden",
+    "layer": "ch.geoportal.basiskarten_bodenbedeckung_bilddaten.162.0.orthofoto",
+    "offerings": [
+     {
+      "code": "http://www.opengis.net/spec/owc-geojson/1.0/req/wms",
+      "operations": [
+       {
+        "code": "GetCapabilities",
+        "method": "GET",
+        "type": "application/xml",
+        "href": "https://www.geoportal.ch/services/wms/ktar?SERVICE=WMS&REQUEST=GetCapabilities"
+       }
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": "https://geowms.bl.ch/#kanton_bs_orthofoto_2008",
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       7.306,
+       47.309
+      ],
+      [
+       8.037,
+       47.309
+      ],
+      [
+       8.037,
+       47.626
+      ],
+      [
+       7.306,
+       47.626
+      ],
+      [
+       7.306,
+       47.309
+      ]
+     ]
+    ]
+   },
+   "properties": {
+    "title": "Orthofoto 2008 Kanton BS",
+    "updated": "2026-11-20T16:05:37+01:00",
+    "publisher": "Kanton Basel-Landschaft",
+    "layer": "kanton_bs_orthofoto_2008",
+    "offerings": [
+     {
+      "code": "http://www.opengis.net/spec/owc-geojson/1.0/req/wms",
+      "operations": [
+       {
+        "code": "GetCapabilities",
+        "method": "GET",
+        "type": "application/xml",
+        "href": "https://geowms.bl.ch/?SERVICE=WMS&REQUEST=GetCapabilities"
+       }
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": "https://wms.geo.bs.ch/#OF_Orthofoto1933",
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       7.239,
+       47.264
+      ],
+      [
+       8.105,
+       47.264
+      ],
+      [
+       8.105,
+       47.761
+      ],
+      [
+       7.239,
+       47.761
+      ],
+      [
+       7.239,
+       47.264
+      ]
+     ]
+    ]
+   },
+   "properties": {
+    "title": "Orthofoto 1933",
+    "updated": "2026-11-20T16:05:37+01:00",
+    "publisher": "Kanton Basel-Stadt",
+    "layer": "OF_Orthofoto1933",
+    "offerings": [
+     {
+      "code": "http://www.opengis.net/spec/owc-geojson/1.0/req/wms",
+      "operations": [
+       {
+        "code": "GetCapabilities",
+        "method": "GET",
+        "type": "application/xml",
+        "href": "https://wms.geo.bs.ch/?SERVICE=WMS&REQUEST=GetCapabilities"
+       }
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": "https://services.geo.zg.ch/ows/Orthofotos#zg_orthofoto_2022_kt_zg",
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       8.383,
+       47.07
+      ],
+      [
+       8.719,
+       47.07
+      ],
+      [
+       8.719,
+       47.254
+      ],
+      [
+       8.383,
+       47.254
+      ],
+      [
+       8.383,
+       47.07
+      ]
+     ]
+    ]
+   },
+   "properties": {
+    "title": "Orthofoto 2022 Kanton Zug",
+    "updated": "2026-11-20T16:05:37+01:00",
+    "publisher": "Kanton Zug",
+    "layer": "zg_orthofoto_2022_kt_zg",
+    "offerings": [
+     {
+      "code": "http://www.opengis.net/spec/owc-geojson/1.0/req/wms",
+      "operations": [
+       {
+        "code": "GetCapabilities",
+        "method": "GET",
+        "type": "application/xml",
+        "href": "https://services.geo.zg.ch/ows/Orthofotos?SERVICE=WMS&REQUEST=GetCapabilities"
+       }
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": "https://wms.zh.ch/OrthoZHWMS#OrthoZHWMS",
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       8.157,
+       47.142
+      ],
+      [
+       9.042,
+       47.142
+      ],
+      [
+       9.042,
+       47.848
+      ],
+      [
+       8.157,
+       47.848
+      ],
+      [
+       8.157,
+       47.142
+      ]
+     ]
+    ]
+   },
+   "properties": {
+    "title": "Orthofoto ZH 2014-2025",
+    "updated": "2026-11-20T16:05:37+01:00",
+    "publisher": "Kanton Zürich",
+    "layer": "OrthoZHWMS",
+    "offerings": [
+     {
+      "code": "http://www.opengis.net/spec/owc-geojson/1.0/req/wms",
+      "operations": [
+       {
+        "code": "GetCapabilities",
+        "method": "GET",
+        "type": "application/xml",
+        "href": "https://wms.zh.ch/OrthoZHWMS?SERVICE=WMS&REQUEST=GetCapabilities"
+       }
+      ]
+     }
+    ]
+   }
+  }
+ ]
+}

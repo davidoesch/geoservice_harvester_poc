@@ -1,0 +1,126 @@
+<!DOCTYPE qgis-layer-definition>
+<qlr>
+  <layer-tree-group expanded="1" checked="Qt::Checked" name="">
+    <layer-tree-group expanded="1" checked="Qt::Checked" name="GeoHarvester – Spital">
+      <layer-tree-layer expanded="0" checked="Qt::Checked" id="geoharvester_spital_0" name="Spitallandeplätze (Bund)" source="contextualWMSLegend=0&amp;crs=EPSG:3857&amp;dpiMode=7&amp;featureCount=10&amp;format=image/png&amp;layers=ch.bazl.spitallandeplaetze&amp;styles=ch.bazl.spitallandeplaetze&amp;tileMatrixSet=3857_19&amp;url=https://wmts.geo.admin.ch/EPSG/3857/1.0.0/WMTSCapabilities.xml" providerKey="wms"/>
+      <layer-tree-layer expanded="0" checked="Qt::Checked" id="geoharvester_spital_1" name="Spital (Luzern)" source="contextualWMSLegend=0&amp;crs=EPSG:2056&amp;dpiMode=7&amp;featureCount=10&amp;format=image/png&amp;layers=0&amp;styles&amp;url=https://map.stadtluzern.ch/server/services/OGD/spital/MapServer/WMSServer" providerKey="wms"/>
+      <layer-tree-layer expanded="0" checked="Qt::Checked" id="geoharvester_spital_2" name="Spital (Winterthur)" source="contextualWMSLegend=0&amp;crs=EPSG:2056&amp;dpiMode=7&amp;featureCount=10&amp;format=image/png&amp;layers=Spital&amp;styles&amp;url=https://stadtplan.winterthur.ch/wms/Stadtplan" providerKey="wms"/>
+      <layer-tree-layer expanded="0" checked="Qt::Checked" id="geoharvester_spital_3" name="Spitäler (Zürich)" source="contextualWMSLegend=0&amp;crs=EPSG:2056&amp;dpiMode=7&amp;featureCount=10&amp;format=image/png&amp;layers=Spitäler&amp;styles&amp;url=https://www.ogd.stadt-zuerich.ch/wms/geoportal/Spital" providerKey="wms"/>
+      <layer-tree-layer expanded="0" checked="Qt::Checked" id="geoharvester_spital_4" name="WMS Betreuungsstandort Stadt Zug (Zug)" source="contextualWMSLegend=0&amp;crs=EPSG:2056&amp;dpiMode=7&amp;featureCount=10&amp;format=image/png&amp;layers=Open-Data-Zug-Betreuungsstandort-Stadt-Zug&amp;styles&amp;url=https://ows.geodatenonline.ch/ogd_wms_betreuungsstandort_stadt_zug" providerKey="wms"/>
+      <layer-tree-layer expanded="0" checked="Qt::Checked" id="geoharvester_spital_5" name="Spitäler und Kliniken (BE)" source="contextualWMSLegend=0&amp;crs=EPSG:2056&amp;dpiMode=7&amp;featureCount=10&amp;format=image/png&amp;layers=SPITAL_SPITKLIN_VW_8200&amp;styles&amp;url=https://www.geoservice.apps.be.ch/geoservice3/services/a42geo/of_health01_de_ms_wms/MapServer/WMSServer" providerKey="wms"/>
+      <layer-tree-layer expanded="0" checked="Qt::Checked" id="geoharvester_spital_6" name="Spitäler (BS)" source="contextualWMSLegend=0&amp;crs=EPSG:2056&amp;dpiMode=7&amp;featureCount=10&amp;format=image/png&amp;layers=ch.bs.spital_sptl&amp;styles&amp;url=https://wms.geo.bs.ch/" providerKey="wms"/>
+      <layer-tree-layer expanded="0" checked="Qt::Checked" id="geoharvester_spital_7" name="DEAS_LIEUX_DE_SOINS (GE)" source="contextualWMSLegend=0&amp;crs=EPSG:2056&amp;dpiMode=7&amp;featureCount=10&amp;format=image/png&amp;layers=0&amp;styles&amp;url=https://vector.sitg.ge.ch/arcgis/services/DEAS_LIEUX_DE_SOINS/MapServer/WMSServer" providerKey="wms"/>
+      <layer-tree-layer expanded="0" checked="Qt::Checked" id="geoharvester_spital_8" name="Spitalstandorte (GR)" source="contextualWMSLegend=0&amp;crs=EPSG:2056&amp;dpiMode=7&amp;featureCount=10&amp;format=image/png&amp;layers=Spitalstandorte&amp;styles&amp;url=https://wms.geo.gr.ch/regionen" providerKey="wms"/>
+      <layer-tree-layer expanded="0" checked="Qt::Checked" id="geoharvester_spital_9" name="ssa_19_04_centre_hospitalier (JU)" source="contextualWMSLegend=0&amp;crs=EPSG:2056&amp;dpiMode=7&amp;featureCount=10&amp;format=image/png&amp;layers=ssa_19_04_centre_hospitalier&amp;styles&amp;url=https://geo.jura.ch/mapserv_proxy?ogcserver=Main_PNG" providerKey="wms"/>
+      <layer-tree-layer expanded="0" checked="Qt::Checked" id="geoharvester_spital_10" name="Gesundheitseinrichtungen (SO)" source="contextualWMSLegend=0&amp;crs=EPSG:2056&amp;dpiMode=7&amp;featureCount=10&amp;format=image/png&amp;layers=ch.so.gesa.gesundheitseinrichtungen&amp;styles&amp;url=https://geo.so.ch/api/wms" providerKey="wms"/>
+      <layer-tree-layer expanded="0" checked="Qt::Checked" id="geoharvester_spital_11" name="vd.etablissement_hospitalier (VD)" source="contextualWMSLegend=0&amp;crs=EPSG:2056&amp;dpiMode=7&amp;featureCount=10&amp;format=image/png&amp;layers=vd.etablissement_hospitalier&amp;styles&amp;url=https://www.ogc.vd.ch/public/services/OGC/wmsVD/Mapserver/WMSServer" providerKey="wms"/>
+      <layer-tree-layer expanded="0" checked="Qt::Checked" id="geoharvester_spital_12" name="Betreuungsgebiete (ZH)" source="contextualWMSLegend=0&amp;crs=EPSG:2056&amp;dpiMode=7&amp;featureCount=10&amp;format=image/png&amp;layers=betreuungsgebiete&amp;styles&amp;url=https://wms.zh.ch/FNSZustaendigkeitenZH" providerKey="wms"/>
+    </layer-tree-group>
+  </layer-tree-group>
+  <maplayers>
+    <maplayer type="raster" hasScaleBasedVisibilityFlag="0" minScale="1e+08" maxScale="0" styleCategories="AllStyleCategories">
+      <extent><xmin>2419976</xmin><ymin>1029987</ymin><xmax>2900040</xmax><ymax>1350045</ymax></extent>
+      <id>geoharvester_spital_0</id>
+      <datasource>contextualWMSLegend=0&amp;crs=EPSG:3857&amp;dpiMode=7&amp;featureCount=10&amp;format=image/png&amp;layers=ch.bazl.spitallandeplaetze&amp;styles=ch.bazl.spitallandeplaetze&amp;tileMatrixSet=3857_19&amp;url=https://wmts.geo.admin.ch/EPSG/3857/1.0.0/WMTSCapabilities.xml</datasource>
+      <layername>Spitallandeplätze (Bund)</layername>
+      <srs><spatialrefsys><authid>EPSG:3857</authid></spatialrefsys></srs>
+      <provider>wms</provider>
+    </maplayer>
+    <maplayer type="raster" hasScaleBasedVisibilityFlag="0" minScale="1e+08" maxScale="0" styleCategories="AllStyleCategories">
+      <extent><xmin>2665288</xmin><ymin>1212354</ymin><xmax>2667488</xmax><ymax>1212601</ymax></extent>
+      <id>geoharvester_spital_1</id>
+      <datasource>contextualWMSLegend=0&amp;crs=EPSG:2056&amp;dpiMode=7&amp;featureCount=10&amp;format=image/png&amp;layers=0&amp;styles&amp;url=https://map.stadtluzern.ch/server/services/OGD/spital/MapServer/WMSServer</datasource>
+      <layername>Spital (Luzern)</layername>
+      <srs><spatialrefsys><proj4>+proj=somerc +lat_0=46.9524055555556 +lon_0=7.43958333333333 +k_0=1 +x_0=2600000 +y_0=1200000 +ellps=bessel +towgs84=674.374,15.056,405.346,0,0,0,0 +units=m +no_defs</proj4><srid>2056</srid><authid>EPSG:2056</authid><description>CH1903+ / LV95</description><projectionacronym>somerc</projectionacronym><ellipsoidacronym>EPSG:7004</ellipsoidacronym><geographicflag>false</geographicflag></spatialrefsys></srs>
+      <provider>wms</provider>
+    </maplayer>
+    <maplayer type="raster" hasScaleBasedVisibilityFlag="0" minScale="1e+08" maxScale="0" styleCategories="AllStyleCategories">
+      <extent><xmin>2690006</xmin><ymin>1255707</ymin><xmax>2704963</xmax><ymax>1267297</ymax></extent>
+      <id>geoharvester_spital_2</id>
+      <datasource>contextualWMSLegend=0&amp;crs=EPSG:2056&amp;dpiMode=7&amp;featureCount=10&amp;format=image/png&amp;layers=Spital&amp;styles&amp;url=https://stadtplan.winterthur.ch/wms/Stadtplan</datasource>
+      <layername>Spital (Winterthur)</layername>
+      <srs><spatialrefsys><proj4>+proj=somerc +lat_0=46.9524055555556 +lon_0=7.43958333333333 +k_0=1 +x_0=2600000 +y_0=1200000 +ellps=bessel +towgs84=674.374,15.056,405.346,0,0,0,0 +units=m +no_defs</proj4><srid>2056</srid><authid>EPSG:2056</authid><description>CH1903+ / LV95</description><projectionacronym>somerc</projectionacronym><ellipsoidacronym>EPSG:7004</ellipsoidacronym><geographicflag>false</geographicflag></spatialrefsys></srs>
+      <provider>wms</provider>
+    </maplayer>
+    <maplayer type="raster" hasScaleBasedVisibilityFlag="0" minScale="1e+08" maxScale="0" styleCategories="AllStyleCategories">
+      <extent><xmin>2679821</xmin><ymin>1244664</ymin><xmax>2686009</xmax><ymax>1250422</ymax></extent>
+      <id>geoharvester_spital_3</id>
+      <datasource>contextualWMSLegend=0&amp;crs=EPSG:2056&amp;dpiMode=7&amp;featureCount=10&amp;format=image/png&amp;layers=Spitäler&amp;styles&amp;url=https://www.ogd.stadt-zuerich.ch/wms/geoportal/Spital</datasource>
+      <layername>Spitäler (Zürich)</layername>
+      <srs><spatialrefsys><proj4>+proj=somerc +lat_0=46.9524055555556 +lon_0=7.43958333333333 +k_0=1 +x_0=2600000 +y_0=1200000 +ellps=bessel +towgs84=674.374,15.056,405.346,0,0,0,0 +units=m +no_defs</proj4><srid>2056</srid><authid>EPSG:2056</authid><description>CH1903+ / LV95</description><projectionacronym>somerc</projectionacronym><ellipsoidacronym>EPSG:7004</ellipsoidacronym><geographicflag>false</geographicflag></spatialrefsys></srs>
+      <provider>wms</provider>
+    </maplayer>
+    <maplayer type="raster" hasScaleBasedVisibilityFlag="0" minScale="1e+08" maxScale="0" styleCategories="AllStyleCategories">
+      <extent><xmin>2669024</xmin><ymin>1211173</ymin><xmax>2696513</xmax><ymax>1235906</ymax></extent>
+      <id>geoharvester_spital_4</id>
+      <datasource>contextualWMSLegend=0&amp;crs=EPSG:2056&amp;dpiMode=7&amp;featureCount=10&amp;format=image/png&amp;layers=Open-Data-Zug-Betreuungsstandort-Stadt-Zug&amp;styles&amp;url=https://ows.geodatenonline.ch/ogd_wms_betreuungsstandort_stadt_zug</datasource>
+      <layername>WMS Betreuungsstandort Stadt Zug (Zug)</layername>
+      <srs><spatialrefsys><proj4>+proj=somerc +lat_0=46.9524055555556 +lon_0=7.43958333333333 +k_0=1 +x_0=2600000 +y_0=1200000 +ellps=bessel +towgs84=674.374,15.056,405.346,0,0,0,0 +units=m +no_defs</proj4><srid>2056</srid><authid>EPSG:2056</authid><description>CH1903+ / LV95</description><projectionacronym>somerc</projectionacronym><ellipsoidacronym>EPSG:7004</ellipsoidacronym><geographicflag>false</geographicflag></spatialrefsys></srs>
+      <provider>wms</provider>
+    </maplayer>
+    <maplayer type="raster" hasScaleBasedVisibilityFlag="0" minScale="1e+08" maxScale="0" styleCategories="AllStyleCategories">
+      <extent><xmin>2563129</xmin><ymin>1129068</ymin><xmax>2657308</xmax><ymax>1236176</ymax></extent>
+      <id>geoharvester_spital_5</id>
+      <datasource>contextualWMSLegend=0&amp;crs=EPSG:2056&amp;dpiMode=7&amp;featureCount=10&amp;format=image/png&amp;layers=SPITAL_SPITKLIN_VW_8200&amp;styles&amp;url=https://www.geoservice.apps.be.ch/geoservice3/services/a42geo/of_health01_de_ms_wms/MapServer/WMSServer</datasource>
+      <layername>Spitäler und Kliniken (BE)</layername>
+      <srs><spatialrefsys><proj4>+proj=somerc +lat_0=46.9524055555556 +lon_0=7.43958333333333 +k_0=1 +x_0=2600000 +y_0=1200000 +ellps=bessel +towgs84=674.374,15.056,405.346,0,0,0,0 +units=m +no_defs</proj4><srid>2056</srid><authid>EPSG:2056</authid><description>CH1903+ / LV95</description><projectionacronym>somerc</projectionacronym><ellipsoidacronym>EPSG:7004</ellipsoidacronym><geographicflag>false</geographicflag></spatialrefsys></srs>
+      <provider>wms</provider>
+    </maplayer>
+    <maplayer type="raster" hasScaleBasedVisibilityFlag="0" minScale="1e+08" maxScale="0" styleCategories="AllStyleCategories">
+      <extent><xmin>2608536</xmin><ymin>1265815</ymin><xmax>2616953</xmax><ymax>1271059</ymax></extent>
+      <id>geoharvester_spital_6</id>
+      <datasource>contextualWMSLegend=0&amp;crs=EPSG:2056&amp;dpiMode=7&amp;featureCount=10&amp;format=image/png&amp;layers=ch.bs.spital_sptl&amp;styles&amp;url=https://wms.geo.bs.ch/</datasource>
+      <layername>Spitäler (BS)</layername>
+      <srs><spatialrefsys><proj4>+proj=somerc +lat_0=46.9524055555556 +lon_0=7.43958333333333 +k_0=1 +x_0=2600000 +y_0=1200000 +ellps=bessel +towgs84=674.374,15.056,405.346,0,0,0,0 +units=m +no_defs</proj4><srid>2056</srid><authid>EPSG:2056</authid><description>CH1903+ / LV95</description><projectionacronym>somerc</projectionacronym><ellipsoidacronym>EPSG:7004</ellipsoidacronym><geographicflag>false</geographicflag></spatialrefsys></srs>
+      <provider>wms</provider>
+    </maplayer>
+    <maplayer type="raster" hasScaleBasedVisibilityFlag="0" minScale="1e+08" maxScale="0" styleCategories="AllStyleCategories">
+      <extent><xmin>2494088</xmin><ymin>1115209</ymin><xmax>2507077</xmax><ymax>1126225</ymax></extent>
+      <id>geoharvester_spital_7</id>
+      <datasource>contextualWMSLegend=0&amp;crs=EPSG:2056&amp;dpiMode=7&amp;featureCount=10&amp;format=image/png&amp;layers=0&amp;styles&amp;url=https://vector.sitg.ge.ch/arcgis/services/DEAS_LIEUX_DE_SOINS/MapServer/WMSServer</datasource>
+      <layername>DEAS_LIEUX_DE_SOINS (GE)</layername>
+      <srs><spatialrefsys><proj4>+proj=somerc +lat_0=46.9524055555556 +lon_0=7.43958333333333 +k_0=1 +x_0=2600000 +y_0=1200000 +ellps=bessel +towgs84=674.374,15.056,405.346,0,0,0,0 +units=m +no_defs</proj4><srid>2056</srid><authid>EPSG:2056</authid><description>CH1903+ / LV95</description><projectionacronym>somerc</projectionacronym><ellipsoidacronym>EPSG:7004</ellipsoidacronym><geographicflag>false</geographicflag></spatialrefsys></srs>
+      <provider>wms</provider>
+    </maplayer>
+    <maplayer type="raster" hasScaleBasedVisibilityFlag="0" minScale="1e+08" maxScale="0" styleCategories="AllStyleCategories">
+      <extent><xmin>2691144</xmin><ymin>1094287</ymin><xmax>2834923</xmax><ymax>1246113</ymax></extent>
+      <id>geoharvester_spital_8</id>
+      <datasource>contextualWMSLegend=0&amp;crs=EPSG:2056&amp;dpiMode=7&amp;featureCount=10&amp;format=image/png&amp;layers=Spitalstandorte&amp;styles&amp;url=https://wms.geo.gr.ch/regionen</datasource>
+      <layername>Spitalstandorte (GR)</layername>
+      <srs><spatialrefsys><proj4>+proj=somerc +lat_0=46.9524055555556 +lon_0=7.43958333333333 +k_0=1 +x_0=2600000 +y_0=1200000 +ellps=bessel +towgs84=674.374,15.056,405.346,0,0,0,0 +units=m +no_defs</proj4><srid>2056</srid><authid>EPSG:2056</authid><description>CH1903+ / LV95</description><projectionacronym>somerc</projectionacronym><ellipsoidacronym>EPSG:7004</ellipsoidacronym><geographicflag>false</geographicflag></spatialrefsys></srs>
+      <provider>wms</provider>
+    </maplayer>
+    <maplayer type="raster" hasScaleBasedVisibilityFlag="0" minScale="1e+08" maxScale="0" styleCategories="AllStyleCategories">
+      <extent><xmin>2543632</xmin><ymin>1217601</ymin><xmax>2615465</xmax><ymax>1264939</ymax></extent>
+      <id>geoharvester_spital_9</id>
+      <datasource>contextualWMSLegend=0&amp;crs=EPSG:2056&amp;dpiMode=7&amp;featureCount=10&amp;format=image/png&amp;layers=ssa_19_04_centre_hospitalier&amp;styles&amp;url=https://geo.jura.ch/mapserv_proxy?ogcserver=Main_PNG</datasource>
+      <layername>ssa_19_04_centre_hospitalier (JU)</layername>
+      <srs><spatialrefsys><proj4>+proj=somerc +lat_0=46.9524055555556 +lon_0=7.43958333333333 +k_0=1 +x_0=2600000 +y_0=1200000 +ellps=bessel +towgs84=674.374,15.056,405.346,0,0,0,0 +units=m +no_defs</proj4><srid>2056</srid><authid>EPSG:2056</authid><description>CH1903+ / LV95</description><projectionacronym>somerc</projectionacronym><ellipsoidacronym>EPSG:7004</ellipsoidacronym><geographicflag>false</geographicflag></spatialrefsys></srs>
+      <provider>wms</provider>
+    </maplayer>
+    <maplayer type="raster" hasScaleBasedVisibilityFlag="0" minScale="1e+08" maxScale="0" styleCategories="AllStyleCategories">
+      <extent><xmin>2595776</xmin><ymin>1215445</ymin><xmax>2642986</xmax><ymax>1259849</ymax></extent>
+      <id>geoharvester_spital_10</id>
+      <datasource>contextualWMSLegend=0&amp;crs=EPSG:2056&amp;dpiMode=7&amp;featureCount=10&amp;format=image/png&amp;layers=ch.so.gesa.gesundheitseinrichtungen&amp;styles&amp;url=https://geo.so.ch/api/wms</datasource>
+      <layername>Gesundheitseinrichtungen (SO)</layername>
+      <srs><spatialrefsys><proj4>+proj=somerc +lat_0=46.9524055555556 +lon_0=7.43958333333333 +k_0=1 +x_0=2600000 +y_0=1200000 +ellps=bessel +towgs84=674.374,15.056,405.346,0,0,0,0 +units=m +no_defs</proj4><srid>2056</srid><authid>EPSG:2056</authid><description>CH1903+ / LV95</description><projectionacronym>somerc</projectionacronym><ellipsoidacronym>EPSG:7004</ellipsoidacronym><geographicflag>false</geographicflag></spatialrefsys></srs>
+      <provider>wms</provider>
+    </maplayer>
+    <maplayer type="raster" hasScaleBasedVisibilityFlag="0" minScale="1e+08" maxScale="0" styleCategories="AllStyleCategories">
+      <extent><xmin>2505063</xmin><ymin>1120697</ymin><xmax>2606510</xmax><ymax>1189100</ymax></extent>
+      <id>geoharvester_spital_11</id>
+      <datasource>contextualWMSLegend=0&amp;crs=EPSG:2056&amp;dpiMode=7&amp;featureCount=10&amp;format=image/png&amp;layers=vd.etablissement_hospitalier&amp;styles&amp;url=https://www.ogc.vd.ch/public/services/OGC/wmsVD/Mapserver/WMSServer</datasource>
+      <layername>vd.etablissement_hospitalier (VD)</layername>
+      <srs><spatialrefsys><proj4>+proj=somerc +lat_0=46.9524055555556 +lon_0=7.43958333333333 +k_0=1 +x_0=2600000 +y_0=1200000 +ellps=bessel +towgs84=674.374,15.056,405.346,0,0,0,0 +units=m +no_defs</proj4><srid>2056</srid><authid>EPSG:2056</authid><description>CH1903+ / LV95</description><projectionacronym>somerc</projectionacronym><ellipsoidacronym>EPSG:7004</ellipsoidacronym><geographicflag>false</geographicflag></spatialrefsys></srs>
+      <provider>wms</provider>
+    </maplayer>
+    <maplayer type="raster" hasScaleBasedVisibilityFlag="0" minScale="1e+08" maxScale="0" styleCategories="AllStyleCategories">
+      <extent><xmin>2654491</xmin><ymin>1221474</ymin><xmax>2720011</xmax><ymax>1300949</ymax></extent>
+      <id>geoharvester_spital_12</id>
+      <datasource>contextualWMSLegend=0&amp;crs=EPSG:2056&amp;dpiMode=7&amp;featureCount=10&amp;format=image/png&amp;layers=betreuungsgebiete&amp;styles&amp;url=https://wms.zh.ch/FNSZustaendigkeitenZH</datasource>
+      <layername>Betreuungsgebiete (ZH)</layername>
+      <srs><spatialrefsys><proj4>+proj=somerc +lat_0=46.9524055555556 +lon_0=7.43958333333333 +k_0=1 +x_0=2600000 +y_0=1200000 +ellps=bessel +towgs84=674.374,15.056,405.346,0,0,0,0 +units=m +no_defs</proj4><srid>2056</srid><authid>EPSG:2056</authid><description>CH1903+ / LV95</description><projectionacronym>somerc</projectionacronym><ellipsoidacronym>EPSG:7004</ellipsoidacronym><geographicflag>false</geographicflag></spatialrefsys></srs>
+      <provider>wms</provider>
+    </maplayer>
+  </maplayers>
+</qlr>

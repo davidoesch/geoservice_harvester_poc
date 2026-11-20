@@ -1,0 +1,63 @@
+<!DOCTYPE qgis-layer-definition>
+<qlr>
+  <layer-tree-group expanded="1" checked="Qt::Checked" name="">
+    <layer-tree-group expanded="1" checked="Qt::Checked" name="GeoHarvester – Nächtliche Windgeschwindigkeit in 2 m über Grund, 2060">
+      <layer-tree-layer expanded="0" checked="Qt::Checked" id="geoharvester_nachtliche-windgeschwindigkeit-in-2-m-uber-grund-2060_0" name="climat_vent_nuit_vitesse (Lausanne)" source="contextualWMSLegend=0&amp;crs=EPSG:2056&amp;dpiMode=7&amp;featureCount=10&amp;format=image/png&amp;layers=climat_vent_nuit_vitesse&amp;styles&amp;url=https://map.lausanne.ch/mapserv_proxy?ogcserver=source+for+image%2Fpng" providerKey="wms"/>
+      <layer-tree-layer expanded="0" checked="Qt::Checked" id="geoharvester_nachtliche-windgeschwindigkeit-in-2-m-uber-grund-2060_1" name="Nächtliche Windgeschwindigkeit in 2 m über Grund, 2060 (BE)" source="contextualWMSLegend=0&amp;crs=EPSG:2056&amp;dpiMode=7&amp;featureCount=10&amp;format=image/png&amp;layers=KLIMAMOD_TWG60N_14453&amp;styles&amp;url=https://www.geoservice.apps.be.ch/geoservice3/services/a42geo/of_climatologymeteorologyatmosphere01_de_ms_wms/MapServer/WMSServer" providerKey="wms"/>
+      <layer-tree-layer expanded="0" checked="Qt::Checked" id="geoharvester_nachtliche-windgeschwindigkeit-in-2-m-uber-grund-2060_2" name="cl209_p0_nuit_vitesse_vents (NE)" source="contextualWMSLegend=0&amp;crs=EPSG:2056&amp;dpiMode=7&amp;featureCount=10&amp;format=image/png&amp;layers=cl209_p0_nuit_vitesse_vents&amp;styles&amp;url=https://sitn.ne.ch/ogc-sitn-climat/wms" providerKey="wms"/>
+      <layer-tree-layer expanded="0" checked="Qt::Checked" id="geoharvester_nachtliche-windgeschwindigkeit-in-2-m-uber-grund-2060_3" name="klimamodell_nacht_windgeschwindigkeit.tif (SH)" source="contextualWMSLegend=0&amp;crs=EPSG:2056&amp;dpiMode=7&amp;featureCount=10&amp;format=image/png&amp;layers=klimamodell_nacht_windgeschwindigkeit.tif&amp;styles&amp;url=https://wms.geo.sh.ch/raster" providerKey="wms"/>
+      <layer-tree-layer expanded="0" checked="Qt::Checked" id="geoharvester_nachtliche-windgeschwindigkeit-in-2-m-uber-grund-2060_4" name="Windgeschwindigkeit Nacht Zukunft 2060 (SO)" source="contextualWMSLegend=0&amp;crs=EPSG:2056&amp;dpiMode=7&amp;featureCount=10&amp;format=image/png&amp;layers=ch.so.afu.klimaanalysekarte.windgeschwindigkeit_4uhr_zukunft&amp;styles&amp;url=https://geo.so.ch/api/wms" providerKey="wms"/>
+      <layer-tree-layer expanded="0" checked="Qt::Checked" id="geoharvester_nachtliche-windgeschwindigkeit-in-2-m-uber-grund-2060_5" name="Windgeschwindigkeit Nacht [m/s], 4 Uhr (ZH)" source="contextualWMSLegend=0&amp;crs=EPSG:2056&amp;dpiMode=7&amp;featureCount=10&amp;format=image/png&amp;layers=nacht-windgeschwindigkeit-2024-a&amp;styles&amp;url=https://wms.zh.ch/AwelLHBewertungskarten2024NachtaktuellZHWMS" providerKey="wms"/>
+    </layer-tree-group>
+  </layer-tree-group>
+  <maplayers>
+    <maplayer type="raster" hasScaleBasedVisibilityFlag="0" minScale="1e+08" maxScale="0" styleCategories="AllStyleCategories">
+      <extent><xmin>2485151</xmin><ymin>1075456</ymin><xmax>2836999</xmax><ymax>1301502</ymax></extent>
+      <id>geoharvester_nachtliche-windgeschwindigkeit-in-2-m-uber-grund-2060_0</id>
+      <datasource>contextualWMSLegend=0&amp;crs=EPSG:2056&amp;dpiMode=7&amp;featureCount=10&amp;format=image/png&amp;layers=climat_vent_nuit_vitesse&amp;styles&amp;url=https://map.lausanne.ch/mapserv_proxy?ogcserver=source+for+image%2Fpng</datasource>
+      <layername>climat_vent_nuit_vitesse (Lausanne)</layername>
+      <srs><spatialrefsys><proj4>+proj=somerc +lat_0=46.9524055555556 +lon_0=7.43958333333333 +k_0=1 +x_0=2600000 +y_0=1200000 +ellps=bessel +towgs84=674.374,15.056,405.346,0,0,0,0 +units=m +no_defs</proj4><srid>2056</srid><authid>EPSG:2056</authid><description>CH1903+ / LV95</description><projectionacronym>somerc</projectionacronym><ellipsoidacronym>EPSG:7004</ellipsoidacronym><geographicflag>false</geographicflag></spatialrefsys></srs>
+      <provider>wms</provider>
+    </maplayer>
+    <maplayer type="raster" hasScaleBasedVisibilityFlag="0" minScale="1e+08" maxScale="0" styleCategories="AllStyleCategories">
+      <extent><xmin>2552581</xmin><ymin>1129809</ymin><xmax>2680968</xmax><ymax>1265696</ymax></extent>
+      <id>geoharvester_nachtliche-windgeschwindigkeit-in-2-m-uber-grund-2060_1</id>
+      <datasource>contextualWMSLegend=0&amp;crs=EPSG:2056&amp;dpiMode=7&amp;featureCount=10&amp;format=image/png&amp;layers=KLIMAMOD_TWG60N_14453&amp;styles&amp;url=https://www.geoservice.apps.be.ch/geoservice3/services/a42geo/of_climatologymeteorologyatmosphere01_de_ms_wms/MapServer/WMSServer</datasource>
+      <layername>Nächtliche Windgeschwindigkeit in 2 m über Grund, 2060 (BE)</layername>
+      <srs><spatialrefsys><proj4>+proj=somerc +lat_0=46.9524055555556 +lon_0=7.43958333333333 +k_0=1 +x_0=2600000 +y_0=1200000 +ellps=bessel +towgs84=674.374,15.056,405.346,0,0,0,0 +units=m +no_defs</proj4><srid>2056</srid><authid>EPSG:2056</authid><description>CH1903+ / LV95</description><projectionacronym>somerc</projectionacronym><ellipsoidacronym>EPSG:7004</ellipsoidacronym><geographicflag>false</geographicflag></spatialrefsys></srs>
+      <provider>wms</provider>
+    </maplayer>
+    <maplayer type="raster" hasScaleBasedVisibilityFlag="0" minScale="1e+08" maxScale="0" styleCategories="AllStyleCategories">
+      <extent><xmin>2498476</xmin><ymin>1160051</ymin><xmax>2600028</xmax><ymax>1250020</ymax></extent>
+      <id>geoharvester_nachtliche-windgeschwindigkeit-in-2-m-uber-grund-2060_2</id>
+      <datasource>contextualWMSLegend=0&amp;crs=EPSG:2056&amp;dpiMode=7&amp;featureCount=10&amp;format=image/png&amp;layers=cl209_p0_nuit_vitesse_vents&amp;styles&amp;url=https://sitn.ne.ch/ogc-sitn-climat/wms</datasource>
+      <layername>cl209_p0_nuit_vitesse_vents (NE)</layername>
+      <srs><spatialrefsys><proj4>+proj=somerc +lat_0=46.9524055555556 +lon_0=7.43958333333333 +k_0=1 +x_0=2600000 +y_0=1200000 +ellps=bessel +towgs84=674.374,15.056,405.346,0,0,0,0 +units=m +no_defs</proj4><srid>2056</srid><authid>EPSG:2056</authid><description>CH1903+ / LV95</description><projectionacronym>somerc</projectionacronym><ellipsoidacronym>EPSG:7004</ellipsoidacronym><geographicflag>false</geographicflag></spatialrefsys></srs>
+      <provider>wms</provider>
+    </maplayer>
+    <maplayer type="raster" hasScaleBasedVisibilityFlag="0" minScale="1e+08" maxScale="0" styleCategories="AllStyleCategories">
+      <extent><xmin>2671033</xmin><ymin>1265345</ymin><xmax>2709434</xmax><ymax>1298073</ymax></extent>
+      <id>geoharvester_nachtliche-windgeschwindigkeit-in-2-m-uber-grund-2060_3</id>
+      <datasource>contextualWMSLegend=0&amp;crs=EPSG:2056&amp;dpiMode=7&amp;featureCount=10&amp;format=image/png&amp;layers=klimamodell_nacht_windgeschwindigkeit.tif&amp;styles&amp;url=https://wms.geo.sh.ch/raster</datasource>
+      <layername>klimamodell_nacht_windgeschwindigkeit.tif (SH)</layername>
+      <srs><spatialrefsys><proj4>+proj=somerc +lat_0=46.9524055555556 +lon_0=7.43958333333333 +k_0=1 +x_0=2600000 +y_0=1200000 +ellps=bessel +towgs84=674.374,15.056,405.346,0,0,0,0 +units=m +no_defs</proj4><srid>2056</srid><authid>EPSG:2056</authid><description>CH1903+ / LV95</description><projectionacronym>somerc</projectionacronym><ellipsoidacronym>EPSG:7004</ellipsoidacronym><geographicflag>false</geographicflag></spatialrefsys></srs>
+      <provider>wms</provider>
+    </maplayer>
+    <maplayer type="raster" hasScaleBasedVisibilityFlag="0" minScale="1e+08" maxScale="0" styleCategories="AllStyleCategories">
+      <extent><xmin>2591444</xmin><ymin>1212337</ymin><xmax>2646129</xmax><ymax>1262652</ymax></extent>
+      <id>geoharvester_nachtliche-windgeschwindigkeit-in-2-m-uber-grund-2060_4</id>
+      <datasource>contextualWMSLegend=0&amp;crs=EPSG:2056&amp;dpiMode=7&amp;featureCount=10&amp;format=image/png&amp;layers=ch.so.afu.klimaanalysekarte.windgeschwindigkeit_4uhr_zukunft&amp;styles&amp;url=https://geo.so.ch/api/wms</datasource>
+      <layername>Windgeschwindigkeit Nacht Zukunft 2060 (SO)</layername>
+      <srs><spatialrefsys><proj4>+proj=somerc +lat_0=46.9524055555556 +lon_0=7.43958333333333 +k_0=1 +x_0=2600000 +y_0=1200000 +ellps=bessel +towgs84=674.374,15.056,405.346,0,0,0,0 +units=m +no_defs</proj4><srid>2056</srid><authid>EPSG:2056</authid><description>CH1903+ / LV95</description><projectionacronym>somerc</projectionacronym><ellipsoidacronym>EPSG:7004</ellipsoidacronym><geographicflag>false</geographicflag></spatialrefsys></srs>
+      <provider>wms</provider>
+    </maplayer>
+    <maplayer type="raster" hasScaleBasedVisibilityFlag="0" minScale="1e+08" maxScale="0" styleCategories="AllStyleCategories">
+      <extent><xmin>2654491</xmin><ymin>1221474</ymin><xmax>2720011</xmax><ymax>1300949</ymax></extent>
+      <id>geoharvester_nachtliche-windgeschwindigkeit-in-2-m-uber-grund-2060_5</id>
+      <datasource>contextualWMSLegend=0&amp;crs=EPSG:2056&amp;dpiMode=7&amp;featureCount=10&amp;format=image/png&amp;layers=nacht-windgeschwindigkeit-2024-a&amp;styles&amp;url=https://wms.zh.ch/AwelLHBewertungskarten2024NachtaktuellZHWMS</datasource>
+      <layername>Windgeschwindigkeit Nacht [m/s], 4 Uhr (ZH)</layername>
+      <srs><spatialrefsys><proj4>+proj=somerc +lat_0=46.9524055555556 +lon_0=7.43958333333333 +k_0=1 +x_0=2600000 +y_0=1200000 +ellps=bessel +towgs84=674.374,15.056,405.346,0,0,0,0 +units=m +no_defs</proj4><srid>2056</srid><authid>EPSG:2056</authid><description>CH1903+ / LV95</description><projectionacronym>somerc</projectionacronym><ellipsoidacronym>EPSG:7004</ellipsoidacronym><geographicflag>false</geographicflag></spatialrefsys></srs>
+      <provider>wms</provider>
+    </maplayer>
+  </maplayers>
+</qlr>

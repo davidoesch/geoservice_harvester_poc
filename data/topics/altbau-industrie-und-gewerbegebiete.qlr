@@ -1,0 +1,36 @@
+<!DOCTYPE qgis-layer-definition>
+<qlr>
+  <layer-tree-group expanded="1" checked="Qt::Checked" name="">
+    <layer-tree-group expanded="1" checked="Qt::Checked" name="GeoHarvester – Altbau-, Industrie- und Gewerbegebiete">
+      <layer-tree-layer expanded="0" checked="Qt::Checked" id="geoharvester_altbau-industrie-und-gewerbegebiete_0" name="Baugebiete 1983, Industrie- und Gewerbezonen (AG)" source="contextualWMSLegend=0&amp;crs=EPSG:2056&amp;dpiMode=7&amp;featureCount=10&amp;format=image/png&amp;layers=ch_ag_geo_are_histbzind_01&amp;styles&amp;url=https://wms.geo.ag.ch/public/ows" providerKey="wms"/>
+      <layer-tree-layer expanded="0" checked="Qt::Checked" id="geoharvester_altbau-industrie-und-gewerbegebiete_1" name="Gewerbe- und Industriegebiete (GR)" source="contextualWMSLegend=0&amp;crs=EPSG:2056&amp;dpiMode=7&amp;featureCount=10&amp;format=image/png&amp;layers=Gewerbe_und_Industriegebiete&amp;styles&amp;url=https://wms.geo.gr.ch/rrip_unterengadin" providerKey="wms"/>
+      <layer-tree-layer expanded="0" checked="Qt::Checked" id="geoharvester_altbau-industrie-und-gewerbegebiete_2" name="Altbau-, Industrie- und Gewerbegebiete (ZG)" source="contextualWMSLegend=0&amp;crs=EPSG:2056&amp;dpiMode=7&amp;featureCount=10&amp;format=image/png&amp;layers=zg.altbau_indutsrie_gewerbegebiete&amp;styles&amp;url=https://services.geo.zg.ch/ows/pbv" providerKey="wms"/>
+    </layer-tree-group>
+  </layer-tree-group>
+  <maplayers>
+    <maplayer type="raster" hasScaleBasedVisibilityFlag="0" minScale="1e+08" maxScale="0" styleCategories="AllStyleCategories">
+      <extent><xmin>2620958</xmin><ymin>1223151</ymin><xmax>2674452</xmax><ymax>1274839</ymax></extent>
+      <id>geoharvester_altbau-industrie-und-gewerbegebiete_0</id>
+      <datasource>contextualWMSLegend=0&amp;crs=EPSG:2056&amp;dpiMode=7&amp;featureCount=10&amp;format=image/png&amp;layers=ch_ag_geo_are_histbzind_01&amp;styles&amp;url=https://wms.geo.ag.ch/public/ows</datasource>
+      <layername>Baugebiete 1983, Industrie- und Gewerbezonen (AG)</layername>
+      <srs><spatialrefsys><proj4>+proj=somerc +lat_0=46.9524055555556 +lon_0=7.43958333333333 +k_0=1 +x_0=2600000 +y_0=1200000 +ellps=bessel +towgs84=674.374,15.056,405.346,0,0,0,0 +units=m +no_defs</proj4><srid>2056</srid><authid>EPSG:2056</authid><description>CH1903+ / LV95</description><projectionacronym>somerc</projectionacronym><ellipsoidacronym>EPSG:7004</ellipsoidacronym><geographicflag>false</geographicflag></spatialrefsys></srs>
+      <provider>wms</provider>
+    </maplayer>
+    <maplayer type="raster" hasScaleBasedVisibilityFlag="0" minScale="1e+08" maxScale="0" styleCategories="AllStyleCategories">
+      <extent><xmin>2691144</xmin><ymin>1094287</ymin><xmax>2834923</xmax><ymax>1246113</ymax></extent>
+      <id>geoharvester_altbau-industrie-und-gewerbegebiete_1</id>
+      <datasource>contextualWMSLegend=0&amp;crs=EPSG:2056&amp;dpiMode=7&amp;featureCount=10&amp;format=image/png&amp;layers=Gewerbe_und_Industriegebiete&amp;styles&amp;url=https://wms.geo.gr.ch/rrip_unterengadin</datasource>
+      <layername>Gewerbe- und Industriegebiete (GR)</layername>
+      <srs><spatialrefsys><proj4>+proj=somerc +lat_0=46.9524055555556 +lon_0=7.43958333333333 +k_0=1 +x_0=2600000 +y_0=1200000 +ellps=bessel +towgs84=674.374,15.056,405.346,0,0,0,0 +units=m +no_defs</proj4><srid>2056</srid><authid>EPSG:2056</authid><description>CH1903+ / LV95</description><projectionacronym>somerc</projectionacronym><ellipsoidacronym>EPSG:7004</ellipsoidacronym><geographicflag>false</geographicflag></spatialrefsys></srs>
+      <provider>wms</provider>
+    </maplayer>
+    <maplayer type="raster" hasScaleBasedVisibilityFlag="0" minScale="1e+08" maxScale="0" styleCategories="AllStyleCategories">
+      <extent><xmin>2672913</xmin><ymin>1216334</ymin><xmax>2690915</xmax><ymax>1230814</ymax></extent>
+      <id>geoharvester_altbau-industrie-und-gewerbegebiete_2</id>
+      <datasource>contextualWMSLegend=0&amp;crs=EPSG:2056&amp;dpiMode=7&amp;featureCount=10&amp;format=image/png&amp;layers=zg.altbau_indutsrie_gewerbegebiete&amp;styles&amp;url=https://services.geo.zg.ch/ows/pbv</datasource>
+      <layername>Altbau-, Industrie- und Gewerbegebiete (ZG)</layername>
+      <srs><spatialrefsys><proj4>+proj=somerc +lat_0=46.9524055555556 +lon_0=7.43958333333333 +k_0=1 +x_0=2600000 +y_0=1200000 +ellps=bessel +towgs84=674.374,15.056,405.346,0,0,0,0 +units=m +no_defs</proj4><srid>2056</srid><authid>EPSG:2056</authid><description>CH1903+ / LV95</description><projectionacronym>somerc</projectionacronym><ellipsoidacronym>EPSG:7004</ellipsoidacronym><geographicflag>false</geographicflag></spatialrefsys></srs>
+      <provider>wms</provider>
+    </maplayer>
+  </maplayers>
+</qlr>

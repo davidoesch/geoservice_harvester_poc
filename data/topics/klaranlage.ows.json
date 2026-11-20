@@ -1,0 +1,119 @@
+{
+ "type": "FeatureCollection",
+ "id": "https://davidoesch.github.io/geoservice_harvester_poc/data/topics/klaranlage.ows.json",
+ "properties": {
+  "lang": "de",
+  "title": "Kläranlage",
+  "updated": "2026-11-20T16:05:37+01:00",
+  "subtitle": "GeoHarvester topic: 2 providers",
+  "links": {
+   "profiles": [
+    {
+     "href": "http://www.opengis.net/spec/owc-geojson/1.0/req/core"
+    }
+   ]
+  }
+ },
+ "features": [
+  {
+   "type": "Feature",
+   "id": "https://geo.so.ch/api/wms#ch.so.afu.klaeranlagen",
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       7.291,
+       47.044
+      ],
+      [
+       8.038,
+       47.044
+      ],
+      [
+       8.038,
+       47.504
+      ],
+      [
+       7.291,
+       47.504
+      ],
+      [
+       7.291,
+       47.044
+      ]
+     ]
+    ]
+   },
+   "properties": {
+    "title": "Kläranlagen",
+    "updated": "2026-11-20T16:05:37+01:00",
+    "publisher": "Kanton Solothurn",
+    "layer": "ch.so.afu.klaeranlagen",
+    "offerings": [
+     {
+      "code": "http://www.opengis.net/spec/owc-geojson/1.0/req/wms",
+      "operations": [
+       {
+        "code": "GetCapabilities",
+        "method": "GET",
+        "type": "application/xml",
+        "href": "https://geo.so.ch/api/wms?SERVICE=WMS&REQUEST=GetCapabilities"
+       }
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": "https://ows.geo.tg.ch/geofy_access_proxy/richtplankt200k#Klaeranlage_Layer",
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       8.631,
+       47.347
+      ],
+      [
+       9.572,
+       47.347
+      ],
+      [
+       9.572,
+       47.711
+      ],
+      [
+       8.631,
+       47.711
+      ],
+      [
+       8.631,
+       47.347
+      ]
+     ]
+    ]
+   },
+   "properties": {
+    "title": "Kläranlage",
+    "updated": "2026-11-20T16:05:37+01:00",
+    "publisher": "Kanton Thurgau",
+    "layer": "Klaeranlage_Layer",
+    "offerings": [
+     {
+      "code": "http://www.opengis.net/spec/owc-geojson/1.0/req/wms",
+      "operations": [
+       {
+        "code": "GetCapabilities",
+        "method": "GET",
+        "type": "application/xml",
+        "href": "https://ows.geo.tg.ch/geofy_access_proxy/richtplankt200k?SERVICE=WMS&REQUEST=GetCapabilities"
+       }
+      ]
+     }
+    ]
+   }
+  }
+ ]
+}

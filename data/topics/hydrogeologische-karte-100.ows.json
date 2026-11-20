@@ -1,0 +1,343 @@
+{
+ "type": "FeatureCollection",
+ "id": "https://davidoesch.github.io/geoservice_harvester_poc/data/topics/hydrogeologische-karte-100.ows.json",
+ "properties": {
+  "lang": "de",
+  "title": "Hydrogeologische Karte 100",
+  "updated": "2026-11-20T16:05:37+01:00",
+  "subtitle": "GeoHarvester topic: 7 providers",
+  "links": {
+   "profiles": [
+    {
+     "href": "http://www.opengis.net/spec/owc-geojson/1.0/req/core"
+    }
+   ]
+  }
+ },
+ "features": [
+  {
+   "type": "Feature",
+   "id": "https://wms.geo.admin.ch/#ch.bafu.hydrogeologische-karte_100",
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       0.66,
+       45.419
+      ],
+      [
+       10.836,
+       45.419
+      ],
+      [
+       10.836,
+       48.751
+      ],
+      [
+       0.66,
+       48.751
+      ],
+      [
+       0.66,
+       45.419
+      ]
+     ]
+    ]
+   },
+   "properties": {
+    "title": "Hydrogeologische Karte 100",
+    "updated": "2026-11-20T16:05:37+01:00",
+    "publisher": "Bund (geo.admin.ch)",
+    "layer": "ch.bafu.hydrogeologische-karte_100",
+    "offerings": [
+     {
+      "code": "http://www.opengis.net/spec/owc-geojson/1.0/req/wms",
+      "operations": [
+       {
+        "code": "GetCapabilities",
+        "method": "GET",
+        "type": "application/xml",
+        "href": "https://wms.geo.admin.ch/?SERVICE=WMS&REQUEST=GetCapabilities"
+       }
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": "https://geowms.bl.ch/#geolog_atlas_hydrologie_punkte",
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       7.306,
+       47.309
+      ],
+      [
+       8.037,
+       47.309
+      ],
+      [
+       8.037,
+       47.626
+      ],
+      [
+       7.306,
+       47.626
+      ],
+      [
+       7.306,
+       47.309
+      ]
+     ]
+    ]
+   },
+   "properties": {
+    "title": "Geologischer Atlas Hydrologie Punkte",
+    "updated": "2026-11-20T16:05:37+01:00",
+    "publisher": "Kanton Basel-Landschaft",
+    "layer": "geolog_atlas_hydrologie_punkte",
+    "offerings": [
+     {
+      "code": "http://www.opengis.net/spec/owc-geojson/1.0/req/wms",
+      "operations": [
+       {
+        "code": "GetCapabilities",
+        "method": "GET",
+        "type": "application/xml",
+        "href": "https://geowms.bl.ch/?SERVICE=WMS&REQUEST=GetCapabilities"
+       }
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": "https://wms.geo.gr.ch/hydrogeologische_karten#Hydrogeologische_Karte_100",
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       7.503,
+       45.216
+      ],
+      [
+       11.663,
+       45.216
+      ],
+      [
+       11.663,
+       48.077
+      ],
+      [
+       7.503,
+       48.077
+      ],
+      [
+       7.503,
+       45.216
+      ]
+     ]
+    ]
+   },
+   "properties": {
+    "title": "Hydrogeologische Karte 100",
+    "updated": "2026-11-20T16:05:37+01:00",
+    "publisher": "Kanton Graubünden",
+    "layer": "Hydrogeologische_Karte_100",
+    "offerings": [
+     {
+      "code": "http://www.opengis.net/spec/owc-geojson/1.0/req/wms",
+      "operations": [
+       {
+        "code": "GetCapabilities",
+        "method": "GET",
+        "type": "application/xml",
+        "href": "https://wms.geo.gr.ch/hydrogeologische_karten?SERVICE=WMS&REQUEST=GetCapabilities"
+       }
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": "https://geoservices.jura.ch/wms#ju.env_06_27",
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       6.696,
+       47.107
+      ],
+      [
+       7.644,
+       47.107
+      ],
+      [
+       7.644,
+       47.535
+      ],
+      [
+       6.696,
+       47.535
+      ],
+      [
+       6.696,
+       47.107
+      ]
+     ]
+    ]
+   },
+   "properties": {
+    "title": "Carte hydrogéologique de l'Ajoie",
+    "updated": "2026-11-20T16:05:37+01:00",
+    "publisher": "Kanton Jura",
+    "layer": "ju.env_06_27",
+    "offerings": [
+     {
+      "code": "http://www.opengis.net/spec/owc-geojson/1.0/req/wms",
+      "operations": [
+       {
+        "code": "GetCapabilities",
+        "method": "GET",
+        "type": "application/xml",
+        "href": "https://geoservices.jura.ch/wms?SERVICE=WMS&REQUEST=GetCapabilities"
+       }
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": "https://services.geo.sg.ch/wss/service/SG00025_WMS/guest#Hydrogeologische_Besonderheiten",
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       8.825,
+       46.986
+      ],
+      [
+       9.655,
+       46.986
+      ],
+      [
+       9.655,
+       47.532
+      ],
+      [
+       8.825,
+       47.532
+      ],
+      [
+       8.825,
+       46.986
+      ]
+     ]
+    ]
+   },
+   "properties": {
+    "title": "Hydrogeologische_Besonderheiten",
+    "updated": "2026-11-20T16:05:37+01:00",
+    "publisher": "Kanton St. Gallen",
+    "layer": "Hydrogeologische_Besonderheiten",
+    "offerings": [
+     {
+      "code": "http://www.opengis.net/spec/owc-geojson/1.0/req/wms",
+      "operations": [
+       {
+        "code": "GetCapabilities",
+        "method": "GET",
+        "type": "application/xml",
+        "href": "https://services.geo.sg.ch/wss/service/SG00025_WMS/guest?SERVICE=WMS&REQUEST=GetCapabilities"
+       }
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": "https://sit.vs.ch/arcgis/services/UMWELTSCHUTZ/MapServer/WMSServer#10",
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       6.745,
+       46.033
+      ],
+      [
+       7.684,
+       46.033
+      ],
+      [
+       7.684,
+       46.458
+      ],
+      [
+       6.745,
+       46.458
+      ],
+      [
+       6.745,
+       46.033
+      ]
+     ]
+    ]
+   },
+   "properties": {
+    "title": "KS_Hydrogeologische Einzugsgebiete",
+    "updated": "2026-11-20T16:05:37+01:00",
+    "publisher": "Kanton Wallis",
+    "layer": "10",
+    "offerings": [
+     {
+      "code": "http://www.opengis.net/spec/owc-geojson/1.0/req/wms",
+      "operations": [
+       {
+        "code": "GetCapabilities",
+        "method": "GET",
+        "type": "application/xml",
+        "href": "https://sit.vs.ch/arcgis/services/UMWELTSCHUTZ/MapServer/WMSServer?SERVICE=WMS&REQUEST=GetCapabilities"
+       }
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": "https://services.geo.zg.ch/ows/hydrogeologische_objekte#zg_hydrogeologische_objekte",
+   "geometry": null,
+   "properties": {
+    "title": "hydrogeologische Objekte",
+    "updated": "2026-11-20T16:05:37+01:00",
+    "publisher": "Kanton Zug",
+    "layer": "zg_hydrogeologische_objekte",
+    "offerings": [
+     {
+      "code": "http://www.opengis.net/spec/owc-geojson/1.0/req/wms",
+      "operations": [
+       {
+        "code": "GetCapabilities",
+        "method": "GET",
+        "type": "application/xml",
+        "href": "https://services.geo.zg.ch/ows/hydrogeologische_objekte?SERVICE=WMS&REQUEST=GetCapabilities"
+       }
+      ]
+     }
+    ]
+   }
+  }
+ ]
+}

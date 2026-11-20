@@ -1,0 +1,135 @@
+<!DOCTYPE qgis-layer-definition>
+<qlr>
+  <layer-tree-group expanded="1" checked="Qt::Checked" name="">
+    <layer-tree-group expanded="1" checked="Qt::Checked" name="GeoHarvester – Revitalisierung">
+      <layer-tree-layer expanded="0" checked="Qt::Checked" id="geoharvester_revitalisierung_0" name="geodienste.ch WMS Planung der Revitalisierungen von Seeufern (Geodienste)" source="contextualWMSLegend=0&amp;crs=EPSG:2056&amp;dpiMode=7&amp;featureCount=10&amp;format=image/png&amp;layers=revitalisierung_seen_v1_2&amp;styles&amp;url=https://geodienste.ch/db/revitalisierung_seen_v1_2_0/deu" providerKey="wms"/>
+      <layer-tree-layer expanded="0" checked="Qt::Checked" id="geoharvester_revitalisierung_1" name="Revitalisierungsplanung (AG)" source="contextualWMSLegend=0&amp;crs=EPSG:2056&amp;dpiMode=7&amp;featureCount=10&amp;format=image/png&amp;layers=ch_ag_geo_alg_priofg_02&amp;styles&amp;url=https://wms.geo.ag.ch/public/ows" providerKey="wms"/>
+      <layer-tree-layer expanded="0" checked="Qt::Checked" id="geoharvester_revitalisierung_2" name="Nutzen von Revitalisierungsmassnahmen (BE)" source="contextualWMSLegend=0&amp;crs=EPSG:2056&amp;dpiMode=7&amp;featureCount=10&amp;format=image/png&amp;layers=REVIT_NUTZ80_VW_11665&amp;styles&amp;url=https://www.geoservice.apps.be.ch/geoservice3/services/a42geo/of_inlandwaters03_de_ms_wms/MapServer/WMSServer" providerKey="wms"/>
+      <layer-tree-layer expanded="0" checked="Qt::Checked" id="geoharvester_revitalisierung_3" name="Strategische Revitalisierungsplanung Gewässer (BL)" source="contextualWMSLegend=0&amp;crs=EPSG:2056&amp;dpiMode=7&amp;featureCount=10&amp;format=image/png&amp;layers=strategische_revitalisierungsplanung_group&amp;styles&amp;url=https://geowms.bl.ch/" providerKey="wms"/>
+      <layer-tree-layer expanded="0" checked="Qt::Checked" id="geoharvester_revitalisierung_4" name="Revitalisierung (BS)" source="contextualWMSLegend=0&amp;crs=EPSG:2056&amp;dpiMode=7&amp;featureCount=10&amp;format=image/png&amp;layers=Revitalisierung&amp;styles&amp;url=https://wms.geo.bs.ch/" providerKey="wms"/>
+      <layer-tree-layer expanded="0" checked="Qt::Checked" id="geoharvester_revitalisierung_5" name="Geplante Revitalisierung (GR)" source="contextualWMSLegend=0&amp;crs=EPSG:2056&amp;dpiMode=7&amp;featureCount=10&amp;format=image/png&amp;layers=Geplante_Revitalisierung&amp;styles&amp;url=https://wms.geo.gr.ch/oberflaechengewaesser" providerKey="wms"/>
+      <layer-tree-layer expanded="0" checked="Qt::Checked" id="geoharvester_revitalisierung_6" name="Revitalisierungsplanung: Abschnitte Potenzial (LU)" source="contextualWMSLegend=0&amp;crs=EPSG:2056&amp;dpiMode=7&amp;featureCount=10&amp;format=image/png&amp;layers=6&amp;styles&amp;url=https://public.geo.lu.ch/ogd/services/managed/REVITSAN_COL_V3_MP/MapServer/WMSServer" providerKey="wms"/>
+      <layer-tree-layer expanded="0" checked="Qt::Checked" id="geoharvester_revitalisierung_7" name="Revitalisierungsplanung 2014 (NW)" source="contextualWMSLegend=0&amp;crs=EPSG:2056&amp;dpiMode=7&amp;featureCount=10&amp;format=image/png&amp;layers=ch.nw.planung-revitalisierung-fliessgewaesser-revitalisierungsplan&amp;styles&amp;url=https://www.gis-daten.ch/wms/nw/service" providerKey="wms"/>
+      <layer-tree-layer expanded="0" checked="Qt::Checked" id="geoharvester_revitalisierung_8" name="Revitalisierungsplanung Seeufer (OW)" source="contextualWMSLegend=0&amp;crs=EPSG:2056&amp;dpiMode=7&amp;featureCount=10&amp;format=image/png&amp;layers=ch.ow.planung-revitalisierung-seeufer-revitalisierungsplan&amp;styles&amp;url=https://www.gis-daten.ch/wms/ow/service" providerKey="wms"/>
+      <layer-tree-layer expanded="0" checked="Qt::Checked" id="geoharvester_revitalisierung_9" name="Revitalisierung (SG)" source="contextualWMSLegend=0&amp;crs=EPSG:2056&amp;dpiMode=7&amp;featureCount=10&amp;format=image/png&amp;layers=Revitalisierung&amp;styles&amp;url=https://services.geo.sg.ch/wss/service/SG00158_WMS/guest" providerKey="wms"/>
+      <layer-tree-layer expanded="0" checked="Qt::Checked" id="geoharvester_revitalisierung_10" name="Revitalisierungsplanung Gewässer (SH)" source="contextualWMSLegend=0&amp;crs=EPSG:2056&amp;dpiMode=7&amp;featureCount=10&amp;format=image/png&amp;layers=sh.gewaesser.revitalisierungsplanung&amp;styles&amp;url=https://wms.geo.sh.ch/wms" providerKey="wms"/>
+      <layer-tree-layer expanded="0" checked="Qt::Checked" id="geoharvester_revitalisierung_11" name="Planung Revitalisierung Seeufer (SZ)" source="contextualWMSLegend=0&amp;crs=EPSG:2056&amp;dpiMode=7&amp;featureCount=10&amp;format=image/png&amp;layers=ch.sz.a163a.revitalisierung_seeufer&amp;styles&amp;url=https://map.geo.sz.ch/mapserv_proxy" providerKey="wms"/>
+      <layer-tree-layer expanded="0" checked="Qt::Checked" id="geoharvester_revitalisierung_12" name="Revitalisierungsplanung Gewässer (TG)" source="contextualWMSLegend=0&amp;crs=EPSG:2056&amp;dpiMode=7&amp;featureCount=10&amp;format=image/png&amp;layers=Revitalisierungsplanung_Fliessgewaesser&amp;styles&amp;url=https://ows.geo.tg.ch/geofy_access_proxy/revitalisierung_fliessgewaesser" providerKey="wms"/>
+      <layer-tree-layer expanded="0" checked="Qt::Checked" id="geoharvester_revitalisierung_13" name="Geplante Revitalisierungen Seeufer (ZH)" source="contextualWMSLegend=0&amp;crs=EPSG:2056&amp;dpiMode=7&amp;featureCount=10&amp;format=image/png&amp;layers=geplante_revitalisierung_seeufer&amp;styles&amp;url=https://wms.zh.ch/AwelWBRevitZHWMS" providerKey="wms"/>
+    </layer-tree-group>
+  </layer-tree-group>
+  <maplayers>
+    <maplayer type="raster" hasScaleBasedVisibilityFlag="0" minScale="1e+08" maxScale="0" styleCategories="AllStyleCategories">
+      <extent><xmin>2464902</xmin><ymin>1066865</ymin><xmax>2839927</xmax><ymax>1305071</ymax></extent>
+      <id>geoharvester_revitalisierung_0</id>
+      <datasource>contextualWMSLegend=0&amp;crs=EPSG:2056&amp;dpiMode=7&amp;featureCount=10&amp;format=image/png&amp;layers=revitalisierung_seen_v1_2&amp;styles&amp;url=https://geodienste.ch/db/revitalisierung_seen_v1_2_0/deu</datasource>
+      <layername>geodienste.ch WMS Planung der Revitalisierungen von Seeufern (Geodienste)</layername>
+      <srs><spatialrefsys><proj4>+proj=somerc +lat_0=46.9524055555556 +lon_0=7.43958333333333 +k_0=1 +x_0=2600000 +y_0=1200000 +ellps=bessel +towgs84=674.374,15.056,405.346,0,0,0,0 +units=m +no_defs</proj4><srid>2056</srid><authid>EPSG:2056</authid><description>CH1903+ / LV95</description><projectionacronym>somerc</projectionacronym><ellipsoidacronym>EPSG:7004</ellipsoidacronym><geographicflag>false</geographicflag></spatialrefsys></srs>
+      <provider>wms</provider>
+    </maplayer>
+    <maplayer type="raster" hasScaleBasedVisibilityFlag="0" minScale="1e+08" maxScale="0" styleCategories="AllStyleCategories">
+      <extent><xmin>2620739</xmin><ymin>1220705</ymin><xmax>2676628</xmax><ymax>1275201</ymax></extent>
+      <id>geoharvester_revitalisierung_1</id>
+      <datasource>contextualWMSLegend=0&amp;crs=EPSG:2056&amp;dpiMode=7&amp;featureCount=10&amp;format=image/png&amp;layers=ch_ag_geo_alg_priofg_02&amp;styles&amp;url=https://wms.geo.ag.ch/public/ows</datasource>
+      <layername>Revitalisierungsplanung (AG)</layername>
+      <srs><spatialrefsys><proj4>+proj=somerc +lat_0=46.9524055555556 +lon_0=7.43958333333333 +k_0=1 +x_0=2600000 +y_0=1200000 +ellps=bessel +towgs84=674.374,15.056,405.346,0,0,0,0 +units=m +no_defs</proj4><srid>2056</srid><authid>EPSG:2056</authid><description>CH1903+ / LV95</description><projectionacronym>somerc</projectionacronym><ellipsoidacronym>EPSG:7004</ellipsoidacronym><geographicflag>false</geographicflag></spatialrefsys></srs>
+      <provider>wms</provider>
+    </maplayer>
+    <maplayer type="raster" hasScaleBasedVisibilityFlag="0" minScale="1e+08" maxScale="0" styleCategories="AllStyleCategories">
+      <extent><xmin>2555518</xmin><ymin>1131121</ymin><xmax>2677029</xmax><ymax>1244294</ymax></extent>
+      <id>geoharvester_revitalisierung_2</id>
+      <datasource>contextualWMSLegend=0&amp;crs=EPSG:2056&amp;dpiMode=7&amp;featureCount=10&amp;format=image/png&amp;layers=REVIT_NUTZ80_VW_11665&amp;styles&amp;url=https://www.geoservice.apps.be.ch/geoservice3/services/a42geo/of_inlandwaters03_de_ms_wms/MapServer/WMSServer</datasource>
+      <layername>Nutzen von Revitalisierungsmassnahmen (BE)</layername>
+      <srs><spatialrefsys><proj4>+proj=somerc +lat_0=46.9524055555556 +lon_0=7.43958333333333 +k_0=1 +x_0=2600000 +y_0=1200000 +ellps=bessel +towgs84=674.374,15.056,405.346,0,0,0,0 +units=m +no_defs</proj4><srid>2056</srid><authid>EPSG:2056</authid><description>CH1903+ / LV95</description><projectionacronym>somerc</projectionacronym><ellipsoidacronym>EPSG:7004</ellipsoidacronym><geographicflag>false</geographicflag></spatialrefsys></srs>
+      <provider>wms</provider>
+    </maplayer>
+    <maplayer type="raster" hasScaleBasedVisibilityFlag="0" minScale="1e+08" maxScale="0" styleCategories="AllStyleCategories">
+      <extent><xmin>2444570</xmin><ymin>157618</ymin><xmax>2839786</xmax><ymax>1304843</ymax></extent>
+      <id>geoharvester_revitalisierung_3</id>
+      <datasource>contextualWMSLegend=0&amp;crs=EPSG:2056&amp;dpiMode=7&amp;featureCount=10&amp;format=image/png&amp;layers=strategische_revitalisierungsplanung_group&amp;styles&amp;url=https://geowms.bl.ch/</datasource>
+      <layername>Strategische Revitalisierungsplanung Gewässer (BL)</layername>
+      <srs><spatialrefsys><proj4>+proj=somerc +lat_0=46.9524055555556 +lon_0=7.43958333333333 +k_0=1 +x_0=2600000 +y_0=1200000 +ellps=bessel +towgs84=674.374,15.056,405.346,0,0,0,0 +units=m +no_defs</proj4><srid>2056</srid><authid>EPSG:2056</authid><description>CH1903+ / LV95</description><projectionacronym>somerc</projectionacronym><ellipsoidacronym>EPSG:7004</ellipsoidacronym><geographicflag>false</geographicflag></spatialrefsys></srs>
+      <provider>wms</provider>
+    </maplayer>
+    <maplayer type="raster" hasScaleBasedVisibilityFlag="0" minScale="1e+08" maxScale="0" styleCategories="AllStyleCategories">
+      <extent><xmin>2584892</xmin><ymin>1234808</ymin><xmax>2649963</xmax><ymax>1290260</ymax></extent>
+      <id>geoharvester_revitalisierung_4</id>
+      <datasource>contextualWMSLegend=0&amp;crs=EPSG:2056&amp;dpiMode=7&amp;featureCount=10&amp;format=image/png&amp;layers=Revitalisierung&amp;styles&amp;url=https://wms.geo.bs.ch/</datasource>
+      <layername>Revitalisierung (BS)</layername>
+      <srs><spatialrefsys><proj4>+proj=somerc +lat_0=46.9524055555556 +lon_0=7.43958333333333 +k_0=1 +x_0=2600000 +y_0=1200000 +ellps=bessel +towgs84=674.374,15.056,405.346,0,0,0,0 +units=m +no_defs</proj4><srid>2056</srid><authid>EPSG:2056</authid><description>CH1903+ / LV95</description><projectionacronym>somerc</projectionacronym><ellipsoidacronym>EPSG:7004</ellipsoidacronym><geographicflag>false</geographicflag></spatialrefsys></srs>
+      <provider>wms</provider>
+    </maplayer>
+    <maplayer type="raster" hasScaleBasedVisibilityFlag="0" minScale="1e+08" maxScale="0" styleCategories="AllStyleCategories">
+      <extent><xmin>2691144</xmin><ymin>1094287</ymin><xmax>2834923</xmax><ymax>1246113</ymax></extent>
+      <id>geoharvester_revitalisierung_5</id>
+      <datasource>contextualWMSLegend=0&amp;crs=EPSG:2056&amp;dpiMode=7&amp;featureCount=10&amp;format=image/png&amp;layers=Geplante_Revitalisierung&amp;styles&amp;url=https://wms.geo.gr.ch/oberflaechengewaesser</datasource>
+      <layername>Geplante Revitalisierung (GR)</layername>
+      <srs><spatialrefsys><proj4>+proj=somerc +lat_0=46.9524055555556 +lon_0=7.43958333333333 +k_0=1 +x_0=2600000 +y_0=1200000 +ellps=bessel +towgs84=674.374,15.056,405.346,0,0,0,0 +units=m +no_defs</proj4><srid>2056</srid><authid>EPSG:2056</authid><description>CH1903+ / LV95</description><projectionacronym>somerc</projectionacronym><ellipsoidacronym>EPSG:7004</ellipsoidacronym><geographicflag>false</geographicflag></spatialrefsys></srs>
+      <provider>wms</provider>
+    </maplayer>
+    <maplayer type="raster" hasScaleBasedVisibilityFlag="0" minScale="1e+08" maxScale="0" styleCategories="AllStyleCategories">
+      <extent><xmin>2630193</xmin><ymin>1181057</ymin><xmax>2681797</xmax><ymax>1238353</ymax></extent>
+      <id>geoharvester_revitalisierung_6</id>
+      <datasource>contextualWMSLegend=0&amp;crs=EPSG:2056&amp;dpiMode=7&amp;featureCount=10&amp;format=image/png&amp;layers=6&amp;styles&amp;url=https://public.geo.lu.ch/ogd/services/managed/REVITSAN_COL_V3_MP/MapServer/WMSServer</datasource>
+      <layername>Revitalisierungsplanung: Abschnitte Potenzial (LU)</layername>
+      <srs><spatialrefsys><proj4>+proj=somerc +lat_0=46.9524055555556 +lon_0=7.43958333333333 +k_0=1 +x_0=2600000 +y_0=1200000 +ellps=bessel +towgs84=674.374,15.056,405.346,0,0,0,0 +units=m +no_defs</proj4><srid>2056</srid><authid>EPSG:2056</authid><description>CH1903+ / LV95</description><projectionacronym>somerc</projectionacronym><ellipsoidacronym>EPSG:7004</ellipsoidacronym><geographicflag>false</geographicflag></spatialrefsys></srs>
+      <provider>wms</provider>
+    </maplayer>
+    <maplayer type="raster" hasScaleBasedVisibilityFlag="0" minScale="1e+08" maxScale="0" styleCategories="AllStyleCategories">
+      <extent><xmin>2643478</xmin><ymin>1171022</ymin><xmax>2702278</xmax><ymax>1217544</ymax></extent>
+      <id>geoharvester_revitalisierung_7</id>
+      <datasource>contextualWMSLegend=0&amp;crs=EPSG:2056&amp;dpiMode=7&amp;featureCount=10&amp;format=image/png&amp;layers=ch.nw.planung-revitalisierung-fliessgewaesser-revitalisierungsplan&amp;styles&amp;url=https://www.gis-daten.ch/wms/nw/service</datasource>
+      <layername>Revitalisierungsplanung 2014 (NW)</layername>
+      <srs><spatialrefsys><proj4>+proj=somerc +lat_0=46.9524055555556 +lon_0=7.43958333333333 +k_0=1 +x_0=2600000 +y_0=1200000 +ellps=bessel +towgs84=674.374,15.056,405.346,0,0,0,0 +units=m +no_defs</proj4><srid>2056</srid><authid>EPSG:2056</authid><description>CH1903+ / LV95</description><projectionacronym>somerc</projectionacronym><ellipsoidacronym>EPSG:7004</ellipsoidacronym><geographicflag>false</geographicflag></spatialrefsys></srs>
+      <provider>wms</provider>
+    </maplayer>
+    <maplayer type="raster" hasScaleBasedVisibilityFlag="0" minScale="1e+08" maxScale="0" styleCategories="AllStyleCategories">
+      <extent><xmin>2643478</xmin><ymin>1171022</ymin><xmax>2702278</xmax><ymax>1217544</ymax></extent>
+      <id>geoharvester_revitalisierung_8</id>
+      <datasource>contextualWMSLegend=0&amp;crs=EPSG:2056&amp;dpiMode=7&amp;featureCount=10&amp;format=image/png&amp;layers=ch.ow.planung-revitalisierung-seeufer-revitalisierungsplan&amp;styles&amp;url=https://www.gis-daten.ch/wms/ow/service</datasource>
+      <layername>Revitalisierungsplanung Seeufer (OW)</layername>
+      <srs><spatialrefsys><proj4>+proj=somerc +lat_0=46.9524055555556 +lon_0=7.43958333333333 +k_0=1 +x_0=2600000 +y_0=1200000 +ellps=bessel +towgs84=674.374,15.056,405.346,0,0,0,0 +units=m +no_defs</proj4><srid>2056</srid><authid>EPSG:2056</authid><description>CH1903+ / LV95</description><projectionacronym>somerc</projectionacronym><ellipsoidacronym>EPSG:7004</ellipsoidacronym><geographicflag>false</geographicflag></spatialrefsys></srs>
+      <provider>wms</provider>
+    </maplayer>
+    <maplayer type="raster" hasScaleBasedVisibilityFlag="0" minScale="1e+08" maxScale="0" styleCategories="AllStyleCategories">
+      <extent><xmin>2703354</xmin><ymin>1203664</ymin><xmax>2767560</xmax><ymax>1266739</ymax></extent>
+      <id>geoharvester_revitalisierung_9</id>
+      <datasource>contextualWMSLegend=0&amp;crs=EPSG:2056&amp;dpiMode=7&amp;featureCount=10&amp;format=image/png&amp;layers=Revitalisierung&amp;styles&amp;url=https://services.geo.sg.ch/wss/service/SG00158_WMS/guest</datasource>
+      <layername>Revitalisierung (SG)</layername>
+      <srs><spatialrefsys><proj4>+proj=somerc +lat_0=46.9524055555556 +lon_0=7.43958333333333 +k_0=1 +x_0=2600000 +y_0=1200000 +ellps=bessel +towgs84=674.374,15.056,405.346,0,0,0,0 +units=m +no_defs</proj4><srid>2056</srid><authid>EPSG:2056</authid><description>CH1903+ / LV95</description><projectionacronym>somerc</projectionacronym><ellipsoidacronym>EPSG:7004</ellipsoidacronym><geographicflag>false</geographicflag></spatialrefsys></srs>
+      <provider>wms</provider>
+    </maplayer>
+    <maplayer type="raster" hasScaleBasedVisibilityFlag="0" minScale="1e+08" maxScale="0" styleCategories="AllStyleCategories">
+      <extent><xmin>2672519</xmin><ymin>1266920</ymin><xmax>2707908</xmax><ymax>1295486</ymax></extent>
+      <id>geoharvester_revitalisierung_10</id>
+      <datasource>contextualWMSLegend=0&amp;crs=EPSG:2056&amp;dpiMode=7&amp;featureCount=10&amp;format=image/png&amp;layers=sh.gewaesser.revitalisierungsplanung&amp;styles&amp;url=https://wms.geo.sh.ch/wms</datasource>
+      <layername>Revitalisierungsplanung Gewässer (SH)</layername>
+      <srs><spatialrefsys><proj4>+proj=somerc +lat_0=46.9524055555556 +lon_0=7.43958333333333 +k_0=1 +x_0=2600000 +y_0=1200000 +ellps=bessel +towgs84=674.374,15.056,405.346,0,0,0,0 +units=m +no_defs</proj4><srid>2056</srid><authid>EPSG:2056</authid><description>CH1903+ / LV95</description><projectionacronym>somerc</projectionacronym><ellipsoidacronym>EPSG:7004</ellipsoidacronym><geographicflag>false</geographicflag></spatialrefsys></srs>
+      <provider>wms</provider>
+    </maplayer>
+    <maplayer type="raster" hasScaleBasedVisibilityFlag="0" minScale="1e+08" maxScale="0" styleCategories="AllStyleCategories">
+      <extent><xmin>2463973</xmin><ymin>1046091</ymin><xmax>2859827</xmax><ymax>1325956</ymax></extent>
+      <id>geoharvester_revitalisierung_11</id>
+      <datasource>contextualWMSLegend=0&amp;crs=EPSG:2056&amp;dpiMode=7&amp;featureCount=10&amp;format=image/png&amp;layers=ch.sz.a163a.revitalisierung_seeufer&amp;styles&amp;url=https://map.geo.sz.ch/mapserv_proxy</datasource>
+      <layername>Planung Revitalisierung Seeufer (SZ)</layername>
+      <srs><spatialrefsys><proj4>+proj=somerc +lat_0=46.9524055555556 +lon_0=7.43958333333333 +k_0=1 +x_0=2600000 +y_0=1200000 +ellps=bessel +towgs84=674.374,15.056,405.346,0,0,0,0 +units=m +no_defs</proj4><srid>2056</srid><authid>EPSG:2056</authid><description>CH1903+ / LV95</description><projectionacronym>somerc</projectionacronym><ellipsoidacronym>EPSG:7004</ellipsoidacronym><geographicflag>false</geographicflag></spatialrefsys></srs>
+      <provider>wms</provider>
+    </maplayer>
+    <maplayer type="raster" hasScaleBasedVisibilityFlag="0" minScale="1e+08" maxScale="0" styleCategories="AllStyleCategories">
+      <extent><xmin>2690096</xmin><ymin>1244811</ymin><xmax>2755061</xmax><ymax>1286530</ymax></extent>
+      <id>geoharvester_revitalisierung_12</id>
+      <datasource>contextualWMSLegend=0&amp;crs=EPSG:2056&amp;dpiMode=7&amp;featureCount=10&amp;format=image/png&amp;layers=Revitalisierungsplanung_Fliessgewaesser&amp;styles&amp;url=https://ows.geo.tg.ch/geofy_access_proxy/revitalisierung_fliessgewaesser</datasource>
+      <layername>Revitalisierungsplanung Gewässer (TG)</layername>
+      <srs><spatialrefsys><proj4>+proj=somerc +lat_0=46.9524055555556 +lon_0=7.43958333333333 +k_0=1 +x_0=2600000 +y_0=1200000 +ellps=bessel +towgs84=674.374,15.056,405.346,0,0,0,0 +units=m +no_defs</proj4><srid>2056</srid><authid>EPSG:2056</authid><description>CH1903+ / LV95</description><projectionacronym>somerc</projectionacronym><ellipsoidacronym>EPSG:7004</ellipsoidacronym><geographicflag>false</geographicflag></spatialrefsys></srs>
+      <provider>wms</provider>
+    </maplayer>
+    <maplayer type="raster" hasScaleBasedVisibilityFlag="0" minScale="1e+08" maxScale="0" styleCategories="AllStyleCategories">
+      <extent><xmin>2654491</xmin><ymin>1221474</ymin><xmax>2720011</xmax><ymax>1300949</ymax></extent>
+      <id>geoharvester_revitalisierung_13</id>
+      <datasource>contextualWMSLegend=0&amp;crs=EPSG:2056&amp;dpiMode=7&amp;featureCount=10&amp;format=image/png&amp;layers=geplante_revitalisierung_seeufer&amp;styles&amp;url=https://wms.zh.ch/AwelWBRevitZHWMS</datasource>
+      <layername>Geplante Revitalisierungen Seeufer (ZH)</layername>
+      <srs><spatialrefsys><proj4>+proj=somerc +lat_0=46.9524055555556 +lon_0=7.43958333333333 +k_0=1 +x_0=2600000 +y_0=1200000 +ellps=bessel +towgs84=674.374,15.056,405.346,0,0,0,0 +units=m +no_defs</proj4><srid>2056</srid><authid>EPSG:2056</authid><description>CH1903+ / LV95</description><projectionacronym>somerc</projectionacronym><ellipsoidacronym>EPSG:7004</ellipsoidacronym><geographicflag>false</geographicflag></spatialrefsys></srs>
+      <provider>wms</provider>
+    </maplayer>
+  </maplayers>
+</qlr>

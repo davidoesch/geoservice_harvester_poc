@@ -1,0 +1,519 @@
+{
+ "type": "FeatureCollection",
+ "id": "https://davidoesch.github.io/geoservice_harvester_poc/data/topics/anzahl-tropennachte-2021-2040.ows.json",
+ "properties": {
+  "lang": "de",
+  "title": "Anzahl Tropennächte, 2021 - 2040",
+  "updated": "2026-11-20T16:05:37+01:00",
+  "subtitle": "GeoHarvester topic: 10 providers",
+  "links": {
+   "profiles": [
+    {
+     "href": "http://www.opengis.net/spec/owc-geojson/1.0/req/core"
+    }
+   ]
+  }
+ },
+ "features": [
+  {
+   "type": "Feature",
+   "id": "https://www.ogd.stadt-zuerich.ch/wms/geoportal/meteoblue_Sommerbericht#UHI Nacht",
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       8.455,
+       47.321
+      ],
+      [
+       8.621,
+       47.321
+      ],
+      [
+       8.621,
+       47.434
+      ],
+      [
+       8.455,
+       47.434
+      ],
+      [
+       8.455,
+       47.321
+      ]
+     ]
+    ]
+   },
+   "properties": {
+    "title": "UHI Nacht",
+    "updated": "2026-11-20T16:05:37+01:00",
+    "publisher": "Stadt Zürich",
+    "layer": "UHI Nacht",
+    "offerings": [
+     {
+      "code": "http://www.opengis.net/spec/owc-geojson/1.0/req/wms",
+      "operations": [
+       {
+        "code": "GetCapabilities",
+        "method": "GET",
+        "type": "application/xml",
+        "href": "https://www.ogd.stadt-zuerich.ch/wms/geoportal/meteoblue_Sommerbericht?SERVICE=WMS&REQUEST=GetCapabilities"
+       }
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": "https://www.geoportal.ch/services/wms/ktar#ch.geoportal.atmosphaere_luft_klima.3156.0.planhinweiskarte_nacht_kt",
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       9.178,
+       47.238
+      ],
+      [
+       9.644,
+       47.238
+      ],
+      [
+       9.644,
+       47.478
+      ],
+      [
+       9.178,
+       47.478
+      ],
+      [
+       9.178,
+       47.238
+      ]
+     ]
+    ]
+   },
+   "properties": {
+    "title": "Planhinweiskarte Nacht Kt",
+    "updated": "2026-11-20T16:05:37+01:00",
+    "publisher": "Kanton Appenzell Ausserrhoden",
+    "layer": "ch.geoportal.atmosphaere_luft_klima.3156.0.planhinweiskarte_nacht_kt",
+    "offerings": [
+     {
+      "code": "http://www.opengis.net/spec/owc-geojson/1.0/req/wms",
+      "operations": [
+       {
+        "code": "GetCapabilities",
+        "method": "GET",
+        "type": "application/xml",
+        "href": "https://www.geoportal.ch/services/wms/ktar?SERVICE=WMS&REQUEST=GetCapabilities"
+       }
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": "https://www.geoservice.apps.be.ch/geoservice3/services/a42geo/of_transportation01_de_ms_wms/MapServer/WMSServer#OEVTP_EZG_VW_16205",
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       6.883,
+       46.354
+      ],
+      [
+       8.462,
+       46.354
+      ],
+      [
+       8.462,
+       47.315
+      ],
+      [
+       6.883,
+       47.315
+      ],
+      [
+       6.883,
+       46.354
+      ]
+     ]
+    ]
+   },
+   "properties": {
+    "title": "ÖV-Einzugsgebiete Nachtlinie",
+    "updated": "2026-11-20T16:05:37+01:00",
+    "publisher": "Kanton Bern",
+    "layer": "OEVTP_EZG_VW_16205",
+    "offerings": [
+     {
+      "code": "http://www.opengis.net/spec/owc-geojson/1.0/req/wms",
+      "operations": [
+       {
+        "code": "GetCapabilities",
+        "method": "GET",
+        "type": "application/xml",
+        "href": "https://www.geoservice.apps.be.ch/geoservice3/services/a42geo/of_transportation01_de_ms_wms/MapServer/WMSServer?SERVICE=WMS&REQUEST=GetCapabilities"
+       }
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": "https://wms.geo.bs.ch/#ÖV-Nachtnetz",
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       7.239,
+       47.264
+      ],
+      [
+       8.105,
+       47.264
+      ],
+      [
+       8.105,
+       47.761
+      ],
+      [
+       7.239,
+       47.761
+      ],
+      [
+       7.239,
+       47.264
+      ]
+     ]
+    ]
+   },
+   "properties": {
+    "title": "ÖV-Nachtnetz",
+    "updated": "2026-11-20T16:05:37+01:00",
+    "publisher": "Kanton Basel-Stadt",
+    "layer": "ÖV-Nachtnetz",
+    "offerings": [
+     {
+      "code": "http://www.opengis.net/spec/owc-geojson/1.0/req/wms",
+      "operations": [
+       {
+        "code": "GetCapabilities",
+        "method": "GET",
+        "type": "application/xml",
+        "href": "https://wms.geo.bs.ch/?SERVICE=WMS&REQUEST=GetCapabilities"
+       }
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": "https://wms.geo.gr.ch/strassenlaermkataster#Gebaeude_ueber_Grenzwert_nachts_2013",
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       8.615,
+       45.994
+      ],
+      [
+       10.547,
+       45.994
+      ],
+      [
+       10.547,
+       47.324
+      ],
+      [
+       8.615,
+       47.324
+      ],
+      [
+       8.615,
+       45.994
+      ]
+     ]
+    ]
+   },
+   "properties": {
+    "title": "Gebäude über Grenzwert Nacht",
+    "updated": "2026-11-20T16:05:37+01:00",
+    "publisher": "Kanton Graubünden",
+    "layer": "Gebaeude_ueber_Grenzwert_nachts_2013",
+    "offerings": [
+     {
+      "code": "http://www.opengis.net/spec/owc-geojson/1.0/req/wms",
+      "operations": [
+       {
+        "code": "GetCapabilities",
+        "method": "GET",
+        "type": "application/xml",
+        "href": "https://wms.geo.gr.ch/strassenlaermkataster?SERVICE=WMS&REQUEST=GetCapabilities"
+       }
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": "https://public.geo.lu.ch/ogd/services/managed/ASVVQSVK_DS_V3_MP/MapServer/WMSServer#2",
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       7.838,
+       46.893
+      ],
+      [
+       8.489,
+       46.893
+      ],
+      [
+       8.489,
+       47.264
+      ],
+      [
+       7.838,
+       47.264
+      ],
+      [
+       7.838,
+       46.893
+      ]
+     ]
+    ]
+   },
+   "properties": {
+    "title": "Bestehender Zustand: Abendspitzenstunde",
+    "updated": "2026-11-20T16:05:37+01:00",
+    "publisher": "Kanton Luzern",
+    "layer": "2",
+    "offerings": [
+     {
+      "code": "http://www.opengis.net/spec/owc-geojson/1.0/req/wms",
+      "operations": [
+       {
+        "code": "GetCapabilities",
+        "method": "GET",
+        "type": "application/xml",
+        "href": "https://public.geo.lu.ch/ogd/services/managed/ASVVQSVK_DS_V3_MP/MapServer/WMSServer?SERVICE=WMS&REQUEST=GetCapabilities"
+       }
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": "https://sitn.ne.ch/ogc-sitn-climat/wms#NUITSTROPICALES_P0",
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       5.202,
+       45.571
+      ],
+      [
+       10.893,
+       45.571
+      ],
+      [
+       10.893,
+       47.994
+      ],
+      [
+       5.202,
+       47.994
+      ],
+      [
+       5.202,
+       45.571
+      ]
+     ]
+    ]
+   },
+   "properties": {
+    "title": "NUITSTROPICALES_P0",
+    "updated": "2026-11-20T16:05:37+01:00",
+    "publisher": "Kanton Neuenburg",
+    "layer": "NUITSTROPICALES_P0",
+    "offerings": [
+     {
+      "code": "http://www.opengis.net/spec/owc-geojson/1.0/req/wms",
+      "operations": [
+       {
+        "code": "GetCapabilities",
+        "method": "GET",
+        "type": "application/xml",
+        "href": "https://sitn.ne.ch/ogc-sitn-climat/wms?SERVICE=WMS&REQUEST=GetCapabilities"
+       }
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": "https://geo.so.ch/api/wms#ch.so.afu.klimaanalysekarte.planungshinweiskarte_nacht_2020",
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       7.33,
+       47.063
+      ],
+      [
+       8.051,
+       47.063
+      ],
+      [
+       8.051,
+       47.513
+      ],
+      [
+       7.33,
+       47.513
+      ],
+      [
+       7.33,
+       47.063
+      ]
+     ]
+    ]
+   },
+   "properties": {
+    "title": "Planungshinweiskarte Nacht 2020",
+    "updated": "2026-11-20T16:05:37+01:00",
+    "publisher": "Kanton Solothurn",
+    "layer": "ch.so.afu.klimaanalysekarte.planungshinweiskarte_nacht_2020",
+    "offerings": [
+     {
+      "code": "http://www.opengis.net/spec/owc-geojson/1.0/req/wms",
+      "operations": [
+       {
+        "code": "GetCapabilities",
+        "method": "GET",
+        "type": "application/xml",
+        "href": "https://geo.so.ch/api/wms?SERVICE=WMS&REQUEST=GetCapabilities"
+       }
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": "https://services.geo.zg.ch/ows/klimaanalyse#zg_nachtsituation_4_uhr",
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       8.382,
+       47.076
+      ],
+      [
+       8.71,
+       47.076
+      ],
+      [
+       8.71,
+       47.253
+      ],
+      [
+       8.382,
+       47.253
+      ],
+      [
+       8.382,
+       47.076
+      ]
+     ]
+    ]
+   },
+   "properties": {
+    "title": "Nachtsituation 4 Uhr",
+    "updated": "2026-11-20T16:05:37+01:00",
+    "publisher": "Kanton Zug",
+    "layer": "zg_nachtsituation_4_uhr",
+    "offerings": [
+     {
+      "code": "http://www.opengis.net/spec/owc-geojson/1.0/req/wms",
+      "operations": [
+       {
+        "code": "GetCapabilities",
+        "method": "GET",
+        "type": "application/xml",
+        "href": "https://services.geo.zg.ch/ows/klimaanalyse?SERVICE=WMS&REQUEST=GetCapabilities"
+       }
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": "https://wms.zh.ch/AwelLHKlimaszenarienZHWMS#periode1-tropennaechte",
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       8.157,
+       47.142
+      ],
+      [
+       9.042,
+       47.142
+      ],
+      [
+       9.042,
+       47.848
+      ],
+      [
+       8.157,
+       47.848
+      ],
+      [
+       8.157,
+       47.142
+      ]
+     ]
+    ]
+   },
+   "properties": {
+    "title": "Anzahl Tropennächte, 2021 - 2040",
+    "updated": "2026-11-20T16:05:37+01:00",
+    "publisher": "Kanton Zürich",
+    "layer": "periode1-tropennaechte",
+    "offerings": [
+     {
+      "code": "http://www.opengis.net/spec/owc-geojson/1.0/req/wms",
+      "operations": [
+       {
+        "code": "GetCapabilities",
+        "method": "GET",
+        "type": "application/xml",
+        "href": "https://wms.zh.ch/AwelLHKlimaszenarienZHWMS?SERVICE=WMS&REQUEST=GetCapabilities"
+       }
+      ]
+     }
+    ]
+   }
+  }
+ ]
+}

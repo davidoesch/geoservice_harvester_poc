@@ -1,0 +1,117 @@
+<!DOCTYPE qgis-layer-definition>
+<qlr>
+  <layer-tree-group expanded="1" checked="Qt::Checked" name="">
+    <layer-tree-group expanded="1" checked="Qt::Checked" name="GeoHarvester – Ökomorphologie">
+      <layer-tree-layer expanded="0" checked="Qt::Checked" id="geoharvester_okomorphologie_0" name="Ökomorphologie F - Abstürze (Bund)" source="contextualWMSLegend=0&amp;crs=EPSG:2056&amp;dpiMode=7&amp;featureCount=10&amp;format=image/png&amp;layers=ch.bafu.oekomorphologie-f_abstuerze&amp;styles&amp;url=https://wms.geo.admin.ch/" providerKey="wms"/>
+      <layer-tree-layer expanded="0" checked="Qt::Checked" id="geoharvester_okomorphologie_1" name="Ökomorphologie F (Geodienste)" source="contextualWMSLegend=0&amp;crs=EPSG:2056&amp;dpiMode=7&amp;featureCount=10&amp;format=image/png&amp;layers=oekomorphologie_f&amp;styles&amp;url=https://geodienste.ch/db/revitalisierung_fliessgewaesser_v1_2_0/deu" providerKey="wms"/>
+      <layer-tree-layer expanded="0" checked="Qt::Checked" id="geoharvester_okomorphologie_2" name="Ökomorphologie Seeufer - aggregiert (AG)" source="contextualWMSLegend=0&amp;crs=EPSG:2056&amp;dpiMode=7&amp;featureCount=10&amp;format=image/png&amp;layers=ch_ag_geo_alg_oekomseen_01&amp;styles&amp;url=https://wms.geo.ag.ch/public/ows" providerKey="wms"/>
+      <layer-tree-layer expanded="0" checked="Qt::Checked" id="geoharvester_okomorphologie_3" name="Zustandsklasse Ökomorphologie Kt SG (AI)" source="contextualWMSLegend=0&amp;crs=EPSG:2056&amp;dpiMode=7&amp;featureCount=10&amp;format=image/png&amp;layers=ch.geoportal.gewaesser.2216.0.zustandsklasse_oekomorphologie_kt_sg&amp;styles&amp;url=https://www.geoportal.ch/services/wms/ktai" providerKey="wms"/>
+      <layer-tree-layer expanded="0" checked="Qt::Checked" id="geoharvester_okomorphologie_4" name="Zustandsklasse Ökomorphologie Kt SG (AR)" source="contextualWMSLegend=0&amp;crs=EPSG:2056&amp;dpiMode=7&amp;featureCount=10&amp;format=image/png&amp;layers=ch.geoportal.gewaesser.2216.0.zustandsklasse_oekomorphologie_kt_sg&amp;styles&amp;url=https://www.geoportal.ch/services/wms/ktar" providerKey="wms"/>
+      <layer-tree-layer expanded="0" checked="Qt::Checked" id="geoharvester_okomorphologie_5" name="Ökomorphologie Seeufer Uferlinie (BE)" source="contextualWMSLegend=0&amp;crs=EPSG:2056&amp;dpiMode=7&amp;featureCount=10&amp;format=image/png&amp;layers=OEKOMSEE_OEKOUL_VW_7785&amp;styles&amp;url=https://www.geoservice.apps.be.ch/geoservice3/services/a42geo/of_inlandwaters02_de_ms_wms/MapServer/WMSServer" providerKey="wms"/>
+      <layer-tree-layer expanded="0" checked="Qt::Checked" id="geoharvester_okomorphologie_6" name="Ökomorphologie (BS)" source="contextualWMSLegend=0&amp;crs=EPSG:2056&amp;dpiMode=7&amp;featureCount=10&amp;format=image/png&amp;layers=Ökomorphologie&amp;styles&amp;url=https://wms.geo.bs.ch/" providerKey="wms"/>
+      <layer-tree-layer expanded="0" checked="Qt::Checked" id="geoharvester_okomorphologie_7" name="Ökomorphologie (NW)" source="contextualWMSLegend=0&amp;crs=EPSG:2056&amp;dpiMode=7&amp;featureCount=10&amp;format=image/png&amp;layers=ch.nw.planung-revitalisierung-seeufer-oekomorphologie&amp;styles&amp;url=https://www.gis-daten.ch/wms/nw/service" providerKey="wms"/>
+      <layer-tree-layer expanded="0" checked="Qt::Checked" id="geoharvester_okomorphologie_8" name="Ökomorphologie (OW)" source="contextualWMSLegend=0&amp;crs=EPSG:2056&amp;dpiMode=7&amp;featureCount=10&amp;format=image/png&amp;layers=ch.ow.planung-revitalisierung-seeufer-oekomorphologie&amp;styles&amp;url=https://www.gis-daten.ch/wms/ow/service" providerKey="wms"/>
+      <layer-tree-layer expanded="0" checked="Qt::Checked" id="geoharvester_okomorphologie_9" name="ökomorphologischer Ist-Zustand (SZ)" source="contextualWMSLegend=0&amp;crs=EPSG:2056&amp;dpiMode=7&amp;featureCount=10&amp;format=image/png&amp;layers=ch.sz.a163a.revitalisierung_seeufer.oekomorph_istzustand&amp;styles&amp;url=https://map.geo.sz.ch/mapserv_proxy" providerKey="wms"/>
+      <layer-tree-layer expanded="0" checked="Qt::Checked" id="geoharvester_okomorphologie_10" name="Ökomorphologie Uferlinie (TG)" source="contextualWMSLegend=0&amp;crs=EPSG:2056&amp;dpiMode=7&amp;featureCount=10&amp;format=image/png&amp;layers=oekomorphologie_stehende_gewaesser_bafu_uferlinie&amp;styles&amp;url=https://ows.geo.tg.ch/geofy_access_proxy/oekomorphologie" providerKey="wms"/>
+      <layer-tree-layer expanded="0" checked="Qt::Checked" id="geoharvester_okomorphologie_11" name="ökomorphologischer Zustand Uferstreifen (ZH)" source="contextualWMSLegend=0&amp;crs=EPSG:2056&amp;dpiMode=7&amp;featureCount=10&amp;format=image/png&amp;layers=uferstreifen&amp;styles&amp;url=https://wms.zh.ch/AwelOekoMorphwwwZHWMS" providerKey="wms"/>
+    </layer-tree-group>
+  </layer-tree-group>
+  <maplayers>
+    <maplayer type="raster" hasScaleBasedVisibilityFlag="0" minScale="1e+08" maxScale="0" styleCategories="AllStyleCategories">
+      <extent><xmin>2270616</xmin><ymin>888855</ymin><xmax>3098222</xmax><ymax>1471872</ymax></extent>
+      <id>geoharvester_okomorphologie_0</id>
+      <datasource>contextualWMSLegend=0&amp;crs=EPSG:2056&amp;dpiMode=7&amp;featureCount=10&amp;format=image/png&amp;layers=ch.bafu.oekomorphologie-f_abstuerze&amp;styles&amp;url=https://wms.geo.admin.ch/</datasource>
+      <layername>Ökomorphologie F - Abstürze (Bund)</layername>
+      <srs><spatialrefsys><proj4>+proj=somerc +lat_0=46.9524055555556 +lon_0=7.43958333333333 +k_0=1 +x_0=2600000 +y_0=1200000 +ellps=bessel +towgs84=674.374,15.056,405.346,0,0,0,0 +units=m +no_defs</proj4><srid>2056</srid><authid>EPSG:2056</authid><description>CH1903+ / LV95</description><projectionacronym>somerc</projectionacronym><ellipsoidacronym>EPSG:7004</ellipsoidacronym><geographicflag>false</geographicflag></spatialrefsys></srs>
+      <provider>wms</provider>
+    </maplayer>
+    <maplayer type="raster" hasScaleBasedVisibilityFlag="0" minScale="1e+08" maxScale="0" styleCategories="AllStyleCategories">
+      <extent><xmin>2464902</xmin><ymin>1066865</ymin><xmax>2839927</xmax><ymax>1305071</ymax></extent>
+      <id>geoharvester_okomorphologie_1</id>
+      <datasource>contextualWMSLegend=0&amp;crs=EPSG:2056&amp;dpiMode=7&amp;featureCount=10&amp;format=image/png&amp;layers=oekomorphologie_f&amp;styles&amp;url=https://geodienste.ch/db/revitalisierung_fliessgewaesser_v1_2_0/deu</datasource>
+      <layername>Ökomorphologie F (Geodienste)</layername>
+      <srs><spatialrefsys><proj4>+proj=somerc +lat_0=46.9524055555556 +lon_0=7.43958333333333 +k_0=1 +x_0=2600000 +y_0=1200000 +ellps=bessel +towgs84=674.374,15.056,405.346,0,0,0,0 +units=m +no_defs</proj4><srid>2056</srid><authid>EPSG:2056</authid><description>CH1903+ / LV95</description><projectionacronym>somerc</projectionacronym><ellipsoidacronym>EPSG:7004</ellipsoidacronym><geographicflag>false</geographicflag></spatialrefsys></srs>
+      <provider>wms</provider>
+    </maplayer>
+    <maplayer type="raster" hasScaleBasedVisibilityFlag="0" minScale="1e+08" maxScale="0" styleCategories="AllStyleCategories">
+      <extent><xmin>2657415</xmin><ymin>1232953</ymin><xmax>2660133</xmax><ymax>1241208</ymax></extent>
+      <id>geoharvester_okomorphologie_2</id>
+      <datasource>contextualWMSLegend=0&amp;crs=EPSG:2056&amp;dpiMode=7&amp;featureCount=10&amp;format=image/png&amp;layers=ch_ag_geo_alg_oekomseen_01&amp;styles&amp;url=https://wms.geo.ag.ch/public/ows</datasource>
+      <layername>Ökomorphologie Seeufer - aggregiert (AG)</layername>
+      <srs><spatialrefsys><proj4>+proj=somerc +lat_0=46.9524055555556 +lon_0=7.43958333333333 +k_0=1 +x_0=2600000 +y_0=1200000 +ellps=bessel +towgs84=674.374,15.056,405.346,0,0,0,0 +units=m +no_defs</proj4><srid>2056</srid><authid>EPSG:2056</authid><description>CH1903+ / LV95</description><projectionacronym>somerc</projectionacronym><ellipsoidacronym>EPSG:7004</ellipsoidacronym><geographicflag>false</geographicflag></spatialrefsys></srs>
+      <provider>wms</provider>
+    </maplayer>
+    <maplayer type="raster" hasScaleBasedVisibilityFlag="0" minScale="1e+08" maxScale="0" styleCategories="AllStyleCategories">
+      <extent><xmin>2740735</xmin><ymin>1232119</ymin><xmax>2765390</xmax><ymax>1258113</ymax></extent>
+      <id>geoharvester_okomorphologie_3</id>
+      <datasource>contextualWMSLegend=0&amp;crs=EPSG:2056&amp;dpiMode=7&amp;featureCount=10&amp;format=image/png&amp;layers=ch.geoportal.gewaesser.2216.0.zustandsklasse_oekomorphologie_kt_sg&amp;styles&amp;url=https://www.geoportal.ch/services/wms/ktai</datasource>
+      <layername>Zustandsklasse Ökomorphologie Kt SG (AI)</layername>
+      <srs><spatialrefsys><proj4>+proj=somerc +lat_0=46.9524055555556 +lon_0=7.43958333333333 +k_0=1 +x_0=2600000 +y_0=1200000 +ellps=bessel +towgs84=674.374,15.056,405.346,0,0,0,0 +units=m +no_defs</proj4><srid>2056</srid><authid>EPSG:2056</authid><description>CH1903+ / LV95</description><projectionacronym>somerc</projectionacronym><ellipsoidacronym>EPSG:7004</ellipsoidacronym><geographicflag>false</geographicflag></spatialrefsys></srs>
+      <provider>wms</provider>
+    </maplayer>
+    <maplayer type="raster" hasScaleBasedVisibilityFlag="0" minScale="1e+08" maxScale="0" styleCategories="AllStyleCategories">
+      <extent><xmin>2731693</xmin><ymin>1233357</ymin><xmax>2766217</xmax><ymax>1260917</ymax></extent>
+      <id>geoharvester_okomorphologie_4</id>
+      <datasource>contextualWMSLegend=0&amp;crs=EPSG:2056&amp;dpiMode=7&amp;featureCount=10&amp;format=image/png&amp;layers=ch.geoportal.gewaesser.2216.0.zustandsklasse_oekomorphologie_kt_sg&amp;styles&amp;url=https://www.geoportal.ch/services/wms/ktar</datasource>
+      <layername>Zustandsklasse Ökomorphologie Kt SG (AR)</layername>
+      <srs><spatialrefsys><proj4>+proj=somerc +lat_0=46.9524055555556 +lon_0=7.43958333333333 +k_0=1 +x_0=2600000 +y_0=1200000 +ellps=bessel +towgs84=674.374,15.056,405.346,0,0,0,0 +units=m +no_defs</proj4><srid>2056</srid><authid>EPSG:2056</authid><description>CH1903+ / LV95</description><projectionacronym>somerc</projectionacronym><ellipsoidacronym>EPSG:7004</ellipsoidacronym><geographicflag>false</geographicflag></spatialrefsys></srs>
+      <provider>wms</provider>
+    </maplayer>
+    <maplayer type="raster" hasScaleBasedVisibilityFlag="0" minScale="1e+08" maxScale="0" styleCategories="AllStyleCategories">
+      <extent><xmin>2567793</xmin><ymin>1136823</ymin><xmax>2676327</xmax><ymax>1228385</ymax></extent>
+      <id>geoharvester_okomorphologie_5</id>
+      <datasource>contextualWMSLegend=0&amp;crs=EPSG:2056&amp;dpiMode=7&amp;featureCount=10&amp;format=image/png&amp;layers=OEKOMSEE_OEKOUL_VW_7785&amp;styles&amp;url=https://www.geoservice.apps.be.ch/geoservice3/services/a42geo/of_inlandwaters02_de_ms_wms/MapServer/WMSServer</datasource>
+      <layername>Ökomorphologie Seeufer Uferlinie (BE)</layername>
+      <srs><spatialrefsys><proj4>+proj=somerc +lat_0=46.9524055555556 +lon_0=7.43958333333333 +k_0=1 +x_0=2600000 +y_0=1200000 +ellps=bessel +towgs84=674.374,15.056,405.346,0,0,0,0 +units=m +no_defs</proj4><srid>2056</srid><authid>EPSG:2056</authid><description>CH1903+ / LV95</description><projectionacronym>somerc</projectionacronym><ellipsoidacronym>EPSG:7004</ellipsoidacronym><geographicflag>false</geographicflag></spatialrefsys></srs>
+      <provider>wms</provider>
+    </maplayer>
+    <maplayer type="raster" hasScaleBasedVisibilityFlag="0" minScale="1e+08" maxScale="0" styleCategories="AllStyleCategories">
+      <extent><xmin>2584892</xmin><ymin>1234808</ymin><xmax>2649963</xmax><ymax>1290260</ymax></extent>
+      <id>geoharvester_okomorphologie_6</id>
+      <datasource>contextualWMSLegend=0&amp;crs=EPSG:2056&amp;dpiMode=7&amp;featureCount=10&amp;format=image/png&amp;layers=Ökomorphologie&amp;styles&amp;url=https://wms.geo.bs.ch/</datasource>
+      <layername>Ökomorphologie (BS)</layername>
+      <srs><spatialrefsys><proj4>+proj=somerc +lat_0=46.9524055555556 +lon_0=7.43958333333333 +k_0=1 +x_0=2600000 +y_0=1200000 +ellps=bessel +towgs84=674.374,15.056,405.346,0,0,0,0 +units=m +no_defs</proj4><srid>2056</srid><authid>EPSG:2056</authid><description>CH1903+ / LV95</description><projectionacronym>somerc</projectionacronym><ellipsoidacronym>EPSG:7004</ellipsoidacronym><geographicflag>false</geographicflag></spatialrefsys></srs>
+      <provider>wms</provider>
+    </maplayer>
+    <maplayer type="raster" hasScaleBasedVisibilityFlag="0" minScale="1e+08" maxScale="0" styleCategories="AllStyleCategories">
+      <extent><xmin>2643478</xmin><ymin>1171022</ymin><xmax>2702278</xmax><ymax>1217544</ymax></extent>
+      <id>geoharvester_okomorphologie_7</id>
+      <datasource>contextualWMSLegend=0&amp;crs=EPSG:2056&amp;dpiMode=7&amp;featureCount=10&amp;format=image/png&amp;layers=ch.nw.planung-revitalisierung-seeufer-oekomorphologie&amp;styles&amp;url=https://www.gis-daten.ch/wms/nw/service</datasource>
+      <layername>Ökomorphologie (NW)</layername>
+      <srs><spatialrefsys><proj4>+proj=somerc +lat_0=46.9524055555556 +lon_0=7.43958333333333 +k_0=1 +x_0=2600000 +y_0=1200000 +ellps=bessel +towgs84=674.374,15.056,405.346,0,0,0,0 +units=m +no_defs</proj4><srid>2056</srid><authid>EPSG:2056</authid><description>CH1903+ / LV95</description><projectionacronym>somerc</projectionacronym><ellipsoidacronym>EPSG:7004</ellipsoidacronym><geographicflag>false</geographicflag></spatialrefsys></srs>
+      <provider>wms</provider>
+    </maplayer>
+    <maplayer type="raster" hasScaleBasedVisibilityFlag="0" minScale="1e+08" maxScale="0" styleCategories="AllStyleCategories">
+      <extent><xmin>2643478</xmin><ymin>1171022</ymin><xmax>2702278</xmax><ymax>1217544</ymax></extent>
+      <id>geoharvester_okomorphologie_8</id>
+      <datasource>contextualWMSLegend=0&amp;crs=EPSG:2056&amp;dpiMode=7&amp;featureCount=10&amp;format=image/png&amp;layers=ch.ow.planung-revitalisierung-seeufer-oekomorphologie&amp;styles&amp;url=https://www.gis-daten.ch/wms/ow/service</datasource>
+      <layername>Ökomorphologie (OW)</layername>
+      <srs><spatialrefsys><proj4>+proj=somerc +lat_0=46.9524055555556 +lon_0=7.43958333333333 +k_0=1 +x_0=2600000 +y_0=1200000 +ellps=bessel +towgs84=674.374,15.056,405.346,0,0,0,0 +units=m +no_defs</proj4><srid>2056</srid><authid>EPSG:2056</authid><description>CH1903+ / LV95</description><projectionacronym>somerc</projectionacronym><ellipsoidacronym>EPSG:7004</ellipsoidacronym><geographicflag>false</geographicflag></spatialrefsys></srs>
+      <provider>wms</provider>
+    </maplayer>
+    <maplayer type="raster" hasScaleBasedVisibilityFlag="0" minScale="1e+08" maxScale="0" styleCategories="AllStyleCategories">
+      <extent><xmin>2463973</xmin><ymin>1046091</ymin><xmax>2859827</xmax><ymax>1325956</ymax></extent>
+      <id>geoharvester_okomorphologie_9</id>
+      <datasource>contextualWMSLegend=0&amp;crs=EPSG:2056&amp;dpiMode=7&amp;featureCount=10&amp;format=image/png&amp;layers=ch.sz.a163a.revitalisierung_seeufer.oekomorph_istzustand&amp;styles&amp;url=https://map.geo.sz.ch/mapserv_proxy</datasource>
+      <layername>ökomorphologischer Ist-Zustand (SZ)</layername>
+      <srs><spatialrefsys><proj4>+proj=somerc +lat_0=46.9524055555556 +lon_0=7.43958333333333 +k_0=1 +x_0=2600000 +y_0=1200000 +ellps=bessel +towgs84=674.374,15.056,405.346,0,0,0,0 +units=m +no_defs</proj4><srid>2056</srid><authid>EPSG:2056</authid><description>CH1903+ / LV95</description><projectionacronym>somerc</projectionacronym><ellipsoidacronym>EPSG:7004</ellipsoidacronym><geographicflag>false</geographicflag></spatialrefsys></srs>
+      <provider>wms</provider>
+    </maplayer>
+    <maplayer type="raster" hasScaleBasedVisibilityFlag="0" minScale="1e+08" maxScale="0" styleCategories="AllStyleCategories">
+      <extent><xmin>2690096</xmin><ymin>1244811</ymin><xmax>2755061</xmax><ymax>1286530</ymax></extent>
+      <id>geoharvester_okomorphologie_10</id>
+      <datasource>contextualWMSLegend=0&amp;crs=EPSG:2056&amp;dpiMode=7&amp;featureCount=10&amp;format=image/png&amp;layers=oekomorphologie_stehende_gewaesser_bafu_uferlinie&amp;styles&amp;url=https://ows.geo.tg.ch/geofy_access_proxy/oekomorphologie</datasource>
+      <layername>Ökomorphologie Uferlinie (TG)</layername>
+      <srs><spatialrefsys><proj4>+proj=somerc +lat_0=46.9524055555556 +lon_0=7.43958333333333 +k_0=1 +x_0=2600000 +y_0=1200000 +ellps=bessel +towgs84=674.374,15.056,405.346,0,0,0,0 +units=m +no_defs</proj4><srid>2056</srid><authid>EPSG:2056</authid><description>CH1903+ / LV95</description><projectionacronym>somerc</projectionacronym><ellipsoidacronym>EPSG:7004</ellipsoidacronym><geographicflag>false</geographicflag></spatialrefsys></srs>
+      <provider>wms</provider>
+    </maplayer>
+    <maplayer type="raster" hasScaleBasedVisibilityFlag="0" minScale="1e+08" maxScale="0" styleCategories="AllStyleCategories">
+      <extent><xmin>2654491</xmin><ymin>1221474</ymin><xmax>2720011</xmax><ymax>1300949</ymax></extent>
+      <id>geoharvester_okomorphologie_11</id>
+      <datasource>contextualWMSLegend=0&amp;crs=EPSG:2056&amp;dpiMode=7&amp;featureCount=10&amp;format=image/png&amp;layers=uferstreifen&amp;styles&amp;url=https://wms.zh.ch/AwelOekoMorphwwwZHWMS</datasource>
+      <layername>ökomorphologischer Zustand Uferstreifen (ZH)</layername>
+      <srs><spatialrefsys><proj4>+proj=somerc +lat_0=46.9524055555556 +lon_0=7.43958333333333 +k_0=1 +x_0=2600000 +y_0=1200000 +ellps=bessel +towgs84=674.374,15.056,405.346,0,0,0,0 +units=m +no_defs</proj4><srid>2056</srid><authid>EPSG:2056</authid><description>CH1903+ / LV95</description><projectionacronym>somerc</projectionacronym><ellipsoidacronym>EPSG:7004</ellipsoidacronym><geographicflag>false</geographicflag></spatialrefsys></srs>
+      <provider>wms</provider>
+    </maplayer>
+  </maplayers>
+</qlr>

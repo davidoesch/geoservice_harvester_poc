@@ -1,0 +1,169 @@
+{
+ "type": "FeatureCollection",
+ "id": "https://davidoesch.github.io/geoservice_harvester_poc/data/topics/rayonnement-solaire.ows.json",
+ "properties": {
+  "lang": "de",
+  "title": "Rayonnement solaire",
+  "updated": "2026-11-20T16:13:33+01:00",
+  "subtitle": "GeoHarvester topic: 3 providers",
+  "links": {
+   "profiles": [
+    {
+     "href": "http://www.opengis.net/spec/owc-geojson/1.0/req/core"
+    }
+   ]
+  }
+ },
+ "features": [
+  {
+   "type": "Feature",
+   "id": "https://wms.geo.admin.ch/#ch.bfe.solarenergie-einstrahlung_30_grad",
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       3.33,
+       44.075
+      ],
+      [
+       14.278,
+       44.075
+      ],
+      [
+       14.278,
+       49.2
+      ],
+      [
+       3.33,
+       49.2
+      ],
+      [
+       3.33,
+       44.075
+      ]
+     ]
+    ]
+   },
+   "properties": {
+    "title": "Solare Einstrahlung 30°Neigung Süd",
+    "updated": "2026-11-20T16:13:33+01:00",
+    "publisher": "Bund (geo.admin.ch)",
+    "layer": "ch.bfe.solarenergie-einstrahlung_30_grad",
+    "offerings": [
+     {
+      "code": "http://www.opengis.net/spec/owc-geojson/1.0/req/wms",
+      "operations": [
+       {
+        "code": "GetCapabilities",
+        "method": "GET",
+        "type": "application/xml",
+        "href": "https://wms.geo.admin.ch/?SERVICE=WMS&REQUEST=GetCapabilities"
+       }
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": "https://map.lausanne.ch/mapserv_proxy?ogcserver=source+for+image%2Fpng#energie_ombrage_mns_rayonnement",
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       5.961,
+       45.821
+      ],
+      [
+       10.604,
+       45.821
+      ],
+      [
+       10.604,
+       47.821
+      ],
+      [
+       5.961,
+       47.821
+      ],
+      [
+       5.961,
+       45.821
+      ]
+     ]
+    ]
+   },
+   "properties": {
+    "title": "Rayonnement solaire",
+    "updated": "2026-11-20T16:13:33+01:00",
+    "publisher": "Stadt Lausanne",
+    "layer": "energie_ombrage_mns_rayonnement",
+    "offerings": [
+     {
+      "code": "http://www.opengis.net/spec/owc-geojson/1.0/req/wms",
+      "operations": [
+       {
+        "code": "GetCapabilities",
+        "method": "GET",
+        "type": "application/xml",
+        "href": "https://map.lausanne.ch/mapserv_proxy?ogcserver=source+for+image%2Fpng&SERVICE=WMS&REQUEST=GetCapabilities"
+       }
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": "https://geo.jura.ch/mapserv_proxy?ogcserver=Main_PNG#rayonnement_solaire",
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       6.696,
+       47.107
+      ],
+      [
+       7.644,
+       47.107
+      ],
+      [
+       7.644,
+       47.535
+      ],
+      [
+       6.696,
+       47.535
+      ],
+      [
+       6.696,
+       47.107
+      ]
+     ]
+    ]
+   },
+   "properties": {
+    "title": "rayonnement_solaire",
+    "updated": "2026-11-20T16:13:33+01:00",
+    "publisher": "Kanton Jura",
+    "layer": "rayonnement_solaire",
+    "offerings": [
+     {
+      "code": "http://www.opengis.net/spec/owc-geojson/1.0/req/wms",
+      "operations": [
+       {
+        "code": "GetCapabilities",
+        "method": "GET",
+        "type": "application/xml",
+        "href": "https://geo.jura.ch/mapserv_proxy?ogcserver=Main_PNG&SERVICE=WMS&REQUEST=GetCapabilities"
+       }
+      ]
+     }
+    ]
+   }
+  }
+ ]
+}

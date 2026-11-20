@@ -1,0 +1,119 @@
+{
+ "type": "FeatureCollection",
+ "id": "https://davidoesch.github.io/geoservice_harvester_poc/data/topics/warmenachfrage.ows.json",
+ "properties": {
+  "lang": "de",
+  "title": "Wärmenachfrage",
+  "updated": "2026-11-20T16:05:37+01:00",
+  "subtitle": "GeoHarvester topic: 2 providers",
+  "links": {
+   "profiles": [
+    {
+     "href": "http://www.opengis.net/spec/owc-geojson/1.0/req/core"
+    }
+   ]
+  }
+ },
+ "features": [
+  {
+   "type": "Feature",
+   "id": "https://geowms.bl.ch/#energie_waermenachfrage_2016",
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       7.306,
+       47.309
+      ],
+      [
+       8.037,
+       47.309
+      ],
+      [
+       8.037,
+       47.626
+      ],
+      [
+       7.306,
+       47.626
+      ],
+      [
+       7.306,
+       47.309
+      ]
+     ]
+    ]
+   },
+   "properties": {
+    "title": "Wärmenachfragedichte 2016",
+    "updated": "2026-11-20T16:05:37+01:00",
+    "publisher": "Kanton Basel-Landschaft",
+    "layer": "energie_waermenachfrage_2016",
+    "offerings": [
+     {
+      "code": "http://www.opengis.net/spec/owc-geojson/1.0/req/wms",
+      "operations": [
+       {
+        "code": "GetCapabilities",
+        "method": "GET",
+        "type": "application/xml",
+        "href": "https://geowms.bl.ch/?SERVICE=WMS&REQUEST=GetCapabilities"
+       }
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": "https://ows-raster.geo.tg.ch/geofy_access_proxy/biomasse#waermenachfrage",
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       8.631,
+       47.348
+      ],
+      [
+       9.505,
+       47.348
+      ],
+      [
+       9.505,
+       47.711
+      ],
+      [
+       8.631,
+       47.711
+      ],
+      [
+       8.631,
+       47.348
+      ]
+     ]
+    ]
+   },
+   "properties": {
+    "title": "Wärmenachfrage",
+    "updated": "2026-11-20T16:05:37+01:00",
+    "publisher": "Kanton Thurgau",
+    "layer": "waermenachfrage",
+    "offerings": [
+     {
+      "code": "http://www.opengis.net/spec/owc-geojson/1.0/req/wms",
+      "operations": [
+       {
+        "code": "GetCapabilities",
+        "method": "GET",
+        "type": "application/xml",
+        "href": "https://ows-raster.geo.tg.ch/geofy_access_proxy/biomasse?SERVICE=WMS&REQUEST=GetCapabilities"
+       }
+      ]
+     }
+    ]
+   }
+  }
+ ]
+}

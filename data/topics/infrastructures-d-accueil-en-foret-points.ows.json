@@ -1,0 +1,319 @@
+{
+ "type": "FeatureCollection",
+ "id": "https://davidoesch.github.io/geoservice_harvester_poc/data/topics/infrastructures-d-accueil-en-foret-points.ows.json",
+ "properties": {
+  "lang": "de",
+  "title": "Infrastructures d’accueil en forêt (points)",
+  "updated": "2026-11-20T16:05:37+01:00",
+  "subtitle": "GeoHarvester topic: 6 providers",
+  "links": {
+   "profiles": [
+    {
+     "href": "http://www.opengis.net/spec/owc-geojson/1.0/req/core"
+    }
+   ]
+  }
+ },
+ "features": [
+  {
+   "type": "Feature",
+   "id": "https://wms.geo.admin.ch/#ch.bav.sachplan-infrastruktur-schiene_kraft",
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       3.33,
+       44.075
+      ],
+      [
+       14.278,
+       44.075
+      ],
+      [
+       14.278,
+       49.2
+      ],
+      [
+       3.33,
+       49.2
+      ],
+      [
+       3.33,
+       44.075
+      ]
+     ]
+    ]
+   },
+   "properties": {
+    "title": "SP Infrastruktur Schiene",
+    "updated": "2026-11-20T16:05:37+01:00",
+    "publisher": "Bund (geo.admin.ch)",
+    "layer": "ch.bav.sachplan-infrastruktur-schiene_kraft",
+    "offerings": [
+     {
+      "code": "http://www.opengis.net/spec/owc-geojson/1.0/req/wms",
+      "operations": [
+       {
+        "code": "GetCapabilities",
+        "method": "GET",
+        "type": "application/xml",
+        "href": "https://wms.geo.admin.ch/?SERVICE=WMS&REQUEST=GetCapabilities"
+       }
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": "https://map.bern.ch/arcgis/services/Geoportal/Klimaanalyse_Rahmenplan_Teilkonzept_Starkregenvorsorge/MapServer/WMSServer#16",
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       7.335,
+       46.936
+      ],
+      [
+       7.477,
+       46.936
+      ],
+      [
+       7.477,
+       46.976
+      ],
+      [
+       7.335,
+       46.976
+      ],
+      [
+       7.335,
+       46.936
+      ]
+     ]
+    ]
+   },
+   "properties": {
+    "title": "Kritische_Infrastruktur",
+    "updated": "2026-11-20T16:05:37+01:00",
+    "publisher": "Stadt Bern",
+    "layer": "16",
+    "offerings": [
+     {
+      "code": "http://www.opengis.net/spec/owc-geojson/1.0/req/wms",
+      "operations": [
+       {
+        "code": "GetCapabilities",
+        "method": "GET",
+        "type": "application/xml",
+        "href": "https://map.bern.ch/arcgis/services/Geoportal/Klimaanalyse_Rahmenplan_Teilkonzept_Starkregenvorsorge/MapServer/WMSServer?SERVICE=WMS&REQUEST=GetCapabilities"
+       }
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": "https://www.ogd.stadt-zuerich.ch/wms/geoportal/VBZ_Infrastruktur_OGD#VBZ-Infrastruktur OGD",
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       8.32,
+       47.129
+      ],
+      [
+       9.034,
+       47.129
+      ],
+      [
+       9.034,
+       47.717
+      ],
+      [
+       8.32,
+       47.717
+      ],
+      [
+       8.32,
+       47.129
+      ]
+     ]
+    ]
+   },
+   "properties": {
+    "title": "VBZ-Infrastruktur OGD",
+    "updated": "2026-11-20T16:05:37+01:00",
+    "publisher": "Stadt Zürich",
+    "layer": "VBZ-Infrastruktur OGD",
+    "offerings": [
+     {
+      "code": "http://www.opengis.net/spec/owc-geojson/1.0/req/wms",
+      "operations": [
+       {
+        "code": "GetCapabilities",
+        "method": "GET",
+        "type": "application/xml",
+        "href": "https://www.ogd.stadt-zuerich.ch/wms/geoportal/VBZ_Infrastruktur_OGD?SERVICE=WMS&REQUEST=GetCapabilities"
+       }
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": "https://wms.geo.bs.ch/#Infrastruktur",
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       7.239,
+       47.264
+      ],
+      [
+       8.105,
+       47.264
+      ],
+      [
+       8.105,
+       47.761
+      ],
+      [
+       7.239,
+       47.761
+      ],
+      [
+       7.239,
+       47.264
+      ]
+     ]
+    ]
+   },
+   "properties": {
+    "title": "Infrastruktur",
+    "updated": "2026-11-20T16:05:37+01:00",
+    "publisher": "Kanton Basel-Stadt",
+    "layer": "Infrastruktur",
+    "offerings": [
+     {
+      "code": "http://www.opengis.net/spec/owc-geojson/1.0/req/wms",
+      "operations": [
+       {
+        "code": "GetCapabilities",
+        "method": "GET",
+        "type": "application/xml",
+        "href": "https://wms.geo.bs.ch/?SERVICE=WMS&REQUEST=GetCapabilities"
+       }
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": "https://maps.fr.ch/ags/services/OpenData/Infrastructures_d_accueil_en_foret__points_/MapServer/WMSServer#0",
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       6.777,
+       46.49
+      ],
+      [
+       7.353,
+       46.49
+      ],
+      [
+       7.353,
+       46.999
+      ],
+      [
+       6.777,
+       46.999
+      ],
+      [
+       6.777,
+       46.49
+      ]
+     ]
+    ]
+   },
+   "properties": {
+    "title": "Infrastructures d’accueil en forêt (points)",
+    "updated": "2026-11-20T16:05:37+01:00",
+    "publisher": "Kanton Freiburg",
+    "layer": "0",
+    "offerings": [
+     {
+      "code": "http://www.opengis.net/spec/owc-geojson/1.0/req/wms",
+      "operations": [
+       {
+        "code": "GetCapabilities",
+        "method": "GET",
+        "type": "application/xml",
+        "href": "https://maps.fr.ch/ags/services/OpenData/Infrastructures_d_accueil_en_foret__points_/MapServer/WMSServer?SERVICE=WMS&REQUEST=GetCapabilities"
+       }
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": "https://wms.geo.gr.ch/rrip_unterengadin#Infrastruktur_Schiene",
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       8.615,
+       45.994
+      ],
+      [
+       10.547,
+       45.994
+      ],
+      [
+       10.547,
+       47.324
+      ],
+      [
+       8.615,
+       47.324
+      ],
+      [
+       8.615,
+       45.994
+      ]
+     ]
+    ]
+   },
+   "properties": {
+    "title": "Infrastruktur Schiene",
+    "updated": "2026-11-20T16:05:37+01:00",
+    "publisher": "Kanton Graubünden",
+    "layer": "Infrastruktur_Schiene",
+    "offerings": [
+     {
+      "code": "http://www.opengis.net/spec/owc-geojson/1.0/req/wms",
+      "operations": [
+       {
+        "code": "GetCapabilities",
+        "method": "GET",
+        "type": "application/xml",
+        "href": "https://wms.geo.gr.ch/rrip_unterengadin?SERVICE=WMS&REQUEST=GetCapabilities"
+       }
+      ]
+     }
+    ]
+   }
+  }
+ ]
+}

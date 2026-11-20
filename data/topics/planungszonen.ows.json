@@ -1,0 +1,619 @@
+{
+ "type": "FeatureCollection",
+ "id": "https://davidoesch.github.io/geoservice_harvester_poc/data/topics/planungszonen.ows.json",
+ "properties": {
+  "lang": "de",
+  "title": "Planungszonen",
+  "updated": "2026-11-20T16:05:37+01:00",
+  "subtitle": "GeoHarvester topic: 12 providers",
+  "links": {
+   "profiles": [
+    {
+     "href": "http://www.opengis.net/spec/owc-geojson/1.0/req/core"
+    }
+   ]
+  }
+ },
+ "features": [
+  {
+   "type": "Feature",
+   "id": "https://www.ogc.stadt-zuerich.ch/mapproxy/service#BZO_Planungszonen",
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       5.835,
+       45.643
+      ],
+      [
+       11.444,
+       45.643
+      ],
+      [
+       11.444,
+       47.868
+      ],
+      [
+       5.835,
+       47.868
+      ],
+      [
+       5.835,
+       45.643
+      ]
+     ]
+    ]
+   },
+   "properties": {
+    "title": "BZO_Planungszonen",
+    "updated": "2026-11-20T16:05:37+01:00",
+    "publisher": "Stadt Zürich",
+    "layer": "BZO_Planungszonen",
+    "offerings": [
+     {
+      "code": "http://www.opengis.net/spec/owc-geojson/1.0/req/wms",
+      "operations": [
+       {
+        "code": "GetCapabilities",
+        "method": "GET",
+        "type": "application/xml",
+        "href": "https://www.ogc.stadt-zuerich.ch/mapproxy/service?SERVICE=WMS&REQUEST=GetCapabilities"
+       }
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": "https://geodienste.ch/db/planungszonen_v1_1_0/deu#planungszonen_v1_1",
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       5.703,
+       45.74
+      ],
+      [
+       10.645,
+       45.74
+      ],
+      [
+       10.645,
+       47.852
+      ],
+      [
+       5.703,
+       47.852
+      ],
+      [
+       5.703,
+       45.74
+      ]
+     ]
+    ]
+   },
+   "properties": {
+    "title": "geodienste.ch WMS Planungszonen",
+    "updated": "2026-11-20T16:05:37+01:00",
+    "publisher": "geodienste.ch (kantonsübergreifend)",
+    "layer": "planungszonen_v1_1",
+    "offerings": [
+     {
+      "code": "http://www.opengis.net/spec/owc-geojson/1.0/req/wms",
+      "operations": [
+       {
+        "code": "GetCapabilities",
+        "method": "GET",
+        "type": "application/xml",
+        "href": "https://geodienste.ch/db/planungszonen_v1_1_0/deu?SERVICE=WMS&REQUEST=GetCapabilities"
+       }
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": "https://wms.geo.ag.ch/public/ows#ch_ag_geo_are_Planungszonen",
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       7.612,
+       47.165
+      ],
+      [
+       8.553,
+       47.165
+      ],
+      [
+       8.553,
+       47.704
+      ],
+      [
+       7.612,
+       47.704
+      ],
+      [
+       7.612,
+       47.165
+      ]
+     ]
+    ]
+   },
+   "properties": {
+    "title": "Planungszonen",
+    "updated": "2026-11-20T16:05:37+01:00",
+    "publisher": "Kanton Aargau",
+    "layer": "ch_ag_geo_are_Planungszonen",
+    "offerings": [
+     {
+      "code": "http://www.opengis.net/spec/owc-geojson/1.0/req/wms",
+      "operations": [
+       {
+        "code": "GetCapabilities",
+        "method": "GET",
+        "type": "application/xml",
+        "href": "https://wms.geo.ag.ch/public/ows?SERVICE=WMS&REQUEST=GetCapabilities"
+       }
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": "https://www.geoportal.ch/services/wms/ktai#ch.geoportal.raumplanung_grundstueckskataster.2544.0.planungszonen_kt_ai",
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       9.297,
+       47.225
+      ],
+      [
+       9.632,
+       47.225
+      ],
+      [
+       9.632,
+       47.453
+      ],
+      [
+       9.297,
+       47.453
+      ],
+      [
+       9.297,
+       47.225
+      ]
+     ]
+    ]
+   },
+   "properties": {
+    "title": "Planungszonen Kt AI",
+    "updated": "2026-11-20T16:05:37+01:00",
+    "publisher": "Kanton Appenzell Innerrhoden",
+    "layer": "ch.geoportal.raumplanung_grundstueckskataster.2544.0.planungszonen_kt_ai",
+    "offerings": [
+     {
+      "code": "http://www.opengis.net/spec/owc-geojson/1.0/req/wms",
+      "operations": [
+       {
+        "code": "GetCapabilities",
+        "method": "GET",
+        "type": "application/xml",
+        "href": "https://www.geoportal.ch/services/wms/ktai?SERVICE=WMS&REQUEST=GetCapabilities"
+       }
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": "https://www.geoportal.ch/services/wms/ktar#ch.geoportal.raumplanung_grundstueckskataster.2475.0.planungszonen_kt_ar",
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       9.178,
+       47.238
+      ],
+      [
+       9.644,
+       47.238
+      ],
+      [
+       9.644,
+       47.478
+      ],
+      [
+       9.178,
+       47.478
+      ],
+      [
+       9.178,
+       47.238
+      ]
+     ]
+    ]
+   },
+   "properties": {
+    "title": "Planungszonen Kt AR",
+    "updated": "2026-11-20T16:05:37+01:00",
+    "publisher": "Kanton Appenzell Ausserrhoden",
+    "layer": "ch.geoportal.raumplanung_grundstueckskataster.2475.0.planungszonen_kt_ar",
+    "offerings": [
+     {
+      "code": "http://www.opengis.net/spec/owc-geojson/1.0/req/wms",
+      "operations": [
+       {
+        "code": "GetCapabilities",
+        "method": "GET",
+        "type": "application/xml",
+        "href": "https://www.geoportal.ch/services/wms/ktar?SERVICE=WMS&REQUEST=GetCapabilities"
+       }
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": "https://geowms.bl.ch/#planungszonen",
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       7.306,
+       47.309
+      ],
+      [
+       8.037,
+       47.309
+      ],
+      [
+       8.037,
+       47.626
+      ],
+      [
+       7.306,
+       47.626
+      ],
+      [
+       7.306,
+       47.309
+      ]
+     ]
+    ]
+   },
+   "properties": {
+    "title": "Planungszonen",
+    "updated": "2026-11-20T16:05:37+01:00",
+    "publisher": "Kanton Basel-Landschaft",
+    "layer": "planungszonen",
+    "offerings": [
+     {
+      "code": "http://www.opengis.net/spec/owc-geojson/1.0/req/wms",
+      "operations": [
+       {
+        "code": "GetCapabilities",
+        "method": "GET",
+        "type": "application/xml",
+        "href": "https://geowms.bl.ch/?SERVICE=WMS&REQUEST=GetCapabilities"
+       }
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": "https://wms.geo.bs.ch/#ch.bs.planungszone_stadt_basel_pzba",
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       7.573,
+       47.533
+      ],
+      [
+       7.629,
+       47.533
+      ],
+      [
+       7.629,
+       47.58
+      ],
+      [
+       7.573,
+       47.58
+      ],
+      [
+       7.573,
+       47.533
+      ]
+     ]
+    ]
+   },
+   "properties": {
+    "title": "Planungszone Stadt Basel",
+    "updated": "2026-11-20T16:05:37+01:00",
+    "publisher": "Kanton Basel-Stadt",
+    "layer": "ch.bs.planungszone_stadt_basel_pzba",
+    "offerings": [
+     {
+      "code": "http://www.opengis.net/spec/owc-geojson/1.0/req/wms",
+      "operations": [
+       {
+        "code": "GetCapabilities",
+        "method": "GET",
+        "type": "application/xml",
+        "href": "https://wms.geo.bs.ch/?SERVICE=WMS&REQUEST=GetCapabilities"
+       }
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": "https://geo.so.ch/wms/oereb#ch.Planungszonen",
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       7.379,
+       47.116
+      ],
+      [
+       7.801,
+       47.116
+      ],
+      [
+       7.801,
+       47.494
+      ],
+      [
+       7.379,
+       47.494
+      ],
+      [
+       7.379,
+       47.116
+      ]
+     ]
+    ]
+   },
+   "properties": {
+    "title": "Planungszonen",
+    "updated": "2026-11-20T16:05:37+01:00",
+    "publisher": "Kanton Solothurn",
+    "layer": "ch.Planungszonen",
+    "offerings": [
+     {
+      "code": "http://www.opengis.net/spec/owc-geojson/1.0/req/wms",
+      "operations": [
+       {
+        "code": "GetCapabilities",
+        "method": "GET",
+        "type": "application/xml",
+        "href": "https://geo.so.ch/wms/oereb?SERVICE=WMS&REQUEST=GetCapabilities"
+       }
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": "https://map.geo.sz.ch/mapserv_proxy#ch.sz.a164a.planungszonen",
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       5.697,
+       45.553
+      ],
+      [
+       10.923,
+       45.553
+      ],
+      [
+       10.923,
+       48.032
+      ],
+      [
+       5.697,
+       48.032
+      ],
+      [
+       5.697,
+       45.553
+      ]
+     ]
+    ]
+   },
+   "properties": {
+    "title": "Planungszonen",
+    "updated": "2026-11-20T16:05:37+01:00",
+    "publisher": "Kanton Schwyz",
+    "layer": "ch.sz.a164a.planungszonen",
+    "offerings": [
+     {
+      "code": "http://www.opengis.net/spec/owc-geojson/1.0/req/wms",
+      "operations": [
+       {
+        "code": "GetCapabilities",
+        "method": "GET",
+        "type": "application/xml",
+        "href": "https://map.geo.sz.ch/mapserv_proxy?SERVICE=WMS&REQUEST=GetCapabilities"
+       }
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": "https://wms.geo.ti.ch/service#ch_076_1_v1_1_zone_pianificazione",
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       7.936,
+       45.575
+      ],
+      [
+       9.599,
+       45.575
+      ],
+      [
+       9.599,
+       46.842
+      ],
+      [
+       7.936,
+       46.842
+      ],
+      [
+       7.936,
+       45.575
+      ]
+     ]
+    ]
+   },
+   "properties": {
+    "title": "[CH-076.1] Zone di pianificazione",
+    "updated": "2026-11-20T16:05:37+01:00",
+    "publisher": "Kanton Tessin",
+    "layer": "ch_076_1_v1_1_zone_pianificazione",
+    "offerings": [
+     {
+      "code": "http://www.opengis.net/spec/owc-geojson/1.0/req/wms",
+      "operations": [
+       {
+        "code": "GetCapabilities",
+        "method": "GET",
+        "type": "application/xml",
+        "href": "https://wms.geo.ti.ch/service?SERVICE=WMS&REQUEST=GetCapabilities"
+       }
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": "https://sit.vs.ch/arcgis/services/ZNP/MapServer/WMSServer#7",
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       6.797,
+       45.934
+      ],
+      [
+       8.283,
+       45.934
+      ],
+      [
+       8.283,
+       46.5
+      ],
+      [
+       6.797,
+       46.5
+      ],
+      [
+       6.797,
+       45.934
+      ]
+     ]
+    ]
+   },
+   "properties": {
+    "title": "Planungszonen",
+    "updated": "2026-11-20T16:05:37+01:00",
+    "publisher": "Kanton Wallis",
+    "layer": "7",
+    "offerings": [
+     {
+      "code": "http://www.opengis.net/spec/owc-geojson/1.0/req/wms",
+      "operations": [
+       {
+        "code": "GetCapabilities",
+        "method": "GET",
+        "type": "application/xml",
+        "href": "https://sit.vs.ch/arcgis/services/ZNP/MapServer/WMSServer?SERVICE=WMS&REQUEST=GetCapabilities"
+       }
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": "https://wms.zh.ch/ARPOerebZHWMS#planungszonen",
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       8.157,
+       47.142
+      ],
+      [
+       9.042,
+       47.142
+      ],
+      [
+       9.042,
+       47.848
+      ],
+      [
+       8.157,
+       47.848
+      ],
+      [
+       8.157,
+       47.142
+      ]
+     ]
+    ]
+   },
+   "properties": {
+    "title": "Planungszonen",
+    "updated": "2026-11-20T16:05:37+01:00",
+    "publisher": "Kanton Zürich",
+    "layer": "planungszonen",
+    "offerings": [
+     {
+      "code": "http://www.opengis.net/spec/owc-geojson/1.0/req/wms",
+      "operations": [
+       {
+        "code": "GetCapabilities",
+        "method": "GET",
+        "type": "application/xml",
+        "href": "https://wms.zh.ch/ARPOerebZHWMS?SERVICE=WMS&REQUEST=GetCapabilities"
+       }
+      ]
+     }
+    ]
+   }
+  }
+ ]
+}

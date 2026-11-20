@@ -1,0 +1,119 @@
+{
+ "type": "FeatureCollection",
+ "id": "https://davidoesch.github.io/geoservice_harvester_poc/data/topics/quellen-nach-typ.ows.json",
+ "properties": {
+  "lang": "de",
+  "title": "Quellen nach Typ",
+  "updated": "2026-11-20T16:13:33+01:00",
+  "subtitle": "GeoHarvester topic: 2 providers",
+  "links": {
+   "profiles": [
+    {
+     "href": "http://www.opengis.net/spec/owc-geojson/1.0/req/core"
+    }
+   ]
+  }
+ },
+ "features": [
+  {
+   "type": "Feature",
+   "id": "https://www.geoservice.apps.be.ch/geoservice3/services/a42geo/of_inlandwaters01_de_ms_wms/MapServer/WMSServer#GSK25_GSKQU_VW_14297",
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       6.863,
+       46.344
+      ],
+      [
+       8.446,
+       46.344
+      ],
+      [
+       8.446,
+       47.338
+      ],
+      [
+       6.863,
+       47.338
+      ],
+      [
+       6.863,
+       46.344
+      ]
+     ]
+    ]
+   },
+   "properties": {
+    "title": "Quellen nach Typ",
+    "updated": "2026-11-20T16:13:33+01:00",
+    "publisher": "Kanton Bern",
+    "layer": "GSK25_GSKQU_VW_14297",
+    "offerings": [
+     {
+      "code": "http://www.opengis.net/spec/owc-geojson/1.0/req/wms",
+      "operations": [
+       {
+        "code": "GetCapabilities",
+        "method": "GET",
+        "type": "application/xml",
+        "href": "https://www.geoservice.apps.be.ch/geoservice3/services/a42geo/of_inlandwaters01_de_ms_wms/MapServer/WMSServer?SERVICE=WMS&REQUEST=GetCapabilities"
+       }
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": "https://sit.vs.ch/arcgis/services/UMWELTSCHUTZ/MapServer/WMSServer#7",
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       6.816,
+       45.868
+      ],
+      [
+       8.199,
+       45.868
+      ],
+      [
+       8.199,
+       46.414
+      ],
+      [
+       6.816,
+       46.414
+      ],
+      [
+       6.816,
+       45.868
+      ]
+     ]
+    ]
+   },
+   "properties": {
+    "title": "ARA_Typ",
+    "updated": "2026-11-20T16:13:33+01:00",
+    "publisher": "Kanton Wallis",
+    "layer": "7",
+    "offerings": [
+     {
+      "code": "http://www.opengis.net/spec/owc-geojson/1.0/req/wms",
+      "operations": [
+       {
+        "code": "GetCapabilities",
+        "method": "GET",
+        "type": "application/xml",
+        "href": "https://sit.vs.ch/arcgis/services/UMWELTSCHUTZ/MapServer/WMSServer?SERVICE=WMS&REQUEST=GetCapabilities"
+       }
+      ]
+     }
+    ]
+   }
+  }
+ ]
+}

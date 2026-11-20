@@ -1,0 +1,119 @@
+{
+ "type": "FeatureCollection",
+ "id": "https://davidoesch.github.io/geoservice_harvester_poc/data/topics/juraschutzzone-richtplan.ows.json",
+ "properties": {
+  "lang": "de",
+  "title": "Juraschutzzone (Richtplan)",
+  "updated": "2026-11-20T16:05:37+01:00",
+  "subtitle": "GeoHarvester topic: 2 providers",
+  "links": {
+   "profiles": [
+    {
+     "href": "http://www.opengis.net/spec/owc-geojson/1.0/req/core"
+    }
+   ]
+  }
+ },
+ "features": [
+  {
+   "type": "Feature",
+   "id": "https://geo.so.ch/api/wms#ch.so.arp.richtplan.juraschutz",
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       7.34,
+       47.072
+      ],
+      [
+       8.236,
+       47.072
+      ],
+      [
+       8.236,
+       47.587
+      ],
+      [
+       7.34,
+       47.587
+      ],
+      [
+       7.34,
+       47.072
+      ]
+     ]
+    ]
+   },
+   "properties": {
+    "title": "Juraschutzzone (Richtplan)",
+    "updated": "2026-11-20T16:05:37+01:00",
+    "publisher": "Kanton Solothurn",
+    "layer": "ch.so.arp.richtplan.juraschutz",
+    "offerings": [
+     {
+      "code": "http://www.opengis.net/spec/owc-geojson/1.0/req/wms",
+      "operations": [
+       {
+        "code": "GetCapabilities",
+        "method": "GET",
+        "type": "application/xml",
+        "href": "https://geo.so.ch/api/wms?SERVICE=WMS&REQUEST=GetCapabilities"
+       }
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": "https://maps.zh.ch/wfs/OGDZHWFS#ms:ogd-0525_giszhpub_fns_schutzzone_aufgehoben_f",
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       8.157,
+       47.142
+      ],
+      [
+       9.037,
+       47.142
+      ],
+      [
+       9.037,
+       47.712
+      ],
+      [
+       8.157,
+       47.712
+      ],
+      [
+       8.157,
+       47.142
+      ]
+     ]
+    ]
+   },
+   "properties": {
+    "title": "Schutzzone, gerichtlich aufgehoben (525.60)",
+    "updated": "2026-11-20T16:05:37+01:00",
+    "publisher": "Kanton Zürich",
+    "layer": "ms:ogd-0525_giszhpub_fns_schutzzone_aufgehoben_f",
+    "offerings": [
+     {
+      "code": "http://www.opengis.net/spec/owc-geojson/1.0/req/wfs",
+      "operations": [
+       {
+        "code": "GetCapabilities",
+        "method": "GET",
+        "type": "application/xml",
+        "href": "https://maps.zh.ch/wfs/OGDZHWFS?SERVICE=WFS&REQUEST=GetCapabilities"
+       }
+      ]
+     }
+    ]
+   }
+  }
+ ]
+}

@@ -1,0 +1,119 @@
+{
+ "type": "FeatureCollection",
+ "id": "https://davidoesch.github.io/geoservice_harvester_poc/data/topics/standorte.ows.json",
+ "properties": {
+  "lang": "de",
+  "title": "Standorte",
+  "updated": "2026-11-20T16:05:37+01:00",
+  "subtitle": "GeoHarvester topic: 2 providers",
+  "links": {
+   "profiles": [
+    {
+     "href": "http://www.opengis.net/spec/owc-geojson/1.0/req/core"
+    }
+   ]
+  }
+ },
+ "features": [
+  {
+   "type": "Feature",
+   "id": "https://www.ogd.stadt-zuerich.ch/wms/geoportal/AOZ_Standorte#Standorte",
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       8.109,
+       45.824
+      ],
+      [
+       9.572,
+       45.824
+      ],
+      [
+       9.572,
+       47.665
+      ],
+      [
+       8.109,
+       47.665
+      ],
+      [
+       8.109,
+       45.824
+      ]
+     ]
+    ]
+   },
+   "properties": {
+    "title": "Standorte",
+    "updated": "2026-11-20T16:05:37+01:00",
+    "publisher": "Stadt Zürich",
+    "layer": "Standorte",
+    "offerings": [
+     {
+      "code": "http://www.opengis.net/spec/owc-geojson/1.0/req/wms",
+      "operations": [
+       {
+        "code": "GetCapabilities",
+        "method": "GET",
+        "type": "application/xml",
+        "href": "https://www.ogd.stadt-zuerich.ch/wms/geoportal/AOZ_Standorte?SERVICE=WMS&REQUEST=GetCapabilities"
+       }
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": "https://ows.geo.tg.ch/geofy_access_proxy/kbs#Standort_public",
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       8.631,
+       47.348
+      ],
+      [
+       9.505,
+       47.348
+      ],
+      [
+       9.505,
+       47.711
+      ],
+      [
+       8.631,
+       47.711
+      ],
+      [
+       8.631,
+       47.348
+      ]
+     ]
+    ]
+   },
+   "properties": {
+    "title": "Standorte",
+    "updated": "2026-11-20T16:05:37+01:00",
+    "publisher": "Kanton Thurgau",
+    "layer": "Standort_public",
+    "offerings": [
+     {
+      "code": "http://www.opengis.net/spec/owc-geojson/1.0/req/wms",
+      "operations": [
+       {
+        "code": "GetCapabilities",
+        "method": "GET",
+        "type": "application/xml",
+        "href": "https://ows.geo.tg.ch/geofy_access_proxy/kbs?SERVICE=WMS&REQUEST=GetCapabilities"
+       }
+      ]
+     }
+    ]
+   }
+  }
+ ]
+}

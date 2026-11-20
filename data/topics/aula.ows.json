@@ -1,0 +1,519 @@
+{
+ "type": "FeatureCollection",
+ "id": "https://davidoesch.github.io/geoservice_harvester_poc/data/topics/aula.ows.json",
+ "properties": {
+  "lang": "de",
+  "title": "Aula",
+  "updated": "2026-11-20T16:05:37+01:00",
+  "subtitle": "GeoHarvester topic: 10 providers",
+  "links": {
+   "profiles": [
+    {
+     "href": "http://www.opengis.net/spec/owc-geojson/1.0/req/core"
+    }
+   ]
+  }
+ },
+ "features": [
+  {
+   "type": "Feature",
+   "id": "https://www.ogd.stadt-zuerich.ch/wms/geoportal/Verkehrslastklassen#Lastklasse",
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       8.463,
+       47.32
+      ],
+      [
+       8.618,
+       47.32
+      ],
+      [
+       8.618,
+       47.436
+      ],
+      [
+       8.463,
+       47.436
+      ],
+      [
+       8.463,
+       47.32
+      ]
+     ]
+    ]
+   },
+   "properties": {
+    "title": "Lastklasse",
+    "updated": "2026-11-20T16:05:37+01:00",
+    "publisher": "Stadt Zürich",
+    "layer": "Lastklasse",
+    "offerings": [
+     {
+      "code": "http://www.opengis.net/spec/owc-geojson/1.0/req/wms",
+      "operations": [
+       {
+        "code": "GetCapabilities",
+        "method": "GET",
+        "type": "application/xml",
+        "href": "https://www.ogd.stadt-zuerich.ch/wms/geoportal/Verkehrslastklassen?SERVICE=WMS&REQUEST=GetCapabilities"
+       }
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": "https://service.geo.llv.li/service/wms#li.abs.baugrundklassen_bohrungen",
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       9.467,
+       47.044
+      ],
+      [
+       9.647,
+       47.044
+      ],
+      [
+       9.647,
+       47.276
+      ],
+      [
+       9.467,
+       47.276
+      ],
+      [
+       9.467,
+       47.044
+      ]
+     ]
+    ]
+   },
+   "properties": {
+    "title": "Baugrundklassen Bohrungen",
+    "updated": "2026-11-20T16:05:37+01:00",
+    "publisher": "Fürstentum Liechtenstein",
+    "layer": "li.abs.baugrundklassen_bohrungen",
+    "offerings": [
+     {
+      "code": "http://www.opengis.net/spec/owc-geojson/1.0/req/wms",
+      "operations": [
+       {
+        "code": "GetCapabilities",
+        "method": "GET",
+        "type": "application/xml",
+        "href": "https://service.geo.llv.li/service/wms?SERVICE=WMS&REQUEST=GetCapabilities"
+       }
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": "https://wms.geo.ag.ch/public/ows#ch_ag_geo_aw_erkl",
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       7.58,
+       47.048
+      ],
+      [
+       8.595,
+       47.048
+      ],
+      [
+       8.595,
+       47.707
+      ],
+      [
+       7.58,
+       47.707
+      ],
+      [
+       7.58,
+       47.048
+      ]
+     ]
+    ]
+   },
+   "properties": {
+    "title": "Ertragsklassen",
+    "updated": "2026-11-20T16:05:37+01:00",
+    "publisher": "Kanton Aargau",
+    "layer": "ch_ag_geo_aw_erkl",
+    "offerings": [
+     {
+      "code": "http://www.opengis.net/spec/owc-geojson/1.0/req/wms",
+      "operations": [
+       {
+        "code": "GetCapabilities",
+        "method": "GET",
+        "type": "application/xml",
+        "href": "https://wms.geo.ag.ch/public/ows?SERVICE=WMS&REQUEST=GetCapabilities"
+       }
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": "https://www.geoservice.apps.be.ch/geoservice3/services/a42geo/of_transportation01_de_ms_wms/MapServer/WMSServer#OEVTP_EGKF_VW_16230",
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       6.883,
+       46.378
+      ],
+      [
+       8.376,
+       46.378
+      ],
+      [
+       8.376,
+       47.315
+      ],
+      [
+       6.883,
+       47.315
+      ],
+      [
+       6.883,
+       46.378
+      ]
+     ]
+    ]
+   },
+   "properties": {
+    "title": "ÖV-Erschliessungsgüteklasse, Umriss",
+    "updated": "2026-11-20T16:05:37+01:00",
+    "publisher": "Kanton Bern",
+    "layer": "OEVTP_EGKF_VW_16230",
+    "offerings": [
+     {
+      "code": "http://www.opengis.net/spec/owc-geojson/1.0/req/wms",
+      "operations": [
+       {
+        "code": "GetCapabilities",
+        "method": "GET",
+        "type": "application/xml",
+        "href": "https://www.geoservice.apps.be.ch/geoservice3/services/a42geo/of_transportation01_de_ms_wms/MapServer/WMSServer?SERVICE=WMS&REQUEST=GetCapabilities"
+       }
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": "https://geowms.bl.ch/#baugrundklassen",
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       7.306,
+       47.309
+      ],
+      [
+       8.037,
+       47.309
+      ],
+      [
+       8.037,
+       47.626
+      ],
+      [
+       7.306,
+       47.626
+      ],
+      [
+       7.306,
+       47.309
+      ]
+     ]
+    ]
+   },
+   "properties": {
+    "title": "Baugrundklassen",
+    "updated": "2026-11-20T16:05:37+01:00",
+    "publisher": "Kanton Basel-Landschaft",
+    "layer": "baugrundklassen",
+    "offerings": [
+     {
+      "code": "http://www.opengis.net/spec/owc-geojson/1.0/req/wms",
+      "operations": [
+       {
+        "code": "GetCapabilities",
+        "method": "GET",
+        "type": "application/xml",
+        "href": "https://geowms.bl.ch/?SERVICE=WMS&REQUEST=GetCapabilities"
+       }
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": "https://wms.geo.gr.ch/walderschliessung#Breitenklasse",
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       8.615,
+       45.994
+      ],
+      [
+       10.547,
+       45.994
+      ],
+      [
+       10.547,
+       47.324
+      ],
+      [
+       8.615,
+       47.324
+      ],
+      [
+       8.615,
+       45.994
+      ]
+     ]
+    ]
+   },
+   "properties": {
+    "title": "Breitenklassen",
+    "updated": "2026-11-20T16:05:37+01:00",
+    "publisher": "Kanton Graubünden",
+    "layer": "Breitenklasse",
+    "offerings": [
+     {
+      "code": "http://www.opengis.net/spec/owc-geojson/1.0/req/wms",
+      "operations": [
+       {
+        "code": "GetCapabilities",
+        "method": "GET",
+        "type": "application/xml",
+        "href": "https://wms.geo.gr.ch/walderschliessung?SERVICE=WMS&REQUEST=GetCapabilities"
+       }
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": "https://geo.so.ch/api/wms#ch.so.afu.baugrundklassen",
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       7.34,
+       47.073
+      ],
+      [
+       8.033,
+       47.073
+      ],
+      [
+       8.033,
+       47.503
+      ],
+      [
+       7.34,
+       47.503
+      ],
+      [
+       7.34,
+       47.073
+      ]
+     ]
+    ]
+   },
+   "properties": {
+    "title": "Baugrundklassen nach SIA 261",
+    "updated": "2026-11-20T16:05:37+01:00",
+    "publisher": "Kanton Solothurn",
+    "layer": "ch.so.afu.baugrundklassen",
+    "offerings": [
+     {
+      "code": "http://www.opengis.net/spec/owc-geojson/1.0/req/wms",
+      "operations": [
+       {
+        "code": "GetCapabilities",
+        "method": "GET",
+        "type": "application/xml",
+        "href": "https://geo.so.ch/api/wms?SERVICE=WMS&REQUEST=GetCapabilities"
+       }
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": "https://map.geo.sz.ch/mapserv_proxy#ch.sz.a219a.gemeindeschulen.schulgebaeude.aula",
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       8.345,
+       46.878
+      ],
+      [
+       9.051,
+       46.878
+      ],
+      [
+       9.051,
+       47.237
+      ],
+      [
+       8.345,
+       47.237
+      ],
+      [
+       8.345,
+       46.878
+      ]
+     ]
+    ]
+   },
+   "properties": {
+    "title": "Aula",
+    "updated": "2026-11-20T16:05:37+01:00",
+    "publisher": "Kanton Schwyz",
+    "layer": "ch.sz.a219a.gemeindeschulen.schulgebaeude.aula",
+    "offerings": [
+     {
+      "code": "http://www.opengis.net/spec/owc-geojson/1.0/req/wms",
+      "operations": [
+       {
+        "code": "GetCapabilities",
+        "method": "GET",
+        "type": "application/xml",
+        "href": "https://map.geo.sz.ch/mapserv_proxy?SERVICE=WMS&REQUEST=GetCapabilities"
+       }
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": "https://ows.geo.tg.ch/geofy_access_proxy/kantonsstrassen#Strassenklassen",
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       8.631,
+       47.347
+      ],
+      [
+       9.572,
+       47.347
+      ],
+      [
+       9.572,
+       47.711
+      ],
+      [
+       8.631,
+       47.711
+      ],
+      [
+       8.631,
+       47.347
+      ]
+     ]
+    ]
+   },
+   "properties": {
+    "title": "Strassenklassen",
+    "updated": "2026-11-20T16:05:37+01:00",
+    "publisher": "Kanton Thurgau",
+    "layer": "Strassenklassen",
+    "offerings": [
+     {
+      "code": "http://www.opengis.net/spec/owc-geojson/1.0/req/wms",
+      "operations": [
+       {
+        "code": "GetCapabilities",
+        "method": "GET",
+        "type": "application/xml",
+        "href": "https://ows.geo.tg.ch/geofy_access_proxy/kantonsstrassen?SERVICE=WMS&REQUEST=GetCapabilities"
+       }
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": "https://sit.vs.ch/arcgis/services/Strasse/MapServer/WMSServer#6",
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       6.787,
+       45.866
+      ],
+      [
+       8.416,
+       45.866
+      ],
+      [
+       8.416,
+       46.582
+      ],
+      [
+       6.787,
+       46.582
+      ],
+      [
+       6.787,
+       45.866
+      ]
+     ]
+    ]
+   },
+   "properties": {
+    "title": "Klassierte Strassen",
+    "updated": "2026-11-20T16:05:37+01:00",
+    "publisher": "Kanton Wallis",
+    "layer": "6",
+    "offerings": [
+     {
+      "code": "http://www.opengis.net/spec/owc-geojson/1.0/req/wms",
+      "operations": [
+       {
+        "code": "GetCapabilities",
+        "method": "GET",
+        "type": "application/xml",
+        "href": "https://sit.vs.ch/arcgis/services/Strasse/MapServer/WMSServer?SERVICE=WMS&REQUEST=GetCapabilities"
+       }
+      ]
+     }
+    ]
+   }
+  }
+ ]
+}

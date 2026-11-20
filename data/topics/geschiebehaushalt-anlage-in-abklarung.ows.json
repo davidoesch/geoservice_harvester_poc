@@ -1,0 +1,269 @@
+{
+ "type": "FeatureCollection",
+ "id": "https://davidoesch.github.io/geoservice_harvester_poc/data/topics/geschiebehaushalt-anlage-in-abklarung.ows.json",
+ "properties": {
+  "lang": "de",
+  "title": "Geschiebehaushalt Anlage in Abklärung",
+  "updated": "2026-11-20T16:13:33+01:00",
+  "subtitle": "GeoHarvester topic: 5 providers",
+  "links": {
+   "profiles": [
+    {
+     "href": "http://www.opengis.net/spec/owc-geojson/1.0/req/core"
+    }
+   ]
+  }
+ },
+ "features": [
+  {
+   "type": "Feature",
+   "id": "https://wms.geo.admin.ch/#ch.blw.niederschlagshaushalt",
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       3.33,
+       44.075
+      ],
+      [
+       14.278,
+       44.075
+      ],
+      [
+       14.278,
+       49.2
+      ],
+      [
+       3.33,
+       49.2
+      ],
+      [
+       3.33,
+       44.075
+      ]
+     ]
+    ]
+   },
+   "properties": {
+    "title": "Niederschlagshaushalt",
+    "updated": "2026-11-20T16:13:33+01:00",
+    "publisher": "Bund (geo.admin.ch)",
+    "layer": "ch.blw.niederschlagshaushalt",
+    "offerings": [
+     {
+      "code": "http://www.opengis.net/spec/owc-geojson/1.0/req/wms",
+      "operations": [
+       {
+        "code": "GetCapabilities",
+        "method": "GET",
+        "type": "application/xml",
+        "href": "https://wms.geo.admin.ch/?SERVICE=WMS&REQUEST=GetCapabilities"
+       }
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": "https://geodienste.ch/db/sanierung_wasserkraft_v1_2_0/deu#geschiebehaushalt_anlage_in_abklaerung",
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       5.703,
+       45.74
+      ],
+      [
+       10.645,
+       45.74
+      ],
+      [
+       10.645,
+       47.852
+      ],
+      [
+       5.703,
+       47.852
+      ],
+      [
+       5.703,
+       45.74
+      ]
+     ]
+    ]
+   },
+   "properties": {
+    "title": "Geschiebehaushalt Anlage in Abklärung",
+    "updated": "2026-11-20T16:13:33+01:00",
+    "publisher": "geodienste.ch (kantonsübergreifend)",
+    "layer": "geschiebehaushalt_anlage_in_abklaerung",
+    "offerings": [
+     {
+      "code": "http://www.opengis.net/spec/owc-geojson/1.0/req/wms",
+      "operations": [
+       {
+        "code": "GetCapabilities",
+        "method": "GET",
+        "type": "application/xml",
+        "href": "https://geodienste.ch/db/sanierung_wasserkraft_v1_2_0/deu?SERVICE=WMS&REQUEST=GetCapabilities"
+       }
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": "https://www.geoservice.apps.be.ch/geoservice3/services/a42geo/of_inlandwaters02_de_ms_wms/MapServer/WMSServer#GESCHIEB_BEURTEIL_VW_17940",
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       7.022,
+       46.358
+      ],
+      [
+       8.393,
+       46.358
+      ],
+      [
+       8.393,
+       47.303
+      ],
+      [
+       7.022,
+       47.303
+      ],
+      [
+       7.022,
+       46.358
+      ]
+     ]
+    ]
+   },
+   "properties": {
+    "title": "Sanierungspflicht Geschiebehaushalt bei Anlagen",
+    "updated": "2026-11-20T16:13:33+01:00",
+    "publisher": "Kanton Bern",
+    "layer": "GESCHIEB_BEURTEIL_VW_17940",
+    "offerings": [
+     {
+      "code": "http://www.opengis.net/spec/owc-geojson/1.0/req/wms",
+      "operations": [
+       {
+        "code": "GetCapabilities",
+        "method": "GET",
+        "type": "application/xml",
+        "href": "https://www.geoservice.apps.be.ch/geoservice3/services/a42geo/of_inlandwaters02_de_ms_wms/MapServer/WMSServer?SERVICE=WMS&REQUEST=GetCapabilities"
+       }
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": "https://wms.geo.ti.ch/service#ac_021_3_v1_0_bilancio_idrologico",
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       7.936,
+       45.575
+      ],
+      [
+       9.601,
+       45.575
+      ],
+      [
+       9.601,
+       46.842
+      ],
+      [
+       7.936,
+       46.842
+      ],
+      [
+       7.936,
+       45.575
+      ]
+     ]
+    ]
+   },
+   "properties": {
+    "title": "[AC-021.3] Bilancio idrologico",
+    "updated": "2026-11-20T16:13:33+01:00",
+    "publisher": "Kanton Tessin",
+    "layer": "ac_021_3_v1_0_bilancio_idrologico",
+    "offerings": [
+     {
+      "code": "http://www.opengis.net/spec/owc-geojson/1.0/req/wms",
+      "operations": [
+       {
+        "code": "GetCapabilities",
+        "method": "GET",
+        "type": "application/xml",
+        "href": "https://wms.geo.ti.ch/service?SERVICE=WMS&REQUEST=GetCapabilities"
+       }
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": "https://maps.zh.ch/wfs/OGDZHWFS#ms:ogd-0518_awel_wb_gesschiebe_anl_p",
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       8.157,
+       47.142
+      ],
+      [
+       9.037,
+       47.142
+      ],
+      [
+       9.037,
+       47.712
+      ],
+      [
+       8.157,
+       47.712
+      ],
+      [
+       8.157,
+       47.142
+      ]
+     ]
+    ]
+   },
+   "properties": {
+    "title": "Geschiebehaushalt Anlage (518.4)",
+    "updated": "2026-11-20T16:13:33+01:00",
+    "publisher": "Kanton Zürich",
+    "layer": "ms:ogd-0518_awel_wb_gesschiebe_anl_p",
+    "offerings": [
+     {
+      "code": "http://www.opengis.net/spec/owc-geojson/1.0/req/wfs",
+      "operations": [
+       {
+        "code": "GetCapabilities",
+        "method": "GET",
+        "type": "application/xml",
+        "href": "https://maps.zh.ch/wfs/OGDZHWFS?SERVICE=WFS&REQUEST=GetCapabilities"
+       }
+      ]
+     }
+    ]
+   }
+  }
+ ]
+}

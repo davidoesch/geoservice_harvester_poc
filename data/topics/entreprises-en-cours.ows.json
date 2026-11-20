@@ -1,0 +1,219 @@
+{
+ "type": "FeatureCollection",
+ "id": "https://davidoesch.github.io/geoservice_harvester_poc/data/topics/entreprises-en-cours.ows.json",
+ "properties": {
+  "lang": "de",
+  "title": "Entreprises en cours",
+  "updated": "2026-11-20T16:13:33+01:00",
+  "subtitle": "GeoHarvester topic: 4 providers",
+  "links": {
+   "profiles": [
+    {
+     "href": "http://www.opengis.net/spec/owc-geojson/1.0/req/core"
+    }
+   ]
+  }
+ },
+ "features": [
+  {
+   "type": "Feature",
+   "id": "https://maps.fr.ch/ags/services/OpenData/Entreprises_en_cours/MapServer/WMSServer#0",
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       6.741,
+       46.501
+      ],
+      [
+       7.361,
+       46.501
+      ],
+      [
+       7.361,
+       46.941
+      ],
+      [
+       6.741,
+       46.941
+      ],
+      [
+       6.741,
+       46.501
+      ]
+     ]
+    ]
+   },
+   "properties": {
+    "title": "Entreprises en cours",
+    "updated": "2026-11-20T16:13:33+01:00",
+    "publisher": "Kanton Freiburg",
+    "layer": "0",
+    "offerings": [
+     {
+      "code": "http://www.opengis.net/spec/owc-geojson/1.0/req/wms",
+      "operations": [
+       {
+        "code": "GetCapabilities",
+        "method": "GET",
+        "type": "application/xml",
+        "href": "https://maps.fr.ch/ags/services/OpenData/Entreprises_en_cours/MapServer/WMSServer?SERVICE=WMS&REQUEST=GetCapabilities"
+       }
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": "https://geo.jura.ch/mapserv_proxy?ogcserver=Main_PNG#sdt_01_06_entreprises_mo",
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       6.696,
+       47.107
+      ],
+      [
+       7.644,
+       47.107
+      ],
+      [
+       7.644,
+       47.535
+      ],
+      [
+       6.696,
+       47.535
+      ],
+      [
+       6.696,
+       47.107
+      ]
+     ]
+    ]
+   },
+   "properties": {
+    "title": "sdt_01_06_entreprises_mo",
+    "updated": "2026-11-20T16:13:33+01:00",
+    "publisher": "Kanton Jura",
+    "layer": "sdt_01_06_entreprises_mo",
+    "offerings": [
+     {
+      "code": "http://www.opengis.net/spec/owc-geojson/1.0/req/wms",
+      "operations": [
+       {
+        "code": "GetCapabilities",
+        "method": "GET",
+        "type": "application/xml",
+        "href": "https://geo.jura.ch/mapserv_proxy?ogcserver=Main_PNG&SERVICE=WMS&REQUEST=GetCapabilities"
+       }
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": "https://services.geo.sg.ch/wss/service/SG00176_WMS/guest#Ortsbuergerliche_Korporationen",
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       8.949,
+       46.995
+      ],
+      [
+       9.638,
+       46.995
+      ],
+      [
+       9.638,
+       47.411
+      ],
+      [
+       8.949,
+       47.411
+      ],
+      [
+       8.949,
+       46.995
+      ]
+     ]
+    ]
+   },
+   "properties": {
+    "title": "Ortsbuergerliche_Korporationen",
+    "updated": "2026-11-20T16:13:33+01:00",
+    "publisher": "Kanton St. Gallen",
+    "layer": "Ortsbuergerliche_Korporationen",
+    "offerings": [
+     {
+      "code": "http://www.opengis.net/spec/owc-geojson/1.0/req/wms",
+      "operations": [
+       {
+        "code": "GetCapabilities",
+        "method": "GET",
+        "type": "application/xml",
+        "href": "https://services.geo.sg.ch/wss/service/SG00176_WMS/guest?SERVICE=WMS&REQUEST=GetCapabilities"
+       }
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": "https://wms.geo.ti.ch/service#ac_013_1_v1_0_prevenzione_incidenti_rilevanti_azienda",
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       7.936,
+       45.575
+      ],
+      [
+       9.599,
+       45.575
+      ],
+      [
+       9.599,
+       46.842
+      ],
+      [
+       7.936,
+       46.842
+      ],
+      [
+       7.936,
+       45.575
+      ]
+     ]
+    ]
+   },
+   "properties": {
+    "title": "[AC-013.1] Aziende",
+    "updated": "2026-11-20T16:13:33+01:00",
+    "publisher": "Kanton Tessin",
+    "layer": "ac_013_1_v1_0_prevenzione_incidenti_rilevanti_azienda",
+    "offerings": [
+     {
+      "code": "http://www.opengis.net/spec/owc-geojson/1.0/req/wms",
+      "operations": [
+       {
+        "code": "GetCapabilities",
+        "method": "GET",
+        "type": "application/xml",
+        "href": "https://wms.geo.ti.ch/service?SERVICE=WMS&REQUEST=GetCapabilities"
+       }
+      ]
+     }
+    ]
+   }
+  }
+ ]
+}

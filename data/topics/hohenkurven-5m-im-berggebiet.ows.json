@@ -1,0 +1,119 @@
+{
+ "type": "FeatureCollection",
+ "id": "https://davidoesch.github.io/geoservice_harvester_poc/data/topics/hohenkurven-5m-im-berggebiet.ows.json",
+ "properties": {
+  "lang": "de",
+  "title": "Höhenkurven 5m im Berggebiet",
+  "updated": "2026-11-20T16:13:33+01:00",
+  "subtitle": "GeoHarvester topic: 2 providers",
+  "links": {
+   "profiles": [
+    {
+     "href": "http://www.opengis.net/spec/owc-geojson/1.0/req/core"
+    }
+   ]
+  }
+ },
+ "features": [
+  {
+   "type": "Feature",
+   "id": "https://map.geo.gl.ch/ows/mainmap#ch.gl.elevation.hoehenkurven-5m",
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       8.869,
+       46.791
+      ],
+      [
+       9.262,
+       46.791
+      ],
+      [
+       9.262,
+       47.158
+      ],
+      [
+       8.869,
+       47.158
+      ],
+      [
+       8.869,
+       46.791
+      ]
+     ]
+    ]
+   },
+   "properties": {
+    "title": "Höhenkurven 5m im Berggebiet",
+    "updated": "2026-11-20T16:13:33+01:00",
+    "publisher": "Kanton Glarus",
+    "layer": "ch.gl.elevation.hoehenkurven-5m",
+    "offerings": [
+     {
+      "code": "http://www.opengis.net/spec/owc-geojson/1.0/req/wms",
+      "operations": [
+       {
+        "code": "GetCapabilities",
+        "method": "GET",
+        "type": "application/xml",
+        "href": "https://map.geo.gl.ch/ows/mainmap?SERVICE=WMS&REQUEST=GetCapabilities"
+       }
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": "https://wms.geo.ti.ch/service#ti.028b_1.ch08zk2f_ppaes10",
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       8.331,
+       45.938
+      ],
+      [
+       8.935,
+       45.938
+      ],
+      [
+       8.935,
+       46.344
+      ],
+      [
+       8.331,
+       46.344
+      ],
+      [
+       8.331,
+       45.938
+      ]
+     ]
+    ]
+   },
+   "properties": {
+    "title": "[TI-028b.1] Centovalli-Palagnedra - Piano paesaggio (montano)",
+    "updated": "2026-11-20T16:13:33+01:00",
+    "publisher": "Kanton Tessin",
+    "layer": "ti.028b_1.ch08zk2f_ppaes10",
+    "offerings": [
+     {
+      "code": "http://www.opengis.net/spec/owc-geojson/1.0/req/wms",
+      "operations": [
+       {
+        "code": "GetCapabilities",
+        "method": "GET",
+        "type": "application/xml",
+        "href": "https://wms.geo.ti.ch/service?SERVICE=WMS&REQUEST=GetCapabilities"
+       }
+      ]
+     }
+    ]
+   }
+  }
+ ]
+}

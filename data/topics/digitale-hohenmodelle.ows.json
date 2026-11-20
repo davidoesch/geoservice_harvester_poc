@@ -1,0 +1,219 @@
+{
+ "type": "FeatureCollection",
+ "id": "https://davidoesch.github.io/geoservice_harvester_poc/data/topics/digitale-hohenmodelle.ows.json",
+ "properties": {
+  "lang": "de",
+  "title": "Digitale Höhenmodelle",
+  "updated": "2026-11-20T16:05:37+01:00",
+  "subtitle": "GeoHarvester topic: 4 providers",
+  "links": {
+   "profiles": [
+    {
+     "href": "http://www.opengis.net/spec/owc-geojson/1.0/req/core"
+    }
+   ]
+  }
+ },
+ "features": [
+  {
+   "type": "Feature",
+   "id": "https://wmts.geo.bs.ch/EPSG/3857/1.0.0/WMTSCapabilities.xml#HP_Uebersichtsplan_Basel_digital_1961",
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       7.553,
+       47.519
+      ],
+      [
+       7.645,
+       47.519
+      ],
+      [
+       7.645,
+       47.593
+      ],
+      [
+       7.553,
+       47.593
+      ],
+      [
+       7.553,
+       47.519
+      ]
+     ]
+    ]
+   },
+   "properties": {
+    "title": "Übersichtsplan Basel 1961 (digital erarbeitet)",
+    "updated": "2026-11-20T16:05:37+01:00",
+    "publisher": "Kanton Basel-Stadt",
+    "layer": "HP_Uebersichtsplan_Basel_digital_1961",
+    "offerings": [
+     {
+      "code": "http://www.opengis.net/spec/owc-geojson/1.0/req/wmts",
+      "operations": [
+       {
+        "code": "GetCapabilities",
+        "method": "GET",
+        "type": "application/xml",
+        "href": "https://wmts.geo.bs.ch/EPSG/3857/1.0.0/WMTSCapabilities.xml"
+       }
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": "https://public.geo.lu.ch/ogd/services/managed/DIGOPPOI_COL_V1_MP/MapServer/WMSServer#0",
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       7.867,
+       46.821
+      ],
+      [
+       8.406,
+       46.821
+      ],
+      [
+       8.406,
+       47.277
+      ],
+      [
+       7.867,
+       47.277
+      ],
+      [
+       7.867,
+       46.821
+      ]
+     ]
+    ]
+   },
+   "properties": {
+    "title": "Digitaler Ortsplan: Gebäude",
+    "updated": "2026-11-20T16:05:37+01:00",
+    "publisher": "Kanton Luzern",
+    "layer": "0",
+    "offerings": [
+     {
+      "code": "http://www.opengis.net/spec/owc-geojson/1.0/req/wms",
+      "operations": [
+       {
+        "code": "GetCapabilities",
+        "method": "GET",
+        "type": "application/xml",
+        "href": "https://public.geo.lu.ch/ogd/services/managed/DIGOPPOI_COL_V1_MP/MapServer/WMSServer?SERVICE=WMS&REQUEST=GetCapabilities"
+       }
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": "https://geo.so.ch/api/wms#ch.swisstopo.lidar_2023.dsm",
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       7.332,
+       47.066
+      ],
+      [
+       8.036,
+       47.066
+      ],
+      [
+       8.036,
+       47.509
+      ],
+      [
+       7.332,
+       47.509
+      ],
+      [
+       7.332,
+       47.066
+      ]
+     ]
+    ]
+   },
+   "properties": {
+    "title": "Digitales Oberflächenmodell (2023)",
+    "updated": "2026-11-20T16:05:37+01:00",
+    "publisher": "Kanton Solothurn",
+    "layer": "ch.swisstopo.lidar_2023.dsm",
+    "offerings": [
+     {
+      "code": "http://www.opengis.net/spec/owc-geojson/1.0/req/wms",
+      "operations": [
+       {
+        "code": "GetCapabilities",
+        "method": "GET",
+        "type": "application/xml",
+        "href": "https://geo.so.ch/api/wms?SERVICE=WMS&REQUEST=GetCapabilities"
+       }
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": "https://wms.zh.ch/LidarZHWMS#LidarZHWMS",
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       8.157,
+       47.142
+      ],
+      [
+       9.042,
+       47.142
+      ],
+      [
+       9.042,
+       47.848
+      ],
+      [
+       8.157,
+       47.848
+      ],
+      [
+       8.157,
+       47.142
+      ]
+     ]
+    ]
+   },
+   "properties": {
+    "title": "Digitale Höhenmodelle",
+    "updated": "2026-11-20T16:05:37+01:00",
+    "publisher": "Kanton Zürich",
+    "layer": "LidarZHWMS",
+    "offerings": [
+     {
+      "code": "http://www.opengis.net/spec/owc-geojson/1.0/req/wms",
+      "operations": [
+       {
+        "code": "GetCapabilities",
+        "method": "GET",
+        "type": "application/xml",
+        "href": "https://wms.zh.ch/LidarZHWMS?SERVICE=WMS&REQUEST=GetCapabilities"
+       }
+      ]
+     }
+    ]
+   }
+  }
+ ]
+}

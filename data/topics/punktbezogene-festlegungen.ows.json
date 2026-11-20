@@ -1,0 +1,93 @@
+{
+ "type": "FeatureCollection",
+ "id": "https://davidoesch.github.io/geoservice_harvester_poc/data/topics/punktbezogene-festlegungen.ows.json",
+ "properties": {
+  "lang": "de",
+  "title": "Punktbezogene Festlegungen",
+  "updated": "2026-11-20T16:05:37+01:00",
+  "subtitle": "GeoHarvester topic: 2 providers",
+  "links": {
+   "profiles": [
+    {
+     "href": "http://www.opengis.net/spec/owc-geojson/1.0/req/core"
+    }
+   ]
+  }
+ },
+ "features": [
+  {
+   "type": "Feature",
+   "id": "https://oerebservice.apps.be.ch/cgi-bin/mapserv.fcgi?map=oereb_de#geodb.nupla_uept",
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       6.781,
+       46.234
+      ],
+      [
+       8.617,
+       46.234
+      ],
+      [
+       8.617,
+       47.379
+      ],
+      [
+       6.781,
+       47.379
+      ],
+      [
+       6.781,
+       46.234
+      ]
+     ]
+    ]
+   },
+   "properties": {
+    "title": "Punktbezogene Festlegungen",
+    "updated": "2026-11-20T16:05:37+01:00",
+    "publisher": "Kanton Bern",
+    "layer": "geodb.nupla_uept",
+    "offerings": [
+     {
+      "code": "http://www.opengis.net/spec/owc-geojson/1.0/req/wms",
+      "operations": [
+       {
+        "code": "GetCapabilities",
+        "method": "GET",
+        "type": "application/xml",
+        "href": "https://oerebservice.apps.be.ch/cgi-bin/mapserv.fcgi?map=oereb_de&SERVICE=WMS&REQUEST=GetCapabilities"
+       }
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": "https://sit.vs.ch/arcgis/services/ZNP/MapServer/WMSServer#3",
+   "geometry": null,
+   "properties": {
+    "title": "Punktbezogene Festlegungen",
+    "updated": "2026-11-20T16:05:37+01:00",
+    "publisher": "Kanton Wallis",
+    "layer": "3",
+    "offerings": [
+     {
+      "code": "http://www.opengis.net/spec/owc-geojson/1.0/req/wms",
+      "operations": [
+       {
+        "code": "GetCapabilities",
+        "method": "GET",
+        "type": "application/xml",
+        "href": "https://sit.vs.ch/arcgis/services/ZNP/MapServer/WMSServer?SERVICE=WMS&REQUEST=GetCapabilities"
+       }
+      ]
+     }
+    ]
+   }
+  }
+ ]
+}

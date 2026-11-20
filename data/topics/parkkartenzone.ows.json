@@ -1,0 +1,169 @@
+{
+ "type": "FeatureCollection",
+ "id": "https://davidoesch.github.io/geoservice_harvester_poc/data/topics/parkkartenzone.ows.json",
+ "properties": {
+  "lang": "de",
+  "title": "Parkkartenzone",
+  "updated": "2026-11-20T16:05:37+01:00",
+  "subtitle": "GeoHarvester topic: 3 providers",
+  "links": {
+   "profiles": [
+    {
+     "href": "http://www.opengis.net/spec/owc-geojson/1.0/req/core"
+    }
+   ]
+  }
+ },
+ "features": [
+  {
+   "type": "Feature",
+   "id": "https://map.bern.ch/arcgis/services/Geoportal/Parkkartenzonen/MapServer/WMSServer#2",
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       7.374,
+       46.932
+      ],
+      [
+       7.485,
+       46.932
+      ],
+      [
+       7.485,
+       46.98
+      ],
+      [
+       7.374,
+       46.98
+      ],
+      [
+       7.374,
+       46.932
+      ]
+     ]
+    ]
+   },
+   "properties": {
+    "title": "Parkkartenzone_Umrandung",
+    "updated": "2026-11-20T16:05:37+01:00",
+    "publisher": "Stadt Bern",
+    "layer": "2",
+    "offerings": [
+     {
+      "code": "http://www.opengis.net/spec/owc-geojson/1.0/req/wms",
+      "operations": [
+       {
+        "code": "GetCapabilities",
+        "method": "GET",
+        "type": "application/xml",
+        "href": "https://map.bern.ch/arcgis/services/Geoportal/Parkkartenzonen/MapServer/WMSServer?SERVICE=WMS&REQUEST=GetCapabilities"
+       }
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": "https://map.stadtluzern.ch/server/services/OGD/parkkartenzone/MapServer/WMSServer#0",
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       8.257,
+       47.033
+      ],
+      [
+       8.36,
+       47.033
+      ],
+      [
+       8.36,
+       47.07
+      ],
+      [
+       8.257,
+       47.07
+      ],
+      [
+       8.257,
+       47.033
+      ]
+     ]
+    ]
+   },
+   "properties": {
+    "title": "Parkkartenzone",
+    "updated": "2026-11-20T16:05:37+01:00",
+    "publisher": "Stadt Luzern",
+    "layer": "0",
+    "offerings": [
+     {
+      "code": "http://www.opengis.net/spec/owc-geojson/1.0/req/wms",
+      "operations": [
+       {
+        "code": "GetCapabilities",
+        "method": "GET",
+        "type": "application/xml",
+        "href": "https://map.stadtluzern.ch/server/services/OGD/parkkartenzone/MapServer/WMSServer?SERVICE=WMS&REQUEST=GetCapabilities"
+       }
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": "https://stadtplan.winterthur.ch/wms/Parkkartenzonen#Parkkartenzone",
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       8.632,
+       47.446
+      ],
+      [
+       8.833,
+       47.446
+      ],
+      [
+       8.833,
+       47.548
+      ],
+      [
+       8.632,
+       47.548
+      ],
+      [
+       8.632,
+       47.446
+      ]
+     ]
+    ]
+   },
+   "properties": {
+    "title": "Parkkartenzone",
+    "updated": "2026-11-20T16:05:37+01:00",
+    "publisher": "Stadt Winterthur",
+    "layer": "Parkkartenzone",
+    "offerings": [
+     {
+      "code": "http://www.opengis.net/spec/owc-geojson/1.0/req/wms",
+      "operations": [
+       {
+        "code": "GetCapabilities",
+        "method": "GET",
+        "type": "application/xml",
+        "href": "https://stadtplan.winterthur.ch/wms/Parkkartenzonen?SERVICE=WMS&REQUEST=GetCapabilities"
+       }
+      ]
+     }
+    ]
+   }
+  }
+ ]
+}

@@ -1,0 +1,619 @@
+{
+ "type": "FeatureCollection",
+ "id": "https://davidoesch.github.io/geoservice_harvester_poc/data/topics/gewassernetz.ows.json",
+ "properties": {
+  "lang": "de",
+  "title": "Gewässernetz",
+  "updated": "2026-11-20T16:05:37+01:00",
+  "subtitle": "GeoHarvester topic: 12 providers",
+  "links": {
+   "profiles": [
+    {
+     "href": "http://www.opengis.net/spec/owc-geojson/1.0/req/core"
+    }
+   ]
+  }
+ },
+ "features": [
+  {
+   "type": "Feature",
+   "id": "https://wms.geo.admin.ch/#ch.swisstopo.vec200-hydrography",
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       3.33,
+       44.075
+      ],
+      [
+       14.278,
+       44.075
+      ],
+      [
+       14.278,
+       49.2
+      ],
+      [
+       3.33,
+       49.2
+      ],
+      [
+       3.33,
+       44.075
+      ]
+     ]
+    ]
+   },
+   "properties": {
+    "title": "Gewässernetz swissTLMRegio",
+    "updated": "2026-11-20T16:05:37+01:00",
+    "publisher": "Bund (geo.admin.ch)",
+    "layer": "ch.swisstopo.vec200-hydrography",
+    "offerings": [
+     {
+      "code": "http://www.opengis.net/spec/owc-geojson/1.0/req/wms",
+      "operations": [
+       {
+        "code": "GetCapabilities",
+        "method": "GET",
+        "type": "application/xml",
+        "href": "https://wms.geo.admin.ch/?SERVICE=WMS&REQUEST=GetCapabilities"
+       }
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": "https://www.geoportal.ch/services/wms/ktai#ch.geoportal.gewaesser.43.0.gewaessernetz_1200000_kt",
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       9.297,
+       47.225
+      ],
+      [
+       9.632,
+       47.225
+      ],
+      [
+       9.632,
+       47.453
+      ],
+      [
+       9.297,
+       47.453
+      ],
+      [
+       9.297,
+       47.225
+      ]
+     ]
+    ]
+   },
+   "properties": {
+    "title": "Gewässernetz 1:200000 Kt",
+    "updated": "2026-11-20T16:05:37+01:00",
+    "publisher": "Kanton Appenzell Innerrhoden",
+    "layer": "ch.geoportal.gewaesser.43.0.gewaessernetz_1200000_kt",
+    "offerings": [
+     {
+      "code": "http://www.opengis.net/spec/owc-geojson/1.0/req/wms",
+      "operations": [
+       {
+        "code": "GetCapabilities",
+        "method": "GET",
+        "type": "application/xml",
+        "href": "https://www.geoportal.ch/services/wms/ktai?SERVICE=WMS&REQUEST=GetCapabilities"
+       }
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": "https://www.geoportal.ch/services/wms/ktar#ch.geoportal.gewaesser.43.0.gewaessernetz_1200000_kt",
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       9.178,
+       47.238
+      ],
+      [
+       9.644,
+       47.238
+      ],
+      [
+       9.644,
+       47.478
+      ],
+      [
+       9.178,
+       47.478
+      ],
+      [
+       9.178,
+       47.238
+      ]
+     ]
+    ]
+   },
+   "properties": {
+    "title": "Gewässernetz 1:200000 Kt",
+    "updated": "2026-11-20T16:05:37+01:00",
+    "publisher": "Kanton Appenzell Ausserrhoden",
+    "layer": "ch.geoportal.gewaesser.43.0.gewaessernetz_1200000_kt",
+    "offerings": [
+     {
+      "code": "http://www.opengis.net/spec/owc-geojson/1.0/req/wms",
+      "operations": [
+       {
+        "code": "GetCapabilities",
+        "method": "GET",
+        "type": "application/xml",
+        "href": "https://www.geoportal.ch/services/wms/ktar?SERVICE=WMS&REQUEST=GetCapabilities"
+       }
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": "https://www.geoservice.apps.be.ch/geoservice3/services/a42geo/of_inlandwaters01_de_ms_wms/MapServer/WMSServer#GNBE_GNBEAB_VW_21946",
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       6.839,
+       46.322
+      ],
+      [
+       8.473,
+       46.322
+      ],
+      [
+       8.473,
+       47.348
+      ],
+      [
+       6.839,
+       47.348
+      ],
+      [
+       6.839,
+       46.322
+      ]
+     ]
+    ]
+   },
+   "properties": {
+    "title": "Gewässernetz, Hochwasserentlastung",
+    "updated": "2026-11-20T16:05:37+01:00",
+    "publisher": "Kanton Bern",
+    "layer": "GNBE_GNBEAB_VW_21946",
+    "offerings": [
+     {
+      "code": "http://www.opengis.net/spec/owc-geojson/1.0/req/wms",
+      "operations": [
+       {
+        "code": "GetCapabilities",
+        "method": "GET",
+        "type": "application/xml",
+        "href": "https://www.geoservice.apps.be.ch/geoservice3/services/a42geo/of_inlandwaters01_de_ms_wms/MapServer/WMSServer?SERVICE=WMS&REQUEST=GetCapabilities"
+       }
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": "https://geowms.bl.ch/#gewaessernetz_hauptgewaesser",
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       7.306,
+       47.309
+      ],
+      [
+       8.037,
+       47.309
+      ],
+      [
+       8.037,
+       47.626
+      ],
+      [
+       7.306,
+       47.626
+      ],
+      [
+       7.306,
+       47.309
+      ]
+     ]
+    ]
+   },
+   "properties": {
+    "title": "Gewässernetz Hauptgewässer",
+    "updated": "2026-11-20T16:05:37+01:00",
+    "publisher": "Kanton Basel-Landschaft",
+    "layer": "gewaessernetz_hauptgewaesser",
+    "offerings": [
+     {
+      "code": "http://www.opengis.net/spec/owc-geojson/1.0/req/wms",
+      "operations": [
+       {
+        "code": "GetCapabilities",
+        "method": "GET",
+        "type": "application/xml",
+        "href": "https://geowms.bl.ch/?SERVICE=WMS&REQUEST=GetCapabilities"
+       }
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": "https://wms.geo.bs.ch/#Gewässernetz",
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       7.239,
+       47.264
+      ],
+      [
+       8.105,
+       47.264
+      ],
+      [
+       8.105,
+       47.761
+      ],
+      [
+       7.239,
+       47.761
+      ],
+      [
+       7.239,
+       47.264
+      ]
+     ]
+    ]
+   },
+   "properties": {
+    "title": "Gewässernetz",
+    "updated": "2026-11-20T16:05:37+01:00",
+    "publisher": "Kanton Basel-Stadt",
+    "layer": "Gewässernetz",
+    "offerings": [
+     {
+      "code": "http://www.opengis.net/spec/owc-geojson/1.0/req/wms",
+      "operations": [
+       {
+        "code": "GetCapabilities",
+        "method": "GET",
+        "type": "application/xml",
+        "href": "https://wms.geo.bs.ch/?SERVICE=WMS&REQUEST=GetCapabilities"
+       }
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": "https://www.gis-daten.ch/wms/nw/service#ch.nw.planung-revitalisierung-fliessgewaesser-gewaessernetz-2012",
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       8.007,
+       46.689
+      ],
+      [
+       8.786,
+       46.689
+      ],
+      [
+       8.786,
+       47.101
+      ],
+      [
+       8.007,
+       47.101
+      ],
+      [
+       8.007,
+       46.689
+      ]
+     ]
+    ]
+   },
+   "properties": {
+    "title": "Gewässernetz Stand 2012",
+    "updated": "2026-11-20T16:05:37+01:00",
+    "publisher": "Kanton Nidwalden",
+    "layer": "ch.nw.planung-revitalisierung-fliessgewaesser-gewaessernetz-2012",
+    "offerings": [
+     {
+      "code": "http://www.opengis.net/spec/owc-geojson/1.0/req/wms",
+      "operations": [
+       {
+        "code": "GetCapabilities",
+        "method": "GET",
+        "type": "application/xml",
+        "href": "https://www.gis-daten.ch/wms/nw/service?SERVICE=WMS&REQUEST=GetCapabilities"
+       }
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": "https://www.gis-daten.ch/wms/ow/service#ch.ow.planung-revitalisierung-fliessgewaesser-gewaessernetz-2012",
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       8.007,
+       46.689
+      ],
+      [
+       8.786,
+       46.689
+      ],
+      [
+       8.786,
+       47.101
+      ],
+      [
+       8.007,
+       47.101
+      ],
+      [
+       8.007,
+       46.689
+      ]
+     ]
+    ]
+   },
+   "properties": {
+    "title": "Gewässernetz Stand 2012",
+    "updated": "2026-11-20T16:05:37+01:00",
+    "publisher": "Kanton Obwalden",
+    "layer": "ch.ow.planung-revitalisierung-fliessgewaesser-gewaessernetz-2012",
+    "offerings": [
+     {
+      "code": "http://www.opengis.net/spec/owc-geojson/1.0/req/wms",
+      "operations": [
+       {
+        "code": "GetCapabilities",
+        "method": "GET",
+        "type": "application/xml",
+        "href": "https://www.gis-daten.ch/wms/ow/service?SERVICE=WMS&REQUEST=GetCapabilities"
+       }
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": "https://wms.geo.sh.ch/wms#sh.gewaesser.gewaessernetz",
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       8.223,
+       47.546
+      ],
+      [
+       9.109,
+       47.546
+      ],
+      [
+       9.109,
+       47.866
+      ],
+      [
+       8.223,
+       47.866
+      ],
+      [
+       8.223,
+       47.546
+      ]
+     ]
+    ]
+   },
+   "properties": {
+    "title": "Gewässernetz",
+    "updated": "2026-11-20T16:05:37+01:00",
+    "publisher": "Kanton Schaffhausen",
+    "layer": "sh.gewaesser.gewaessernetz",
+    "offerings": [
+     {
+      "code": "http://www.opengis.net/spec/owc-geojson/1.0/req/wms",
+      "operations": [
+       {
+        "code": "GetCapabilities",
+        "method": "GET",
+        "type": "application/xml",
+        "href": "https://wms.geo.sh.ch/wms?SERVICE=WMS&REQUEST=GetCapabilities"
+       }
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": "https://map.geo.sz.ch/mapserv_proxy#ch.sz.a041b.gewaessernetz",
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       5.697,
+       45.553
+      ],
+      [
+       10.923,
+       45.553
+      ],
+      [
+       10.923,
+       48.032
+      ],
+      [
+       5.697,
+       48.032
+      ],
+      [
+       5.697,
+       45.553
+      ]
+     ]
+    ]
+   },
+   "properties": {
+    "title": "Gewässernetz",
+    "updated": "2026-11-20T16:05:37+01:00",
+    "publisher": "Kanton Schwyz",
+    "layer": "ch.sz.a041b.gewaessernetz",
+    "offerings": [
+     {
+      "code": "http://www.opengis.net/spec/owc-geojson/1.0/req/wms",
+      "operations": [
+       {
+        "code": "GetCapabilities",
+        "method": "GET",
+        "type": "application/xml",
+        "href": "https://map.geo.sz.ch/mapserv_proxy?SERVICE=WMS&REQUEST=GetCapabilities"
+       }
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": "https://geo.ur.ch/wms#gewaesser:gewaessernetz_linien",
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       8.412,
+       46.531
+      ],
+      [
+       8.952,
+       46.531
+      ],
+      [
+       8.952,
+       46.989
+      ],
+      [
+       8.412,
+       46.989
+      ],
+      [
+       8.412,
+       46.531
+      ]
+     ]
+    ]
+   },
+   "properties": {
+    "title": "Gewässernetz Gewässerverlauf",
+    "updated": "2026-11-20T16:05:37+01:00",
+    "publisher": "Kanton Uri",
+    "layer": "gewaesser:gewaessernetz_linien",
+    "offerings": [
+     {
+      "code": "http://www.opengis.net/spec/owc-geojson/1.0/req/wms",
+      "operations": [
+       {
+        "code": "GetCapabilities",
+        "method": "GET",
+        "type": "application/xml",
+        "href": "https://geo.ur.ch/wms?SERVICE=WMS&REQUEST=GetCapabilities"
+       }
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": "https://services.geo.zg.ch/ows/gewaessernetz#zg_gewaessernetz_abschnitte",
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       8.392,
+       47.081
+      ],
+      [
+       8.703,
+       47.081
+      ],
+      [
+       8.703,
+       47.248
+      ],
+      [
+       8.392,
+       47.248
+      ],
+      [
+       8.392,
+       47.081
+      ]
+     ]
+    ]
+   },
+   "properties": {
+    "title": "Gewässernetz (Gewässerabschnitte)",
+    "updated": "2026-11-20T16:05:37+01:00",
+    "publisher": "Kanton Zug",
+    "layer": "zg_gewaessernetz_abschnitte",
+    "offerings": [
+     {
+      "code": "http://www.opengis.net/spec/owc-geojson/1.0/req/wms",
+      "operations": [
+       {
+        "code": "GetCapabilities",
+        "method": "GET",
+        "type": "application/xml",
+        "href": "https://services.geo.zg.ch/ows/gewaessernetz?SERVICE=WMS&REQUEST=GetCapabilities"
+       }
+      ]
+     }
+    ]
+   }
+  }
+ ]
+}

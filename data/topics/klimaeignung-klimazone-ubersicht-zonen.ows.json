@@ -1,0 +1,119 @@
+{
+ "type": "FeatureCollection",
+ "id": "https://davidoesch.github.io/geoservice_harvester_poc/data/topics/klimaeignung-klimazone-ubersicht-zonen.ows.json",
+ "properties": {
+  "lang": "de",
+  "title": "Klimaeignung: Klimazone Übersicht (Zonen)",
+  "updated": "2026-11-20T16:13:33+01:00",
+  "subtitle": "GeoHarvester topic: 2 providers",
+  "links": {
+   "profiles": [
+    {
+     "href": "http://www.opengis.net/spec/owc-geojson/1.0/req/core"
+    }
+   ]
+  }
+ },
+ "features": [
+  {
+   "type": "Feature",
+   "id": "https://www.ogd.stadt-zuerich.ch/wms/geoportal/Fachplanung_Hitzeminderung_OGD#Freiräume klimarelevant entwickeln_OGD",
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       8.471,
+       47.333
+      ],
+      [
+       8.59,
+       47.333
+      ],
+      [
+       8.59,
+       47.432
+      ],
+      [
+       8.471,
+       47.432
+      ],
+      [
+       8.471,
+       47.333
+      ]
+     ]
+    ]
+   },
+   "properties": {
+    "title": "Freiräume klimarelevant entwickeln_OGD",
+    "updated": "2026-11-20T16:13:33+01:00",
+    "publisher": "Stadt Zürich",
+    "layer": "Freiräume klimarelevant entwickeln_OGD",
+    "offerings": [
+     {
+      "code": "http://www.opengis.net/spec/owc-geojson/1.0/req/wms",
+      "operations": [
+       {
+        "code": "GetCapabilities",
+        "method": "GET",
+        "type": "application/xml",
+        "href": "https://www.ogd.stadt-zuerich.ch/wms/geoportal/Fachplanung_Hitzeminderung_OGD?SERVICE=WMS&REQUEST=GetCapabilities"
+       }
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": "https://map.geo.sz.ch/mapserv_proxy#ch.sz.a031.klimaeignung.uebersicht",
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       8.345,
+       46.878
+      ],
+      [
+       9.051,
+       46.878
+      ],
+      [
+       9.051,
+       47.237
+      ],
+      [
+       8.345,
+       47.237
+      ],
+      [
+       8.345,
+       46.878
+      ]
+     ]
+    ]
+   },
+   "properties": {
+    "title": "Klimaeignung: Klimazone Übersicht (Zonen)",
+    "updated": "2026-11-20T16:13:33+01:00",
+    "publisher": "Kanton Schwyz",
+    "layer": "ch.sz.a031.klimaeignung.uebersicht",
+    "offerings": [
+     {
+      "code": "http://www.opengis.net/spec/owc-geojson/1.0/req/wms",
+      "operations": [
+       {
+        "code": "GetCapabilities",
+        "method": "GET",
+        "type": "application/xml",
+        "href": "https://map.geo.sz.ch/mapserv_proxy?SERVICE=WMS&REQUEST=GetCapabilities"
+       }
+      ]
+     }
+    ]
+   }
+  }
+ ]
+}

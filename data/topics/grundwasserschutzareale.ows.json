@@ -1,0 +1,319 @@
+{
+ "type": "FeatureCollection",
+ "id": "https://davidoesch.github.io/geoservice_harvester_poc/data/topics/grundwasserschutzareale.ows.json",
+ "properties": {
+  "lang": "de",
+  "title": "Grundwasserschutzareale",
+  "updated": "2026-11-20T16:05:37+01:00",
+  "subtitle": "GeoHarvester topic: 6 providers",
+  "links": {
+   "profiles": [
+    {
+     "href": "http://www.opengis.net/spec/owc-geojson/1.0/req/core"
+    }
+   ]
+  }
+ },
+ "features": [
+  {
+   "type": "Feature",
+   "id": "https://geodienste.ch/db/planerischer_gewaesserschutz_v1_1_1/deu#grundwasserschutzareale",
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       5.703,
+       45.74
+      ],
+      [
+       10.645,
+       45.74
+      ],
+      [
+       10.645,
+       47.852
+      ],
+      [
+       5.703,
+       47.852
+      ],
+      [
+       5.703,
+       45.74
+      ]
+     ]
+    ]
+   },
+   "properties": {
+    "title": "Grundwasserschutzareale",
+    "updated": "2026-11-20T16:05:37+01:00",
+    "publisher": "geodienste.ch (kantonsübergreifend)",
+    "layer": "grundwasserschutzareale",
+    "offerings": [
+     {
+      "code": "http://www.opengis.net/spec/owc-geojson/1.0/req/wms",
+      "operations": [
+       {
+        "code": "GetCapabilities",
+        "method": "GET",
+        "type": "application/xml",
+        "href": "https://geodienste.ch/db/planerischer_gewaesserschutz_v1_1_1/deu?SERVICE=WMS&REQUEST=GetCapabilities"
+       }
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": "https://wms.geo.ag.ch/public/ows#ch_ag_geo_afu_gwsareal",
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       7.681,
+       47.161
+      ],
+      [
+       8.546,
+       47.161
+      ],
+      [
+       8.546,
+       47.702
+      ],
+      [
+       7.681,
+       47.702
+      ],
+      [
+       7.681,
+       47.161
+      ]
+     ]
+    ]
+   },
+   "properties": {
+    "title": "Grundwasserschutzareale",
+    "updated": "2026-11-20T16:05:37+01:00",
+    "publisher": "Kanton Aargau",
+    "layer": "ch_ag_geo_afu_gwsareal",
+    "offerings": [
+     {
+      "code": "http://www.opengis.net/spec/owc-geojson/1.0/req/wms",
+      "operations": [
+       {
+        "code": "GetCapabilities",
+        "method": "GET",
+        "type": "application/xml",
+        "href": "https://wms.geo.ag.ch/public/ows?SERVICE=WMS&REQUEST=GetCapabilities"
+       }
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": "https://oerebservice.apps.be.ch/cgi-bin/mapserv.fcgi?map=oereb_de#geodb.gsk25_gsk_areal",
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       6.781,
+       46.234
+      ],
+      [
+       8.617,
+       46.234
+      ],
+      [
+       8.617,
+       47.379
+      ],
+      [
+       6.781,
+       47.379
+      ],
+      [
+       6.781,
+       46.234
+      ]
+     ]
+    ]
+   },
+   "properties": {
+    "title": "Grundwasserschutzareale",
+    "updated": "2026-11-20T16:05:37+01:00",
+    "publisher": "Kanton Bern",
+    "layer": "geodb.gsk25_gsk_areal",
+    "offerings": [
+     {
+      "code": "http://www.opengis.net/spec/owc-geojson/1.0/req/wms",
+      "operations": [
+       {
+        "code": "GetCapabilities",
+        "method": "GET",
+        "type": "application/xml",
+        "href": "https://oerebservice.apps.be.ch/cgi-bin/mapserv.fcgi?map=oereb_de&SERVICE=WMS&REQUEST=GetCapabilities"
+       }
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": "https://services.geo.sg.ch/wss/service/SG00013_WMS/guest#Grundwasserschutzareale",
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       8.831,
+       46.999
+      ],
+      [
+       9.614,
+       46.999
+      ],
+      [
+       9.614,
+       47.488
+      ],
+      [
+       8.831,
+       47.488
+      ],
+      [
+       8.831,
+       46.999
+      ]
+     ]
+    ]
+   },
+   "properties": {
+    "title": "Grundwasserschutzareale",
+    "updated": "2026-11-20T16:05:37+01:00",
+    "publisher": "Kanton St. Gallen",
+    "layer": "Grundwasserschutzareale",
+    "offerings": [
+     {
+      "code": "http://www.opengis.net/spec/owc-geojson/1.0/req/wms",
+      "operations": [
+       {
+        "code": "GetCapabilities",
+        "method": "GET",
+        "type": "application/xml",
+        "href": "https://services.geo.sg.ch/wss/service/SG00013_WMS/guest?SERVICE=WMS&REQUEST=GetCapabilities"
+       }
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": "https://geo.so.ch/wms/oereb#ch.Grundwasserschutzareale",
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       7.583,
+       47.163
+      ],
+      [
+       7.977,
+       47.163
+      ],
+      [
+       7.977,
+       47.363
+      ],
+      [
+       7.583,
+       47.363
+      ],
+      [
+       7.583,
+       47.163
+      ]
+     ]
+    ]
+   },
+   "properties": {
+    "title": "Grundwasserschutzareale",
+    "updated": "2026-11-20T16:05:37+01:00",
+    "publisher": "Kanton Solothurn",
+    "layer": "ch.Grundwasserschutzareale",
+    "offerings": [
+     {
+      "code": "http://www.opengis.net/spec/owc-geojson/1.0/req/wms",
+      "operations": [
+       {
+        "code": "GetCapabilities",
+        "method": "GET",
+        "type": "application/xml",
+        "href": "https://geo.so.ch/wms/oereb?SERVICE=WMS&REQUEST=GetCapabilities"
+       }
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": "https://wms.zh.ch/ARPOerebZHWMS#grundwasserschutzareale",
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       8.157,
+       47.142
+      ],
+      [
+       9.042,
+       47.142
+      ],
+      [
+       9.042,
+       47.848
+      ],
+      [
+       8.157,
+       47.848
+      ],
+      [
+       8.157,
+       47.142
+      ]
+     ]
+    ]
+   },
+   "properties": {
+    "title": "Grundwasserschutzareale",
+    "updated": "2026-11-20T16:05:37+01:00",
+    "publisher": "Kanton Zürich",
+    "layer": "grundwasserschutzareale",
+    "offerings": [
+     {
+      "code": "http://www.opengis.net/spec/owc-geojson/1.0/req/wms",
+      "operations": [
+       {
+        "code": "GetCapabilities",
+        "method": "GET",
+        "type": "application/xml",
+        "href": "https://wms.zh.ch/ARPOerebZHWMS?SERVICE=WMS&REQUEST=GetCapabilities"
+       }
+      ]
+     }
+    ]
+   }
+  }
+ ]
+}

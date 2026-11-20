@@ -1,0 +1,169 @@
+{
+ "type": "FeatureCollection",
+ "id": "https://davidoesch.github.io/geoservice_harvester_poc/data/topics/liegenschaft-flache.ows.json",
+ "properties": {
+  "lang": "de",
+  "title": "Liegenschaft Fläche",
+  "updated": "2026-11-20T16:05:37+01:00",
+  "subtitle": "GeoHarvester topic: 3 providers",
+  "links": {
+   "profiles": [
+    {
+     "href": "http://www.opengis.net/spec/owc-geojson/1.0/req/core"
+    }
+   ]
+  }
+ },
+ "features": [
+  {
+   "type": "Feature",
+   "id": "https://www.geoservice.apps.be.ch/geoservice3/services/a42geo/of_boundaries01_de_ms_wms/MapServer/WMSServer#ADMWABT_WABT5_VW_14721",
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       6.86,
+       46.323
+      ],
+      [
+       8.469,
+       46.323
+      ],
+      [
+       8.469,
+       47.347
+      ],
+      [
+       6.86,
+       47.347
+      ],
+      [
+       6.86,
+       46.323
+      ]
+     ]
+    ]
+   },
+   "properties": {
+    "title": "Waldabteilungen, Fläche",
+    "updated": "2026-11-20T16:05:37+01:00",
+    "publisher": "Kanton Bern",
+    "layer": "ADMWABT_WABT5_VW_14721",
+    "offerings": [
+     {
+      "code": "http://www.opengis.net/spec/owc-geojson/1.0/req/wms",
+      "operations": [
+       {
+        "code": "GetCapabilities",
+        "method": "GET",
+        "type": "application/xml",
+        "href": "https://www.geoservice.apps.be.ch/geoservice3/services/a42geo/of_boundaries01_de_ms_wms/MapServer/WMSServer?SERVICE=WMS&REQUEST=GetCapabilities"
+       }
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": "https://map.geo.sz.ch/mapserv_proxy#ch.sz.a018.amtliche_vermessung.liegenschaften.liegenschaft.polygon_oereb",
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       8.345,
+       46.878
+      ],
+      [
+       9.051,
+       46.878
+      ],
+      [
+       9.051,
+       47.237
+      ],
+      [
+       8.345,
+       47.237
+      ],
+      [
+       8.345,
+       46.878
+      ]
+     ]
+    ]
+   },
+   "properties": {
+    "title": "Liegenschaft Flächen , ÖREB",
+    "updated": "2026-11-20T16:05:37+01:00",
+    "publisher": "Kanton Schwyz",
+    "layer": "ch.sz.a018.amtliche_vermessung.liegenschaften.liegenschaft.polygon_oereb",
+    "offerings": [
+     {
+      "code": "http://www.opengis.net/spec/owc-geojson/1.0/req/wms",
+      "operations": [
+       {
+        "code": "GetCapabilities",
+        "method": "GET",
+        "type": "application/xml",
+        "href": "https://map.geo.sz.ch/mapserv_proxy?SERVICE=WMS&REQUEST=GetCapabilities"
+       }
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": "https://services.geo.zg.ch/ows/Grundbuchplan#zg.av_liegensch_fl",
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       8.392,
+       47.08
+      ],
+      [
+       8.703,
+       47.08
+      ],
+      [
+       8.703,
+       47.248
+      ],
+      [
+       8.392,
+       47.248
+      ],
+      [
+       8.392,
+       47.08
+      ]
+     ]
+    ]
+   },
+   "properties": {
+    "title": "Liegenschaft Fläche",
+    "updated": "2026-11-20T16:05:37+01:00",
+    "publisher": "Kanton Zug",
+    "layer": "zg.av_liegensch_fl",
+    "offerings": [
+     {
+      "code": "http://www.opengis.net/spec/owc-geojson/1.0/req/wms",
+      "operations": [
+       {
+        "code": "GetCapabilities",
+        "method": "GET",
+        "type": "application/xml",
+        "href": "https://services.geo.zg.ch/ows/Grundbuchplan?SERVICE=WMS&REQUEST=GetCapabilities"
+       }
+      ]
+     }
+    ]
+   }
+  }
+ ]
+}

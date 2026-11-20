@@ -1,0 +1,519 @@
+{
+ "type": "FeatureCollection",
+ "id": "https://davidoesch.github.io/geoservice_harvester_poc/data/topics/gewasserschutzkarte.ows.json",
+ "properties": {
+  "lang": "de",
+  "title": "Gewässerschutzkarte",
+  "updated": "2026-11-20T16:05:37+01:00",
+  "subtitle": "GeoHarvester topic: 10 providers",
+  "links": {
+   "profiles": [
+    {
+     "href": "http://www.opengis.net/spec/owc-geojson/1.0/req/core"
+    }
+   ]
+  }
+ },
+ "features": [
+  {
+   "type": "Feature",
+   "id": "https://wms.geo.admin.ch/#ch.bafu.hydroweb-warnkarte_national",
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       3.33,
+       44.075
+      ],
+      [
+       14.278,
+       44.075
+      ],
+      [
+       14.278,
+       49.2
+      ],
+      [
+       3.33,
+       49.2
+      ],
+      [
+       3.33,
+       44.075
+      ]
+     ]
+    ]
+   },
+   "properties": {
+    "title": "Hochwasserwarnkarte",
+    "updated": "2026-11-20T16:05:37+01:00",
+    "publisher": "Bund (geo.admin.ch)",
+    "layer": "ch.bafu.hydroweb-warnkarte_national",
+    "offerings": [
+     {
+      "code": "http://www.opengis.net/spec/owc-geojson/1.0/req/wms",
+      "operations": [
+       {
+        "code": "GetCapabilities",
+        "method": "GET",
+        "type": "application/xml",
+        "href": "https://wms.geo.admin.ch/?SERVICE=WMS&REQUEST=GetCapabilities"
+       }
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": "https://geodienste.ch/db/planerischer_gewaesserschutz_v1_2_0/deu#gewaesserschutzkarte",
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       5.703,
+       45.74
+      ],
+      [
+       10.645,
+       45.74
+      ],
+      [
+       10.645,
+       47.852
+      ],
+      [
+       5.703,
+       47.852
+      ],
+      [
+       5.703,
+       45.74
+      ]
+     ]
+    ]
+   },
+   "properties": {
+    "title": "Gewässerschutzkarte",
+    "updated": "2026-11-20T16:05:37+01:00",
+    "publisher": "geodienste.ch (kantonsübergreifend)",
+    "layer": "gewaesserschutzkarte",
+    "offerings": [
+     {
+      "code": "http://www.opengis.net/spec/owc-geojson/1.0/req/wms",
+      "operations": [
+       {
+        "code": "GetCapabilities",
+        "method": "GET",
+        "type": "application/xml",
+        "href": "https://geodienste.ch/db/planerischer_gewaesserschutz_v1_2_0/deu?SERVICE=WMS&REQUEST=GetCapabilities"
+       }
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": "https://www.geoportal.ch/services/wms/ktai#ch.geoportal.gewaesser.30.0.gewaesserschutzkarte_kt",
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       9.297,
+       47.225
+      ],
+      [
+       9.632,
+       47.225
+      ],
+      [
+       9.632,
+       47.453
+      ],
+      [
+       9.297,
+       47.453
+      ],
+      [
+       9.297,
+       47.225
+      ]
+     ]
+    ]
+   },
+   "properties": {
+    "title": "Gewässerschutzkarte Kt",
+    "updated": "2026-11-20T16:05:37+01:00",
+    "publisher": "Kanton Appenzell Innerrhoden",
+    "layer": "ch.geoportal.gewaesser.30.0.gewaesserschutzkarte_kt",
+    "offerings": [
+     {
+      "code": "http://www.opengis.net/spec/owc-geojson/1.0/req/wms",
+      "operations": [
+       {
+        "code": "GetCapabilities",
+        "method": "GET",
+        "type": "application/xml",
+        "href": "https://www.geoportal.ch/services/wms/ktai?SERVICE=WMS&REQUEST=GetCapabilities"
+       }
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": "https://www.geoportal.ch/services/wms/ktar#ch.geoportal.gewaesser.30.0.gewaesserschutzkarte_kt",
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       9.178,
+       47.238
+      ],
+      [
+       9.644,
+       47.238
+      ],
+      [
+       9.644,
+       47.478
+      ],
+      [
+       9.178,
+       47.478
+      ],
+      [
+       9.178,
+       47.238
+      ]
+     ]
+    ]
+   },
+   "properties": {
+    "title": "Gewässerschutzkarte Kt",
+    "updated": "2026-11-20T16:05:37+01:00",
+    "publisher": "Kanton Appenzell Ausserrhoden",
+    "layer": "ch.geoportal.gewaesser.30.0.gewaesserschutzkarte_kt",
+    "offerings": [
+     {
+      "code": "http://www.opengis.net/spec/owc-geojson/1.0/req/wms",
+      "operations": [
+       {
+        "code": "GetCapabilities",
+        "method": "GET",
+        "type": "application/xml",
+        "href": "https://www.geoportal.ch/services/wms/ktar?SERVICE=WMS&REQUEST=GetCapabilities"
+       }
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": "https://geowms.bl.ch/#grundwasserschutzareale",
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       7.306,
+       47.309
+      ],
+      [
+       8.037,
+       47.309
+      ],
+      [
+       8.037,
+       47.626
+      ],
+      [
+       7.306,
+       47.626
+      ],
+      [
+       7.306,
+       47.309
+      ]
+     ]
+    ]
+   },
+   "properties": {
+    "title": "Gewässerschutzkarte Grundwasserschutzareale",
+    "updated": "2026-11-20T16:05:37+01:00",
+    "publisher": "Kanton Basel-Landschaft",
+    "layer": "grundwasserschutzareale",
+    "offerings": [
+     {
+      "code": "http://www.opengis.net/spec/owc-geojson/1.0/req/wms",
+      "operations": [
+       {
+        "code": "GetCapabilities",
+        "method": "GET",
+        "type": "application/xml",
+        "href": "https://geowms.bl.ch/?SERVICE=WMS&REQUEST=GetCapabilities"
+       }
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": "https://wms.geo.bs.ch/#ch.bs.gewaesserschutzkarte_gwsk.gewaesserschutzbereich",
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       7.548,
+       47.515
+      ],
+      [
+       7.7,
+       47.515
+      ],
+      [
+       7.7,
+       47.606
+      ],
+      [
+       7.548,
+       47.606
+      ],
+      [
+       7.548,
+       47.515
+      ]
+     ]
+    ]
+   },
+   "properties": {
+    "title": "Gewässerschutzkarten - Gewässerschutzbereich",
+    "updated": "2026-11-20T16:05:37+01:00",
+    "publisher": "Kanton Basel-Stadt",
+    "layer": "ch.bs.gewaesserschutzkarte_gwsk.gewaesserschutzbereich",
+    "offerings": [
+     {
+      "code": "http://www.opengis.net/spec/owc-geojson/1.0/req/wms",
+      "operations": [
+       {
+        "code": "GetCapabilities",
+        "method": "GET",
+        "type": "application/xml",
+        "href": "https://wms.geo.bs.ch/?SERVICE=WMS&REQUEST=GetCapabilities"
+       }
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": "https://wms.geo.gr.ch/gewaesserschutz#WMS_Gewaesserschutz",
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       8.615,
+       45.994
+      ],
+      [
+       10.547,
+       45.994
+      ],
+      [
+       10.547,
+       47.324
+      ],
+      [
+       8.615,
+       47.324
+      ],
+      [
+       8.615,
+       45.994
+      ]
+     ]
+    ]
+   },
+   "properties": {
+    "title": "Kanton Graubünden, Gewässerschutzkarte",
+    "updated": "2026-11-20T16:05:37+01:00",
+    "publisher": "Kanton Graubünden",
+    "layer": "WMS_Gewaesserschutz",
+    "offerings": [
+     {
+      "code": "http://www.opengis.net/spec/owc-geojson/1.0/req/wms",
+      "operations": [
+       {
+        "code": "GetCapabilities",
+        "method": "GET",
+        "type": "application/xml",
+        "href": "https://wms.geo.gr.ch/gewaesserschutz?SERVICE=WMS&REQUEST=GetCapabilities"
+       }
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": "https://wms.geo.sh.ch/wms#sh.gewaesserschutzkarte.anreicherungsanlage",
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       8.048,
+       47.433
+      ],
+      [
+       9.193,
+       47.433
+      ],
+      [
+       9.193,
+       47.984
+      ],
+      [
+       8.048,
+       47.984
+      ],
+      [
+       8.048,
+       47.433
+      ]
+     ]
+    ]
+   },
+   "properties": {
+    "title": "Gewässerschutzkarte Anreicherungsanlage",
+    "updated": "2026-11-20T16:05:37+01:00",
+    "publisher": "Kanton Schaffhausen",
+    "layer": "sh.gewaesserschutzkarte.anreicherungsanlage",
+    "offerings": [
+     {
+      "code": "http://www.opengis.net/spec/owc-geojson/1.0/req/wms",
+      "operations": [
+       {
+        "code": "GetCapabilities",
+        "method": "GET",
+        "type": "application/xml",
+        "href": "https://wms.geo.sh.ch/wms?SERVICE=WMS&REQUEST=GetCapabilities"
+       }
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": "https://ows.geo.tg.ch/geofy_access_proxy/gewaesserschutzkarte#Gewaesserschutz",
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       8.631,
+       47.348
+      ],
+      [
+       9.505,
+       47.348
+      ],
+      [
+       9.505,
+       47.711
+      ],
+      [
+       8.631,
+       47.711
+      ],
+      [
+       8.631,
+       47.348
+      ]
+     ]
+    ]
+   },
+   "properties": {
+    "title": "Gewässerschutzkarte",
+    "updated": "2026-11-20T16:05:37+01:00",
+    "publisher": "Kanton Thurgau",
+    "layer": "Gewaesserschutz",
+    "offerings": [
+     {
+      "code": "http://www.opengis.net/spec/owc-geojson/1.0/req/wms",
+      "operations": [
+       {
+        "code": "GetCapabilities",
+        "method": "GET",
+        "type": "application/xml",
+        "href": "https://ows.geo.tg.ch/geofy_access_proxy/gewaesserschutzkarte?SERVICE=WMS&REQUEST=GetCapabilities"
+       }
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": "https://wms.zh.ch/AWELWWgwsZHWMS#AWELWWgwsZHWMS",
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       8.157,
+       47.142
+      ],
+      [
+       9.042,
+       47.142
+      ],
+      [
+       9.042,
+       47.848
+      ],
+      [
+       8.157,
+       47.848
+      ],
+      [
+       8.157,
+       47.142
+      ]
+     ]
+    ]
+   },
+   "properties": {
+    "title": "Gewässerschutzkarte",
+    "updated": "2026-11-20T16:05:37+01:00",
+    "publisher": "Kanton Zürich",
+    "layer": "AWELWWgwsZHWMS",
+    "offerings": [
+     {
+      "code": "http://www.opengis.net/spec/owc-geojson/1.0/req/wms",
+      "operations": [
+       {
+        "code": "GetCapabilities",
+        "method": "GET",
+        "type": "application/xml",
+        "href": "https://wms.zh.ch/AWELWWgwsZHWMS?SERVICE=WMS&REQUEST=GetCapabilities"
+       }
+      ]
+     }
+    ]
+   }
+  }
+ ]
+}

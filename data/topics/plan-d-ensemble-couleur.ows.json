@@ -1,0 +1,119 @@
+{
+ "type": "FeatureCollection",
+ "id": "https://davidoesch.github.io/geoservice_harvester_poc/data/topics/plan-d-ensemble-couleur.ows.json",
+ "properties": {
+  "lang": "de",
+  "title": "Plan d'ensemble couleur",
+  "updated": "2026-11-20T16:05:37+01:00",
+  "subtitle": "GeoHarvester topic: 2 providers",
+  "links": {
+   "profiles": [
+    {
+     "href": "http://www.opengis.net/spec/owc-geojson/1.0/req/core"
+    }
+   ]
+  }
+ },
+ "features": [
+  {
+   "type": "Feature",
+   "id": "https://mapqa.geo.fr.ch/arcgis/services/RasterPublic/Plans_historiques/MapServer/WMSServer#Plans_d_ensemble_couleur_1930-19408671",
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       6.766,
+       46.476
+      ],
+      [
+       7.381,
+       46.476
+      ],
+      [
+       7.381,
+       46.988
+      ],
+      [
+       6.766,
+       46.988
+      ],
+      [
+       6.766,
+       46.476
+      ]
+     ]
+    ]
+   },
+   "properties": {
+    "title": "Plans d ensemble couleur 1930-1940",
+    "updated": "2026-11-20T16:05:37+01:00",
+    "publisher": "Kanton Freiburg",
+    "layer": "Plans_d_ensemble_couleur_1930-19408671",
+    "offerings": [
+     {
+      "code": "http://www.opengis.net/spec/owc-geojson/1.0/req/wms",
+      "operations": [
+       {
+        "code": "GetCapabilities",
+        "method": "GET",
+        "type": "application/xml",
+        "href": "https://mapqa.geo.fr.ch/arcgis/services/RasterPublic/Plans_historiques/MapServer/WMSServer?SERVICE=WMS&REQUEST=GetCapabilities"
+       }
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": "https://sitn.ne.ch/services/wmts?SERVICE=WMTS&REQUEST=GetCapabilities#plan_ensemble_couleur",
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       5.01,
+       45.356
+      ],
+      [
+       11.484,
+       45.356
+      ],
+      [
+       11.484,
+       48.387
+      ],
+      [
+       5.01,
+       48.387
+      ],
+      [
+       5.01,
+       45.356
+      ]
+     ]
+    ]
+   },
+   "properties": {
+    "title": "Plan d'ensemble couleur",
+    "updated": "2026-11-20T16:05:37+01:00",
+    "publisher": "Kanton Neuenburg",
+    "layer": "plan_ensemble_couleur",
+    "offerings": [
+     {
+      "code": "http://www.opengis.net/spec/owc-geojson/1.0/req/wmts",
+      "operations": [
+       {
+        "code": "GetCapabilities",
+        "method": "GET",
+        "type": "application/xml",
+        "href": "https://sitn.ne.ch/services/wmts?SERVICE=WMTS&REQUEST=GetCapabilities"
+       }
+      ]
+     }
+    ]
+   }
+  }
+ ]
+}

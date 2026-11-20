@@ -1,0 +1,81 @@
+<!DOCTYPE qgis-layer-definition>
+<qlr>
+  <layer-tree-group expanded="1" checked="Qt::Checked" name="">
+    <layer-tree-group expanded="1" checked="Qt::Checked" name="GeoHarvester – Emissionen alle Linien">
+      <layer-tree-layer expanded="0" checked="Qt::Checked" id="geoharvester_emissionen-alle-linien_0" name="Emissionskataster Luftschadstoffe und Treibhausgase (Zürich)" source="contextualWMSLegend=0&amp;crs=EPSG:2056&amp;dpiMode=7&amp;featureCount=10&amp;format=image/png&amp;layers=Emissionskataster Luftschadstoffe und Treibhausgase&amp;styles&amp;url=https://www.ogd.stadt-zuerich.ch/wms/geoportal/Emissionskataster_Luftschadstoffe_und_Treibhausgase" providerKey="wms"/>
+      <layer-tree-layer expanded="0" checked="Qt::Checked" id="geoharvester_emissionen-alle-linien_1" name="Immissionskataster IST-Zustand (AG)" source="contextualWMSLegend=0&amp;crs=EPSG:2056&amp;dpiMode=7&amp;featureCount=10&amp;format=image/png&amp;layers=ch_ag_geo_ATB_SV0ImmissionKa&amp;styles&amp;url=https://wms.geo.ag.ch/public/ows" providerKey="wms"/>
+      <layer-tree-layer expanded="0" checked="Qt::Checked" id="geoharvester_emissionen-alle-linien_2" name="Emissionskataster Bahnlärm SBB festgelegte Emissionen (BAV) 2020 (BL)" source="contextualWMSLegend=0&amp;crs=EPSG:2056&amp;dpiMode=7&amp;featureCount=10&amp;format=image/png&amp;layers=laerm_bahnemissionskataster_bav_2020&amp;styles&amp;url=https://geowms.bl.ch/" providerKey="wms"/>
+      <layer-tree-layer expanded="0" checked="Qt::Checked" id="geoharvester_emissionen-alle-linien_3" name="Emissionskataster Ekat 2005 (SO)" source="contextualWMSLegend=0&amp;crs=EPSG:2056&amp;dpiMode=7&amp;featureCount=10&amp;format=image/png&amp;layers=ch.so.afu.ekat2005&amp;styles&amp;url=https://geo.so.ch/api/wms" providerKey="wms"/>
+      <layer-tree-layer expanded="0" checked="Qt::Checked" id="geoharvester_emissionen-alle-linien_4" name="Emissionen Feinstaub 2030 (TG)" source="contextualWMSLegend=0&amp;crs=EPSG:2056&amp;dpiMode=7&amp;featureCount=10&amp;format=image/png&amp;layers=Emissionen_PM10_2030&amp;styles&amp;url=https://ows-raster.geo.tg.ch/geofy_access_proxy/luftschadstoffemissionen" providerKey="wms"/>
+      <layer-tree-layer expanded="0" checked="Qt::Checked" id="geoharvester_emissionen-alle-linien_5" name="Strassenverkehrslärm Emissionen Tag (IST) (UR)" source="contextualWMSLegend=0&amp;crs=EPSG:2056&amp;dpiMode=7&amp;featureCount=10&amp;format=image/png&amp;layers=umwelt:strassenlaerm_emissionen_tag_ist&amp;styles&amp;url=https://geo.ur.ch/wms" providerKey="wms"/>
+      <layer-tree-layer expanded="0" checked="Qt::Checked" id="geoharvester_emissionen-alle-linien_6" name="Emissionen alle Linien (ZG)" source=" pagingEnabled='true' preferCoordinatesForWfsT11='false' restrictToRequestBBOX='1' srsname='EPSG:2056' typename='zg_emissionen_alle_linien' url='https://services.geo.zg.ch/ows/strassenlaermkataster' version='auto'" providerKey="WFS"/>
+      <layer-tree-layer expanded="0" checked="Qt::Checked" id="geoharvester_emissionen-alle-linien_7" name="Emissionen Istzustand (547.1) (ZH)" source=" pagingEnabled='true' preferCoordinatesForWfsT11='false' restrictToRequestBBOX='1' srsname='EPSG:2056' typename='ms:ogd-0547_tba_fals_strl_emissionsabschnitt_ist_l' url='https://maps.zh.ch/wfs/OGDZHWFS' version='auto'" providerKey="WFS"/>
+    </layer-tree-group>
+  </layer-tree-group>
+  <maplayers>
+    <maplayer type="raster" hasScaleBasedVisibilityFlag="0" minScale="1e+08" maxScale="0" styleCategories="AllStyleCategories">
+      <extent><xmin>2676086</xmin><ymin>1241279</ymin><xmax>2689797</xmax><ymax>1254592</ymax></extent>
+      <id>geoharvester_emissionen-alle-linien_0</id>
+      <datasource>contextualWMSLegend=0&amp;crs=EPSG:2056&amp;dpiMode=7&amp;featureCount=10&amp;format=image/png&amp;layers=Emissionskataster Luftschadstoffe und Treibhausgase&amp;styles&amp;url=https://www.ogd.stadt-zuerich.ch/wms/geoportal/Emissionskataster_Luftschadstoffe_und_Treibhausgase</datasource>
+      <layername>Emissionskataster Luftschadstoffe und Treibhausgase (Zürich)</layername>
+      <srs><spatialrefsys><proj4>+proj=somerc +lat_0=46.9524055555556 +lon_0=7.43958333333333 +k_0=1 +x_0=2600000 +y_0=1200000 +ellps=bessel +towgs84=674.374,15.056,405.346,0,0,0,0 +units=m +no_defs</proj4><srid>2056</srid><authid>EPSG:2056</authid><description>CH1903+ / LV95</description><projectionacronym>somerc</projectionacronym><ellipsoidacronym>EPSG:7004</ellipsoidacronym><geographicflag>false</geographicflag></spatialrefsys></srs>
+      <provider>wms</provider>
+    </maplayer>
+    <maplayer type="raster" hasScaleBasedVisibilityFlag="0" minScale="1e+08" maxScale="0" styleCategories="AllStyleCategories">
+      <extent><xmin>2610971</xmin><ymin>1210673</ymin><xmax>2686179</xmax><ymax>1285230</ymax></extent>
+      <id>geoharvester_emissionen-alle-linien_1</id>
+      <datasource>contextualWMSLegend=0&amp;crs=EPSG:2056&amp;dpiMode=7&amp;featureCount=10&amp;format=image/png&amp;layers=ch_ag_geo_ATB_SV0ImmissionKa&amp;styles&amp;url=https://wms.geo.ag.ch/public/ows</datasource>
+      <layername>Immissionskataster IST-Zustand (AG)</layername>
+      <srs><spatialrefsys><proj4>+proj=somerc +lat_0=46.9524055555556 +lon_0=7.43958333333333 +k_0=1 +x_0=2600000 +y_0=1200000 +ellps=bessel +towgs84=674.374,15.056,405.346,0,0,0,0 +units=m +no_defs</proj4><srid>2056</srid><authid>EPSG:2056</authid><description>CH1903+ / LV95</description><projectionacronym>somerc</projectionacronym><ellipsoidacronym>EPSG:7004</ellipsoidacronym><geographicflag>false</geographicflag></spatialrefsys></srs>
+      <provider>wms</provider>
+    </maplayer>
+    <maplayer type="raster" hasScaleBasedVisibilityFlag="0" minScale="1e+08" maxScale="0" styleCategories="AllStyleCategories">
+      <extent><xmin>2589971</xmin><ymin>1239800</ymin><xmax>2644979</xmax><ymax>1275208</ymax></extent>
+      <id>geoharvester_emissionen-alle-linien_2</id>
+      <datasource>contextualWMSLegend=0&amp;crs=EPSG:2056&amp;dpiMode=7&amp;featureCount=10&amp;format=image/png&amp;layers=laerm_bahnemissionskataster_bav_2020&amp;styles&amp;url=https://geowms.bl.ch/</datasource>
+      <layername>Emissionskataster Bahnlärm SBB festgelegte Emissionen (BAV) 2020 (BL)</layername>
+      <srs><spatialrefsys><proj4>+proj=somerc +lat_0=46.9524055555556 +lon_0=7.43958333333333 +k_0=1 +x_0=2600000 +y_0=1200000 +ellps=bessel +towgs84=674.374,15.056,405.346,0,0,0,0 +units=m +no_defs</proj4><srid>2056</srid><authid>EPSG:2056</authid><description>CH1903+ / LV95</description><projectionacronym>somerc</projectionacronym><ellipsoidacronym>EPSG:7004</ellipsoidacronym><geographicflag>false</geographicflag></spatialrefsys></srs>
+      <provider>wms</provider>
+    </maplayer>
+    <maplayer type="raster" hasScaleBasedVisibilityFlag="0" minScale="1e+08" maxScale="0" styleCategories="AllStyleCategories">
+      <extent><xmin>2592357</xmin><ymin>1213336</ymin><xmax>2645157</xmax><ymax>1261755</ymax></extent>
+      <id>geoharvester_emissionen-alle-linien_3</id>
+      <datasource>contextualWMSLegend=0&amp;crs=EPSG:2056&amp;dpiMode=7&amp;featureCount=10&amp;format=image/png&amp;layers=ch.so.afu.ekat2005&amp;styles&amp;url=https://geo.so.ch/api/wms</datasource>
+      <layername>Emissionskataster Ekat 2005 (SO)</layername>
+      <srs><spatialrefsys><proj4>+proj=somerc +lat_0=46.9524055555556 +lon_0=7.43958333333333 +k_0=1 +x_0=2600000 +y_0=1200000 +ellps=bessel +towgs84=674.374,15.056,405.346,0,0,0,0 +units=m +no_defs</proj4><srid>2056</srid><authid>EPSG:2056</authid><description>CH1903+ / LV95</description><projectionacronym>somerc</projectionacronym><ellipsoidacronym>EPSG:7004</ellipsoidacronym><geographicflag>false</geographicflag></spatialrefsys></srs>
+      <provider>wms</provider>
+    </maplayer>
+    <maplayer type="raster" hasScaleBasedVisibilityFlag="0" minScale="1e+08" maxScale="0" styleCategories="AllStyleCategories">
+      <extent><xmin>2690096</xmin><ymin>1244811</ymin><xmax>2755061</xmax><ymax>1286530</ymax></extent>
+      <id>geoharvester_emissionen-alle-linien_4</id>
+      <datasource>contextualWMSLegend=0&amp;crs=EPSG:2056&amp;dpiMode=7&amp;featureCount=10&amp;format=image/png&amp;layers=Emissionen_PM10_2030&amp;styles&amp;url=https://ows-raster.geo.tg.ch/geofy_access_proxy/luftschadstoffemissionen</datasource>
+      <layername>Emissionen Feinstaub 2030 (TG)</layername>
+      <srs><spatialrefsys><proj4>+proj=somerc +lat_0=46.9524055555556 +lon_0=7.43958333333333 +k_0=1 +x_0=2600000 +y_0=1200000 +ellps=bessel +towgs84=674.374,15.056,405.346,0,0,0,0 +units=m +no_defs</proj4><srid>2056</srid><authid>EPSG:2056</authid><description>CH1903+ / LV95</description><projectionacronym>somerc</projectionacronym><ellipsoidacronym>EPSG:7004</ellipsoidacronym><geographicflag>false</geographicflag></spatialrefsys></srs>
+      <provider>wms</provider>
+    </maplayer>
+    <maplayer type="raster" hasScaleBasedVisibilityFlag="0" minScale="1e+08" maxScale="0" styleCategories="AllStyleCategories">
+      <extent><xmin>2674676</xmin><ymin>1153763</ymin><xmax>2715118</xmax><ymax>1205325</ymax></extent>
+      <id>geoharvester_emissionen-alle-linien_5</id>
+      <datasource>contextualWMSLegend=0&amp;crs=EPSG:2056&amp;dpiMode=7&amp;featureCount=10&amp;format=image/png&amp;layers=umwelt:strassenlaerm_emissionen_tag_ist&amp;styles&amp;url=https://geo.ur.ch/wms</datasource>
+      <layername>Strassenverkehrslärm Emissionen Tag (IST) (UR)</layername>
+      <srs><spatialrefsys><proj4>+proj=somerc +lat_0=46.9524055555556 +lon_0=7.43958333333333 +k_0=1 +x_0=2600000 +y_0=1200000 +ellps=bessel +towgs84=674.374,15.056,405.346,0,0,0,0 +units=m +no_defs</proj4><srid>2056</srid><authid>EPSG:2056</authid><description>CH1903+ / LV95</description><projectionacronym>somerc</projectionacronym><ellipsoidacronym>EPSG:7004</ellipsoidacronym><geographicflag>false</geographicflag></spatialrefsys></srs>
+      <provider>wms</provider>
+    </maplayer>
+    <maplayer type="vector" hasScaleBasedVisibilityFlag="0" minScale="1e+08" maxScale="0" styleCategories="AllStyleCategories">
+      <extent><xmin>2672845</xmin><ymin>1215666</ymin><xmax>2695756</xmax><ymax>1231223</ymax></extent>
+      <id>geoharvester_emissionen-alle-linien_6</id>
+      <datasource> pagingEnabled='true' preferCoordinatesForWfsT11='false' restrictToRequestBBOX='1' srsname='EPSG:2056' typename='zg_emissionen_alle_linien' url='https://services.geo.zg.ch/ows/strassenlaermkataster' version='auto'</datasource>
+      <layername>Emissionen alle Linien (ZG)</layername>
+      <srs><spatialrefsys><proj4>+proj=somerc +lat_0=46.9524055555556 +lon_0=7.43958333333333 +k_0=1 +x_0=2600000 +y_0=1200000 +ellps=bessel +towgs84=674.374,15.056,405.346,0,0,0,0 +units=m +no_defs</proj4><srid>2056</srid><authid>EPSG:2056</authid><description>CH1903+ / LV95</description><projectionacronym>somerc</projectionacronym><ellipsoidacronym>EPSG:7004</ellipsoidacronym><geographicflag>false</geographicflag></spatialrefsys></srs>
+      <provider>WFS</provider>
+    </maplayer>
+    <maplayer type="vector" hasScaleBasedVisibilityFlag="0" minScale="1e+08" maxScale="0" styleCategories="AllStyleCategories">
+      <extent><xmin>2654491</xmin><ymin>1221474</ymin><xmax>2719945</xmax><ymax>1285821</ymax></extent>
+      <id>geoharvester_emissionen-alle-linien_7</id>
+      <datasource> pagingEnabled='true' preferCoordinatesForWfsT11='false' restrictToRequestBBOX='1' srsname='EPSG:2056' typename='ms:ogd-0547_tba_fals_strl_emissionsabschnitt_ist_l' url='https://maps.zh.ch/wfs/OGDZHWFS' version='auto'</datasource>
+      <layername>Emissionen Istzustand (547.1) (ZH)</layername>
+      <srs><spatialrefsys><proj4>+proj=somerc +lat_0=46.9524055555556 +lon_0=7.43958333333333 +k_0=1 +x_0=2600000 +y_0=1200000 +ellps=bessel +towgs84=674.374,15.056,405.346,0,0,0,0 +units=m +no_defs</proj4><srid>2056</srid><authid>EPSG:2056</authid><description>CH1903+ / LV95</description><projectionacronym>somerc</projectionacronym><ellipsoidacronym>EPSG:7004</ellipsoidacronym><geographicflag>false</geographicflag></spatialrefsys></srs>
+      <provider>WFS</provider>
+    </maplayer>
+  </maplayers>
+</qlr>

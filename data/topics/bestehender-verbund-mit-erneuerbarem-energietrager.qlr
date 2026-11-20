@@ -1,0 +1,54 @@
+<!DOCTYPE qgis-layer-definition>
+<qlr>
+  <layer-tree-group expanded="1" checked="Qt::Checked" name="">
+    <layer-tree-group expanded="1" checked="Qt::Checked" name="GeoHarvester – Bestehender Verbund mit erneuerbarem Energieträger">
+      <layer-tree-layer expanded="0" checked="Qt::Checked" id="geoharvester_bestehender-verbund-mit-erneuerbarem-energietrager_0" name="Angebot_erneuerbarer_Energien_und_Abwaerme (Zürich)" source="contextualWMSLegend=0&amp;crs=EPSG:2056&amp;dpiMode=7&amp;featureCount=10&amp;format=image/png&amp;layers=Angebot_erneuerbarer_Energien_und_Abwaerme&amp;styles&amp;url=https://www.ogd.stadt-zuerich.ch/wms/geoportal/Kommunaler_Richtplan_Siedlung_Landschaft_oeffentliche_Bauten_und_Anlagen___Textkarten" providerKey="wms"/>
+      <layer-tree-layer expanded="0" checked="Qt::Checked" id="geoharvester_bestehender-verbund-mit-erneuerbarem-energietrager_1" name="geodienste.ch WMS Richtplanung erneuerbare Energien (Geodienste)" source="contextualWMSLegend=0&amp;crs=EPSG:2056&amp;dpiMode=7&amp;featureCount=10&amp;format=image/png&amp;layers=richtplanung_erneuerbare_energien_v1_0&amp;styles&amp;url=https://geodienste.ch/db/richtplanung_erneuerbare_energien_v1_0_0/deu" providerKey="wms"/>
+      <layer-tree-layer expanded="0" checked="Qt::Checked" id="geoharvester_bestehender-verbund-mit-erneuerbarem-energietrager_2" name="Bestehender Verbund mit erneuerbarem Energieträger (BS)" source="contextualWMSLegend=0&amp;crs=EPSG:2056&amp;dpiMode=7&amp;featureCount=10&amp;format=image/png&amp;layers=EP_Energierichtplan_Verbunde&amp;styles&amp;url=https://wms.geo.bs.ch/" providerKey="wms"/>
+      <layer-tree-layer expanded="0" checked="Qt::Checked" id="geoharvester_bestehender-verbund-mit-erneuerbarem-energietrager_3" name="Utilizzazione delle energie rinnovabili (GR)" source="contextualWMSLegend=0&amp;crs=EPSG:2056&amp;dpiMode=7&amp;featureCount=10&amp;format=image/png&amp;layers=Utilizzazione_delle_energie_rinnovabili&amp;styles&amp;url=https://wms.geo.gr.ch/rrip_bregaglia" providerKey="wms"/>
+      <layer-tree-layer expanded="0" checked="Qt::Checked" id="geoharvester_bestehender-verbund-mit-erneuerbarem-energietrager_4" name="Elektrizitätsproduktion aus erneuerbaren Energien (Kap. 4.2) (TG)" source="contextualWMSLegend=0&amp;crs=EPSG:2056&amp;dpiMode=7&amp;featureCount=10&amp;format=image/png&amp;layers=Erneuerbare_Energien&amp;styles&amp;url=https://ows.geo.tg.ch/geofy_access_proxy/richtplankt200k" providerKey="wms"/>
+    </layer-tree-group>
+  </layer-tree-group>
+  <maplayers>
+    <maplayer type="raster" hasScaleBasedVisibilityFlag="0" minScale="1e+08" maxScale="0" styleCategories="AllStyleCategories">
+      <extent><xmin>2676235</xmin><ymin>1241393</ymin><xmax>2689651</xmax><ymax>1254256</ymax></extent>
+      <id>geoharvester_bestehender-verbund-mit-erneuerbarem-energietrager_0</id>
+      <datasource>contextualWMSLegend=0&amp;crs=EPSG:2056&amp;dpiMode=7&amp;featureCount=10&amp;format=image/png&amp;layers=Angebot_erneuerbarer_Energien_und_Abwaerme&amp;styles&amp;url=https://www.ogd.stadt-zuerich.ch/wms/geoportal/Kommunaler_Richtplan_Siedlung_Landschaft_oeffentliche_Bauten_und_Anlagen___Textkarten</datasource>
+      <layername>Angebot_erneuerbarer_Energien_und_Abwaerme (Zürich)</layername>
+      <srs><spatialrefsys><proj4>+proj=somerc +lat_0=46.9524055555556 +lon_0=7.43958333333333 +k_0=1 +x_0=2600000 +y_0=1200000 +ellps=bessel +towgs84=674.374,15.056,405.346,0,0,0,0 +units=m +no_defs</proj4><srid>2056</srid><authid>EPSG:2056</authid><description>CH1903+ / LV95</description><projectionacronym>somerc</projectionacronym><ellipsoidacronym>EPSG:7004</ellipsoidacronym><geographicflag>false</geographicflag></spatialrefsys></srs>
+      <provider>wms</provider>
+    </maplayer>
+    <maplayer type="raster" hasScaleBasedVisibilityFlag="0" minScale="1e+08" maxScale="0" styleCategories="AllStyleCategories">
+      <extent><xmin>2464902</xmin><ymin>1066865</ymin><xmax>2839927</xmax><ymax>1305071</ymax></extent>
+      <id>geoharvester_bestehender-verbund-mit-erneuerbarem-energietrager_1</id>
+      <datasource>contextualWMSLegend=0&amp;crs=EPSG:2056&amp;dpiMode=7&amp;featureCount=10&amp;format=image/png&amp;layers=richtplanung_erneuerbare_energien_v1_0&amp;styles&amp;url=https://geodienste.ch/db/richtplanung_erneuerbare_energien_v1_0_0/deu</datasource>
+      <layername>geodienste.ch WMS Richtplanung erneuerbare Energien (Geodienste)</layername>
+      <srs><spatialrefsys><proj4>+proj=somerc +lat_0=46.9524055555556 +lon_0=7.43958333333333 +k_0=1 +x_0=2600000 +y_0=1200000 +ellps=bessel +towgs84=674.374,15.056,405.346,0,0,0,0 +units=m +no_defs</proj4><srid>2056</srid><authid>EPSG:2056</authid><description>CH1903+ / LV95</description><projectionacronym>somerc</projectionacronym><ellipsoidacronym>EPSG:7004</ellipsoidacronym><geographicflag>false</geographicflag></spatialrefsys></srs>
+      <provider>wms</provider>
+    </maplayer>
+    <maplayer type="raster" hasScaleBasedVisibilityFlag="0" minScale="1e+08" maxScale="0" styleCategories="AllStyleCategories">
+      <extent><xmin>2584892</xmin><ymin>1234808</ymin><xmax>2649963</xmax><ymax>1290260</ymax></extent>
+      <id>geoharvester_bestehender-verbund-mit-erneuerbarem-energietrager_2</id>
+      <datasource>contextualWMSLegend=0&amp;crs=EPSG:2056&amp;dpiMode=7&amp;featureCount=10&amp;format=image/png&amp;layers=EP_Energierichtplan_Verbunde&amp;styles&amp;url=https://wms.geo.bs.ch/</datasource>
+      <layername>Bestehender Verbund mit erneuerbarem Energieträger (BS)</layername>
+      <srs><spatialrefsys><proj4>+proj=somerc +lat_0=46.9524055555556 +lon_0=7.43958333333333 +k_0=1 +x_0=2600000 +y_0=1200000 +ellps=bessel +towgs84=674.374,15.056,405.346,0,0,0,0 +units=m +no_defs</proj4><srid>2056</srid><authid>EPSG:2056</authid><description>CH1903+ / LV95</description><projectionacronym>somerc</projectionacronym><ellipsoidacronym>EPSG:7004</ellipsoidacronym><geographicflag>false</geographicflag></spatialrefsys></srs>
+      <provider>wms</provider>
+    </maplayer>
+    <maplayer type="raster" hasScaleBasedVisibilityFlag="0" minScale="1e+08" maxScale="0" styleCategories="AllStyleCategories">
+      <extent><xmin>2691144</xmin><ymin>1094287</ymin><xmax>2834923</xmax><ymax>1246113</ymax></extent>
+      <id>geoharvester_bestehender-verbund-mit-erneuerbarem-energietrager_3</id>
+      <datasource>contextualWMSLegend=0&amp;crs=EPSG:2056&amp;dpiMode=7&amp;featureCount=10&amp;format=image/png&amp;layers=Utilizzazione_delle_energie_rinnovabili&amp;styles&amp;url=https://wms.geo.gr.ch/rrip_bregaglia</datasource>
+      <layername>Utilizzazione delle energie rinnovabili (GR)</layername>
+      <srs><spatialrefsys><proj4>+proj=somerc +lat_0=46.9524055555556 +lon_0=7.43958333333333 +k_0=1 +x_0=2600000 +y_0=1200000 +ellps=bessel +towgs84=674.374,15.056,405.346,0,0,0,0 +units=m +no_defs</proj4><srid>2056</srid><authid>EPSG:2056</authid><description>CH1903+ / LV95</description><projectionacronym>somerc</projectionacronym><ellipsoidacronym>EPSG:7004</ellipsoidacronym><geographicflag>false</geographicflag></spatialrefsys></srs>
+      <provider>wms</provider>
+    </maplayer>
+    <maplayer type="raster" hasScaleBasedVisibilityFlag="0" minScale="1e+08" maxScale="0" styleCategories="AllStyleCategories">
+      <extent><xmin>2690098</xmin><ymin>1244700</ymin><xmax>2760087</xmax><ymax>1286665</ymax></extent>
+      <id>geoharvester_bestehender-verbund-mit-erneuerbarem-energietrager_4</id>
+      <datasource>contextualWMSLegend=0&amp;crs=EPSG:2056&amp;dpiMode=7&amp;featureCount=10&amp;format=image/png&amp;layers=Erneuerbare_Energien&amp;styles&amp;url=https://ows.geo.tg.ch/geofy_access_proxy/richtplankt200k</datasource>
+      <layername>Elektrizitätsproduktion aus erneuerbaren Energien (Kap. 4.2) (TG)</layername>
+      <srs><spatialrefsys><proj4>+proj=somerc +lat_0=46.9524055555556 +lon_0=7.43958333333333 +k_0=1 +x_0=2600000 +y_0=1200000 +ellps=bessel +towgs84=674.374,15.056,405.346,0,0,0,0 +units=m +no_defs</proj4><srid>2056</srid><authid>EPSG:2056</authid><description>CH1903+ / LV95</description><projectionacronym>somerc</projectionacronym><ellipsoidacronym>EPSG:7004</ellipsoidacronym><geographicflag>false</geographicflag></spatialrefsys></srs>
+      <provider>wms</provider>
+    </maplayer>
+  </maplayers>
+</qlr>

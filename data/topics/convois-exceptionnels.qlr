@@ -1,0 +1,45 @@
+<!DOCTYPE qgis-layer-definition>
+<qlr>
+  <layer-tree-group expanded="1" checked="Qt::Checked" name="">
+    <layer-tree-group expanded="1" checked="Qt::Checked" name="GeoHarvester – Convois exceptionnels">
+      <layer-tree-layer expanded="0" checked="Qt::Checked" id="geoharvester_convois-exceptionnels_0" name="Convois exceptionnels (Lausanne)" source="contextualWMSLegend=0&amp;crs=EPSG:2056&amp;dpiMode=7&amp;featureCount=10&amp;format=image/png&amp;layers=mobilite_convoi_exceptionnel&amp;styles&amp;url=https://map.lausanne.ch/mapserv_proxy?ogcserver=source+for+image%2Fpng" providerKey="wms"/>
+      <layer-tree-layer expanded="0" checked="Qt::Checked" id="geoharvester_convois-exceptionnels_1" name="Itinéraires convois exceptionnels (FR)" source="contextualWMSLegend=0&amp;crs=EPSG:2056&amp;dpiMode=7&amp;featureCount=10&amp;format=image/png&amp;layers=0&amp;styles&amp;url=https://maps.fr.ch/ags/services/OpenData/Itineraires_convois_exceptionnels/MapServer/WMSServer" providerKey="wms"/>
+      <layer-tree-layer expanded="0" checked="Qt::Checked" id="geoharvester_convois-exceptionnels_2" name="sin_09_12_itineraires_convois_exceptionels_routes (JU)" source="contextualWMSLegend=0&amp;crs=EPSG:2056&amp;dpiMode=7&amp;featureCount=10&amp;format=image/png&amp;layers=sin_09_12_itineraires_convois_exceptionels_routes&amp;styles&amp;url=https://geo.jura.ch/mapserv_proxy?ogcserver=Main_PNG" providerKey="wms"/>
+      <layer-tree-layer expanded="0" checked="Qt::Checked" id="geoharvester_convois-exceptionnels_3" name="vd.itineraire_convoi_exceptionnel (VD)" source="contextualWMSLegend=0&amp;crs=EPSG:2056&amp;dpiMode=7&amp;featureCount=10&amp;format=image/png&amp;layers=vd.itineraire_convoi_exceptionnel&amp;styles&amp;url=https://www.ogc.vd.ch/public/services/OGC/wmsVD/Mapserver/WMSServer" providerKey="wms"/>
+    </layer-tree-group>
+  </layer-tree-group>
+  <maplayers>
+    <maplayer type="raster" hasScaleBasedVisibilityFlag="0" minScale="1e+08" maxScale="0" styleCategories="AllStyleCategories">
+      <extent><xmin>2485151</xmin><ymin>1075456</ymin><xmax>2836999</xmax><ymax>1301502</ymax></extent>
+      <id>geoharvester_convois-exceptionnels_0</id>
+      <datasource>contextualWMSLegend=0&amp;crs=EPSG:2056&amp;dpiMode=7&amp;featureCount=10&amp;format=image/png&amp;layers=mobilite_convoi_exceptionnel&amp;styles&amp;url=https://map.lausanne.ch/mapserv_proxy?ogcserver=source+for+image%2Fpng</datasource>
+      <layername>Convois exceptionnels (Lausanne)</layername>
+      <srs><spatialrefsys><proj4>+proj=somerc +lat_0=46.9524055555556 +lon_0=7.43958333333333 +k_0=1 +x_0=2600000 +y_0=1200000 +ellps=bessel +towgs84=674.374,15.056,405.346,0,0,0,0 +units=m +no_defs</proj4><srid>2056</srid><authid>EPSG:2056</authid><description>CH1903+ / LV95</description><projectionacronym>somerc</projectionacronym><ellipsoidacronym>EPSG:7004</ellipsoidacronym><geographicflag>false</geographicflag></spatialrefsys></srs>
+      <provider>wms</provider>
+    </maplayer>
+    <maplayer type="raster" hasScaleBasedVisibilityFlag="0" minScale="1e+08" maxScale="0" styleCategories="AllStyleCategories">
+      <extent><xmin>2548571</xmin><ymin>1147184</ymin><xmax>2588621</xmax><ymax>1206339</ymax></extent>
+      <id>geoharvester_convois-exceptionnels_1</id>
+      <datasource>contextualWMSLegend=0&amp;crs=EPSG:2056&amp;dpiMode=7&amp;featureCount=10&amp;format=image/png&amp;layers=0&amp;styles&amp;url=https://maps.fr.ch/ags/services/OpenData/Itineraires_convois_exceptionnels/MapServer/WMSServer</datasource>
+      <layername>Itinéraires convois exceptionnels (FR)</layername>
+      <srs><spatialrefsys><proj4>+proj=somerc +lat_0=46.9524055555556 +lon_0=7.43958333333333 +k_0=1 +x_0=2600000 +y_0=1200000 +ellps=bessel +towgs84=674.374,15.056,405.346,0,0,0,0 +units=m +no_defs</proj4><srid>2056</srid><authid>EPSG:2056</authid><description>CH1903+ / LV95</description><projectionacronym>somerc</projectionacronym><ellipsoidacronym>EPSG:7004</ellipsoidacronym><geographicflag>false</geographicflag></spatialrefsys></srs>
+      <provider>wms</provider>
+    </maplayer>
+    <maplayer type="raster" hasScaleBasedVisibilityFlag="0" minScale="1e+08" maxScale="0" styleCategories="AllStyleCategories">
+      <extent><xmin>2543632</xmin><ymin>1217601</ymin><xmax>2615465</xmax><ymax>1264939</ymax></extent>
+      <id>geoharvester_convois-exceptionnels_2</id>
+      <datasource>contextualWMSLegend=0&amp;crs=EPSG:2056&amp;dpiMode=7&amp;featureCount=10&amp;format=image/png&amp;layers=sin_09_12_itineraires_convois_exceptionels_routes&amp;styles&amp;url=https://geo.jura.ch/mapserv_proxy?ogcserver=Main_PNG</datasource>
+      <layername>sin_09_12_itineraires_convois_exceptionels_routes (JU)</layername>
+      <srs><spatialrefsys><proj4>+proj=somerc +lat_0=46.9524055555556 +lon_0=7.43958333333333 +k_0=1 +x_0=2600000 +y_0=1200000 +ellps=bessel +towgs84=674.374,15.056,405.346,0,0,0,0 +units=m +no_defs</proj4><srid>2056</srid><authid>EPSG:2056</authid><description>CH1903+ / LV95</description><projectionacronym>somerc</projectionacronym><ellipsoidacronym>EPSG:7004</ellipsoidacronym><geographicflag>false</geographicflag></spatialrefsys></srs>
+      <provider>wms</provider>
+    </maplayer>
+    <maplayer type="raster" hasScaleBasedVisibilityFlag="0" minScale="1e+08" maxScale="0" styleCategories="AllStyleCategories">
+      <extent><xmin>2493670</xmin><ymin>1117774</ymin><xmax>2584201</xmax><ymax>1202902</ymax></extent>
+      <id>geoharvester_convois-exceptionnels_3</id>
+      <datasource>contextualWMSLegend=0&amp;crs=EPSG:2056&amp;dpiMode=7&amp;featureCount=10&amp;format=image/png&amp;layers=vd.itineraire_convoi_exceptionnel&amp;styles&amp;url=https://www.ogc.vd.ch/public/services/OGC/wmsVD/Mapserver/WMSServer</datasource>
+      <layername>vd.itineraire_convoi_exceptionnel (VD)</layername>
+      <srs><spatialrefsys><proj4>+proj=somerc +lat_0=46.9524055555556 +lon_0=7.43958333333333 +k_0=1 +x_0=2600000 +y_0=1200000 +ellps=bessel +towgs84=674.374,15.056,405.346,0,0,0,0 +units=m +no_defs</proj4><srid>2056</srid><authid>EPSG:2056</authid><description>CH1903+ / LV95</description><projectionacronym>somerc</projectionacronym><ellipsoidacronym>EPSG:7004</ellipsoidacronym><geographicflag>false</geographicflag></spatialrefsys></srs>
+      <provider>wms</provider>
+    </maplayer>
+  </maplayers>
+</qlr>

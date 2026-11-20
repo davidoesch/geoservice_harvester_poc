@@ -1,0 +1,169 @@
+{
+ "type": "FeatureCollection",
+ "id": "https://davidoesch.github.io/geoservice_harvester_poc/data/topics/anlagestandort-zur-nutzung-von-warme-aus-see-oder-bachwasser.ows.json",
+ "properties": {
+  "lang": "de",
+  "title": "Anlagestandort zur Nutzung von Wärme aus See- oder Bachwasser",
+  "updated": "2026-11-20T16:05:37+01:00",
+  "subtitle": "GeoHarvester topic: 3 providers",
+  "links": {
+   "profiles": [
+    {
+     "href": "http://www.opengis.net/spec/owc-geojson/1.0/req/core"
+    }
+   ]
+  }
+ },
+ "features": [
+  {
+   "type": "Feature",
+   "id": "https://map.geo.sz.ch/mapserv_proxy#ch.sz.a034c.waermenutzung.wasserwaermeanlage.see_und_bachwasser",
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       8.345,
+       46.878
+      ],
+      [
+       9.051,
+       46.878
+      ],
+      [
+       9.051,
+       47.237
+      ],
+      [
+       8.345,
+       47.237
+      ],
+      [
+       8.345,
+       46.878
+      ]
+     ]
+    ]
+   },
+   "properties": {
+    "title": "Anlagestandort zur Nutzung von Wärme aus See- oder Bachwasser",
+    "updated": "2026-11-20T16:05:37+01:00",
+    "publisher": "Kanton Schwyz",
+    "layer": "ch.sz.a034c.waermenutzung.wasserwaermeanlage.see_und_bachwasser",
+    "offerings": [
+     {
+      "code": "http://www.opengis.net/spec/owc-geojson/1.0/req/wms",
+      "operations": [
+       {
+        "code": "GetCapabilities",
+        "method": "GET",
+        "type": "application/xml",
+        "href": "https://map.geo.sz.ch/mapserv_proxy?SERVICE=WMS&REQUEST=GetCapabilities"
+       }
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": "https://services.geo.zg.ch/ows/hinweiskarte_thermische_grundwassernutzung#zg_thermische_grundwassernutzung_geeignet",
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       8.39,
+       47.088
+      ],
+      [
+       8.648,
+       47.088
+      ],
+      [
+       8.648,
+       47.251
+      ],
+      [
+       8.39,
+       47.251
+      ],
+      [
+       8.39,
+       47.088
+      ]
+     ]
+    ]
+   },
+   "properties": {
+    "title": "Für thermische Grundwassernutzung geeignete Gebiete",
+    "updated": "2026-11-20T16:05:37+01:00",
+    "publisher": "Kanton Zug",
+    "layer": "zg_thermische_grundwassernutzung_geeignet",
+    "offerings": [
+     {
+      "code": "http://www.opengis.net/spec/owc-geojson/1.0/req/wms",
+      "operations": [
+       {
+        "code": "GetCapabilities",
+        "method": "GET",
+        "type": "application/xml",
+        "href": "https://services.geo.zg.ch/ows/hinweiskarte_thermische_grundwassernutzung?SERVICE=WMS&REQUEST=GetCapabilities"
+       }
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": "https://maps.zh.ch/wfs/OGDZHWFS#ms:ogd-0172_giszhpub_en_eignungsgebiet_gewaesser_f",
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       8.157,
+       47.142
+      ],
+      [
+       9.037,
+       47.142
+      ],
+      [
+       9.037,
+       47.712
+      ],
+      [
+       8.157,
+       47.712
+      ],
+      [
+       8.157,
+       47.142
+      ]
+     ]
+    ]
+   },
+   "properties": {
+    "title": "Für Wärmeversorgung aus Oberflächengewässern geeignete Gebiete (172.9)",
+    "updated": "2026-11-20T16:05:37+01:00",
+    "publisher": "Kanton Zürich",
+    "layer": "ms:ogd-0172_giszhpub_en_eignungsgebiet_gewaesser_f",
+    "offerings": [
+     {
+      "code": "http://www.opengis.net/spec/owc-geojson/1.0/req/wfs",
+      "operations": [
+       {
+        "code": "GetCapabilities",
+        "method": "GET",
+        "type": "application/xml",
+        "href": "https://maps.zh.ch/wfs/OGDZHWFS?SERVICE=WFS&REQUEST=GetCapabilities"
+       }
+      ]
+     }
+    ]
+   }
+  }
+ ]
+}

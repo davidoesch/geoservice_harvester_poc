@@ -1,0 +1,319 @@
+{
+ "type": "FeatureCollection",
+ "id": "https://davidoesch.github.io/geoservice_harvester_poc/data/topics/bewirtschaftungseinheit.ows.json",
+ "properties": {
+  "lang": "de",
+  "title": "Bewirtschaftungseinheit",
+  "updated": "2026-11-20T16:05:37+01:00",
+  "subtitle": "GeoHarvester topic: 6 providers",
+  "links": {
+   "profiles": [
+    {
+     "href": "http://www.opengis.net/spec/owc-geojson/1.0/req/core"
+    }
+   ]
+  }
+ },
+ "features": [
+  {
+   "type": "Feature",
+   "id": "https://geodienste.ch/db/lwb_bewirtschaftungseinheit_v2_0_0/deu#lwb_bewirtschaftungseinheit_v2_0",
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       5.703,
+       45.74
+      ],
+      [
+       10.645,
+       45.74
+      ],
+      [
+       10.645,
+       47.852
+      ],
+      [
+       5.703,
+       47.852
+      ],
+      [
+       5.703,
+       45.74
+      ]
+     ]
+    ]
+   },
+   "properties": {
+    "title": "geodienste.ch WMS Bewirtschaftungseinheit",
+    "updated": "2026-11-20T16:05:37+01:00",
+    "publisher": "geodienste.ch (kantonsübergreifend)",
+    "layer": "lwb_bewirtschaftungseinheit_v2_0",
+    "offerings": [
+     {
+      "code": "http://www.opengis.net/spec/owc-geojson/1.0/req/wms",
+      "operations": [
+       {
+        "code": "GetCapabilities",
+        "method": "GET",
+        "type": "application/xml",
+        "href": "https://geodienste.ch/db/lwb_bewirtschaftungseinheit_v2_0_0/deu?SERVICE=WMS&REQUEST=GetCapabilities"
+       }
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": "https://www.geoservice.apps.be.ch/geoservice3/services/a42geo/of_farming01_de_ms_wms/MapServer/WMSServer#LANDKULT_BEWE_VW_15372",
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       6.299,
+       46.121
+      ],
+      [
+       9.596,
+       46.121
+      ],
+      [
+       9.596,
+       47.618
+      ],
+      [
+       6.299,
+       47.618
+      ],
+      [
+       6.299,
+       46.121
+      ]
+     ]
+    ]
+   },
+   "properties": {
+    "title": "Bewirtschaftungseinheiten",
+    "updated": "2026-11-20T16:05:37+01:00",
+    "publisher": "Kanton Bern",
+    "layer": "LANDKULT_BEWE_VW_15372",
+    "offerings": [
+     {
+      "code": "http://www.opengis.net/spec/owc-geojson/1.0/req/wms",
+      "operations": [
+       {
+        "code": "GetCapabilities",
+        "method": "GET",
+        "type": "application/xml",
+        "href": "https://www.geoservice.apps.be.ch/geoservice3/services/a42geo/of_farming01_de_ms_wms/MapServer/WMSServer?SERVICE=WMS&REQUEST=GetCapabilities"
+       }
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": "https://wms.geo.gr.ch/lw_bewirtschaftung#Bewirtschaftungseinheit",
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       8.615,
+       45.994
+      ],
+      [
+       10.547,
+       45.994
+      ],
+      [
+       10.547,
+       47.324
+      ],
+      [
+       8.615,
+       47.324
+      ],
+      [
+       8.615,
+       45.994
+      ]
+     ]
+    ]
+   },
+   "properties": {
+    "title": "Bewirtschaftungseinheit",
+    "updated": "2026-11-20T16:05:37+01:00",
+    "publisher": "Kanton Graubünden",
+    "layer": "Bewirtschaftungseinheit",
+    "offerings": [
+     {
+      "code": "http://www.opengis.net/spec/owc-geojson/1.0/req/wms",
+      "operations": [
+       {
+        "code": "GetCapabilities",
+        "method": "GET",
+        "type": "application/xml",
+        "href": "https://wms.geo.gr.ch/lw_bewirtschaftung?SERVICE=WMS&REQUEST=GetCapabilities"
+       }
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": "https://public.geo.lu.ch/ogd/services/managed/LWBWXXXX_COL_V3_MP/MapServer/WMSServer#6",
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       6.374,
+       46.251
+      ],
+      [
+       9.732,
+       46.251
+      ],
+      [
+       9.732,
+       47.665
+      ],
+      [
+       6.374,
+       47.665
+      ],
+      [
+       6.374,
+       46.251
+      ]
+     ]
+    ]
+   },
+   "properties": {
+    "title": "Bewirtschaftungseinheiten",
+    "updated": "2026-11-20T16:05:37+01:00",
+    "publisher": "Kanton Luzern",
+    "layer": "6",
+    "offerings": [
+     {
+      "code": "http://www.opengis.net/spec/owc-geojson/1.0/req/wms",
+      "operations": [
+       {
+        "code": "GetCapabilities",
+        "method": "GET",
+        "type": "application/xml",
+        "href": "https://public.geo.lu.ch/ogd/services/managed/LWBWXXXX_COL_V3_MP/MapServer/WMSServer?SERVICE=WMS&REQUEST=GetCapabilities"
+       }
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": "https://services.geo.sg.ch/wss/service/SG00089_WMS/guest#Seelsorgeeinheiten",
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       8.788,
+       46.87
+      ],
+      [
+       9.681,
+       46.87
+      ],
+      [
+       9.681,
+       47.541
+      ],
+      [
+       8.788,
+       47.541
+      ],
+      [
+       8.788,
+       46.87
+      ]
+     ]
+    ]
+   },
+   "properties": {
+    "title": "Seelsorgeeinheiten",
+    "updated": "2026-11-20T16:05:37+01:00",
+    "publisher": "Kanton St. Gallen",
+    "layer": "Seelsorgeeinheiten",
+    "offerings": [
+     {
+      "code": "http://www.opengis.net/spec/owc-geojson/1.0/req/wms",
+      "operations": [
+       {
+        "code": "GetCapabilities",
+        "method": "GET",
+        "type": "application/xml",
+        "href": "https://services.geo.sg.ch/wss/service/SG00089_WMS/guest?SERVICE=WMS&REQUEST=GetCapabilities"
+       }
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": "https://ows.geo.tg.ch/geofy_access_proxy/landwirtschaft_kulturflaechen#Bewirtschaftungseinheit",
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       8.631,
+       47.348
+      ],
+      [
+       9.505,
+       47.348
+      ],
+      [
+       9.505,
+       47.711
+      ],
+      [
+       8.631,
+       47.711
+      ],
+      [
+       8.631,
+       47.348
+      ]
+     ]
+    ]
+   },
+   "properties": {
+    "title": "Bewirtschaftungseinheit",
+    "updated": "2026-11-20T16:05:37+01:00",
+    "publisher": "Kanton Thurgau",
+    "layer": "Bewirtschaftungseinheit",
+    "offerings": [
+     {
+      "code": "http://www.opengis.net/spec/owc-geojson/1.0/req/wms",
+      "operations": [
+       {
+        "code": "GetCapabilities",
+        "method": "GET",
+        "type": "application/xml",
+        "href": "https://ows.geo.tg.ch/geofy_access_proxy/landwirtschaft_kulturflaechen?SERVICE=WMS&REQUEST=GetCapabilities"
+       }
+      ]
+     }
+    ]
+   }
+  }
+ ]
+}

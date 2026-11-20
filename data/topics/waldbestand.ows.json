@@ -1,0 +1,169 @@
+{
+ "type": "FeatureCollection",
+ "id": "https://davidoesch.github.io/geoservice_harvester_poc/data/topics/waldbestand.ows.json",
+ "properties": {
+  "lang": "de",
+  "title": "Waldbestand",
+  "updated": "2026-11-20T16:05:37+01:00",
+  "subtitle": "GeoHarvester topic: 3 providers",
+  "links": {
+   "profiles": [
+    {
+     "href": "http://www.opengis.net/spec/owc-geojson/1.0/req/core"
+    }
+   ]
+  }
+ },
+ "features": [
+  {
+   "type": "Feature",
+   "id": "https://map.geo.gl.ch/ows/mainmap#ch.gl.biota.waldbestand",
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       8.888,
+       46.819
+      ],
+      [
+       9.247,
+       46.819
+      ],
+      [
+       9.247,
+       47.175
+      ],
+      [
+       8.888,
+       47.175
+      ],
+      [
+       8.888,
+       46.819
+      ]
+     ]
+    ]
+   },
+   "properties": {
+    "title": "Waldbestand",
+    "updated": "2026-11-20T16:05:37+01:00",
+    "publisher": "Kanton Glarus",
+    "layer": "ch.gl.biota.waldbestand",
+    "offerings": [
+     {
+      "code": "http://www.opengis.net/spec/owc-geojson/1.0/req/wms",
+      "operations": [
+       {
+        "code": "GetCapabilities",
+        "method": "GET",
+        "type": "application/xml",
+        "href": "https://map.geo.gl.ch/ows/mainmap?SERVICE=WMS&REQUEST=GetCapabilities"
+       }
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": "https://public.geo.lu.ch/ogd/services/managed/WLDBES24_DS_V1_MP/MapServer/WMSServer#0",
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       7.834,
+       46.779
+      ],
+      [
+       8.521,
+       46.779
+      ],
+      [
+       8.521,
+       47.288
+      ],
+      [
+       7.834,
+       47.288
+      ],
+      [
+       7.834,
+       46.779
+      ]
+     ]
+    ]
+   },
+   "properties": {
+    "title": "Waldbestand 2024",
+    "updated": "2026-11-20T16:05:37+01:00",
+    "publisher": "Kanton Luzern",
+    "layer": "0",
+    "offerings": [
+     {
+      "code": "http://www.opengis.net/spec/owc-geojson/1.0/req/wms",
+      "operations": [
+       {
+        "code": "GetCapabilities",
+        "method": "GET",
+        "type": "application/xml",
+        "href": "https://public.geo.lu.ch/ogd/services/managed/WLDBES24_DS_V1_MP/MapServer/WMSServer?SERVICE=WMS&REQUEST=GetCapabilities"
+       }
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": "https://services.geo.sg.ch/wss/service/SG00010_WMS/guest#Waldbestand",
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       8.788,
+       46.872
+      ],
+      [
+       9.68,
+       46.872
+      ],
+      [
+       9.68,
+       47.541
+      ],
+      [
+       8.788,
+       47.541
+      ],
+      [
+       8.788,
+       46.872
+      ]
+     ]
+    ]
+   },
+   "properties": {
+    "title": "Waldbestand",
+    "updated": "2026-11-20T16:05:37+01:00",
+    "publisher": "Kanton St. Gallen",
+    "layer": "Waldbestand",
+    "offerings": [
+     {
+      "code": "http://www.opengis.net/spec/owc-geojson/1.0/req/wms",
+      "operations": [
+       {
+        "code": "GetCapabilities",
+        "method": "GET",
+        "type": "application/xml",
+        "href": "https://services.geo.sg.ch/wss/service/SG00010_WMS/guest?SERVICE=WMS&REQUEST=GetCapabilities"
+       }
+      ]
+     }
+    ]
+   }
+  }
+ ]
+}

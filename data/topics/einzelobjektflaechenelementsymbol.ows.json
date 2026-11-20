@@ -1,0 +1,119 @@
+{
+ "type": "FeatureCollection",
+ "id": "https://davidoesch.github.io/geoservice_harvester_poc/data/topics/einzelobjektflaechenelementsymbol.ows.json",
+ "properties": {
+  "lang": "de",
+  "title": "Einzelobjektflaechenelementsymbol",
+  "updated": "2026-11-20T16:05:37+01:00",
+  "subtitle": "GeoHarvester topic: 2 providers",
+  "links": {
+   "profiles": [
+    {
+     "href": "http://www.opengis.net/spec/owc-geojson/1.0/req/core"
+    }
+   ]
+  }
+ },
+ "features": [
+  {
+   "type": "Feature",
+   "id": "https://map.bern.ch/arcgis/services/Geoportal/Amtliche_Vermessung_Kontur/MapServer/WMSServer#10",
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       7.416,
+       46.949
+      ],
+      [
+       7.416,
+       46.949
+      ],
+      [
+       7.416,
+       46.949
+      ],
+      [
+       7.416,
+       46.949
+      ],
+      [
+       7.416,
+       46.949
+      ]
+     ]
+    ]
+   },
+   "properties": {
+    "title": "Einzelobjektflaechenelementsymbol",
+    "updated": "2026-11-20T16:05:37+01:00",
+    "publisher": "Stadt Bern",
+    "layer": "10",
+    "offerings": [
+     {
+      "code": "http://www.opengis.net/spec/owc-geojson/1.0/req/wms",
+      "operations": [
+       {
+        "code": "GetCapabilities",
+        "method": "GET",
+        "type": "application/xml",
+        "href": "https://map.bern.ch/arcgis/services/Geoportal/Amtliche_Vermessung_Kontur/MapServer/WMSServer?SERVICE=WMS&REQUEST=GetCapabilities"
+       }
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": "https://geowms.bl.ch/#einzelobjekt_linie_symbol",
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       7.306,
+       47.309
+      ],
+      [
+       8.037,
+       47.309
+      ],
+      [
+       8.037,
+       47.626
+      ],
+      [
+       7.306,
+       47.626
+      ],
+      [
+       7.306,
+       47.309
+      ]
+     ]
+    ]
+   },
+   "properties": {
+    "title": "Einzelobjekt Linienelement Symbol",
+    "updated": "2026-11-20T16:05:37+01:00",
+    "publisher": "Kanton Basel-Landschaft",
+    "layer": "einzelobjekt_linie_symbol",
+    "offerings": [
+     {
+      "code": "http://www.opengis.net/spec/owc-geojson/1.0/req/wms",
+      "operations": [
+       {
+        "code": "GetCapabilities",
+        "method": "GET",
+        "type": "application/xml",
+        "href": "https://geowms.bl.ch/?SERVICE=WMS&REQUEST=GetCapabilities"
+       }
+      ]
+     }
+    ]
+   }
+  }
+ ]
+}

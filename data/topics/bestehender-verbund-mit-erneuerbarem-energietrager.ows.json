@@ -1,0 +1,269 @@
+{
+ "type": "FeatureCollection",
+ "id": "https://davidoesch.github.io/geoservice_harvester_poc/data/topics/bestehender-verbund-mit-erneuerbarem-energietrager.ows.json",
+ "properties": {
+  "lang": "de",
+  "title": "Bestehender Verbund mit erneuerbarem Energieträger",
+  "updated": "2026-11-20T16:13:33+01:00",
+  "subtitle": "GeoHarvester topic: 5 providers",
+  "links": {
+   "profiles": [
+    {
+     "href": "http://www.opengis.net/spec/owc-geojson/1.0/req/core"
+    }
+   ]
+  }
+ },
+ "features": [
+  {
+   "type": "Feature",
+   "id": "https://www.ogd.stadt-zuerich.ch/wms/geoportal/Kommunaler_Richtplan_Siedlung_Landschaft_oeffentliche_Bauten_und_Anlagen___Textkarten#Angebot_erneuerbarer_Energien_und_Abwaerme",
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       8.447,
+       47.319
+      ],
+      [
+       8.627,
+       47.319
+      ],
+      [
+       8.627,
+       47.433
+      ],
+      [
+       8.447,
+       47.433
+      ],
+      [
+       8.447,
+       47.319
+      ]
+     ]
+    ]
+   },
+   "properties": {
+    "title": "Angebot_erneuerbarer_Energien_und_Abwaerme",
+    "updated": "2026-11-20T16:13:33+01:00",
+    "publisher": "Stadt Zürich",
+    "layer": "Angebot_erneuerbarer_Energien_und_Abwaerme",
+    "offerings": [
+     {
+      "code": "http://www.opengis.net/spec/owc-geojson/1.0/req/wms",
+      "operations": [
+       {
+        "code": "GetCapabilities",
+        "method": "GET",
+        "type": "application/xml",
+        "href": "https://www.ogd.stadt-zuerich.ch/wms/geoportal/Kommunaler_Richtplan_Siedlung_Landschaft_oeffentliche_Bauten_und_Anlagen___Textkarten?SERVICE=WMS&REQUEST=GetCapabilities"
+       }
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": "https://geodienste.ch/db/richtplanung_erneuerbare_energien_v1_0_0/deu#richtplanung_erneuerbare_energien_v1_0",
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       5.703,
+       45.74
+      ],
+      [
+       10.645,
+       45.74
+      ],
+      [
+       10.645,
+       47.852
+      ],
+      [
+       5.703,
+       47.852
+      ],
+      [
+       5.703,
+       45.74
+      ]
+     ]
+    ]
+   },
+   "properties": {
+    "title": "geodienste.ch WMS Richtplanung erneuerbare Energien",
+    "updated": "2026-11-20T16:13:33+01:00",
+    "publisher": "geodienste.ch (kantonsübergreifend)",
+    "layer": "richtplanung_erneuerbare_energien_v1_0",
+    "offerings": [
+     {
+      "code": "http://www.opengis.net/spec/owc-geojson/1.0/req/wms",
+      "operations": [
+       {
+        "code": "GetCapabilities",
+        "method": "GET",
+        "type": "application/xml",
+        "href": "https://geodienste.ch/db/richtplanung_erneuerbare_energien_v1_0_0/deu?SERVICE=WMS&REQUEST=GetCapabilities"
+       }
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": "https://wms.geo.bs.ch/#EP_Energierichtplan_Verbunde",
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       7.239,
+       47.264
+      ],
+      [
+       8.105,
+       47.264
+      ],
+      [
+       8.105,
+       47.761
+      ],
+      [
+       7.239,
+       47.761
+      ],
+      [
+       7.239,
+       47.264
+      ]
+     ]
+    ]
+   },
+   "properties": {
+    "title": "Bestehender Verbund mit erneuerbarem Energieträger",
+    "updated": "2026-11-20T16:13:33+01:00",
+    "publisher": "Kanton Basel-Stadt",
+    "layer": "EP_Energierichtplan_Verbunde",
+    "offerings": [
+     {
+      "code": "http://www.opengis.net/spec/owc-geojson/1.0/req/wms",
+      "operations": [
+       {
+        "code": "GetCapabilities",
+        "method": "GET",
+        "type": "application/xml",
+        "href": "https://wms.geo.bs.ch/?SERVICE=WMS&REQUEST=GetCapabilities"
+       }
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": "https://wms.geo.gr.ch/rrip_bregaglia#Utilizzazione_delle_energie_rinnovabili",
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       8.615,
+       45.994
+      ],
+      [
+       10.547,
+       45.994
+      ],
+      [
+       10.547,
+       47.324
+      ],
+      [
+       8.615,
+       47.324
+      ],
+      [
+       8.615,
+       45.994
+      ]
+     ]
+    ]
+   },
+   "properties": {
+    "title": "Utilizzazione delle energie rinnovabili",
+    "updated": "2026-11-20T16:13:33+01:00",
+    "publisher": "Kanton Graubünden",
+    "layer": "Utilizzazione_delle_energie_rinnovabili",
+    "offerings": [
+     {
+      "code": "http://www.opengis.net/spec/owc-geojson/1.0/req/wms",
+      "operations": [
+       {
+        "code": "GetCapabilities",
+        "method": "GET",
+        "type": "application/xml",
+        "href": "https://wms.geo.gr.ch/rrip_bregaglia?SERVICE=WMS&REQUEST=GetCapabilities"
+       }
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": "https://ows.geo.tg.ch/geofy_access_proxy/richtplankt200k#Erneuerbare_Energien",
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       8.631,
+       47.347
+      ],
+      [
+       9.572,
+       47.347
+      ],
+      [
+       9.572,
+       47.711
+      ],
+      [
+       8.631,
+       47.711
+      ],
+      [
+       8.631,
+       47.347
+      ]
+     ]
+    ]
+   },
+   "properties": {
+    "title": "Elektrizitätsproduktion aus erneuerbaren Energien (Kap. 4.2)",
+    "updated": "2026-11-20T16:13:33+01:00",
+    "publisher": "Kanton Thurgau",
+    "layer": "Erneuerbare_Energien",
+    "offerings": [
+     {
+      "code": "http://www.opengis.net/spec/owc-geojson/1.0/req/wms",
+      "operations": [
+       {
+        "code": "GetCapabilities",
+        "method": "GET",
+        "type": "application/xml",
+        "href": "https://ows.geo.tg.ch/geofy_access_proxy/richtplankt200k?SERVICE=WMS&REQUEST=GetCapabilities"
+       }
+      ]
+     }
+    ]
+   }
+  }
+ ]
+}

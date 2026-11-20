@@ -1,0 +1,419 @@
+{
+ "type": "FeatureCollection",
+ "id": "https://davidoesch.github.io/geoservice_harvester_poc/data/topics/stadtkreise.ows.json",
+ "properties": {
+  "lang": "de",
+  "title": "Stadtkreise",
+  "updated": "2026-11-20T16:05:37+01:00",
+  "subtitle": "GeoHarvester topic: 8 providers",
+  "links": {
+   "profiles": [
+    {
+     "href": "http://www.opengis.net/spec/owc-geojson/1.0/req/core"
+    }
+   ]
+  }
+ },
+ "features": [
+  {
+   "type": "Feature",
+   "id": "https://map.bern.ch/arcgis/services/Geoportal/UNESCO_Uebersichtskarten_Gebieten/MapServer/WMSServer#2",
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       7.44,
+       46.946
+      ],
+      [
+       7.459,
+       46.946
+      ],
+      [
+       7.459,
+       46.954
+      ],
+      [
+       7.44,
+       46.954
+      ],
+      [
+       7.44,
+       46.946
+      ]
+     ]
+    ]
+   },
+   "properties": {
+    "title": "Stadtgebiet_4",
+    "updated": "2026-11-20T16:05:37+01:00",
+    "publisher": "Stadt Bern",
+    "layer": "2",
+    "offerings": [
+     {
+      "code": "http://www.opengis.net/spec/owc-geojson/1.0/req/wms",
+      "operations": [
+       {
+        "code": "GetCapabilities",
+        "method": "GET",
+        "type": "application/xml",
+        "href": "https://map.bern.ch/arcgis/services/Geoportal/UNESCO_Uebersichtskarten_Gebieten/MapServer/WMSServer?SERVICE=WMS&REQUEST=GetCapabilities"
+       }
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": "https://map.stadtluzern.ch/server/services/OGD/statistische_quartiere_stadtkreise/MapServer/WMSServer#3",
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       8.207,
+       47.027
+      ],
+      [
+       8.36,
+       47.027
+      ],
+      [
+       8.36,
+       47.085
+      ],
+      [
+       8.207,
+       47.085
+      ],
+      [
+       8.207,
+       47.027
+      ]
+     ]
+    ]
+   },
+   "properties": {
+    "title": "Stadtistische Stadtkreise",
+    "updated": "2026-11-20T16:05:37+01:00",
+    "publisher": "Stadt Luzern",
+    "layer": "3",
+    "offerings": [
+     {
+      "code": "http://www.opengis.net/spec/owc-geojson/1.0/req/wms",
+      "operations": [
+       {
+        "code": "GetCapabilities",
+        "method": "GET",
+        "type": "application/xml",
+        "href": "https://map.stadtluzern.ch/server/services/OGD/statistische_quartiere_stadtkreise/MapServer/WMSServer?SERVICE=WMS&REQUEST=GetCapabilities"
+       }
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": "https://stadtplan.winterthur.ch/wms/Stadtkreise#Stadtkreise",
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       8.632,
+       47.446
+      ],
+      [
+       8.834,
+       47.446
+      ],
+      [
+       8.834,
+       47.556
+      ],
+      [
+       8.632,
+       47.556
+      ],
+      [
+       8.632,
+       47.446
+      ]
+     ]
+    ]
+   },
+   "properties": {
+    "title": "Stadtkreise",
+    "updated": "2026-11-20T16:05:37+01:00",
+    "publisher": "Stadt Winterthur",
+    "layer": "Stadtkreise",
+    "offerings": [
+     {
+      "code": "http://www.opengis.net/spec/owc-geojson/1.0/req/wms",
+      "operations": [
+       {
+        "code": "GetCapabilities",
+        "method": "GET",
+        "type": "application/xml",
+        "href": "https://stadtplan.winterthur.ch/wms/Stadtkreise?SERVICE=WMS&REQUEST=GetCapabilities"
+       }
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": "https://www.ogd.stadt-zuerich.ch/wms/geoportal/Stadtkreise#Stadtkreise",
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       8.446,
+       47.318
+      ],
+      [
+       8.628,
+       47.318
+      ],
+      [
+       8.628,
+       47.436
+      ],
+      [
+       8.446,
+       47.436
+      ],
+      [
+       8.446,
+       47.318
+      ]
+     ]
+    ]
+   },
+   "properties": {
+    "title": "Stadtkreise",
+    "updated": "2026-11-20T16:05:37+01:00",
+    "publisher": "Stadt Zürich",
+    "layer": "Stadtkreise",
+    "offerings": [
+     {
+      "code": "http://www.opengis.net/spec/owc-geojson/1.0/req/wms",
+      "operations": [
+       {
+        "code": "GetCapabilities",
+        "method": "GET",
+        "type": "application/xml",
+        "href": "https://www.ogd.stadt-zuerich.ch/wms/geoportal/Stadtkreise?SERVICE=WMS&REQUEST=GetCapabilities"
+       }
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": "https://wms.geo.bs.ch/#SP_Stadtplan_1992",
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       7.239,
+       47.264
+      ],
+      [
+       8.105,
+       47.264
+      ],
+      [
+       8.105,
+       47.761
+      ],
+      [
+       7.239,
+       47.761
+      ],
+      [
+       7.239,
+       47.264
+      ]
+     ]
+    ]
+   },
+   "properties": {
+    "title": "Stadtplan 1992",
+    "updated": "2026-11-20T16:05:37+01:00",
+    "publisher": "Kanton Basel-Stadt",
+    "layer": "SP_Stadtplan_1992",
+    "offerings": [
+     {
+      "code": "http://www.opengis.net/spec/owc-geojson/1.0/req/wms",
+      "operations": [
+       {
+        "code": "GetCapabilities",
+        "method": "GET",
+        "type": "application/xml",
+        "href": "https://wms.geo.bs.ch/?SERVICE=WMS&REQUEST=GetCapabilities"
+       }
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": "https://map.geo.gl.ch/ows/mainmap#ch.gl.basemaps.stadtplan-glarus_1964",
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       9.046,
+       47.028
+      ],
+      [
+       9.077,
+       47.028
+      ],
+      [
+       9.077,
+       47.056
+      ],
+      [
+       9.046,
+       47.056
+      ],
+      [
+       9.046,
+       47.028
+      ]
+     ]
+    ]
+   },
+   "properties": {
+    "title": "Stadtplan von Glarus 1964",
+    "updated": "2026-11-20T16:05:37+01:00",
+    "publisher": "Kanton Glarus",
+    "layer": "ch.gl.basemaps.stadtplan-glarus_1964",
+    "offerings": [
+     {
+      "code": "http://www.opengis.net/spec/owc-geojson/1.0/req/wms",
+      "operations": [
+       {
+        "code": "GetCapabilities",
+        "method": "GET",
+        "type": "application/xml",
+        "href": "https://map.geo.gl.ch/ows/mainmap?SERVICE=WMS&REQUEST=GetCapabilities"
+       }
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": "https://public.geo.lu.ch/ogd/services/managed/GRZSDTXX_COL_V2_MP/MapServer/WMSServer#0",
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       8.207,
+       47.027
+      ],
+      [
+       8.36,
+       47.027
+      ],
+      [
+       8.36,
+       47.085
+      ],
+      [
+       8.207,
+       47.085
+      ],
+      [
+       8.207,
+       47.027
+      ]
+     ]
+    ]
+   },
+   "properties": {
+    "title": "Stadt Luzern: Stadtkreise",
+    "updated": "2026-11-20T16:05:37+01:00",
+    "publisher": "Kanton Luzern",
+    "layer": "0",
+    "offerings": [
+     {
+      "code": "http://www.opengis.net/spec/owc-geojson/1.0/req/wms",
+      "operations": [
+       {
+        "code": "GetCapabilities",
+        "method": "GET",
+        "type": "application/xml",
+        "href": "https://public.geo.lu.ch/ogd/services/managed/GRZSDTXX_COL_V2_MP/MapServer/WMSServer?SERVICE=WMS&REQUEST=GetCapabilities"
+       }
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": "https://wms.zh.ch/AdminZH#stadtkreise",
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       8.157,
+       47.142
+      ],
+      [
+       9.042,
+       47.142
+      ],
+      [
+       9.042,
+       47.848
+      ],
+      [
+       8.157,
+       47.848
+      ],
+      [
+       8.157,
+       47.142
+      ]
+     ]
+    ]
+   },
+   "properties": {
+    "title": "Stadtkreise",
+    "updated": "2026-11-20T16:05:37+01:00",
+    "publisher": "Kanton Zürich",
+    "layer": "stadtkreise",
+    "offerings": [
+     {
+      "code": "http://www.opengis.net/spec/owc-geojson/1.0/req/wms",
+      "operations": [
+       {
+        "code": "GetCapabilities",
+        "method": "GET",
+        "type": "application/xml",
+        "href": "https://wms.zh.ch/AdminZH?SERVICE=WMS&REQUEST=GetCapabilities"
+       }
+      ]
+     }
+    ]
+   }
+  }
+ ]
+}

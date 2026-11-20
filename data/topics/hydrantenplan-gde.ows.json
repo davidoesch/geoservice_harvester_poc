@@ -1,0 +1,369 @@
+{
+ "type": "FeatureCollection",
+ "id": "https://davidoesch.github.io/geoservice_harvester_poc/data/topics/hydrantenplan-gde.ows.json",
+ "properties": {
+  "lang": "de",
+  "title": "Hydrantenplan Gde",
+  "updated": "2026-11-20T16:05:37+01:00",
+  "subtitle": "GeoHarvester topic: 7 providers",
+  "links": {
+   "profiles": [
+    {
+     "href": "http://www.opengis.net/spec/owc-geojson/1.0/req/core"
+    }
+   ]
+  }
+ },
+ "features": [
+  {
+   "type": "Feature",
+   "id": "https://www.ogd.stadt-zuerich.ch/wms/geoportal/Hydranten#Hydrantenstandorte",
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       8.464,
+       47.267
+      ],
+      [
+       8.608,
+       47.267
+      ],
+      [
+       8.608,
+       47.433
+      ],
+      [
+       8.464,
+       47.433
+      ],
+      [
+       8.464,
+       47.267
+      ]
+     ]
+    ]
+   },
+   "properties": {
+    "title": "Hydrantenstandorte",
+    "updated": "2026-11-20T16:05:37+01:00",
+    "publisher": "Stadt Zürich",
+    "layer": "Hydrantenstandorte",
+    "offerings": [
+     {
+      "code": "http://www.opengis.net/spec/owc-geojson/1.0/req/wms",
+      "operations": [
+       {
+        "code": "GetCapabilities",
+        "method": "GET",
+        "type": "application/xml",
+        "href": "https://www.ogd.stadt-zuerich.ch/wms/geoportal/Hydranten?SERVICE=WMS&REQUEST=GetCapabilities"
+       }
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": "https://geodienste.ch/db/leitungskataster_v2_0_0/deu#wasser_hydrant",
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       5.703,
+       45.74
+      ],
+      [
+       10.645,
+       45.74
+      ],
+      [
+       10.645,
+       47.852
+      ],
+      [
+       5.703,
+       47.852
+      ],
+      [
+       5.703,
+       45.74
+      ]
+     ]
+    ]
+   },
+   "properties": {
+    "title": "Wasser: Hydrant",
+    "updated": "2026-11-20T16:05:37+01:00",
+    "publisher": "geodienste.ch (kantonsübergreifend)",
+    "layer": "wasser_hydrant",
+    "offerings": [
+     {
+      "code": "http://www.opengis.net/spec/owc-geojson/1.0/req/wms",
+      "operations": [
+       {
+        "code": "GetCapabilities",
+        "method": "GET",
+        "type": "application/xml",
+        "href": "https://geodienste.ch/db/leitungskataster_v2_0_0/deu?SERVICE=WMS&REQUEST=GetCapabilities"
+       }
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": "https://www.geoportal.ch/services/wms/ktai#ch.geoportal.ver_entsorgung_kommunikation.666.0.hydrantenplan_gde",
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       9.297,
+       47.225
+      ],
+      [
+       9.632,
+       47.225
+      ],
+      [
+       9.632,
+       47.453
+      ],
+      [
+       9.297,
+       47.453
+      ],
+      [
+       9.297,
+       47.225
+      ]
+     ]
+    ]
+   },
+   "properties": {
+    "title": "Hydrantenplan Gde",
+    "updated": "2026-11-20T16:05:37+01:00",
+    "publisher": "Kanton Appenzell Innerrhoden",
+    "layer": "ch.geoportal.ver_entsorgung_kommunikation.666.0.hydrantenplan_gde",
+    "offerings": [
+     {
+      "code": "http://www.opengis.net/spec/owc-geojson/1.0/req/wms",
+      "operations": [
+       {
+        "code": "GetCapabilities",
+        "method": "GET",
+        "type": "application/xml",
+        "href": "https://www.geoportal.ch/services/wms/ktai?SERVICE=WMS&REQUEST=GetCapabilities"
+       }
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": "https://www.geoportal.ch/services/wms/ktar#ch.geoportal.ver_entsorgung_kommunikation.666.0.hydrantenplan_gde",
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       9.178,
+       47.238
+      ],
+      [
+       9.644,
+       47.238
+      ],
+      [
+       9.644,
+       47.478
+      ],
+      [
+       9.178,
+       47.478
+      ],
+      [
+       9.178,
+       47.238
+      ]
+     ]
+    ]
+   },
+   "properties": {
+    "title": "Hydrantenplan Gde",
+    "updated": "2026-11-20T16:05:37+01:00",
+    "publisher": "Kanton Appenzell Ausserrhoden",
+    "layer": "ch.geoportal.ver_entsorgung_kommunikation.666.0.hydrantenplan_gde",
+    "offerings": [
+     {
+      "code": "http://www.opengis.net/spec/owc-geojson/1.0/req/wms",
+      "operations": [
+       {
+        "code": "GetCapabilities",
+        "method": "GET",
+        "type": "application/xml",
+        "href": "https://www.geoportal.ch/services/wms/ktar?SERVICE=WMS&REQUEST=GetCapabilities"
+       }
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": "https://geo.so.ch/api/wms#ch.so.agi.leitungskataster.wasser.hydranten",
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       7.364,
+       47.146
+      ],
+      [
+       7.867,
+       47.146
+      ],
+      [
+       7.867,
+       47.497
+      ],
+      [
+       7.364,
+       47.497
+      ],
+      [
+       7.364,
+       47.146
+      ]
+     ]
+    ]
+   },
+   "properties": {
+    "title": "Hydranten Wasser",
+    "updated": "2026-11-20T16:05:37+01:00",
+    "publisher": "Kanton Solothurn",
+    "layer": "ch.so.agi.leitungskataster.wasser.hydranten",
+    "offerings": [
+     {
+      "code": "http://www.opengis.net/spec/owc-geojson/1.0/req/wms",
+      "operations": [
+       {
+        "code": "GetCapabilities",
+        "method": "GET",
+        "type": "application/xml",
+        "href": "https://geo.so.ch/api/wms?SERVICE=WMS&REQUEST=GetCapabilities"
+       }
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": "https://geo.ur.ch/wms#leitungen:was_hydrant",
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       8.501,
+       46.59
+      ],
+      [
+       8.94,
+       46.59
+      ],
+      [
+       8.94,
+       46.952
+      ],
+      [
+       8.501,
+       46.952
+      ],
+      [
+       8.501,
+       46.59
+      ]
+     ]
+    ]
+   },
+   "properties": {
+    "title": "Wasser Hydrant",
+    "updated": "2026-11-20T16:05:37+01:00",
+    "publisher": "Kanton Uri",
+    "layer": "leitungen:was_hydrant",
+    "offerings": [
+     {
+      "code": "http://www.opengis.net/spec/owc-geojson/1.0/req/wms",
+      "operations": [
+       {
+        "code": "GetCapabilities",
+        "method": "GET",
+        "type": "application/xml",
+        "href": "https://geo.ur.ch/wms?SERVICE=WMS&REQUEST=GetCapabilities"
+       }
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": "https://www.ogc.vd.ch/public/services/OGC/wmsVD/Mapserver/WMSServer#vd.borne_hydrante",
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       6.061,
+       46.189
+      ],
+      [
+       7.239,
+       46.189
+      ],
+      [
+       7.239,
+       46.976
+      ],
+      [
+       6.061,
+       46.976
+      ],
+      [
+       6.061,
+       46.189
+      ]
+     ]
+    ]
+   },
+   "properties": {
+    "title": "vd.borne_hydrante",
+    "updated": "2026-11-20T16:05:37+01:00",
+    "publisher": "Kanton Waadt",
+    "layer": "vd.borne_hydrante",
+    "offerings": [
+     {
+      "code": "http://www.opengis.net/spec/owc-geojson/1.0/req/wms",
+      "operations": [
+       {
+        "code": "GetCapabilities",
+        "method": "GET",
+        "type": "application/xml",
+        "href": "https://www.ogc.vd.ch/public/services/OGC/wmsVD/Mapserver/WMSServer?SERVICE=WMS&REQUEST=GetCapabilities"
+       }
+      ]
+     }
+    ]
+   }
+  }
+ ]
+}

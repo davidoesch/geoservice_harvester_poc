@@ -1,0 +1,119 @@
+{
+ "type": "FeatureCollection",
+ "id": "https://davidoesch.github.io/geoservice_harvester_poc/data/topics/gol-sondage-geologie.ows.json",
+ "properties": {
+  "lang": "de",
+  "title": "GOL SONDAGE GEOLOGIE",
+  "updated": "2026-11-20T16:13:33+01:00",
+  "subtitle": "GeoHarvester topic: 2 providers",
+  "links": {
+   "profiles": [
+    {
+     "href": "http://www.opengis.net/spec/owc-geojson/1.0/req/core"
+    }
+   ]
+  }
+ },
+ "features": [
+  {
+   "type": "Feature",
+   "id": "https://vector.sitg.ge.ch/arcgis/services/GOL_SONDAGE_GEOLOGIE/MapServer/WMSServer#0",
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       5.946,
+       46.114
+      ],
+      [
+       6.567,
+       46.114
+      ],
+      [
+       6.567,
+       46.446
+      ],
+      [
+       5.946,
+       46.446
+      ],
+      [
+       5.946,
+       46.114
+      ]
+     ]
+    ]
+   },
+   "properties": {
+    "title": "GOL_SONDAGE_GEOLOGIE",
+    "updated": "2026-11-20T16:13:33+01:00",
+    "publisher": "Kanton Genf",
+    "layer": "0",
+    "offerings": [
+     {
+      "code": "http://www.opengis.net/spec/owc-geojson/1.0/req/wms",
+      "operations": [
+       {
+        "code": "GetCapabilities",
+        "method": "GET",
+        "type": "application/xml",
+        "href": "https://vector.sitg.ge.ch/arcgis/services/GOL_SONDAGE_GEOLOGIE/MapServer/WMSServer?SERVICE=WMS&REQUEST=GetCapabilities"
+       }
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": "https://www.ogc.vd.ch/public/services/OGC/wmsVD/Mapserver/WMSServer#vd.sondage_geologique_non_public",
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       6.069,
+       46.209
+      ],
+      [
+       7.226,
+       46.209
+      ],
+      [
+       7.226,
+       46.961
+      ],
+      [
+       6.069,
+       46.961
+      ],
+      [
+       6.069,
+       46.209
+      ]
+     ]
+    ]
+   },
+   "properties": {
+    "title": "vd.sondage_geologique_non_public",
+    "updated": "2026-11-20T16:13:33+01:00",
+    "publisher": "Kanton Waadt",
+    "layer": "vd.sondage_geologique_non_public",
+    "offerings": [
+     {
+      "code": "http://www.opengis.net/spec/owc-geojson/1.0/req/wms",
+      "operations": [
+       {
+        "code": "GetCapabilities",
+        "method": "GET",
+        "type": "application/xml",
+        "href": "https://www.ogc.vd.ch/public/services/OGC/wmsVD/Mapserver/WMSServer?SERVICE=WMS&REQUEST=GetCapabilities"
+       }
+      ]
+     }
+    ]
+   }
+  }
+ ]
+}

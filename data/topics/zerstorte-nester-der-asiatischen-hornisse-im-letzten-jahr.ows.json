@@ -1,0 +1,119 @@
+{
+ "type": "FeatureCollection",
+ "id": "https://davidoesch.github.io/geoservice_harvester_poc/data/topics/zerstorte-nester-der-asiatischen-hornisse-im-letzten-jahr.ows.json",
+ "properties": {
+  "lang": "de",
+  "title": "Zerstörte Nester der Asiatischen Hornisse im letzten Jahr",
+  "updated": "2026-11-20T16:05:37+01:00",
+  "subtitle": "GeoHarvester topic: 2 providers",
+  "links": {
+   "profiles": [
+    {
+     "href": "http://www.opengis.net/spec/owc-geojson/1.0/req/core"
+    }
+   ]
+  }
+ },
+ "features": [
+  {
+   "type": "Feature",
+   "id": "https://wms.geo.ag.ch/public/ows#ch_ag_geo_al_ahnesterinaktiv",
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       7.564,
+       47.123
+      ],
+      [
+       8.563,
+       47.123
+      ],
+      [
+       8.563,
+       47.707
+      ],
+      [
+       7.564,
+       47.707
+      ],
+      [
+       7.564,
+       47.123
+      ]
+     ]
+    ]
+   },
+   "properties": {
+    "title": "Asiatische Hornisse Nester zerstört",
+    "updated": "2026-11-20T16:05:37+01:00",
+    "publisher": "Kanton Aargau",
+    "layer": "ch_ag_geo_al_ahnesterinaktiv",
+    "offerings": [
+     {
+      "code": "http://www.opengis.net/spec/owc-geojson/1.0/req/wms",
+      "operations": [
+       {
+        "code": "GetCapabilities",
+        "method": "GET",
+        "type": "application/xml",
+        "href": "https://wms.geo.ag.ch/public/ows?SERVICE=WMS&REQUEST=GetCapabilities"
+       }
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": "https://www.geoservice.apps.be.ch/geoservice3/services/a42geo/of_farming03_de_ms_wms/MapServer/WMSServer#ASHORNIS_NESTZNET_VW_43921",
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       6.831,
+       46.645
+      ],
+      [
+       7.889,
+       46.645
+      ],
+      [
+       7.889,
+       47.33
+      ],
+      [
+       6.831,
+       47.33
+      ],
+      [
+       6.831,
+       46.645
+      ]
+     ]
+    ]
+   },
+   "properties": {
+    "title": "Zerstörte Nester der Asiatischen Hornisse im letzten Jahr",
+    "updated": "2026-11-20T16:05:37+01:00",
+    "publisher": "Kanton Bern",
+    "layer": "ASHORNIS_NESTZNET_VW_43921",
+    "offerings": [
+     {
+      "code": "http://www.opengis.net/spec/owc-geojson/1.0/req/wms",
+      "operations": [
+       {
+        "code": "GetCapabilities",
+        "method": "GET",
+        "type": "application/xml",
+        "href": "https://www.geoservice.apps.be.ch/geoservice3/services/a42geo/of_farming03_de_ms_wms/MapServer/WMSServer?SERVICE=WMS&REQUEST=GetCapabilities"
+       }
+      ]
+     }
+    ]
+   }
+  }
+ ]
+}

@@ -1,0 +1,317 @@
+{
+ "type": "FeatureCollection",
+ "id": "https://davidoesch.github.io/geoservice_harvester_poc/data/topics/dom-relief-2022.ows.json",
+ "properties": {
+  "lang": "de",
+  "title": "DOM Relief 2022",
+  "updated": "2026-11-20T16:05:37+01:00",
+  "subtitle": "GeoHarvester topic: 7 providers",
+  "links": {
+   "profiles": [
+    {
+     "href": "http://www.opengis.net/spec/owc-geojson/1.0/req/core"
+    }
+   ]
+  }
+ },
+ "features": [
+  {
+   "type": "Feature",
+   "id": "https://map.lausanne.ch/mapserv_proxy?ogcserver=source+for+image%2Fpng#altimetrie_ombrage_mns",
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       5.961,
+       45.821
+      ],
+      [
+       10.604,
+       45.821
+      ],
+      [
+       10.604,
+       47.821
+      ],
+      [
+       5.961,
+       47.821
+      ],
+      [
+       5.961,
+       45.821
+      ]
+     ]
+    ]
+   },
+   "properties": {
+    "title": "Relief ombré MNS",
+    "updated": "2026-11-20T16:05:37+01:00",
+    "publisher": "Stadt Lausanne",
+    "layer": "altimetrie_ombrage_mns",
+    "offerings": [
+     {
+      "code": "http://www.opengis.net/spec/owc-geojson/1.0/req/wms",
+      "operations": [
+       {
+        "code": "GetCapabilities",
+        "method": "GET",
+        "type": "application/xml",
+        "href": "https://map.lausanne.ch/mapserv_proxy?ogcserver=source+for+image%2Fpng&SERVICE=WMS&REQUEST=GetCapabilities"
+       }
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": "https://www.geoservice.apps.be.ch/geoservice3/services/a42geo/of_elevation01_de_ms_wms/MapServer/WMSServer#LDTMABL1_LTRELI1_21843",
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       6.859,
+       46.336
+      ],
+      [
+       8.453,
+       46.336
+      ],
+      [
+       8.453,
+       47.348
+      ],
+      [
+       6.859,
+       47.348
+      ],
+      [
+       6.859,
+       46.336
+      ]
+     ]
+    ]
+   },
+   "properties": {
+    "title": "DTM LiDAR Relief",
+    "updated": "2026-11-20T16:05:37+01:00",
+    "publisher": "Kanton Bern",
+    "layer": "LDTMABL1_LTRELI1_21843",
+    "offerings": [
+     {
+      "code": "http://www.opengis.net/spec/owc-geojson/1.0/req/wms",
+      "operations": [
+       {
+        "code": "GetCapabilities",
+        "method": "GET",
+        "type": "application/xml",
+        "href": "https://www.geoservice.apps.be.ch/geoservice3/services/a42geo/of_elevation01_de_ms_wms/MapServer/WMSServer?SERVICE=WMS&REQUEST=GetCapabilities"
+       }
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": "https://tile.geoview.bl.ch/1.0.0/WMTSCapabilities.xml#dtm_av_relief_02m",
+   "geometry": null,
+   "properties": {
+    "title": "dtm_av_relief_02m",
+    "updated": "2026-11-20T16:05:37+01:00",
+    "publisher": "Kanton Basel-Landschaft",
+    "layer": "dtm_av_relief_02m",
+    "offerings": [
+     {
+      "code": "http://www.opengis.net/spec/owc-geojson/1.0/req/wmts",
+      "operations": [
+       {
+        "code": "GetCapabilities",
+        "method": "GET",
+        "type": "application/xml",
+        "href": "https://tile.geoview.bl.ch/1.0.0/WMTSCapabilities.xml"
+       }
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": "https://wms.geo.sh.ch/raster#Relief_2013",
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       8.395,
+       47.544
+      ],
+      [
+       8.887,
+       47.544
+      ],
+      [
+       8.887,
+       47.814
+      ],
+      [
+       8.395,
+       47.814
+      ],
+      [
+       8.395,
+       47.544
+      ]
+     ]
+    ]
+   },
+   "properties": {
+    "title": "Relief_2013",
+    "updated": "2026-11-20T16:05:37+01:00",
+    "publisher": "Kanton Schaffhausen",
+    "layer": "Relief_2013",
+    "offerings": [
+     {
+      "code": "http://www.opengis.net/spec/owc-geojson/1.0/req/wms",
+      "operations": [
+       {
+        "code": "GetCapabilities",
+        "method": "GET",
+        "type": "application/xml",
+        "href": "https://wms.geo.sh.ch/raster?SERVICE=WMS&REQUEST=GetCapabilities"
+       }
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": "https://map.geo.sz.ch/tiles/1.0.0/WMTSCapabilities.xml#ch_sz_a162_relief_schattierung",
+   "geometry": null,
+   "properties": {
+    "title": "ch_sz_a162_relief_schattierung",
+    "updated": "2026-11-20T16:05:37+01:00",
+    "publisher": "Kanton Schwyz",
+    "layer": "ch_sz_a162_relief_schattierung",
+    "offerings": [
+     {
+      "code": "http://www.opengis.net/spec/owc-geojson/1.0/req/wmts",
+      "operations": [
+       {
+        "code": "GetCapabilities",
+        "method": "GET",
+        "type": "application/xml",
+        "href": "https://map.geo.sz.ch/tiles/1.0.0/WMTSCapabilities.xml"
+       }
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": "https://services.geo.zg.ch/ows/BasisplanFarbe#Relief",
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       8.392,
+       47.08
+      ],
+      [
+       8.703,
+       47.08
+      ],
+      [
+       8.703,
+       47.248
+      ],
+      [
+       8.392,
+       47.248
+      ],
+      [
+       8.392,
+       47.08
+      ]
+     ]
+    ]
+   },
+   "properties": {
+    "title": "Relief",
+    "updated": "2026-11-20T16:05:37+01:00",
+    "publisher": "Kanton Zug",
+    "layer": "Relief",
+    "offerings": [
+     {
+      "code": "http://www.opengis.net/spec/owc-geojson/1.0/req/wms",
+      "operations": [
+       {
+        "code": "GetCapabilities",
+        "method": "GET",
+        "type": "application/xml",
+        "href": "https://services.geo.zg.ch/ows/BasisplanFarbe?SERVICE=WMS&REQUEST=GetCapabilities"
+       }
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": "https://wms.zh.ch/LidarZHWMS#dom2022_relief",
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       8.157,
+       47.142
+      ],
+      [
+       9.042,
+       47.142
+      ],
+      [
+       9.042,
+       47.848
+      ],
+      [
+       8.157,
+       47.848
+      ],
+      [
+       8.157,
+       47.142
+      ]
+     ]
+    ]
+   },
+   "properties": {
+    "title": "DOM Relief 2022",
+    "updated": "2026-11-20T16:05:37+01:00",
+    "publisher": "Kanton Zürich",
+    "layer": "dom2022_relief",
+    "offerings": [
+     {
+      "code": "http://www.opengis.net/spec/owc-geojson/1.0/req/wms",
+      "operations": [
+       {
+        "code": "GetCapabilities",
+        "method": "GET",
+        "type": "application/xml",
+        "href": "https://wms.zh.ch/LidarZHWMS?SERVICE=WMS&REQUEST=GetCapabilities"
+       }
+      ]
+     }
+    ]
+   }
+  }
+ ]
+}

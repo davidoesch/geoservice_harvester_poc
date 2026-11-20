@@ -1,0 +1,219 @@
+{
+ "type": "FeatureCollection",
+ "id": "https://davidoesch.github.io/geoservice_harvester_poc/data/topics/chemins-de-randonnee-pedestre.ows.json",
+ "properties": {
+  "lang": "de",
+  "title": "Chemins de randonnée pédestre",
+  "updated": "2026-11-20T16:05:37+01:00",
+  "subtitle": "GeoHarvester topic: 4 providers",
+  "links": {
+   "profiles": [
+    {
+     "href": "http://www.opengis.net/spec/owc-geojson/1.0/req/core"
+    }
+   ]
+  }
+ },
+ "features": [
+  {
+   "type": "Feature",
+   "id": "https://map.lausanne.ch/mapserv_proxy?ogcserver=source+for+image%2Fpng#mobilite_randonnees_pedestres",
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       5.961,
+       45.821
+      ],
+      [
+       10.604,
+       45.821
+      ],
+      [
+       10.604,
+       47.821
+      ],
+      [
+       5.961,
+       47.821
+      ],
+      [
+       5.961,
+       45.821
+      ]
+     ]
+    ]
+   },
+   "properties": {
+    "title": "Randonnées pédestres",
+    "updated": "2026-11-20T16:05:37+01:00",
+    "publisher": "Stadt Lausanne",
+    "layer": "mobilite_randonnees_pedestres",
+    "offerings": [
+     {
+      "code": "http://www.opengis.net/spec/owc-geojson/1.0/req/wms",
+      "operations": [
+       {
+        "code": "GetCapabilities",
+        "method": "GET",
+        "type": "application/xml",
+        "href": "https://map.lausanne.ch/mapserv_proxy?ogcserver=source+for+image%2Fpng&SERVICE=WMS&REQUEST=GetCapabilities"
+       }
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": "https://maps.fr.ch/ags/services/OpenData/Chemins_de_randonnee_pedestre/MapServer/WMSServer#0",
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       6.681,
+       46.398
+      ],
+      [
+       7.44,
+       46.398
+      ],
+      [
+       7.44,
+       47.048
+      ],
+      [
+       6.681,
+       47.048
+      ],
+      [
+       6.681,
+       46.398
+      ]
+     ]
+    ]
+   },
+   "properties": {
+    "title": "Chemins de randonnée pédestre",
+    "updated": "2026-11-20T16:05:37+01:00",
+    "publisher": "Kanton Freiburg",
+    "layer": "0",
+    "offerings": [
+     {
+      "code": "http://www.opengis.net/spec/owc-geojson/1.0/req/wms",
+      "operations": [
+       {
+        "code": "GetCapabilities",
+        "method": "GET",
+        "type": "application/xml",
+        "href": "https://maps.fr.ch/ags/services/OpenData/Chemins_de_randonnee_pedestre/MapServer/WMSServer?SERVICE=WMS&REQUEST=GetCapabilities"
+       }
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": "https://geoservices.jura.ch/wms#ju.sdt_09_14",
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       6.696,
+       47.107
+      ],
+      [
+       7.644,
+       47.107
+      ],
+      [
+       7.644,
+       47.535
+      ],
+      [
+       6.696,
+       47.535
+      ],
+      [
+       6.696,
+       47.107
+      ]
+     ]
+    ]
+   },
+   "properties": {
+    "title": "Chemins de randonnée pédestre",
+    "updated": "2026-11-20T16:05:37+01:00",
+    "publisher": "Kanton Jura",
+    "layer": "ju.sdt_09_14",
+    "offerings": [
+     {
+      "code": "http://www.opengis.net/spec/owc-geojson/1.0/req/wms",
+      "operations": [
+       {
+        "code": "GetCapabilities",
+        "method": "GET",
+        "type": "application/xml",
+        "href": "https://geoservices.jura.ch/wms?SERVICE=WMS&REQUEST=GetCapabilities"
+       }
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": "https://www.ogc.vd.ch/public/services/OGC/wmsVD/Mapserver/WMSServer#vd.revetement_chemin_pedestre",
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       6.061,
+       46.177
+      ],
+      [
+       7.262,
+       46.177
+      ],
+      [
+       7.262,
+       46.99
+      ],
+      [
+       6.061,
+       46.99
+      ],
+      [
+       6.061,
+       46.177
+      ]
+     ]
+    ]
+   },
+   "properties": {
+    "title": "vd.revetement_chemin_pedestre",
+    "updated": "2026-11-20T16:05:37+01:00",
+    "publisher": "Kanton Waadt",
+    "layer": "vd.revetement_chemin_pedestre",
+    "offerings": [
+     {
+      "code": "http://www.opengis.net/spec/owc-geojson/1.0/req/wms",
+      "operations": [
+       {
+        "code": "GetCapabilities",
+        "method": "GET",
+        "type": "application/xml",
+        "href": "https://www.ogc.vd.ch/public/services/OGC/wmsVD/Mapserver/WMSServer?SERVICE=WMS&REQUEST=GetCapabilities"
+       }
+      ]
+     }
+    ]
+   }
+  }
+ ]
+}

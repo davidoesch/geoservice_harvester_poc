@@ -1,0 +1,36 @@
+<!DOCTYPE qgis-layer-definition>
+<qlr>
+  <layer-tree-group expanded="1" checked="Qt::Checked" name="">
+    <layer-tree-group expanded="1" checked="Qt::Checked" name="GeoHarvester – Kantonaler Richtplan Landschaft Vorrangebiete Landschaft">
+      <layer-tree-layer expanded="0" checked="Qt::Checked" id="geoharvester_kantonaler-richtplan-landschaft-vorrangebiete-landschaft_0" name="Landschaften von kantonaler Bedeutung (LkB) Richtplan L 2.3 (AG)" source="contextualWMSLegend=0&amp;crs=EPSG:2056&amp;dpiMode=7&amp;featureCount=10&amp;format=image/png&amp;layers=ch_ag_geo_are_rp11lkb&amp;styles&amp;url=https://wms.geo.ag.ch/public/ows" providerKey="wms"/>
+      <layer-tree-layer expanded="0" checked="Qt::Checked" id="geoharvester_kantonaler-richtplan-landschaft-vorrangebiete-landschaft_1" name="Kantonaler Richtplan Landschaft Vorrangebiete Landschaft (BL)" source="contextualWMSLegend=0&amp;crs=EPSG:2056&amp;dpiMode=7&amp;featureCount=10&amp;format=image/png&amp;layers=krip_landsch_vorrang_landschaft&amp;styles&amp;url=https://geowms.bl.ch/" providerKey="wms"/>
+      <layer-tree-layer expanded="0" checked="Qt::Checked" id="geoharvester_kantonaler-richtplan-landschaft-vorrangebiete-landschaft_2" name="Erholungsgebiete (kantonaler Richtplan) (371.11) (ZH)" source=" pagingEnabled='true' preferCoordinatesForWfsT11='false' restrictToRequestBBOX='1' srsname='EPSG:2056' typename='ms:ogd-0371_giszhpub_wep10_pg_erholung_f' url='https://maps.zh.ch/wfs/OGDZHWFS' version='auto'" providerKey="WFS"/>
+    </layer-tree-group>
+  </layer-tree-group>
+  <maplayers>
+    <maplayer type="raster" hasScaleBasedVisibilityFlag="0" minScale="1e+08" maxScale="0" styleCategories="AllStyleCategories">
+      <extent><xmin>2612414</xmin><ymin>1210787</ymin><xmax>2686794</xmax><ymax>1284238</ymax></extent>
+      <id>geoharvester_kantonaler-richtplan-landschaft-vorrangebiete-landschaft_0</id>
+      <datasource>contextualWMSLegend=0&amp;crs=EPSG:2056&amp;dpiMode=7&amp;featureCount=10&amp;format=image/png&amp;layers=ch_ag_geo_are_rp11lkb&amp;styles&amp;url=https://wms.geo.ag.ch/public/ows</datasource>
+      <layername>Landschaften von kantonaler Bedeutung (LkB) Richtplan L 2.3 (AG)</layername>
+      <srs><spatialrefsys><proj4>+proj=somerc +lat_0=46.9524055555556 +lon_0=7.43958333333333 +k_0=1 +x_0=2600000 +y_0=1200000 +ellps=bessel +towgs84=674.374,15.056,405.346,0,0,0,0 +units=m +no_defs</proj4><srid>2056</srid><authid>EPSG:2056</authid><description>CH1903+ / LV95</description><projectionacronym>somerc</projectionacronym><ellipsoidacronym>EPSG:7004</ellipsoidacronym><geographicflag>false</geographicflag></spatialrefsys></srs>
+      <provider>wms</provider>
+    </maplayer>
+    <maplayer type="raster" hasScaleBasedVisibilityFlag="0" minScale="1e+08" maxScale="0" styleCategories="AllStyleCategories">
+      <extent><xmin>2589971</xmin><ymin>1239800</ymin><xmax>2644979</xmax><ymax>1275208</ymax></extent>
+      <id>geoharvester_kantonaler-richtplan-landschaft-vorrangebiete-landschaft_1</id>
+      <datasource>contextualWMSLegend=0&amp;crs=EPSG:2056&amp;dpiMode=7&amp;featureCount=10&amp;format=image/png&amp;layers=krip_landsch_vorrang_landschaft&amp;styles&amp;url=https://geowms.bl.ch/</datasource>
+      <layername>Kantonaler Richtplan Landschaft Vorrangebiete Landschaft (BL)</layername>
+      <srs><spatialrefsys><proj4>+proj=somerc +lat_0=46.9524055555556 +lon_0=7.43958333333333 +k_0=1 +x_0=2600000 +y_0=1200000 +ellps=bessel +towgs84=674.374,15.056,405.346,0,0,0,0 +units=m +no_defs</proj4><srid>2056</srid><authid>EPSG:2056</authid><description>CH1903+ / LV95</description><projectionacronym>somerc</projectionacronym><ellipsoidacronym>EPSG:7004</ellipsoidacronym><geographicflag>false</geographicflag></spatialrefsys></srs>
+      <provider>wms</provider>
+    </maplayer>
+    <maplayer type="vector" hasScaleBasedVisibilityFlag="0" minScale="1e+08" maxScale="0" styleCategories="AllStyleCategories">
+      <extent><xmin>2654491</xmin><ymin>1221474</ymin><xmax>2719945</xmax><ymax>1285821</ymax></extent>
+      <id>geoharvester_kantonaler-richtplan-landschaft-vorrangebiete-landschaft_2</id>
+      <datasource> pagingEnabled='true' preferCoordinatesForWfsT11='false' restrictToRequestBBOX='1' srsname='EPSG:2056' typename='ms:ogd-0371_giszhpub_wep10_pg_erholung_f' url='https://maps.zh.ch/wfs/OGDZHWFS' version='auto'</datasource>
+      <layername>Erholungsgebiete (kantonaler Richtplan) (371.11) (ZH)</layername>
+      <srs><spatialrefsys><proj4>+proj=somerc +lat_0=46.9524055555556 +lon_0=7.43958333333333 +k_0=1 +x_0=2600000 +y_0=1200000 +ellps=bessel +towgs84=674.374,15.056,405.346,0,0,0,0 +units=m +no_defs</proj4><srid>2056</srid><authid>EPSG:2056</authid><description>CH1903+ / LV95</description><projectionacronym>somerc</projectionacronym><ellipsoidacronym>EPSG:7004</ellipsoidacronym><geographicflag>false</geographicflag></spatialrefsys></srs>
+      <provider>WFS</provider>
+    </maplayer>
+  </maplayers>
+</qlr>

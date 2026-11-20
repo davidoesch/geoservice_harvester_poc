@@ -1,0 +1,119 @@
+{
+ "type": "FeatureCollection",
+ "id": "https://davidoesch.github.io/geoservice_harvester_poc/data/topics/liegenschaft-selbstrecht-projektiert.ows.json",
+ "properties": {
+  "lang": "de",
+  "title": "Liegenschaft Selbstrecht projektiert",
+  "updated": "2026-11-20T16:05:37+01:00",
+  "subtitle": "GeoHarvester topic: 2 providers",
+  "links": {
+   "profiles": [
+    {
+     "href": "http://www.opengis.net/spec/owc-geojson/1.0/req/core"
+    }
+   ]
+  }
+ },
+ "features": [
+  {
+   "type": "Feature",
+   "id": "https://map.geo.sz.ch/mapserv_proxy#ch.sz.a018.amtliche_vermessung.liegenschaften.selbstrecht_projektiert",
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       5.697,
+       45.553
+      ],
+      [
+       10.923,
+       45.553
+      ],
+      [
+       10.923,
+       48.032
+      ],
+      [
+       5.697,
+       48.032
+      ],
+      [
+       5.697,
+       45.553
+      ]
+     ]
+    ]
+   },
+   "properties": {
+    "title": "Selbstrecht projektiert",
+    "updated": "2026-11-20T16:05:37+01:00",
+    "publisher": "Kanton Schwyz",
+    "layer": "ch.sz.a018.amtliche_vermessung.liegenschaften.selbstrecht_projektiert",
+    "offerings": [
+     {
+      "code": "http://www.opengis.net/spec/owc-geojson/1.0/req/wms",
+      "operations": [
+       {
+        "code": "GetCapabilities",
+        "method": "GET",
+        "type": "application/xml",
+        "href": "https://map.geo.sz.ch/mapserv_proxy?SERVICE=WMS&REQUEST=GetCapabilities"
+       }
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": "https://services.geo.zg.ch/ows/Grundbuchplan#zg.av_liegensch_selbstr_proj",
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       8.457,
+       47.132
+      ],
+      [
+       8.638,
+       47.132
+      ],
+      [
+       8.638,
+       47.205
+      ],
+      [
+       8.457,
+       47.205
+      ],
+      [
+       8.457,
+       47.132
+      ]
+     ]
+    ]
+   },
+   "properties": {
+    "title": "Liegenschaft Selbstrecht projektiert",
+    "updated": "2026-11-20T16:05:37+01:00",
+    "publisher": "Kanton Zug",
+    "layer": "zg.av_liegensch_selbstr_proj",
+    "offerings": [
+     {
+      "code": "http://www.opengis.net/spec/owc-geojson/1.0/req/wms",
+      "operations": [
+       {
+        "code": "GetCapabilities",
+        "method": "GET",
+        "type": "application/xml",
+        "href": "https://services.geo.zg.ch/ows/Grundbuchplan?SERVICE=WMS&REQUEST=GetCapabilities"
+       }
+      ]
+     }
+    ]
+   }
+  }
+ ]
+}

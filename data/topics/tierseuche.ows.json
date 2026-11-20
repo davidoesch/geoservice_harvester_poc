@@ -1,0 +1,119 @@
+{
+ "type": "FeatureCollection",
+ "id": "https://davidoesch.github.io/geoservice_harvester_poc/data/topics/tierseuche.ows.json",
+ "properties": {
+  "lang": "de",
+  "title": "Tierseuche",
+  "updated": "2026-11-20T16:13:33+01:00",
+  "subtitle": "GeoHarvester topic: 2 providers",
+  "links": {
+   "profiles": [
+    {
+     "href": "http://www.opengis.net/spec/owc-geojson/1.0/req/core"
+    }
+   ]
+  }
+ },
+ "features": [
+  {
+   "type": "Feature",
+   "id": "https://www.geoservice.apps.be.ch/geoservice3/services/a42geo/of_society02_de_ms_wms/MapServer/WMSServer#GANALYSE_GEFAHRGM_VW_22649",
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       6.86,
+       46.323
+      ],
+      [
+       8.468,
+       46.323
+      ],
+      [
+       8.468,
+       47.347
+      ],
+      [
+       6.86,
+       47.347
+      ],
+      [
+       6.86,
+       46.323
+      ]
+     ]
+    ]
+   },
+   "properties": {
+    "title": "Tierseuche",
+    "updated": "2026-11-20T16:13:33+01:00",
+    "publisher": "Kanton Bern",
+    "layer": "GANALYSE_GEFAHRGM_VW_22649",
+    "offerings": [
+     {
+      "code": "http://www.opengis.net/spec/owc-geojson/1.0/req/wms",
+      "operations": [
+       {
+        "code": "GetCapabilities",
+        "method": "GET",
+        "type": "application/xml",
+        "href": "https://www.geoservice.apps.be.ch/geoservice3/services/a42geo/of_society02_de_ms_wms/MapServer/WMSServer?SERVICE=WMS&REQUEST=GetCapabilities"
+       }
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": "https://vector.sitg.ge.ch/arcgis/services/GEO_TIERS_LIEUX/MapServer/WMSServer#0",
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       6.024,
+       46.065
+      ],
+      [
+       6.545,
+       46.065
+      ],
+      [
+       6.545,
+       46.465
+      ],
+      [
+       6.024,
+       46.465
+      ],
+      [
+       6.024,
+       46.065
+      ]
+     ]
+    ]
+   },
+   "properties": {
+    "title": "GEO_TIERS_LIEUX",
+    "updated": "2026-11-20T16:13:33+01:00",
+    "publisher": "Kanton Genf",
+    "layer": "0",
+    "offerings": [
+     {
+      "code": "http://www.opengis.net/spec/owc-geojson/1.0/req/wms",
+      "operations": [
+       {
+        "code": "GetCapabilities",
+        "method": "GET",
+        "type": "application/xml",
+        "href": "https://vector.sitg.ge.ch/arcgis/services/GEO_TIERS_LIEUX/MapServer/WMSServer?SERVICE=WMS&REQUEST=GetCapabilities"
+       }
+      ]
+     }
+    ]
+   }
+  }
+ ]
+}

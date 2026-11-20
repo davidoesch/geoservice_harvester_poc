@@ -1,0 +1,369 @@
+{
+ "type": "FeatureCollection",
+ "id": "https://davidoesch.github.io/geoservice_harvester_poc/data/topics/batiment.ows.json",
+ "properties": {
+  "lang": "de",
+  "title": "Batiment",
+  "updated": "2026-11-20T16:05:37+01:00",
+  "subtitle": "GeoHarvester topic: 7 providers",
+  "links": {
+   "profiles": [
+    {
+     "href": "http://www.opengis.net/spec/owc-geojson/1.0/req/core"
+    }
+   ]
+  }
+ },
+ "features": [
+  {
+   "type": "Feature",
+   "id": "https://map.lausanne.ch/mapserv_proxy?ogcserver=source+for+image%2Fpng#bdcad_cs_bati_msgroup",
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       5.961,
+       45.821
+      ],
+      [
+       10.604,
+       45.821
+      ],
+      [
+       10.604,
+       47.821
+      ],
+      [
+       5.961,
+       47.821
+      ],
+      [
+       5.961,
+       45.821
+      ]
+     ]
+    ]
+   },
+   "properties": {
+    "title": "Bâtiments",
+    "updated": "2026-11-20T16:05:37+01:00",
+    "publisher": "Stadt Lausanne",
+    "layer": "bdcad_cs_bati_msgroup",
+    "offerings": [
+     {
+      "code": "http://www.opengis.net/spec/owc-geojson/1.0/req/wms",
+      "operations": [
+       {
+        "code": "GetCapabilities",
+        "method": "GET",
+        "type": "application/xml",
+        "href": "https://map.lausanne.ch/mapserv_proxy?ogcserver=source+for+image%2Fpng&SERVICE=WMS&REQUEST=GetCapabilities"
+       }
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": "https://www.sigip.ch/mapserv_proxy?ogcserver=ows#pente_batiments_2012",
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       6.509,
+       46.426
+      ],
+      [
+       6.941,
+       46.426
+      ],
+      [
+       6.941,
+       46.682
+      ],
+      [
+       6.509,
+       46.682
+      ],
+      [
+       6.509,
+       46.426
+      ]
+     ]
+    ]
+   },
+   "properties": {
+    "title": "pente_batiments_2012",
+    "updated": "2026-11-20T16:05:37+01:00",
+    "publisher": "Pully (SIGIP)",
+    "layer": "pente_batiments_2012",
+    "offerings": [
+     {
+      "code": "http://www.opengis.net/spec/owc-geojson/1.0/req/wms",
+      "operations": [
+       {
+        "code": "GetCapabilities",
+        "method": "GET",
+        "type": "application/xml",
+        "href": "https://www.sigip.ch/mapserv_proxy?ogcserver=ows&SERVICE=WMS&REQUEST=GetCapabilities"
+       }
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": "https://vector.sitg.ge.ch/arcgis/services/RPU_ACCES_BATIMENT/MapServer/WMSServer#0",
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       5.999,
+       46.141
+      ],
+      [
+       6.257,
+       46.141
+      ],
+      [
+       6.257,
+       46.292
+      ],
+      [
+       5.999,
+       46.292
+      ],
+      [
+       5.999,
+       46.141
+      ]
+     ]
+    ]
+   },
+   "properties": {
+    "title": "RPU_ACCES_BATIMENT",
+    "updated": "2026-11-20T16:05:37+01:00",
+    "publisher": "Kanton Genf",
+    "layer": "0",
+    "offerings": [
+     {
+      "code": "http://www.opengis.net/spec/owc-geojson/1.0/req/wms",
+      "operations": [
+       {
+        "code": "GetCapabilities",
+        "method": "GET",
+        "type": "application/xml",
+        "href": "https://vector.sitg.ge.ch/arcgis/services/RPU_ACCES_BATIMENT/MapServer/WMSServer?SERVICE=WMS&REQUEST=GetCapabilities"
+       }
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": "https://geo.jura.ch/mapserv_proxy?ogcserver=Main_PNG#sdt_01_04_md_sit_cs_surface_batiment_seul",
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       6.696,
+       47.107
+      ],
+      [
+       7.644,
+       47.107
+      ],
+      [
+       7.644,
+       47.535
+      ],
+      [
+       6.696,
+       47.535
+      ],
+      [
+       6.696,
+       47.107
+      ]
+     ]
+    ]
+   },
+   "properties": {
+    "title": "Batiment",
+    "updated": "2026-11-20T16:05:37+01:00",
+    "publisher": "Kanton Jura",
+    "layer": "sdt_01_04_md_sit_cs_surface_batiment_seul",
+    "offerings": [
+     {
+      "code": "http://www.opengis.net/spec/owc-geojson/1.0/req/wms",
+      "operations": [
+       {
+        "code": "GetCapabilities",
+        "method": "GET",
+        "type": "application/xml",
+        "href": "https://geo.jura.ch/mapserv_proxy?ogcserver=Main_PNG&SERVICE=WMS&REQUEST=GetCapabilities"
+       }
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": "https://sitn.ne.ch/services/wms#batiments_ofs",
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       6.115,
+       46.585
+      ],
+      [
+       7.44,
+       46.585
+      ],
+      [
+       7.44,
+       47.402
+      ],
+      [
+       6.115,
+       47.402
+      ],
+      [
+       6.115,
+       46.585
+      ]
+     ]
+    ]
+   },
+   "properties": {
+    "title": "batiments_ofs",
+    "updated": "2026-11-20T16:05:37+01:00",
+    "publisher": "Kanton Neuenburg",
+    "layer": "batiments_ofs",
+    "offerings": [
+     {
+      "code": "http://www.opengis.net/spec/owc-geojson/1.0/req/wms",
+      "operations": [
+       {
+        "code": "GetCapabilities",
+        "method": "GET",
+        "type": "application/xml",
+        "href": "https://sitn.ne.ch/services/wms?SERVICE=WMS&REQUEST=GetCapabilities"
+       }
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": "https://www.ogc.vd.ch/public/services/OGC/wmsVD/Mapserver/WMSServer#vd.batiment",
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       6.057,
+       46.184
+      ],
+      [
+       7.251,
+       46.184
+      ],
+      [
+       7.251,
+       46.978
+      ],
+      [
+       6.057,
+       46.978
+      ],
+      [
+       6.057,
+       46.184
+      ]
+     ]
+    ]
+   },
+   "properties": {
+    "title": "vd.batiment",
+    "updated": "2026-11-20T16:05:37+01:00",
+    "publisher": "Kanton Waadt",
+    "layer": "vd.batiment",
+    "offerings": [
+     {
+      "code": "http://www.opengis.net/spec/owc-geojson/1.0/req/wms",
+      "operations": [
+       {
+        "code": "GetCapabilities",
+        "method": "GET",
+        "type": "application/xml",
+        "href": "https://www.ogc.vd.ch/public/services/OGC/wmsVD/Mapserver/WMSServer?SERVICE=WMS&REQUEST=GetCapabilities"
+       }
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": "https://sit.vs.ch/arcgis/services/RDPPF_PROD/MapServer/WMSServer#8",
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       6.768,
+       45.855
+      ],
+      [
+       8.482,
+       45.855
+      ],
+      [
+       8.482,
+       46.659
+      ],
+      [
+       6.768,
+       46.659
+      ],
+      [
+       6.768,
+       45.855
+      ]
+     ]
+    ]
+   },
+   "properties": {
+    "title": "Bâtiment",
+    "updated": "2026-11-20T16:05:37+01:00",
+    "publisher": "Kanton Wallis",
+    "layer": "8",
+    "offerings": [
+     {
+      "code": "http://www.opengis.net/spec/owc-geojson/1.0/req/wms",
+      "operations": [
+       {
+        "code": "GetCapabilities",
+        "method": "GET",
+        "type": "application/xml",
+        "href": "https://sit.vs.ch/arcgis/services/RDPPF_PROD/MapServer/WMSServer?SERVICE=WMS&REQUEST=GetCapabilities"
+       }
+      ]
+     }
+    ]
+   }
+  }
+ ]
+}

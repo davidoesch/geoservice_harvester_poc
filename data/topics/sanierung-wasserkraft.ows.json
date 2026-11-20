@@ -1,0 +1,169 @@
+{
+ "type": "FeatureCollection",
+ "id": "https://davidoesch.github.io/geoservice_harvester_poc/data/topics/sanierung-wasserkraft.ows.json",
+ "properties": {
+  "lang": "de",
+  "title": "Sanierung Wasserkraft",
+  "updated": "2026-11-20T16:13:33+01:00",
+  "subtitle": "GeoHarvester topic: 3 providers",
+  "links": {
+   "profiles": [
+    {
+     "href": "http://www.opengis.net/spec/owc-geojson/1.0/req/core"
+    }
+   ]
+  }
+ },
+ "features": [
+  {
+   "type": "Feature",
+   "id": "https://geodienste.ch/db/sanierung_wasserkraft_v1_2_0/deu#sanierung_wasserkraft_v1_2",
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       5.703,
+       45.74
+      ],
+      [
+       10.645,
+       45.74
+      ],
+      [
+       10.645,
+       47.852
+      ],
+      [
+       5.703,
+       47.852
+      ],
+      [
+       5.703,
+       45.74
+      ]
+     ]
+    ]
+   },
+   "properties": {
+    "title": "geodienste.ch WMS Planung und Berichterstattung der Sanierung Wasserkraft",
+    "updated": "2026-11-20T16:13:33+01:00",
+    "publisher": "geodienste.ch (kantonsübergreifend)",
+    "layer": "sanierung_wasserkraft_v1_2",
+    "offerings": [
+     {
+      "code": "http://www.opengis.net/spec/owc-geojson/1.0/req/wms",
+      "operations": [
+       {
+        "code": "GetCapabilities",
+        "method": "GET",
+        "type": "application/xml",
+        "href": "https://geodienste.ch/db/sanierung_wasserkraft_v1_2_0/deu?SERVICE=WMS&REQUEST=GetCapabilities"
+       }
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": "https://wms.geo.bs.ch/#Sanierung Wasserkraft",
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       7.239,
+       47.264
+      ],
+      [
+       8.105,
+       47.264
+      ],
+      [
+       8.105,
+       47.761
+      ],
+      [
+       7.239,
+       47.761
+      ],
+      [
+       7.239,
+       47.264
+      ]
+     ]
+    ]
+   },
+   "properties": {
+    "title": "Sanierung Wasserkraft",
+    "updated": "2026-11-20T16:13:33+01:00",
+    "publisher": "Kanton Basel-Stadt",
+    "layer": "Sanierung Wasserkraft",
+    "offerings": [
+     {
+      "code": "http://www.opengis.net/spec/owc-geojson/1.0/req/wms",
+      "operations": [
+       {
+        "code": "GetCapabilities",
+        "method": "GET",
+        "type": "application/xml",
+        "href": "https://wms.geo.bs.ch/?SERVICE=WMS&REQUEST=GetCapabilities"
+       }
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": "https://public.geo.lu.ch/ogd/services/managed/SANPLANG_COL_V2_MP/MapServer/WMSServer#1",
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       7.887,
+       46.923
+      ],
+      [
+       8.378,
+       46.923
+      ],
+      [
+       8.378,
+       47.242
+      ],
+      [
+       7.887,
+       47.242
+      ],
+      [
+       7.887,
+       46.923
+      ]
+     ]
+    ]
+   },
+   "properties": {
+    "title": "Sanierung Wasserkraft: Anlageteile Wasserkraft",
+    "updated": "2026-11-20T16:13:33+01:00",
+    "publisher": "Kanton Luzern",
+    "layer": "1",
+    "offerings": [
+     {
+      "code": "http://www.opengis.net/spec/owc-geojson/1.0/req/wms",
+      "operations": [
+       {
+        "code": "GetCapabilities",
+        "method": "GET",
+        "type": "application/xml",
+        "href": "https://public.geo.lu.ch/ogd/services/managed/SANPLANG_COL_V2_MP/MapServer/WMSServer?SERVICE=WMS&REQUEST=GetCapabilities"
+       }
+      ]
+     }
+    ]
+   }
+  }
+ ]
+}

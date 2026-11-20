@@ -1,0 +1,36 @@
+<!DOCTYPE qgis-layer-definition>
+<qlr>
+  <layer-tree-group expanded="1" checked="Qt::Checked" name="">
+    <layer-tree-group expanded="1" checked="Qt::Checked" name="GeoHarvester – Übersichtsplan grau + UP Liegenschaften grau">
+      <layer-tree-layer expanded="0" checked="Qt::Checked" id="geoharvester_ubersichtsplan-grau-up-liegenschaften-grau_0" name="Übersichtsplan grau + UP Liegenschaften grau (AI)" source="contextualWMSLegend=0&amp;crs=EPSG:2056&amp;dpiMode=7&amp;featureCount=10&amp;format=image/png&amp;layers=ch.geoportal.basiskarten_bodenbedeckung_bilddaten.196.0.uebersichtsplan_grau__up_liegenschaften_grau&amp;styles&amp;url=https://www.geoportal.ch/services/wms/ktai" providerKey="wms"/>
+      <layer-tree-layer expanded="0" checked="Qt::Checked" id="geoharvester_ubersichtsplan-grau-up-liegenschaften-grau_1" name="Übersichtsplan grau + UP Liegenschaften grau (AR)" source="contextualWMSLegend=0&amp;crs=EPSG:2056&amp;dpiMode=7&amp;featureCount=10&amp;format=image/png&amp;layers=ch.geoportal.basiskarten_bodenbedeckung_bilddaten.196.0.uebersichtsplan_grau__up_liegenschaften_grau&amp;styles&amp;url=https://www.geoportal.ch/services/wms/ktar" providerKey="wms"/>
+      <layer-tree-layer expanded="0" checked="Qt::Checked" id="geoharvester_ubersichtsplan-grau-up-liegenschaften-grau_2" name="Bauzonen Übersichtszonenplan, Übersicht (BE)" source="contextualWMSLegend=0&amp;crs=EPSG:2056&amp;dpiMode=7&amp;featureCount=10&amp;format=image/png&amp;layers=UZP_BAU_VW_15848&amp;styles&amp;url=https://www.geoservice.apps.be.ch/geoservice3/services/a42geo/of_planningcadastre01_de_ms_wms/MapServer/WMSServer" providerKey="wms"/>
+    </layer-tree-group>
+  </layer-tree-group>
+  <maplayers>
+    <maplayer type="raster" hasScaleBasedVisibilityFlag="0" minScale="1e+08" maxScale="0" styleCategories="AllStyleCategories">
+      <extent><xmin>2740735</xmin><ymin>1232119</ymin><xmax>2765390</xmax><ymax>1258113</ymax></extent>
+      <id>geoharvester_ubersichtsplan-grau-up-liegenschaften-grau_0</id>
+      <datasource>contextualWMSLegend=0&amp;crs=EPSG:2056&amp;dpiMode=7&amp;featureCount=10&amp;format=image/png&amp;layers=ch.geoportal.basiskarten_bodenbedeckung_bilddaten.196.0.uebersichtsplan_grau__up_liegenschaften_grau&amp;styles&amp;url=https://www.geoportal.ch/services/wms/ktai</datasource>
+      <layername>Übersichtsplan grau + UP Liegenschaften grau (AI)</layername>
+      <srs><spatialrefsys><proj4>+proj=somerc +lat_0=46.9524055555556 +lon_0=7.43958333333333 +k_0=1 +x_0=2600000 +y_0=1200000 +ellps=bessel +towgs84=674.374,15.056,405.346,0,0,0,0 +units=m +no_defs</proj4><srid>2056</srid><authid>EPSG:2056</authid><description>CH1903+ / LV95</description><projectionacronym>somerc</projectionacronym><ellipsoidacronym>EPSG:7004</ellipsoidacronym><geographicflag>false</geographicflag></spatialrefsys></srs>
+      <provider>wms</provider>
+    </maplayer>
+    <maplayer type="raster" hasScaleBasedVisibilityFlag="0" minScale="1e+08" maxScale="0" styleCategories="AllStyleCategories">
+      <extent><xmin>2731693</xmin><ymin>1233357</ymin><xmax>2766217</xmax><ymax>1260917</ymax></extent>
+      <id>geoharvester_ubersichtsplan-grau-up-liegenschaften-grau_1</id>
+      <datasource>contextualWMSLegend=0&amp;crs=EPSG:2056&amp;dpiMode=7&amp;featureCount=10&amp;format=image/png&amp;layers=ch.geoportal.basiskarten_bodenbedeckung_bilddaten.196.0.uebersichtsplan_grau__up_liegenschaften_grau&amp;styles&amp;url=https://www.geoportal.ch/services/wms/ktar</datasource>
+      <layername>Übersichtsplan grau + UP Liegenschaften grau (AR)</layername>
+      <srs><spatialrefsys><proj4>+proj=somerc +lat_0=46.9524055555556 +lon_0=7.43958333333333 +k_0=1 +x_0=2600000 +y_0=1200000 +ellps=bessel +towgs84=674.374,15.056,405.346,0,0,0,0 +units=m +no_defs</proj4><srid>2056</srid><authid>EPSG:2056</authid><description>CH1903+ / LV95</description><projectionacronym>somerc</projectionacronym><ellipsoidacronym>EPSG:7004</ellipsoidacronym><geographicflag>false</geographicflag></spatialrefsys></srs>
+      <provider>wms</provider>
+    </maplayer>
+    <maplayer type="raster" hasScaleBasedVisibilityFlag="0" minScale="1e+08" maxScale="0" styleCategories="AllStyleCategories">
+      <extent><xmin>2557669</xmin><ymin>1130438</ymin><xmax>2673077</xmax><ymax>1240019</ymax></extent>
+      <id>geoharvester_ubersichtsplan-grau-up-liegenschaften-grau_2</id>
+      <datasource>contextualWMSLegend=0&amp;crs=EPSG:2056&amp;dpiMode=7&amp;featureCount=10&amp;format=image/png&amp;layers=UZP_BAU_VW_15848&amp;styles&amp;url=https://www.geoservice.apps.be.ch/geoservice3/services/a42geo/of_planningcadastre01_de_ms_wms/MapServer/WMSServer</datasource>
+      <layername>Bauzonen Übersichtszonenplan, Übersicht (BE)</layername>
+      <srs><spatialrefsys><proj4>+proj=somerc +lat_0=46.9524055555556 +lon_0=7.43958333333333 +k_0=1 +x_0=2600000 +y_0=1200000 +ellps=bessel +towgs84=674.374,15.056,405.346,0,0,0,0 +units=m +no_defs</proj4><srid>2056</srid><authid>EPSG:2056</authid><description>CH1903+ / LV95</description><projectionacronym>somerc</projectionacronym><ellipsoidacronym>EPSG:7004</ellipsoidacronym><geographicflag>false</geographicflag></spatialrefsys></srs>
+      <provider>wms</provider>
+    </maplayer>
+  </maplayers>
+</qlr>

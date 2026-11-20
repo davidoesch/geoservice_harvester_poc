@@ -1,0 +1,119 @@
+{
+ "type": "FeatureCollection",
+ "id": "https://davidoesch.github.io/geoservice_harvester_poc/data/topics/pfarreien.ows.json",
+ "properties": {
+  "lang": "de",
+  "title": "Pfarreien",
+  "updated": "2026-11-20T16:05:37+01:00",
+  "subtitle": "GeoHarvester topic: 2 providers",
+  "links": {
+   "profiles": [
+    {
+     "href": "http://www.opengis.net/spec/owc-geojson/1.0/req/core"
+    }
+   ]
+  }
+ },
+ "features": [
+  {
+   "type": "Feature",
+   "id": "https://public.geo.lu.ch/ogd/services/managed/GRZPFXXX_COL_V3_MP/MapServer/WMSServer#1",
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       6.834,
+       46.31
+      ],
+      [
+       9.527,
+       46.31
+      ],
+      [
+       9.527,
+       47.815
+      ],
+      [
+       6.834,
+       47.815
+      ],
+      [
+       6.834,
+       46.31
+      ]
+     ]
+    ]
+   },
+   "properties": {
+    "title": "Pfarreien",
+    "updated": "2026-11-20T16:05:37+01:00",
+    "publisher": "Kanton Luzern",
+    "layer": "1",
+    "offerings": [
+     {
+      "code": "http://www.opengis.net/spec/owc-geojson/1.0/req/wms",
+      "operations": [
+       {
+        "code": "GetCapabilities",
+        "method": "GET",
+        "type": "application/xml",
+        "href": "https://public.geo.lu.ch/ogd/services/managed/GRZPFXXX_COL_V3_MP/MapServer/WMSServer?SERVICE=WMS&REQUEST=GetCapabilities"
+       }
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": "https://services.geo.sg.ch/wss/service/SG00089_WMS/guest#Pfarreien",
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       8.788,
+       46.87
+      ],
+      [
+       9.681,
+       46.87
+      ],
+      [
+       9.681,
+       47.541
+      ],
+      [
+       8.788,
+       47.541
+      ],
+      [
+       8.788,
+       46.87
+      ]
+     ]
+    ]
+   },
+   "properties": {
+    "title": "Pfarreien",
+    "updated": "2026-11-20T16:05:37+01:00",
+    "publisher": "Kanton St. Gallen",
+    "layer": "Pfarreien",
+    "offerings": [
+     {
+      "code": "http://www.opengis.net/spec/owc-geojson/1.0/req/wms",
+      "operations": [
+       {
+        "code": "GetCapabilities",
+        "method": "GET",
+        "type": "application/xml",
+        "href": "https://services.geo.sg.ch/wss/service/SG00089_WMS/guest?SERVICE=WMS&REQUEST=GetCapabilities"
+       }
+      ]
+     }
+    ]
+   }
+  }
+ ]
+}

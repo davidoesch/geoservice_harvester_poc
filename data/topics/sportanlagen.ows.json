@@ -1,0 +1,819 @@
+{
+ "type": "FeatureCollection",
+ "id": "https://davidoesch.github.io/geoservice_harvester_poc/data/topics/sportanlagen.ows.json",
+ "properties": {
+  "lang": "de",
+  "title": "Sportanlagen",
+  "updated": "2026-11-20T16:05:37+01:00",
+  "subtitle": "GeoHarvester topic: 16 providers",
+  "links": {
+   "profiles": [
+    {
+     "href": "http://www.opengis.net/spec/owc-geojson/1.0/req/core"
+    }
+   ]
+  }
+ },
+ "features": [
+  {
+   "type": "Feature",
+   "id": "https://wms.geo.admin.ch/#ch.baspo.nationales-sportanlagenkonzept",
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       3.33,
+       44.075
+      ],
+      [
+       14.278,
+       44.075
+      ],
+      [
+       14.278,
+       49.2
+      ],
+      [
+       3.33,
+       49.2
+      ],
+      [
+       3.33,
+       44.075
+      ]
+     ]
+    ]
+   },
+   "properties": {
+    "title": "Sportanlagen NASAK",
+    "updated": "2026-11-20T16:05:37+01:00",
+    "publisher": "Bund (geo.admin.ch)",
+    "layer": "ch.baspo.nationales-sportanlagenkonzept",
+    "offerings": [
+     {
+      "code": "http://www.opengis.net/spec/owc-geojson/1.0/req/wms",
+      "operations": [
+       {
+        "code": "GetCapabilities",
+        "method": "GET",
+        "type": "application/xml",
+        "href": "https://wms.geo.admin.ch/?SERVICE=WMS&REQUEST=GetCapabilities"
+       }
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": "https://map.bern.ch/arcgis/services/Geoportal/Sportanlagen/MapServer/WMSServer#0",
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       7.35,
+       46.936
+      ],
+      [
+       7.484,
+       46.936
+      ],
+      [
+       7.484,
+       46.975
+      ],
+      [
+       7.35,
+       46.975
+      ],
+      [
+       7.35,
+       46.936
+      ]
+     ]
+    ]
+   },
+   "properties": {
+    "title": "Sportanlage",
+    "updated": "2026-11-20T16:05:37+01:00",
+    "publisher": "Stadt Bern",
+    "layer": "0",
+    "offerings": [
+     {
+      "code": "http://www.opengis.net/spec/owc-geojson/1.0/req/wms",
+      "operations": [
+       {
+        "code": "GetCapabilities",
+        "method": "GET",
+        "type": "application/xml",
+        "href": "https://map.bern.ch/arcgis/services/Geoportal/Sportanlagen/MapServer/WMSServer?SERVICE=WMS&REQUEST=GetCapabilities"
+       }
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": "https://gis.gict.ch/ows/emmen_admin/WMS_Emmen_all_pub#Sportanlagen",
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       8.259,
+       47.073
+      ],
+      [
+       8.312,
+       47.073
+      ],
+      [
+       8.312,
+       47.099
+      ],
+      [
+       8.259,
+       47.099
+      ],
+      [
+       8.259,
+       47.073
+      ]
+     ]
+    ]
+   },
+   "properties": {
+    "title": "Sportanlagen",
+    "updated": "2026-11-20T16:05:37+01:00",
+    "publisher": "Gemeinde Emmen",
+    "layer": "Sportanlagen",
+    "offerings": [
+     {
+      "code": "http://www.opengis.net/spec/owc-geojson/1.0/req/wms",
+      "operations": [
+       {
+        "code": "GetCapabilities",
+        "method": "GET",
+        "type": "application/xml",
+        "href": "https://gis.gict.ch/ows/emmen_admin/WMS_Emmen_all_pub?SERVICE=WMS&REQUEST=GetCapabilities"
+       }
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": "https://map.stadtluzern.ch/server/services/OGD/sportanlage/MapServer/WMSServer#0",
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       8.26,
+       47.03
+      ],
+      [
+       8.343,
+       47.03
+      ],
+      [
+       8.343,
+       47.068
+      ],
+      [
+       8.26,
+       47.068
+      ],
+      [
+       8.26,
+       47.03
+      ]
+     ]
+    ]
+   },
+   "properties": {
+    "title": "Sportanlage",
+    "updated": "2026-11-20T16:05:37+01:00",
+    "publisher": "Stadt Luzern",
+    "layer": "0",
+    "offerings": [
+     {
+      "code": "http://www.opengis.net/spec/owc-geojson/1.0/req/wms",
+      "operations": [
+       {
+        "code": "GetCapabilities",
+        "method": "GET",
+        "type": "application/xml",
+        "href": "https://map.stadtluzern.ch/server/services/OGD/sportanlage/MapServer/WMSServer?SERVICE=WMS&REQUEST=GetCapabilities"
+       }
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": "https://www.sigip.ch/mapserv_proxy?ogcserver=ows#sport",
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       6.509,
+       46.426
+      ],
+      [
+       6.941,
+       46.426
+      ],
+      [
+       6.941,
+       46.682
+      ],
+      [
+       6.509,
+       46.682
+      ],
+      [
+       6.509,
+       46.426
+      ]
+     ]
+    ]
+   },
+   "properties": {
+    "title": "sport",
+    "updated": "2026-11-20T16:05:37+01:00",
+    "publisher": "Pully (SIGIP)",
+    "layer": "sport",
+    "offerings": [
+     {
+      "code": "http://www.opengis.net/spec/owc-geojson/1.0/req/wms",
+      "operations": [
+       {
+        "code": "GetCapabilities",
+        "method": "GET",
+        "type": "application/xml",
+        "href": "https://www.sigip.ch/mapserv_proxy?ogcserver=ows&SERVICE=WMS&REQUEST=GetCapabilities"
+       }
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": "https://stadtplan.winterthur.ch/wms/Stadtplan#Sportplatz",
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       8.632,
+       47.446
+      ],
+      [
+       8.833,
+       47.446
+      ],
+      [
+       8.833,
+       47.548
+      ],
+      [
+       8.632,
+       47.548
+      ],
+      [
+       8.632,
+       47.446
+      ]
+     ]
+    ]
+   },
+   "properties": {
+    "title": "Sportplatz",
+    "updated": "2026-11-20T16:05:37+01:00",
+    "publisher": "Stadt Winterthur",
+    "layer": "Sportplatz",
+    "offerings": [
+     {
+      "code": "http://www.opengis.net/spec/owc-geojson/1.0/req/wms",
+      "operations": [
+       {
+        "code": "GetCapabilities",
+        "method": "GET",
+        "type": "application/xml",
+        "href": "https://stadtplan.winterthur.ch/wms/Stadtplan?SERVICE=WMS&REQUEST=GetCapabilities"
+       }
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": "https://www.ogd.stadt-zuerich.ch/wms/geoportal/Kommunaler_Richtplan_Siedlung_Landschaft_oeffentliche_Bauten_und_Anlagen#katsportanlagen",
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       8.461,
+       47.321
+      ],
+      [
+       8.623,
+       47.321
+      ],
+      [
+       8.623,
+       47.434
+      ],
+      [
+       8.461,
+       47.434
+      ],
+      [
+       8.461,
+       47.321
+      ]
+     ]
+    ]
+   },
+   "properties": {
+    "title": "Sportanlagen",
+    "updated": "2026-11-20T16:05:37+01:00",
+    "publisher": "Stadt Zürich",
+    "layer": "katsportanlagen",
+    "offerings": [
+     {
+      "code": "http://www.opengis.net/spec/owc-geojson/1.0/req/wms",
+      "operations": [
+       {
+        "code": "GetCapabilities",
+        "method": "GET",
+        "type": "application/xml",
+        "href": "https://www.ogd.stadt-zuerich.ch/wms/geoportal/Kommunaler_Richtplan_Siedlung_Landschaft_oeffentliche_Bauten_und_Anlagen?SERVICE=WMS&REQUEST=GetCapabilities"
+       }
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": "https://ows.geodatenonline.ch/ogd_wms_kommunaler_richtplan_stadt_zug#rp_ta_sport_freizeitanlage_stadt_zug",
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       8.347,
+       47.048
+      ],
+      [
+       8.714,
+       47.048
+      ],
+      [
+       8.714,
+       47.267
+      ],
+      [
+       8.347,
+       47.267
+      ],
+      [
+       8.347,
+       47.048
+      ]
+     ]
+    ]
+   },
+   "properties": {
+    "title": "Sport- und Freizeitanlage - Ausgangslage",
+    "updated": "2026-11-20T16:05:37+01:00",
+    "publisher": "Stadt Zug",
+    "layer": "rp_ta_sport_freizeitanlage_stadt_zug",
+    "offerings": [
+     {
+      "code": "http://www.opengis.net/spec/owc-geojson/1.0/req/wms",
+      "operations": [
+       {
+        "code": "GetCapabilities",
+        "method": "GET",
+        "type": "application/xml",
+        "href": "https://ows.geodatenonline.ch/ogd_wms_kommunaler_richtplan_stadt_zug?SERVICE=WMS&REQUEST=GetCapabilities"
+       }
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": "https://www.geoservice.apps.be.ch/geoservice3/services/a42geo/of_structure01_de_ms_wms/MapServer/WMSServer#SPORTANL_SPORTAG_VW_37264",
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       6.928,
+       46.422
+      ],
+      [
+       8.239,
+       46.422
+      ],
+      [
+       8.239,
+       47.276
+      ],
+      [
+       6.928,
+       47.276
+      ],
+      [
+       6.928,
+       46.422
+      ]
+     ]
+    ]
+   },
+   "properties": {
+    "title": "Sportanlagezentren",
+    "updated": "2026-11-20T16:05:37+01:00",
+    "publisher": "Kanton Bern",
+    "layer": "SPORTANL_SPORTAG_VW_37264",
+    "offerings": [
+     {
+      "code": "http://www.opengis.net/spec/owc-geojson/1.0/req/wms",
+      "operations": [
+       {
+        "code": "GetCapabilities",
+        "method": "GET",
+        "type": "application/xml",
+        "href": "https://www.geoservice.apps.be.ch/geoservice3/services/a42geo/of_structure01_de_ms_wms/MapServer/WMSServer?SERVICE=WMS&REQUEST=GetCapabilities"
+       }
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": "https://wms.geo.bs.ch/#BS_Bodenbedeckungen_befestigt_Sportanlage",
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       7.239,
+       47.264
+      ],
+      [
+       8.105,
+       47.264
+      ],
+      [
+       8.105,
+       47.761
+      ],
+      [
+       7.239,
+       47.761
+      ],
+      [
+       7.239,
+       47.264
+      ]
+     ]
+    ]
+   },
+   "properties": {
+    "title": "Sportanlage",
+    "updated": "2026-11-20T16:05:37+01:00",
+    "publisher": "Kanton Basel-Stadt",
+    "layer": "BS_Bodenbedeckungen_befestigt_Sportanlage",
+    "offerings": [
+     {
+      "code": "http://www.opengis.net/spec/owc-geojson/1.0/req/wms",
+      "operations": [
+       {
+        "code": "GetCapabilities",
+        "method": "GET",
+        "type": "application/xml",
+        "href": "https://wms.geo.bs.ch/?SERVICE=WMS&REQUEST=GetCapabilities"
+       }
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": "https://wms.geo.gr.ch/rrip_bregaglia#Area_sportiva",
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       8.615,
+       45.994
+      ],
+      [
+       10.547,
+       45.994
+      ],
+      [
+       10.547,
+       47.324
+      ],
+      [
+       8.615,
+       47.324
+      ],
+      [
+       8.615,
+       45.994
+      ]
+     ]
+    ]
+   },
+   "properties": {
+    "title": "Area sportiva",
+    "updated": "2026-11-20T16:05:37+01:00",
+    "publisher": "Kanton Graubünden",
+    "layer": "Area_sportiva",
+    "offerings": [
+     {
+      "code": "http://www.opengis.net/spec/owc-geojson/1.0/req/wms",
+      "operations": [
+       {
+        "code": "GetCapabilities",
+        "method": "GET",
+        "type": "application/xml",
+        "href": "https://wms.geo.gr.ch/rrip_bregaglia?SERVICE=WMS&REQUEST=GetCapabilities"
+       }
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": "https://geo.jura.ch/mapserv_proxy?ogcserver=Main_PNG#Commune_POI_installations_sportives",
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       6.696,
+       47.107
+      ],
+      [
+       7.644,
+       47.107
+      ],
+      [
+       7.644,
+       47.535
+      ],
+      [
+       6.696,
+       47.535
+      ],
+      [
+       6.696,
+       47.107
+      ]
+     ]
+    ]
+   },
+   "properties": {
+    "title": "Commune_POI_installations_sportives",
+    "updated": "2026-11-20T16:05:37+01:00",
+    "publisher": "Kanton Jura",
+    "layer": "Commune_POI_installations_sportives",
+    "offerings": [
+     {
+      "code": "http://www.opengis.net/spec/owc-geojson/1.0/req/wms",
+      "operations": [
+       {
+        "code": "GetCapabilities",
+        "method": "GET",
+        "type": "application/xml",
+        "href": "https://geo.jura.ch/mapserv_proxy?ogcserver=Main_PNG&SERVICE=WMS&REQUEST=GetCapabilities"
+       }
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": "https://public.geo.lu.ch/ogd/services/managed/KASAKXXX_DS_V2_MP/MapServer/WMSServer#1",
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       7.896,
+       46.813
+      ],
+      [
+       8.376,
+       46.813
+      ],
+      [
+       8.376,
+       47.253
+      ],
+      [
+       7.896,
+       47.253
+      ],
+      [
+       7.896,
+       46.813
+      ]
+     ]
+    ]
+   },
+   "properties": {
+    "title": "Sportanlagen (KASAK): Anlagen",
+    "updated": "2026-11-20T16:05:37+01:00",
+    "publisher": "Kanton Luzern",
+    "layer": "1",
+    "offerings": [
+     {
+      "code": "http://www.opengis.net/spec/owc-geojson/1.0/req/wms",
+      "operations": [
+       {
+        "code": "GetCapabilities",
+        "method": "GET",
+        "type": "application/xml",
+        "href": "https://public.geo.lu.ch/ogd/services/managed/KASAKXXX_DS_V2_MP/MapServer/WMSServer?SERVICE=WMS&REQUEST=GetCapabilities"
+       }
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": "https://map.geo.sz.ch/mapserv_proxy#ch.sz.a102a.sportanlage",
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       5.697,
+       45.553
+      ],
+      [
+       10.923,
+       45.553
+      ],
+      [
+       10.923,
+       48.032
+      ],
+      [
+       5.697,
+       48.032
+      ],
+      [
+       5.697,
+       45.553
+      ]
+     ]
+    ]
+   },
+   "properties": {
+    "title": "Sportanlagen",
+    "updated": "2026-11-20T16:05:37+01:00",
+    "publisher": "Kanton Schwyz",
+    "layer": "ch.sz.a102a.sportanlage",
+    "offerings": [
+     {
+      "code": "http://www.opengis.net/spec/owc-geojson/1.0/req/wms",
+      "operations": [
+       {
+        "code": "GetCapabilities",
+        "method": "GET",
+        "type": "application/xml",
+        "href": "https://map.geo.sz.ch/mapserv_proxy?SERVICE=WMS&REQUEST=GetCapabilities"
+       }
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": "https://ows.geo.tg.ch/geofy_access_proxy/sportanlagen#Sportanlagen",
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       8.631,
+       47.347
+      ],
+      [
+       9.572,
+       47.347
+      ],
+      [
+       9.572,
+       47.711
+      ],
+      [
+       8.631,
+       47.711
+      ],
+      [
+       8.631,
+       47.347
+      ]
+     ]
+    ]
+   },
+   "properties": {
+    "title": "Sportanlagen",
+    "updated": "2026-11-20T16:05:37+01:00",
+    "publisher": "Kanton Thurgau",
+    "layer": "Sportanlagen",
+    "offerings": [
+     {
+      "code": "http://www.opengis.net/spec/owc-geojson/1.0/req/wms",
+      "operations": [
+       {
+        "code": "GetCapabilities",
+        "method": "GET",
+        "type": "application/xml",
+        "href": "https://ows.geo.tg.ch/geofy_access_proxy/sportanlagen?SERVICE=WMS&REQUEST=GetCapabilities"
+       }
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": "https://maps.zh.ch/wfs/SportanlagenZHWFS#ms:sportanlagen",
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       8.157,
+       47.142
+      ],
+      [
+       9.037,
+       47.142
+      ],
+      [
+       9.037,
+       47.712
+      ],
+      [
+       8.157,
+       47.712
+      ],
+      [
+       8.157,
+       47.142
+      ]
+     ]
+    ]
+   },
+   "properties": {
+    "title": "Alle Sportanlagen",
+    "updated": "2026-11-20T16:05:37+01:00",
+    "publisher": "Kanton Zürich",
+    "layer": "ms:sportanlagen",
+    "offerings": [
+     {
+      "code": "http://www.opengis.net/spec/owc-geojson/1.0/req/wfs",
+      "operations": [
+       {
+        "code": "GetCapabilities",
+        "method": "GET",
+        "type": "application/xml",
+        "href": "https://maps.zh.ch/wfs/SportanlagenZHWFS?SERVICE=WFS&REQUEST=GetCapabilities"
+       }
+      ]
+     }
+    ]
+   }
+  }
+ ]
+}

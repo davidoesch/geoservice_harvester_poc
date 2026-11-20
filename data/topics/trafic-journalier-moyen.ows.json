@@ -1,0 +1,119 @@
+{
+ "type": "FeatureCollection",
+ "id": "https://davidoesch.github.io/geoservice_harvester_poc/data/topics/trafic-journalier-moyen.ows.json",
+ "properties": {
+  "lang": "de",
+  "title": "Trafic journalier moyen",
+  "updated": "2026-11-20T16:05:37+01:00",
+  "subtitle": "GeoHarvester topic: 2 providers",
+  "links": {
+   "profiles": [
+    {
+     "href": "http://www.opengis.net/spec/owc-geojson/1.0/req/core"
+    }
+   ]
+  }
+ },
+ "features": [
+  {
+   "type": "Feature",
+   "id": "https://maps.fr.ch/ags/services/OpenData/Trafic_journalier_moyen/MapServer/WMSServer#1",
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       6.731,
+       46.474
+      ],
+      [
+       7.347,
+       46.474
+      ],
+      [
+       7.347,
+       47.008
+      ],
+      [
+       6.731,
+       47.008
+      ],
+      [
+       6.731,
+       46.474
+      ]
+     ]
+    ]
+   },
+   "properties": {
+    "title": "Trafic journalier moyen",
+    "updated": "2026-11-20T16:05:37+01:00",
+    "publisher": "Kanton Freiburg",
+    "layer": "1",
+    "offerings": [
+     {
+      "code": "http://www.opengis.net/spec/owc-geojson/1.0/req/wms",
+      "operations": [
+       {
+        "code": "GetCapabilities",
+        "method": "GET",
+        "type": "application/xml",
+        "href": "https://maps.fr.ch/ags/services/OpenData/Trafic_journalier_moyen/MapServer/WMSServer?SERVICE=WMS&REQUEST=GetCapabilities"
+       }
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": "https://www.ogc.vd.ch/public/services/OGC/wmsVD/Mapserver/WMSServer#vd.trafic_journalier_moyen",
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       6.061,
+       46.186
+      ],
+      [
+       7.231,
+       46.186
+      ],
+      [
+       7.231,
+       46.977
+      ],
+      [
+       6.061,
+       46.977
+      ],
+      [
+       6.061,
+       46.186
+      ]
+     ]
+    ]
+   },
+   "properties": {
+    "title": "vd.trafic_journalier_moyen",
+    "updated": "2026-11-20T16:05:37+01:00",
+    "publisher": "Kanton Waadt",
+    "layer": "vd.trafic_journalier_moyen",
+    "offerings": [
+     {
+      "code": "http://www.opengis.net/spec/owc-geojson/1.0/req/wms",
+      "operations": [
+       {
+        "code": "GetCapabilities",
+        "method": "GET",
+        "type": "application/xml",
+        "href": "https://www.ogc.vd.ch/public/services/OGC/wmsVD/Mapserver/WMSServer?SERVICE=WMS&REQUEST=GetCapabilities"
+       }
+      ]
+     }
+    ]
+   }
+  }
+ ]
+}

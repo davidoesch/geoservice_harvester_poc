@@ -1,0 +1,119 @@
+{
+ "type": "FeatureCollection",
+ "id": "https://davidoesch.github.io/geoservice_harvester_poc/data/topics/barrierefreiheit-rollstuhl-wc.ows.json",
+ "properties": {
+  "lang": "de",
+  "title": "Barrierefreiheit Rollstuhl-WC",
+  "updated": "2026-11-20T16:05:37+01:00",
+  "subtitle": "GeoHarvester topic: 2 providers",
+  "links": {
+   "profiles": [
+    {
+     "href": "http://www.opengis.net/spec/owc-geojson/1.0/req/core"
+    }
+   ]
+  }
+ },
+ "features": [
+  {
+   "type": "Feature",
+   "id": "https://www.ogd.stadt-zuerich.ch/wms/geoportal/Zueri_WC#WC rollstuhlgängig",
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       8.48,
+       47.338
+      ],
+      [
+       8.597,
+       47.338
+      ],
+      [
+       8.597,
+       47.422
+      ],
+      [
+       8.48,
+       47.422
+      ],
+      [
+       8.48,
+       47.338
+      ]
+     ]
+    ]
+   },
+   "properties": {
+    "title": "WC rollstuhlgängig",
+    "updated": "2026-11-20T16:05:37+01:00",
+    "publisher": "Stadt Zürich",
+    "layer": "WC rollstuhlgängig",
+    "offerings": [
+     {
+      "code": "http://www.opengis.net/spec/owc-geojson/1.0/req/wms",
+      "operations": [
+       {
+        "code": "GetCapabilities",
+        "method": "GET",
+        "type": "application/xml",
+        "href": "https://www.ogd.stadt-zuerich.ch/wms/geoportal/Zueri_WC?SERVICE=WMS&REQUEST=GetCapabilities"
+       }
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": "https://map.geo.gl.ch/ows/mainmap#ch.gl.structure.rollstuhl-wc",
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       8.908,
+       46.877
+      ],
+      [
+       9.181,
+       46.877
+      ],
+      [
+       9.181,
+       47.164
+      ],
+      [
+       8.908,
+       47.164
+      ],
+      [
+       8.908,
+       46.877
+      ]
+     ]
+    ]
+   },
+   "properties": {
+    "title": "Barrierefreiheit Rollstuhl-WC",
+    "updated": "2026-11-20T16:05:37+01:00",
+    "publisher": "Kanton Glarus",
+    "layer": "ch.gl.structure.rollstuhl-wc",
+    "offerings": [
+     {
+      "code": "http://www.opengis.net/spec/owc-geojson/1.0/req/wms",
+      "operations": [
+       {
+        "code": "GetCapabilities",
+        "method": "GET",
+        "type": "application/xml",
+        "href": "https://map.geo.gl.ch/ows/mainmap?SERVICE=WMS&REQUEST=GetCapabilities"
+       }
+      ]
+     }
+    ]
+   }
+  }
+ ]
+}

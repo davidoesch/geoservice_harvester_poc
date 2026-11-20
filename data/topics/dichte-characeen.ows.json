@@ -1,0 +1,119 @@
+{
+ "type": "FeatureCollection",
+ "id": "https://davidoesch.github.io/geoservice_harvester_poc/data/topics/dichte-characeen.ows.json",
+ "properties": {
+  "lang": "de",
+  "title": "Dichte Characeen",
+  "updated": "2026-11-20T16:05:37+01:00",
+  "subtitle": "GeoHarvester topic: 2 providers",
+  "links": {
+   "profiles": [
+    {
+     "href": "http://www.opengis.net/spec/owc-geojson/1.0/req/core"
+    }
+   ]
+  }
+ },
+ "features": [
+  {
+   "type": "Feature",
+   "id": "https://map.lausanne.ch/mapserv_proxy?ogcserver=source+for+image%2Fpng#amenagement_ens_batis",
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       5.961,
+       45.821
+      ],
+      [
+       10.604,
+       45.821
+      ],
+      [
+       10.604,
+       47.821
+      ],
+      [
+       5.961,
+       47.821
+      ],
+      [
+       5.961,
+       45.821
+      ]
+     ]
+    ]
+   },
+   "properties": {
+    "title": "Ensembles bâtis",
+    "updated": "2026-11-20T16:05:37+01:00",
+    "publisher": "Stadt Lausanne",
+    "layer": "amenagement_ens_batis",
+    "offerings": [
+     {
+      "code": "http://www.opengis.net/spec/owc-geojson/1.0/req/wms",
+      "operations": [
+       {
+        "code": "GetCapabilities",
+        "method": "GET",
+        "type": "application/xml",
+        "href": "https://map.lausanne.ch/mapserv_proxy?ogcserver=source+for+image%2Fpng&SERVICE=WMS&REQUEST=GetCapabilities"
+       }
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": "https://public.geo.lu.ch/ogd/services/managed/SEEINXXX_COL_V2_MP/MapServer/WMSServer#49",
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       8.282,
+       46.89
+      ],
+      [
+       8.63,
+       46.89
+      ],
+      [
+       8.63,
+       47.081
+      ],
+      [
+       8.282,
+       47.081
+      ],
+      [
+       8.282,
+       46.89
+      ]
+     ]
+    ]
+   },
+   "properties": {
+    "title": "Dichte Characeen",
+    "updated": "2026-11-20T16:05:37+01:00",
+    "publisher": "Kanton Luzern",
+    "layer": "49",
+    "offerings": [
+     {
+      "code": "http://www.opengis.net/spec/owc-geojson/1.0/req/wms",
+      "operations": [
+       {
+        "code": "GetCapabilities",
+        "method": "GET",
+        "type": "application/xml",
+        "href": "https://public.geo.lu.ch/ogd/services/managed/SEEINXXX_COL_V2_MP/MapServer/WMSServer?SERVICE=WMS&REQUEST=GetCapabilities"
+       }
+      ]
+     }
+    ]
+   }
+  }
+ ]
+}

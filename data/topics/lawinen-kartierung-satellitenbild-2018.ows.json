@@ -1,0 +1,219 @@
+{
+ "type": "FeatureCollection",
+ "id": "https://davidoesch.github.io/geoservice_harvester_poc/data/topics/lawinen-kartierung-satellitenbild-2018.ows.json",
+ "properties": {
+  "lang": "de",
+  "title": "Lawinen Kartierung Satellitenbild 2018",
+  "updated": "2026-11-20T16:05:37+01:00",
+  "subtitle": "GeoHarvester topic: 4 providers",
+  "links": {
+   "profiles": [
+    {
+     "href": "http://www.opengis.net/spec/owc-geojson/1.0/req/core"
+    }
+   ]
+  }
+ },
+ "features": [
+  {
+   "type": "Feature",
+   "id": "https://wms.geo.bs.ch/#Satellitenbilder",
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       7.239,
+       47.264
+      ],
+      [
+       8.105,
+       47.264
+      ],
+      [
+       8.105,
+       47.761
+      ],
+      [
+       7.239,
+       47.761
+      ],
+      [
+       7.239,
+       47.264
+      ]
+     ]
+    ]
+   },
+   "properties": {
+    "title": "Satellitenbilder",
+    "updated": "2026-11-20T16:05:37+01:00",
+    "publisher": "Kanton Basel-Stadt",
+    "layer": "Satellitenbilder",
+    "offerings": [
+     {
+      "code": "http://www.opengis.net/spec/owc-geojson/1.0/req/wms",
+      "operations": [
+       {
+        "code": "GetCapabilities",
+        "method": "GET",
+        "type": "application/xml",
+        "href": "https://wms.geo.bs.ch/?SERVICE=WMS&REQUEST=GetCapabilities"
+       }
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": "https://wms.geo.sh.ch/raster#Satellitenbild Sentinel2 (NDVI)",
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       8.261,
+       47.453
+      ],
+      [
+       9.022,
+       47.453
+      ],
+      [
+       9.022,
+       47.905
+      ],
+      [
+       8.261,
+       47.905
+      ],
+      [
+       8.261,
+       47.453
+      ]
+     ]
+    ]
+   },
+   "properties": {
+    "title": "Satellitenbild Sentinel2 (NDVI)",
+    "updated": "2026-11-20T16:05:37+01:00",
+    "publisher": "Kanton Schaffhausen",
+    "layer": "Satellitenbild Sentinel2 (NDVI)",
+    "offerings": [
+     {
+      "code": "http://www.opengis.net/spec/owc-geojson/1.0/req/wms",
+      "operations": [
+       {
+        "code": "GetCapabilities",
+        "method": "GET",
+        "type": "application/xml",
+        "href": "https://wms.geo.sh.ch/raster?SERVICE=WMS&REQUEST=GetCapabilities"
+       }
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": "https://geo.so.ch/api/wms#ch.swisstopo.sentinel_2018",
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       4.497,
+       44.952
+      ],
+      [
+       12.731,
+       44.952
+      ],
+      [
+       12.731,
+       48.884
+      ],
+      [
+       4.497,
+       48.884
+      ],
+      [
+       4.497,
+       44.952
+      ]
+     ]
+    ]
+   },
+   "properties": {
+    "title": "Sentinel-2 Satellitenbildmosaik 2018",
+    "updated": "2026-11-20T16:05:37+01:00",
+    "publisher": "Kanton Solothurn",
+    "layer": "ch.swisstopo.sentinel_2018",
+    "offerings": [
+     {
+      "code": "http://www.opengis.net/spec/owc-geojson/1.0/req/wms",
+      "operations": [
+       {
+        "code": "GetCapabilities",
+        "method": "GET",
+        "type": "application/xml",
+        "href": "https://geo.so.ch/api/wms?SERVICE=WMS&REQUEST=GetCapabilities"
+       }
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": "https://geo.ur.ch/wms#forst:lawinen_kartierung_satellitenbild_2018",
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       8.412,
+       46.531
+      ],
+      [
+       8.952,
+       46.531
+      ],
+      [
+       8.952,
+       46.989
+      ],
+      [
+       8.412,
+       46.989
+      ],
+      [
+       8.412,
+       46.531
+      ]
+     ]
+    ]
+   },
+   "properties": {
+    "title": "Lawinen Kartierung Satellitenbild 2018",
+    "updated": "2026-11-20T16:05:37+01:00",
+    "publisher": "Kanton Uri",
+    "layer": "forst:lawinen_kartierung_satellitenbild_2018",
+    "offerings": [
+     {
+      "code": "http://www.opengis.net/spec/owc-geojson/1.0/req/wms",
+      "operations": [
+       {
+        "code": "GetCapabilities",
+        "method": "GET",
+        "type": "application/xml",
+        "href": "https://geo.ur.ch/wms?SERVICE=WMS&REQUEST=GetCapabilities"
+       }
+      ]
+     }
+    ]
+   }
+  }
+ ]
+}

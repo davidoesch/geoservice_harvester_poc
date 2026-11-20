@@ -1,0 +1,119 @@
+{
+ "type": "FeatureCollection",
+ "id": "https://davidoesch.github.io/geoservice_harvester_poc/data/topics/schulhaus.ows.json",
+ "properties": {
+  "lang": "de",
+  "title": "Schulhaus",
+  "updated": "2026-11-20T16:05:37+01:00",
+  "subtitle": "GeoHarvester topic: 2 providers",
+  "links": {
+   "profiles": [
+    {
+     "href": "http://www.opengis.net/spec/owc-geojson/1.0/req/core"
+    }
+   ]
+  }
+ },
+ "features": [
+  {
+   "type": "Feature",
+   "id": "https://stadtplan.winterthur.ch/wms/Schulkreise#Schulhaus",
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       8.632,
+       47.446
+      ],
+      [
+       8.833,
+       47.446
+      ],
+      [
+       8.833,
+       47.548
+      ],
+      [
+       8.632,
+       47.548
+      ],
+      [
+       8.632,
+       47.446
+      ]
+     ]
+    ]
+   },
+   "properties": {
+    "title": "Schulhaus",
+    "updated": "2026-11-20T16:05:37+01:00",
+    "publisher": "Stadt Winterthur",
+    "layer": "Schulhaus",
+    "offerings": [
+     {
+      "code": "http://www.opengis.net/spec/owc-geojson/1.0/req/wms",
+      "operations": [
+       {
+        "code": "GetCapabilities",
+        "method": "GET",
+        "type": "application/xml",
+        "href": "https://stadtplan.winterthur.ch/wms/Schulkreise?SERVICE=WMS&REQUEST=GetCapabilities"
+       }
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": "https://ows.geodatenonline.ch/ogd_wms_schulen_stadt_zug#Open-Data-Zug-Schulen-Stadt-Zug",
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       8.347,
+       47.048
+      ],
+      [
+       8.714,
+       47.048
+      ],
+      [
+       8.714,
+       47.267
+      ],
+      [
+       8.347,
+       47.267
+      ],
+      [
+       8.347,
+       47.048
+      ]
+     ]
+    ]
+   },
+   "properties": {
+    "title": "WMS Schulhäuser Stadt Zug",
+    "updated": "2026-11-20T16:05:37+01:00",
+    "publisher": "Stadt Zug",
+    "layer": "Open-Data-Zug-Schulen-Stadt-Zug",
+    "offerings": [
+     {
+      "code": "http://www.opengis.net/spec/owc-geojson/1.0/req/wms",
+      "operations": [
+       {
+        "code": "GetCapabilities",
+        "method": "GET",
+        "type": "application/xml",
+        "href": "https://ows.geodatenonline.ch/ogd_wms_schulen_stadt_zug?SERVICE=WMS&REQUEST=GetCapabilities"
+       }
+      ]
+     }
+    ]
+   }
+  }
+ ]
+}

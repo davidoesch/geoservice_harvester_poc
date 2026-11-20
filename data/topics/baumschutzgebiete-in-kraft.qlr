@@ -1,0 +1,27 @@
+<!DOCTYPE qgis-layer-definition>
+<qlr>
+  <layer-tree-group expanded="1" checked="Qt::Checked" name="">
+    <layer-tree-group expanded="1" checked="Qt::Checked" name="GeoHarvester – Baumschutzgebiete (in Kraft)">
+      <layer-tree-layer expanded="0" checked="Qt::Checked" id="geoharvester_baumschutzgebiete-in-kraft_0" name="Baumschutzzone (Bern)" source="contextualWMSLegend=0&amp;crs=EPSG:2056&amp;dpiMode=7&amp;featureCount=10&amp;format=image/png&amp;layers=0&amp;styles&amp;url=https://map.bern.ch/arcgis/services/Geoportal/Baumschutzzonen/MapServer/WMSServer" providerKey="wms"/>
+      <layer-tree-layer expanded="0" checked="Qt::Checked" id="geoharvester_baumschutzgebiete-in-kraft_1" name="Baumschutzgebiete (in Kraft) (Zürich)" source="contextualWMSLegend=0&amp;crs=EPSG:2056&amp;dpiMode=7&amp;featureCount=10&amp;format=image/png&amp;layers=Baumschutzgebiete (in Kraft)&amp;styles&amp;url=https://www.ogd.stadt-zuerich.ch/wms/geoportal/Nutzungsplanung___kommunale_Bau__und_Zonenordnung__BZO_" providerKey="wms"/>
+    </layer-tree-group>
+  </layer-tree-group>
+  <maplayers>
+    <maplayer type="raster" hasScaleBasedVisibilityFlag="0" minScale="1e+08" maxScale="0" styleCategories="AllStyleCategories">
+      <extent><xmin>2589059</xmin><ymin>1196555</ymin><xmax>2604440</xmax><ymax>1204439</ymax></extent>
+      <id>geoharvester_baumschutzgebiete-in-kraft_0</id>
+      <datasource>contextualWMSLegend=0&amp;crs=EPSG:2056&amp;dpiMode=7&amp;featureCount=10&amp;format=image/png&amp;layers=0&amp;styles&amp;url=https://map.bern.ch/arcgis/services/Geoportal/Baumschutzzonen/MapServer/WMSServer</datasource>
+      <layername>Baumschutzzone (Bern)</layername>
+      <srs><spatialrefsys><proj4>+proj=somerc +lat_0=46.9524055555556 +lon_0=7.43958333333333 +k_0=1 +x_0=2600000 +y_0=1200000 +ellps=bessel +towgs84=674.374,15.056,405.346,0,0,0,0 +units=m +no_defs</proj4><srid>2056</srid><authid>EPSG:2056</authid><description>CH1903+ / LV95</description><projectionacronym>somerc</projectionacronym><ellipsoidacronym>EPSG:7004</ellipsoidacronym><geographicflag>false</geographicflag></spatialrefsys></srs>
+      <provider>wms</provider>
+    </maplayer>
+    <maplayer type="raster" hasScaleBasedVisibilityFlag="0" minScale="1e+08" maxScale="0" styleCategories="AllStyleCategories">
+      <extent><xmin>2682184</xmin><ymin>1243140</ymin><xmax>2685136</xmax><ymax>1248185</ymax></extent>
+      <id>geoharvester_baumschutzgebiete-in-kraft_1</id>
+      <datasource>contextualWMSLegend=0&amp;crs=EPSG:2056&amp;dpiMode=7&amp;featureCount=10&amp;format=image/png&amp;layers=Baumschutzgebiete (in Kraft)&amp;styles&amp;url=https://www.ogd.stadt-zuerich.ch/wms/geoportal/Nutzungsplanung___kommunale_Bau__und_Zonenordnung__BZO_</datasource>
+      <layername>Baumschutzgebiete (in Kraft) (Zürich)</layername>
+      <srs><spatialrefsys><proj4>+proj=somerc +lat_0=46.9524055555556 +lon_0=7.43958333333333 +k_0=1 +x_0=2600000 +y_0=1200000 +ellps=bessel +towgs84=674.374,15.056,405.346,0,0,0,0 +units=m +no_defs</proj4><srid>2056</srid><authid>EPSG:2056</authid><description>CH1903+ / LV95</description><projectionacronym>somerc</projectionacronym><ellipsoidacronym>EPSG:7004</ellipsoidacronym><geographicflag>false</geographicflag></spatialrefsys></srs>
+      <provider>wms</provider>
+    </maplayer>
+  </maplayers>
+</qlr>

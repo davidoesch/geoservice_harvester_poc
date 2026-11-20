@@ -1,0 +1,419 @@
+{
+ "type": "FeatureCollection",
+ "id": "https://davidoesch.github.io/geoservice_harvester_poc/data/topics/sicherheitszonenplan.ows.json",
+ "properties": {
+  "lang": "de",
+  "title": "Sicherheitszonenplan",
+  "updated": "2026-11-20T16:05:37+01:00",
+  "subtitle": "GeoHarvester topic: 8 providers",
+  "links": {
+   "profiles": [
+    {
+     "href": "http://www.opengis.net/spec/owc-geojson/1.0/req/core"
+    }
+   ]
+  }
+ },
+ "features": [
+  {
+   "type": "Feature",
+   "id": "https://wms.geo.admin.ch/#ch.bazl.sicherheitszonenplan",
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       3.33,
+       44.075
+      ],
+      [
+       14.278,
+       44.075
+      ],
+      [
+       14.278,
+       49.2
+      ],
+      [
+       3.33,
+       49.2
+      ],
+      [
+       3.33,
+       44.075
+      ]
+     ]
+    ]
+   },
+   "properties": {
+    "title": "Sicherheitszonenplan",
+    "updated": "2026-11-20T16:05:37+01:00",
+    "publisher": "Bund (geo.admin.ch)",
+    "layer": "ch.bazl.sicherheitszonenplan",
+    "offerings": [
+     {
+      "code": "http://www.opengis.net/spec/owc-geojson/1.0/req/wms",
+      "operations": [
+       {
+        "code": "GetCapabilities",
+        "method": "GET",
+        "type": "application/xml",
+        "href": "https://wms.geo.admin.ch/?SERVICE=WMS&REQUEST=GetCapabilities"
+       }
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": "https://www.ogd.stadt-zuerich.ch/wms/geoportal/Kommunaler_Richtplan_Siedlung_Landschaft_oeffentliche_Bauten_und_Anlagen#katsicherheitsbauten",
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       8.461,
+       47.321
+      ],
+      [
+       8.623,
+       47.321
+      ],
+      [
+       8.623,
+       47.434
+      ],
+      [
+       8.461,
+       47.434
+      ],
+      [
+       8.461,
+       47.321
+      ]
+     ]
+    ]
+   },
+   "properties": {
+    "title": "Sicherheitsbauten",
+    "updated": "2026-11-20T16:05:37+01:00",
+    "publisher": "Stadt Zürich",
+    "layer": "katsicherheitsbauten",
+    "offerings": [
+     {
+      "code": "http://www.opengis.net/spec/owc-geojson/1.0/req/wms",
+      "operations": [
+       {
+        "code": "GetCapabilities",
+        "method": "GET",
+        "type": "application/xml",
+        "href": "https://www.ogd.stadt-zuerich.ch/wms/geoportal/Kommunaler_Richtplan_Siedlung_Landschaft_oeffentliche_Bauten_und_Anlagen?SERVICE=WMS&REQUEST=GetCapabilities"
+       }
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": "https://service.geo.llv.li/service/wms#li.au.nl_inv_schuetzenswerte_lebensraeume",
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       9.44,
+       47.035
+      ],
+      [
+       9.661,
+       47.035
+      ],
+      [
+       9.661,
+       47.295
+      ],
+      [
+       9.44,
+       47.295
+      ],
+      [
+       9.44,
+       47.035
+      ]
+     ]
+    ]
+   },
+   "properties": {
+    "title": "Schützenswerte Lebensräume",
+    "updated": "2026-11-20T16:05:37+01:00",
+    "publisher": "Fürstentum Liechtenstein",
+    "layer": "li.au.nl_inv_schuetzenswerte_lebensraeume",
+    "offerings": [
+     {
+      "code": "http://www.opengis.net/spec/owc-geojson/1.0/req/wms",
+      "operations": [
+       {
+        "code": "GetCapabilities",
+        "method": "GET",
+        "type": "application/xml",
+        "href": "https://service.geo.llv.li/service/wms?SERVICE=WMS&REQUEST=GetCapabilities"
+       }
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": "https://wms.geo.ag.ch/public/ows#ch_ag_geo_are_kllandschaft_01",
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       7.712,
+       47.139
+      ],
+      [
+       8.46,
+       47.139
+      ],
+      [
+       8.46,
+       47.622
+      ],
+      [
+       7.712,
+       47.622
+      ],
+      [
+       7.712,
+       47.139
+      ]
+     ]
+    ]
+   },
+   "properties": {
+    "title": "überlagerte Schutzräume für Lebensräume und Landschaften",
+    "updated": "2026-11-20T16:05:37+01:00",
+    "publisher": "Kanton Aargau",
+    "layer": "ch_ag_geo_are_kllandschaft_01",
+    "offerings": [
+     {
+      "code": "http://www.opengis.net/spec/owc-geojson/1.0/req/wms",
+      "operations": [
+       {
+        "code": "GetCapabilities",
+        "method": "GET",
+        "type": "application/xml",
+        "href": "https://wms.geo.ag.ch/public/ows?SERVICE=WMS&REQUEST=GetCapabilities"
+       }
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": "https://oerebservice.apps.be.ch/cgi-bin/mapserv.fcgi?map=oereb_de#geodb.sizoplan_sizoplan",
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       6.781,
+       46.234
+      ],
+      [
+       8.617,
+       46.234
+      ],
+      [
+       8.617,
+       47.379
+      ],
+      [
+       6.781,
+       47.379
+      ],
+      [
+       6.781,
+       46.234
+      ]
+     ]
+    ]
+   },
+   "properties": {
+    "title": "Sicherheitszonenplan",
+    "updated": "2026-11-20T16:05:37+01:00",
+    "publisher": "Kanton Bern",
+    "layer": "geodb.sizoplan_sizoplan",
+    "offerings": [
+     {
+      "code": "http://www.opengis.net/spec/owc-geojson/1.0/req/wms",
+      "operations": [
+       {
+        "code": "GetCapabilities",
+        "method": "GET",
+        "type": "application/xml",
+        "href": "https://oerebservice.apps.be.ch/cgi-bin/mapserv.fcgi?map=oereb_de&SERVICE=WMS&REQUEST=GetCapabilities"
+       }
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": "https://wms.geo.gr.ch/waldbiodiversitaet#Besonders_schuetzenswerte_Lebensraeume_WNO",
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       8.615,
+       45.994
+      ],
+      [
+       10.547,
+       45.994
+      ],
+      [
+       10.547,
+       47.324
+      ],
+      [
+       8.615,
+       47.324
+      ],
+      [
+       8.615,
+       45.994
+      ]
+     ]
+    ]
+   },
+   "properties": {
+    "title": "Besonders schützenswerte Lebensräume (WNO)",
+    "updated": "2026-11-20T16:05:37+01:00",
+    "publisher": "Kanton Graubünden",
+    "layer": "Besonders_schuetzenswerte_Lebensraeume_WNO",
+    "offerings": [
+     {
+      "code": "http://www.opengis.net/spec/owc-geojson/1.0/req/wms",
+      "operations": [
+       {
+        "code": "GetCapabilities",
+        "method": "GET",
+        "type": "application/xml",
+        "href": "https://wms.geo.gr.ch/waldbiodiversitaet?SERVICE=WMS&REQUEST=GetCapabilities"
+       }
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": "https://sit.vs.ch/arcgis/services/UMWELTSCHUTZ/MapServer/WMSServer#26",
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       7.527,
+       46.276
+      ],
+      [
+       7.968,
+       46.276
+      ],
+      [
+       7.968,
+       46.317
+      ],
+      [
+       7.527,
+       46.317
+      ],
+      [
+       7.527,
+       46.276
+      ]
+     ]
+    ]
+   },
+   "properties": {
+    "title": "BS_Gebiete mit nachgewiesenen Bodenbelastungen",
+    "updated": "2026-11-20T16:05:37+01:00",
+    "publisher": "Kanton Wallis",
+    "layer": "26",
+    "offerings": [
+     {
+      "code": "http://www.opengis.net/spec/owc-geojson/1.0/req/wms",
+      "operations": [
+       {
+        "code": "GetCapabilities",
+        "method": "GET",
+        "type": "application/xml",
+        "href": "https://sit.vs.ch/arcgis/services/UMWELTSCHUTZ/MapServer/WMSServer?SERVICE=WMS&REQUEST=GetCapabilities"
+       }
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": "https://wms.zh.ch/AwelWBwwwZHWMS#sicherheitsbereiche_von_stauanlagen",
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       8.157,
+       47.142
+      ],
+      [
+       9.042,
+       47.142
+      ],
+      [
+       9.042,
+       47.848
+      ],
+      [
+       8.157,
+       47.848
+      ],
+      [
+       8.157,
+       47.142
+      ]
+     ]
+    ]
+   },
+   "properties": {
+    "title": "Sicherheitsbereiche von Stauanlagen",
+    "updated": "2026-11-20T16:05:37+01:00",
+    "publisher": "Kanton Zürich",
+    "layer": "sicherheitsbereiche_von_stauanlagen",
+    "offerings": [
+     {
+      "code": "http://www.opengis.net/spec/owc-geojson/1.0/req/wms",
+      "operations": [
+       {
+        "code": "GetCapabilities",
+        "method": "GET",
+        "type": "application/xml",
+        "href": "https://wms.zh.ch/AwelWBwwwZHWMS?SERVICE=WMS&REQUEST=GetCapabilities"
+       }
+      ]
+     }
+    ]
+   }
+  }
+ ]
+}

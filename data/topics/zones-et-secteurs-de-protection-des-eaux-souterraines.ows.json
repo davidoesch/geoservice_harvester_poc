@@ -1,0 +1,269 @@
+{
+ "type": "FeatureCollection",
+ "id": "https://davidoesch.github.io/geoservice_harvester_poc/data/topics/zones-et-secteurs-de-protection-des-eaux-souterraines.ows.json",
+ "properties": {
+  "lang": "de",
+  "title": "Zones et secteurs de protection des eaux souterraines",
+  "updated": "2026-11-20T16:13:33+01:00",
+  "subtitle": "GeoHarvester topic: 5 providers",
+  "links": {
+   "profiles": [
+    {
+     "href": "http://www.opengis.net/spec/owc-geojson/1.0/req/core"
+    }
+   ]
+  }
+ },
+ "features": [
+  {
+   "type": "Feature",
+   "id": "https://maps.fr.ch/ags/services/OpenData/Zones_de_protection_des_eaux_souterraines__RDPPF_/MapServer/WMSServer#0",
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       6.75,
+       46.496
+      ],
+      [
+       7.33,
+       46.496
+      ],
+      [
+       7.33,
+       47.002
+      ],
+      [
+       6.75,
+       47.002
+      ],
+      [
+       6.75,
+       46.496
+      ]
+     ]
+    ]
+   },
+   "properties": {
+    "title": "Zones de protection des eaux souterraines (RDPPF)",
+    "updated": "2026-11-20T16:13:33+01:00",
+    "publisher": "Kanton Freiburg",
+    "layer": "0",
+    "offerings": [
+     {
+      "code": "http://www.opengis.net/spec/owc-geojson/1.0/req/wms",
+      "operations": [
+       {
+        "code": "GetCapabilities",
+        "method": "GET",
+        "type": "application/xml",
+        "href": "https://maps.fr.ch/ags/services/OpenData/Zones_de_protection_des_eaux_souterraines__RDPPF_/MapServer/WMSServer?SERVICE=WMS&REQUEST=GetCapabilities"
+       }
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": "https://vector.sitg.ge.ch/arcgis/services/RDPPF_ZONES_PROTECTION_EAUX/MapServer/WMSServer#0",
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       5.955,
+       46.13
+      ],
+      [
+       6.199,
+       46.13
+      ],
+      [
+       6.199,
+       46.208
+      ],
+      [
+       5.955,
+       46.208
+      ],
+      [
+       5.955,
+       46.13
+      ]
+     ]
+    ]
+   },
+   "properties": {
+    "title": "RDPPF_ZONES_PROTECTION_EAUX",
+    "updated": "2026-11-20T16:13:33+01:00",
+    "publisher": "Kanton Genf",
+    "layer": "0",
+    "offerings": [
+     {
+      "code": "http://www.opengis.net/spec/owc-geojson/1.0/req/wms",
+      "operations": [
+       {
+        "code": "GetCapabilities",
+        "method": "GET",
+        "type": "application/xml",
+        "href": "https://vector.sitg.ge.ch/arcgis/services/RDPPF_ZONES_PROTECTION_EAUX/MapServer/WMSServer?SERVICE=WMS&REQUEST=GetCapabilities"
+       }
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": "https://geoservices.jura.ch/wms#ju.env_06_01",
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       6.696,
+       47.107
+      ],
+      [
+       7.644,
+       47.107
+      ],
+      [
+       7.644,
+       47.535
+      ],
+      [
+       6.696,
+       47.535
+      ],
+      [
+       6.696,
+       47.107
+      ]
+     ]
+    ]
+   },
+   "properties": {
+    "title": "Zones et secteurs de protection des eaux souterraines",
+    "updated": "2026-11-20T16:13:33+01:00",
+    "publisher": "Kanton Jura",
+    "layer": "ju.env_06_01",
+    "offerings": [
+     {
+      "code": "http://www.opengis.net/spec/owc-geojson/1.0/req/wms",
+      "operations": [
+       {
+        "code": "GetCapabilities",
+        "method": "GET",
+        "type": "application/xml",
+        "href": "https://geoservices.jura.ch/wms?SERVICE=WMS&REQUEST=GetCapabilities"
+       }
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": "https://wms.geo.ti.ch/service#ch_131_1_v1_2_zone_protezione_acque_sotterranee",
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       7.936,
+       45.575
+      ],
+      [
+       9.599,
+       45.575
+      ],
+      [
+       9.599,
+       46.842
+      ],
+      [
+       7.936,
+       46.842
+      ],
+      [
+       7.936,
+       45.575
+      ]
+     ]
+    ]
+   },
+   "properties": {
+    "title": "[CH-131.1] Zone di protezione delle acque sotterranee",
+    "updated": "2026-11-20T16:13:33+01:00",
+    "publisher": "Kanton Tessin",
+    "layer": "ch_131_1_v1_2_zone_protezione_acque_sotterranee",
+    "offerings": [
+     {
+      "code": "http://www.opengis.net/spec/owc-geojson/1.0/req/wms",
+      "operations": [
+       {
+        "code": "GetCapabilities",
+        "method": "GET",
+        "type": "application/xml",
+        "href": "https://wms.geo.ti.ch/service?SERVICE=WMS&REQUEST=GetCapabilities"
+       }
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": "https://sit.vs.ch/arcgis/services/RDPPF_PROD/MapServer/WMSServer#45",
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       6.768,
+       45.855
+      ],
+      [
+       8.482,
+       45.855
+      ],
+      [
+       8.482,
+       46.659
+      ],
+      [
+       6.768,
+       46.659
+      ],
+      [
+       6.768,
+       45.855
+      ]
+     ]
+    ]
+   },
+   "properties": {
+    "title": "Zones de protection des eaux souterraines",
+    "updated": "2026-11-20T16:13:33+01:00",
+    "publisher": "Kanton Wallis",
+    "layer": "45",
+    "offerings": [
+     {
+      "code": "http://www.opengis.net/spec/owc-geojson/1.0/req/wms",
+      "operations": [
+       {
+        "code": "GetCapabilities",
+        "method": "GET",
+        "type": "application/xml",
+        "href": "https://sit.vs.ch/arcgis/services/RDPPF_PROD/MapServer/WMSServer?SERVICE=WMS&REQUEST=GetCapabilities"
+       }
+      ]
+     }
+    ]
+   }
+  }
+ ]
+}

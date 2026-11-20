@@ -1,0 +1,119 @@
+{
+ "type": "FeatureCollection",
+ "id": "https://davidoesch.github.io/geoservice_harvester_poc/data/topics/territoire-a-habitat-traditionnellement-disperse.ows.json",
+ "properties": {
+  "lang": "de",
+  "title": "Territoire à habitat traditionnellement dispersé",
+  "updated": "2026-11-20T16:13:33+01:00",
+  "subtitle": "GeoHarvester topic: 2 providers",
+  "links": {
+   "profiles": [
+    {
+     "href": "http://www.opengis.net/spec/owc-geojson/1.0/req/core"
+    }
+   ]
+  }
+ },
+ "features": [
+  {
+   "type": "Feature",
+   "id": "https://geoservices.jura.ch/wms#ju.sdt_02_20",
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       6.696,
+       47.107
+      ],
+      [
+       7.644,
+       47.107
+      ],
+      [
+       7.644,
+       47.535
+      ],
+      [
+       6.696,
+       47.535
+      ],
+      [
+       6.696,
+       47.107
+      ]
+     ]
+    ]
+   },
+   "properties": {
+    "title": "Territoire à habitat traditionnellement dispersé",
+    "updated": "2026-11-20T16:13:33+01:00",
+    "publisher": "Kanton Jura",
+    "layer": "ju.sdt_02_20",
+    "offerings": [
+     {
+      "code": "http://www.opengis.net/spec/owc-geojson/1.0/req/wms",
+      "operations": [
+       {
+        "code": "GetCapabilities",
+        "method": "GET",
+        "type": "application/xml",
+        "href": "https://geoservices.jura.ch/wms?SERVICE=WMS&REQUEST=GetCapabilities"
+       }
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": "https://sitn.ne.ch/services/wms#at218_habitat_traditionnellement_disperse",
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       6.115,
+       46.585
+      ],
+      [
+       7.44,
+       46.585
+      ],
+      [
+       7.44,
+       47.402
+      ],
+      [
+       6.115,
+       47.402
+      ],
+      [
+       6.115,
+       46.585
+      ]
+     ]
+    ]
+   },
+   "properties": {
+    "title": "at218_habitat_traditionnellement_disperse",
+    "updated": "2026-11-20T16:13:33+01:00",
+    "publisher": "Kanton Neuenburg",
+    "layer": "at218_habitat_traditionnellement_disperse",
+    "offerings": [
+     {
+      "code": "http://www.opengis.net/spec/owc-geojson/1.0/req/wms",
+      "operations": [
+       {
+        "code": "GetCapabilities",
+        "method": "GET",
+        "type": "application/xml",
+        "href": "https://sitn.ne.ch/services/wms?SERVICE=WMS&REQUEST=GetCapabilities"
+       }
+      ]
+     }
+    ]
+   }
+  }
+ ]
+}

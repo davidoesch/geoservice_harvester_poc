@@ -1,0 +1,269 @@
+{
+ "type": "FeatureCollection",
+ "id": "https://davidoesch.github.io/geoservice_harvester_poc/data/topics/swiss-alti3d-monodirektionales-relief.ows.json",
+ "properties": {
+  "lang": "de",
+  "title": "swissALTI3D monodirektionales Relief",
+  "updated": "2026-11-20T16:13:33+01:00",
+  "subtitle": "GeoHarvester topic: 5 providers",
+  "links": {
+   "profiles": [
+    {
+     "href": "http://www.opengis.net/spec/owc-geojson/1.0/req/core"
+    }
+   ]
+  }
+ },
+ "features": [
+  {
+   "type": "Feature",
+   "id": "https://wms.geo.admin.ch/#ch.swisstopo.swissalti3d-reliefschattierung_monodirektional",
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       3.33,
+       44.075
+      ],
+      [
+       14.278,
+       44.075
+      ],
+      [
+       14.278,
+       49.2
+      ],
+      [
+       3.33,
+       49.2
+      ],
+      [
+       3.33,
+       44.075
+      ]
+     ]
+    ]
+   },
+   "properties": {
+    "title": "swissALTI3D monodirektionales Relief",
+    "updated": "2026-11-20T16:13:33+01:00",
+    "publisher": "Bund (geo.admin.ch)",
+    "layer": "ch.swisstopo.swissalti3d-reliefschattierung_monodirektional",
+    "offerings": [
+     {
+      "code": "http://www.opengis.net/spec/owc-geojson/1.0/req/wms",
+      "operations": [
+       {
+        "code": "GetCapabilities",
+        "method": "GET",
+        "type": "application/xml",
+        "href": "https://wms.geo.admin.ch/?SERVICE=WMS&REQUEST=GetCapabilities"
+       }
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": "https://www.ogc.stadt-zuerich.ch/mapproxy/service#swissALTI3D_2020",
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       8.426,
+       47.309
+      ],
+      [
+       8.632,
+       47.309
+      ],
+      [
+       8.632,
+       47.446
+      ],
+      [
+       8.426,
+       47.446
+      ],
+      [
+       8.426,
+       47.309
+      ]
+     ]
+    ]
+   },
+   "properties": {
+    "title": "swissALTI3D_2020",
+    "updated": "2026-11-20T16:13:33+01:00",
+    "publisher": "Stadt Zürich",
+    "layer": "swissALTI3D_2020",
+    "offerings": [
+     {
+      "code": "http://www.opengis.net/spec/owc-geojson/1.0/req/wms",
+      "operations": [
+       {
+        "code": "GetCapabilities",
+        "method": "GET",
+        "type": "application/xml",
+        "href": "https://www.ogc.stadt-zuerich.ch/mapproxy/service?SERVICE=WMS&REQUEST=GetCapabilities"
+       }
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": "https://www.geoservice.apps.be.ch/geoservice3/services/a42geo/of_elevation02_de_ms_wms/MapServer/WMSServer#SWISSALT_SARELIEF_MOSAIC_40374",
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       6.817,
+       46.291
+      ],
+      [
+       8.512,
+       46.291
+      ],
+      [
+       8.512,
+       47.375
+      ],
+      [
+       6.817,
+       47.375
+      ],
+      [
+       6.817,
+       46.291
+      ]
+     ]
+    ]
+   },
+   "properties": {
+    "title": "Höhenmodell 2m swissALTI3D, Relief",
+    "updated": "2026-11-20T16:13:33+01:00",
+    "publisher": "Kanton Bern",
+    "layer": "SWISSALT_SARELIEF_MOSAIC_40374",
+    "offerings": [
+     {
+      "code": "http://www.opengis.net/spec/owc-geojson/1.0/req/wms",
+      "operations": [
+       {
+        "code": "GetCapabilities",
+        "method": "GET",
+        "type": "application/xml",
+        "href": "https://www.geoservice.apps.be.ch/geoservice3/services/a42geo/of_elevation02_de_ms_wms/MapServer/WMSServer?SERVICE=WMS&REQUEST=GetCapabilities"
+       }
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": "https://maps.fr.ch/ags/services/OpenData_Raster/MNT_swissALTI3D/MapServer/WMSServer#0",
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       6.729,
+       46.419
+      ],
+      [
+       7.388,
+       46.419
+      ],
+      [
+       7.388,
+       47.024
+      ],
+      [
+       6.729,
+       47.024
+      ],
+      [
+       6.729,
+       46.419
+      ]
+     ]
+    ]
+   },
+   "properties": {
+    "title": "MNT swissALTI3D",
+    "updated": "2026-11-20T16:13:33+01:00",
+    "publisher": "Kanton Freiburg",
+    "layer": "0",
+    "offerings": [
+     {
+      "code": "http://www.opengis.net/spec/owc-geojson/1.0/req/wms",
+      "operations": [
+       {
+        "code": "GetCapabilities",
+        "method": "GET",
+        "type": "application/xml",
+        "href": "https://maps.fr.ch/ags/services/OpenData_Raster/MNT_swissALTI3D/MapServer/WMSServer?SERVICE=WMS&REQUEST=GetCapabilities"
+       }
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": "https://ows.geo.tg.ch/geofy_access_proxy/basisplanf#Relief_DTMAV",
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       8.631,
+       47.348
+      ],
+      [
+       9.505,
+       47.348
+      ],
+      [
+       9.505,
+       47.711
+      ],
+      [
+       8.631,
+       47.711
+      ],
+      [
+       8.631,
+       47.348
+      ]
+     ]
+    ]
+   },
+   "properties": {
+    "title": "Reliefschattierung Monodirektional(swissALTI3D)",
+    "updated": "2026-11-20T16:13:33+01:00",
+    "publisher": "Kanton Thurgau",
+    "layer": "Relief_DTMAV",
+    "offerings": [
+     {
+      "code": "http://www.opengis.net/spec/owc-geojson/1.0/req/wms",
+      "operations": [
+       {
+        "code": "GetCapabilities",
+        "method": "GET",
+        "type": "application/xml",
+        "href": "https://ows.geo.tg.ch/geofy_access_proxy/basisplanf?SERVICE=WMS&REQUEST=GetCapabilities"
+       }
+      ]
+     }
+    ]
+   }
+  }
+ ]
+}

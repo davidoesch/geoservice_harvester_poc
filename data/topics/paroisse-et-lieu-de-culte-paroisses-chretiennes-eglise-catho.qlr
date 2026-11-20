@@ -1,0 +1,90 @@
+<!DOCTYPE qgis-layer-definition>
+<qlr>
+  <layer-tree-group expanded="1" checked="Qt::Checked" name="">
+    <layer-tree-group expanded="1" checked="Qt::Checked" name="GeoHarvester – Paroisse et lieu de culte : paroisses chrétiennes - Eglise catholique">
+      <layer-tree-layer expanded="0" checked="Qt::Checked" id="geoharvester_paroisse-et-lieu-de-culte-paroisses-chretiennes-eglise-catho_0" name="Einteilung katholische Kirchgemeinde (Luzern)" source="contextualWMSLegend=0&amp;crs=EPSG:2056&amp;dpiMode=7&amp;featureCount=10&amp;format=image/png&amp;layers=0&amp;styles&amp;url=https://map.stadtluzern.ch/server/services/OGD/einteilung_katholische_kirchgemeinden/MapServer/WMSServer" providerKey="wms"/>
+      <layer-tree-layer expanded="0" checked="Qt::Checked" id="geoharvester_paroisse-et-lieu-de-culte-paroisses-chretiennes-eglise-catho_1" name="Katholische Kirchgemeinde (Winterthur)" source="contextualWMSLegend=0&amp;crs=EPSG:2056&amp;dpiMode=7&amp;featureCount=10&amp;format=image/png&amp;layers=KatholischeKirchgemeinden&amp;styles&amp;url=https://stadtplan.winterthur.ch/wms/KatholischeKirchgemeinden" providerKey="wms"/>
+      <layer-tree-layer expanded="0" checked="Qt::Checked" id="geoharvester_paroisse-et-lieu-de-culte-paroisses-chretiennes-eglise-catho_2" name="Gebietseinteilung der evangelisch-reformierten Kirchenkreise der Stadt Zürich (Zürich)" source="contextualWMSLegend=0&amp;crs=EPSG:2056&amp;dpiMode=7&amp;featureCount=10&amp;format=image/png&amp;layers=Gebietseinteilung der evangelisch-reformierten Kirchenkreise der Stadt Zürich&amp;styles&amp;url=https://www.ogd.stadt-zuerich.ch/wms/geoportal/Gebietseinteilung_der_evangelisch_reformierten_Kirchenkreise_der_Stadt_Zuerich" providerKey="wms"/>
+      <layer-tree-layer expanded="0" checked="Qt::Checked" id="geoharvester_paroisse-et-lieu-de-culte-paroisses-chretiennes-eglise-catho_3" name="Katholische Kirchgemeinden Kt AI (AI)" source="contextualWMSLegend=0&amp;crs=EPSG:2056&amp;dpiMode=7&amp;featureCount=10&amp;format=image/png&amp;layers=ch.geoportal.politische_und_administrative_grenzen.1620.0.katholische_kirchgemeinden_kt_ai&amp;styles&amp;url=https://www.geoportal.ch/services/wms/ktai" providerKey="wms"/>
+      <layer-tree-layer expanded="0" checked="Qt::Checked" id="geoharvester_paroisse-et-lieu-de-culte-paroisses-chretiennes-eglise-catho_4" name="Christkatholische Kirchgemeinden (BE)" source="contextualWMSLegend=0&amp;crs=EPSG:2056&amp;dpiMode=7&amp;featureCount=10&amp;format=image/png&amp;layers=ADMKG_CHRKATH_VW_11580&amp;styles&amp;url=https://www.geoservice.apps.be.ch/geoservice3/services/a42geo/of_boundaries05_de_ms_wms/MapServer/WMSServer" providerKey="wms"/>
+      <layer-tree-layer expanded="0" checked="Qt::Checked" id="geoharvester_paroisse-et-lieu-de-culte-paroisses-chretiennes-eglise-catho_5" name="Katholische Kirchenkreise (BS)" source="contextualWMSLegend=0&amp;crs=EPSG:2056&amp;dpiMode=7&amp;featureCount=10&amp;format=image/png&amp;layers=ch.bs.katholische_kirchenkreise_katk&amp;styles&amp;url=https://wms.geo.bs.ch/" providerKey="wms"/>
+      <layer-tree-layer expanded="0" checked="Qt::Checked" id="geoharvester_paroisse-et-lieu-de-culte-paroisses-chretiennes-eglise-catho_6" name="Paroisses catholiques (FR)" source="contextualWMSLegend=0&amp;crs=EPSG:2056&amp;dpiMode=7&amp;featureCount=10&amp;format=image/png&amp;layers=0&amp;styles&amp;url=https://maps.fr.ch/ags/services/OpenData/Paroisses_catholiques/MapServer/WMSServer" providerKey="wms"/>
+      <layer-tree-layer expanded="0" checked="Qt::Checked" id="geoharvester_paroisse-et-lieu-de-culte-paroisses-chretiennes-eglise-catho_7" name="Paroisse et lieu de culte : paroisses chrétiennes - Eglise catholique (JU)" source="contextualWMSLegend=0&amp;crs=EPSG:2056&amp;dpiMode=7&amp;featureCount=10&amp;format=image/png&amp;layers=ju.cec_17_23_paroisse_catholique&amp;styles&amp;url=https://geoservices.jura.ch/wms" providerKey="wms"/>
+      <layer-tree-layer expanded="0" checked="Qt::Checked" id="geoharvester_paroisse-et-lieu-de-culte-paroisses-chretiennes-eglise-catho_8" name="O_Kirchenkreuze (SG)" source="contextualWMSLegend=0&amp;crs=EPSG:2056&amp;dpiMode=7&amp;featureCount=10&amp;format=image/png&amp;layers=O_Kirchenkreuze&amp;styles&amp;url=https://services.geo.sg.ch/wss/service/SG00002_WMS/guest" providerKey="wms"/>
+    </layer-tree-group>
+  </layer-tree-group>
+  <maplayers>
+    <maplayer type="raster" hasScaleBasedVisibilityFlag="0" minScale="1e+08" maxScale="0" styleCategories="AllStyleCategories">
+      <extent><xmin>2658409</xmin><ymin>1208725</ymin><xmax>2669964</xmax><ymax>1215298</ymax></extent>
+      <id>geoharvester_paroisse-et-lieu-de-culte-paroisses-chretiennes-eglise-catho_0</id>
+      <datasource>contextualWMSLegend=0&amp;crs=EPSG:2056&amp;dpiMode=7&amp;featureCount=10&amp;format=image/png&amp;layers=0&amp;styles&amp;url=https://map.stadtluzern.ch/server/services/OGD/einteilung_katholische_kirchgemeinden/MapServer/WMSServer</datasource>
+      <layername>Einteilung katholische Kirchgemeinde (Luzern)</layername>
+      <srs><spatialrefsys><proj4>+proj=somerc +lat_0=46.9524055555556 +lon_0=7.43958333333333 +k_0=1 +x_0=2600000 +y_0=1200000 +ellps=bessel +towgs84=674.374,15.056,405.346,0,0,0,0 +units=m +no_defs</proj4><srid>2056</srid><authid>EPSG:2056</authid><description>CH1903+ / LV95</description><projectionacronym>somerc</projectionacronym><ellipsoidacronym>EPSG:7004</ellipsoidacronym><geographicflag>false</geographicflag></spatialrefsys></srs>
+      <provider>wms</provider>
+    </maplayer>
+    <maplayer type="raster" hasScaleBasedVisibilityFlag="0" minScale="1e+08" maxScale="0" styleCategories="AllStyleCategories">
+      <extent><xmin>2690006</xmin><ymin>1255707</ymin><xmax>2705022</xmax><ymax>1268187</ymax></extent>
+      <id>geoharvester_paroisse-et-lieu-de-culte-paroisses-chretiennes-eglise-catho_1</id>
+      <datasource>contextualWMSLegend=0&amp;crs=EPSG:2056&amp;dpiMode=7&amp;featureCount=10&amp;format=image/png&amp;layers=KatholischeKirchgemeinden&amp;styles&amp;url=https://stadtplan.winterthur.ch/wms/KatholischeKirchgemeinden</datasource>
+      <layername>Katholische Kirchgemeinde (Winterthur)</layername>
+      <srs><spatialrefsys><proj4>+proj=somerc +lat_0=46.9524055555556 +lon_0=7.43958333333333 +k_0=1 +x_0=2600000 +y_0=1200000 +ellps=bessel +towgs84=674.374,15.056,405.346,0,0,0,0 +units=m +no_defs</proj4><srid>2056</srid><authid>EPSG:2056</authid><description>CH1903+ / LV95</description><projectionacronym>somerc</projectionacronym><ellipsoidacronym>EPSG:7004</ellipsoidacronym><geographicflag>false</geographicflag></spatialrefsys></srs>
+      <provider>wms</provider>
+    </maplayer>
+    <maplayer type="raster" hasScaleBasedVisibilityFlag="0" minScale="1e+08" maxScale="0" styleCategories="AllStyleCategories">
+      <extent><xmin>2676161</xmin><ymin>1241280</ymin><xmax>2689721</xmax><ymax>1254591</ymax></extent>
+      <id>geoharvester_paroisse-et-lieu-de-culte-paroisses-chretiennes-eglise-catho_2</id>
+      <datasource>contextualWMSLegend=0&amp;crs=EPSG:2056&amp;dpiMode=7&amp;featureCount=10&amp;format=image/png&amp;layers=Gebietseinteilung der evangelisch-reformierten Kirchenkreise der Stadt Zürich&amp;styles&amp;url=https://www.ogd.stadt-zuerich.ch/wms/geoportal/Gebietseinteilung_der_evangelisch_reformierten_Kirchenkreise_der_Stadt_Zuerich</datasource>
+      <layername>Gebietseinteilung der evangelisch-reformierten Kirchenkreise der Stadt Zürich (Zürich)</layername>
+      <srs><spatialrefsys><proj4>+proj=somerc +lat_0=46.9524055555556 +lon_0=7.43958333333333 +k_0=1 +x_0=2600000 +y_0=1200000 +ellps=bessel +towgs84=674.374,15.056,405.346,0,0,0,0 +units=m +no_defs</proj4><srid>2056</srid><authid>EPSG:2056</authid><description>CH1903+ / LV95</description><projectionacronym>somerc</projectionacronym><ellipsoidacronym>EPSG:7004</ellipsoidacronym><geographicflag>false</geographicflag></spatialrefsys></srs>
+      <provider>wms</provider>
+    </maplayer>
+    <maplayer type="raster" hasScaleBasedVisibilityFlag="0" minScale="1e+08" maxScale="0" styleCategories="AllStyleCategories">
+      <extent><xmin>2740735</xmin><ymin>1232119</ymin><xmax>2765390</xmax><ymax>1258113</ymax></extent>
+      <id>geoharvester_paroisse-et-lieu-de-culte-paroisses-chretiennes-eglise-catho_3</id>
+      <datasource>contextualWMSLegend=0&amp;crs=EPSG:2056&amp;dpiMode=7&amp;featureCount=10&amp;format=image/png&amp;layers=ch.geoportal.politische_und_administrative_grenzen.1620.0.katholische_kirchgemeinden_kt_ai&amp;styles&amp;url=https://www.geoportal.ch/services/wms/ktai</datasource>
+      <layername>Katholische Kirchgemeinden Kt AI (AI)</layername>
+      <srs><spatialrefsys><proj4>+proj=somerc +lat_0=46.9524055555556 +lon_0=7.43958333333333 +k_0=1 +x_0=2600000 +y_0=1200000 +ellps=bessel +towgs84=674.374,15.056,405.346,0,0,0,0 +units=m +no_defs</proj4><srid>2056</srid><authid>EPSG:2056</authid><description>CH1903+ / LV95</description><projectionacronym>somerc</projectionacronym><ellipsoidacronym>EPSG:7004</ellipsoidacronym><geographicflag>false</geographicflag></spatialrefsys></srs>
+      <provider>wms</provider>
+    </maplayer>
+    <maplayer type="raster" hasScaleBasedVisibilityFlag="0" minScale="1e+08" maxScale="0" styleCategories="AllStyleCategories">
+      <extent><xmin>2555435</xmin><ymin>1130343</ymin><xmax>2677858</xmax><ymax>1244527</ymax></extent>
+      <id>geoharvester_paroisse-et-lieu-de-culte-paroisses-chretiennes-eglise-catho_4</id>
+      <datasource>contextualWMSLegend=0&amp;crs=EPSG:2056&amp;dpiMode=7&amp;featureCount=10&amp;format=image/png&amp;layers=ADMKG_CHRKATH_VW_11580&amp;styles&amp;url=https://www.geoservice.apps.be.ch/geoservice3/services/a42geo/of_boundaries05_de_ms_wms/MapServer/WMSServer</datasource>
+      <layername>Christkatholische Kirchgemeinden (BE)</layername>
+      <srs><spatialrefsys><proj4>+proj=somerc +lat_0=46.9524055555556 +lon_0=7.43958333333333 +k_0=1 +x_0=2600000 +y_0=1200000 +ellps=bessel +towgs84=674.374,15.056,405.346,0,0,0,0 +units=m +no_defs</proj4><srid>2056</srid><authid>EPSG:2056</authid><description>CH1903+ / LV95</description><projectionacronym>somerc</projectionacronym><ellipsoidacronym>EPSG:7004</ellipsoidacronym><geographicflag>false</geographicflag></spatialrefsys></srs>
+      <provider>wms</provider>
+    </maplayer>
+    <maplayer type="raster" hasScaleBasedVisibilityFlag="0" minScale="1e+08" maxScale="0" styleCategories="AllStyleCategories">
+      <extent><xmin>2608239</xmin><ymin>1262701</ymin><xmax>2619655</xmax><ymax>1272846</ymax></extent>
+      <id>geoharvester_paroisse-et-lieu-de-culte-paroisses-chretiennes-eglise-catho_5</id>
+      <datasource>contextualWMSLegend=0&amp;crs=EPSG:2056&amp;dpiMode=7&amp;featureCount=10&amp;format=image/png&amp;layers=ch.bs.katholische_kirchenkreise_katk&amp;styles&amp;url=https://wms.geo.bs.ch/</datasource>
+      <layername>Katholische Kirchenkreise (BS)</layername>
+      <srs><spatialrefsys><proj4>+proj=somerc +lat_0=46.9524055555556 +lon_0=7.43958333333333 +k_0=1 +x_0=2600000 +y_0=1200000 +ellps=bessel +towgs84=674.374,15.056,405.346,0,0,0,0 +units=m +no_defs</proj4><srid>2056</srid><authid>EPSG:2056</authid><description>CH1903+ / LV95</description><projectionacronym>somerc</projectionacronym><ellipsoidacronym>EPSG:7004</ellipsoidacronym><geographicflag>false</geographicflag></spatialrefsys></srs>
+      <provider>wms</provider>
+    </maplayer>
+    <maplayer type="raster" hasScaleBasedVisibilityFlag="0" minScale="1e+08" maxScale="0" styleCategories="AllStyleCategories">
+      <extent><xmin>2543157</xmin><ymin>1143231</ymin><xmax>2595617</xmax><ymax>1206329</ymax></extent>
+      <id>geoharvester_paroisse-et-lieu-de-culte-paroisses-chretiennes-eglise-catho_6</id>
+      <datasource>contextualWMSLegend=0&amp;crs=EPSG:2056&amp;dpiMode=7&amp;featureCount=10&amp;format=image/png&amp;layers=0&amp;styles&amp;url=https://maps.fr.ch/ags/services/OpenData/Paroisses_catholiques/MapServer/WMSServer</datasource>
+      <layername>Paroisses catholiques (FR)</layername>
+      <srs><spatialrefsys><proj4>+proj=somerc +lat_0=46.9524055555556 +lon_0=7.43958333333333 +k_0=1 +x_0=2600000 +y_0=1200000 +ellps=bessel +towgs84=674.374,15.056,405.346,0,0,0,0 +units=m +no_defs</proj4><srid>2056</srid><authid>EPSG:2056</authid><description>CH1903+ / LV95</description><projectionacronym>somerc</projectionacronym><ellipsoidacronym>EPSG:7004</ellipsoidacronym><geographicflag>false</geographicflag></spatialrefsys></srs>
+      <provider>wms</provider>
+    </maplayer>
+    <maplayer type="raster" hasScaleBasedVisibilityFlag="0" minScale="1e+08" maxScale="0" styleCategories="AllStyleCategories">
+      <extent><xmin>2543632</xmin><ymin>1217601</ymin><xmax>2615465</xmax><ymax>1264939</ymax></extent>
+      <id>geoharvester_paroisse-et-lieu-de-culte-paroisses-chretiennes-eglise-catho_7</id>
+      <datasource>contextualWMSLegend=0&amp;crs=EPSG:2056&amp;dpiMode=7&amp;featureCount=10&amp;format=image/png&amp;layers=ju.cec_17_23_paroisse_catholique&amp;styles&amp;url=https://geoservices.jura.ch/wms</datasource>
+      <layername>Paroisse et lieu de culte : paroisses chrétiennes - Eglise catholique (JU)</layername>
+      <srs><spatialrefsys><proj4>+proj=somerc +lat_0=46.9524055555556 +lon_0=7.43958333333333 +k_0=1 +x_0=2600000 +y_0=1200000 +ellps=bessel +towgs84=674.374,15.056,405.346,0,0,0,0 +units=m +no_defs</proj4><srid>2056</srid><authid>EPSG:2056</authid><description>CH1903+ / LV95</description><projectionacronym>somerc</projectionacronym><ellipsoidacronym>EPSG:7004</ellipsoidacronym><geographicflag>false</geographicflag></spatialrefsys></srs>
+      <provider>wms</provider>
+    </maplayer>
+    <maplayer type="raster" hasScaleBasedVisibilityFlag="0" minScale="1e+08" maxScale="0" styleCategories="AllStyleCategories">
+      <extent><xmin>2704399</xmin><ymin>1196122</ymin><xmax>2767560</xmax><ymax>1266739</ymax></extent>
+      <id>geoharvester_paroisse-et-lieu-de-culte-paroisses-chretiennes-eglise-catho_8</id>
+      <datasource>contextualWMSLegend=0&amp;crs=EPSG:2056&amp;dpiMode=7&amp;featureCount=10&amp;format=image/png&amp;layers=O_Kirchenkreuze&amp;styles&amp;url=https://services.geo.sg.ch/wss/service/SG00002_WMS/guest</datasource>
+      <layername>O_Kirchenkreuze (SG)</layername>
+      <srs><spatialrefsys><proj4>+proj=somerc +lat_0=46.9524055555556 +lon_0=7.43958333333333 +k_0=1 +x_0=2600000 +y_0=1200000 +ellps=bessel +towgs84=674.374,15.056,405.346,0,0,0,0 +units=m +no_defs</proj4><srid>2056</srid><authid>EPSG:2056</authid><description>CH1903+ / LV95</description><projectionacronym>somerc</projectionacronym><ellipsoidacronym>EPSG:7004</ellipsoidacronym><geographicflag>false</geographicflag></spatialrefsys></srs>
+      <provider>wms</provider>
+    </maplayer>
+  </maplayers>
+</qlr>

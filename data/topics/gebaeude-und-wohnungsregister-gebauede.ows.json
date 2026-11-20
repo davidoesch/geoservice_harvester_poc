@@ -1,0 +1,119 @@
+{
+ "type": "FeatureCollection",
+ "id": "https://davidoesch.github.io/geoservice_harvester_poc/data/topics/gebaeude-und-wohnungsregister-gebauede.ows.json",
+ "properties": {
+  "lang": "de",
+  "title": "Gebaeude und Wohnungsregister Gebauede",
+  "updated": "2026-11-20T16:05:37+01:00",
+  "subtitle": "GeoHarvester topic: 2 providers",
+  "links": {
+   "profiles": [
+    {
+     "href": "http://www.opengis.net/spec/owc-geojson/1.0/req/core"
+    }
+   ]
+  }
+ },
+ "features": [
+  {
+   "type": "Feature",
+   "id": "https://service.geo.llv.li/service/wms#li.as.geb_wohnungsregister",
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       9.467,
+       47.044
+      ],
+      [
+       9.647,
+       47.044
+      ],
+      [
+       9.647,
+       47.276
+      ],
+      [
+       9.467,
+       47.276
+      ],
+      [
+       9.467,
+       47.044
+      ]
+     ]
+    ]
+   },
+   "properties": {
+    "title": "Gebaeude und Wohnungsregister Gebauede",
+    "updated": "2026-11-20T16:05:37+01:00",
+    "publisher": "Fürstentum Liechtenstein",
+    "layer": "li.as.geb_wohnungsregister",
+    "offerings": [
+     {
+      "code": "http://www.opengis.net/spec/owc-geojson/1.0/req/wms",
+      "operations": [
+       {
+        "code": "GetCapabilities",
+        "method": "GET",
+        "type": "application/xml",
+        "href": "https://service.geo.llv.li/service/wms?SERVICE=WMS&REQUEST=GetCapabilities"
+       }
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": "https://wms.geo.gr.ch/amtlichevermessung_stand#Gebaeude_und_Wohnungsregister_",
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       8.615,
+       45.994
+      ],
+      [
+       10.547,
+       45.994
+      ],
+      [
+       10.547,
+       47.324
+      ],
+      [
+       8.615,
+       47.324
+      ],
+      [
+       8.615,
+       45.994
+      ]
+     ]
+    ]
+   },
+   "properties": {
+    "title": "Gebäude- und Wohnungsregister",
+    "updated": "2026-11-20T16:05:37+01:00",
+    "publisher": "Kanton Graubünden",
+    "layer": "Gebaeude_und_Wohnungsregister_",
+    "offerings": [
+     {
+      "code": "http://www.opengis.net/spec/owc-geojson/1.0/req/wms",
+      "operations": [
+       {
+        "code": "GetCapabilities",
+        "method": "GET",
+        "type": "application/xml",
+        "href": "https://wms.geo.gr.ch/amtlichevermessung_stand?SERVICE=WMS&REQUEST=GetCapabilities"
+       }
+      ]
+     }
+    ]
+   }
+  }
+ ]
+}

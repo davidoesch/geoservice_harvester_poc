@@ -1,0 +1,169 @@
+{
+ "type": "FeatureCollection",
+ "id": "https://davidoesch.github.io/geoservice_harvester_poc/data/topics/verkehr-strassen-und-wege.ows.json",
+ "properties": {
+  "lang": "de",
+  "title": "Verkehr Strassen und Wege",
+  "updated": "2026-11-20T16:05:37+01:00",
+  "subtitle": "GeoHarvester topic: 3 providers",
+  "links": {
+   "profiles": [
+    {
+     "href": "http://www.opengis.net/spec/owc-geojson/1.0/req/core"
+    }
+   ]
+  }
+ },
+ "features": [
+  {
+   "type": "Feature",
+   "id": "https://map.bern.ch/arcgis/services/Geoportal/Flaechendeckende_Verkehrsdaten/MapServer/WMSServer#0",
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       7.336,
+       46.93
+      ],
+      [
+       7.487,
+       46.93
+      ],
+      [
+       7.487,
+       46.98
+      ],
+      [
+       7.336,
+       46.98
+      ],
+      [
+       7.336,
+       46.93
+      ]
+     ]
+    ]
+   },
+   "properties": {
+    "title": "Verkehr_Strasse",
+    "updated": "2026-11-20T16:05:37+01:00",
+    "publisher": "Stadt Bern",
+    "layer": "0",
+    "offerings": [
+     {
+      "code": "http://www.opengis.net/spec/owc-geojson/1.0/req/wms",
+      "operations": [
+       {
+        "code": "GetCapabilities",
+        "method": "GET",
+        "type": "application/xml",
+        "href": "https://map.bern.ch/arcgis/services/Geoportal/Flaechendeckende_Verkehrsdaten/MapServer/WMSServer?SERVICE=WMS&REQUEST=GetCapabilities"
+       }
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": "https://wms.geo.bs.ch/#ch.bs.strassen_und_wege_stwe.strasse_weg.verkehrsorientierte_strassen",
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       7.55,
+       47.523
+      ],
+      [
+       7.688,
+       47.523
+      ],
+      [
+       7.688,
+       47.601
+      ],
+      [
+       7.55,
+       47.601
+      ],
+      [
+       7.55,
+       47.523
+      ]
+     ]
+    ]
+   },
+   "properties": {
+    "title": "Strassen und Wege - Strasse/Weg - Verkehrsorientierte Strassen",
+    "updated": "2026-11-20T16:05:37+01:00",
+    "publisher": "Kanton Basel-Stadt",
+    "layer": "ch.bs.strassen_und_wege_stwe.strasse_weg.verkehrsorientierte_strassen",
+    "offerings": [
+     {
+      "code": "http://www.opengis.net/spec/owc-geojson/1.0/req/wms",
+      "operations": [
+       {
+        "code": "GetCapabilities",
+        "method": "GET",
+        "type": "application/xml",
+        "href": "https://wms.geo.bs.ch/?SERVICE=WMS&REQUEST=GetCapabilities"
+       }
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": "https://wms.geo.gr.ch/nutzungsplanung_kommunal#Verkehr_Strassen_und_Wege",
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       8.645,
+       46.151
+      ],
+      [
+       10.514,
+       46.151
+      ],
+      [
+       10.514,
+       47.078
+      ],
+      [
+       8.645,
+       47.078
+      ],
+      [
+       8.645,
+       46.151
+      ]
+     ]
+    ]
+   },
+   "properties": {
+    "title": "Verkehr Strassen und Wege",
+    "updated": "2026-11-20T16:05:37+01:00",
+    "publisher": "Kanton Graubünden",
+    "layer": "Verkehr_Strassen_und_Wege",
+    "offerings": [
+     {
+      "code": "http://www.opengis.net/spec/owc-geojson/1.0/req/wms",
+      "operations": [
+       {
+        "code": "GetCapabilities",
+        "method": "GET",
+        "type": "application/xml",
+        "href": "https://wms.geo.gr.ch/nutzungsplanung_kommunal?SERVICE=WMS&REQUEST=GetCapabilities"
+       }
+      ]
+     }
+    ]
+   }
+  }
+ ]
+}

@@ -1,0 +1,619 @@
+{
+ "type": "FeatureCollection",
+ "id": "https://davidoesch.github.io/geoservice_harvester_poc/data/topics/denkmalverzeichnis.ows.json",
+ "properties": {
+  "lang": "de",
+  "title": "Denkmalverzeichnis",
+  "updated": "2026-11-20T16:13:33+01:00",
+  "subtitle": "GeoHarvester topic: 12 providers",
+  "links": {
+   "profiles": [
+    {
+     "href": "http://www.opengis.net/spec/owc-geojson/1.0/req/core"
+    }
+   ]
+  }
+ },
+ "features": [
+  {
+   "type": "Feature",
+   "id": "https://wms.geo.admin.ch/#ch.bak.bundesinventar-schuetzenswerte-ortsbilder",
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       3.33,
+       44.075
+      ],
+      [
+       14.278,
+       44.075
+      ],
+      [
+       14.278,
+       49.2
+      ],
+      [
+       3.33,
+       49.2
+      ],
+      [
+       3.33,
+       44.075
+      ]
+     ]
+    ]
+   },
+   "properties": {
+    "title": "ISOS - Ortsbildaufnahmen",
+    "updated": "2026-11-20T16:13:33+01:00",
+    "publisher": "Bund (geo.admin.ch)",
+    "layer": "ch.bak.bundesinventar-schuetzenswerte-ortsbilder",
+    "offerings": [
+     {
+      "code": "http://www.opengis.net/spec/owc-geojson/1.0/req/wms",
+      "operations": [
+       {
+        "code": "GetCapabilities",
+        "method": "GET",
+        "type": "application/xml",
+        "href": "https://wms.geo.admin.ch/?SERVICE=WMS&REQUEST=GetCapabilities"
+       }
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": "https://map.bern.ch/arcgis/services/Geoportal/Gebaeudefotos/MapServer/WMSServer#0",
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       7.335,
+       46.931
+      ],
+      [
+       7.483,
+       46.931
+      ],
+      [
+       7.483,
+       46.973
+      ],
+      [
+       7.335,
+       46.973
+      ],
+      [
+       7.335,
+       46.931
+      ]
+     ]
+    ]
+   },
+   "properties": {
+    "title": "Gebaeudefoto",
+    "updated": "2026-11-20T16:13:33+01:00",
+    "publisher": "Stadt Bern",
+    "layer": "0",
+    "offerings": [
+     {
+      "code": "http://www.opengis.net/spec/owc-geojson/1.0/req/wms",
+      "operations": [
+       {
+        "code": "GetCapabilities",
+        "method": "GET",
+        "type": "application/xml",
+        "href": "https://map.bern.ch/arcgis/services/Geoportal/Gebaeudefotos/MapServer/WMSServer?SERVICE=WMS&REQUEST=GetCapabilities"
+       }
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": "https://map.lausanne.ch/mapserv_proxy?ogcserver=source+for+image%2Fpng#orthophotos_ortho_spec_bourget_bellerive_2026_09_01",
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       5.961,
+       45.821
+      ],
+      [
+       10.604,
+       45.821
+      ],
+      [
+       10.604,
+       47.821
+      ],
+      [
+       5.961,
+       47.821
+      ],
+      [
+       5.961,
+       45.821
+      ]
+     ]
+    ]
+   },
+   "properties": {
+    "title": "Photo Bourget-Bellerive 2026",
+    "updated": "2026-11-20T16:13:33+01:00",
+    "publisher": "Stadt Lausanne",
+    "layer": "orthophotos_ortho_spec_bourget_bellerive_2026_09_01",
+    "offerings": [
+     {
+      "code": "http://www.opengis.net/spec/owc-geojson/1.0/req/wms",
+      "operations": [
+       {
+        "code": "GetCapabilities",
+        "method": "GET",
+        "type": "application/xml",
+        "href": "https://map.lausanne.ch/mapserv_proxy?ogcserver=source+for+image%2Fpng&SERVICE=WMS&REQUEST=GetCapabilities"
+       }
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": "https://www.sigip.ch/mapserv_proxy?ogcserver=ows#imagerie",
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       6.509,
+       46.426
+      ],
+      [
+       6.941,
+       46.426
+      ],
+      [
+       6.941,
+       46.682
+      ],
+      [
+       6.509,
+       46.682
+      ],
+      [
+       6.509,
+       46.426
+      ]
+     ]
+    ]
+   },
+   "properties": {
+    "title": "imagerie",
+    "updated": "2026-11-20T16:13:33+01:00",
+    "publisher": "Pully (SIGIP)",
+    "layer": "imagerie",
+    "offerings": [
+     {
+      "code": "http://www.opengis.net/spec/owc-geojson/1.0/req/wms",
+      "operations": [
+       {
+        "code": "GetCapabilities",
+        "method": "GET",
+        "type": "application/xml",
+        "href": "https://www.sigip.ch/mapserv_proxy?ogcserver=ows&SERVICE=WMS&REQUEST=GetCapabilities"
+       }
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": "https://www.ogd.stadt-zuerich.ch/wfs/geoportal/Historische_Bilder#bilder_baz",
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       8.494,
+       47.336
+      ],
+      [
+       8.59,
+       47.336
+      ],
+      [
+       8.59,
+       47.403
+      ],
+      [
+       8.494,
+       47.403
+      ],
+      [
+       8.494,
+       47.336
+      ]
+     ]
+    ]
+   },
+   "properties": {
+    "title": "bilder_baz",
+    "updated": "2026-11-20T16:13:33+01:00",
+    "publisher": "Stadt Zürich",
+    "layer": "bilder_baz",
+    "offerings": [
+     {
+      "code": "http://www.opengis.net/spec/owc-geojson/1.0/req/wfs",
+      "operations": [
+       {
+        "code": "GetCapabilities",
+        "method": "GET",
+        "type": "application/xml",
+        "href": "https://www.ogd.stadt-zuerich.ch/wfs/geoportal/Historische_Bilder?SERVICE=WFS&REQUEST=GetCapabilities"
+       }
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": "https://wms.geo.ag.ch/public/ows#ch_ag_geo_alg_amzgfotopunkt",
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       7.618,
+       47.14
+      ],
+      [
+       8.442,
+       47.14
+      ],
+      [
+       8.442,
+       47.7
+      ],
+      [
+       7.618,
+       47.7
+      ],
+      [
+       7.618,
+       47.14
+      ]
+     ]
+    ]
+   },
+   "properties": {
+    "title": "Fotopunkte Amphibienzugstellen",
+    "updated": "2026-11-20T16:13:33+01:00",
+    "publisher": "Kanton Aargau",
+    "layer": "ch_ag_geo_alg_amzgfotopunkt",
+    "offerings": [
+     {
+      "code": "http://www.opengis.net/spec/owc-geojson/1.0/req/wms",
+      "operations": [
+       {
+        "code": "GetCapabilities",
+        "method": "GET",
+        "type": "application/xml",
+        "href": "https://wms.geo.ag.ch/public/ows?SERVICE=WMS&REQUEST=GetCapabilities"
+       }
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": "https://www.geoservice.apps.be.ch/geoservice3/services/a42geo/of_planningcadastre02_de_ms_wms/MapServer/WMSServer#KLEK_FOTOSTAO_VW_24182",
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       6.921,
+       46.39
+      ],
+      [
+       8.396,
+       46.39
+      ],
+      [
+       8.396,
+       47.299
+      ],
+      [
+       6.921,
+       47.299
+      ],
+      [
+       6.921,
+       46.39
+      ]
+     ]
+    ]
+   },
+   "properties": {
+    "title": "Fotostandort mit Sichtachse",
+    "updated": "2026-11-20T16:13:33+01:00",
+    "publisher": "Kanton Bern",
+    "layer": "KLEK_FOTOSTAO_VW_24182",
+    "offerings": [
+     {
+      "code": "http://www.opengis.net/spec/owc-geojson/1.0/req/wms",
+      "operations": [
+       {
+        "code": "GetCapabilities",
+        "method": "GET",
+        "type": "application/xml",
+        "href": "https://www.geoservice.apps.be.ch/geoservice3/services/a42geo/of_planningcadastre02_de_ms_wms/MapServer/WMSServer?SERVICE=WMS&REQUEST=GetCapabilities"
+       }
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": "https://wms.geo.bs.ch/#HD_Auswertungskriterien_Denkmalverzeichnis",
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       7.239,
+       47.264
+      ],
+      [
+       8.105,
+       47.264
+      ],
+      [
+       8.105,
+       47.761
+      ],
+      [
+       7.239,
+       47.761
+      ],
+      [
+       7.239,
+       47.264
+      ]
+     ]
+    ]
+   },
+   "properties": {
+    "title": "Denkmalverzeichnis",
+    "updated": "2026-11-20T16:13:33+01:00",
+    "publisher": "Kanton Basel-Stadt",
+    "layer": "HD_Auswertungskriterien_Denkmalverzeichnis",
+    "offerings": [
+     {
+      "code": "http://www.opengis.net/spec/owc-geojson/1.0/req/wms",
+      "operations": [
+       {
+        "code": "GetCapabilities",
+        "method": "GET",
+        "type": "application/xml",
+        "href": "https://wms.geo.bs.ch/?SERVICE=WMS&REQUEST=GetCapabilities"
+       }
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": "https://wms.geo.gr.ch/rrip_praettigau#Schuetzenswerte_Ortsbilder",
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       8.615,
+       45.994
+      ],
+      [
+       10.547,
+       45.994
+      ],
+      [
+       10.547,
+       47.324
+      ],
+      [
+       8.615,
+       47.324
+      ],
+      [
+       8.615,
+       45.994
+      ]
+     ]
+    ]
+   },
+   "properties": {
+    "title": "Schützenswerte Ortsbilder",
+    "updated": "2026-11-20T16:13:33+01:00",
+    "publisher": "Kanton Graubünden",
+    "layer": "Schuetzenswerte_Ortsbilder",
+    "offerings": [
+     {
+      "code": "http://www.opengis.net/spec/owc-geojson/1.0/req/wms",
+      "operations": [
+       {
+        "code": "GetCapabilities",
+        "method": "GET",
+        "type": "application/xml",
+        "href": "https://wms.geo.gr.ch/rrip_praettigau?SERVICE=WMS&REQUEST=GetCapabilities"
+       }
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": "https://www.gis-daten.ch/wms/nw/service#ch.nw.richtplaene-kommunal-siedlungsleitbilder",
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       8.007,
+       46.689
+      ],
+      [
+       8.786,
+       46.689
+      ],
+      [
+       8.786,
+       47.101
+      ],
+      [
+       8.007,
+       47.101
+      ],
+      [
+       8.007,
+       46.689
+      ]
+     ]
+    ]
+   },
+   "properties": {
+    "title": "Siedlungsleitbilder",
+    "updated": "2026-11-20T16:13:33+01:00",
+    "publisher": "Kanton Nidwalden",
+    "layer": "ch.nw.richtplaene-kommunal-siedlungsleitbilder",
+    "offerings": [
+     {
+      "code": "http://www.opengis.net/spec/owc-geojson/1.0/req/wms",
+      "operations": [
+       {
+        "code": "GetCapabilities",
+        "method": "GET",
+        "type": "application/xml",
+        "href": "https://www.gis-daten.ch/wms/nw/service?SERVICE=WMS&REQUEST=GetCapabilities"
+       }
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": "https://wms.geo.ti.ch/service#ti.028b_1.ch083hhw",
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       8.65,
+       45.96
+      ],
+      [
+       9.205,
+       45.96
+      ],
+      [
+       9.205,
+       46.342
+      ],
+      [
+       8.65,
+       46.342
+      ],
+      [
+       8.65,
+       45.96
+      ]
+     ]
+    ]
+   },
+   "properties": {
+    "title": "[TI-028b.1] Gambarogno-Contone",
+    "updated": "2026-11-20T16:13:33+01:00",
+    "publisher": "Kanton Tessin",
+    "layer": "ti.028b_1.ch083hhw",
+    "offerings": [
+     {
+      "code": "http://www.opengis.net/spec/owc-geojson/1.0/req/wms",
+      "operations": [
+       {
+        "code": "GetCapabilities",
+        "method": "GET",
+        "type": "application/xml",
+        "href": "https://wms.geo.ti.ch/service?SERVICE=WMS&REQUEST=GetCapabilities"
+       }
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": "https://maps.zh.ch/wfs/OGDZHWFS#ms:ogd-0070_giszhpub_rp_kobi_p",
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       8.157,
+       47.142
+      ],
+      [
+       9.037,
+       47.142
+      ],
+      [
+       9.037,
+       47.712
+      ],
+      [
+       8.157,
+       47.712
+      ],
+      [
+       8.157,
+       47.142
+      ]
+     ]
+    ]
+   },
+   "properties": {
+    "title": "Schutzwürdige Ortsbilder (Punkte) (70.1)",
+    "updated": "2026-11-20T16:13:33+01:00",
+    "publisher": "Kanton Zürich",
+    "layer": "ms:ogd-0070_giszhpub_rp_kobi_p",
+    "offerings": [
+     {
+      "code": "http://www.opengis.net/spec/owc-geojson/1.0/req/wfs",
+      "operations": [
+       {
+        "code": "GetCapabilities",
+        "method": "GET",
+        "type": "application/xml",
+        "href": "https://maps.zh.ch/wfs/OGDZHWFS?SERVICE=WFS&REQUEST=GetCapabilities"
+       }
+      ]
+     }
+    ]
+   }
+  }
+ ]
+}

@@ -1,0 +1,169 @@
+{
+ "type": "FeatureCollection",
+ "id": "https://davidoesch.github.io/geoservice_harvester_poc/data/topics/tongehalt-im-unterboden-30-60cm.ows.json",
+ "properties": {
+  "lang": "de",
+  "title": "Tongehalt im Unterboden (30-60cm)",
+  "updated": "2026-11-20T16:05:37+01:00",
+  "subtitle": "GeoHarvester topic: 3 providers",
+  "links": {
+   "profiles": [
+    {
+     "href": "http://www.opengis.net/spec/owc-geojson/1.0/req/core"
+    }
+   ]
+  }
+ },
+ "features": [
+  {
+   "type": "Feature",
+   "id": "https://www.geoservice.apps.be.ch/geoservice3/services/a42geo/of_geoscientificinformation03_de_ms_wms/MapServer/WMSServer#BOKADSM_U030060_MOSAIC_29785",
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       7.012,
+       46.925
+      ],
+      [
+       7.243,
+       46.925
+      ],
+      [
+       7.243,
+       47.06
+      ],
+      [
+       7.012,
+       47.06
+      ],
+      [
+       7.012,
+       46.925
+      ]
+     ]
+    ]
+   },
+   "properties": {
+    "title": "Schluffgehalt, 30cm-60cm",
+    "updated": "2026-11-20T16:05:37+01:00",
+    "publisher": "Kanton Bern",
+    "layer": "BOKADSM_U030060_MOSAIC_29785",
+    "offerings": [
+     {
+      "code": "http://www.opengis.net/spec/owc-geojson/1.0/req/wms",
+      "operations": [
+       {
+        "code": "GetCapabilities",
+        "method": "GET",
+        "type": "application/xml",
+        "href": "https://www.geoservice.apps.be.ch/geoservice3/services/a42geo/of_geoscientificinformation03_de_ms_wms/MapServer/WMSServer?SERVICE=WMS&REQUEST=GetCapabilities"
+       }
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": "https://maps.fr.ch/ags/services/OpenData_Raster/Teneur_en_sable__30cm_60cm__DSM_/MapServer/WMSServer#0",
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       7.012,
+       46.925
+      ],
+      [
+       7.243,
+       46.925
+      ],
+      [
+       7.243,
+       47.06
+      ],
+      [
+       7.012,
+       47.06
+      ],
+      [
+       7.012,
+       46.925
+      ]
+     ]
+    ]
+   },
+   "properties": {
+    "title": "Teneur en sable, 30cm-60cm (DSM)",
+    "updated": "2026-11-20T16:05:37+01:00",
+    "publisher": "Kanton Freiburg",
+    "layer": "0",
+    "offerings": [
+     {
+      "code": "http://www.opengis.net/spec/owc-geojson/1.0/req/wms",
+      "operations": [
+       {
+        "code": "GetCapabilities",
+        "method": "GET",
+        "type": "application/xml",
+        "href": "https://maps.fr.ch/ags/services/OpenData_Raster/Teneur_en_sable__30cm_60cm__DSM_/MapServer/WMSServer?SERVICE=WMS&REQUEST=GetCapabilities"
+       }
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": "https://ows-raster.geo.tg.ch/geofy_access_proxy/bodenkartierung#Tongehalt_Unterboden",
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       8.631,
+       47.348
+      ],
+      [
+       9.505,
+       47.348
+      ],
+      [
+       9.505,
+       47.711
+      ],
+      [
+       8.631,
+       47.711
+      ],
+      [
+       8.631,
+       47.348
+      ]
+     ]
+    ]
+   },
+   "properties": {
+    "title": "Tongehalt im Unterboden (30-60cm)",
+    "updated": "2026-11-20T16:05:37+01:00",
+    "publisher": "Kanton Thurgau",
+    "layer": "Tongehalt_Unterboden",
+    "offerings": [
+     {
+      "code": "http://www.opengis.net/spec/owc-geojson/1.0/req/wms",
+      "operations": [
+       {
+        "code": "GetCapabilities",
+        "method": "GET",
+        "type": "application/xml",
+        "href": "https://ows-raster.geo.tg.ch/geofy_access_proxy/bodenkartierung?SERVICE=WMS&REQUEST=GetCapabilities"
+       }
+      ]
+     }
+    ]
+   }
+  }
+ ]
+}

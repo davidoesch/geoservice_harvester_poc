@@ -1,0 +1,119 @@
+{
+ "type": "FeatureCollection",
+ "id": "https://davidoesch.github.io/geoservice_harvester_poc/data/topics/brunnen.ows.json",
+ "properties": {
+  "lang": "de",
+  "title": "Brunnen",
+  "updated": "2026-11-20T16:05:37+01:00",
+  "subtitle": "GeoHarvester topic: 2 providers",
+  "links": {
+   "profiles": [
+    {
+     "href": "http://www.opengis.net/spec/owc-geojson/1.0/req/core"
+    }
+   ]
+  }
+ },
+ "features": [
+  {
+   "type": "Feature",
+   "id": "https://map.bern.ch/arcgis/services/Geoportal/UNESCO_Gruenraum_Stadtflanken/MapServer/WMSServer#14",
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       7.438,
+       46.946
+      ],
+      [
+       7.459,
+       46.946
+      ],
+      [
+       7.459,
+       46.951
+      ],
+      [
+       7.438,
+       46.951
+      ],
+      [
+       7.438,
+       46.946
+      ]
+     ]
+    ]
+   },
+   "properties": {
+    "title": "Brunnen",
+    "updated": "2026-11-20T16:05:37+01:00",
+    "publisher": "Stadt Bern",
+    "layer": "14",
+    "offerings": [
+     {
+      "code": "http://www.opengis.net/spec/owc-geojson/1.0/req/wms",
+      "operations": [
+       {
+        "code": "GetCapabilities",
+        "method": "GET",
+        "type": "application/xml",
+        "href": "https://map.bern.ch/arcgis/services/Geoportal/UNESCO_Gruenraum_Stadtflanken/MapServer/WMSServer?SERVICE=WMS&REQUEST=GetCapabilities"
+       }
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": "https://www.ogd.stadt-zuerich.ch/wms/geoportal/Brunnen#Brunnen",
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       8.459,
+       47.323
+      ],
+      [
+       8.621,
+       47.323
+      ],
+      [
+       8.621,
+       47.431
+      ],
+      [
+       8.459,
+       47.431
+      ],
+      [
+       8.459,
+       47.323
+      ]
+     ]
+    ]
+   },
+   "properties": {
+    "title": "Brunnen",
+    "updated": "2026-11-20T16:05:37+01:00",
+    "publisher": "Stadt Zürich",
+    "layer": "Brunnen",
+    "offerings": [
+     {
+      "code": "http://www.opengis.net/spec/owc-geojson/1.0/req/wms",
+      "operations": [
+       {
+        "code": "GetCapabilities",
+        "method": "GET",
+        "type": "application/xml",
+        "href": "https://www.ogd.stadt-zuerich.ch/wms/geoportal/Brunnen?SERVICE=WMS&REQUEST=GetCapabilities"
+       }
+      ]
+     }
+    ]
+   }
+  }
+ ]
+}

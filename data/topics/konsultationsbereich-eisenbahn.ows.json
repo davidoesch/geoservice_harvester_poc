@@ -1,0 +1,269 @@
+{
+ "type": "FeatureCollection",
+ "id": "https://davidoesch.github.io/geoservice_harvester_poc/data/topics/konsultationsbereich-eisenbahn.ows.json",
+ "properties": {
+  "lang": "de",
+  "title": "Konsultationsbereich Eisenbahn",
+  "updated": "2026-11-20T16:05:37+01:00",
+  "subtitle": "GeoHarvester topic: 5 providers",
+  "links": {
+   "profiles": [
+    {
+     "href": "http://www.opengis.net/spec/owc-geojson/1.0/req/core"
+    }
+   ]
+  }
+ },
+ "features": [
+  {
+   "type": "Feature",
+   "id": "https://service.geo.llv.li/service/wms#li.au.st_konsbereich_bahn",
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       9.467,
+       47.044
+      ],
+      [
+       9.647,
+       47.044
+      ],
+      [
+       9.647,
+       47.276
+      ],
+      [
+       9.467,
+       47.276
+      ],
+      [
+       9.467,
+       47.044
+      ]
+     ]
+    ]
+   },
+   "properties": {
+    "title": "Stoerfallvorsorge Konsultationsbereich Bahnanlagen",
+    "updated": "2026-11-20T16:05:37+01:00",
+    "publisher": "Fürstentum Liechtenstein",
+    "layer": "li.au.st_konsbereich_bahn",
+    "offerings": [
+     {
+      "code": "http://www.opengis.net/spec/owc-geojson/1.0/req/wms",
+      "operations": [
+       {
+        "code": "GetCapabilities",
+        "method": "GET",
+        "type": "application/xml",
+        "href": "https://service.geo.llv.li/service/wms?SERVICE=WMS&REQUEST=GetCapabilities"
+       }
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": "https://www.geoservice.apps.be.ch/geoservice3/services/a42geo/of_environment02_de_ms_wms/MapServer/WMSServer#KOBESTFV_NSKOBE_VW_11567",
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       7.394,
+       46.658
+      ],
+      [
+       7.841,
+       46.658
+      ],
+      [
+       7.841,
+       47.3
+      ],
+      [
+       7.394,
+       47.3
+      ],
+      [
+       7.394,
+       46.658
+      ]
+     ]
+    ]
+   },
+   "properties": {
+    "title": "Konsultationsbereiche von Autobahnen, welche der StFV unterstehen",
+    "updated": "2026-11-20T16:05:37+01:00",
+    "publisher": "Kanton Bern",
+    "layer": "KOBESTFV_NSKOBE_VW_11567",
+    "offerings": [
+     {
+      "code": "http://www.opengis.net/spec/owc-geojson/1.0/req/wms",
+      "operations": [
+       {
+        "code": "GetCapabilities",
+        "method": "GET",
+        "type": "application/xml",
+        "href": "https://www.geoservice.apps.be.ch/geoservice3/services/a42geo/of_environment02_de_ms_wms/MapServer/WMSServer?SERVICE=WMS&REQUEST=GetCapabilities"
+       }
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": "https://geowms.bl.ch/#stoerfallvorsorge_kons_bereich_bahn",
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       7.306,
+       47.309
+      ],
+      [
+       8.037,
+       47.309
+      ],
+      [
+       8.037,
+       47.626
+      ],
+      [
+       7.306,
+       47.626
+      ],
+      [
+       7.306,
+       47.309
+      ]
+     ]
+    ]
+   },
+   "properties": {
+    "title": "Störfallvorsorge Konsultationsbereiche Bahn",
+    "updated": "2026-11-20T16:05:37+01:00",
+    "publisher": "Kanton Basel-Landschaft",
+    "layer": "stoerfallvorsorge_kons_bereich_bahn",
+    "offerings": [
+     {
+      "code": "http://www.opengis.net/spec/owc-geojson/1.0/req/wms",
+      "operations": [
+       {
+        "code": "GetCapabilities",
+        "method": "GET",
+        "type": "application/xml",
+        "href": "https://geowms.bl.ch/?SERVICE=WMS&REQUEST=GetCapabilities"
+       }
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": "https://wms.geo.gr.ch/risikokataster#Konsultationsbereich_Eisenbahn_",
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       8.615,
+       45.994
+      ],
+      [
+       10.547,
+       45.994
+      ],
+      [
+       10.547,
+       47.324
+      ],
+      [
+       8.615,
+       47.324
+      ],
+      [
+       8.615,
+       45.994
+      ]
+     ]
+    ]
+   },
+   "properties": {
+    "title": "Konsultationsbereich Eisenbahn",
+    "updated": "2026-11-20T16:05:37+01:00",
+    "publisher": "Kanton Graubünden",
+    "layer": "Konsultationsbereich_Eisenbahn_",
+    "offerings": [
+     {
+      "code": "http://www.opengis.net/spec/owc-geojson/1.0/req/wms",
+      "operations": [
+       {
+        "code": "GetCapabilities",
+        "method": "GET",
+        "type": "application/xml",
+        "href": "https://wms.geo.gr.ch/risikokataster?SERVICE=WMS&REQUEST=GetCapabilities"
+       }
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": "https://public.geo.lu.ch/ogd/services/managed/TGEFSTFV_COL_V2_MP/MapServer/WMSServer#3",
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       7.834,
+       46.788
+      ],
+      [
+       8.46,
+       46.788
+      ],
+      [
+       8.46,
+       47.277
+      ],
+      [
+       7.834,
+       47.277
+      ],
+      [
+       7.834,
+       46.788
+      ]
+     ]
+    ]
+   },
+   "properties": {
+    "title": "Technische Gefahren: Konsultationsbereiche, Bahnstrecken",
+    "updated": "2026-11-20T16:05:37+01:00",
+    "publisher": "Kanton Luzern",
+    "layer": "3",
+    "offerings": [
+     {
+      "code": "http://www.opengis.net/spec/owc-geojson/1.0/req/wms",
+      "operations": [
+       {
+        "code": "GetCapabilities",
+        "method": "GET",
+        "type": "application/xml",
+        "href": "https://public.geo.lu.ch/ogd/services/managed/TGEFSTFV_COL_V2_MP/MapServer/WMSServer?SERVICE=WMS&REQUEST=GetCapabilities"
+       }
+      ]
+     }
+    ]
+   }
+  }
+ ]
+}

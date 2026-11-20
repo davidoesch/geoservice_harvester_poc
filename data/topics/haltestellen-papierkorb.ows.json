@@ -1,0 +1,119 @@
+{
+ "type": "FeatureCollection",
+ "id": "https://davidoesch.github.io/geoservice_harvester_poc/data/topics/haltestellen-papierkorb.ows.json",
+ "properties": {
+  "lang": "de",
+  "title": "Haltestellen papierkorb",
+  "updated": "2026-11-20T16:13:33+01:00",
+  "subtitle": "GeoHarvester topic: 2 providers",
+  "links": {
+   "profiles": [
+    {
+     "href": "http://www.opengis.net/spec/owc-geojson/1.0/req/core"
+    }
+   ]
+  }
+ },
+ "features": [
+  {
+   "type": "Feature",
+   "id": "https://vector.sitg.ge.ch/arcgis/services/VDG_LEVEE_PAPIER_CARTON/MapServer/WMSServer#0",
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       6.11,
+       46.178
+      ],
+      [
+       6.177,
+       46.178
+      ],
+      [
+       6.177,
+       46.234
+      ],
+      [
+       6.11,
+       46.234
+      ],
+      [
+       6.11,
+       46.178
+      ]
+     ]
+    ]
+   },
+   "properties": {
+    "title": "VDG_LEVEE_PAPIER_CARTON",
+    "updated": "2026-11-20T16:13:33+01:00",
+    "publisher": "Stadt Genf",
+    "layer": "0",
+    "offerings": [
+     {
+      "code": "http://www.opengis.net/spec/owc-geojson/1.0/req/wms",
+      "operations": [
+       {
+        "code": "GetCapabilities",
+        "method": "GET",
+        "type": "application/xml",
+        "href": "https://vector.sitg.ge.ch/arcgis/services/VDG_LEVEE_PAPIER_CARTON/MapServer/WMSServer?SERVICE=WMS&REQUEST=GetCapabilities"
+       }
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": "https://www.ogd.stadt-zuerich.ch/wms/geoportal/VBZ_Infrastruktur_OGD#haltestellen_papierkorb",
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       8.468,
+       47.322
+      ],
+      [
+       8.604,
+       47.322
+      ],
+      [
+       8.604,
+       47.432
+      ],
+      [
+       8.468,
+       47.432
+      ],
+      [
+       8.468,
+       47.322
+      ]
+     ]
+    ]
+   },
+   "properties": {
+    "title": "haltestellen_papierkorb",
+    "updated": "2026-11-20T16:13:33+01:00",
+    "publisher": "Stadt Zürich",
+    "layer": "haltestellen_papierkorb",
+    "offerings": [
+     {
+      "code": "http://www.opengis.net/spec/owc-geojson/1.0/req/wms",
+      "operations": [
+       {
+        "code": "GetCapabilities",
+        "method": "GET",
+        "type": "application/xml",
+        "href": "https://www.ogd.stadt-zuerich.ch/wms/geoportal/VBZ_Infrastruktur_OGD?SERVICE=WMS&REQUEST=GetCapabilities"
+       }
+      ]
+     }
+    ]
+   }
+  }
+ ]
+}

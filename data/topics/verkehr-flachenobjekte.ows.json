@@ -1,0 +1,119 @@
+{
+ "type": "FeatureCollection",
+ "id": "https://davidoesch.github.io/geoservice_harvester_poc/data/topics/verkehr-flachenobjekte.ows.json",
+ "properties": {
+  "lang": "de",
+  "title": "Verkehr Flächenobjekte",
+  "updated": "2026-11-20T16:05:37+01:00",
+  "subtitle": "GeoHarvester topic: 2 providers",
+  "links": {
+   "profiles": [
+    {
+     "href": "http://www.opengis.net/spec/owc-geojson/1.0/req/core"
+    }
+   ]
+  }
+ },
+ "features": [
+  {
+   "type": "Feature",
+   "id": "https://www.geoservice.apps.be.ch/geoservice3/services/a42geo/of_transportation02_de_ms_wms/MapServer/WMSServer#SEEV_KONZ_VW_11621",
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       7.024,
+       46.655
+      ],
+      [
+       8.056,
+       46.655
+      ],
+      [
+       8.056,
+       47.256
+      ],
+      [
+       7.024,
+       47.256
+      ],
+      [
+       7.024,
+       46.655
+      ]
+     ]
+    ]
+   },
+   "properties": {
+    "title": "Konzessionsobjekte Seeverkehr",
+    "updated": "2026-11-20T16:05:37+01:00",
+    "publisher": "Kanton Bern",
+    "layer": "SEEV_KONZ_VW_11621",
+    "offerings": [
+     {
+      "code": "http://www.opengis.net/spec/owc-geojson/1.0/req/wms",
+      "operations": [
+       {
+        "code": "GetCapabilities",
+        "method": "GET",
+        "type": "application/xml",
+        "href": "https://www.geoservice.apps.be.ch/geoservice3/services/a42geo/of_transportation02_de_ms_wms/MapServer/WMSServer?SERVICE=WMS&REQUEST=GetCapabilities"
+       }
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": "https://wms.geo.gr.ch/nutzungsplanung_kommunal#Verkehr_Flaechenobjekte",
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       8.698,
+       46.21
+      ],
+      [
+       10.466,
+       46.21
+      ],
+      [
+       10.466,
+       47.03
+      ],
+      [
+       8.698,
+       47.03
+      ],
+      [
+       8.698,
+       46.21
+      ]
+     ]
+    ]
+   },
+   "properties": {
+    "title": "Verkehr Flächenobjekte",
+    "updated": "2026-11-20T16:05:37+01:00",
+    "publisher": "Kanton Graubünden",
+    "layer": "Verkehr_Flaechenobjekte",
+    "offerings": [
+     {
+      "code": "http://www.opengis.net/spec/owc-geojson/1.0/req/wms",
+      "operations": [
+       {
+        "code": "GetCapabilities",
+        "method": "GET",
+        "type": "application/xml",
+        "href": "https://wms.geo.gr.ch/nutzungsplanung_kommunal?SERVICE=WMS&REQUEST=GetCapabilities"
+       }
+      ]
+     }
+    ]
+   }
+  }
+ ]
+}

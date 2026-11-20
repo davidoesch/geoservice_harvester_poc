@@ -1,0 +1,219 @@
+{
+ "type": "FeatureCollection",
+ "id": "https://davidoesch.github.io/geoservice_harvester_poc/data/topics/objektnamen-bodenbedeckung.ows.json",
+ "properties": {
+  "lang": "de",
+  "title": "Objektnamen Bodenbedeckung",
+  "updated": "2026-11-20T16:05:37+01:00",
+  "subtitle": "GeoHarvester topic: 4 providers",
+  "links": {
+   "profiles": [
+    {
+     "href": "http://www.opengis.net/spec/owc-geojson/1.0/req/core"
+    }
+   ]
+  }
+ },
+ "features": [
+  {
+   "type": "Feature",
+   "id": "https://map.bern.ch/arcgis/services/Geoportal/Amtliche_Vermessung_fuer_Orthofoto/MapServer/WMSServer#32",
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       7.298,
+       46.928
+      ],
+      [
+       7.495,
+       46.928
+      ],
+      [
+       7.495,
+       46.99
+      ],
+      [
+       7.298,
+       46.99
+      ],
+      [
+       7.298,
+       46.928
+      ]
+     ]
+    ]
+   },
+   "properties": {
+    "title": "Bodenbedeckungsobjektname__0_1010",
+    "updated": "2026-11-20T16:05:37+01:00",
+    "publisher": "Stadt Bern",
+    "layer": "32",
+    "offerings": [
+     {
+      "code": "http://www.opengis.net/spec/owc-geojson/1.0/req/wms",
+      "operations": [
+       {
+        "code": "GetCapabilities",
+        "method": "GET",
+        "type": "application/xml",
+        "href": "https://map.bern.ch/arcgis/services/Geoportal/Amtliche_Vermessung_fuer_Orthofoto/MapServer/WMSServer?SERVICE=WMS&REQUEST=GetCapabilities"
+       }
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": "https://www.ogd.stadt-zuerich.ch/wms/geoportal/Amtliche_Vermessung_Stadt_Zuerich#Objektnamen Bodenbedeckung",
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       8.465,
+       47.321
+      ],
+      [
+       8.618,
+       47.321
+      ],
+      [
+       8.618,
+       47.434
+      ],
+      [
+       8.465,
+       47.434
+      ],
+      [
+       8.465,
+       47.321
+      ]
+     ]
+    ]
+   },
+   "properties": {
+    "title": "Objektnamen Bodenbedeckung",
+    "updated": "2026-11-20T16:05:37+01:00",
+    "publisher": "Stadt Zürich",
+    "layer": "Objektnamen Bodenbedeckung",
+    "offerings": [
+     {
+      "code": "http://www.opengis.net/spec/owc-geojson/1.0/req/wms",
+      "operations": [
+       {
+        "code": "GetCapabilities",
+        "method": "GET",
+        "type": "application/xml",
+        "href": "https://www.ogd.stadt-zuerich.ch/wms/geoportal/Amtliche_Vermessung_Stadt_Zuerich?SERVICE=WMS&REQUEST=GetCapabilities"
+       }
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": "https://geowms.bl.ch/#bodenbedeckung_objektnamen",
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       7.306,
+       47.309
+      ],
+      [
+       8.037,
+       47.309
+      ],
+      [
+       8.037,
+       47.626
+      ],
+      [
+       7.306,
+       47.626
+      ],
+      [
+       7.306,
+       47.309
+      ]
+     ]
+    ]
+   },
+   "properties": {
+    "title": "Objektnamen Bodenbedeckung",
+    "updated": "2026-11-20T16:05:37+01:00",
+    "publisher": "Kanton Basel-Landschaft",
+    "layer": "bodenbedeckung_objektnamen",
+    "offerings": [
+     {
+      "code": "http://www.opengis.net/spec/owc-geojson/1.0/req/wms",
+      "operations": [
+       {
+        "code": "GetCapabilities",
+        "method": "GET",
+        "type": "application/xml",
+        "href": "https://geowms.bl.ch/?SERVICE=WMS&REQUEST=GetCapabilities"
+       }
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": "https://services.geo.zg.ch/ows/Grundbuchplan#Bodenbedeckung Objektname",
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       8.4,
+       47.089
+      ],
+      [
+       8.699,
+       47.089
+      ],
+      [
+       8.699,
+       47.242
+      ],
+      [
+       8.4,
+       47.242
+      ],
+      [
+       8.4,
+       47.089
+      ]
+     ]
+    ]
+   },
+   "properties": {
+    "title": "Bodenbedeckung Objektname",
+    "updated": "2026-11-20T16:05:37+01:00",
+    "publisher": "Kanton Zug",
+    "layer": "Bodenbedeckung Objektname",
+    "offerings": [
+     {
+      "code": "http://www.opengis.net/spec/owc-geojson/1.0/req/wms",
+      "operations": [
+       {
+        "code": "GetCapabilities",
+        "method": "GET",
+        "type": "application/xml",
+        "href": "https://services.geo.zg.ch/ows/Grundbuchplan?SERVICE=WMS&REQUEST=GetCapabilities"
+       }
+      ]
+     }
+    ]
+   }
+  }
+ ]
+}

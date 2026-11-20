@@ -1,0 +1,119 @@
+{
+ "type": "FeatureCollection",
+ "id": "https://davidoesch.github.io/geoservice_harvester_poc/data/topics/melde-und-bewilligungspflicht-in-bauzonen.ows.json",
+ "properties": {
+  "lang": "de",
+  "title": "Melde- und Bewilligungspflicht in Bauzonen",
+  "updated": "2026-11-20T16:13:33+01:00",
+  "subtitle": "GeoHarvester topic: 2 providers",
+  "links": {
+   "profiles": [
+    {
+     "href": "http://www.opengis.net/spec/owc-geojson/1.0/req/core"
+    }
+   ]
+  }
+ },
+ "features": [
+  {
+   "type": "Feature",
+   "id": "https://services.geo.sg.ch/wss/service/SG00124_WMS/guest#Gebiet_mit_direkter_Bewilligungspflicht_fuer_meldepflichtige_Veranstaltung",
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       8.798,
+       46.871
+      ],
+      [
+       9.654,
+       46.871
+      ],
+      [
+       9.654,
+       47.531
+      ],
+      [
+       8.798,
+       47.531
+      ],
+      [
+       8.798,
+       46.871
+      ]
+     ]
+    ]
+   },
+   "properties": {
+    "title": "Gebiet_mit_direkter_Bewilligungspflicht_fuer_meldepflichtige_Veranstaltung",
+    "updated": "2026-11-20T16:13:33+01:00",
+    "publisher": "Kanton St. Gallen",
+    "layer": "Gebiet_mit_direkter_Bewilligungspflicht_fuer_meldepflichtige_Veranstaltung",
+    "offerings": [
+     {
+      "code": "http://www.opengis.net/spec/owc-geojson/1.0/req/wms",
+      "operations": [
+       {
+        "code": "GetCapabilities",
+        "method": "GET",
+        "type": "application/xml",
+        "href": "https://services.geo.sg.ch/wss/service/SG00124_WMS/guest?SERVICE=WMS&REQUEST=GetCapabilities"
+       }
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": "https://ows.geo.tg.ch/geofy_access_proxy/beurteilungsolaranlagen#Meldepflicht_Solaranlagen",
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       8.631,
+       47.348
+      ],
+      [
+       9.505,
+       47.348
+      ],
+      [
+       9.505,
+       47.711
+      ],
+      [
+       8.631,
+       47.711
+      ],
+      [
+       8.631,
+       47.348
+      ]
+     ]
+    ]
+   },
+   "properties": {
+    "title": "Melde- und Bewilligungspflicht in Bauzonen",
+    "updated": "2026-11-20T16:13:33+01:00",
+    "publisher": "Kanton Thurgau",
+    "layer": "Meldepflicht_Solaranlagen",
+    "offerings": [
+     {
+      "code": "http://www.opengis.net/spec/owc-geojson/1.0/req/wms",
+      "operations": [
+       {
+        "code": "GetCapabilities",
+        "method": "GET",
+        "type": "application/xml",
+        "href": "https://ows.geo.tg.ch/geofy_access_proxy/beurteilungsolaranlagen?SERVICE=WMS&REQUEST=GetCapabilities"
+       }
+      ]
+     }
+    ]
+   }
+  }
+ ]
+}

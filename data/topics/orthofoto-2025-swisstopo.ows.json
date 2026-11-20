@@ -1,0 +1,93 @@
+{
+ "type": "FeatureCollection",
+ "id": "https://davidoesch.github.io/geoservice_harvester_poc/data/topics/orthofoto-2025-swisstopo.ows.json",
+ "properties": {
+  "lang": "de",
+  "title": "Orthofoto 2025 Swisstopo",
+  "updated": "2026-11-20T16:05:37+01:00",
+  "subtitle": "GeoHarvester topic: 2 providers",
+  "links": {
+   "profiles": [
+    {
+     "href": "http://www.opengis.net/spec/owc-geojson/1.0/req/core"
+    }
+   ]
+  }
+ },
+ "features": [
+  {
+   "type": "Feature",
+   "id": "https://tile.geoview.bl.ch/1.0.0/WMTSCapabilities.xml#orthophoto_swisstopo",
+   "geometry": null,
+   "properties": {
+    "title": "orthophoto_swisstopo",
+    "updated": "2026-11-20T16:05:37+01:00",
+    "publisher": "Kanton Basel-Landschaft",
+    "layer": "orthophoto_swisstopo",
+    "offerings": [
+     {
+      "code": "http://www.opengis.net/spec/owc-geojson/1.0/req/wmts",
+      "operations": [
+       {
+        "code": "GetCapabilities",
+        "method": "GET",
+        "type": "application/xml",
+        "href": "https://tile.geoview.bl.ch/1.0.0/WMTSCapabilities.xml"
+       }
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": "https://services.geo.zg.ch/ows/Orthofotos#zg_orthofoto_2025_swisstopo",
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       8.32,
+       47.051
+      ],
+      [
+       8.76,
+       47.051
+      ],
+      [
+       8.76,
+       47.272
+      ],
+      [
+       8.32,
+       47.272
+      ],
+      [
+       8.32,
+       47.051
+      ]
+     ]
+    ]
+   },
+   "properties": {
+    "title": "Orthofoto 2025 Swisstopo",
+    "updated": "2026-11-20T16:05:37+01:00",
+    "publisher": "Kanton Zug",
+    "layer": "zg_orthofoto_2025_swisstopo",
+    "offerings": [
+     {
+      "code": "http://www.opengis.net/spec/owc-geojson/1.0/req/wms",
+      "operations": [
+       {
+        "code": "GetCapabilities",
+        "method": "GET",
+        "type": "application/xml",
+        "href": "https://services.geo.zg.ch/ows/Orthofotos?SERVICE=WMS&REQUEST=GetCapabilities"
+       }
+      ]
+     }
+    ]
+   }
+  }
+ ]
+}

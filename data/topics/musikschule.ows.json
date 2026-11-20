@@ -1,0 +1,119 @@
+{
+ "type": "FeatureCollection",
+ "id": "https://davidoesch.github.io/geoservice_harvester_poc/data/topics/musikschule.ows.json",
+ "properties": {
+  "lang": "de",
+  "title": "Musikschule",
+  "updated": "2026-11-20T16:05:37+01:00",
+  "subtitle": "GeoHarvester topic: 2 providers",
+  "links": {
+   "profiles": [
+    {
+     "href": "http://www.opengis.net/spec/owc-geojson/1.0/req/core"
+    }
+   ]
+  }
+ },
+ "features": [
+  {
+   "type": "Feature",
+   "id": "https://map.stadtluzern.ch/server/services/OGD/musikschule/MapServer/WMSServer#0",
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       8.298,
+       47.034
+      ],
+      [
+       8.324,
+       47.034
+      ],
+      [
+       8.324,
+       47.054
+      ],
+      [
+       8.298,
+       47.054
+      ],
+      [
+       8.298,
+       47.034
+      ]
+     ]
+    ]
+   },
+   "properties": {
+    "title": "Musikschule",
+    "updated": "2026-11-20T16:05:37+01:00",
+    "publisher": "Stadt Luzern",
+    "layer": "0",
+    "offerings": [
+     {
+      "code": "http://www.opengis.net/spec/owc-geojson/1.0/req/wms",
+      "operations": [
+       {
+        "code": "GetCapabilities",
+        "method": "GET",
+        "type": "application/xml",
+        "href": "https://map.stadtluzern.ch/server/services/OGD/musikschule/MapServer/WMSServer?SERVICE=WMS&REQUEST=GetCapabilities"
+       }
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": "https://www.ogd.stadt-zuerich.ch/wms/geoportal/Musikschule#Musikschulen",
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       8.486,
+       47.362
+      ],
+      [
+       8.568,
+       47.362
+      ],
+      [
+       8.568,
+       47.417
+      ],
+      [
+       8.486,
+       47.417
+      ],
+      [
+       8.486,
+       47.362
+      ]
+     ]
+    ]
+   },
+   "properties": {
+    "title": "Musikschulen",
+    "updated": "2026-11-20T16:05:37+01:00",
+    "publisher": "Stadt Zürich",
+    "layer": "Musikschulen",
+    "offerings": [
+     {
+      "code": "http://www.opengis.net/spec/owc-geojson/1.0/req/wms",
+      "operations": [
+       {
+        "code": "GetCapabilities",
+        "method": "GET",
+        "type": "application/xml",
+        "href": "https://www.ogd.stadt-zuerich.ch/wms/geoportal/Musikschule?SERVICE=WMS&REQUEST=GetCapabilities"
+       }
+      ]
+     }
+    ]
+   }
+  }
+ ]
+}

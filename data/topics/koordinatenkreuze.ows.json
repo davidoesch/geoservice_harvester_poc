@@ -1,0 +1,119 @@
+{
+ "type": "FeatureCollection",
+ "id": "https://davidoesch.github.io/geoservice_harvester_poc/data/topics/koordinatenkreuze.ows.json",
+ "properties": {
+  "lang": "de",
+  "title": "Koordinatenkreuze",
+  "updated": "2026-11-20T16:05:37+01:00",
+  "subtitle": "GeoHarvester topic: 2 providers",
+  "links": {
+   "profiles": [
+    {
+     "href": "http://www.opengis.net/spec/owc-geojson/1.0/req/core"
+    }
+   ]
+  }
+ },
+ "features": [
+  {
+   "type": "Feature",
+   "id": "https://wms.geo.admin.ch/#ch.swisstopo.koordinatenaenderung",
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       0.66,
+       45.419
+      ],
+      [
+       10.836,
+       45.419
+      ],
+      [
+       10.836,
+       48.751
+      ],
+      [
+       0.66,
+       48.751
+      ],
+      [
+       0.66,
+       45.419
+      ]
+     ]
+    ]
+   },
+   "properties": {
+    "title": "LV95 Koordinatenänderung",
+    "updated": "2026-11-20T16:05:37+01:00",
+    "publisher": "Bund (geo.admin.ch)",
+    "layer": "ch.swisstopo.koordinatenaenderung",
+    "offerings": [
+     {
+      "code": "http://www.opengis.net/spec/owc-geojson/1.0/req/wms",
+      "operations": [
+       {
+        "code": "GetCapabilities",
+        "method": "GET",
+        "type": "application/xml",
+        "href": "https://wms.geo.admin.ch/?SERVICE=WMS&REQUEST=GetCapabilities"
+       }
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": "https://services.geo.zg.ch/ows/BasisplanFarbe#Koordinatenkreuze",
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       8.387,
+       47.07
+      ],
+      [
+       8.707,
+       47.07
+      ],
+      [
+       8.707,
+       47.253
+      ],
+      [
+       8.387,
+       47.253
+      ],
+      [
+       8.387,
+       47.07
+      ]
+     ]
+    ]
+   },
+   "properties": {
+    "title": "Koordinatenkreuze",
+    "updated": "2026-11-20T16:05:37+01:00",
+    "publisher": "Kanton Zug",
+    "layer": "Koordinatenkreuze",
+    "offerings": [
+     {
+      "code": "http://www.opengis.net/spec/owc-geojson/1.0/req/wms",
+      "operations": [
+       {
+        "code": "GetCapabilities",
+        "method": "GET",
+        "type": "application/xml",
+        "href": "https://services.geo.zg.ch/ows/BasisplanFarbe?SERVICE=WMS&REQUEST=GetCapabilities"
+       }
+      ]
+     }
+    ]
+   }
+  }
+ ]
+}

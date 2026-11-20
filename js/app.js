@@ -44,7 +44,7 @@
       topics: ["Bienen", "Lärm", "Wald", "Velo", "Solar", "Naturgefahren", "Bäume", "Grundwasser", "Denkmal", "Parkplätze"],
       kind_federal: "Bund", kind_canton: "Kantone", kind_city: "Städte", kind_intercantonal: "geodienste.ch",
       allRegions: "Alle Regionen", region: "Region",
-      inView: "Nur im Kartenausschnitt", inViewShort: "Im Ausschnitt suchen", inViewSuffix: "im Kartenausschnitt", tabList: "Liste", tabMap: "Karte",
+      inView: "Nur im Kartenausschnitt", topicBadge: "Thema", topicProviders: (n) => `${n} Anbieter`, topicAdd: (n) => `Alle ${n} zur Karte`, topicShow: (n) => `${n} Datensätze zeigen`, topicHide: "Datensätze ausblenden", autoLabel: "automatisch ergänzt:", autoHint: "Stichwörter aus dem GEMET-Thesaurus, automatisch zugeordnet (nicht vom Anbieter)", inViewShort: "Im Ausschnitt suchen", inViewSuffix: "im Kartenausschnitt", tabList: "Liste", tabMap: "Karte",
       results: (n) => n === 1 ? "1 Datensatz" : `${fmt(n)} Datensätze`,
       browse: (n) => `${fmt(n)} Datensätze im Katalog`,
       covSummary: (c, m, f) => [`Daten aus ${c} von 26 Kantonen`, m ? `${m} ${m === 1 ? "Stadt" : "Städte"}` : "", f ? `${f} national/kantonsübergreifend` : ""].filter(Boolean).join(" · "),
@@ -105,7 +105,7 @@
       topics: ["Abeilles", "Bruit", "Forêt", "Vélo", "Solaire", "Dangers naturels", "Arbres", "Eaux souterraines", "Patrimoine", "Parking"],
       kind_federal: "Confédération", kind_canton: "Cantons", kind_city: "Villes", kind_intercantonal: "geodienste.ch",
       allRegions: "Toutes les régions", region: "Région",
-      inView: "Uniquement dans l'extrait de carte", inViewShort: "Chercher dans l'extrait", inViewSuffix: "dans l'extrait de carte", tabList: "Liste", tabMap: "Carte",
+      inView: "Uniquement dans l'extrait de carte", topicBadge: "Thème", topicProviders: (n) => `${n} fournisseurs`, topicAdd: (n) => `Ajouter les ${n} à la carte`, topicShow: (n) => `Afficher ${n} jeux de données`, topicHide: "Masquer les jeux de données", autoLabel: "complété automatiquement :", autoHint: "Mots-clés du thésaurus GEMET, attribués automatiquement (pas par le fournisseur)", inViewShort: "Chercher dans l'extrait", inViewSuffix: "dans l'extrait de carte", tabList: "Liste", tabMap: "Carte",
       results: (n) => n === 1 ? "1 jeu de données" : `${fmt(n)} jeux de données`,
       browse: (n) => `${fmt(n)} jeux de données dans le catalogue`,
       covSummary: (c, m, f) => [`Données de ${c} cantons sur 26`, m ? `${m} ${m === 1 ? "ville" : "villes"}` : "", f ? `${f} nationaux/intercantonaux` : ""].filter(Boolean).join(" · "),
@@ -166,7 +166,7 @@
       topics: ["Apicoltura", "Rumore", "Bosco", "Bicicletta", "Solare", "Pericoli naturali", "Alberi", "Acque sotterranee", "Beni culturali", "Posteggi"],
       kind_federal: "Confederazione", kind_canton: "Cantoni", kind_city: "Città", kind_intercantonal: "geodienste.ch",
       allRegions: "Tutte le regioni", region: "Regione",
-      inView: "Solo nell'area della carta", inViewShort: "Cerca nell'area", inViewSuffix: "nell'area della carta", tabList: "Elenco", tabMap: "Carta",
+      inView: "Solo nell'area della carta", topicBadge: "Tema", topicProviders: (n) => `${n} fornitori`, topicAdd: (n) => `Aggiungi tutti i ${n} alla carta`, topicShow: (n) => `Mostra ${n} set di dati`, topicHide: "Nascondi set di dati", autoLabel: "aggiunto automaticamente:", autoHint: "Parole chiave del thesaurus GEMET, assegnate automaticamente (non dal fornitore)", inViewShort: "Cerca nell'area", inViewSuffix: "nell'area della carta", tabList: "Elenco", tabMap: "Carta",
       results: (n) => n === 1 ? "1 set di dati" : `${fmt(n)} set di dati`,
       browse: (n) => `${fmt(n)} set di dati nel catalogo`,
       covSummary: (c, m, f) => [`Dati da ${c} cantoni su 26`, m ? `${m} ${m === 1 ? "città" : "città"}` : "", f ? `${f} nazionali/intercantonali` : ""].filter(Boolean).join(" · "),
@@ -227,7 +227,7 @@
       topics: ["Bees", "Noise", "Forest", "Cycling", "Solar", "Natural hazards", "Trees", "Groundwater", "Heritage", "Parking"],
       kind_federal: "Federal", kind_canton: "Cantons", kind_city: "Cities", kind_intercantonal: "geodienste.ch",
       allRegions: "All regions", region: "Region",
-      inView: "Only in map view", inViewShort: "Search in view", inViewSuffix: "in map view", tabList: "List", tabMap: "Map",
+      inView: "Only in map view", topicBadge: "Topic", topicProviders: (n) => `${n} providers`, topicAdd: (n) => `Add all ${n} to map`, topicShow: (n) => `Show ${n} datasets`, topicHide: "Hide datasets", autoLabel: "added automatically:", autoHint: "Keywords from the GEMET thesaurus, assigned automatically (not by the provider)", inViewShort: "Search in view", inViewSuffix: "in map view", tabList: "List", tabMap: "Map",
       results: (n) => n === 1 ? "1 dataset" : `${fmt(n)} datasets`,
       browse: (n) => `${fmt(n)} datasets in the catalogue`,
       covSummary: (c, m, f) => [`Data from ${c} of 26 cantons`, m ? `${m} ${m === 1 ? "city" : "cities"}` : "", f ? `${f} national/intercantonal` : ""].filter(Boolean).join(" · "),
@@ -353,7 +353,7 @@
     types: new Set(),
     region: "",
     owner: "",
-    inView: false,           // only datasets intersecting the map view
+    inView: true,            // only datasets intersecting the map view (default)
     shown: PAGE_SIZE,
     results: [],
     selection: [],           // dataset indices
@@ -365,6 +365,9 @@
   let D = [];               // dataset objects
   let owners = [];
   let services = [];
+  let concepts = [];      // GEMET labels [de, fr, it, en] (automatic keywords)
+  let topics = [];        // automatic topics across providers
+  let catLabels = {};
   let regionsGeo = null;
   let map = null;
   let idIndex = new Map();  // stable id -> dataset index
@@ -463,6 +466,9 @@
     const strings = catalog.strings || [];
     const fields = catalog.fields;
     const idx = Object.fromEntries(fields.map((f, i) => [f, i]));
+    concepts = catalog.concepts || [];
+    topics = catalog.topics || [];
+    catLabels = Object.fromEntries((catalog.categories || []).map((c) => [c.id, [c.de, c.fr, c.it, c.en].join(" ")]));
     const ownerHay = owners.map((o) => " " + norm([o.code, o.region, o.municipality,
       ...Object.values(o.label || {})].filter(Boolean).join(" ")));
     D = catalog.datasets.map((row, i) => {
@@ -485,7 +491,12 @@
         group: row[idx.group] >= 0 ? (strings[row[idx.group]] || "") : "",
         regions: row[idx.regions],
         services: svcs,
-        types: [...new Set(svcs.map((s) => s.type))]
+        types: [...new Set(svcs.map((s) => s.type))],
+        // automatic enrichment (enrich.py): GEMET concept indices,
+        // eCH-0166 category code, topic index (-1 = none)
+        auto: idx.autokeywords !== undefined ? (row[idx.autokeywords] || []) : [],
+        category: idx.category !== undefined ? (row[idx.category] || "") : "",
+        topic: idx.topic !== undefined ? row[idx.topic] : -1
       };
       d.id = fnv(d.owner.code + "|" + first.url + "|" + first.layer);
       d._t = " " + norm(d.title);
@@ -493,6 +504,8 @@
       d._g = " " + norm(d.group);
       d._a = " " + norm(d.abstract);
       d._o = ownerHay[o];
+      const cat = catLabels[d.category] || "";
+      d._ak = " " + norm(d.auto.map((c) => concepts[c].join(" ")).join(" ") + " " + cat);
       return d;
     });
     idIndex = new Map(D.map((d) => [d.id, d.i]));
@@ -527,9 +540,10 @@
     let best = (!short && d._t.includes(v)) ? 8 : 0;
     const k = d._k.includes(ws) ? 6 : (!short && d._k.includes(v)) ? 4 : 0;
     const o = d._o.includes(ws) ? 5 : 0;
+    const ak = d._ak.includes(ws) ? 5 : (!short && d._ak.includes(v)) ? 3.5 : 0;
     const g = d._g.includes(ws) ? 4 : (!short && d._g.includes(v)) ? 2.5 : 0;
     const a = d._a.includes(ws) ? 3 : (!short && d._a.includes(v)) ? 1.5 : 0;
-    best = Math.max(best, k, o, g, a);
+    best = Math.max(best, k, o, g, a, ak);
     return best;
   }
 
@@ -548,8 +562,17 @@
     return true;
   }
 
+  // The view filter only narrows anything once the map shows less than
+  // (roughly) all of Switzerland.
+  function viewIsLocal() {
+    if (!state.inView || !viewExtent) return false;
+    const ch = (CH_EXTENT[2] - CH_EXTENT[0]) * (CH_EXTENT[3] - CH_EXTENT[1]);
+    const ov = ol.extent.getIntersection(viewExtent, CH_EXTENT);
+    return !ol.extent.isEmpty(ov) && ol.extent.getArea(ov) < 0.6 * ch;
+  }
+
   function hasCriteria() {
-    return !!(state.q || state.kinds.size || state.types.size || state.region || state.owner || state.inView);
+    return !!(state.q || state.kinds.size || state.types.size || state.region || state.owner || viewIsLocal());
   }
 
   function runSearch() {
@@ -558,7 +581,7 @@
     if (!groups.length) {
       if (hasCriteria()) {
         for (const d of D) if (passesFilters(d)) out.push({ d, s: 0 });
-        if (state.inView) {
+        if (viewIsLocal()) {
           // "What is here?": most local datasets first
           out.forEach((r) => { r.s = ol.extent.getArea(datasetExtent(r.d)); });
           out.sort((a, b) => a.s - b.s || a.d.title.localeCompare(b.d.title));
@@ -1218,6 +1241,10 @@
     }
   }
 
+  // QGIS expects layer names unencoded ("workspace:layer"); only "&" breaks
+  // the data source string.
+  const qgisValue = (v) => String(v).replace(/&/g, "%26");
+
   async function buildQlr(list, groupName) {
     const tree = [], layers = [];
     const stamp = Date.now().toString(36);
@@ -1229,12 +1256,12 @@
       const url = svc.url.includes("&") ? encodeURIComponent(svc.url) : svc.url;
       let type = "raster", provider = "wms", source, crs = "EPSG:2056";
       if (svc.type === "WMS") {
-        source = `contextualWMSLegend=0&crs=EPSG:2056&dpiMode=7&featureCount=10&format=image/png&layers=${encodeURIComponent(svc.layer)}&styles&url=${url}`;
+        source = `contextualWMSLegend=0&crs=EPSG:2056&dpiMode=7&featureCount=10&format=image/png&layers=${qgisValue(svc.layer)}&styles&url=${url}`;
       } else if (svc.type === "WMTS") {
         const info = await wmtsInfo(svc);
         crs = info.crs;
         const capUrl = capabilitiesUrl(svc);
-        source = `contextualWMSLegend=0&crs=${info.crs}&dpiMode=7&featureCount=10&format=${info.format}&layers=${encodeURIComponent(svc.layer)}&styles=${encodeURIComponent(info.style)}&tileMatrixSet=${encodeURIComponent(info.matrixSet)}&url=${capUrl.includes("&") ? encodeURIComponent(capUrl) : capUrl}`;
+        source = `contextualWMSLegend=0&crs=${info.crs}&dpiMode=7&featureCount=10&format=${info.format}&layers=${qgisValue(svc.layer)}&styles=${qgisValue(info.style)}&tileMatrixSet=${qgisValue(info.matrixSet)}&url=${capUrl.includes("&") ? encodeURIComponent(capUrl) : capUrl}`;
       } else {
         type = "vector"; provider = "WFS";
         source = ` pagingEnabled='true' preferCoordinatesForWfsT11='false' restrictToRequestBBOX='1' srsname='EPSG:2056' typename='${svc.layer}' url='${svc.url}' version='auto'`;
@@ -1340,7 +1367,7 @@ ${layers.join("\n")}
     document.body.classList.toggle("has-query", criteria);
 
     $("#results-count").textContent = criteria
-      ? T("results", total) + (state.inView ? " " + T("inViewSuffix") : "")
+      ? T("results", total) + (viewIsLocal() ? " " + T("inViewSuffix") : "")
       : T("browse", D.length);
     const cov = computeCoverage(criteria ? state.results : D);
     $("#coverage-summary").textContent = criteria && total ? T("covSummary", cov.cantons, cov.cities, cov.national + cov.inter) : "";
@@ -1374,11 +1401,63 @@ ${layers.join("\n")}
       return;
     }
     empty.hidden = true;
-    list.innerHTML = state.results.slice(0, state.shown).map(cardHtml).join("");
-    const rest = total - state.shown;
+    const items = groupByTopic(state.results);
+    list.innerHTML = items.slice(0, state.shown).map((it) => it.members ? topicCardHtml(it) : cardHtml(it.d)).join("");
+    const rest = items.length - state.shown;
     const more = $("#show-more");
     more.hidden = rest <= 0;
     more.textContent = T("showMore", Math.min(rest, PAGE_SIZE));
+  }
+
+  // Results of the same automatic topic (several providers, same subject)
+  // collapse into one topic card at the position of their best hit.
+  function groupByTopic(results) {
+    const byTopic = new Map();
+    results.forEach((d) => {
+      if (d.topic >= 0) byTopic.set(d.topic, (byTopic.get(d.topic) || []).concat(d));
+    });
+    const items = [], done = new Set();
+    for (const d of results) {
+      const members = d.topic >= 0 ? byTopic.get(d.topic) : null;
+      if (members && members.length > 1) {
+        if (!done.has(d.topic)) { done.add(d.topic); items.push({ topic: topics[d.topic], t: d.topic, members }); }
+      } else {
+        items.push({ d });
+      }
+    }
+    return items;
+  }
+
+  function topicCardHtml(it) {
+    const ids = it.members.map((d) => d.i);
+    const allSel = ids.every(isSelected);
+    const owners = [...new Map(it.members.map((d) => [d.owner.code, d.owner])).values()];
+    const types = [...new Set(it.members.flatMap((d) => d.types))];
+    const base = "data/topics/" + encodeURIComponent(it.topic.id);
+    const mg = mapGeoUrl(it.members).url;
+    return `<li class="card topic${allSel ? " selected" : ""}" data-topic="${it.t}">
+      <div class="card-top">
+        <h3 class="card-title"><span class="topic-badge">${esc(T("topicBadge"))}</span> ${esc(it.topic.label)}</h3>
+        <button type="button" class="add-btn" data-act="topic-add" aria-pressed="${allSel}">${esc(allSel ? T("onMap") : T("topicAdd", ids.length))}</button>
+      </div>
+      <div class="card-meta"><span class="owner">${esc(T("topicProviders", owners.length))}</span>${types.map((t) => `<span class="badge badge-${t}">${t}</span>`).join("")}</div>
+      <div class="topic-owners">${owners.map((o) => `<span class="chip chip-xs" title="${esc(ownerLabel(o))}">${esc(ownerShort(o))}</span>`).join("")}</div>
+      <div class="card-actions">
+        ${mg ? `<a class="link-btn" href="${esc(mg)}" target="_blank" rel="noopener">${esc(T("mapgeo"))} ↗</a>` : ""}
+        <a class="link-btn" href="${base}.qlr" download>QGIS</a>
+        <a class="link-btn" href="${base}.lyrx" download>ArcGIS Pro</a>
+        <a class="link-btn" href="${base}.ows.json" target="_blank" rel="noopener">OWS Context</a>
+        <button type="button" class="link-btn" data-act="topic-expand" aria-expanded="false">${esc(T("topicShow", it.members.length))}</button>
+      </div>
+      <ol class="topic-members" hidden>${it.members.map(cardHtml).join("")}</ol>
+    </li>`;
+  }
+
+  function autoKeywordsHtml(d) {
+    if (!d.auto.length) return "";
+    const li = { de: 0, fr: 1, it: 2, en: 3 }[state.lang] ?? 0;
+    const words = [...new Set(d.auto.slice(0, 4).map((c) => concepts[c][li]))];
+    return `<div class="auto-kw" title="${esc(T("autoHint"))}"><span>${esc(T("autoLabel"))}</span>${words.map((w) => `<span class="chip chip-xs">${esc(w)}</span>`).join("")}</div>`;
   }
 
   function cardHtml(d) {
@@ -1400,6 +1479,7 @@ ${layers.join("\n")}
       </div>
       <div class="card-meta"><span class="owner">${esc(ownerLabel(d.owner))}</span>${badges}${d.group ? `<span class="group-path" title="${esc(d.group)}">${esc(d.group)}</span>` : ""}</div>
       ${d.abstract ? `<p class="abstract${long ? " clamped" : ""}">${esc(d.abstract)}</p>` : ""}
+      ${autoKeywordsHtml(d)}
       <div class="card-actions">
         ${map1 ? `<a class="link-btn" href="${esc(map1)}" target="_blank" rel="noopener">${esc(T("mapgeo"))} ↗</a>` : ""}
         <button type="button" class="link-btn" data-act="qgis">QGIS</button>
@@ -1411,7 +1491,16 @@ ${layers.join("\n")}
   }
 
   function updateCardButtons() {
-    document.querySelectorAll("#results .card").forEach((card) => {
+    document.querySelectorAll("#results .card.topic").forEach((card) => {
+      const members = D.filter((d) => d.topic === +card.dataset.topic);
+      const ids = groupByTopic(state.results).find((it) => it.t === +card.dataset.topic)?.members.map((d) => d.i) || members.map((d) => d.i);
+      const sel = ids.every(isSelected);
+      card.classList.toggle("selected", sel);
+      const btn = card.querySelector('[data-act="topic-add"]');
+      btn.setAttribute("aria-pressed", String(sel));
+      btn.textContent = sel ? T("onMap") : T("topicAdd", ids.length);
+    });
+    document.querySelectorAll("#results .card:not(.topic)").forEach((card) => {
       const i = +card.dataset.i;
       const sel = isSelected(i);
       card.classList.toggle("selected", sel);
@@ -1496,10 +1585,8 @@ ${layers.join("\n")}
     if (state.owner) p.set("o", state.owner);
     if (state.kinds.size) p.set("k", [...state.kinds].join(","));
     if (state.types.size) p.set("t", [...state.types].join(","));
-    if (state.inView) {
-      p.set("v", "1");
-      if (viewExtent) p.set("x", viewExtent.map((n) => Math.round(n)).join(","));
-    }
+    if (!state.inView) p.set("v", "0");
+    else if (viewIsLocal()) p.set("x", viewExtent.map((n) => Math.round(n)).join(","));
     if (state.selection.length) p.set("sel", state.selection.map((i) => D[i].id).join("."));
     const h = p.toString();
     history.replaceState(null, "", h ? "#" + h : location.pathname + location.search);
@@ -1512,7 +1599,7 @@ ${layers.join("\n")}
     state.owner = p.get("o") || "";
     state.kinds = new Set((p.get("k") || "").split(",").filter(Boolean));
     state.types = new Set((p.get("t") || "").split(",").filter(Boolean));
-    state.inView = p.get("v") === "1";
+    state.inView = p.get("v") !== "0";
     const x = (p.get("x") || "").split(",").map(Number);
     hashExtent = x.length === 4 && x.every(Number.isFinite) ? x : null;
     const sel = (p.get("sel") || "").split(".").filter(Boolean).map((id) => idIndex.get(id)).filter((i) => i !== undefined);
@@ -1593,7 +1680,22 @@ ${layers.join("\n")}
     $("#export-csv").addEventListener("click", exportCsv);
 
     $("#results").addEventListener("click", (e) => {
-      const card = e.target.closest(".card");
+      const tAct = e.target.closest('[data-act^="topic-"]');
+      if (tAct) {
+        const tcard = tAct.closest(".card.topic");
+        const ids = (groupByTopic(state.results).find((it) => it.t === +tcard.dataset.topic)?.members || []).map((d) => d.i);
+        if (tAct.dataset.act === "topic-add") {
+          if (ids.every(isSelected)) ids.forEach(removeFromSelection);
+          else addToSelection(ids, { fit: true });
+        } else {
+          const list = tcard.querySelector(".topic-members");
+          list.hidden = !list.hidden;
+          tAct.setAttribute("aria-expanded", String(!list.hidden));
+          tAct.textContent = list.hidden ? T("topicShow", ids.length) : T("topicHide");
+        }
+        return;
+      }
+      const card = e.target.closest(".card:not(.topic)");
       if (!card) return;
       const i = +card.dataset.i;
       const d = D[i];
@@ -1609,7 +1711,7 @@ ${layers.join("\n")}
       }
     });
     $("#results").addEventListener("mouseover", (e) => {
-      const card = e.target.closest(".card");
+      const card = e.target.closest(".card:not(.topic)");
       if (card && map) highlightBbox(D[+card.dataset.i]);
     });
     $("#results").addEventListener("mouseleave", () => highlightBbox(null));

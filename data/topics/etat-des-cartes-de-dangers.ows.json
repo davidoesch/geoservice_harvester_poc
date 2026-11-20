@@ -1,0 +1,219 @@
+{
+ "type": "FeatureCollection",
+ "id": "https://davidoesch.github.io/geoservice_harvester_poc/data/topics/etat-des-cartes-de-dangers.ows.json",
+ "properties": {
+  "lang": "de",
+  "title": "Etat des cartes de dangers",
+  "updated": "2026-11-20T16:13:33+01:00",
+  "subtitle": "GeoHarvester topic: 4 providers",
+  "links": {
+   "profiles": [
+    {
+     "href": "http://www.opengis.net/spec/owc-geojson/1.0/req/core"
+    }
+   ]
+  }
+ },
+ "features": [
+  {
+   "type": "Feature",
+   "id": "https://maps.fr.ch/ags/services/OpenData/Etat_des_cartes_de_dangers/MapServer/WMSServer#0",
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       6.874,
+       46.493
+      ],
+      [
+       7.316,
+       46.493
+      ],
+      [
+       7.316,
+       47.008
+      ],
+      [
+       6.874,
+       47.008
+      ],
+      [
+       6.874,
+       46.493
+      ]
+     ]
+    ]
+   },
+   "properties": {
+    "title": "Etat des cartes de dangers",
+    "updated": "2026-11-20T16:13:33+01:00",
+    "publisher": "Kanton Freiburg",
+    "layer": "0",
+    "offerings": [
+     {
+      "code": "http://www.opengis.net/spec/owc-geojson/1.0/req/wms",
+      "operations": [
+       {
+        "code": "GetCapabilities",
+        "method": "GET",
+        "type": "application/xml",
+        "href": "https://maps.fr.ch/ags/services/OpenData/Etat_des_cartes_de_dangers/MapServer/WMSServer?SERVICE=WMS&REQUEST=GetCapabilities"
+       }
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": "https://vector.sitg.ge.ch/arcgis/services/LCE_DANGERS_STATUT_CARTES/MapServer/WMSServer#0",
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       5.871,
+       46.08
+      ],
+      [
+       6.362,
+       46.08
+      ],
+      [
+       6.362,
+       46.39
+      ],
+      [
+       5.871,
+       46.39
+      ],
+      [
+       5.871,
+       46.08
+      ]
+     ]
+    ]
+   },
+   "properties": {
+    "title": "LCE_DANGERS_STATUT_CARTES",
+    "updated": "2026-11-20T16:13:33+01:00",
+    "publisher": "Kanton Genf",
+    "layer": "0",
+    "offerings": [
+     {
+      "code": "http://www.opengis.net/spec/owc-geojson/1.0/req/wms",
+      "operations": [
+       {
+        "code": "GetCapabilities",
+        "method": "GET",
+        "type": "application/xml",
+        "href": "https://vector.sitg.ge.ch/arcgis/services/LCE_DANGERS_STATUT_CARTES/MapServer/WMSServer?SERVICE=WMS&REQUEST=GetCapabilities"
+       }
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": "https://wms.geo.ti.ch/service#ti_034_2_v1_0_carta_pericoli_indicativi",
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       7.936,
+       45.575
+      ],
+      [
+       9.599,
+       45.575
+      ],
+      [
+       9.599,
+       46.842
+      ],
+      [
+       7.936,
+       46.842
+      ],
+      [
+       7.936,
+       45.575
+      ]
+     ]
+    ]
+   },
+   "properties": {
+    "title": "[TI-034.2] Carta dei pericoli - Indicativi",
+    "updated": "2026-11-20T16:13:33+01:00",
+    "publisher": "Kanton Tessin",
+    "layer": "ti_034_2_v1_0_carta_pericoli_indicativi",
+    "offerings": [
+     {
+      "code": "http://www.opengis.net/spec/owc-geojson/1.0/req/wms",
+      "operations": [
+       {
+        "code": "GetCapabilities",
+        "method": "GET",
+        "type": "application/xml",
+        "href": "https://wms.geo.ti.ch/service?SERVICE=WMS&REQUEST=GetCapabilities"
+       }
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": "https://sit.vs.ch/arcgis/services/DANAT/MapServer/WMSServer#0",
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       6.783,
+       45.856
+      ],
+      [
+       8.467,
+       45.856
+      ],
+      [
+       8.467,
+       46.576
+      ],
+      [
+       6.783,
+       46.576
+      ],
+      [
+       6.783,
+       45.856
+      ]
+     ]
+    ]
+   },
+   "properties": {
+    "title": "GEO_cartes_indicatives_dangers",
+    "updated": "2026-11-20T16:13:33+01:00",
+    "publisher": "Kanton Wallis",
+    "layer": "0",
+    "offerings": [
+     {
+      "code": "http://www.opengis.net/spec/owc-geojson/1.0/req/wms",
+      "operations": [
+       {
+        "code": "GetCapabilities",
+        "method": "GET",
+        "type": "application/xml",
+        "href": "https://sit.vs.ch/arcgis/services/DANAT/MapServer/WMSServer?SERVICE=WMS&REQUEST=GetCapabilities"
+       }
+      ]
+     }
+    ]
+   }
+  }
+ ]
+}

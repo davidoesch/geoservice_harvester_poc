@@ -1,0 +1,319 @@
+{
+ "type": "FeatureCollection",
+ "id": "https://davidoesch.github.io/geoservice_harvester_poc/data/topics/geschwindigkeit.ows.json",
+ "properties": {
+  "lang": "de",
+  "title": "Geschwindigkeit",
+  "updated": "2026-11-20T16:05:37+01:00",
+  "subtitle": "GeoHarvester topic: 6 providers",
+  "links": {
+   "profiles": [
+    {
+     "href": "http://www.opengis.net/spec/owc-geojson/1.0/req/core"
+    }
+   ]
+  }
+ },
+ "features": [
+  {
+   "type": "Feature",
+   "id": "https://map.bern.ch/arcgis/services/Geoportal/Signalisierte_Hoechstgeschwindigkeit/MapServer/WMSServer#0",
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       7.306,
+       46.926
+      ],
+      [
+       7.491,
+       46.926
+      ],
+      [
+       7.491,
+       46.981
+      ],
+      [
+       7.306,
+       46.981
+      ],
+      [
+       7.306,
+       46.926
+      ]
+     ]
+    ]
+   },
+   "properties": {
+    "title": "Signalisierte_Hoechstgeschwindigkeit",
+    "updated": "2026-11-20T16:05:37+01:00",
+    "publisher": "Stadt Bern",
+    "layer": "0",
+    "offerings": [
+     {
+      "code": "http://www.opengis.net/spec/owc-geojson/1.0/req/wms",
+      "operations": [
+       {
+        "code": "GetCapabilities",
+        "method": "GET",
+        "type": "application/xml",
+        "href": "https://map.bern.ch/arcgis/services/Geoportal/Signalisierte_Hoechstgeschwindigkeit/MapServer/WMSServer?SERVICE=WMS&REQUEST=GetCapabilities"
+       }
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": "https://gis.gict.ch/ows/emmen_admin/WMS_Emmen_all_pub#Signalisierte_Höchstgeschwindigkeiten",
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       8.225,
+       47.067
+      ],
+      [
+       8.327,
+       47.067
+      ],
+      [
+       8.327,
+       47.111
+      ],
+      [
+       8.225,
+       47.111
+      ],
+      [
+       8.225,
+       47.067
+      ]
+     ]
+    ]
+   },
+   "properties": {
+    "title": "Signalisierte_Höchstgeschwindigkeiten",
+    "updated": "2026-11-20T16:05:37+01:00",
+    "publisher": "Gemeinde Emmen",
+    "layer": "Signalisierte_Höchstgeschwindigkeiten",
+    "offerings": [
+     {
+      "code": "http://www.opengis.net/spec/owc-geojson/1.0/req/wms",
+      "operations": [
+       {
+        "code": "GetCapabilities",
+        "method": "GET",
+        "type": "application/xml",
+        "href": "https://gis.gict.ch/ows/emmen_admin/WMS_Emmen_all_pub?SERVICE=WMS&REQUEST=GetCapabilities"
+       }
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": "https://www.ogd.stadt-zuerich.ch/wms/geoportal/Signalisierte_Geschwindigkeiten#Signalisierte Geschwindigkeiten",
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       8.447,
+       47.321
+      ],
+      [
+       8.627,
+       47.321
+      ],
+      [
+       8.627,
+       47.435
+      ],
+      [
+       8.447,
+       47.435
+      ],
+      [
+       8.447,
+       47.321
+      ]
+     ]
+    ]
+   },
+   "properties": {
+    "title": "Signalisierte Geschwindigkeiten",
+    "updated": "2026-11-20T16:05:37+01:00",
+    "publisher": "Stadt Zürich",
+    "layer": "Signalisierte Geschwindigkeiten",
+    "offerings": [
+     {
+      "code": "http://www.opengis.net/spec/owc-geojson/1.0/req/wms",
+      "operations": [
+       {
+        "code": "GetCapabilities",
+        "method": "GET",
+        "type": "application/xml",
+        "href": "https://www.ogd.stadt-zuerich.ch/wms/geoportal/Signalisierte_Geschwindigkeiten?SERVICE=WMS&REQUEST=GetCapabilities"
+       }
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": "https://wms.geo.bs.ch/#ch.bs.strassen_und_wege_stwe.strasse_weg.permanent_signalisierte_hoechstgeschwindigkeit",
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       7.549,
+       47.52
+      ],
+      [
+       7.7,
+       47.52
+      ],
+      [
+       7.7,
+       47.606
+      ],
+      [
+       7.549,
+       47.606
+      ],
+      [
+       7.549,
+       47.52
+      ]
+     ]
+    ]
+   },
+   "properties": {
+    "title": "Strassen und Wege - Strasse/Weg - Permanent signalisierte Höchstgeschwindigkeit",
+    "updated": "2026-11-20T16:05:37+01:00",
+    "publisher": "Kanton Basel-Stadt",
+    "layer": "ch.bs.strassen_und_wege_stwe.strasse_weg.permanent_signalisierte_hoechstgeschwindigkeit",
+    "offerings": [
+     {
+      "code": "http://www.opengis.net/spec/owc-geojson/1.0/req/wms",
+      "operations": [
+       {
+        "code": "GetCapabilities",
+        "method": "GET",
+        "type": "application/xml",
+        "href": "https://wms.geo.bs.ch/?SERVICE=WMS&REQUEST=GetCapabilities"
+       }
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": "https://maps.fr.ch/ags/services/OpenData_Raster/Vitesse_de_ruissellement/MapServer/WMSServer#0",
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       6.746,
+       46.438
+      ],
+      [
+       7.381,
+       46.438
+      ],
+      [
+       7.381,
+       47.006
+      ],
+      [
+       6.746,
+       47.006
+      ],
+      [
+       6.746,
+       46.438
+      ]
+     ]
+    ]
+   },
+   "properties": {
+    "title": "Vitesse de ruissellement",
+    "updated": "2026-11-20T16:05:37+01:00",
+    "publisher": "Kanton Freiburg",
+    "layer": "0",
+    "offerings": [
+     {
+      "code": "http://www.opengis.net/spec/owc-geojson/1.0/req/wms",
+      "operations": [
+       {
+        "code": "GetCapabilities",
+        "method": "GET",
+        "type": "application/xml",
+        "href": "https://maps.fr.ch/ags/services/OpenData_Raster/Vitesse_de_ruissellement/MapServer/WMSServer?SERVICE=WMS&REQUEST=GetCapabilities"
+       }
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": "https://ows.geo.tg.ch/geofy_access_proxy/laermemissionskataster#Geschwindigkeit",
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       8.631,
+       47.348
+      ],
+      [
+       9.505,
+       47.348
+      ],
+      [
+       9.505,
+       47.711
+      ],
+      [
+       8.631,
+       47.711
+      ],
+      [
+       8.631,
+       47.348
+      ]
+     ]
+    ]
+   },
+   "properties": {
+    "title": "Geschwindigkeit",
+    "updated": "2026-11-20T16:05:37+01:00",
+    "publisher": "Kanton Thurgau",
+    "layer": "Geschwindigkeit",
+    "offerings": [
+     {
+      "code": "http://www.opengis.net/spec/owc-geojson/1.0/req/wms",
+      "operations": [
+       {
+        "code": "GetCapabilities",
+        "method": "GET",
+        "type": "application/xml",
+        "href": "https://ows.geo.tg.ch/geofy_access_proxy/laermemissionskataster?SERVICE=WMS&REQUEST=GetCapabilities"
+       }
+      ]
+     }
+    ]
+   }
+  }
+ ]
+}

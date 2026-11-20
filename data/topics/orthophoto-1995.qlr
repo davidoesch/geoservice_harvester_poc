@@ -1,0 +1,36 @@
+<!DOCTYPE qgis-layer-definition>
+<qlr>
+  <layer-tree-group expanded="1" checked="Qt::Checked" name="">
+    <layer-tree-group expanded="1" checked="Qt::Checked" name="GeoHarvester – Orthophoto 1995">
+      <layer-tree-layer expanded="0" checked="Qt::Checked" id="geoharvester_orthophoto-1995_0" name="Orthophoto 1995 (FL_LI)" source="contextualWMSLegend=0&amp;crs=EPSG:2056&amp;dpiMode=7&amp;featureCount=10&amp;format=image/png&amp;layers=li.abi.orthophoto1995&amp;styles&amp;url=https://service.geo.llv.li/service/wms" providerKey="wms"/>
+      <layer-tree-layer expanded="0" checked="Qt::Checked" id="geoharvester_orthophoto-1995_1" name="Orthophoto 2022 (NE)" source="contextualWMSLegend=0&amp;crs=EPSG:2056&amp;dpiMode=7&amp;featureCount=10&amp;format=image/jpeg&amp;layers=ortho2022&amp;styles=default&amp;tileMatrixSet=EPSG2056&amp;url=https%3A%2F%2Fsitn.ne.ch%2Fservices%2Fwmts%3FSERVICE%3DWMTS%26REQUEST%3DGetCapabilities" providerKey="wms"/>
+      <layer-tree-layer expanded="0" checked="Qt::Checked" id="geoharvester_orthophoto-1995_2" name="Orthophoto_2009 (SG)" source="contextualWMSLegend=0&amp;crs=EPSG:2056&amp;dpiMode=7&amp;featureCount=10&amp;format=image/png&amp;layers=Orthophoto_2009&amp;styles&amp;url=https://services.geo.sg.ch/wss/service/SG00046_WMS/guest" providerKey="wms"/>
+    </layer-tree-group>
+  </layer-tree-group>
+  <maplayers>
+    <maplayer type="raster" hasScaleBasedVisibilityFlag="0" minScale="1e+08" maxScale="0" styleCategories="AllStyleCategories">
+      <extent><xmin>2751330</xmin><ymin>1211694</ymin><xmax>2768859</xmax><ymax>1239636</ymax></extent>
+      <id>geoharvester_orthophoto-1995_0</id>
+      <datasource>contextualWMSLegend=0&amp;crs=EPSG:2056&amp;dpiMode=7&amp;featureCount=10&amp;format=image/png&amp;layers=li.abi.orthophoto1995&amp;styles&amp;url=https://service.geo.llv.li/service/wms</datasource>
+      <layername>Orthophoto 1995 (FL_LI)</layername>
+      <srs><spatialrefsys><proj4>+proj=somerc +lat_0=46.9524055555556 +lon_0=7.43958333333333 +k_0=1 +x_0=2600000 +y_0=1200000 +ellps=bessel +towgs84=674.374,15.056,405.346,0,0,0,0 +units=m +no_defs</proj4><srid>2056</srid><authid>EPSG:2056</authid><description>CH1903+ / LV95</description><projectionacronym>somerc</projectionacronym><ellipsoidacronym>EPSG:7004</ellipsoidacronym><geographicflag>false</geographicflag></spatialrefsys></srs>
+      <provider>wms</provider>
+    </maplayer>
+    <maplayer type="raster" hasScaleBasedVisibilityFlag="0" minScale="1e+08" maxScale="0" styleCategories="AllStyleCategories">
+      <extent><xmin>2409654</xmin><ymin>1025627</ymin><xmax>2899590</xmax><ymax>1367397</ymax></extent>
+      <id>geoharvester_orthophoto-1995_1</id>
+      <datasource>contextualWMSLegend=0&amp;crs=EPSG:2056&amp;dpiMode=7&amp;featureCount=10&amp;format=image/jpeg&amp;layers=ortho2022&amp;styles=default&amp;tileMatrixSet=EPSG2056&amp;url=https%3A%2F%2Fsitn.ne.ch%2Fservices%2Fwmts%3FSERVICE%3DWMTS%26REQUEST%3DGetCapabilities</datasource>
+      <layername>Orthophoto 2022 (NE)</layername>
+      <srs><spatialrefsys><proj4>+proj=somerc +lat_0=46.9524055555556 +lon_0=7.43958333333333 +k_0=1 +x_0=2600000 +y_0=1200000 +ellps=bessel +towgs84=674.374,15.056,405.346,0,0,0,0 +units=m +no_defs</proj4><srid>2056</srid><authid>EPSG:2056</authid><description>CH1903+ / LV95</description><projectionacronym>somerc</projectionacronym><ellipsoidacronym>EPSG:7004</ellipsoidacronym><geographicflag>false</geographicflag></spatialrefsys></srs>
+      <provider>wms</provider>
+    </maplayer>
+    <maplayer type="raster" hasScaleBasedVisibilityFlag="0" minScale="1e+08" maxScale="0" styleCategories="AllStyleCategories">
+      <extent><xmin>2702113</xmin><ymin>1191635</ymin><xmax>2769029</xmax><ymax>1270674</ymax></extent>
+      <id>geoharvester_orthophoto-1995_2</id>
+      <datasource>contextualWMSLegend=0&amp;crs=EPSG:2056&amp;dpiMode=7&amp;featureCount=10&amp;format=image/png&amp;layers=Orthophoto_2009&amp;styles&amp;url=https://services.geo.sg.ch/wss/service/SG00046_WMS/guest</datasource>
+      <layername>Orthophoto_2009 (SG)</layername>
+      <srs><spatialrefsys><proj4>+proj=somerc +lat_0=46.9524055555556 +lon_0=7.43958333333333 +k_0=1 +x_0=2600000 +y_0=1200000 +ellps=bessel +towgs84=674.374,15.056,405.346,0,0,0,0 +units=m +no_defs</proj4><srid>2056</srid><authid>EPSG:2056</authid><description>CH1903+ / LV95</description><projectionacronym>somerc</projectionacronym><ellipsoidacronym>EPSG:7004</ellipsoidacronym><geographicflag>false</geographicflag></spatialrefsys></srs>
+      <provider>wms</provider>
+    </maplayer>
+  </maplayers>
+</qlr>

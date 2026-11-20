@@ -1,0 +1,319 @@
+{
+ "type": "FeatureCollection",
+ "id": "https://davidoesch.github.io/geoservice_harvester_poc/data/topics/bodenbedeckung-projektiert.ows.json",
+ "properties": {
+  "lang": "de",
+  "title": "Bodenbedeckung projektiert",
+  "updated": "2026-11-20T16:13:33+01:00",
+  "subtitle": "GeoHarvester topic: 6 providers",
+  "links": {
+   "profiles": [
+    {
+     "href": "http://www.opengis.net/spec/owc-geojson/1.0/req/core"
+    }
+   ]
+  }
+ },
+ "features": [
+  {
+   "type": "Feature",
+   "id": "https://map.bern.ch/arcgis/services/Geoportal/Amtliche_Vermessung_Kontur/MapServer/WMSServer#5",
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       7.329,
+       46.929
+      ],
+      [
+       7.477,
+       46.929
+      ],
+      [
+       7.477,
+       46.975
+      ],
+      [
+       7.329,
+       46.975
+      ],
+      [
+       7.329,
+       46.929
+      ]
+     ]
+    ]
+   },
+   "properties": {
+    "title": "Bodenbedeckung_Gebaeude_projektiert",
+    "updated": "2026-11-20T16:13:33+01:00",
+    "publisher": "Stadt Bern",
+    "layer": "5",
+    "offerings": [
+     {
+      "code": "http://www.opengis.net/spec/owc-geojson/1.0/req/wms",
+      "operations": [
+       {
+        "code": "GetCapabilities",
+        "method": "GET",
+        "type": "application/xml",
+        "href": "https://map.bern.ch/arcgis/services/Geoportal/Amtliche_Vermessung_Kontur/MapServer/WMSServer?SERVICE=WMS&REQUEST=GetCapabilities"
+       }
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": "https://www.geoservice.apps.be.ch/geoservice3/services/a42geo/of_planningcadastre04_de_ms_wms/MapServer/WMSServer#MOPUBE_BBPRJF_VW_11528",
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       6.872,
+       46.361
+      ],
+      [
+       8.458,
+       46.361
+      ],
+      [
+       8.458,
+       47.304
+      ],
+      [
+       6.872,
+       47.304
+      ],
+      [
+       6.872,
+       46.361
+      ]
+     ]
+    ]
+   },
+   "properties": {
+    "title": "Bodenbedeckung projektiert, Umriss",
+    "updated": "2026-11-20T16:13:33+01:00",
+    "publisher": "Kanton Bern",
+    "layer": "MOPUBE_BBPRJF_VW_11528",
+    "offerings": [
+     {
+      "code": "http://www.opengis.net/spec/owc-geojson/1.0/req/wms",
+      "operations": [
+       {
+        "code": "GetCapabilities",
+        "method": "GET",
+        "type": "application/xml",
+        "href": "https://www.geoservice.apps.be.ch/geoservice3/services/a42geo/of_planningcadastre04_de_ms_wms/MapServer/WMSServer?SERVICE=WMS&REQUEST=GetCapabilities"
+       }
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": "https://geowms.bl.ch/#gbp_bodenbedeckung_projektiert_uebrige",
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       7.306,
+       47.309
+      ],
+      [
+       8.037,
+       47.309
+      ],
+      [
+       8.037,
+       47.626
+      ],
+      [
+       7.306,
+       47.626
+      ],
+      [
+       7.306,
+       47.309
+      ]
+     ]
+    ]
+   },
+   "properties": {
+    "title": "Bodenbedeckung projektiert (ohne Gebäude)",
+    "updated": "2026-11-20T16:13:33+01:00",
+    "publisher": "Kanton Basel-Landschaft",
+    "layer": "gbp_bodenbedeckung_projektiert_uebrige",
+    "offerings": [
+     {
+      "code": "http://www.opengis.net/spec/owc-geojson/1.0/req/wms",
+      "operations": [
+       {
+        "code": "GetCapabilities",
+        "method": "GET",
+        "type": "application/xml",
+        "href": "https://geowms.bl.ch/?SERVICE=WMS&REQUEST=GetCapabilities"
+       }
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": "https://sit.vs.ch/arcgis/services/AV/MapServer/WMSServer#4",
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       6.804,
+       46.024
+      ],
+      [
+       8.268,
+       46.024
+      ],
+      [
+       8.268,
+       46.493
+      ],
+      [
+       6.804,
+       46.493
+      ],
+      [
+       6.804,
+       46.024
+      ]
+     ]
+    ]
+   },
+   "properties": {
+    "title": "BB_Projektierte Bodenbedeckung",
+    "updated": "2026-11-20T16:13:33+01:00",
+    "publisher": "Kanton Wallis",
+    "layer": "4",
+    "offerings": [
+     {
+      "code": "http://www.opengis.net/spec/owc-geojson/1.0/req/wms",
+      "operations": [
+       {
+        "code": "GetCapabilities",
+        "method": "GET",
+        "type": "application/xml",
+        "href": "https://sit.vs.ch/arcgis/services/AV/MapServer/WMSServer?SERVICE=WMS&REQUEST=GetCapabilities"
+       }
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": "https://services.geo.zg.ch/ows/Grundbuchplan#zg.av_Bodenbedeckung_proj",
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       8.411,
+       47.09
+      ],
+      [
+       8.65,
+       47.09
+      ],
+      [
+       8.65,
+       47.218
+      ],
+      [
+       8.411,
+       47.218
+      ],
+      [
+       8.411,
+       47.09
+      ]
+     ]
+    ]
+   },
+   "properties": {
+    "title": "Projektierte Bodenbedeckung",
+    "updated": "2026-11-20T16:13:33+01:00",
+    "publisher": "Kanton Zug",
+    "layer": "zg.av_Bodenbedeckung_proj",
+    "offerings": [
+     {
+      "code": "http://www.opengis.net/spec/owc-geojson/1.0/req/wms",
+      "operations": [
+       {
+        "code": "GetCapabilities",
+        "method": "GET",
+        "type": "application/xml",
+        "href": "https://services.geo.zg.ch/ows/Grundbuchplan?SERVICE=WMS&REQUEST=GetCapabilities"
+       }
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": "https://wms.zh.ch/CMS3ZHWMS#bodenbedeckung-projektiert",
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       8.157,
+       47.142
+      ],
+      [
+       9.042,
+       47.142
+      ],
+      [
+       9.042,
+       47.848
+      ],
+      [
+       8.157,
+       47.848
+      ],
+      [
+       8.157,
+       47.142
+      ]
+     ]
+    ]
+   },
+   "properties": {
+    "title": "Bodenbedeckung projektiert",
+    "updated": "2026-11-20T16:13:33+01:00",
+    "publisher": "Kanton Zürich",
+    "layer": "bodenbedeckung-projektiert",
+    "offerings": [
+     {
+      "code": "http://www.opengis.net/spec/owc-geojson/1.0/req/wms",
+      "operations": [
+       {
+        "code": "GetCapabilities",
+        "method": "GET",
+        "type": "application/xml",
+        "href": "https://wms.zh.ch/CMS3ZHWMS?SERVICE=WMS&REQUEST=GetCapabilities"
+       }
+      ]
+     }
+    ]
+   }
+  }
+ ]
+}

@@ -1,0 +1,119 @@
+{
+ "type": "FeatureCollection",
+ "id": "https://davidoesch.github.io/geoservice_harvester_poc/data/topics/seilbahnen-mit-bundeskonzession.ows.json",
+ "properties": {
+  "lang": "de",
+  "title": "Seilbahnen mit Bundeskonzession",
+  "updated": "2026-11-20T16:13:33+01:00",
+  "subtitle": "GeoHarvester topic: 2 providers",
+  "links": {
+   "profiles": [
+    {
+     "href": "http://www.opengis.net/spec/owc-geojson/1.0/req/core"
+    }
+   ]
+  }
+ },
+ "features": [
+  {
+   "type": "Feature",
+   "id": "https://wms.geo.admin.ch/#ch.bav.seilbahnen-bundeskonzession",
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       3.33,
+       44.075
+      ],
+      [
+       14.278,
+       44.075
+      ],
+      [
+       14.278,
+       49.2
+      ],
+      [
+       3.33,
+       49.2
+      ],
+      [
+       3.33,
+       44.075
+      ]
+     ]
+    ]
+   },
+   "properties": {
+    "title": "Seilbahnen mit Bundeskonzession",
+    "updated": "2026-11-20T16:13:33+01:00",
+    "publisher": "Bund (geo.admin.ch)",
+    "layer": "ch.bav.seilbahnen-bundeskonzession",
+    "offerings": [
+     {
+      "code": "http://www.opengis.net/spec/owc-geojson/1.0/req/wms",
+      "operations": [
+       {
+        "code": "GetCapabilities",
+        "method": "GET",
+        "type": "application/xml",
+        "href": "https://wms.geo.admin.ch/?SERVICE=WMS&REQUEST=GetCapabilities"
+       }
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": "https://services.geo.sg.ch/wss/service/SG00002_WMS/guest#P_Seilbahnen",
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       8.934,
+       46.92
+      ],
+      [
+       9.647,
+       46.92
+      ],
+      [
+       9.647,
+       47.478
+      ],
+      [
+       8.934,
+       47.478
+      ],
+      [
+       8.934,
+       46.92
+      ]
+     ]
+    ]
+   },
+   "properties": {
+    "title": "P_Seilbahnen",
+    "updated": "2026-11-20T16:13:33+01:00",
+    "publisher": "Kanton St. Gallen",
+    "layer": "P_Seilbahnen",
+    "offerings": [
+     {
+      "code": "http://www.opengis.net/spec/owc-geojson/1.0/req/wms",
+      "operations": [
+       {
+        "code": "GetCapabilities",
+        "method": "GET",
+        "type": "application/xml",
+        "href": "https://services.geo.sg.ch/wss/service/SG00002_WMS/guest?SERVICE=WMS&REQUEST=GetCapabilities"
+       }
+      ]
+     }
+    ]
+   }
+  }
+ ]
+}

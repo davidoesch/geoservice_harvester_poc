@@ -1,0 +1,119 @@
+{
+ "type": "FeatureCollection",
+ "id": "https://davidoesch.github.io/geoservice_harvester_poc/data/topics/innere-nutzungen-kommunale-nutzungsplanung-zpp-ue-o-usp.ows.json",
+ "properties": {
+  "lang": "de",
+  "title": "Innere Nutzungen kommunale Nutzungsplanung (ZPP, UeO, USP)",
+  "updated": "2026-11-20T16:05:37+01:00",
+  "subtitle": "GeoHarvester topic: 2 providers",
+  "links": {
+   "profiles": [
+    {
+     "href": "http://www.opengis.net/spec/owc-geojson/1.0/req/core"
+    }
+   ]
+  }
+ },
+ "features": [
+  {
+   "type": "Feature",
+   "id": "https://www.geoservice.apps.be.ch/geoservice3/services/a42geo/of_planningcadastre07_de_ms_wms/MapServer/WMSServer#NUPLA_GNZPPUEO_VW_14647",
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       6.889,
+       46.332
+      ],
+      [
+       8.405,
+       46.332
+      ],
+      [
+       8.405,
+       47.304
+      ],
+      [
+       6.889,
+       47.304
+      ],
+      [
+       6.889,
+       46.332
+      ]
+     ]
+    ]
+   },
+   "properties": {
+    "title": "Innere Nutzungen kommunale Nutzungsplanung (ZPP, UeO, USP)",
+    "updated": "2026-11-20T16:05:37+01:00",
+    "publisher": "Kanton Bern",
+    "layer": "NUPLA_GNZPPUEO_VW_14647",
+    "offerings": [
+     {
+      "code": "http://www.opengis.net/spec/owc-geojson/1.0/req/wms",
+      "operations": [
+       {
+        "code": "GetCapabilities",
+        "method": "GET",
+        "type": "application/xml",
+        "href": "https://www.geoservice.apps.be.ch/geoservice3/services/a42geo/of_planningcadastre07_de_ms_wms/MapServer/WMSServer?SERVICE=WMS&REQUEST=GetCapabilities"
+       }
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": "https://map.geo.sz.ch/mapserv_proxy#ch.sz.a094b.oereb.raumplanung.nutzungsplanung_kommunal.innerthal.grundnutzung",
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       8.86,
+       47.016
+      ],
+      [
+       8.985,
+       47.016
+      ],
+      [
+       8.985,
+       47.126
+      ],
+      [
+       8.86,
+       47.126
+      ],
+      [
+       8.86,
+       47.016
+      ]
+     ]
+    ]
+   },
+   "properties": {
+    "title": "ÖREB: Nutzungsplanung kommunal, Innerthal, Grundnutzung",
+    "updated": "2026-11-20T16:05:37+01:00",
+    "publisher": "Kanton Schwyz",
+    "layer": "ch.sz.a094b.oereb.raumplanung.nutzungsplanung_kommunal.innerthal.grundnutzung",
+    "offerings": [
+     {
+      "code": "http://www.opengis.net/spec/owc-geojson/1.0/req/wms",
+      "operations": [
+       {
+        "code": "GetCapabilities",
+        "method": "GET",
+        "type": "application/xml",
+        "href": "https://map.geo.sz.ch/mapserv_proxy?SERVICE=WMS&REQUEST=GetCapabilities"
+       }
+      ]
+     }
+    ]
+   }
+  }
+ ]
+}

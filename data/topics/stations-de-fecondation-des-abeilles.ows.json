@@ -1,0 +1,119 @@
+{
+ "type": "FeatureCollection",
+ "id": "https://davidoesch.github.io/geoservice_harvester_poc/data/topics/stations-de-fecondation-des-abeilles.ows.json",
+ "properties": {
+  "lang": "de",
+  "title": "Stations de fécondation des abeilles",
+  "updated": "2026-11-20T16:13:33+01:00",
+  "subtitle": "GeoHarvester topic: 2 providers",
+  "links": {
+   "profiles": [
+    {
+     "href": "http://www.opengis.net/spec/owc-geojson/1.0/req/core"
+    }
+   ]
+  }
+ },
+ "features": [
+  {
+   "type": "Feature",
+   "id": "https://maps.fr.ch/ags/services/OpenData/Stations_de_fecondation_des_abeilles/MapServer/WMSServer#0",
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       6.978,
+       46.439
+      ],
+      [
+       7.309,
+       46.439
+      ],
+      [
+       7.309,
+       46.613
+      ],
+      [
+       6.978,
+       46.613
+      ],
+      [
+       6.978,
+       46.439
+      ]
+     ]
+    ]
+   },
+   "properties": {
+    "title": "Stations de fécondation des abeilles",
+    "updated": "2026-11-20T16:13:33+01:00",
+    "publisher": "Kanton Freiburg",
+    "layer": "0",
+    "offerings": [
+     {
+      "code": "http://www.opengis.net/spec/owc-geojson/1.0/req/wms",
+      "operations": [
+       {
+        "code": "GetCapabilities",
+        "method": "GET",
+        "type": "application/xml",
+        "href": "https://maps.fr.ch/ags/services/OpenData/Stations_de_fecondation_des_abeilles/MapServer/WMSServer?SERVICE=WMS&REQUEST=GetCapabilities"
+       }
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": "https://www.ogc.vd.ch/public/services/OGC/wmsVD/Mapserver/WMSServer#vd.station_fecondation_apicole",
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       6.153,
+       46.424
+      ],
+      [
+       7.051,
+       46.424
+      ],
+      [
+       7.051,
+       46.497
+      ],
+      [
+       6.153,
+       46.497
+      ],
+      [
+       6.153,
+       46.424
+      ]
+     ]
+    ]
+   },
+   "properties": {
+    "title": "vd.station_fecondation_apicole",
+    "updated": "2026-11-20T16:13:33+01:00",
+    "publisher": "Kanton Waadt",
+    "layer": "vd.station_fecondation_apicole",
+    "offerings": [
+     {
+      "code": "http://www.opengis.net/spec/owc-geojson/1.0/req/wms",
+      "operations": [
+       {
+        "code": "GetCapabilities",
+        "method": "GET",
+        "type": "application/xml",
+        "href": "https://www.ogc.vd.ch/public/services/OGC/wmsVD/Mapserver/WMSServer?SERVICE=WMS&REQUEST=GetCapabilities"
+       }
+      ]
+     }
+    ]
+   }
+  }
+ ]
+}

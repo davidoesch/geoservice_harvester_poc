@@ -1,0 +1,219 @@
+{
+ "type": "FeatureCollection",
+ "id": "https://davidoesch.github.io/geoservice_harvester_poc/data/topics/zones-reservees.ows.json",
+ "properties": {
+  "lang": "de",
+  "title": "Zones réservées",
+  "updated": "2026-11-20T16:13:33+01:00",
+  "subtitle": "GeoHarvester topic: 4 providers",
+  "links": {
+   "profiles": [
+    {
+     "href": "http://www.opengis.net/spec/owc-geojson/1.0/req/core"
+    }
+   ]
+  }
+ },
+ "features": [
+  {
+   "type": "Feature",
+   "id": "https://www.sigip.ch/mapserv_proxy?ogcserver=ows#zone_reservee",
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       6.509,
+       46.426
+      ],
+      [
+       6.941,
+       46.426
+      ],
+      [
+       6.941,
+       46.682
+      ],
+      [
+       6.509,
+       46.682
+      ],
+      [
+       6.509,
+       46.426
+      ]
+     ]
+    ]
+   },
+   "properties": {
+    "title": "zone_reservee",
+    "updated": "2026-11-20T16:13:33+01:00",
+    "publisher": "Pully (SIGIP)",
+    "layer": "zone_reservee",
+    "offerings": [
+     {
+      "code": "http://www.opengis.net/spec/owc-geojson/1.0/req/wms",
+      "operations": [
+       {
+        "code": "GetCapabilities",
+        "method": "GET",
+        "type": "application/xml",
+        "href": "https://www.sigip.ch/mapserv_proxy?ogcserver=ows&SERVICE=WMS&REQUEST=GetCapabilities"
+       }
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": "https://sitn.ne.ch/services/wms#at221_zones_reservees",
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       6.115,
+       46.585
+      ],
+      [
+       7.44,
+       46.585
+      ],
+      [
+       7.44,
+       47.402
+      ],
+      [
+       6.115,
+       47.402
+      ],
+      [
+       6.115,
+       46.585
+      ]
+     ]
+    ]
+   },
+   "properties": {
+    "title": "at221_zones_reservees",
+    "updated": "2026-11-20T16:13:33+01:00",
+    "publisher": "Kanton Neuenburg",
+    "layer": "at221_zones_reservees",
+    "offerings": [
+     {
+      "code": "http://www.opengis.net/spec/owc-geojson/1.0/req/wms",
+      "operations": [
+       {
+        "code": "GetCapabilities",
+        "method": "GET",
+        "type": "application/xml",
+        "href": "https://sitn.ne.ch/services/wms?SERVICE=WMS&REQUEST=GetCapabilities"
+       }
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": "https://www.ogc.vd.ch/public/services/OGC/wmsVD/Mapserver/WMSServer#vd.zone_reservee",
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       6.062,
+       46.199
+      ],
+      [
+       7.202,
+       46.199
+      ],
+      [
+       7.202,
+       46.962
+      ],
+      [
+       6.062,
+       46.962
+      ],
+      [
+       6.062,
+       46.199
+      ]
+     ]
+    ]
+   },
+   "properties": {
+    "title": "vd.zone_reservee",
+    "updated": "2026-11-20T16:13:33+01:00",
+    "publisher": "Kanton Waadt",
+    "layer": "vd.zone_reservee",
+    "offerings": [
+     {
+      "code": "http://www.opengis.net/spec/owc-geojson/1.0/req/wms",
+      "operations": [
+       {
+        "code": "GetCapabilities",
+        "method": "GET",
+        "type": "application/xml",
+        "href": "https://www.ogc.vd.ch/public/services/OGC/wmsVD/Mapserver/WMSServer?SERVICE=WMS&REQUEST=GetCapabilities"
+       }
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": "https://sit.vs.ch/arcgis/services/PAZ/MapServer/WMSServer#7",
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       6.797,
+       45.934
+      ],
+      [
+       8.283,
+       45.934
+      ],
+      [
+       8.283,
+       46.5
+      ],
+      [
+       6.797,
+       46.5
+      ],
+      [
+       6.797,
+       45.934
+      ]
+     ]
+    ]
+   },
+   "properties": {
+    "title": "Zones réservées",
+    "updated": "2026-11-20T16:13:33+01:00",
+    "publisher": "Kanton Wallis",
+    "layer": "7",
+    "offerings": [
+     {
+      "code": "http://www.opengis.net/spec/owc-geojson/1.0/req/wms",
+      "operations": [
+       {
+        "code": "GetCapabilities",
+        "method": "GET",
+        "type": "application/xml",
+        "href": "https://sit.vs.ch/arcgis/services/PAZ/MapServer/WMSServer?SERVICE=WMS&REQUEST=GetCapabilities"
+       }
+      ]
+     }
+    ]
+   }
+  }
+ ]
+}

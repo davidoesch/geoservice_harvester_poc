@@ -1,0 +1,45 @@
+<!DOCTYPE qgis-layer-definition>
+<qlr>
+  <layer-tree-group expanded="1" checked="Qt::Checked" name="">
+    <layer-tree-group expanded="1" checked="Qt::Checked" name="GeoHarvester – Stadtkreise Zürich (Sicht SSZ)">
+      <layer-tree-layer expanded="0" checked="Qt::Checked" id="geoharvester_stadtkreise-zurich-sicht-ssz_0" name="Stadtgebiete_fla (Bern)" source="contextualWMSLegend=0&amp;crs=EPSG:2056&amp;dpiMode=7&amp;featureCount=10&amp;format=image/png&amp;layers=26&amp;styles&amp;url=https://map.bern.ch/arcgis/services/Geoportal/UNESCO_Stadtfugen_Plaetze/MapServer/WMSServer" providerKey="wms"/>
+      <layer-tree-layer expanded="0" checked="Qt::Checked" id="geoharvester_stadtkreise-zurich-sicht-ssz_1" name="Stadtkreise Zürich (Sicht SSZ) (Zürich)" source="contextualWMSLegend=0&amp;crs=EPSG:2056&amp;dpiMode=7&amp;featureCount=10&amp;format=image/png&amp;layers=Stadtkreise Zürich (Sicht SSZ)&amp;styles&amp;url=https://www.ogd.stadt-zuerich.ch/wms/geoportal/Stadtkreise" providerKey="wms"/>
+      <layer-tree-layer expanded="0" checked="Qt::Checked" id="geoharvester_stadtkreise-zurich-sicht-ssz_2" name="AGGLO_TACHE_URBAINE_2005 (GE)" source="contextualWMSLegend=0&amp;crs=EPSG:2056&amp;dpiMode=7&amp;featureCount=10&amp;format=image/png&amp;layers=0&amp;styles&amp;url=https://vector.sitg.ge.ch/arcgis/services/AGGLO_TACHE_URBAINE_2005/MapServer/WMSServer" providerKey="wms"/>
+      <layer-tree-layer expanded="0" checked="Qt::Checked" id="geoharvester_stadtkreise-zurich-sicht-ssz_3" name="[TI-028b.1] Locarno Territorio Urbano (TI)" source="contextualWMSLegend=0&amp;crs=EPSG:2056&amp;dpiMode=7&amp;featureCount=10&amp;format=image/png&amp;layers=ti.028b_1.ch2321rd&amp;styles&amp;url=https://wms.geo.ti.ch/service" providerKey="wms"/>
+    </layer-tree-group>
+  </layer-tree-group>
+  <maplayers>
+    <maplayer type="raster" hasScaleBasedVisibilityFlag="0" minScale="1e+08" maxScale="0" styleCategories="AllStyleCategories">
+      <extent><xmin>2600409</xmin><ymin>1199546</ymin><xmax>2600865</xmax><ymax>1200102</ymax></extent>
+      <id>geoharvester_stadtkreise-zurich-sicht-ssz_0</id>
+      <datasource>contextualWMSLegend=0&amp;crs=EPSG:2056&amp;dpiMode=7&amp;featureCount=10&amp;format=image/png&amp;layers=26&amp;styles&amp;url=https://map.bern.ch/arcgis/services/Geoportal/UNESCO_Stadtfugen_Plaetze/MapServer/WMSServer</datasource>
+      <layername>Stadtgebiete_fla (Bern)</layername>
+      <srs><spatialrefsys><proj4>+proj=somerc +lat_0=46.9524055555556 +lon_0=7.43958333333333 +k_0=1 +x_0=2600000 +y_0=1200000 +ellps=bessel +towgs84=674.374,15.056,405.346,0,0,0,0 +units=m +no_defs</proj4><srid>2056</srid><authid>EPSG:2056</authid><description>CH1903+ / LV95</description><projectionacronym>somerc</projectionacronym><ellipsoidacronym>EPSG:7004</ellipsoidacronym><geographicflag>false</geographicflag></spatialrefsys></srs>
+      <provider>wms</provider>
+    </maplayer>
+    <maplayer type="raster" hasScaleBasedVisibilityFlag="0" minScale="1e+08" maxScale="0" styleCategories="AllStyleCategories">
+      <extent><xmin>2676161</xmin><ymin>1241280</ymin><xmax>2689721</xmax><ymax>1254591</ymax></extent>
+      <id>geoharvester_stadtkreise-zurich-sicht-ssz_1</id>
+      <datasource>contextualWMSLegend=0&amp;crs=EPSG:2056&amp;dpiMode=7&amp;featureCount=10&amp;format=image/png&amp;layers=Stadtkreise Zürich (Sicht SSZ)&amp;styles&amp;url=https://www.ogd.stadt-zuerich.ch/wms/geoportal/Stadtkreise</datasource>
+      <layername>Stadtkreise Zürich (Sicht SSZ) (Zürich)</layername>
+      <srs><spatialrefsys><proj4>+proj=somerc +lat_0=46.9524055555556 +lon_0=7.43958333333333 +k_0=1 +x_0=2600000 +y_0=1200000 +ellps=bessel +towgs84=674.374,15.056,405.346,0,0,0,0 +units=m +no_defs</proj4><srid>2056</srid><authid>EPSG:2056</authid><description>CH1903+ / LV95</description><projectionacronym>somerc</projectionacronym><ellipsoidacronym>EPSG:7004</ellipsoidacronym><geographicflag>false</geographicflag></spatialrefsys></srs>
+      <provider>wms</provider>
+    </maplayer>
+    <maplayer type="raster" hasScaleBasedVisibilityFlag="0" minScale="1e+08" maxScale="0" styleCategories="AllStyleCategories">
+      <extent><xmin>2465152</xmin><ymin>1088654</ymin><xmax>2531437</xmax><ymax>1153470</ymax></extent>
+      <id>geoharvester_stadtkreise-zurich-sicht-ssz_2</id>
+      <datasource>contextualWMSLegend=0&amp;crs=EPSG:2056&amp;dpiMode=7&amp;featureCount=10&amp;format=image/png&amp;layers=0&amp;styles&amp;url=https://vector.sitg.ge.ch/arcgis/services/AGGLO_TACHE_URBAINE_2005/MapServer/WMSServer</datasource>
+      <layername>AGGLO_TACHE_URBAINE_2005 (GE)</layername>
+      <srs><spatialrefsys><proj4>+proj=somerc +lat_0=46.9524055555556 +lon_0=7.43958333333333 +k_0=1 +x_0=2600000 +y_0=1200000 +ellps=bessel +towgs84=674.374,15.056,405.346,0,0,0,0 +units=m +no_defs</proj4><srid>2056</srid><authid>EPSG:2056</authid><description>CH1903+ / LV95</description><projectionacronym>somerc</projectionacronym><ellipsoidacronym>EPSG:7004</ellipsoidacronym><geographicflag>false</geographicflag></spatialrefsys></srs>
+      <provider>wms</provider>
+    </maplayer>
+    <maplayer type="raster" hasScaleBasedVisibilityFlag="0" minScale="1e+08" maxScale="0" styleCategories="AllStyleCategories">
+      <extent><xmin>2681201</xmin><ymin>1090255</ymin><xmax>2727270</xmax><ymax>1137856</ymax></extent>
+      <id>geoharvester_stadtkreise-zurich-sicht-ssz_3</id>
+      <datasource>contextualWMSLegend=0&amp;crs=EPSG:2056&amp;dpiMode=7&amp;featureCount=10&amp;format=image/png&amp;layers=ti.028b_1.ch2321rd&amp;styles&amp;url=https://wms.geo.ti.ch/service</datasource>
+      <layername>[TI-028b.1] Locarno Territorio Urbano (TI)</layername>
+      <srs><spatialrefsys><proj4>+proj=somerc +lat_0=46.9524055555556 +lon_0=7.43958333333333 +k_0=1 +x_0=2600000 +y_0=1200000 +ellps=bessel +towgs84=674.374,15.056,405.346,0,0,0,0 +units=m +no_defs</proj4><srid>2056</srid><authid>EPSG:2056</authid><description>CH1903+ / LV95</description><projectionacronym>somerc</projectionacronym><ellipsoidacronym>EPSG:7004</ellipsoidacronym><geographicflag>false</geographicflag></spatialrefsys></srs>
+      <provider>wms</provider>
+    </maplayer>
+  </maplayers>
+</qlr>

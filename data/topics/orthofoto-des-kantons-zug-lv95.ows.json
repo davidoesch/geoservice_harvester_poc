@@ -1,0 +1,219 @@
+{
+ "type": "FeatureCollection",
+ "id": "https://davidoesch.github.io/geoservice_harvester_poc/data/topics/orthofoto-des-kantons-zug-lv95.ows.json",
+ "properties": {
+  "lang": "de",
+  "title": "Orthofoto des Kantons Zug (LV95)",
+  "updated": "2026-11-20T16:13:33+01:00",
+  "subtitle": "GeoHarvester topic: 4 providers",
+  "links": {
+   "profiles": [
+    {
+     "href": "http://www.opengis.net/spec/owc-geojson/1.0/req/core"
+    }
+   ]
+  }
+ },
+ "features": [
+  {
+   "type": "Feature",
+   "id": "https://www.sigip.ch/mapserv_proxy?ogcserver=ows#ortho2005",
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       6.67,
+       46.509
+      ],
+      [
+       6.723,
+       46.509
+      ],
+      [
+       6.723,
+       46.545
+      ],
+      [
+       6.67,
+       46.545
+      ],
+      [
+       6.67,
+       46.509
+      ]
+     ]
+    ]
+   },
+   "properties": {
+    "title": "ortho2005",
+    "updated": "2026-11-20T16:13:33+01:00",
+    "publisher": "Pully (SIGIP)",
+    "layer": "ortho2005",
+    "offerings": [
+     {
+      "code": "http://www.opengis.net/spec/owc-geojson/1.0/req/wms",
+      "operations": [
+       {
+        "code": "GetCapabilities",
+        "method": "GET",
+        "type": "application/xml",
+        "href": "https://www.sigip.ch/mapserv_proxy?ogcserver=ows&SERVICE=WMS&REQUEST=GetCapabilities"
+       }
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": "https://sitn.ne.ch/services/wmts?SERVICE=WMTS&REQUEST=GetCapabilities#ortholac2015",
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       5.01,
+       45.356
+      ],
+      [
+       11.484,
+       45.356
+      ],
+      [
+       11.484,
+       48.387
+      ],
+      [
+       5.01,
+       48.387
+      ],
+      [
+       5.01,
+       45.356
+      ]
+     ]
+    ]
+   },
+   "properties": {
+    "title": "ortholac2015",
+    "updated": "2026-11-20T16:13:33+01:00",
+    "publisher": "Kanton Neuenburg",
+    "layer": "ortholac2015",
+    "offerings": [
+     {
+      "code": "http://www.opengis.net/spec/owc-geojson/1.0/req/wmts",
+      "operations": [
+       {
+        "code": "GetCapabilities",
+        "method": "GET",
+        "type": "application/xml",
+        "href": "https://sitn.ne.ch/services/wmts?SERVICE=WMTS&REQUEST=GetCapabilities"
+       }
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": "https://ows-raster.geo.tg.ch/geofy_access_proxy/orthofoto2017#Orthofoto2017",
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       8.631,
+       47.348
+      ],
+      [
+       9.505,
+       47.348
+      ],
+      [
+       9.505,
+       47.711
+      ],
+      [
+       8.631,
+       47.711
+      ],
+      [
+       8.631,
+       47.348
+      ]
+     ]
+    ]
+   },
+   "properties": {
+    "title": "Orthofoto2017",
+    "updated": "2026-11-20T16:13:33+01:00",
+    "publisher": "Kanton Thurgau",
+    "layer": "Orthofoto2017",
+    "offerings": [
+     {
+      "code": "http://www.opengis.net/spec/owc-geojson/1.0/req/wms",
+      "operations": [
+       {
+        "code": "GetCapabilities",
+        "method": "GET",
+        "type": "application/xml",
+        "href": "https://ows-raster.geo.tg.ch/geofy_access_proxy/orthofoto2017?SERVICE=WMS&REQUEST=GetCapabilities"
+       }
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": "https://services.geo.zg.ch/tc/wmts/1.0.0/WMTSCapabilities.xml#zg.orthofoto",
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       8.36,
+       47.052
+      ],
+      [
+       8.733,
+       47.052
+      ],
+      [
+       8.733,
+       47.262
+      ],
+      [
+       8.36,
+       47.262
+      ],
+      [
+       8.36,
+       47.052
+      ]
+     ]
+    ]
+   },
+   "properties": {
+    "title": "Orthofoto des Kantons Zug (LV95)",
+    "updated": "2026-11-20T16:13:33+01:00",
+    "publisher": "Kanton Zug",
+    "layer": "zg.orthofoto",
+    "offerings": [
+     {
+      "code": "http://www.opengis.net/spec/owc-geojson/1.0/req/wmts",
+      "operations": [
+       {
+        "code": "GetCapabilities",
+        "method": "GET",
+        "type": "application/xml",
+        "href": "https://services.geo.zg.ch/tc/wmts/1.0.0/WMTSCapabilities.xml"
+       }
+      ]
+     }
+    ]
+   }
+  }
+ ]
+}

@@ -1,0 +1,769 @@
+{
+ "type": "FeatureCollection",
+ "id": "https://davidoesch.github.io/geoservice_harvester_poc/data/topics/kaltluftsystem.ows.json",
+ "properties": {
+  "lang": "de",
+  "title": "Kaltluftsystem",
+  "updated": "2026-11-20T16:13:33+01:00",
+  "subtitle": "GeoHarvester topic: 15 providers",
+  "links": {
+   "profiles": [
+    {
+     "href": "http://www.opengis.net/spec/owc-geojson/1.0/req/core"
+    }
+   ]
+  }
+ },
+ "features": [
+  {
+   "type": "Feature",
+   "id": "https://map.lausanne.ch/mapserv_proxy?ogcserver=source+for+image%2Fpng#climat_air_froid_debit",
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       5.961,
+       45.821
+      ],
+      [
+       10.604,
+       45.821
+      ],
+      [
+       10.604,
+       47.821
+      ],
+      [
+       5.961,
+       47.821
+      ],
+      [
+       5.961,
+       45.821
+      ]
+     ]
+    ]
+   },
+   "properties": {
+    "title": "climat_air_froid_debit",
+    "updated": "2026-11-20T16:13:33+01:00",
+    "publisher": "Stadt Lausanne",
+    "layer": "climat_air_froid_debit",
+    "offerings": [
+     {
+      "code": "http://www.opengis.net/spec/owc-geojson/1.0/req/wms",
+      "operations": [
+       {
+        "code": "GetCapabilities",
+        "method": "GET",
+        "type": "application/xml",
+        "href": "https://map.lausanne.ch/mapserv_proxy?ogcserver=source+for+image%2Fpng&SERVICE=WMS&REQUEST=GetCapabilities"
+       }
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": "https://www.ogd.stadt-zuerich.ch/wms/geoportal/Kommunaler_Richtplan_Siedlung_Landschaft_oeffentliche_Bauten_und_Anlagen___Textkarten#Kaltluftsystem",
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       8.447,
+       47.319
+      ],
+      [
+       8.627,
+       47.319
+      ],
+      [
+       8.627,
+       47.433
+      ],
+      [
+       8.447,
+       47.433
+      ],
+      [
+       8.447,
+       47.319
+      ]
+     ]
+    ]
+   },
+   "properties": {
+    "title": "Kaltluftsystem",
+    "updated": "2026-11-20T16:13:33+01:00",
+    "publisher": "Stadt Zürich",
+    "layer": "Kaltluftsystem",
+    "offerings": [
+     {
+      "code": "http://www.opengis.net/spec/owc-geojson/1.0/req/wms",
+      "operations": [
+       {
+        "code": "GetCapabilities",
+        "method": "GET",
+        "type": "application/xml",
+        "href": "https://www.ogd.stadt-zuerich.ch/wms/geoportal/Kommunaler_Richtplan_Siedlung_Landschaft_oeffentliche_Bauten_und_Anlagen___Textkarten?SERVICE=WMS&REQUEST=GetCapabilities"
+       }
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": "https://ows.geodatenonline.ch/ogd_wms_kommunaler_richtplan_stadt_zug#rp_thema_s2_stadt_zug",
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       8.347,
+       47.048
+      ],
+      [
+       8.714,
+       47.048
+      ],
+      [
+       8.714,
+       47.267
+      ],
+      [
+       8.347,
+       47.267
+      ],
+      [
+       8.347,
+       47.048
+      ]
+     ]
+    ]
+   },
+   "properties": {
+    "title": "S2 Kaltluftzufuhr",
+    "updated": "2026-11-20T16:13:33+01:00",
+    "publisher": "Stadt Zug",
+    "layer": "rp_thema_s2_stadt_zug",
+    "offerings": [
+     {
+      "code": "http://www.opengis.net/spec/owc-geojson/1.0/req/wms",
+      "operations": [
+       {
+        "code": "GetCapabilities",
+        "method": "GET",
+        "type": "application/xml",
+        "href": "https://ows.geodatenonline.ch/ogd_wms_kommunaler_richtplan_stadt_zug?SERVICE=WMS&REQUEST=GetCapabilities"
+       }
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": "https://wms.geo.ag.ch/public/ows#ch_ag_geo_alg_kkkaltlueinw_01",
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       7.712,
+       47.138
+      ],
+      [
+       8.452,
+       47.138
+      ],
+      [
+       8.452,
+       47.622
+      ],
+      [
+       7.712,
+       47.622
+      ],
+      [
+       7.712,
+       47.138
+      ]
+     ]
+    ]
+   },
+   "properties": {
+    "title": "Kaltlufteinwirkbereich im Siedlungsgebiet",
+    "updated": "2026-11-20T16:13:33+01:00",
+    "publisher": "Kanton Aargau",
+    "layer": "ch_ag_geo_alg_kkkaltlueinw_01",
+    "offerings": [
+     {
+      "code": "http://www.opengis.net/spec/owc-geojson/1.0/req/wms",
+      "operations": [
+       {
+        "code": "GetCapabilities",
+        "method": "GET",
+        "type": "application/xml",
+        "href": "https://wms.geo.ag.ch/public/ows?SERVICE=WMS&REQUEST=GetCapabilities"
+       }
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": "https://www.geoportal.ch/services/wms/ktar#ch.geoportal.atmosphaere_luft_klima.3154.0.kaltluftvolumenstromdichte_und_ueberhitzung_kt",
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       9.178,
+       47.238
+      ],
+      [
+       9.644,
+       47.238
+      ],
+      [
+       9.644,
+       47.478
+      ],
+      [
+       9.178,
+       47.478
+      ],
+      [
+       9.178,
+       47.238
+      ]
+     ]
+    ]
+   },
+   "properties": {
+    "title": "Kaltluftvolumenstromdichte und Überhitzung Kt",
+    "updated": "2026-11-20T16:13:33+01:00",
+    "publisher": "Kanton Appenzell Ausserrhoden",
+    "layer": "ch.geoportal.atmosphaere_luft_klima.3154.0.kaltluftvolumenstromdichte_und_ueberhitzung_kt",
+    "offerings": [
+     {
+      "code": "http://www.opengis.net/spec/owc-geojson/1.0/req/wms",
+      "operations": [
+       {
+        "code": "GetCapabilities",
+        "method": "GET",
+        "type": "application/xml",
+        "href": "https://www.geoportal.ch/services/wms/ktar?SERVICE=WMS&REQUEST=GetCapabilities"
+       }
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": "https://www.geoservice.apps.be.ch/geoservice3/services/a42geo/of_climatologymeteorologyatmosphere01_de_ms_wms/MapServer/WMSServer#KLIMAANK_KEINZG_VW_14578",
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       6.858,
+       46.323
+      ],
+      [
+       8.468,
+       46.323
+      ],
+      [
+       8.468,
+       47.337
+      ],
+      [
+       6.858,
+       47.337
+      ],
+      [
+       6.858,
+       46.323
+      ]
+     ]
+    ]
+   },
+   "properties": {
+    "title": "Prozessräume (Kaltlufteinzugsgebiete)",
+    "updated": "2026-11-20T16:13:33+01:00",
+    "publisher": "Kanton Bern",
+    "layer": "KLIMAANK_KEINZG_VW_14578",
+    "offerings": [
+     {
+      "code": "http://www.opengis.net/spec/owc-geojson/1.0/req/wms",
+      "operations": [
+       {
+        "code": "GetCapabilities",
+        "method": "GET",
+        "type": "application/xml",
+        "href": "https://www.geoservice.apps.be.ch/geoservice3/services/a42geo/of_climatologymeteorologyatmosphere01_de_ms_wms/MapServer/WMSServer?SERVICE=WMS&REQUEST=GetCapabilities"
+       }
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": "https://geowms.bl.ch/#klima_analysekarten_2020_kaltlufteinwirkbereich_siedlungsgebiet",
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       7.306,
+       47.309
+      ],
+      [
+       8.037,
+       47.309
+      ],
+      [
+       8.037,
+       47.626
+      ],
+      [
+       7.306,
+       47.626
+      ],
+      [
+       7.306,
+       47.309
+      ]
+     ]
+    ]
+   },
+   "properties": {
+    "title": "Kaltlufteinwirkbereich Siedlungsgebiet",
+    "updated": "2026-11-20T16:13:33+01:00",
+    "publisher": "Kanton Basel-Landschaft",
+    "layer": "klima_analysekarten_2020_kaltlufteinwirkbereich_siedlungsgebiet",
+    "offerings": [
+     {
+      "code": "http://www.opengis.net/spec/owc-geojson/1.0/req/wms",
+      "operations": [
+       {
+        "code": "GetCapabilities",
+        "method": "GET",
+        "type": "application/xml",
+        "href": "https://geowms.bl.ch/?SERVICE=WMS&REQUEST=GetCapabilities"
+       }
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": "https://wms.geo.bs.ch/#KL_Kaltluftvolumenstrom_2030",
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       7.239,
+       47.264
+      ],
+      [
+       8.105,
+       47.264
+      ],
+      [
+       8.105,
+       47.761
+      ],
+      [
+       7.239,
+       47.761
+      ],
+      [
+       7.239,
+       47.264
+      ]
+     ]
+    ]
+   },
+   "properties": {
+    "title": "Kaltluftvolumenstrom [m³/s*m] (2030)",
+    "updated": "2026-11-20T16:13:33+01:00",
+    "publisher": "Kanton Basel-Stadt",
+    "layer": "KL_Kaltluftvolumenstrom_2030",
+    "offerings": [
+     {
+      "code": "http://www.opengis.net/spec/owc-geojson/1.0/req/wms",
+      "operations": [
+       {
+        "code": "GetCapabilities",
+        "method": "GET",
+        "type": "application/xml",
+        "href": "https://wms.geo.bs.ch/?SERVICE=WMS&REQUEST=GetCapabilities"
+       }
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": "https://sitn.ne.ch/ogc-sitn-climat/wms#P0_Debit_air_froid",
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       6.114,
+       46.584
+      ],
+      [
+       7.439,
+       46.584
+      ],
+      [
+       7.439,
+       47.401
+      ],
+      [
+       6.114,
+       47.401
+      ],
+      [
+       6.114,
+       46.584
+      ]
+     ]
+    ]
+   },
+   "properties": {
+    "title": "P0_Debit_air_froid",
+    "updated": "2026-11-20T16:13:33+01:00",
+    "publisher": "Kanton Neuenburg",
+    "layer": "P0_Debit_air_froid",
+    "offerings": [
+     {
+      "code": "http://www.opengis.net/spec/owc-geojson/1.0/req/wms",
+      "operations": [
+       {
+        "code": "GetCapabilities",
+        "method": "GET",
+        "type": "application/xml",
+        "href": "https://sitn.ne.ch/ogc-sitn-climat/wms?SERVICE=WMS&REQUEST=GetCapabilities"
+       }
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": "https://wms.geo.sh.ch/wms#sh.klima.klimakarten.kaltlufteinwirkbereich",
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       8.405,
+       47.553
+      ],
+      [
+       8.88,
+       47.553
+      ],
+      [
+       8.88,
+       47.803
+      ],
+      [
+       8.405,
+       47.803
+      ],
+      [
+       8.405,
+       47.553
+      ]
+     ]
+    ]
+   },
+   "properties": {
+    "title": "Kaltlufteinwirkbereich",
+    "updated": "2026-11-20T16:13:33+01:00",
+    "publisher": "Kanton Schaffhausen",
+    "layer": "sh.klima.klimakarten.kaltlufteinwirkbereich",
+    "offerings": [
+     {
+      "code": "http://www.opengis.net/spec/owc-geojson/1.0/req/wms",
+      "operations": [
+       {
+        "code": "GetCapabilities",
+        "method": "GET",
+        "type": "application/xml",
+        "href": "https://wms.geo.sh.ch/wms?SERVICE=WMS&REQUEST=GetCapabilities"
+       }
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": "https://map.geo.sz.ch/mapserv_proxy#ch.sz.a250a.kaltluftproduktionsrate",
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       8.349,
+       46.858
+      ],
+      [
+       9.13,
+       46.858
+      ],
+      [
+       9.13,
+       47.307
+      ],
+      [
+       8.349,
+       47.307
+      ],
+      [
+       8.349,
+       46.858
+      ]
+     ]
+    ]
+   },
+   "properties": {
+    "title": "kaltluftproduktionsrate",
+    "updated": "2026-11-20T16:13:33+01:00",
+    "publisher": "Kanton Schwyz",
+    "layer": "ch.sz.a250a.kaltluftproduktionsrate",
+    "offerings": [
+     {
+      "code": "http://www.opengis.net/spec/owc-geojson/1.0/req/wms",
+      "operations": [
+       {
+        "code": "GetCapabilities",
+        "method": "GET",
+        "type": "application/xml",
+        "href": "https://map.geo.sz.ch/mapserv_proxy?SERVICE=WMS&REQUEST=GetCapabilities"
+       }
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": "https://ows-raster.geo.tg.ch/geofy_access_proxy/klimakarten#klimakarten_nacht_kaltluftvolumenstromdichte",
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       8.631,
+       47.348
+      ],
+      [
+       9.505,
+       47.348
+      ],
+      [
+       9.505,
+       47.711
+      ],
+      [
+       8.631,
+       47.711
+      ],
+      [
+       8.631,
+       47.348
+      ]
+     ]
+    ]
+   },
+   "properties": {
+    "title": "Kaltluftvolumenstromdichte",
+    "updated": "2026-11-20T16:13:33+01:00",
+    "publisher": "Kanton Thurgau",
+    "layer": "klimakarten_nacht_kaltluftvolumenstromdichte",
+    "offerings": [
+     {
+      "code": "http://www.opengis.net/spec/owc-geojson/1.0/req/wms",
+      "operations": [
+       {
+        "code": "GetCapabilities",
+        "method": "GET",
+        "type": "application/xml",
+        "href": "https://ows-raster.geo.tg.ch/geofy_access_proxy/klimakarten?SERVICE=WMS&REQUEST=GetCapabilities"
+       }
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": "https://www.ogc.vd.ch/raster/services/OGC/wmsVD/Mapserver/WMSServer#vd.debit_air_froid_4h_2060",
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       6.05,
+       46.181
+      ],
+      [
+       7.251,
+       46.181
+      ],
+      [
+       7.251,
+       46.989
+      ],
+      [
+       6.05,
+       46.989
+      ],
+      [
+       6.05,
+       46.181
+      ]
+     ]
+    ]
+   },
+   "properties": {
+    "title": "vd.debit_air_froid_4h_2060",
+    "updated": "2026-11-20T16:13:33+01:00",
+    "publisher": "Kanton Waadt",
+    "layer": "vd.debit_air_froid_4h_2060",
+    "offerings": [
+     {
+      "code": "http://www.opengis.net/spec/owc-geojson/1.0/req/wms",
+      "operations": [
+       {
+        "code": "GetCapabilities",
+        "method": "GET",
+        "type": "application/xml",
+        "href": "https://www.ogc.vd.ch/raster/services/OGC/wmsVD/Mapserver/WMSServer?SERVICE=WMS&REQUEST=GetCapabilities"
+       }
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": "https://services.geo.zg.ch/ows/klimaanalyse#zg_klimaanalyse_kaltluftvolumenstrom_4",
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       8.382,
+       47.076
+      ],
+      [
+       8.71,
+       47.076
+      ],
+      [
+       8.71,
+       47.253
+      ],
+      [
+       8.382,
+       47.253
+      ],
+      [
+       8.382,
+       47.076
+      ]
+     ]
+    ]
+   },
+   "properties": {
+    "title": "Kaltluftvolumentstrom 4 Uhr",
+    "updated": "2026-11-20T16:13:33+01:00",
+    "publisher": "Kanton Zug",
+    "layer": "zg_klimaanalyse_kaltluftvolumenstrom_4",
+    "offerings": [
+     {
+      "code": "http://www.opengis.net/spec/owc-geojson/1.0/req/wms",
+      "operations": [
+       {
+        "code": "GetCapabilities",
+        "method": "GET",
+        "type": "application/xml",
+        "href": "https://services.geo.zg.ch/ows/klimaanalyse?SERVICE=WMS&REQUEST=GetCapabilities"
+       }
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": "https://maps.zh.ch/wfs/OGDZHWFS#ms:ogd-0460_awel_lh_kaltlufteinwirkbereich_f",
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       8.157,
+       47.142
+      ],
+      [
+       9.037,
+       47.142
+      ],
+      [
+       9.037,
+       47.712
+      ],
+      [
+       8.157,
+       47.712
+      ],
+      [
+       8.157,
+       47.142
+      ]
+     ]
+    ]
+   },
+   "properties": {
+    "title": "KALTLUFTEINWIRKBEREICH_F (460.4)",
+    "updated": "2026-11-20T16:13:33+01:00",
+    "publisher": "Kanton Zürich",
+    "layer": "ms:ogd-0460_awel_lh_kaltlufteinwirkbereich_f",
+    "offerings": [
+     {
+      "code": "http://www.opengis.net/spec/owc-geojson/1.0/req/wfs",
+      "operations": [
+       {
+        "code": "GetCapabilities",
+        "method": "GET",
+        "type": "application/xml",
+        "href": "https://maps.zh.ch/wfs/OGDZHWFS?SERVICE=WFS&REQUEST=GetCapabilities"
+       }
+      ]
+     }
+    ]
+   }
+  }
+ ]
+}

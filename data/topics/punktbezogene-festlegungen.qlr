@@ -1,0 +1,27 @@
+<!DOCTYPE qgis-layer-definition>
+<qlr>
+  <layer-tree-group expanded="1" checked="Qt::Checked" name="">
+    <layer-tree-group expanded="1" checked="Qt::Checked" name="GeoHarvester – Punktbezogene Festlegungen">
+      <layer-tree-layer expanded="0" checked="Qt::Checked" id="geoharvester_punktbezogene-festlegungen_0" name="Punktbezogene Festlegungen (BE)" source="contextualWMSLegend=0&amp;crs=EPSG:2056&amp;dpiMode=7&amp;featureCount=10&amp;format=image/png&amp;layers=geodb.nupla_uept&amp;styles&amp;url=https://oerebservice.apps.be.ch/cgi-bin/mapserv.fcgi?map=oereb_de" providerKey="wms"/>
+      <layer-tree-layer expanded="0" checked="Qt::Checked" id="geoharvester_punktbezogene-festlegungen_1" name="Punktbezogene Festlegungen (VS)" source="contextualWMSLegend=0&amp;crs=EPSG:2056&amp;dpiMode=7&amp;featureCount=10&amp;format=image/png&amp;layers=3&amp;styles&amp;url=https://sit.vs.ch/arcgis/services/ZNP/MapServer/WMSServer" providerKey="wms"/>
+    </layer-tree-group>
+  </layer-tree-group>
+  <maplayers>
+    <maplayer type="raster" hasScaleBasedVisibilityFlag="0" minScale="1e+08" maxScale="0" styleCategories="AllStyleCategories">
+      <extent><xmin>2549268</xmin><ymin>1120498</ymin><xmax>2688987</xmax><ymax>1248242</ymax></extent>
+      <id>geoharvester_punktbezogene-festlegungen_0</id>
+      <datasource>contextualWMSLegend=0&amp;crs=EPSG:2056&amp;dpiMode=7&amp;featureCount=10&amp;format=image/png&amp;layers=geodb.nupla_uept&amp;styles&amp;url=https://oerebservice.apps.be.ch/cgi-bin/mapserv.fcgi?map=oereb_de</datasource>
+      <layername>Punktbezogene Festlegungen (BE)</layername>
+      <srs><spatialrefsys><proj4>+proj=somerc +lat_0=46.9524055555556 +lon_0=7.43958333333333 +k_0=1 +x_0=2600000 +y_0=1200000 +ellps=bessel +towgs84=674.374,15.056,405.346,0,0,0,0 +units=m +no_defs</proj4><srid>2056</srid><authid>EPSG:2056</authid><description>CH1903+ / LV95</description><projectionacronym>somerc</projectionacronym><ellipsoidacronym>EPSG:7004</ellipsoidacronym><geographicflag>false</geographicflag></spatialrefsys></srs>
+      <provider>wms</provider>
+    </maplayer>
+    <maplayer type="raster" hasScaleBasedVisibilityFlag="0" minScale="1e+08" maxScale="0" styleCategories="AllStyleCategories">
+      <extent><xmin>2485000</xmin><ymin>1075000</ymin><xmax>2834000</xmax><ymax>1296000</ymax></extent>
+      <id>geoharvester_punktbezogene-festlegungen_1</id>
+      <datasource>contextualWMSLegend=0&amp;crs=EPSG:2056&amp;dpiMode=7&amp;featureCount=10&amp;format=image/png&amp;layers=3&amp;styles&amp;url=https://sit.vs.ch/arcgis/services/ZNP/MapServer/WMSServer</datasource>
+      <layername>Punktbezogene Festlegungen (VS)</layername>
+      <srs><spatialrefsys><proj4>+proj=somerc +lat_0=46.9524055555556 +lon_0=7.43958333333333 +k_0=1 +x_0=2600000 +y_0=1200000 +ellps=bessel +towgs84=674.374,15.056,405.346,0,0,0,0 +units=m +no_defs</proj4><srid>2056</srid><authid>EPSG:2056</authid><description>CH1903+ / LV95</description><projectionacronym>somerc</projectionacronym><ellipsoidacronym>EPSG:7004</ellipsoidacronym><geographicflag>false</geographicflag></spatialrefsys></srs>
+      <provider>wms</provider>
+    </maplayer>
+  </maplayers>
+</qlr>

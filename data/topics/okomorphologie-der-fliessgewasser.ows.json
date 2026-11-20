@@ -1,0 +1,119 @@
+{
+ "type": "FeatureCollection",
+ "id": "https://davidoesch.github.io/geoservice_harvester_poc/data/topics/okomorphologie-der-fliessgewasser.ows.json",
+ "properties": {
+  "lang": "de",
+  "title": "Ökomorphologie der Fliessgewässer",
+  "updated": "2026-11-20T16:05:37+01:00",
+  "subtitle": "GeoHarvester topic: 2 providers",
+  "links": {
+   "profiles": [
+    {
+     "href": "http://www.opengis.net/spec/owc-geojson/1.0/req/core"
+    }
+   ]
+  }
+ },
+ "features": [
+  {
+   "type": "Feature",
+   "id": "https://www.geoservice.apps.be.ch/geoservice3/services/a42geo/of_inlandwaters02_de_ms_wms/MapServer/WMSServer#OEKOMORF_OEKOFG_VW_1320",
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       6.861,
+       46.334
+      ],
+      [
+       8.45,
+       46.334
+      ],
+      [
+       8.45,
+       47.345
+      ],
+      [
+       6.861,
+       47.345
+      ],
+      [
+       6.861,
+       46.334
+      ]
+     ]
+    ]
+   },
+   "properties": {
+    "title": "Ökomorphologie der Fliessgewässer",
+    "updated": "2026-11-20T16:05:37+01:00",
+    "publisher": "Kanton Bern",
+    "layer": "OEKOMORF_OEKOFG_VW_1320",
+    "offerings": [
+     {
+      "code": "http://www.opengis.net/spec/owc-geojson/1.0/req/wms",
+      "operations": [
+       {
+        "code": "GetCapabilities",
+        "method": "GET",
+        "type": "application/xml",
+        "href": "https://www.geoservice.apps.be.ch/geoservice3/services/a42geo/of_inlandwaters02_de_ms_wms/MapServer/WMSServer?SERVICE=WMS&REQUEST=GetCapabilities"
+       }
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": "https://geo.so.ch/api/wms#ch.so.afu.fliessgewaesser.oekomorphologie",
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       7.3,
+       47.056
+      ],
+      [
+       8.048,
+       47.056
+      ],
+      [
+       8.048,
+       47.508
+      ],
+      [
+       7.3,
+       47.508
+      ],
+      [
+       7.3,
+       47.056
+      ]
+     ]
+    ]
+   },
+   "properties": {
+    "title": "Ökomorphologie der Fliessgewässer",
+    "updated": "2026-11-20T16:05:37+01:00",
+    "publisher": "Kanton Solothurn",
+    "layer": "ch.so.afu.fliessgewaesser.oekomorphologie",
+    "offerings": [
+     {
+      "code": "http://www.opengis.net/spec/owc-geojson/1.0/req/wms",
+      "operations": [
+       {
+        "code": "GetCapabilities",
+        "method": "GET",
+        "type": "application/xml",
+        "href": "https://geo.so.ch/api/wms?SERVICE=WMS&REQUEST=GetCapabilities"
+       }
+      ]
+     }
+    ]
+   }
+  }
+ ]
+}

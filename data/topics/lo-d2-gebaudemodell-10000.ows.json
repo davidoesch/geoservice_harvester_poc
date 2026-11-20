@@ -1,0 +1,119 @@
+{
+ "type": "FeatureCollection",
+ "id": "https://davidoesch.github.io/geoservice_harvester_poc/data/topics/lo-d2-gebaudemodell-10000.ows.json",
+ "properties": {
+  "lang": "de",
+  "title": "LoD2-Gebäudemodell > 10000",
+  "updated": "2026-11-20T16:05:37+01:00",
+  "subtitle": "GeoHarvester topic: 2 providers",
+  "links": {
+   "profiles": [
+    {
+     "href": "http://www.opengis.net/spec/owc-geojson/1.0/req/core"
+    }
+   ]
+  }
+ },
+ "features": [
+  {
+   "type": "Feature",
+   "id": "https://wms.geo.admin.ch/#ch.bag.zeckenstichmodell",
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       5.14,
+       45.398
+      ],
+      [
+       11.478,
+       45.398
+      ],
+      [
+       11.478,
+       48.231
+      ],
+      [
+       5.14,
+       48.231
+      ],
+      [
+       5.14,
+       45.398
+      ]
+     ]
+    ]
+   },
+   "properties": {
+    "title": "Zeckenmodell",
+    "updated": "2026-11-20T16:05:37+01:00",
+    "publisher": "Bund (geo.admin.ch)",
+    "layer": "ch.bag.zeckenstichmodell",
+    "offerings": [
+     {
+      "code": "http://www.opengis.net/spec/owc-geojson/1.0/req/wms",
+      "operations": [
+       {
+        "code": "GetCapabilities",
+        "method": "GET",
+        "type": "application/xml",
+        "href": "https://wms.geo.admin.ch/?SERVICE=WMS&REQUEST=GetCapabilities"
+       }
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": "https://www.ogd.stadt-zuerich.ch/wms/geoportal/3D_Dachmodell_LoD2_Jahresstand_2011#LoD2-Gebäudemodell > 10000",
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       8.481,
+       47.335
+      ],
+      [
+       8.604,
+       47.335
+      ],
+      [
+       8.604,
+       47.429
+      ],
+      [
+       8.481,
+       47.429
+      ],
+      [
+       8.481,
+       47.335
+      ]
+     ]
+    ]
+   },
+   "properties": {
+    "title": "LoD2-Gebäudemodell > 10000",
+    "updated": "2026-11-20T16:05:37+01:00",
+    "publisher": "Stadt Zürich",
+    "layer": "LoD2-Gebäudemodell > 10000",
+    "offerings": [
+     {
+      "code": "http://www.opengis.net/spec/owc-geojson/1.0/req/wms",
+      "operations": [
+       {
+        "code": "GetCapabilities",
+        "method": "GET",
+        "type": "application/xml",
+        "href": "https://www.ogd.stadt-zuerich.ch/wms/geoportal/3D_Dachmodell_LoD2_Jahresstand_2011?SERVICE=WMS&REQUEST=GetCapabilities"
+       }
+      ]
+     }
+    ]
+   }
+  }
+ ]
+}

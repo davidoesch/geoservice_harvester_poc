@@ -1,0 +1,269 @@
+{
+ "type": "FeatureCollection",
+ "id": "https://davidoesch.github.io/geoservice_harvester_poc/data/topics/aire-de-covoiturage.ows.json",
+ "properties": {
+  "lang": "de",
+  "title": "Aire de covoiturage",
+  "updated": "2026-11-20T16:13:33+01:00",
+  "subtitle": "GeoHarvester topic: 5 providers",
+  "links": {
+   "profiles": [
+    {
+     "href": "http://www.opengis.net/spec/owc-geojson/1.0/req/core"
+    }
+   ]
+  }
+ },
+ "features": [
+  {
+   "type": "Feature",
+   "id": "https://www.ogd.stadt-zuerich.ch/wfs/geoportal/Aktuelle_Tiefbauprojekte_im_oeffentlichen_Grund#aer_baustellen_a",
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       8.463,
+       47.328
+      ],
+      [
+       8.605,
+       47.328
+      ],
+      [
+       8.605,
+       47.428
+      ],
+      [
+       8.463,
+       47.428
+      ],
+      [
+       8.463,
+       47.328
+      ]
+     ]
+    ]
+   },
+   "properties": {
+    "title": "aer_baustellen_a",
+    "updated": "2026-11-20T16:13:33+01:00",
+    "publisher": "Stadt Zürich",
+    "layer": "aer_baustellen_a",
+    "offerings": [
+     {
+      "code": "http://www.opengis.net/spec/owc-geojson/1.0/req/wfs",
+      "operations": [
+       {
+        "code": "GetCapabilities",
+        "method": "GET",
+        "type": "application/xml",
+        "href": "https://www.ogd.stadt-zuerich.ch/wfs/geoportal/Aktuelle_Tiefbauprojekte_im_oeffentlichen_Grund?SERVICE=WFS&REQUEST=GetCapabilities"
+       }
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": "https://geowms.bl.ch/#luft_betriebe_anlagen_group",
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       5.702,
+       37.593
+      ],
+      [
+       10.643,
+       37.593
+      ],
+      [
+       10.643,
+       47.85
+      ],
+      [
+       5.702,
+       47.85
+      ],
+      [
+       5.702,
+       37.593
+      ]
+     ]
+    ]
+   },
+   "properties": {
+    "title": "Luft Betriebe und Anlagen",
+    "updated": "2026-11-20T16:13:33+01:00",
+    "publisher": "Kanton Basel-Landschaft",
+    "layer": "luft_betriebe_anlagen_group",
+    "offerings": [
+     {
+      "code": "http://www.opengis.net/spec/owc-geojson/1.0/req/wms",
+      "operations": [
+       {
+        "code": "GetCapabilities",
+        "method": "GET",
+        "type": "application/xml",
+        "href": "https://geowms.bl.ch/?SERVICE=WMS&REQUEST=GetCapabilities"
+       }
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": "https://vector.sitg.ge.ch/arcgis/services/AGGLO_AIRE_URB/MapServer/WMSServer#0",
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       4.69,
+       45.594
+      ],
+      [
+       7.047,
+       45.594
+      ],
+      [
+       7.047,
+       46.752
+      ],
+      [
+       4.69,
+       46.752
+      ],
+      [
+       4.69,
+       45.594
+      ]
+     ]
+    ]
+   },
+   "properties": {
+    "title": "AGGLO_AIRE_URB",
+    "updated": "2026-11-20T16:13:33+01:00",
+    "publisher": "Kanton Genf",
+    "layer": "0",
+    "offerings": [
+     {
+      "code": "http://www.opengis.net/spec/owc-geojson/1.0/req/wms",
+      "operations": [
+       {
+        "code": "GetCapabilities",
+        "method": "GET",
+        "type": "application/xml",
+        "href": "https://vector.sitg.ge.ch/arcgis/services/AGGLO_AIRE_URB/MapServer/WMSServer?SERVICE=WMS&REQUEST=GetCapabilities"
+       }
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": "https://geoservices.jura.ch/wms#ju.sdt_09_13",
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       6.696,
+       47.107
+      ],
+      [
+       7.644,
+       47.107
+      ],
+      [
+       7.644,
+       47.535
+      ],
+      [
+       6.696,
+       47.535
+      ],
+      [
+       6.696,
+       47.107
+      ]
+     ]
+    ]
+   },
+   "properties": {
+    "title": "Aire de covoiturage",
+    "updated": "2026-11-20T16:13:33+01:00",
+    "publisher": "Kanton Jura",
+    "layer": "ju.sdt_09_13",
+    "offerings": [
+     {
+      "code": "http://www.opengis.net/spec/owc-geojson/1.0/req/wms",
+      "operations": [
+       {
+        "code": "GetCapabilities",
+        "method": "GET",
+        "type": "application/xml",
+        "href": "https://geoservices.jura.ch/wms?SERVICE=WMS&REQUEST=GetCapabilities"
+       }
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": "https://www.ogc.vd.ch/public/services/OGC/wmsVD/Mapserver/WMSServer#vd.aire_repartition_classe_raccordement",
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       6.05,
+       46.181
+      ],
+      [
+       7.251,
+       46.181
+      ],
+      [
+       7.251,
+       46.982
+      ],
+      [
+       6.05,
+       46.982
+      ],
+      [
+       6.05,
+       46.181
+      ]
+     ]
+    ]
+   },
+   "properties": {
+    "title": "vd.aire_repartition_classe_raccordement",
+    "updated": "2026-11-20T16:13:33+01:00",
+    "publisher": "Kanton Waadt",
+    "layer": "vd.aire_repartition_classe_raccordement",
+    "offerings": [
+     {
+      "code": "http://www.opengis.net/spec/owc-geojson/1.0/req/wms",
+      "operations": [
+       {
+        "code": "GetCapabilities",
+        "method": "GET",
+        "type": "application/xml",
+        "href": "https://www.ogc.vd.ch/public/services/OGC/wmsVD/Mapserver/WMSServer?SERVICE=WMS&REQUEST=GetCapabilities"
+       }
+      ]
+     }
+    ]
+   }
+  }
+ ]
+}

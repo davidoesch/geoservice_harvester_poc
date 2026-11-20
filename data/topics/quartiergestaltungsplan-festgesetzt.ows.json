@@ -1,0 +1,119 @@
+{
+ "type": "FeatureCollection",
+ "id": "https://davidoesch.github.io/geoservice_harvester_poc/data/topics/quartiergestaltungsplan-festgesetzt.ows.json",
+ "properties": {
+  "lang": "de",
+  "title": "Quartiergestaltungsplan festgesetzt",
+  "updated": "2026-11-20T16:05:37+01:00",
+  "subtitle": "GeoHarvester topic: 2 providers",
+  "links": {
+   "profiles": [
+    {
+     "href": "http://www.opengis.net/spec/owc-geojson/1.0/req/core"
+    }
+   ]
+  }
+ },
+ "features": [
+  {
+   "type": "Feature",
+   "id": "https://wms.geo.bs.ch/#ch.bs.velostadtplan_vesp.eignung",
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       7.475,
+       47.503
+      ],
+      [
+       7.723,
+       47.503
+      ],
+      [
+       7.723,
+       47.612
+      ],
+      [
+       7.475,
+       47.612
+      ],
+      [
+       7.475,
+       47.503
+      ]
+     ]
+    ]
+   },
+   "properties": {
+    "title": "Velostadtplan - Eignung",
+    "updated": "2026-11-20T16:05:37+01:00",
+    "publisher": "Kanton Basel-Stadt",
+    "layer": "ch.bs.velostadtplan_vesp.eignung",
+    "offerings": [
+     {
+      "code": "http://www.opengis.net/spec/owc-geojson/1.0/req/wms",
+      "operations": [
+       {
+        "code": "GetCapabilities",
+        "method": "GET",
+        "type": "application/xml",
+        "href": "https://wms.geo.bs.ch/?SERVICE=WMS&REQUEST=GetCapabilities"
+       }
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": "https://services.geo.zg.ch/ows/Quartiergestaltungsplanung#zg.quartiergestaltungsplan_festgesetzt",
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       8.508,
+       47.177
+      ],
+      [
+       8.576,
+       47.177
+      ],
+      [
+       8.576,
+       47.218
+      ],
+      [
+       8.508,
+       47.218
+      ],
+      [
+       8.508,
+       47.177
+      ]
+     ]
+    ]
+   },
+   "properties": {
+    "title": "Quartiergestaltungsplan festgesetzt",
+    "updated": "2026-11-20T16:05:37+01:00",
+    "publisher": "Kanton Zug",
+    "layer": "zg.quartiergestaltungsplan_festgesetzt",
+    "offerings": [
+     {
+      "code": "http://www.opengis.net/spec/owc-geojson/1.0/req/wms",
+      "operations": [
+       {
+        "code": "GetCapabilities",
+        "method": "GET",
+        "type": "application/xml",
+        "href": "https://services.geo.zg.ch/ows/Quartiergestaltungsplanung?SERVICE=WMS&REQUEST=GetCapabilities"
+       }
+      ]
+     }
+    ]
+   }
+  }
+ ]
+}

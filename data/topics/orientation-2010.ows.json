@@ -1,0 +1,119 @@
+{
+ "type": "FeatureCollection",
+ "id": "https://davidoesch.github.io/geoservice_harvester_poc/data/topics/orientation-2010.ows.json",
+ "properties": {
+  "lang": "de",
+  "title": "Orientation 2010",
+  "updated": "2026-11-20T16:13:33+01:00",
+  "subtitle": "GeoHarvester topic: 2 providers",
+  "links": {
+   "profiles": [
+    {
+     "href": "http://www.opengis.net/spec/owc-geojson/1.0/req/core"
+    }
+   ]
+  }
+ },
+ "features": [
+  {
+   "type": "Feature",
+   "id": "https://sitn.ne.ch/services/wmts?SERVICE=WMTS&REQUEST=GetCapabilities#orientation2010",
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       5.01,
+       45.356
+      ],
+      [
+       11.484,
+       45.356
+      ],
+      [
+       11.484,
+       48.387
+      ],
+      [
+       5.01,
+       48.387
+      ],
+      [
+       5.01,
+       45.356
+      ]
+     ]
+    ]
+   },
+   "properties": {
+    "title": "Orientation 2010",
+    "updated": "2026-11-20T16:13:33+01:00",
+    "publisher": "Kanton Neuenburg",
+    "layer": "orientation2010",
+    "offerings": [
+     {
+      "code": "http://www.opengis.net/spec/owc-geojson/1.0/req/wmts",
+      "operations": [
+       {
+        "code": "GetCapabilities",
+        "method": "GET",
+        "type": "application/xml",
+        "href": "https://sitn.ne.ch/services/wmts?SERVICE=WMTS&REQUEST=GetCapabilities"
+       }
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": "https://www.ogc.vd.ch/raster/services/OGC/wmsVD/Mapserver/WMSServer#vd.orientation",
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       6.048,
+       46.179
+      ],
+      [
+       7.254,
+       46.179
+      ],
+      [
+       7.254,
+       46.984
+      ],
+      [
+       6.048,
+       46.984
+      ],
+      [
+       6.048,
+       46.179
+      ]
+     ]
+    ]
+   },
+   "properties": {
+    "title": "vd.orientation",
+    "updated": "2026-11-20T16:13:33+01:00",
+    "publisher": "Kanton Waadt",
+    "layer": "vd.orientation",
+    "offerings": [
+     {
+      "code": "http://www.opengis.net/spec/owc-geojson/1.0/req/wms",
+      "operations": [
+       {
+        "code": "GetCapabilities",
+        "method": "GET",
+        "type": "application/xml",
+        "href": "https://www.ogc.vd.ch/raster/services/OGC/wmsVD/Mapserver/WMSServer?SERVICE=WMS&REQUEST=GetCapabilities"
+       }
+      ]
+     }
+    ]
+   }
+  }
+ ]
+}

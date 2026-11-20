@@ -17,9 +17,16 @@ In the web app you can
   *Bienen* also finds *abeilles*, *apicoltura* and *bees*),
 - **see the coverage** on a map: which cantons and cities publish data on the
   topic and where nothing is available,
-- **search only in the map view** (checkbox): results are limited to datasets
-  whose bounding box intersects the visible map extent and follow as you pan
-  and zoom – without a search term this answers *"which data exists here?"*,
+- **search in the map view** (on by default, checkbox to switch off): once you
+  zoom in, results are limited to datasets whose bounding box intersects the
+  visible map and follow as you pan and zoom – without a search term this
+  answers *"which data exists here?"*,
+- **find topics across providers**: datasets of several providers about the
+  same thing (e.g. *Bienenstandorte* of ten cantons) are grouped into one
+  topic card, with ready-made packages for QGIS, ArcGIS Pro,
+  map.geo.admin.ch and OWS Context,
+- **find datasets despite missing metadata**: keywords from the GEMET
+  thesaurus are added automatically (marked as such), in four languages,
 - **combine** datasets of different providers on one map (e.g. bee hives of
   Graubünden, the City of Zurich and Valais at the same time),
 - **open** them all at once in [map.geo.admin.ch](https://map.geo.admin.ch),
@@ -124,10 +131,13 @@ Known limitations
 | ---- | ------ | ---- |
 | Find and validate service endpoints | [`discover_sources.py`](discover_sources.py) | manually, now and then |
 | Harvest all layers of all endpoints | [`scraper.py`](scraper.py) (+ [`scraper/default.py`](scraper/default.py)) | weekly (GitHub Action) |
+| Add keywords, categories and topics automatically | [`enrich.py`](enrich.py) | weekly |
 | Build the search index of the app | [`build_catalog.py`](build_catalog.py) | weekly |
+| Write the topic packages | [`build_topics.py`](build_topics.py) | weekly |
 | Compare with the last 30 days, e-mail alert on big drops | [`check-geoservices-stats.py`](check-geoservices-stats.py) | weekly |
 | Convert CSV to Parquet | [`format-converter.py`](format-converter.py) | weekly |
 | Outlines of cantons / cities for the coverage map | [`build_boundaries.py`](build_boundaries.py) | when owners change |
+| GEMET thesaurus and eCH-0166 categories | [`build_vocabulary.py`](build_vocabulary.py) | rarely |
 
 The weekly pipeline runs in one job ([`.github/workflows/run-scraper.yml`](.github/workflows/run-scraper.yml),
 Sundays 00:03 UTC, Python 3.13) and commits all results in a single commit.
@@ -137,6 +147,50 @@ The scraper fetches each GetCapabilities document once, detects the service
 type from the XML (not from the URL), and processes the sources in parallel
 with at most three concurrent requests per server. A WMS layer is only
 published if a `GetMap` request for it succeeds.
+
+## Automatic enrichment
+
+88% of the harvested layers have no keywords and 62% no description, and many
+titles are technical (`zg_bachdelta_bachschuttkegel`). Every week
+[`enrich.py`](enrich.py) adds, free of charge and without any paid AI service:
+
+- **Keywords** from [GEMET](https://www.eionet.europa.eu/gemet), the
+  multilingual EU environmental thesaurus (taken from geocat.ch). A concept is
+  assigned when its label occurs in the title or layer group – German labels
+  also inside compounds (*Bienen*standorte), French, Italian and English
+  labels as whole words. The keyword is stored with its labels in German,
+  French, Italian and English, so *abeilles* finds *Bienenstandorte*.
+  Generic terms and provider or place names are ignored.
+- **Category**: one of the eCH-0166 geocategories used by geodienste.ch, from
+  curated term lists; no category rather than a wrong one.
+- **Topics**: titles are normalised (provider names, years, codes removed),
+  embedded with the multilingual model
+  `paraphrase-multilingual-MiniLM-L12-v2` (fastembed / ONNX, runs on the
+  GitHub runner's CPU) and grouped when they are mutual nearest neighbours
+  with a high similarity. A topic needs at least two providers; each provider
+  contributes its best-matching dataset.
+
+Results are written to [`data/enrichment.csv`](data/enrichment.csv); provider
+metadata is never changed, and the app marks the keywords as *added
+automatically*. Exact matching was chosen for keywords because, on short layer
+titles, embedding similarity proved unreliable for keywords, while it works
+well for grouping near-identical titles into topics. A language model could
+later add generated descriptions (paid API).
+
+## Topics
+
+[`build_topics.py`](build_topics.py) writes one package per topic to
+[`data/topics/`](data/topics): an index ([`index.json`](data/topics/index.json))
+with members and a map.geo.admin.ch link, and per topic a QGIS layer file
+(`<id>.qlr`), an ArcGIS Pro layer file (`<id>.lyrx`) and an
+[OGC OWS Context](https://www.ogc.org/standard/owc/) document (`<id>.ows.json`),
+all served by GitHub Pages at
+`https://davidoesch.github.io/geoservice_harvester_poc/data/topics/`.
+
+A topic is a bundle of the providers' own services, not one merged service:
+GitHub Pages only serves static files and cannot cascade WMS/WFS requests. A
+cascading server (e.g. QGIS Server) could publish each topic as one WMS/WFS
+using `index.json` as its configuration.
 
 ## Add or fix a service
 
@@ -228,6 +282,9 @@ with the links to all services that offer the dataset.
 | [`data/geoservices_changestats_CH.csv`](data/geoservices_changestats_CH.csv) | Number of layers per owner compared with the mean of the last 30 days |
 | [`data/catalog.json`](data/catalog.json) | Compact search index of the web app (datasets merged across WMS/WMTS/WFS, with coverage regions) |
 | [`data/boundaries.json`](data/boundaries.json) | Simplified outlines (LV95) of cantons, Liechtenstein and cities for the coverage map |
+| [`data/enrichment.csv`](data/enrichment.csv) | Automatic keywords (GEMET), category (eCH-0166) and topic per dataset; machine-generated, see *Automatic enrichment* |
+| [`data/topics/`](data/topics) | Topic packages (index, QGIS, ArcGIS Pro, OWS Context) |
+| [`data/vocab/`](data/vocab) | GEMET thesaurus and eCH-0166 categories used by `enrich.py` |
 | [`tools/*_errors.csv`](tools) | Services that failed in the last run, per owner (summary in [`ISSUES.md`](ISSUES.md)) |
 | [`tools/sources_report.csv`](tools/sources_report.csv) | Validation report of `discover_sources.py` (all candidate endpoints and why some were rejected) |
 

@@ -1,0 +1,169 @@
+{
+ "type": "FeatureCollection",
+ "id": "https://davidoesch.github.io/geoservice_harvester_poc/data/topics/parzellennummern.ows.json",
+ "properties": {
+  "lang": "de",
+  "title": "Parzellennummern",
+  "updated": "2026-11-20T16:13:33+01:00",
+  "subtitle": "GeoHarvester topic: 3 providers",
+  "links": {
+   "profiles": [
+    {
+     "href": "http://www.opengis.net/spec/owc-geojson/1.0/req/core"
+    }
+   ]
+  }
+ },
+ "features": [
+  {
+   "type": "Feature",
+   "id": "https://wms.geo.ag.ch/public/ows#ch_ag_geo_va_avwms_va_lsprojparznr_01",
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       7.723,
+       47.146
+      ],
+      [
+       8.445,
+       47.146
+      ],
+      [
+       8.445,
+       47.621
+      ],
+      [
+       7.723,
+       47.621
+      ],
+      [
+       7.723,
+       47.146
+      ]
+     ]
+    ]
+   },
+   "properties": {
+    "title": "AV: proj. Parzellennummern",
+    "updated": "2026-11-20T16:13:33+01:00",
+    "publisher": "Kanton Aargau",
+    "layer": "ch_ag_geo_va_avwms_va_lsprojparznr_01",
+    "offerings": [
+     {
+      "code": "http://www.opengis.net/spec/owc-geojson/1.0/req/wms",
+      "operations": [
+       {
+        "code": "GetCapabilities",
+        "method": "GET",
+        "type": "application/xml",
+        "href": "https://wms.geo.ag.ch/public/ows?SERVICE=WMS&REQUEST=GetCapabilities"
+       }
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": "https://www.geoservice.apps.be.ch/geoservice3/services/a42geo/of_planningcadastre01_de_ms_wms/MapServer/WMSServer#DIPANU_DIPANUP_VW_15030",
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       6.864,
+       46.34
+      ],
+      [
+       8.462,
+       46.34
+      ],
+      [
+       8.462,
+       47.343
+      ],
+      [
+       6.864,
+       47.343
+      ],
+      [
+       6.864,
+       46.34
+      ]
+     ]
+    ]
+   },
+   "properties": {
+    "title": "Parzellennummern, Punkt",
+    "updated": "2026-11-20T16:13:33+01:00",
+    "publisher": "Kanton Bern",
+    "layer": "DIPANU_DIPANUP_VW_15030",
+    "offerings": [
+     {
+      "code": "http://www.opengis.net/spec/owc-geojson/1.0/req/wms",
+      "operations": [
+       {
+        "code": "GetCapabilities",
+        "method": "GET",
+        "type": "application/xml",
+        "href": "https://www.geoservice.apps.be.ch/geoservice3/services/a42geo/of_planningcadastre01_de_ms_wms/MapServer/WMSServer?SERVICE=WMS&REQUEST=GetCapabilities"
+       }
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": "https://wms.geo.gr.ch/kantonalesstrassennetz#Parzellennummern_Strasseneigentum",
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       8.615,
+       45.994
+      ],
+      [
+       10.547,
+       45.994
+      ],
+      [
+       10.547,
+       47.324
+      ],
+      [
+       8.615,
+       47.324
+      ],
+      [
+       8.615,
+       45.994
+      ]
+     ]
+    ]
+   },
+   "properties": {
+    "title": "Parzellennummern",
+    "updated": "2026-11-20T16:13:33+01:00",
+    "publisher": "Kanton Graubünden",
+    "layer": "Parzellennummern_Strasseneigentum",
+    "offerings": [
+     {
+      "code": "http://www.opengis.net/spec/owc-geojson/1.0/req/wms",
+      "operations": [
+       {
+        "code": "GetCapabilities",
+        "method": "GET",
+        "type": "application/xml",
+        "href": "https://wms.geo.gr.ch/kantonalesstrassennetz?SERVICE=WMS&REQUEST=GetCapabilities"
+       }
+      ]
+     }
+    ]
+   }
+  }
+ ]
+}

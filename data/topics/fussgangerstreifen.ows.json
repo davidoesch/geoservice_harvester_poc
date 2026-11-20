@@ -1,0 +1,219 @@
+{
+ "type": "FeatureCollection",
+ "id": "https://davidoesch.github.io/geoservice_harvester_poc/data/topics/fussgangerstreifen.ows.json",
+ "properties": {
+  "lang": "de",
+  "title": "Fussgängerstreifen",
+  "updated": "2026-11-20T16:05:37+01:00",
+  "subtitle": "GeoHarvester topic: 4 providers",
+  "links": {
+   "profiles": [
+    {
+     "href": "http://www.opengis.net/spec/owc-geojson/1.0/req/core"
+    }
+   ]
+  }
+ },
+ "features": [
+  {
+   "type": "Feature",
+   "id": "https://gis.gict.ch/ows/emmen_admin/WMS_Emmen_all_pub#Fussgängerstreifen",
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       8.246,
+       47.068
+      ],
+      [
+       8.322,
+       47.068
+      ],
+      [
+       8.322,
+       47.11
+      ],
+      [
+       8.246,
+       47.11
+      ],
+      [
+       8.246,
+       47.068
+      ]
+     ]
+    ]
+   },
+   "properties": {
+    "title": "Fussgängerstreifen",
+    "updated": "2026-11-20T16:05:37+01:00",
+    "publisher": "Gemeinde Emmen",
+    "layer": "Fussgängerstreifen",
+    "offerings": [
+     {
+      "code": "http://www.opengis.net/spec/owc-geojson/1.0/req/wms",
+      "operations": [
+       {
+        "code": "GetCapabilities",
+        "method": "GET",
+        "type": "application/xml",
+        "href": "https://gis.gict.ch/ows/emmen_admin/WMS_Emmen_all_pub?SERVICE=WMS&REQUEST=GetCapabilities"
+       }
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": "https://www.ogd.stadt-zuerich.ch/wms/geoportal/Verkehrszonen#Fussgängerzonen",
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       8.538,
+       47.368
+      ],
+      [
+       8.548,
+       47.368
+      ],
+      [
+       8.548,
+       47.377
+      ],
+      [
+       8.538,
+       47.377
+      ],
+      [
+       8.538,
+       47.368
+      ]
+     ]
+    ]
+   },
+   "properties": {
+    "title": "Fussgängerzonen",
+    "updated": "2026-11-20T16:05:37+01:00",
+    "publisher": "Stadt Zürich",
+    "layer": "Fussgängerzonen",
+    "offerings": [
+     {
+      "code": "http://www.opengis.net/spec/owc-geojson/1.0/req/wms",
+      "operations": [
+       {
+        "code": "GetCapabilities",
+        "method": "GET",
+        "type": "application/xml",
+        "href": "https://www.ogd.stadt-zuerich.ch/wms/geoportal/Verkehrszonen?SERVICE=WMS&REQUEST=GetCapabilities"
+       }
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": "https://public.geo.lu.ch/ogd/services/managed/FUSSGSTR_DS_V1_MP/MapServer/WMSServer#0",
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       7.836,
+       46.82
+      ],
+      [
+       8.493,
+       46.82
+      ],
+      [
+       8.493,
+       47.272
+      ],
+      [
+       7.836,
+       47.272
+      ],
+      [
+       7.836,
+       46.82
+      ]
+     ]
+    ]
+   },
+   "properties": {
+    "title": "Fussgängerstreifen",
+    "updated": "2026-11-20T16:05:37+01:00",
+    "publisher": "Kanton Luzern",
+    "layer": "0",
+    "offerings": [
+     {
+      "code": "http://www.opengis.net/spec/owc-geojson/1.0/req/wms",
+      "operations": [
+       {
+        "code": "GetCapabilities",
+        "method": "GET",
+        "type": "application/xml",
+        "href": "https://public.geo.lu.ch/ogd/services/managed/FUSSGSTR_DS_V1_MP/MapServer/WMSServer?SERVICE=WMS&REQUEST=GetCapabilities"
+       }
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": "https://maps.zh.ch/wfs/OGDZHWFS#ms:ogd-0047_giszhpub_tba_str_fussgaengerstreifen_p",
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       8.157,
+       47.142
+      ],
+      [
+       9.037,
+       47.142
+      ],
+      [
+       9.037,
+       47.712
+      ],
+      [
+       8.157,
+       47.712
+      ],
+      [
+       8.157,
+       47.142
+      ]
+     ]
+    ]
+   },
+   "properties": {
+    "title": "Fussgängerstreifen OGD (47.3)",
+    "updated": "2026-11-20T16:05:37+01:00",
+    "publisher": "Kanton Zürich",
+    "layer": "ms:ogd-0047_giszhpub_tba_str_fussgaengerstreifen_p",
+    "offerings": [
+     {
+      "code": "http://www.opengis.net/spec/owc-geojson/1.0/req/wfs",
+      "operations": [
+       {
+        "code": "GetCapabilities",
+        "method": "GET",
+        "type": "application/xml",
+        "href": "https://maps.zh.ch/wfs/OGDZHWFS?SERVICE=WFS&REQUEST=GetCapabilities"
+       }
+      ]
+     }
+    ]
+   }
+  }
+ ]
+}

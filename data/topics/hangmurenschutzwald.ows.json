@@ -1,0 +1,119 @@
+{
+ "type": "FeatureCollection",
+ "id": "https://davidoesch.github.io/geoservice_harvester_poc/data/topics/hangmurenschutzwald.ows.json",
+ "properties": {
+  "lang": "de",
+  "title": "Hangmurenschutzwald",
+  "updated": "2026-11-20T16:05:37+01:00",
+  "subtitle": "GeoHarvester topic: 2 providers",
+  "links": {
+   "profiles": [
+    {
+     "href": "http://www.opengis.net/spec/owc-geojson/1.0/req/core"
+    }
+   ]
+  }
+ },
+ "features": [
+  {
+   "type": "Feature",
+   "id": "https://wms.geo.ag.ch/public/ows#ch_ag_geo_aw_schutzwhangmure",
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       7.618,
+       47.103
+      ],
+      [
+       8.553,
+       47.103
+      ],
+      [
+       8.553,
+       47.704
+      ],
+      [
+       7.618,
+       47.704
+      ],
+      [
+       7.618,
+       47.103
+      ]
+     ]
+    ]
+   },
+   "properties": {
+    "title": "Schutzwald Hangmuren",
+    "updated": "2026-11-20T16:05:37+01:00",
+    "publisher": "Kanton Aargau",
+    "layer": "ch_ag_geo_aw_schutzwhangmure",
+    "offerings": [
+     {
+      "code": "http://www.opengis.net/spec/owc-geojson/1.0/req/wms",
+      "operations": [
+       {
+        "code": "GetCapabilities",
+        "method": "GET",
+        "type": "application/xml",
+        "href": "https://wms.geo.ag.ch/public/ows?SERVICE=WMS&REQUEST=GetCapabilities"
+       }
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": "https://www.geoservice.apps.be.ch/geoservice3/services/a42geo/of_geoscientificinformation03_de_ms_wms/MapServer/WMSServer#SHK_SWHM_VW_1013",
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       6.942,
+       46.348
+      ],
+      [
+       8.432,
+       46.348
+      ],
+      [
+       8.432,
+       47.344
+      ],
+      [
+       6.942,
+       47.344
+      ],
+      [
+       6.942,
+       46.348
+      ]
+     ]
+    ]
+   },
+   "properties": {
+    "title": "Hangmurenschutzwald",
+    "updated": "2026-11-20T16:05:37+01:00",
+    "publisher": "Kanton Bern",
+    "layer": "SHK_SWHM_VW_1013",
+    "offerings": [
+     {
+      "code": "http://www.opengis.net/spec/owc-geojson/1.0/req/wms",
+      "operations": [
+       {
+        "code": "GetCapabilities",
+        "method": "GET",
+        "type": "application/xml",
+        "href": "https://www.geoservice.apps.be.ch/geoservice3/services/a42geo/of_geoscientificinformation03_de_ms_wms/MapServer/WMSServer?SERVICE=WMS&REQUEST=GetCapabilities"
+       }
+      ]
+     }
+    ]
+   }
+  }
+ ]
+}

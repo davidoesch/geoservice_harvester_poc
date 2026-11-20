@@ -1,0 +1,119 @@
+{
+ "type": "FeatureCollection",
+ "id": "https://davidoesch.github.io/geoservice_harvester_poc/data/topics/erdmandelgras-standorte.ows.json",
+ "properties": {
+  "lang": "de",
+  "title": "Erdmandelgras-Standorte",
+  "updated": "2026-11-20T16:05:37+01:00",
+  "subtitle": "GeoHarvester topic: 2 providers",
+  "links": {
+   "profiles": [
+    {
+     "href": "http://www.opengis.net/spec/owc-geojson/1.0/req/core"
+    }
+   ]
+  }
+ },
+ "features": [
+  {
+   "type": "Feature",
+   "id": "https://service.geo.llv.li/service/wms#li.au.nl_erdmandelgras",
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       9.44,
+       47.035
+      ],
+      [
+       9.661,
+       47.035
+      ],
+      [
+       9.661,
+       47.295
+      ],
+      [
+       9.44,
+       47.295
+      ],
+      [
+       9.44,
+       47.035
+      ]
+     ]
+    ]
+   },
+   "properties": {
+    "title": "Erdmandelgras",
+    "updated": "2026-11-20T16:05:37+01:00",
+    "publisher": "Fürstentum Liechtenstein",
+    "layer": "li.au.nl_erdmandelgras",
+    "offerings": [
+     {
+      "code": "http://www.opengis.net/spec/owc-geojson/1.0/req/wms",
+      "operations": [
+       {
+        "code": "GetCapabilities",
+        "method": "GET",
+        "type": "application/xml",
+        "href": "https://service.geo.llv.li/service/wms?SERVICE=WMS&REQUEST=GetCapabilities"
+       }
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": "https://wms.geo.ag.ch/public/ows#ch_ag_geo_al_erdmandelgras_01",
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       7.748,
+       47.147
+      ],
+      [
+       8.401,
+       47.147
+      ],
+      [
+       8.401,
+       47.603
+      ],
+      [
+       7.748,
+       47.603
+      ],
+      [
+       7.748,
+       47.147
+      ]
+     ]
+    ]
+   },
+   "properties": {
+    "title": "Erdmandelgras-Standorte",
+    "updated": "2026-11-20T16:05:37+01:00",
+    "publisher": "Kanton Aargau",
+    "layer": "ch_ag_geo_al_erdmandelgras_01",
+    "offerings": [
+     {
+      "code": "http://www.opengis.net/spec/owc-geojson/1.0/req/wms",
+      "operations": [
+       {
+        "code": "GetCapabilities",
+        "method": "GET",
+        "type": "application/xml",
+        "href": "https://wms.geo.ag.ch/public/ows?SERVICE=WMS&REQUEST=GetCapabilities"
+       }
+      ]
+     }
+    ]
+   }
+  }
+ ]
+}

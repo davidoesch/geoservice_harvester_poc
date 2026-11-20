@@ -1,0 +1,119 @@
+{
+ "type": "FeatureCollection",
+ "id": "https://davidoesch.github.io/geoservice_harvester_poc/data/topics/agglo-mes-urbanisation.ows.json",
+ "properties": {
+  "lang": "de",
+  "title": "AGGLO MES URBANISATION",
+  "updated": "2026-11-20T16:13:33+01:00",
+  "subtitle": "GeoHarvester topic: 2 providers",
+  "links": {
+   "profiles": [
+    {
+     "href": "http://www.opengis.net/spec/owc-geojson/1.0/req/core"
+    }
+   ]
+  }
+ },
+ "features": [
+  {
+   "type": "Feature",
+   "id": "https://vector.sitg.ge.ch/arcgis/services/AGGLO_MES_URBANISATION/MapServer/WMSServer#0",
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       5.785,
+       46.047
+      ],
+      [
+       6.519,
+       46.047
+      ],
+      [
+       6.519,
+       46.471
+      ],
+      [
+       5.785,
+       46.471
+      ],
+      [
+       5.785,
+       46.047
+      ]
+     ]
+    ]
+   },
+   "properties": {
+    "title": "AGGLO_MES_URBANISATION",
+    "updated": "2026-11-20T16:13:33+01:00",
+    "publisher": "Kanton Genf",
+    "layer": "0",
+    "offerings": [
+     {
+      "code": "http://www.opengis.net/spec/owc-geojson/1.0/req/wms",
+      "operations": [
+       {
+        "code": "GetCapabilities",
+        "method": "GET",
+        "type": "application/xml",
+        "href": "https://vector.sitg.ge.ch/arcgis/services/AGGLO_MES_URBANISATION/MapServer/WMSServer?SERVICE=WMS&REQUEST=GetCapabilities"
+       }
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": "https://wms.geo.ti.ch/service#ti.028b_1.ch20ahgh_pu",
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       8.644,
+       45.806
+      ],
+      [
+       9.191,
+       45.806
+      ],
+      [
+       9.191,
+       46.187
+      ],
+      [
+       8.644,
+       46.187
+      ],
+      [
+       8.644,
+       45.806
+      ]
+     ]
+    ]
+   },
+   "properties": {
+    "title": "[TI-028b.1] Muzzano - Piano urbanizzazione",
+    "updated": "2026-11-20T16:13:33+01:00",
+    "publisher": "Kanton Tessin",
+    "layer": "ti.028b_1.ch20ahgh_pu",
+    "offerings": [
+     {
+      "code": "http://www.opengis.net/spec/owc-geojson/1.0/req/wms",
+      "operations": [
+       {
+        "code": "GetCapabilities",
+        "method": "GET",
+        "type": "application/xml",
+        "href": "https://wms.geo.ti.ch/service?SERVICE=WMS&REQUEST=GetCapabilities"
+       }
+      ]
+     }
+    ]
+   }
+  }
+ ]
+}

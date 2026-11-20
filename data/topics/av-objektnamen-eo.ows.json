@@ -1,0 +1,119 @@
+{
+ "type": "FeatureCollection",
+ "id": "https://davidoesch.github.io/geoservice_harvester_poc/data/topics/av-objektnamen-eo.ows.json",
+ "properties": {
+  "lang": "de",
+  "title": "AV: Objektnamen (EO)",
+  "updated": "2026-11-20T16:13:33+01:00",
+  "subtitle": "GeoHarvester topic: 2 providers",
+  "links": {
+   "profiles": [
+    {
+     "href": "http://www.opengis.net/spec/owc-geojson/1.0/req/core"
+    }
+   ]
+  }
+ },
+ "features": [
+  {
+   "type": "Feature",
+   "id": "https://www.ogd.stadt-zuerich.ch/wfs/geoportal/Amtliche_Vermessung_Stadt_Zuerich#av_bo_objektname_t",
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       8.465,
+       47.321
+      ],
+      [
+       8.618,
+       47.321
+      ],
+      [
+       8.618,
+       47.434
+      ],
+      [
+       8.465,
+       47.434
+      ],
+      [
+       8.465,
+       47.321
+      ]
+     ]
+    ]
+   },
+   "properties": {
+    "title": "av_bo_objektname_t",
+    "updated": "2026-11-20T16:13:33+01:00",
+    "publisher": "Stadt Zürich",
+    "layer": "av_bo_objektname_t",
+    "offerings": [
+     {
+      "code": "http://www.opengis.net/spec/owc-geojson/1.0/req/wfs",
+      "operations": [
+       {
+        "code": "GetCapabilities",
+        "method": "GET",
+        "type": "application/xml",
+        "href": "https://www.ogd.stadt-zuerich.ch/wfs/geoportal/Amtliche_Vermessung_Stadt_Zuerich?SERVICE=WFS&REQUEST=GetCapabilities"
+       }
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": "https://wms.geo.ag.ch/public/ows#ch_ag_geo_va_avwms_va_eoobjname_01",
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       7.713,
+       47.138
+      ],
+      [
+       8.452,
+       47.138
+      ],
+      [
+       8.452,
+       47.622
+      ],
+      [
+       7.713,
+       47.622
+      ],
+      [
+       7.713,
+       47.138
+      ]
+     ]
+    ]
+   },
+   "properties": {
+    "title": "AV: Objektnamen (EO)",
+    "updated": "2026-11-20T16:13:33+01:00",
+    "publisher": "Kanton Aargau",
+    "layer": "ch_ag_geo_va_avwms_va_eoobjname_01",
+    "offerings": [
+     {
+      "code": "http://www.opengis.net/spec/owc-geojson/1.0/req/wms",
+      "operations": [
+       {
+        "code": "GetCapabilities",
+        "method": "GET",
+        "type": "application/xml",
+        "href": "https://wms.geo.ag.ch/public/ows?SERVICE=WMS&REQUEST=GetCapabilities"
+       }
+      ]
+     }
+    ]
+   }
+  }
+ ]
+}

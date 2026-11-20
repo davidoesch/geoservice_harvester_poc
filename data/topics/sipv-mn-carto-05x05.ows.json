@@ -1,0 +1,119 @@
+{
+ "type": "FeatureCollection",
+ "id": "https://davidoesch.github.io/geoservice_harvester_poc/data/topics/sipv-mn-carto-05x05.ows.json",
+ "properties": {
+  "lang": "de",
+  "title": "SIPV MN CARTO 05X05",
+  "updated": "2026-11-20T16:13:33+01:00",
+  "subtitle": "GeoHarvester topic: 2 providers",
+  "links": {
+   "profiles": [
+    {
+     "href": "http://www.opengis.net/spec/owc-geojson/1.0/req/core"
+    }
+   ]
+  }
+ },
+ "features": [
+  {
+   "type": "Feature",
+   "id": "https://vector.sitg.ge.ch/arcgis/services/SIPV_MN_CARTO_05X05/MapServer/WFSServer#esri:SIPV_MN_CARTO_05X05",
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       5.946,
+       46.129
+      ],
+      [
+       6.321,
+       46.129
+      ],
+      [
+       6.321,
+       46.372
+      ],
+      [
+       5.946,
+       46.372
+      ],
+      [
+       5.946,
+       46.129
+      ]
+     ]
+    ]
+   },
+   "properties": {
+    "title": "SIPV_MN_CARTO_05X05",
+    "updated": "2026-11-20T16:13:33+01:00",
+    "publisher": "Stadt Genf",
+    "layer": "esri:SIPV_MN_CARTO_05X05",
+    "offerings": [
+     {
+      "code": "http://www.opengis.net/spec/owc-geojson/1.0/req/wfs",
+      "operations": [
+       {
+        "code": "GetCapabilities",
+        "method": "GET",
+        "type": "application/xml",
+        "href": "https://vector.sitg.ge.ch/arcgis/services/SIPV_MN_CARTO_05X05/MapServer/WFSServer?SERVICE=WFS&REQUEST=GetCapabilities"
+       }
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": "https://vector.sitg.ge.ch/arcgis/services/SIPV_ICA_CARTO_05X05/MapServer/WFSServer#esri:SIPV_ICA_CARTO_05X05",
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       5.955,
+       46.131
+      ],
+      [
+       6.31,
+       46.131
+      ],
+      [
+       6.31,
+       46.369
+      ],
+      [
+       5.955,
+       46.369
+      ],
+      [
+       5.955,
+       46.131
+      ]
+     ]
+    ]
+   },
+   "properties": {
+    "title": "SIPV_ICA_CARTO_05X05",
+    "updated": "2026-11-20T16:13:33+01:00",
+    "publisher": "Kanton Genf",
+    "layer": "esri:SIPV_ICA_CARTO_05X05",
+    "offerings": [
+     {
+      "code": "http://www.opengis.net/spec/owc-geojson/1.0/req/wfs",
+      "operations": [
+       {
+        "code": "GetCapabilities",
+        "method": "GET",
+        "type": "application/xml",
+        "href": "https://vector.sitg.ge.ch/arcgis/services/SIPV_ICA_CARTO_05X05/MapServer/WFSServer?SERVICE=WFS&REQUEST=GetCapabilities"
+       }
+      ]
+     }
+    ]
+   }
+  }
+ ]
+}

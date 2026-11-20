@@ -16,6 +16,7 @@ Run after scraper.py:  python build_catalog.py
 
 import csv
 import json
+import os
 import re
 import unicodedata
 from collections import defaultdict
@@ -85,14 +86,24 @@ def geodienste_coverage():
     return coverage
 
 
-def main():
-    with open(config.OWNERS_JSON, encoding="utf-8") as f:
-        owner_info = json.load(f)
+def load_layers():
     with open(config.GEOSERVICES_CH_CSV, encoding="utf-8") as f:
         layers = list(csv.DictReader(f))
     layers.sort(key=lambda r: TYPE_ORDER.get(r["SERVICETYPE"], 9))
-    gd_coverage = geodienste_coverage()
+    return layers
 
+
+def merge_datasets(layers, owner_info=None, gd_coverage=None):
+    """
+    Merge the layer rows into datasets: layers of the same owner with the
+    same title (or layer name) offered by WMS, WMTS and WFS become one
+    dataset (at most one layer per service type).
+
+    Returns (owners, services, datasets); datasets are dicts with the
+    short keys used below ("o" owner index, "t" title, "s" services, ...).
+    """
+    owner_info = owner_info or {}
+    gd_coverage = gd_coverage or {}
     owners, owner_index = [], {}
     services, service_index = [], {}
     datasets = []
@@ -160,6 +171,48 @@ def main():
             cantons = gd_coverage.get(m.group(1)) if m else None
             if cantons:
                 target["r"] = sorted(cantons)
+    return owners, services, datasets
+
+
+def dataset_key(ds, owners, services):
+    """
+    Stable key of a dataset: owner|service URL|layer name of its first
+    service (WMS before WMTS before WFS). The web app hashes the same string
+    for its share links.
+    """
+    sidx, layer = ds["s"][0]
+    return "%s|%s|%s" % (owners[ds["o"]]["code"], services[sidx][1], layer)
+
+
+def load_enrichment():
+    """
+    Automatic keywords, category and topic per dataset (enrich.py) plus
+    the vocabularies. Returns ({dataset key: row}, gemet, categories) or
+    empty structures when enrichment has not been run.
+    """
+    path = os.path.join("data", "enrichment.csv")
+    if not os.path.exists(path):
+        return {}, {}, []
+    with open(path, encoding="utf-8") as f:
+        rows = {r["DATASET_KEY"]: r for r in csv.DictReader(f)}
+    with open(os.path.join("data", "vocab", "gemet.json"),
+              encoding="utf-8") as f:
+        gemet = {c["id"]: c for c in json.load(f)}
+    with open(os.path.join("data", "vocab", "categories.json"),
+              encoding="utf-8") as f:
+        categories = json.load(f)
+    return rows, gemet, categories
+
+
+def main():
+    with open(config.OWNERS_JSON, encoding="utf-8") as f:
+        owner_info = json.load(f)
+    layers = load_layers()
+    owners, services, datasets = merge_datasets(
+        layers, owner_info, geodienste_coverage())
+    enrichment, gemet, categories = load_enrichment()
+    concepts, concept_index = [], {}
+    topics, topic_index = [], {}
 
     # Repeated strings (legend / metadata URL templates, group paths) are
     # stored once in "strings"; "{L}" in a template stands for the layer name
@@ -181,9 +234,28 @@ def main():
         if len(abstract) > ABSTRACT_MAX:
             abstract = abstract[:ABSTRACT_MAX].rsplit(" ", 1)[0] + " …"
         name = ds["s"][0][1]
+        enr = enrichment.get(dataset_key(ds, owners, services), {})
+        auto = []
+        for cid in (enr.get("GEMET_IDS") or "").split():
+            if cid in gemet:
+                if cid not in concept_index:
+                    concept_index[cid] = len(concepts)
+                    c = gemet[cid]
+                    concepts.append([c["de"], c["fr"], c["it"], c["en"]])
+                auto.append(concept_index[cid])
+        topic = -1
+        if enr.get("TOPIC_ID"):
+            tid = enr["TOPIC_ID"]
+            if tid not in topic_index:
+                topic_index[tid] = len(topics)
+                topics.append({"id": tid, "label": enr["TOPIC_LABEL"],
+                               "n": 0})
+            topic = topic_index[tid]
+            topics[topic]["n"] += 1
         out_ds.append([ds["o"], ds["t"], abstract, ", ".join(ds["k"]),
                        ds["b"], intern(ds["l"], name), intern(ds["m"], name),
-                       ds["s"], intern(ds["g"]), ds["r"]])
+                       ds["s"], intern(ds["g"]), ds["r"],
+                       auto, enr.get("CATEGORY") or "", topic])
 
     # Per owner statistics for the "about / quality" section
     stats = defaultdict(lambda: {"layers": 0, "WMS": 0, "WMTS": 0, "WFS": 0,
@@ -207,7 +279,13 @@ def main():
         "generated": datetime.now(ZoneInfo("Europe/Zurich")).isoformat(
             timespec="minutes"),
         "fields": ["owner", "title", "abstract", "keywords", "bbox",
-                   "legend", "metadata", "services", "group", "regions"],
+                   "legend", "metadata", "services", "group", "regions",
+                   "autokeywords", "category", "topic"],
+        # automatic enrichment (enrich.py): GEMET labels [de, fr, it, en],
+        # eCH-0166 categories and topics across providers
+        "concepts": concepts,
+        "categories": categories,
+        "topics": topics,
         "owners": owners,
         "services": services,
         "strings": strings,

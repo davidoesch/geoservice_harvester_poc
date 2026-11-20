@@ -1,0 +1,219 @@
+{
+ "type": "FeatureCollection",
+ "id": "https://davidoesch.github.io/geoservice_harvester_poc/data/topics/flachmoore-regionaler-bedeutung.ows.json",
+ "properties": {
+  "lang": "de",
+  "title": "Flachmoore regionaler Bedeutung",
+  "updated": "2026-11-20T16:13:33+01:00",
+  "subtitle": "GeoHarvester topic: 4 providers",
+  "links": {
+   "profiles": [
+    {
+     "href": "http://www.opengis.net/spec/owc-geojson/1.0/req/core"
+    }
+   ]
+  }
+ },
+ "features": [
+  {
+   "type": "Feature",
+   "id": "https://www.geoservice.apps.be.ch/geoservice3/services/a42geo/of_environment03_de_ms_wms/MapServer/WMSServer#FEUGEB_FG_VW_18971",
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       6.95,
+       46.359
+      ],
+      [
+       8.433,
+       46.359
+      ],
+      [
+       8.433,
+       47.328
+      ],
+      [
+       6.95,
+       47.328
+      ],
+      [
+       6.95,
+       46.359
+      ]
+     ]
+    ]
+   },
+   "properties": {
+    "title": "Regionale Flachmoore, Beschriftung",
+    "updated": "2026-11-20T16:13:33+01:00",
+    "publisher": "Kanton Bern",
+    "layer": "FEUGEB_FG_VW_18971",
+    "offerings": [
+     {
+      "code": "http://www.opengis.net/spec/owc-geojson/1.0/req/wms",
+      "operations": [
+       {
+        "code": "GetCapabilities",
+        "method": "GET",
+        "type": "application/xml",
+        "href": "https://www.geoservice.apps.be.ch/geoservice3/services/a42geo/of_environment03_de_ms_wms/MapServer/WMSServer?SERVICE=WMS&REQUEST=GetCapabilities"
+       }
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": "https://wms.geo.gr.ch/rrip_unterengadin#Flachmoore_von_regionaler_Bedeutung",
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       8.615,
+       45.994
+      ],
+      [
+       10.547,
+       45.994
+      ],
+      [
+       10.547,
+       47.324
+      ],
+      [
+       8.615,
+       47.324
+      ],
+      [
+       8.615,
+       45.994
+      ]
+     ]
+    ]
+   },
+   "properties": {
+    "title": "Flachmoore von regionaler Bedeutung",
+    "updated": "2026-11-20T16:13:33+01:00",
+    "publisher": "Kanton Graubünden",
+    "layer": "Flachmoore_von_regionaler_Bedeutung",
+    "offerings": [
+     {
+      "code": "http://www.opengis.net/spec/owc-geojson/1.0/req/wms",
+      "operations": [
+       {
+        "code": "GetCapabilities",
+        "method": "GET",
+        "type": "application/xml",
+        "href": "https://wms.geo.gr.ch/rrip_unterengadin?SERVICE=WMS&REQUEST=GetCapabilities"
+       }
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": "https://services.geo.sg.ch/wss/service/SG00051_WMS/guest#Flachmoore_regional",
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       8.805,
+       46.943
+      ],
+      [
+       9.583,
+       46.943
+      ],
+      [
+       9.583,
+       47.502
+      ],
+      [
+       8.805,
+       47.502
+      ],
+      [
+       8.805,
+       46.943
+      ]
+     ]
+    ]
+   },
+   "properties": {
+    "title": "Flachmoore_regional",
+    "updated": "2026-11-20T16:13:33+01:00",
+    "publisher": "Kanton St. Gallen",
+    "layer": "Flachmoore_regional",
+    "offerings": [
+     {
+      "code": "http://www.opengis.net/spec/owc-geojson/1.0/req/wms",
+      "operations": [
+       {
+        "code": "GetCapabilities",
+        "method": "GET",
+        "type": "application/xml",
+        "href": "https://services.geo.sg.ch/wss/service/SG00051_WMS/guest?SERVICE=WMS&REQUEST=GetCapabilities"
+       }
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": "https://geo.so.ch/api/wms#ch.so.arp.naturschutzobjekte.flachmoore_regionaler_bedeutung",
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       7.382,
+       47.163
+      ],
+      [
+       7.976,
+       47.163
+      ],
+      [
+       7.976,
+       47.366
+      ],
+      [
+       7.382,
+       47.366
+      ],
+      [
+       7.382,
+       47.163
+      ]
+     ]
+    ]
+   },
+   "properties": {
+    "title": "Flachmoore regionaler Bedeutung",
+    "updated": "2026-11-20T16:13:33+01:00",
+    "publisher": "Kanton Solothurn",
+    "layer": "ch.so.arp.naturschutzobjekte.flachmoore_regionaler_bedeutung",
+    "offerings": [
+     {
+      "code": "http://www.opengis.net/spec/owc-geojson/1.0/req/wms",
+      "operations": [
+       {
+        "code": "GetCapabilities",
+        "method": "GET",
+        "type": "application/xml",
+        "href": "https://geo.so.ch/api/wms?SERVICE=WMS&REQUEST=GetCapabilities"
+       }
+      ]
+     }
+    ]
+   }
+  }
+ ]
+}

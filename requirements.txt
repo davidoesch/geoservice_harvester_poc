@@ -7,3 +7,6 @@ duckdb==2.0.0
 google-api-python-client==2.201.0
 google-auth==2.62.1
 beautifulsoup4==4.15.0
+# automatic enrichment (enrich.py): multilingual embeddings on CPU (ONNX)
+fastembed==0.9.1
+numpy==2.5.5

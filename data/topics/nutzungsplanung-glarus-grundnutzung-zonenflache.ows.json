@@ -1,0 +1,119 @@
+{
+ "type": "FeatureCollection",
+ "id": "https://davidoesch.github.io/geoservice_harvester_poc/data/topics/nutzungsplanung-glarus-grundnutzung-zonenflache.ows.json",
+ "properties": {
+  "lang": "de",
+  "title": "Nutzungsplanung Glarus Grundnutzung Zonenfläche",
+  "updated": "2026-11-20T16:05:37+01:00",
+  "subtitle": "GeoHarvester topic: 2 providers",
+  "links": {
+   "profiles": [
+    {
+     "href": "http://www.opengis.net/spec/owc-geojson/1.0/req/core"
+    }
+   ]
+  }
+ },
+ "features": [
+  {
+   "type": "Feature",
+   "id": "https://wms.geo.bs.ch/#ch.bs.zonenplan_stadt_basel_npba.grundnutzung_zonenflaeche_laufende_aenderung.grundnutzung",
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       7.573,
+       47.533
+      ],
+      [
+       7.629,
+       47.533
+      ],
+      [
+       7.629,
+       47.58
+      ],
+      [
+       7.573,
+       47.58
+      ],
+      [
+       7.573,
+       47.533
+      ]
+     ]
+    ]
+   },
+   "properties": {
+    "title": "Zonenplan Stadt Basel - Grundnutzung Zonenfläche (Basel): laufende Änderung - Grundnutzung",
+    "updated": "2026-11-20T16:05:37+01:00",
+    "publisher": "Kanton Basel-Stadt",
+    "layer": "ch.bs.zonenplan_stadt_basel_npba.grundnutzung_zonenflaeche_laufende_aenderung.grundnutzung",
+    "offerings": [
+     {
+      "code": "http://www.opengis.net/spec/owc-geojson/1.0/req/wms",
+      "operations": [
+       {
+        "code": "GetCapabilities",
+        "method": "GET",
+        "type": "application/xml",
+        "href": "https://wms.geo.bs.ch/?SERVICE=WMS&REQUEST=GetCapabilities"
+       }
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": "https://map.geo.gl.ch/ows/mainmap#ch.gl.planning.np-1632_grundnutzung-zonenflaeche",
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       8.891,
+       46.965
+      ],
+      [
+       9.135,
+       46.965
+      ],
+      [
+       9.135,
+       47.084
+      ],
+      [
+       8.891,
+       47.084
+      ],
+      [
+       8.891,
+       46.965
+      ]
+     ]
+    ]
+   },
+   "properties": {
+    "title": "Nutzungsplanung Glarus Grundnutzung Zonenfläche",
+    "updated": "2026-11-20T16:05:37+01:00",
+    "publisher": "Kanton Glarus",
+    "layer": "ch.gl.planning.np-1632_grundnutzung-zonenflaeche",
+    "offerings": [
+     {
+      "code": "http://www.opengis.net/spec/owc-geojson/1.0/req/wms",
+      "operations": [
+       {
+        "code": "GetCapabilities",
+        "method": "GET",
+        "type": "application/xml",
+        "href": "https://map.geo.gl.ch/ows/mainmap?SERVICE=WMS&REQUEST=GetCapabilities"
+       }
+      ]
+     }
+    ]
+   }
+  }
+ ]
+}

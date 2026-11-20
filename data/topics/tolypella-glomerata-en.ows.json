@@ -1,0 +1,119 @@
+{
+ "type": "FeatureCollection",
+ "id": "https://davidoesch.github.io/geoservice_harvester_poc/data/topics/tolypella-glomerata-en.ows.json",
+ "properties": {
+  "lang": "de",
+  "title": "Tolypella glomerata EN",
+  "updated": "2026-11-20T16:05:37+01:00",
+  "subtitle": "GeoHarvester topic: 2 providers",
+  "links": {
+   "profiles": [
+    {
+     "href": "http://www.opengis.net/spec/owc-geojson/1.0/req/core"
+    }
+   ]
+  }
+ },
+ "features": [
+  {
+   "type": "Feature",
+   "id": "https://public.geo.lu.ch/ogd/services/managed/SEEINXXX_COL_V2_MP/MapServer/WMSServer#36",
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       8.282,
+       46.89
+      ],
+      [
+       8.63,
+       46.89
+      ],
+      [
+       8.63,
+       47.081
+      ],
+      [
+       8.282,
+       47.081
+      ],
+      [
+       8.282,
+       46.89
+      ]
+     ]
+    ]
+   },
+   "properties": {
+    "title": "Tolypella glomerata EN",
+    "updated": "2026-11-20T16:05:37+01:00",
+    "publisher": "Kanton Luzern",
+    "layer": "36",
+    "offerings": [
+     {
+      "code": "http://www.opengis.net/spec/owc-geojson/1.0/req/wms",
+      "operations": [
+       {
+        "code": "GetCapabilities",
+        "method": "GET",
+        "type": "application/xml",
+        "href": "https://public.geo.lu.ch/ogd/services/managed/SEEINXXX_COL_V2_MP/MapServer/WMSServer?SERVICE=WMS&REQUEST=GetCapabilities"
+       }
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": "https://services.geo.zg.ch/ows/geomorphologie#zg_toteisloch_mit_verlandetem_see",
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       8.446,
+       47.141
+      ],
+      [
+       8.647,
+       47.141
+      ],
+      [
+       8.647,
+       47.217
+      ],
+      [
+       8.446,
+       47.217
+      ],
+      [
+       8.446,
+       47.141
+      ]
+     ]
+    ]
+   },
+   "properties": {
+    "title": "Toteisloch mit verlandetem See",
+    "updated": "2026-11-20T16:05:37+01:00",
+    "publisher": "Kanton Zug",
+    "layer": "zg_toteisloch_mit_verlandetem_see",
+    "offerings": [
+     {
+      "code": "http://www.opengis.net/spec/owc-geojson/1.0/req/wms",
+      "operations": [
+       {
+        "code": "GetCapabilities",
+        "method": "GET",
+        "type": "application/xml",
+        "href": "https://services.geo.zg.ch/ows/geomorphologie?SERVICE=WMS&REQUEST=GetCapabilities"
+       }
+      ]
+     }
+    ]
+   }
+  }
+ ]
+}

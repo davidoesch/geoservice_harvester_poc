@@ -1,0 +1,169 @@
+{
+ "type": "FeatureCollection",
+ "id": "https://davidoesch.github.io/geoservice_harvester_poc/data/topics/massnahmengebiet-vernetzung.ows.json",
+ "properties": {
+  "lang": "de",
+  "title": "Massnahmengebiet Vernetzung",
+  "updated": "2026-11-20T16:13:33+01:00",
+  "subtitle": "GeoHarvester topic: 3 providers",
+  "links": {
+   "profiles": [
+    {
+     "href": "http://www.opengis.net/spec/owc-geojson/1.0/req/core"
+    }
+   ]
+  }
+ },
+ "features": [
+  {
+   "type": "Feature",
+   "id": "https://map.stadtluzern.ch/server/services/OGD/energieplanung_massnahmengebiet/MapServer/WMSServer#0",
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       8.207,
+       47.027
+      ],
+      [
+       8.36,
+       47.027
+      ],
+      [
+       8.36,
+       47.085
+      ],
+      [
+       8.207,
+       47.085
+      ],
+      [
+       8.207,
+       47.027
+      ]
+     ]
+    ]
+   },
+   "properties": {
+    "title": "Massnahmengebiete",
+    "updated": "2026-11-20T16:13:33+01:00",
+    "publisher": "Stadt Luzern",
+    "layer": "0",
+    "offerings": [
+     {
+      "code": "http://www.opengis.net/spec/owc-geojson/1.0/req/wms",
+      "operations": [
+       {
+        "code": "GetCapabilities",
+        "method": "GET",
+        "type": "application/xml",
+        "href": "https://map.stadtluzern.ch/server/services/OGD/energieplanung_massnahmengebiet/MapServer/WMSServer?SERVICE=WMS&REQUEST=GetCapabilities"
+       }
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": "https://www.ogd.stadt-zuerich.ch/wms/geoportal/Fachplanung_Hitzeminderung_OGD#Massnahmengebiete_OGD",
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       8.464,
+       47.322
+      ],
+      [
+       8.624,
+       47.322
+      ],
+      [
+       8.624,
+       47.433
+      ],
+      [
+       8.464,
+       47.433
+      ],
+      [
+       8.464,
+       47.322
+      ]
+     ]
+    ]
+   },
+   "properties": {
+    "title": "Massnahmengebiete_OGD",
+    "updated": "2026-11-20T16:13:33+01:00",
+    "publisher": "Stadt Zürich",
+    "layer": "Massnahmengebiete_OGD",
+    "offerings": [
+     {
+      "code": "http://www.opengis.net/spec/owc-geojson/1.0/req/wms",
+      "operations": [
+       {
+        "code": "GetCapabilities",
+        "method": "GET",
+        "type": "application/xml",
+        "href": "https://www.ogd.stadt-zuerich.ch/wms/geoportal/Fachplanung_Hitzeminderung_OGD?SERVICE=WMS&REQUEST=GetCapabilities"
+       }
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": "https://www.geoservice.apps.be.ch/geoservice3/services/a42geo/of_farming03_de_ms_wms/MapServer/WMSServer#VERNETZ_MG_VW_1724",
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       6.863,
+       46.361
+      ],
+      [
+       8.392,
+       46.361
+      ],
+      [
+       8.392,
+       47.346
+      ],
+      [
+       6.863,
+       47.346
+      ],
+      [
+       6.863,
+       46.361
+      ]
+     ]
+    ]
+   },
+   "properties": {
+    "title": "Massnahmengebiet Vernetzung",
+    "updated": "2026-11-20T16:13:33+01:00",
+    "publisher": "Kanton Bern",
+    "layer": "VERNETZ_MG_VW_1724",
+    "offerings": [
+     {
+      "code": "http://www.opengis.net/spec/owc-geojson/1.0/req/wms",
+      "operations": [
+       {
+        "code": "GetCapabilities",
+        "method": "GET",
+        "type": "application/xml",
+        "href": "https://www.geoservice.apps.be.ch/geoservice3/services/a42geo/of_farming03_de_ms_wms/MapServer/WMSServer?SERVICE=WMS&REQUEST=GetCapabilities"
+       }
+      ]
+     }
+    ]
+   }
+  }
+ ]
+}

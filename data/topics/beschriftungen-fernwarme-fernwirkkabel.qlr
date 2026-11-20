@@ -1,0 +1,36 @@
+<!DOCTYPE qgis-layer-definition>
+<qlr>
+  <layer-tree-group expanded="1" checked="Qt::Checked" name="">
+    <layer-tree-group expanded="1" checked="Qt::Checked" name="GeoHarvester – Beschriftungen Fernwärme: Fernwirkkabel">
+      <layer-tree-layer expanded="0" checked="Qt::Checked" id="geoharvester_beschriftungen-fernwarme-fernwirkkabel_0" name="eler_trasse_kabel (Bern)" source=" pagingEnabled='true' preferCoordinatesForWfsT11='false' restrictToRequestBBOX='1' srsname='EPSG:2056' typename='Geoportal_Polleranlagen_Schranken:eler_trasse_kabel' url='https://map.bern.ch/arcgis/services/Geoportal/Polleranlagen_Schranken/MapServer/WFSServer' version='auto'" providerKey="WFS"/>
+      <layer-tree-layer expanded="0" checked="Qt::Checked" id="geoharvester_beschriftungen-fernwarme-fernwirkkabel_1" name="fahrleitungen_kabel (Zürich)" source="contextualWMSLegend=0&amp;crs=EPSG:2056&amp;dpiMode=7&amp;featureCount=10&amp;format=image/png&amp;layers=fahrleitungen_kabel&amp;styles&amp;url=https://www.ogd.stadt-zuerich.ch/wms/geoportal/VBZ_Infrastruktur_OGD" providerKey="wms"/>
+      <layer-tree-layer expanded="0" checked="Qt::Checked" id="geoharvester_beschriftungen-fernwarme-fernwirkkabel_2" name="Beschriftungen Fernwärme: Fernwirkkabel (Geodienste)" source="contextualWMSLegend=0&amp;crs=EPSG:2056&amp;dpiMode=7&amp;featureCount=10&amp;format=image/png&amp;layers=fernwaerme_fernwirkkabel_beschriftung&amp;styles&amp;url=https://geodienste.ch/db/leitungskataster_v2_0_0/deu" providerKey="wms"/>
+    </layer-tree-group>
+  </layer-tree-group>
+  <maplayers>
+    <maplayer type="vector" hasScaleBasedVisibilityFlag="0" minScale="1e+08" maxScale="0" styleCategories="AllStyleCategories">
+      <extent><xmin>2485000</xmin><ymin>1075000</ymin><xmax>2834000</xmax><ymax>1296000</ymax></extent>
+      <id>geoharvester_beschriftungen-fernwarme-fernwirkkabel_0</id>
+      <datasource> pagingEnabled='true' preferCoordinatesForWfsT11='false' restrictToRequestBBOX='1' srsname='EPSG:2056' typename='Geoportal_Polleranlagen_Schranken:eler_trasse_kabel' url='https://map.bern.ch/arcgis/services/Geoportal/Polleranlagen_Schranken/MapServer/WFSServer' version='auto'</datasource>
+      <layername>eler_trasse_kabel (Bern)</layername>
+      <srs><spatialrefsys><proj4>+proj=somerc +lat_0=46.9524055555556 +lon_0=7.43958333333333 +k_0=1 +x_0=2600000 +y_0=1200000 +ellps=bessel +towgs84=674.374,15.056,405.346,0,0,0,0 +units=m +no_defs</proj4><srid>2056</srid><authid>EPSG:2056</authid><description>CH1903+ / LV95</description><projectionacronym>somerc</projectionacronym><ellipsoidacronym>EPSG:7004</ellipsoidacronym><geographicflag>false</geographicflag></spatialrefsys></srs>
+      <provider>WFS</provider>
+    </maplayer>
+    <maplayer type="raster" hasScaleBasedVisibilityFlag="0" minScale="1e+08" maxScale="0" styleCategories="AllStyleCategories">
+      <extent><xmin>2678554</xmin><ymin>1243313</ymin><xmax>2687855</xmax><ymax>1253229</ymax></extent>
+      <id>geoharvester_beschriftungen-fernwarme-fernwirkkabel_1</id>
+      <datasource>contextualWMSLegend=0&amp;crs=EPSG:2056&amp;dpiMode=7&amp;featureCount=10&amp;format=image/png&amp;layers=fahrleitungen_kabel&amp;styles&amp;url=https://www.ogd.stadt-zuerich.ch/wms/geoportal/VBZ_Infrastruktur_OGD</datasource>
+      <layername>fahrleitungen_kabel (Zürich)</layername>
+      <srs><spatialrefsys><proj4>+proj=somerc +lat_0=46.9524055555556 +lon_0=7.43958333333333 +k_0=1 +x_0=2600000 +y_0=1200000 +ellps=bessel +towgs84=674.374,15.056,405.346,0,0,0,0 +units=m +no_defs</proj4><srid>2056</srid><authid>EPSG:2056</authid><description>CH1903+ / LV95</description><projectionacronym>somerc</projectionacronym><ellipsoidacronym>EPSG:7004</ellipsoidacronym><geographicflag>false</geographicflag></spatialrefsys></srs>
+      <provider>wms</provider>
+    </maplayer>
+    <maplayer type="raster" hasScaleBasedVisibilityFlag="0" minScale="1e+08" maxScale="0" styleCategories="AllStyleCategories">
+      <extent><xmin>2464902</xmin><ymin>1066865</ymin><xmax>2839927</xmax><ymax>1305071</ymax></extent>
+      <id>geoharvester_beschriftungen-fernwarme-fernwirkkabel_2</id>
+      <datasource>contextualWMSLegend=0&amp;crs=EPSG:2056&amp;dpiMode=7&amp;featureCount=10&amp;format=image/png&amp;layers=fernwaerme_fernwirkkabel_beschriftung&amp;styles&amp;url=https://geodienste.ch/db/leitungskataster_v2_0_0/deu</datasource>
+      <layername>Beschriftungen Fernwärme: Fernwirkkabel (Geodienste)</layername>
+      <srs><spatialrefsys><proj4>+proj=somerc +lat_0=46.9524055555556 +lon_0=7.43958333333333 +k_0=1 +x_0=2600000 +y_0=1200000 +ellps=bessel +towgs84=674.374,15.056,405.346,0,0,0,0 +units=m +no_defs</proj4><srid>2056</srid><authid>EPSG:2056</authid><description>CH1903+ / LV95</description><projectionacronym>somerc</projectionacronym><ellipsoidacronym>EPSG:7004</ellipsoidacronym><geographicflag>false</geographicflag></spatialrefsys></srs>
+      <provider>wms</provider>
+    </maplayer>
+  </maplayers>
+</qlr>

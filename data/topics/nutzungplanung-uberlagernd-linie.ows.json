@@ -1,0 +1,269 @@
+{
+ "type": "FeatureCollection",
+ "id": "https://davidoesch.github.io/geoservice_harvester_poc/data/topics/nutzungplanung-uberlagernd-linie.ows.json",
+ "properties": {
+  "lang": "de",
+  "title": "Nutzungplanung überlagernd (Linie)",
+  "updated": "2026-11-20T16:05:37+01:00",
+  "subtitle": "GeoHarvester topic: 5 providers",
+  "links": {
+   "profiles": [
+    {
+     "href": "http://www.opengis.net/spec/owc-geojson/1.0/req/core"
+    }
+   ]
+  }
+ },
+ "features": [
+  {
+   "type": "Feature",
+   "id": "https://geodienste.ch/db/npl_nutzungsplanung_v1_2_0/deu#ueberlagernde_nutzungsplaninhalte_linienbezogene_festlegungen",
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       5.703,
+       45.74
+      ],
+      [
+       10.645,
+       45.74
+      ],
+      [
+       10.645,
+       47.852
+      ],
+      [
+       5.703,
+       47.852
+      ],
+      [
+       5.703,
+       45.74
+      ]
+     ]
+    ]
+   },
+   "properties": {
+    "title": "Überlagernde Nutzungsplaninhalte (linienbezogene Festlegungen)",
+    "updated": "2026-11-20T16:05:37+01:00",
+    "publisher": "geodienste.ch (kantonsübergreifend)",
+    "layer": "ueberlagernde_nutzungsplaninhalte_linienbezogene_festlegungen",
+    "offerings": [
+     {
+      "code": "http://www.opengis.net/spec/owc-geojson/1.0/req/wms",
+      "operations": [
+       {
+        "code": "GetCapabilities",
+        "method": "GET",
+        "type": "application/xml",
+        "href": "https://geodienste.ch/db/npl_nutzungsplanung_v1_2_0/deu?SERVICE=WMS&REQUEST=GetCapabilities"
+       }
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": "https://wms.geo.ag.ch/public/ows#ch_ag_geo_are_dnpuline_09",
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       7.722,
+       47.137
+      ],
+      [
+       8.459,
+       47.137
+      ],
+      [
+       8.459,
+       47.622
+      ],
+      [
+       7.722,
+       47.622
+      ],
+      [
+       7.722,
+       47.137
+      ]
+     ]
+    ]
+   },
+   "properties": {
+    "title": "Nutzungsplanung: linienbezogene Überlagerungen (WMS-Layer)",
+    "updated": "2026-11-20T16:05:37+01:00",
+    "publisher": "Kanton Aargau",
+    "layer": "ch_ag_geo_are_dnpuline_09",
+    "offerings": [
+     {
+      "code": "http://www.opengis.net/spec/owc-geojson/1.0/req/wms",
+      "operations": [
+       {
+        "code": "GetCapabilities",
+        "method": "GET",
+        "type": "application/xml",
+        "href": "https://wms.geo.ag.ch/public/ows?SERVICE=WMS&REQUEST=GetCapabilities"
+       }
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": "https://map.geo.gl.ch/ows/mainmap#ch.gl.planning.np-1632_linienbezogene-festlegung",
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       8.905,
+       47.014
+      ],
+      [
+       9.094,
+       47.014
+      ],
+      [
+       9.094,
+       47.081
+      ],
+      [
+       8.905,
+       47.081
+      ],
+      [
+       8.905,
+       47.014
+      ]
+     ]
+    ]
+   },
+   "properties": {
+    "title": "Nutzungsplanung Glarus linienbezogene Festlegung",
+    "updated": "2026-11-20T16:05:37+01:00",
+    "publisher": "Kanton Glarus",
+    "layer": "ch.gl.planning.np-1632_linienbezogene-festlegung",
+    "offerings": [
+     {
+      "code": "http://www.opengis.net/spec/owc-geojson/1.0/req/wms",
+      "operations": [
+       {
+        "code": "GetCapabilities",
+        "method": "GET",
+        "type": "application/xml",
+        "href": "https://map.geo.gl.ch/ows/mainmap?SERVICE=WMS&REQUEST=GetCapabilities"
+       }
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": "https://wms.geo.sh.ch/wms#sh.nutzungsplanung.rechtsgueltig.linenbezogene_festlegung",
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       8.402,
+       47.554
+      ],
+      [
+       8.879,
+       47.554
+      ],
+      [
+       8.879,
+       47.801
+      ],
+      [
+       8.402,
+       47.801
+      ],
+      [
+       8.402,
+       47.554
+      ]
+     ]
+    ]
+   },
+   "properties": {
+    "title": "Nutzungsplanung Linienbezogene Festlegung",
+    "updated": "2026-11-20T16:05:37+01:00",
+    "publisher": "Kanton Schaffhausen",
+    "layer": "sh.nutzungsplanung.rechtsgueltig.linenbezogene_festlegung",
+    "offerings": [
+     {
+      "code": "http://www.opengis.net/spec/owc-geojson/1.0/req/wms",
+      "operations": [
+       {
+        "code": "GetCapabilities",
+        "method": "GET",
+        "type": "application/xml",
+        "href": "https://wms.geo.sh.ch/wms?SERVICE=WMS&REQUEST=GetCapabilities"
+       }
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": "https://geo.so.ch/wms/oereb#ch.SO.NutzungsplanungUeberlagernd.Linie",
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       7.382,
+       47.086
+      ],
+      [
+       8.015,
+       47.086
+      ],
+      [
+       8.015,
+       47.495
+      ],
+      [
+       7.382,
+       47.495
+      ],
+      [
+       7.382,
+       47.086
+      ]
+     ]
+    ]
+   },
+   "properties": {
+    "title": "Nutzungplanung überlagernd (Linie)",
+    "updated": "2026-11-20T16:05:37+01:00",
+    "publisher": "Kanton Solothurn",
+    "layer": "ch.SO.NutzungsplanungUeberlagernd.Linie",
+    "offerings": [
+     {
+      "code": "http://www.opengis.net/spec/owc-geojson/1.0/req/wms",
+      "operations": [
+       {
+        "code": "GetCapabilities",
+        "method": "GET",
+        "type": "application/xml",
+        "href": "https://geo.so.ch/wms/oereb?SERVICE=WMS&REQUEST=GetCapabilities"
+       }
+      ]
+     }
+    ]
+   }
+  }
+ ]
+}

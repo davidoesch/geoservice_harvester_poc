@@ -1,0 +1,119 @@
+{
+ "type": "FeatureCollection",
+ "id": "https://davidoesch.github.io/geoservice_harvester_poc/data/topics/atlas-geologique-25000-ag25.ows.json",
+ "properties": {
+  "lang": "de",
+  "title": "Atlas géologique 25000 AG25",
+  "updated": "2026-11-20T16:05:37+01:00",
+  "subtitle": "GeoHarvester topic: 2 providers",
+  "links": {
+   "profiles": [
+    {
+     "href": "http://www.opengis.net/spec/owc-geojson/1.0/req/core"
+    }
+   ]
+  }
+ },
+ "features": [
+  {
+   "type": "Feature",
+   "id": "https://wms.geo.admin.ch/#ch.swisstopo.geologie-geologischer_atlas",
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       0.66,
+       45.419
+      ],
+      [
+       10.836,
+       45.419
+      ],
+      [
+       10.836,
+       48.751
+      ],
+      [
+       0.66,
+       48.751
+      ],
+      [
+       0.66,
+       45.419
+      ]
+     ]
+    ]
+   },
+   "properties": {
+    "title": "Geologischer Atlas GA25",
+    "updated": "2026-11-20T16:05:37+01:00",
+    "publisher": "Bund (geo.admin.ch)",
+    "layer": "ch.swisstopo.geologie-geologischer_atlas",
+    "offerings": [
+     {
+      "code": "http://www.opengis.net/spec/owc-geojson/1.0/req/wms",
+      "operations": [
+       {
+        "code": "GetCapabilities",
+        "method": "GET",
+        "type": "application/xml",
+        "href": "https://wms.geo.admin.ch/?SERVICE=WMS&REQUEST=GetCapabilities"
+       }
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": "https://maps.fr.ch/ags/services/OpenData_Raster/Atlas_geologique_25000_AG25/MapServer/WMSServer#0",
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       6.55,
+       46.355
+      ],
+      [
+       7.473,
+       46.355
+      ],
+      [
+       7.473,
+       47.114
+      ],
+      [
+       6.55,
+       47.114
+      ],
+      [
+       6.55,
+       46.355
+      ]
+     ]
+    ]
+   },
+   "properties": {
+    "title": "Atlas géologique 25000 AG25",
+    "updated": "2026-11-20T16:05:37+01:00",
+    "publisher": "Kanton Freiburg",
+    "layer": "0",
+    "offerings": [
+     {
+      "code": "http://www.opengis.net/spec/owc-geojson/1.0/req/wms",
+      "operations": [
+       {
+        "code": "GetCapabilities",
+        "method": "GET",
+        "type": "application/xml",
+        "href": "https://maps.fr.ch/ags/services/OpenData_Raster/Atlas_geologique_25000_AG25/MapServer/WMSServer?SERVICE=WMS&REQUEST=GetCapabilities"
+       }
+      ]
+     }
+    ]
+   }
+  }
+ ]
+}

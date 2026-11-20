@@ -136,3 +136,6 @@ dmypy.json
 # credentials
 *credentials.json
 .vscode/settings.json
+
+# embedding model cache (enrich.py)
+.fastembed_cache/

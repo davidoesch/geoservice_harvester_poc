@@ -1,0 +1,119 @@
+{
+ "type": "FeatureCollection",
+ "id": "https://davidoesch.github.io/geoservice_harvester_poc/data/topics/massnahmen-linien.ows.json",
+ "properties": {
+  "lang": "de",
+  "title": "Massnahmen (Linien)",
+  "updated": "2026-11-20T16:13:33+01:00",
+  "subtitle": "GeoHarvester topic: 2 providers",
+  "links": {
+   "profiles": [
+    {
+     "href": "http://www.opengis.net/spec/owc-geojson/1.0/req/core"
+    }
+   ]
+  }
+ },
+ "features": [
+  {
+   "type": "Feature",
+   "id": "https://gis.gict.ch/ows/emmen_admin/WMS_Emmen_all_pub#Freiräume_Massnahmen_Linien",
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       8.264,
+       47.074
+      ],
+      [
+       8.295,
+       47.074
+      ],
+      [
+       8.295,
+       47.09
+      ],
+      [
+       8.264,
+       47.09
+      ],
+      [
+       8.264,
+       47.074
+      ]
+     ]
+    ]
+   },
+   "properties": {
+    "title": "Freiräume_Massnahmen_Linien",
+    "updated": "2026-11-20T16:13:33+01:00",
+    "publisher": "Gemeinde Emmen",
+    "layer": "Freiräume_Massnahmen_Linien",
+    "offerings": [
+     {
+      "code": "http://www.opengis.net/spec/owc-geojson/1.0/req/wms",
+      "operations": [
+       {
+        "code": "GetCapabilities",
+        "method": "GET",
+        "type": "application/xml",
+        "href": "https://gis.gict.ch/ows/emmen_admin/WMS_Emmen_all_pub?SERVICE=WMS&REQUEST=GetCapabilities"
+       }
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": "https://public.geo.lu.ch/ogd/services/managed/OMP05MAS_DS_V1_MP/MapServer/WMSServer#0",
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       7.835,
+       46.834
+      ],
+      [
+       8.495,
+       46.834
+      ],
+      [
+       8.495,
+       47.281
+      ],
+      [
+       7.835,
+       47.281
+      ],
+      [
+       7.835,
+       46.834
+      ]
+     ]
+    ]
+   },
+   "properties": {
+    "title": "Massnahmen (Linien)",
+    "updated": "2026-11-20T16:13:33+01:00",
+    "publisher": "Kanton Luzern",
+    "layer": "0",
+    "offerings": [
+     {
+      "code": "http://www.opengis.net/spec/owc-geojson/1.0/req/wms",
+      "operations": [
+       {
+        "code": "GetCapabilities",
+        "method": "GET",
+        "type": "application/xml",
+        "href": "https://public.geo.lu.ch/ogd/services/managed/OMP05MAS_DS_V1_MP/MapServer/WMSServer?SERVICE=WMS&REQUEST=GetCapabilities"
+       }
+      ]
+     }
+    ]
+   }
+  }
+ ]
+}

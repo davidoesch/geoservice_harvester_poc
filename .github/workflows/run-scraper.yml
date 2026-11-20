@@ -33,6 +33,12 @@ jobs:
           python-version: '3.13'
           cache: pip
 
+      - name: Cache embedding model
+        uses: actions/cache@v6
+        with:
+          path: .fastembed_cache
+          key: fastembed-paraphrase-multilingual-MiniLM-L12-v2
+
       - name: Install dependencies
         run: |
           python -m pip install --upgrade pip
@@ -45,8 +51,16 @@ jobs:
           # skips the indexing step if the secret is not set.
           CLIENT_SECRET: ${{ secrets.CLIENT_SECRET }}
 
+      - name: Enrich metadata (keywords, categories, topics)
+        run: python enrich.py
+        env:
+          FASTEMBED_CACHE_PATH: .fastembed_cache
+
       - name: Build web catalogue
         run: python build_catalog.py
+
+      - name: Build topic packages
+        run: python build_topics.py
 
       - name: Check change statistics
         # A failing e-mail alert must not block publishing the data

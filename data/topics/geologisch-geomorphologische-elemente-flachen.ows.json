@@ -1,0 +1,119 @@
+{
+ "type": "FeatureCollection",
+ "id": "https://davidoesch.github.io/geoservice_harvester_poc/data/topics/geologisch-geomorphologische-elemente-flachen.ows.json",
+ "properties": {
+  "lang": "de",
+  "title": "Geologisch-geomorphologische Elemente (Flächen)",
+  "updated": "2026-11-20T16:05:37+01:00",
+  "subtitle": "GeoHarvester topic: 2 providers",
+  "links": {
+   "profiles": [
+    {
+     "href": "http://www.opengis.net/spec/owc-geojson/1.0/req/core"
+    }
+   ]
+  }
+ },
+ "features": [
+  {
+   "type": "Feature",
+   "id": "https://public.geo.lu.ch/ogd/services/managed/LRIGEOXX_COL_V1_MP/MapServer/WMSServer#1",
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       7.834,
+       46.778
+      ],
+      [
+       8.667,
+       46.778
+      ],
+      [
+       8.667,
+       47.442
+      ],
+      [
+       7.834,
+       47.442
+      ],
+      [
+       7.834,
+       46.778
+      ]
+     ]
+    ]
+   },
+   "properties": {
+    "title": "Geologisch-geomorphologische Elemente (Flächen)",
+    "updated": "2026-11-20T16:05:37+01:00",
+    "publisher": "Kanton Luzern",
+    "layer": "1",
+    "offerings": [
+     {
+      "code": "http://www.opengis.net/spec/owc-geojson/1.0/req/wms",
+      "operations": [
+       {
+        "code": "GetCapabilities",
+        "method": "GET",
+        "type": "application/xml",
+        "href": "https://public.geo.lu.ch/ogd/services/managed/LRIGEOXX_COL_V1_MP/MapServer/WMSServer?SERVICE=WMS&REQUEST=GetCapabilities"
+       }
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": "https://services.geo.zg.ch/ows/geomorphologie#zg_geomorphologie_flaechen",
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       8.418,
+       47.093
+      ],
+      [
+       8.685,
+       47.093
+      ],
+      [
+       8.685,
+       47.221
+      ],
+      [
+       8.418,
+       47.221
+      ],
+      [
+       8.418,
+       47.093
+      ]
+     ]
+    ]
+   },
+   "properties": {
+    "title": "Geomorphologie Flächen",
+    "updated": "2026-11-20T16:05:37+01:00",
+    "publisher": "Kanton Zug",
+    "layer": "zg_geomorphologie_flaechen",
+    "offerings": [
+     {
+      "code": "http://www.opengis.net/spec/owc-geojson/1.0/req/wms",
+      "operations": [
+       {
+        "code": "GetCapabilities",
+        "method": "GET",
+        "type": "application/xml",
+        "href": "https://services.geo.zg.ch/ows/geomorphologie?SERVICE=WMS&REQUEST=GetCapabilities"
+       }
+      ]
+     }
+    ]
+   }
+  }
+ ]
+}

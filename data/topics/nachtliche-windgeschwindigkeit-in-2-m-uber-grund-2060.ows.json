@@ -1,0 +1,319 @@
+{
+ "type": "FeatureCollection",
+ "id": "https://davidoesch.github.io/geoservice_harvester_poc/data/topics/nachtliche-windgeschwindigkeit-in-2-m-uber-grund-2060.ows.json",
+ "properties": {
+  "lang": "de",
+  "title": "Nächtliche Windgeschwindigkeit in 2 m über Grund, 2060",
+  "updated": "2026-11-20T16:13:33+01:00",
+  "subtitle": "GeoHarvester topic: 6 providers",
+  "links": {
+   "profiles": [
+    {
+     "href": "http://www.opengis.net/spec/owc-geojson/1.0/req/core"
+    }
+   ]
+  }
+ },
+ "features": [
+  {
+   "type": "Feature",
+   "id": "https://map.lausanne.ch/mapserv_proxy?ogcserver=source+for+image%2Fpng#climat_vent_nuit_vitesse",
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       5.961,
+       45.821
+      ],
+      [
+       10.604,
+       45.821
+      ],
+      [
+       10.604,
+       47.821
+      ],
+      [
+       5.961,
+       47.821
+      ],
+      [
+       5.961,
+       45.821
+      ]
+     ]
+    ]
+   },
+   "properties": {
+    "title": "climat_vent_nuit_vitesse",
+    "updated": "2026-11-20T16:13:33+01:00",
+    "publisher": "Stadt Lausanne",
+    "layer": "climat_vent_nuit_vitesse",
+    "offerings": [
+     {
+      "code": "http://www.opengis.net/spec/owc-geojson/1.0/req/wms",
+      "operations": [
+       {
+        "code": "GetCapabilities",
+        "method": "GET",
+        "type": "application/xml",
+        "href": "https://map.lausanne.ch/mapserv_proxy?ogcserver=source+for+image%2Fpng&SERVICE=WMS&REQUEST=GetCapabilities"
+       }
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": "https://www.geoservice.apps.be.ch/geoservice3/services/a42geo/of_climatologymeteorologyatmosphere01_de_ms_wms/MapServer/WMSServer#KLIMAMOD_TWG60N_14453",
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       6.823,
+       46.318
+      ],
+      [
+       8.514,
+       46.318
+      ],
+      [
+       8.514,
+       47.537
+      ],
+      [
+       6.823,
+       47.537
+      ],
+      [
+       6.823,
+       46.318
+      ]
+     ]
+    ]
+   },
+   "properties": {
+    "title": "Nächtliche Windgeschwindigkeit in 2 m über Grund, 2060",
+    "updated": "2026-11-20T16:13:33+01:00",
+    "publisher": "Kanton Bern",
+    "layer": "KLIMAMOD_TWG60N_14453",
+    "offerings": [
+     {
+      "code": "http://www.opengis.net/spec/owc-geojson/1.0/req/wms",
+      "operations": [
+       {
+        "code": "GetCapabilities",
+        "method": "GET",
+        "type": "application/xml",
+        "href": "https://www.geoservice.apps.be.ch/geoservice3/services/a42geo/of_climatologymeteorologyatmosphere01_de_ms_wms/MapServer/WMSServer?SERVICE=WMS&REQUEST=GetCapabilities"
+       }
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": "https://sitn.ne.ch/ogc-sitn-climat/wms#cl209_p0_nuit_vitesse_vents",
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       6.114,
+       46.584
+      ],
+      [
+       7.439,
+       46.584
+      ],
+      [
+       7.439,
+       47.401
+      ],
+      [
+       6.114,
+       47.401
+      ],
+      [
+       6.114,
+       46.584
+      ]
+     ]
+    ]
+   },
+   "properties": {
+    "title": "cl209_p0_nuit_vitesse_vents",
+    "updated": "2026-11-20T16:13:33+01:00",
+    "publisher": "Kanton Neuenburg",
+    "layer": "cl209_p0_nuit_vitesse_vents",
+    "offerings": [
+     {
+      "code": "http://www.opengis.net/spec/owc-geojson/1.0/req/wms",
+      "operations": [
+       {
+        "code": "GetCapabilities",
+        "method": "GET",
+        "type": "application/xml",
+        "href": "https://sitn.ne.ch/ogc-sitn-climat/wms?SERVICE=WMS&REQUEST=GetCapabilities"
+       }
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": "https://wms.geo.sh.ch/raster#klimamodell_nacht_windgeschwindigkeit.tif",
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       8.382,
+       47.535
+      ],
+      [
+       8.9,
+       47.535
+      ],
+      [
+       8.9,
+       47.824
+      ],
+      [
+       8.382,
+       47.824
+      ],
+      [
+       8.382,
+       47.535
+      ]
+     ]
+    ]
+   },
+   "properties": {
+    "title": "klimamodell_nacht_windgeschwindigkeit.tif",
+    "updated": "2026-11-20T16:13:33+01:00",
+    "publisher": "Kanton Schaffhausen",
+    "layer": "klimamodell_nacht_windgeschwindigkeit.tif",
+    "offerings": [
+     {
+      "code": "http://www.opengis.net/spec/owc-geojson/1.0/req/wms",
+      "operations": [
+       {
+        "code": "GetCapabilities",
+        "method": "GET",
+        "type": "application/xml",
+        "href": "https://wms.geo.sh.ch/raster?SERVICE=WMS&REQUEST=GetCapabilities"
+       }
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": "https://geo.so.ch/api/wms#ch.so.afu.klimaanalysekarte.windgeschwindigkeit_4uhr_zukunft",
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       7.326,
+       47.062
+      ],
+      [
+       8.051,
+       47.062
+      ],
+      [
+       8.051,
+       47.513
+      ],
+      [
+       7.326,
+       47.513
+      ],
+      [
+       7.326,
+       47.062
+      ]
+     ]
+    ]
+   },
+   "properties": {
+    "title": "Windgeschwindigkeit Nacht Zukunft 2060",
+    "updated": "2026-11-20T16:13:33+01:00",
+    "publisher": "Kanton Solothurn",
+    "layer": "ch.so.afu.klimaanalysekarte.windgeschwindigkeit_4uhr_zukunft",
+    "offerings": [
+     {
+      "code": "http://www.opengis.net/spec/owc-geojson/1.0/req/wms",
+      "operations": [
+       {
+        "code": "GetCapabilities",
+        "method": "GET",
+        "type": "application/xml",
+        "href": "https://geo.so.ch/api/wms?SERVICE=WMS&REQUEST=GetCapabilities"
+       }
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": "https://wms.zh.ch/AwelLHBewertungskarten2024NachtaktuellZHWMS#nacht-windgeschwindigkeit-2024-a",
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       8.157,
+       47.142
+      ],
+      [
+       9.042,
+       47.142
+      ],
+      [
+       9.042,
+       47.848
+      ],
+      [
+       8.157,
+       47.848
+      ],
+      [
+       8.157,
+       47.142
+      ]
+     ]
+    ]
+   },
+   "properties": {
+    "title": "Windgeschwindigkeit Nacht [m/s], 4 Uhr",
+    "updated": "2026-11-20T16:13:33+01:00",
+    "publisher": "Kanton Zürich",
+    "layer": "nacht-windgeschwindigkeit-2024-a",
+    "offerings": [
+     {
+      "code": "http://www.opengis.net/spec/owc-geojson/1.0/req/wms",
+      "operations": [
+       {
+        "code": "GetCapabilities",
+        "method": "GET",
+        "type": "application/xml",
+        "href": "https://wms.zh.ch/AwelLHBewertungskarten2024NachtaktuellZHWMS?SERVICE=WMS&REQUEST=GetCapabilities"
+       }
+      ]
+     }
+    ]
+   }
+  }
+ ]
+}

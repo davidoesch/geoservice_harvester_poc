@@ -1,0 +1,119 @@
+{
+ "type": "FeatureCollection",
+ "id": "https://davidoesch.github.io/geoservice_harvester_poc/data/topics/landschaften-von-nationaler-regionaler-bedeutung-koordinatio.ows.json",
+ "properties": {
+  "lang": "de",
+  "title": "Landschaften von nationaler / regionaler Bedeutung (Koordinationsaufgabe)",
+  "updated": "2026-11-20T16:05:37+01:00",
+  "subtitle": "GeoHarvester topic: 2 providers",
+  "links": {
+   "profiles": [
+    {
+     "href": "http://www.opengis.net/spec/owc-geojson/1.0/req/core"
+    }
+   ]
+  }
+ },
+ "features": [
+  {
+   "type": "Feature",
+   "id": "https://www.ogd.stadt-zuerich.ch/wms/geoportal/Kommunale_Energieplanung___Energieplankarten_A_D__STRB_#Regionale Koordination",
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       8.46,
+       47.321
+      ],
+      [
+       8.581,
+       47.321
+      ],
+      [
+       8.581,
+       47.425
+      ],
+      [
+       8.46,
+       47.425
+      ],
+      [
+       8.46,
+       47.321
+      ]
+     ]
+    ]
+   },
+   "properties": {
+    "title": "Regionale Koordination",
+    "updated": "2026-11-20T16:05:37+01:00",
+    "publisher": "Stadt Zürich",
+    "layer": "Regionale Koordination",
+    "offerings": [
+     {
+      "code": "http://www.opengis.net/spec/owc-geojson/1.0/req/wms",
+      "operations": [
+       {
+        "code": "GetCapabilities",
+        "method": "GET",
+        "type": "application/xml",
+        "href": "https://www.ogd.stadt-zuerich.ch/wms/geoportal/Kommunale_Energieplanung___Energieplankarten_A_D__STRB_?SERVICE=WMS&REQUEST=GetCapabilities"
+       }
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": "https://public.geo.lu.ch/ogd/services/managed/RIPLAN15_COL_V1_MP/MapServer/WMSServer#19",
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       7.836,
+       46.773
+      ],
+      [
+       8.52,
+       46.773
+      ],
+      [
+       8.52,
+       47.277
+      ],
+      [
+       7.836,
+       47.277
+      ],
+      [
+       7.836,
+       46.773
+      ]
+     ]
+    ]
+   },
+   "properties": {
+    "title": "Landschaften von nationaler / regionaler Bedeutung (Koordinationsaufgabe)",
+    "updated": "2026-11-20T16:05:37+01:00",
+    "publisher": "Kanton Luzern",
+    "layer": "19",
+    "offerings": [
+     {
+      "code": "http://www.opengis.net/spec/owc-geojson/1.0/req/wms",
+      "operations": [
+       {
+        "code": "GetCapabilities",
+        "method": "GET",
+        "type": "application/xml",
+        "href": "https://public.geo.lu.ch/ogd/services/managed/RIPLAN15_COL_V1_MP/MapServer/WMSServer?SERVICE=WMS&REQUEST=GetCapabilities"
+       }
+      ]
+     }
+    ]
+   }
+  }
+ ]
+}
