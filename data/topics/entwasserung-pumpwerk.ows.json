@@ -4,7 +4,7 @@
  "properties": {
   "lang": "de",
   "title": "Entwässerung Pumpwerk",
-  "updated": "2026-11-20T16:05:37+01:00",
+  "updated": "2026-11-22T08:52:16+01:00",
   "subtitle": "GeoHarvester topic: 9 providers",
   "links": {
    "profiles": [
@@ -47,7 +47,7 @@
    },
    "properties": {
     "title": "Velopumpenstandort",
-    "updated": "2026-11-20T16:05:37+01:00",
+    "updated": "2026-11-22T08:52:16+01:00",
     "publisher": "Stadt Bern",
     "layer": "0",
     "offerings": [
@@ -97,7 +97,7 @@
    },
    "properties": {
     "title": "Velopumpe",
-    "updated": "2026-11-20T16:05:37+01:00",
+    "updated": "2026-11-22T08:52:16+01:00",
     "publisher": "Stadt Luzern",
     "layer": "0",
     "offerings": [
@@ -147,7 +147,7 @@
    },
    "properties": {
     "title": "seewasserpumpstationen",
-    "updated": "2026-11-20T16:05:37+01:00",
+    "updated": "2026-11-22T08:52:16+01:00",
     "publisher": "Stadt Zürich",
     "layer": "seewasserpumpstationen",
     "offerings": [
@@ -197,7 +197,7 @@
    },
    "properties": {
     "title": "Grundwasser Pumpwerk",
-    "updated": "2026-11-20T16:05:37+01:00",
+    "updated": "2026-11-22T08:52:16+01:00",
     "publisher": "Kanton Basel-Landschaft",
     "layer": "grundwasser_pumpwerk",
     "offerings": [
@@ -247,7 +247,7 @@
    },
    "properties": {
     "title": "Velopumpen",
-    "updated": "2026-11-20T16:05:37+01:00",
+    "updated": "2026-11-22T08:52:16+01:00",
     "publisher": "Kanton Basel-Stadt",
     "layer": "ch.bs.velopumpen_vepu",
     "offerings": [
@@ -297,7 +297,7 @@
    },
    "properties": {
     "title": "Pumpwerk Brauchwasser",
-    "updated": "2026-11-20T16:05:37+01:00",
+    "updated": "2026-11-22T08:52:16+01:00",
     "publisher": "Kanton Graubünden",
     "layer": "Pumpwerk_Brauchwasser",
     "offerings": [
@@ -347,7 +347,7 @@
    },
    "properties": {
     "title": "Rohwasserpumpwerke",
-    "updated": "2026-11-20T16:05:37+01:00",
+    "updated": "2026-11-22T08:52:16+01:00",
     "publisher": "Kanton St. Gallen",
     "layer": "Rohwasserpumpwerke",
     "offerings": [
@@ -373,31 +373,31 @@
     "coordinates": [
      [
       [
-       8.412,
-       46.531
+       8.395,
+       46.522
       ],
       [
-       8.952,
-       46.531
+       8.961,
+       46.522
       ],
       [
-       8.952,
-       46.989
+       8.961,
+       46.995
       ],
       [
-       8.412,
-       46.989
+       8.395,
+       46.995
       ],
       [
-       8.412,
-       46.531
+       8.395,
+       46.522
       ]
      ]
     ]
    },
    "properties": {
     "title": "Zulässigkeitsbereiche für Grundwasserwärmepumpen",
-    "updated": "2026-11-20T16:05:37+01:00",
+    "updated": "2026-11-22T08:52:16+01:00",
     "publisher": "Kanton Uri",
     "layer": "umwelt:wnk_zulaessigkeitsbereiche_grundwasserwaermepumpen",
     "offerings": [
@@ -447,7 +447,7 @@
    },
    "properties": {
     "title": "Entwässerung Pumpwerk",
-    "updated": "2026-11-20T16:05:37+01:00",
+    "updated": "2026-11-22T08:52:16+01:00",
     "publisher": "Kanton Zürich",
     "layer": "entwaesserung-pumpwerk",
     "offerings": [

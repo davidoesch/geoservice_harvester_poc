@@ -54,7 +54,7 @@
       <provider>wms</provider>
     </maplayer>
     <maplayer type="raster" hasScaleBasedVisibilityFlag="0" minScale="1e+08" maxScale="0" styleCategories="AllStyleCategories">
-      <extent><xmin>2594712</xmin><ymin>1214001</ymin><xmax>2645163</xmax><ymax>1260977</ymax></extent>
+      <extent><xmin>2594940</xmin><ymin>1214557</ymin><xmax>2644788</xmax><ymax>1260752</ymax></extent>
       <id>geoharvester_ov-guteklassen_5</id>
       <datasource>contextualWMSLegend=0&amp;crs=EPSG:2056&amp;dpiMode=7&amp;featureCount=10&amp;format=image/png&amp;layers=ch.so.avt.oev_gueteklasse&amp;styles&amp;url=https://geo.so.ch/api/wms</datasource>
       <layername>ÖV-Güteklassen (SO)</layername>

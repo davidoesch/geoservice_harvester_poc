@@ -35,7 +35,7 @@
       <provider>wms</provider>
     </maplayer>
     <maplayer type="raster" hasScaleBasedVisibilityFlag="0" minScale="1e+08" maxScale="0" styleCategories="AllStyleCategories">
-      <extent><xmin>2674676</xmin><ymin>1153763</ymin><xmax>2715118</xmax><ymax>1205325</ymax></extent>
+      <extent><xmin>2671837</xmin><ymin>1153729</ymin><xmax>2712470</xmax><ymax>1192376</ymax></extent>
       <id>geoharvester_estrazione-ghiaia-calanca_3</id>
       <datasource>contextualWMSLegend=0&amp;crs=EPSG:2056&amp;dpiMode=7&amp;featureCount=10&amp;format=image/png&amp;layers=weitere:postglaziale_gletschervorstoesse&amp;styles&amp;url=https://geo.ur.ch/wms</datasource>
       <layername>Postglaziale Gletschervorstösse (UR)</layername>

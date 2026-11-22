@@ -1,5 +1,5 @@
 {
- "generated": "2026-11-20T16:13:33+01:00",
+ "generated": "2026-11-22T08:52:16+01:00",
  "topics": [
   {
    "id": "300-jahrliche-ereignisse-lawinenprozesse-naturgefahrenkarte-",
@@ -687,6 +687,40 @@
    "qlr": "https://davidoesch.github.io/geoservice_harvester_poc/data/topics/abwasser-normschacht.qlr",
    "lyrx": "https://davidoesch.github.io/geoservice_harvester_poc/data/topics/abwasser-normschacht.lyrx",
    "owc": "https://davidoesch.github.io/geoservice_harvester_poc/data/topics/abwasser-normschacht.ows.json"
+  },
+  {
+   "id": "abwasser-schutzrohr",
+   "label": "Abwasser: Schutzrohr",
+   "owners": [
+    "Geodienste",
+    "KT_UR"
+   ],
+   "members": [
+    {
+     "key": "Geodienste|https://geodienste.ch/db/leitungskataster_v2_0_0/deu|abwasser_schutzrohr",
+     "title": "Abwasser: Schutzrohr",
+     "owner": "Geodienste",
+     "service": {
+      "type": "WMS",
+      "url": "https://geodienste.ch/db/leitungskataster_v2_0_0/deu",
+      "layer": "abwasser_schutzrohr"
+     }
+    },
+    {
+     "key": "KT_UR|https://geo.ur.ch/wms|leitungen:abw_schutzrohr",
+     "title": "Abwasser Schutzrohr",
+     "owner": "KT_UR",
+     "service": {
+      "type": "WMS",
+      "url": "https://geo.ur.ch/wms",
+      "layer": "leitungen:abw_schutzrohr"
+     }
+    }
+   ],
+   "mapgeo": "https://map.geo.admin.ch/#/map?lang=de&center=2652414,1185968&z=1&bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS%7Chttps%3A%2F%2Fgeodienste.ch%2Fdb%2Fleitungskataster_v2_0_0%2Fdeu%7Cabwasser_schutzrohr%2Ct%2C0.85%3BWMS%7Chttps%3A%2F%2Fgeo.ur.ch%2Fwms%7Cleitungen%3Aabw_schutzrohr%2Ct%2C0.85",
+   "qlr": "https://davidoesch.github.io/geoservice_harvester_poc/data/topics/abwasser-schutzrohr.qlr",
+   "lyrx": "https://davidoesch.github.io/geoservice_harvester_poc/data/topics/abwasser-schutzrohr.lyrx",
+   "owc": "https://davidoesch.github.io/geoservice_harvester_poc/data/topics/abwasser-schutzrohr.ows.json"
   },
   {
    "id": "abwasserreinigungsanlagen-ara",
@@ -3762,51 +3796,6 @@
    "owc": "https://davidoesch.github.io/geoservice_harvester_poc/data/topics/arbeitszonen.ows.json"
   },
   {
-   "id": "arbres-remarquables",
-   "label": "Arbres remarquables",
-   "owners": [
-    "CITY_Lausanne",
-    "KT_FR",
-    "KT_JU"
-   ],
-   "members": [
-    {
-     "key": "CITY_Lausanne|https://map.lausanne.ch/mapserv_proxy?ogcserver=source+for+image%2Fpng|envconst_arbres_public_remarquables",
-     "title": "Arbres remarquables",
-     "owner": "CITY_Lausanne",
-     "service": {
-      "type": "WMS",
-      "url": "https://map.lausanne.ch/mapserv_proxy?ogcserver=source+for+image%2Fpng",
-      "layer": "envconst_arbres_public_remarquables"
-     }
-    },
-    {
-     "key": "KT_FR|https://maps.fr.ch/ags/services/OpenData/Arbres_spectaculaires/MapServer/WMSServer|0",
-     "title": "Arbres spectaculaires",
-     "owner": "KT_FR",
-     "service": {
-      "type": "WMS",
-      "url": "https://maps.fr.ch/ags/services/OpenData/Arbres_spectaculaires/MapServer/WMSServer",
-      "layer": "0"
-     }
-    },
-    {
-     "key": "KT_JU|https://geo.jura.ch/mapserv_proxy?ogcserver=Main_PNG|env_03_13_arbres_remarquables_points_validation",
-     "title": "Arbres_remarquables",
-     "owner": "KT_JU",
-     "service": {
-      "type": "WMS",
-      "url": "https://geo.jura.ch/mapserv_proxy?ogcserver=Main_PNG",
-      "layer": "env_03_13_arbres_remarquables_points_validation"
-     }
-    }
-   ],
-   "mapgeo": "https://map.geo.admin.ch/#/map?lang=de&center=2661075,1188479&z=1&bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS%7Chttps%3A%2F%2Fmap.lausanne.ch%2Fmapserv_proxy%3Fogcserver%3Dsource%2Bfor%2Bimage%252Fpng%7Cenvconst_arbres_public_remarquables%2Ct%2C0.85%3BWMS%7Chttps%3A%2F%2Fmaps.fr.ch%2Fags%2Fservices%2FOpenData%2FArbres_spectaculaires%2FMapServer%2FWMSServer%7C0%2Ct%2C0.85%3BWMS%7Chttps%3A%2F%2Fgeo.jura.ch%2Fmapserv_proxy%3Fogcserver%3DMain_PNG%7Cenv_03_13_arbres_remarquables_points_validation%2Ct%2C0.85",
-   "qlr": "https://davidoesch.github.io/geoservice_harvester_poc/data/topics/arbres-remarquables.qlr",
-   "lyrx": "https://davidoesch.github.io/geoservice_harvester_poc/data/topics/arbres-remarquables.lyrx",
-   "owc": "https://davidoesch.github.io/geoservice_harvester_poc/data/topics/arbres-remarquables.ows.json"
-  },
-  {
    "id": "archaologische-fundstellen",
    "label": "Archäologische Fundstellen",
    "owners": [
@@ -5040,6 +5029,40 @@
    "owc": "https://davidoesch.github.io/geoservice_harvester_poc/data/topics/aula.ows.json"
   },
   {
+   "id": "ausgangszustand-artenforderung-flora-391-104",
+   "label": "Ausgangszustand - Artenförderung Flora (391 104)",
+   "owners": [
+    "KT_SG",
+    "KT_ZH"
+   ],
+   "members": [
+    {
+     "key": "KT_SG|https://services.geo.sg.ch/wss/service/SG00002_WMS/guest|G_Flora",
+     "title": "G_Flora",
+     "owner": "KT_SG",
+     "service": {
+      "type": "WMS",
+      "url": "https://services.geo.sg.ch/wss/service/SG00002_WMS/guest",
+      "layer": "G_Flora"
+     }
+    },
+    {
+     "key": "KT_ZH|https://maps.zh.ch/wfs/OGDZHWFS|ms:ogd-0391_giszhpub_fns_ausg_zustand_ap_flora_f",
+     "title": "Ausgangszustand - Artenförderung Flora (391.104)",
+     "owner": "KT_ZH",
+     "service": {
+      "type": "WFS",
+      "url": "https://maps.zh.ch/wfs/OGDZHWFS",
+      "layer": "ms:ogd-0391_giszhpub_fns_ausg_zustand_ap_flora_f"
+     }
+    }
+   ],
+   "mapgeo": "https://map.geo.admin.ch/#/map?lang=de&center=2734531,1232172&z=3&bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS%7Chttps%3A%2F%2Fservices.geo.sg.ch%2Fwss%2Fservice%2FSG00002_WMS%2Fguest%7CG_Flora%2Ct%2C0.85",
+   "qlr": "https://davidoesch.github.io/geoservice_harvester_poc/data/topics/ausgangszustand-artenforderung-flora-391-104.qlr",
+   "lyrx": "https://davidoesch.github.io/geoservice_harvester_poc/data/topics/ausgangszustand-artenforderung-flora-391-104.lyrx",
+   "owc": "https://davidoesch.github.io/geoservice_harvester_poc/data/topics/ausgangszustand-artenforderung-flora-391-104.ows.json"
+  },
+  {
    "id": "ausgepragte-platz-oder-strassenraume",
    "label": "Ausgeprägte Platz- oder Strassenräume",
    "owners": [
@@ -5079,7 +5102,7 @@
      }
     }
    ],
-   "mapgeo": "https://map.geo.admin.ch/#/map?lang=de&center=2687562,1227250&z=2&bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS%7Chttps%3A%2F%2Fwww.ogd.stadt-zuerich.ch%2Fwms%2Fgeoportal%2FNutzungsplanung___kommunale_Bau__und_Zonenordnung__BZO_%7CDem%20Platz-%20oder%20Strassenraum%20zugewandte%20Erdgeschossnutzung%2Ct%2C0.85%3BWMS%7Chttps%3A%2F%2Fgeo.ur.ch%2Fwms%7Csuche%3Aapo_perimeter%2Ct%2C0.85%3BWMS%7Chttps%3A%2F%2Fwms.zh.ch%2FOrtsbildschutzZHWMS%7Causgepraegte-platz-oder-strassenraeume%2Ct%2C0.85",
+   "mapgeo": "https://map.geo.admin.ch/#/map?lang=de&center=2687565,1226917&z=2&bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS%7Chttps%3A%2F%2Fwww.ogd.stadt-zuerich.ch%2Fwms%2Fgeoportal%2FNutzungsplanung___kommunale_Bau__und_Zonenordnung__BZO_%7CDem%20Platz-%20oder%20Strassenraum%20zugewandte%20Erdgeschossnutzung%2Ct%2C0.85%3BWMS%7Chttps%3A%2F%2Fgeo.ur.ch%2Fwms%7Csuche%3Aapo_perimeter%2Ct%2C0.85%3BWMS%7Chttps%3A%2F%2Fwms.zh.ch%2FOrtsbildschutzZHWMS%7Causgepraegte-platz-oder-strassenraeume%2Ct%2C0.85",
    "qlr": "https://davidoesch.github.io/geoservice_harvester_poc/data/topics/ausgepragte-platz-oder-strassenraume.qlr",
    "lyrx": "https://davidoesch.github.io/geoservice_harvester_poc/data/topics/ausgepragte-platz-oder-strassenraume.lyrx",
    "owc": "https://davidoesch.github.io/geoservice_harvester_poc/data/topics/ausgepragte-platz-oder-strassenraume.ows.json"
@@ -5666,21 +5689,21 @@
    "owc": "https://davidoesch.github.io/geoservice_harvester_poc/data/topics/av-gebiete-mit-dauernden-bodenverschiebungen.ows.json"
   },
   {
-   "id": "av-gemeindegrenze",
-   "label": "AV Gemeindegrenze",
+   "id": "av-gemeindeflaeche",
+   "label": "AV Gemeindeflaeche",
    "owners": [
     "CITY_Bern",
     "CITY_Zuerich"
    ],
    "members": [
     {
-     "key": "CITY_Bern|https://map.bern.ch/arcgis/services/Geoportal/Bauklassenplan/MapServer/WMSServer|25",
-     "title": "AV_Gemeindegrenze",
+     "key": "CITY_Bern|https://map.bern.ch/arcgis/services/Geoportal/Laermempfindlichkeitsstufenplan/MapServer/WMSServer|1",
+     "title": "AV_Gemeindeflaeche",
      "owner": "CITY_Bern",
      "service": {
       "type": "WMS",
-      "url": "https://map.bern.ch/arcgis/services/Geoportal/Bauklassenplan/MapServer/WMSServer",
-      "layer": "25"
+      "url": "https://map.bern.ch/arcgis/services/Geoportal/Laermempfindlichkeitsstufenplan/MapServer/WMSServer",
+      "layer": "1"
      }
     },
     {
@@ -5694,10 +5717,10 @@
      }
     }
    ],
-   "mapgeo": "https://map.geo.admin.ch/#/map?lang=de&center=2596750,1200497&z=5&bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS%7Chttps%3A%2F%2Fmap.bern.ch%2Farcgis%2Fservices%2FGeoportal%2FBauklassenplan%2FMapServer%2FWMSServer%7C25%2Ct%2C0.85",
-   "qlr": "https://davidoesch.github.io/geoservice_harvester_poc/data/topics/av-gemeindegrenze.qlr",
-   "lyrx": "https://davidoesch.github.io/geoservice_harvester_poc/data/topics/av-gemeindegrenze.lyrx",
-   "owc": "https://davidoesch.github.io/geoservice_harvester_poc/data/topics/av-gemeindegrenze.ows.json"
+   "mapgeo": "https://map.geo.admin.ch/#/map?lang=de&center=2596750,1200497&z=5&bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS%7Chttps%3A%2F%2Fmap.bern.ch%2Farcgis%2Fservices%2FGeoportal%2FLaermempfindlichkeitsstufenplan%2FMapServer%2FWMSServer%7C1%2Ct%2C0.85",
+   "qlr": "https://davidoesch.github.io/geoservice_harvester_poc/data/topics/av-gemeindeflaeche.qlr",
+   "lyrx": "https://davidoesch.github.io/geoservice_harvester_poc/data/topics/av-gemeindeflaeche.lyrx",
+   "owc": "https://davidoesch.github.io/geoservice_harvester_poc/data/topics/av-gemeindeflaeche.ows.json"
   },
   {
    "id": "av-grenzpunkte",
@@ -9231,17 +9254,17 @@
      }
     },
     {
-     "key": "KT_UR|https://geo.ur.ch/wms|leitungen:was_fernwirkkabel",
-     "title": "Wasser Fernwirkkabel",
+     "key": "KT_UR|https://geo.ur.ch/wms|leitungen:abw_fernwirkkabel",
+     "title": "Abwasser Fernwirkkabel",
      "owner": "KT_UR",
      "service": {
       "type": "WMS",
       "url": "https://geo.ur.ch/wms",
-      "layer": "leitungen:was_fernwirkkabel"
+      "layer": "leitungen:abw_fernwirkkabel"
      }
     }
    ],
-   "mapgeo": "https://map.geo.admin.ch/#/map?lang=de&center=2652414,1185968&z=1&bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS%7Chttps%3A%2F%2Fgeodienste.ch%2Fdb%2Fleitungskataster_v2_0_0%2Fdeu%7Cwasser_fernwirkkabel_beschriftung%2Ct%2C0.85%3BWMS%7Chttps%3A%2F%2Fgeo.ur.ch%2Fwms%7Cleitungen%3Awas_fernwirkkabel%2Ct%2C0.85",
+   "mapgeo": "https://map.geo.admin.ch/#/map?lang=de&center=2652414,1185968&z=1&bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS%7Chttps%3A%2F%2Fgeodienste.ch%2Fdb%2Fleitungskataster_v2_0_0%2Fdeu%7Cwasser_fernwirkkabel_beschriftung%2Ct%2C0.85%3BWMS%7Chttps%3A%2F%2Fgeo.ur.ch%2Fwms%7Cleitungen%3Aabw_fernwirkkabel%2Ct%2C0.85",
    "qlr": "https://davidoesch.github.io/geoservice_harvester_poc/data/topics/beschriftungen-wasser-fernwirkkabel.qlr",
    "lyrx": "https://davidoesch.github.io/geoservice_harvester_poc/data/topics/beschriftungen-wasser-fernwirkkabel.lyrx",
    "owc": "https://davidoesch.github.io/geoservice_harvester_poc/data/topics/beschriftungen-wasser-fernwirkkabel.ows.json"
@@ -9390,6 +9413,7 @@
     "CITY_Zuerich",
     "KT_BE",
     "KT_GR",
+    "KT_SZ",
     "KT_TG",
     "KT_TI"
    ],
@@ -9445,6 +9469,16 @@
      }
     },
     {
+     "key": "KT_SZ|https://map.geo.sz.ch/mapserv_proxy|ch.sz.a045a.velowegnetz.freizeit.mountainbikeland",
+     "title": "Freizeitvelowegnetz Mountainbikeland-Route",
+     "owner": "KT_SZ",
+     "service": {
+      "type": "WMS",
+      "url": "https://map.geo.sz.ch/mapserv_proxy",
+      "layer": "ch.sz.a045a.velowegnetz.freizeit.mountainbikeland"
+     }
+    },
+    {
      "key": "KT_TG|https://ows.geo.tg.ch/geofy_access_proxy/mountainbike|mountainbikerouten",
      "title": "Mountainbike-Routen",
      "owner": "KT_TG",
@@ -9465,7 +9499,7 @@
      }
     }
    ],
-   "mapgeo": "https://map.geo.admin.ch/#/map?lang=de&center=2684419,1180364&z=0&bgLayer=ch.swisstopo.pixelkarte-grau&layers=ch.astra.mountainbikeland-sperrungen_umleitungen%2Ct%2C0.85%3BWMS%7Chttps%3A%2F%2Fstadtplan.winterthur.ch%2Fwms%2FVeloplan%7CMountainbikeinhaltBezeichner%2Ct%2C0.85%3BWMS%7Chttps%3A%2F%2Fwww.ogd.stadt-zuerich.ch%2Fwms%2Fgeoportal%2FErholungs__und_Sporteinrichtungen%7CMountainbike%2Ct%2C0.85%3BWMS%7Chttps%3A%2F%2Fwww.geoservice.apps.be.ch%2Fgeoservice3%2Fservices%2Fa42geo%2Fof_planningcadastre08_de_ms_wms%2FMapServer%2FWMSServer%7CVELOS_FEMOBIR_VW_39184%2Ct%2C0.85%3BWMS%7Chttps%3A%2F%2Fwms.geo.gr.ch%2Frrip_bregaglia%7CPercorso_mountainbike%2Ct%2C0.85%3BWMS%7Chttps%3A%2F%2Fows.geo.tg.ch%2Fgeofy_access_proxy%2Fmountainbike%7Cmountainbikerouten%2Ct%2C0.85%3BWMS%7Chttps%3A%2F%2Fwms.geo.ti.ch%2Fservice%7Cac_036_1_v1_0_rete_percorsi_mountain_bike%2Ct%2C0.85",
+   "mapgeo": "https://map.geo.admin.ch/#/map?lang=de&center=2684419,1180364&z=0&bgLayer=ch.swisstopo.pixelkarte-grau&layers=ch.astra.mountainbikeland-sperrungen_umleitungen%2Ct%2C0.85%3BWMS%7Chttps%3A%2F%2Fstadtplan.winterthur.ch%2Fwms%2FVeloplan%7CMountainbikeinhaltBezeichner%2Ct%2C0.85%3BWMS%7Chttps%3A%2F%2Fwww.ogd.stadt-zuerich.ch%2Fwms%2Fgeoportal%2FErholungs__und_Sporteinrichtungen%7CMountainbike%2Ct%2C0.85%3BWMS%7Chttps%3A%2F%2Fwww.geoservice.apps.be.ch%2Fgeoservice3%2Fservices%2Fa42geo%2Fof_planningcadastre08_de_ms_wms%2FMapServer%2FWMSServer%7CVELOS_FEMOBIR_VW_39184%2Ct%2C0.85%3BWMS%7Chttps%3A%2F%2Fwms.geo.gr.ch%2Frrip_bregaglia%7CPercorso_mountainbike%2Ct%2C0.85%3BWMS%7Chttps%3A%2F%2Fmap.geo.sz.ch%2Fmapserv_proxy%7Cch.sz.a045a.velowegnetz.freizeit.mountainbikeland%2Ct%2C0.85%3BWMS%7Chttps%3A%2F%2Fows.geo.tg.ch%2Fgeofy_access_proxy%2Fmountainbike%7Cmountainbikerouten%2Ct%2C0.85%3BWMS%7Chttps%3A%2F%2Fwms.geo.ti.ch%2Fservice%7Cac_036_1_v1_0_rete_percorsi_mountain_bike%2Ct%2C0.85",
    "qlr": "https://davidoesch.github.io/geoservice_harvester_poc/data/topics/bestehende-mountainbikeroute.qlr",
    "lyrx": "https://davidoesch.github.io/geoservice_harvester_poc/data/topics/bestehende-mountainbikeroute.lyrx",
    "owc": "https://davidoesch.github.io/geoservice_harvester_poc/data/topics/bestehende-mountainbikeroute.ows.json"
@@ -10755,6 +10789,62 @@
    "owc": "https://davidoesch.github.io/geoservice_harvester_poc/data/topics/bikeroute.ows.json"
   },
   {
+   "id": "bikestrecken-von-schweiz-mobil-mountainbikeland",
+   "label": "Bikestrecken von SchweizMobil Mountainbikeland",
+   "owners": [
+    "KT_BL",
+    "KT_GL",
+    "KT_SZ",
+    "KT_ZH"
+   ],
+   "members": [
+    {
+     "key": "KT_BL|https://geowms.bl.ch/|schweizmobil_mountainbikerouten",
+     "title": "Schweiz Mobil Mountainbike-Routen",
+     "owner": "KT_BL",
+     "service": {
+      "type": "WMS",
+      "url": "https://geowms.bl.ch/",
+      "layer": "schweizmobil_mountainbikerouten"
+     }
+    },
+    {
+     "key": "KT_GL|https://map.geo.gl.ch/ows/mainmap|ch.gl.transportation.schweizmobil_mtb",
+     "title": "SchweizMobil-Mountainbikerouten MTB",
+     "owner": "KT_GL",
+     "service": {
+      "type": "WMS",
+      "url": "https://map.geo.gl.ch/ows/mainmap",
+      "layer": "ch.gl.transportation.schweizmobil_mtb"
+     }
+    },
+    {
+     "key": "KT_SZ|https://map.geo.sz.ch/mapserv_proxy|ch.sz.a045a.velowegnetz.schweizmobil.mountainbikeland",
+     "title": "Bikestrecken von SchweizMobil Mountainbikeland",
+     "owner": "KT_SZ",
+     "service": {
+      "type": "WMS",
+      "url": "https://map.geo.sz.ch/mapserv_proxy",
+      "layer": "ch.sz.a045a.velowegnetz.schweizmobil.mountainbikeland"
+     }
+    },
+    {
+     "key": "KT_ZH|https://wms.zh.ch/VelonetzZHWMS|schweizmobil_lokale_mountainbike-routen",
+     "title": "Lokale SchweizMobil Mountainbike-Routen",
+     "owner": "KT_ZH",
+     "service": {
+      "type": "WMS",
+      "url": "https://wms.zh.ch/VelonetzZHWMS",
+      "layer": "schweizmobil_lokale_mountainbike-routen"
+     }
+    }
+   ],
+   "mapgeo": "https://map.geo.admin.ch/#/map?lang=de&center=2657854,1221022&z=2&bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS%7Chttps%3A%2F%2Fgeowms.bl.ch%2F%7Cschweizmobil_mountainbikerouten%2Ct%2C0.85%3BWMS%7Chttps%3A%2F%2Fmap.geo.gl.ch%2Fows%2Fmainmap%7Cch.gl.transportation.schweizmobil_mtb%2Ct%2C0.85%3BWMS%7Chttps%3A%2F%2Fmap.geo.sz.ch%2Fmapserv_proxy%7Cch.sz.a045a.velowegnetz.schweizmobil.mountainbikeland%2Ct%2C0.85%3BWMS%7Chttps%3A%2F%2Fwms.zh.ch%2FVelonetzZHWMS%7Cschweizmobil_lokale_mountainbike-routen%2Ct%2C0.85",
+   "qlr": "https://davidoesch.github.io/geoservice_harvester_poc/data/topics/bikestrecken-von-schweiz-mobil-mountainbikeland.qlr",
+   "lyrx": "https://davidoesch.github.io/geoservice_harvester_poc/data/topics/bikestrecken-von-schweiz-mobil-mountainbikeland.lyrx",
+   "owc": "https://davidoesch.github.io/geoservice_harvester_poc/data/topics/bikestrecken-von-schweiz-mobil-mountainbikeland.ows.json"
+  },
+  {
    "id": "biodiversitatsforderflachen",
    "label": "Biodiversitätsförderflächen",
    "owners": [
@@ -10876,13 +10966,13 @@
    ],
    "members": [
     {
-     "key": "KT_BE|https://www.geoservice.apps.be.ch/geoservice3/services/a42geo/of_climatologymeteorologyatmosphere01_de_ms_wms/MapServer/WMSServer|KLIMAPHK_VERK20_VW_15459",
-     "title": "Nächtliche bioklimatische Bewertung in den Verkehrsflächen in 2 m über Grund, 2020",
+     "key": "KT_BE|https://www.geoservice.apps.be.ch/geoservice3/services/a42geo/of_climatologymeteorologyatmosphere01_de_ms_wms/MapServer/WMSServer|KLIMAPHK_VERK60_VW_15458",
+     "title": "Nächtliche bioklimatische Bewertung in den Verkehrsflächen in 2 m über Grund, 2060",
      "owner": "KT_BE",
      "service": {
       "type": "WMS",
       "url": "https://www.geoservice.apps.be.ch/geoservice3/services/a42geo/of_climatologymeteorologyatmosphere01_de_ms_wms/MapServer/WMSServer",
-      "layer": "KLIMAPHK_VERK20_VW_15459"
+      "layer": "KLIMAPHK_VERK60_VW_15458"
      }
     },
     {
@@ -10916,7 +11006,7 @@
      }
     }
    ],
-   "mapgeo": "https://map.geo.admin.ch/#/map?lang=de&center=2655249,1217273&z=2&bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS%7Chttps%3A%2F%2Fwww.geoservice.apps.be.ch%2Fgeoservice3%2Fservices%2Fa42geo%2Fof_climatologymeteorologyatmosphere01_de_ms_wms%2FMapServer%2FWMSServer%7CKLIMAPHK_VERK20_VW_15459%2Ct%2C0.85%3BWMS%7Chttps%3A%2F%2Fwms.geo.sh.ch%2Fwms%7Csh.klima.klimakarten.planhinweiskarte.nacht_bioklima%2Ct%2C0.85%3BWMS%7Chttps%3A%2F%2Fows-raster.geo.tg.ch%2Fgeofy_access_proxy%2Fklimakarten%7Cplanhinweiskarte_nacht_siedlungsflaechen_bioklimatische_situation%2Ct%2C0.85%3BWMS%7Chttps%3A%2F%2Fwms.zh.ch%2FAwelLHBewertungskarten2024NachtaktuellZHWMS%7Cgruenflaechen-2024-nacht-a%2Ct%2C0.85",
+   "mapgeo": "https://map.geo.admin.ch/#/map?lang=de&center=2655249,1217273&z=2&bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS%7Chttps%3A%2F%2Fwww.geoservice.apps.be.ch%2Fgeoservice3%2Fservices%2Fa42geo%2Fof_climatologymeteorologyatmosphere01_de_ms_wms%2FMapServer%2FWMSServer%7CKLIMAPHK_VERK60_VW_15458%2Ct%2C0.85%3BWMS%7Chttps%3A%2F%2Fwms.geo.sh.ch%2Fwms%7Csh.klima.klimakarten.planhinweiskarte.nacht_bioklima%2Ct%2C0.85%3BWMS%7Chttps%3A%2F%2Fows-raster.geo.tg.ch%2Fgeofy_access_proxy%2Fklimakarten%7Cplanhinweiskarte_nacht_siedlungsflaechen_bioklimatische_situation%2Ct%2C0.85%3BWMS%7Chttps%3A%2F%2Fwms.zh.ch%2FAwelLHBewertungskarten2024NachtaktuellZHWMS%7Cgruenflaechen-2024-nacht-a%2Ct%2C0.85",
    "qlr": "https://davidoesch.github.io/geoservice_harvester_poc/data/topics/bioklima-von-siedlungs-und-verkehrsflachen-in-der-nacht-4-uh.qlr",
    "lyrx": "https://davidoesch.github.io/geoservice_harvester_poc/data/topics/bioklima-von-siedlungs-und-verkehrsflachen-in-der-nacht-4-uh.lyrx",
    "owc": "https://davidoesch.github.io/geoservice_harvester_poc/data/topics/bioklima-von-siedlungs-und-verkehrsflachen-in-der-nacht-4-uh.ows.json"
@@ -11153,7 +11243,7 @@
      }
     }
    ],
-   "mapgeo": "https://map.geo.admin.ch/#/map?lang=de&center=2672405,1195968&z=2&bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS%7Chttps%3A%2F%2Fpublic.geo.lu.ch%2Fogd%2Fservices%2Fmanaged%2FSBWXXXXX_COL_V1_MP%2FMapServer%2FWMSServer%7C38%2Ct%2C0.85%3BWMS%7Chttps%3A%2F%2Fgeo.ur.ch%2Fwms%7Cweitere%3Ablockgletscher%2Ct%2C0.85",
+   "mapgeo": "https://map.geo.admin.ch/#/map?lang=de&center=2670355,1197375&z=2&bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS%7Chttps%3A%2F%2Fpublic.geo.lu.ch%2Fogd%2Fservices%2Fmanaged%2FSBWXXXXX_COL_V1_MP%2FMapServer%2FWMSServer%7C38%2Ct%2C0.85%3BWMS%7Chttps%3A%2F%2Fgeo.ur.ch%2Fwms%7Cweitere%3Ablockgletscher%2Ct%2C0.85",
    "qlr": "https://davidoesch.github.io/geoservice_harvester_poc/data/topics/blockgletscher.qlr",
    "lyrx": "https://davidoesch.github.io/geoservice_harvester_poc/data/topics/blockgletscher.lyrx",
    "owc": "https://davidoesch.github.io/geoservice_harvester_poc/data/topics/blockgletscher.ows.json"
@@ -14522,40 +14612,6 @@
    "owc": "https://davidoesch.github.io/geoservice_harvester_poc/data/topics/denkmal.ows.json"
   },
   {
-   "id": "denkmalschutz",
-   "label": "Denkmalschutz",
-   "owners": [
-    "CITY_Zuerich",
-    "KT_SO"
-   ],
-   "members": [
-    {
-     "key": "CITY_Zuerich|https://www.ogc.stadt-zuerich.ch/mapproxy/service|Denkmalschutz",
-     "title": "Denkmalschutz",
-     "owner": "CITY_Zuerich",
-     "service": {
-      "type": "WMS",
-      "url": "https://www.ogc.stadt-zuerich.ch/mapproxy/service",
-      "layer": "Denkmalschutz"
-     }
-    },
-    {
-     "key": "KT_SO|https://geo.so.ch/api/wms|ch.so.ada.denkmalschutz",
-     "title": "Denkmalschutz",
-     "owner": "KT_SO",
-     "service": {
-      "type": "WMS",
-      "url": "https://geo.so.ch/api/wms",
-      "layer": "ch.so.ada.denkmalschutz"
-     }
-    }
-   ],
-   "mapgeo": "https://map.geo.admin.ch/#/map?lang=de&center=2687266,1182730&z=1&bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS%7Chttps%3A%2F%2Fwww.ogc.stadt-zuerich.ch%2Fmapproxy%2Fservice%7CDenkmalschutz%2Ct%2C0.85%3BWMS%7Chttps%3A%2F%2Fgeo.so.ch%2Fapi%2Fwms%7Cch.so.ada.denkmalschutz%2Ct%2C0.85",
-   "qlr": "https://davidoesch.github.io/geoservice_harvester_poc/data/topics/denkmalschutz.qlr",
-   "lyrx": "https://davidoesch.github.io/geoservice_harvester_poc/data/topics/denkmalschutz.lyrx",
-   "owc": "https://davidoesch.github.io/geoservice_harvester_poc/data/topics/denkmalschutz.ows.json"
-  },
-  {
    "id": "denkmalschutz-einzelobjekte",
    "label": "Denkmalschutz Einzelobjekte",
    "owners": [
@@ -14610,6 +14666,40 @@
    "qlr": "https://davidoesch.github.io/geoservice_harvester_poc/data/topics/denkmalschutz-einzelobjekte.qlr",
    "lyrx": "https://davidoesch.github.io/geoservice_harvester_poc/data/topics/denkmalschutz-einzelobjekte.lyrx",
    "owc": "https://davidoesch.github.io/geoservice_harvester_poc/data/topics/denkmalschutz-einzelobjekte.ows.json"
+  },
+  {
+   "id": "denkmalschutz-entwurf",
+   "label": "Denkmalschutz (Entwurf)",
+   "owners": [
+    "CITY_Zuerich",
+    "KT_SO"
+   ],
+   "members": [
+    {
+     "key": "CITY_Zuerich|https://www.ogc.stadt-zuerich.ch/mapproxy/service|Denkmalschutz",
+     "title": "Denkmalschutz",
+     "owner": "CITY_Zuerich",
+     "service": {
+      "type": "WMS",
+      "url": "https://www.ogc.stadt-zuerich.ch/mapproxy/service",
+      "layer": "Denkmalschutz"
+     }
+    },
+    {
+     "key": "KT_SO|https://geo.so.ch/api/wms|ch.so.ada.denkmalschutz.edit.denkmal",
+     "title": "Denkmalschutz (Entwurf)",
+     "owner": "KT_SO",
+     "service": {
+      "type": "WMS",
+      "url": "https://geo.so.ch/api/wms",
+      "layer": "ch.so.ada.denkmalschutz.edit.denkmal"
+     }
+    }
+   ],
+   "mapgeo": "https://map.geo.admin.ch/#/map?lang=de&center=2687266,1182730&z=1&bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS%7Chttps%3A%2F%2Fwww.ogc.stadt-zuerich.ch%2Fmapproxy%2Fservice%7CDenkmalschutz%2Ct%2C0.85%3BWMS%7Chttps%3A%2F%2Fgeo.so.ch%2Fapi%2Fwms%7Cch.so.ada.denkmalschutz.edit.denkmal%2Ct%2C0.85",
+   "qlr": "https://davidoesch.github.io/geoservice_harvester_poc/data/topics/denkmalschutz-entwurf.qlr",
+   "lyrx": "https://davidoesch.github.io/geoservice_harvester_poc/data/topics/denkmalschutz-entwurf.lyrx",
+   "owc": "https://davidoesch.github.io/geoservice_harvester_poc/data/topics/denkmalschutz-entwurf.ows.json"
   },
   {
    "id": "denkmalverzeichnis",
@@ -15978,17 +16068,17 @@
      }
     },
     {
-     "key": "KT_BL|https://geowms.bl.ch/|einschraenkungen_fuer_drohnen",
-     "title": "Einschränkungen für Drohnen",
+     "key": "KT_BL|https://geowms.bl.ch/|ch.bazl.einschraenkungen-drohnen",
+     "title": "Einschränkungen für Drohnen BAZL",
      "owner": "KT_BL",
      "service": {
       "type": "WMS",
       "url": "https://geowms.bl.ch/",
-      "layer": "einschraenkungen_fuer_drohnen"
+      "layer": "ch.bazl.einschraenkungen-drohnen"
      }
     }
    ],
-   "mapgeo": "https://map.geo.admin.ch/#/map?lang=de&center=2665339,818753&z=0&bgLayer=ch.swisstopo.pixelkarte-grau&layers=ch.bazl.einschraenkungen-drohnen%2Ct%2C0.85%3BWMS%7Chttps%3A%2F%2Fgeowms.bl.ch%2F%7Ceinschraenkungen_fuer_drohnen%2Ct%2C0.85",
+   "mapgeo": "https://map.geo.admin.ch/#/map?lang=de&center=2684419,1180364&z=0&bgLayer=ch.swisstopo.pixelkarte-grau&layers=ch.bazl.einschraenkungen-drohnen%2Ct%2C0.85%3BWMS%7Chttps%3A%2F%2Fgeowms.bl.ch%2F%7Cch.bazl.einschraenkungen-drohnen%2Ct%2C0.85",
    "qlr": "https://davidoesch.github.io/geoservice_harvester_poc/data/topics/einschrankungen-fur-drohnen.qlr",
    "lyrx": "https://davidoesch.github.io/geoservice_harvester_poc/data/topics/einschrankungen-fur-drohnen.lyrx",
    "owc": "https://davidoesch.github.io/geoservice_harvester_poc/data/topics/einschrankungen-fur-drohnen.ows.json"
@@ -19286,6 +19376,84 @@
    "owc": "https://davidoesch.github.io/geoservice_harvester_poc/data/topics/fahre.ows.json"
   },
   {
+   "id": "fahrradstrecken-von-schweiz-mobil-veloland",
+   "label": "Fahrradstrecken von SchweizMobil Veloland",
+   "owners": [
+    "KT_BL",
+    "KT_FR",
+    "KT_GL",
+    "KT_JU",
+    "KT_SZ",
+    "KT_ZH"
+   ],
+   "members": [
+    {
+     "key": "KT_BL|https://geowms.bl.ch/|schweizmobil_velorouten",
+     "title": "Schweiz Mobil Velo-Routen",
+     "owner": "KT_BL",
+     "service": {
+      "type": "WMS",
+      "url": "https://geowms.bl.ch/",
+      "layer": "schweizmobil_velorouten"
+     }
+    },
+    {
+     "key": "KT_FR|https://maps.fr.ch/ags/services/OpenData/Itineraires_SuisseMobile_velo/MapServer/WMSServer|0",
+     "title": "Itinéraires SuisseMobile vélo",
+     "owner": "KT_FR",
+     "service": {
+      "type": "WMS",
+      "url": "https://maps.fr.ch/ags/services/OpenData/Itineraires_SuisseMobile_velo/MapServer/WMSServer",
+      "layer": "0"
+     }
+    },
+    {
+     "key": "KT_GL|https://map.geo.gl.ch/ows/mainmap|ch.gl.transportation.schweizmobil_velo",
+     "title": "SchweizMobil-Radrouten Velo Fahrrad",
+     "owner": "KT_GL",
+     "service": {
+      "type": "WMS",
+      "url": "https://map.geo.gl.ch/ows/mainmap",
+      "layer": "ch.gl.transportation.schweizmobil_velo"
+     }
+    },
+    {
+     "key": "KT_JU|https://geo.jura.ch/mapserv_proxy?ogcserver=Main_PNG|sdt_09_19_itineraires_cyclables_suissemobile_la_suisse_a_velo",
+     "title": "sdt_09_19_itineraires_cyclables_suissemobile_la_suisse_a_velo",
+     "owner": "KT_JU",
+     "service": {
+      "type": "WMS",
+      "url": "https://geo.jura.ch/mapserv_proxy?ogcserver=Main_PNG",
+      "layer": "sdt_09_19_itineraires_cyclables_suissemobile_la_suisse_a_velo"
+     }
+    },
+    {
+     "key": "KT_SZ|https://map.geo.sz.ch/mapserv_proxy|ch.sz.a045a.velowegnetz.schweizmobil.veloland",
+     "title": "Fahrradstrecken von SchweizMobil Veloland",
+     "owner": "KT_SZ",
+     "service": {
+      "type": "WMS",
+      "url": "https://map.geo.sz.ch/mapserv_proxy",
+      "layer": "ch.sz.a045a.velowegnetz.schweizmobil.veloland"
+     }
+    },
+    {
+     "key": "KT_ZH|https://wms.zh.ch/VelonetzZHWMS|schweizmobil_lokale_velo-routen",
+     "title": "Lokale SchweizMobil Velo-Routen",
+     "owner": "KT_ZH",
+     "service": {
+      "type": "WMS",
+      "url": "https://wms.zh.ch/VelonetzZHWMS",
+      "layer": "schweizmobil_lokale_velo-routen"
+     }
+    }
+   ],
+   "mapgeo": "https://map.geo.admin.ch/#/map?lang=de&center=2651596,1214494&z=1&bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS%7Chttps%3A%2F%2Fgeowms.bl.ch%2F%7Cschweizmobil_velorouten%2Ct%2C0.85%3BWMS%7Chttps%3A%2F%2Fmaps.fr.ch%2Fags%2Fservices%2FOpenData%2FItineraires_SuisseMobile_velo%2FMapServer%2FWMSServer%7C0%2Ct%2C0.85%3BWMS%7Chttps%3A%2F%2Fmap.geo.gl.ch%2Fows%2Fmainmap%7Cch.gl.transportation.schweizmobil_velo%2Ct%2C0.85%3BWMS%7Chttps%3A%2F%2Fgeo.jura.ch%2Fmapserv_proxy%3Fogcserver%3DMain_PNG%7Csdt_09_19_itineraires_cyclables_suissemobile_la_suisse_a_velo%2Ct%2C0.85%3BWMS%7Chttps%3A%2F%2Fmap.geo.sz.ch%2Fmapserv_proxy%7Cch.sz.a045a.velowegnetz.schweizmobil.veloland%2Ct%2C0.85%3BWMS%7Chttps%3A%2F%2Fwms.zh.ch%2FVelonetzZHWMS%7Cschweizmobil_lokale_velo-routen%2Ct%2C0.85",
+   "qlr": "https://davidoesch.github.io/geoservice_harvester_poc/data/topics/fahrradstrecken-von-schweiz-mobil-veloland.qlr",
+   "lyrx": "https://davidoesch.github.io/geoservice_harvester_poc/data/topics/fahrradstrecken-von-schweiz-mobil-veloland.lyrx",
+   "owc": "https://davidoesch.github.io/geoservice_harvester_poc/data/topics/fahrradstrecken-von-schweiz-mobil-veloland.ows.json"
+  },
+  {
    "id": "fahrstrassen-kursschifffahrt-sachplan-seeverkehr",
    "label": "Fahrstrassen Kursschifffahrt (Sachplan Seeverkehr)",
    "owners": [
@@ -19700,8 +19868,8 @@
    "owc": "https://davidoesch.github.io/geoservice_harvester_poc/data/topics/feuchtgebiete-2001-2010.ows.json"
   },
   {
-   "id": "feuerwehrbezirke",
-   "label": "Feuerwehrbezirke",
+   "id": "feuerwehrplan-gde",
+   "label": "Feuerwehrplan Gde",
    "owners": [
     "Bund",
     "CITY_Luzern",
@@ -19756,13 +19924,13 @@
      }
     },
     {
-     "key": "KT_AI|https://www.geoportal.ch/services/wms/ktai|ch.geoportal.militaer_sicherheit.1622.0.feuerloeschweiher_kt",
-     "title": "Feuerlöschweiher Kt",
+     "key": "KT_AI|https://www.geoportal.ch/services/wms/ktai|ch.geoportal.militaer_sicherheit.518.0.feuerwehrplan_gde",
+     "title": "Feuerwehrplan Gde",
      "owner": "KT_AI",
      "service": {
       "type": "WMS",
       "url": "https://www.geoportal.ch/services/wms/ktai",
-      "layer": "ch.geoportal.militaer_sicherheit.1622.0.feuerloeschweiher_kt"
+      "layer": "ch.geoportal.militaer_sicherheit.518.0.feuerwehrplan_gde"
      }
     },
     {
@@ -19816,10 +19984,10 @@
      }
     }
    ],
-   "mapgeo": "https://map.geo.admin.ch/#/map?lang=de&center=2684419,1180364&z=0&bgLayer=ch.swisstopo.pixelkarte-grau&layers=ch.bfe.kehrichtverbrennungsanlagen%2Ct%2C0.85%3BWMS%7Chttps%3A%2F%2Fmap.stadtluzern.ch%2Fserver%2Fservices%2FOGD%2Ffeuerstelle%2FMapServer%2FWMSServer%7C0%2Ct%2C0.85%3BWMS%7Chttps%3A%2F%2Fwww.ogd.stadt-zuerich.ch%2Fwms%2Fgeoportal%2FOeffentliche_Beleuchtung_der_Stadt_Zuerich%7CBrennstelle%2Ct%2C0.85%3BWMS%7Chttps%3A%2F%2Fwms.geo.ag.ch%2Fpublic%2Fows%7Cch_ag_geo_kai_stuetzpktfw%2Ct%2C0.85%3BWMS%7Chttps%3A%2F%2Fwww.geoportal.ch%2Fservices%2Fwms%2Fktai%7Cch.geoportal.militaer_sicherheit.1622.0.feuerloeschweiher_kt%2Ct%2C0.85%3BWMS%7Chttps%3A%2F%2Fwww.geoportal.ch%2Fservices%2Fwms%2Fktar%7Cch.geoportal.militaer_sicherheit.518.0.feuerwehrplan_gde%2Ct%2C0.85%3BWMS%7Chttps%3A%2F%2Fmap.geo.gl.ch%2Fows%2Fmainmap%7Cch.gl.society.feuerstellen%2Ct%2C0.85%3BWMS%7Chttps%3A%2F%2Fwms.geo.gr.ch%2Fregionen%7CFeuerwehrbezirke%2Ct%2C0.85%3BWMS%7Chttps%3A%2F%2Fpublic.geo.lu.ch%2Fogd%2Fservices%2Fmanaged%2FFWMAGZNE_DS_V2_MP%2FMapServer%2FWMSServer%7C0%2Ct%2C0.85",
-   "qlr": "https://davidoesch.github.io/geoservice_harvester_poc/data/topics/feuerwehrbezirke.qlr",
-   "lyrx": "https://davidoesch.github.io/geoservice_harvester_poc/data/topics/feuerwehrbezirke.lyrx",
-   "owc": "https://davidoesch.github.io/geoservice_harvester_poc/data/topics/feuerwehrbezirke.ows.json"
+   "mapgeo": "https://map.geo.admin.ch/#/map?lang=de&center=2684419,1180364&z=0&bgLayer=ch.swisstopo.pixelkarte-grau&layers=ch.bfe.kehrichtverbrennungsanlagen%2Ct%2C0.85%3BWMS%7Chttps%3A%2F%2Fmap.stadtluzern.ch%2Fserver%2Fservices%2FOGD%2Ffeuerstelle%2FMapServer%2FWMSServer%7C0%2Ct%2C0.85%3BWMS%7Chttps%3A%2F%2Fwww.ogd.stadt-zuerich.ch%2Fwms%2Fgeoportal%2FOeffentliche_Beleuchtung_der_Stadt_Zuerich%7CBrennstelle%2Ct%2C0.85%3BWMS%7Chttps%3A%2F%2Fwms.geo.ag.ch%2Fpublic%2Fows%7Cch_ag_geo_kai_stuetzpktfw%2Ct%2C0.85%3BWMS%7Chttps%3A%2F%2Fwww.geoportal.ch%2Fservices%2Fwms%2Fktai%7Cch.geoportal.militaer_sicherheit.518.0.feuerwehrplan_gde%2Ct%2C0.85%3BWMS%7Chttps%3A%2F%2Fwww.geoportal.ch%2Fservices%2Fwms%2Fktar%7Cch.geoportal.militaer_sicherheit.518.0.feuerwehrplan_gde%2Ct%2C0.85%3BWMS%7Chttps%3A%2F%2Fmap.geo.gl.ch%2Fows%2Fmainmap%7Cch.gl.society.feuerstellen%2Ct%2C0.85%3BWMS%7Chttps%3A%2F%2Fwms.geo.gr.ch%2Fregionen%7CFeuerwehrbezirke%2Ct%2C0.85%3BWMS%7Chttps%3A%2F%2Fpublic.geo.lu.ch%2Fogd%2Fservices%2Fmanaged%2FFWMAGZNE_DS_V2_MP%2FMapServer%2FWMSServer%7C0%2Ct%2C0.85",
+   "qlr": "https://davidoesch.github.io/geoservice_harvester_poc/data/topics/feuerwehrplan-gde.qlr",
+   "lyrx": "https://davidoesch.github.io/geoservice_harvester_poc/data/topics/feuerwehrplan-gde.lyrx",
+   "owc": "https://davidoesch.github.io/geoservice_harvester_poc/data/topics/feuerwehrplan-gde.ows.json"
   },
   {
    "id": "fisch-und-krebsatlas",
@@ -25050,7 +25218,6 @@
    "id": "gefahrenhinweiskarte",
    "label": "Gefahrenhinweiskarte",
    "owners": [
-    "KT_AG",
     "KT_BL",
     "KT_LU",
     "KT_TG",
@@ -25058,16 +25225,6 @@
     "KT_VS"
    ],
    "members": [
-    {
-     "key": "KT_AG|https://wms.geo.ag.ch/public/ows|ch_ag_geo_are_ghkmurgang",
-     "title": "Gefahrenhinweiskarte Murgang",
-     "owner": "KT_AG",
-     "service": {
-      "type": "WMS",
-      "url": "https://wms.geo.ag.ch/public/ows",
-      "layer": "ch_ag_geo_are_ghkmurgang"
-     }
-    },
     {
      "key": "KT_BL|https://geowms.bl.ch/|ghk_sturzgefahren_group",
      "title": "Gefahrenhinweiskarte Sturzgefahren",
@@ -25119,55 +25276,10 @@
      }
     }
    ],
-   "mapgeo": "https://map.geo.admin.ch/#/map?lang=de&center=2642178,731230&z=0&bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS%7Chttps%3A%2F%2Fwms.geo.ag.ch%2Fpublic%2Fows%7Cch_ag_geo_are_ghkmurgang%2Ct%2C0.85%3BWMS%7Chttps%3A%2F%2Fgeowms.bl.ch%2F%7Cghk_sturzgefahren_group%2Ct%2C0.85%3BWMS%7Chttps%3A%2F%2Fpublic.geo.lu.ch%2Fogd%2Fservices%2Fmanaged%2FGHKXXXXX_COL_V1_MP%2FMapServer%2FWMSServer%7C3%2Ct%2C0.85%3BWMS%7Chttps%3A%2F%2Fows.geo.tg.ch%2Fgeofy_access_proxy%2Fgefahrenhinweiskarte%7CGefahrenhinweiskarte%2Ct%2C0.85%3BWMS%7Chttps%3A%2F%2Fgeo.ur.ch%2Fwms%7Curec%3Agk_gefahrenhinweiskarte%2Ct%2C0.85%3BWMS%7Chttps%3A%2F%2Fsit.vs.ch%2Farcgis%2Fservices%2FNATGEF%2FMapServer%2FWMSServer%7C0%2Ct%2C0.85",
+   "mapgeo": "https://map.geo.admin.ch/#/map?lang=de&center=2642178,731230&z=0&bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS%7Chttps%3A%2F%2Fgeowms.bl.ch%2F%7Cghk_sturzgefahren_group%2Ct%2C0.85%3BWMS%7Chttps%3A%2F%2Fpublic.geo.lu.ch%2Fogd%2Fservices%2Fmanaged%2FGHKXXXXX_COL_V1_MP%2FMapServer%2FWMSServer%7C3%2Ct%2C0.85%3BWMS%7Chttps%3A%2F%2Fows.geo.tg.ch%2Fgeofy_access_proxy%2Fgefahrenhinweiskarte%7CGefahrenhinweiskarte%2Ct%2C0.85%3BWMS%7Chttps%3A%2F%2Fgeo.ur.ch%2Fwms%7Curec%3Agk_gefahrenhinweiskarte%2Ct%2C0.85%3BWMS%7Chttps%3A%2F%2Fsit.vs.ch%2Farcgis%2Fservices%2FNATGEF%2FMapServer%2FWMSServer%7C0%2Ct%2C0.85",
    "qlr": "https://davidoesch.github.io/geoservice_harvester_poc/data/topics/gefahrenhinweiskarte.qlr",
    "lyrx": "https://davidoesch.github.io/geoservice_harvester_poc/data/topics/gefahrenhinweiskarte.lyrx",
    "owc": "https://davidoesch.github.io/geoservice_harvester_poc/data/topics/gefahrenhinweiskarte.ows.json"
-  },
-  {
-   "id": "gefahrenhinweiskarte-hochwasser-steile-gewasser",
-   "label": "Gefahrenhinweiskarte Hochwasser, steile Gewässer",
-   "owners": [
-    "KT_AG",
-    "KT_BL",
-    "KT_LU"
-   ],
-   "members": [
-    {
-     "key": "KT_AG|https://wms.geo.ag.ch/public/ows|ch_ag_geo_are_ghksteil_01",
-     "title": "Gefahrenhinweiskarte Hochwasser, steile Gewässer",
-     "owner": "KT_AG",
-     "service": {
-      "type": "WMS",
-      "url": "https://wms.geo.ag.ch/public/ows",
-      "layer": "ch_ag_geo_are_ghksteil_01"
-     }
-    },
-    {
-     "key": "KT_BL|https://geowms.bl.ch/|ghk_wassergefahren_murgang",
-     "title": "Gefahrenhinweiskarte Wassergefahren Murgang",
-     "owner": "KT_BL",
-     "service": {
-      "type": "WMS",
-      "url": "https://geowms.bl.ch/",
-      "layer": "ghk_wassergefahren_murgang"
-     }
-    },
-    {
-     "key": "KT_LU|https://public.geo.lu.ch/ogd/services/managed/GHKWASSR_COL_V1_MP/MapServer/WMSServer|9",
-     "title": "Gefahrenhinweiskarte Wasser: Überflutungstiefen Seen, 100-300 Jahre",
-     "owner": "KT_LU",
-     "service": {
-      "type": "WMS",
-      "url": "https://public.geo.lu.ch/ogd/services/managed/GHKWASSR_COL_V1_MP/MapServer/WMSServer",
-      "layer": "9"
-     }
-    }
-   ],
-   "mapgeo": "https://map.geo.admin.ch/#/map?lang=de&center=2634545,1240341&z=2&bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS%7Chttps%3A%2F%2Fwms.geo.ag.ch%2Fpublic%2Fows%7Cch_ag_geo_are_ghksteil_01%2Ct%2C0.85%3BWMS%7Chttps%3A%2F%2Fgeowms.bl.ch%2F%7Cghk_wassergefahren_murgang%2Ct%2C0.85%3BWMS%7Chttps%3A%2F%2Fpublic.geo.lu.ch%2Fogd%2Fservices%2Fmanaged%2FGHKWASSR_COL_V1_MP%2FMapServer%2FWMSServer%7C9%2Ct%2C0.85",
-   "qlr": "https://davidoesch.github.io/geoservice_harvester_poc/data/topics/gefahrenhinweiskarte-hochwasser-steile-gewasser.qlr",
-   "lyrx": "https://davidoesch.github.io/geoservice_harvester_poc/data/topics/gefahrenhinweiskarte-hochwasser-steile-gewasser.lyrx",
-   "owc": "https://davidoesch.github.io/geoservice_harvester_poc/data/topics/gefahrenhinweiskarte-hochwasser-steile-gewasser.ows.json"
   },
   {
    "id": "gefahrenhinweiskarte-permanente-rutschungen",
@@ -25236,6 +25348,40 @@
    "qlr": "https://davidoesch.github.io/geoservice_harvester_poc/data/topics/gefahrenhinweiskarte-rutschgefahren-spontane-rutschungen.qlr",
    "lyrx": "https://davidoesch.github.io/geoservice_harvester_poc/data/topics/gefahrenhinweiskarte-rutschgefahren-spontane-rutschungen.lyrx",
    "owc": "https://davidoesch.github.io/geoservice_harvester_poc/data/topics/gefahrenhinweiskarte-rutschgefahren-spontane-rutschungen.ows.json"
+  },
+  {
+   "id": "gefahrenhinweiskarte-uberschwemmung-talflusse",
+   "label": "Gefahrenhinweiskarte Überschwemmung Talflüsse",
+   "owners": [
+    "KT_BL",
+    "KT_LU"
+   ],
+   "members": [
+    {
+     "key": "KT_BL|https://geowms.bl.ch/|ghk_wassergefahren_ueberschwemmung_talfluesse",
+     "title": "Gefahrenhinweiskarte Überschwemmung Talflüsse",
+     "owner": "KT_BL",
+     "service": {
+      "type": "WMS",
+      "url": "https://geowms.bl.ch/",
+      "layer": "ghk_wassergefahren_ueberschwemmung_talfluesse"
+     }
+    },
+    {
+     "key": "KT_LU|https://public.geo.lu.ch/ogd/services/managed/GHKXXXXX_COL_V1_MP/MapServer/WMSServer|4",
+     "title": "Gefahrenhinweiskarte: Überschwemmung und Übersarung",
+     "owner": "KT_LU",
+     "service": {
+      "type": "WMS",
+      "url": "https://public.geo.lu.ch/ogd/services/managed/GHKXXXXX_COL_V1_MP/MapServer/WMSServer",
+      "layer": "4"
+     }
+    }
+   ],
+   "mapgeo": "https://map.geo.admin.ch/#/map?lang=de&center=2635577,1228293&z=2&bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS%7Chttps%3A%2F%2Fgeowms.bl.ch%2F%7Cghk_wassergefahren_ueberschwemmung_talfluesse%2Ct%2C0.85%3BWMS%7Chttps%3A%2F%2Fpublic.geo.lu.ch%2Fogd%2Fservices%2Fmanaged%2FGHKXXXXX_COL_V1_MP%2FMapServer%2FWMSServer%7C4%2Ct%2C0.85",
+   "qlr": "https://davidoesch.github.io/geoservice_harvester_poc/data/topics/gefahrenhinweiskarte-uberschwemmung-talflusse.qlr",
+   "lyrx": "https://davidoesch.github.io/geoservice_harvester_poc/data/topics/gefahrenhinweiskarte-uberschwemmung-talflusse.lyrx",
+   "owc": "https://davidoesch.github.io/geoservice_harvester_poc/data/topics/gefahrenhinweiskarte-uberschwemmung-talflusse.ows.json"
   },
   {
    "id": "gefahrenkarte-hochwasser",
@@ -26126,17 +26272,17 @@
      }
     },
     {
-     "key": "KT_UR|https://geo.ur.ch/wms|strassen:gemeindestrassenplan",
+     "key": "KT_UR|https://geo.ur.ch/wms|strassen:gemeindestrassenplan_genehmigt",
      "title": "Gemeindestrassenplan",
      "owner": "KT_UR",
      "service": {
       "type": "WMS",
       "url": "https://geo.ur.ch/wms",
-      "layer": "strassen:gemeindestrassenplan"
+      "layer": "strassen:gemeindestrassenplan_genehmigt"
      }
     }
    ],
-   "mapgeo": "https://map.geo.admin.ch/#/map?lang=de&center=2701407,1208291&z=2&bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS%7Chttps%3A%2F%2Fpublic.geo.lu.ch%2Fogd%2Fservices%2Fmanaged%2FBEPLXXXX_COL_V2_MP%2FMapServer%2FWMSServer%7C3%2Ct%2C0.85%3BWMS%7Chttps%3A%2F%2Fservices.geo.sg.ch%2Fwss%2Fservice%2FSG00216_WMS%2Fguest%7CGemeindestrassenplan_projektiert%2Ct%2C0.85%3BWMS%7Chttps%3A%2F%2Fgeo.ur.ch%2Fwms%7Cstrassen%3Agemeindestrassenplan%2Ct%2C0.85",
+   "mapgeo": "https://map.geo.admin.ch/#/map?lang=de&center=2701405,1208624&z=2&bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS%7Chttps%3A%2F%2Fpublic.geo.lu.ch%2Fogd%2Fservices%2Fmanaged%2FBEPLXXXX_COL_V2_MP%2FMapServer%2FWMSServer%7C3%2Ct%2C0.85%3BWMS%7Chttps%3A%2F%2Fservices.geo.sg.ch%2Fwss%2Fservice%2FSG00216_WMS%2Fguest%7CGemeindestrassenplan_projektiert%2Ct%2C0.85%3BWMS%7Chttps%3A%2F%2Fgeo.ur.ch%2Fwms%7Cstrassen%3Agemeindestrassenplan_genehmigt%2Ct%2C0.85",
    "qlr": "https://davidoesch.github.io/geoservice_harvester_poc/data/topics/gemeindestrassenplan.qlr",
    "lyrx": "https://davidoesch.github.io/geoservice_harvester_poc/data/topics/gemeindestrassenplan.lyrx",
    "owc": "https://davidoesch.github.io/geoservice_harvester_poc/data/topics/gemeindestrassenplan.ows.json"
@@ -26421,12 +26567,12 @@
    ],
    "members": [
     {
-     "key": "KT_LU|https://public.geo.lu.ch/ogd/services/managed/LRIGEOXX_COL_V1_MP/MapServer/WMSServer|1",
+     "key": "KT_LU|https://public.geo.lu.ch/ogd/services/managed/INRGEOXX_COL_V1_MP/MapServer/WMSServer|1",
      "title": "Geologisch-geomorphologische Elemente (Flächen)",
      "owner": "KT_LU",
      "service": {
       "type": "WMS",
-      "url": "https://public.geo.lu.ch/ogd/services/managed/LRIGEOXX_COL_V1_MP/MapServer/WMSServer",
+      "url": "https://public.geo.lu.ch/ogd/services/managed/INRGEOXX_COL_V1_MP/MapServer/WMSServer",
       "layer": "1"
      }
     },
@@ -26441,7 +26587,7 @@
      }
     }
    ],
-   "mapgeo": "https://map.geo.admin.ch/#/map?lang=de&center=2662102,1218080&z=2&bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS%7Chttps%3A%2F%2Fpublic.geo.lu.ch%2Fogd%2Fservices%2Fmanaged%2FLRIGEOXX_COL_V1_MP%2FMapServer%2FWMSServer%7C1%2Ct%2C0.85%3BWMS%7Chttps%3A%2F%2Fservices.geo.zg.ch%2Fows%2Fgeomorphologie%7Czg_geomorphologie_flaechen%2Ct%2C0.85",
+   "mapgeo": "https://map.geo.admin.ch/#/map?lang=de&center=2662209,1212021&z=3&bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS%7Chttps%3A%2F%2Fpublic.geo.lu.ch%2Fogd%2Fservices%2Fmanaged%2FINRGEOXX_COL_V1_MP%2FMapServer%2FWMSServer%7C1%2Ct%2C0.85%3BWMS%7Chttps%3A%2F%2Fservices.geo.zg.ch%2Fows%2Fgeomorphologie%7Czg_geomorphologie_flaechen%2Ct%2C0.85",
    "qlr": "https://davidoesch.github.io/geoservice_harvester_poc/data/topics/geologisch-geomorphologische-elemente-flachen.qlr",
    "lyrx": "https://davidoesch.github.io/geoservice_harvester_poc/data/topics/geologisch-geomorphologische-elemente-flachen.lyrx",
    "owc": "https://davidoesch.github.io/geoservice_harvester_poc/data/topics/geologisch-geomorphologische-elemente-flachen.ows.json"
@@ -27395,7 +27541,7 @@
      }
     }
    ],
-   "mapgeo": "https://map.geo.admin.ch/#/map?lang=de&center=2679737,1185292&z=3&bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS%7Chttps%3A%2F%2Fwww.gis-daten.ch%2Fwms%2Fnw%2Fservice%7Cch.nw.gestaltungsplaene%2Ct%2C0.85%3BWMS%7Chttps%3A%2F%2Fwww.gis-daten.ch%2Fwms%2Fow%2Fservice%7Cch.ow.nutzungsplanung-kommunal%2Ct%2C0.85%3BWMS%7Chttps%3A%2F%2Fgeo.ur.ch%2Fwms%7Coereb%3Ach073b_prj_gemeindliche_nutzungsplanung%2Ct%2C0.85",
+   "mapgeo": "https://map.geo.admin.ch/#/map?lang=de&center=2672929,1187335&z=3&bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS%7Chttps%3A%2F%2Fwww.gis-daten.ch%2Fwms%2Fnw%2Fservice%7Cch.nw.gestaltungsplaene%2Ct%2C0.85%3BWMS%7Chttps%3A%2F%2Fwww.gis-daten.ch%2Fwms%2Fow%2Fservice%7Cch.ow.nutzungsplanung-kommunal%2Ct%2C0.85%3BWMS%7Chttps%3A%2F%2Fgeo.ur.ch%2Fwms%7Coereb%3Ach073b_prj_gemeindliche_nutzungsplanung%2Ct%2C0.85",
    "qlr": "https://davidoesch.github.io/geoservice_harvester_poc/data/topics/gestaltungsplane-ch073.qlr",
    "lyrx": "https://davidoesch.github.io/geoservice_harvester_poc/data/topics/gestaltungsplane-ch073.lyrx",
    "owc": "https://davidoesch.github.io/geoservice_harvester_poc/data/topics/gestaltungsplane-ch073.ows.json"
@@ -28945,17 +29091,17 @@
      }
     },
     {
-     "key": "KT_ZH|https://maps.zh.ch/wfs/OGDZHWFS|ms:ogd-0167_awel_gs_gewaesserschutzbereich_ao_f",
-     "title": "Gewässerschutzbereich Ao (167.2)",
+     "key": "KT_ZH|https://wms.zh.ch/AWELWWgwsZHWMS|gewaesserschutzbereich-ao",
+     "title": "Gewässerschutzbereiche Ao",
      "owner": "KT_ZH",
      "service": {
-      "type": "WFS",
-      "url": "https://maps.zh.ch/wfs/OGDZHWFS",
-      "layer": "ms:ogd-0167_awel_gs_gewaesserschutzbereich_ao_f"
+      "type": "WMS",
+      "url": "https://wms.zh.ch/AWELWWgwsZHWMS",
+      "layer": "gewaesserschutzbereich-ao"
      }
     }
    ],
-   "mapgeo": "https://map.geo.admin.ch/#/map?lang=de&center=2652414,1185968&z=1&bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS%7Chttps%3A%2F%2Fgeodienste.ch%2Fdb%2Fplanerischer_gewaesserschutz_v1_1_1%2Fdeu%7Cgewaesserschutzbereich_ao%2Ct%2C0.85%3BWMS%7Chttps%3A%2F%2Fwms.geo.gr.ch%2Fgewaesserschutz%7CGewaesserschutzbereich_Ao%2Ct%2C0.85%3BWMS%7Chttps%3A%2F%2Fmap.geo.sz.ch%2Fmapserv_proxy%7Cch.sz.a209a.planerischer_gewaesserschutz_oberirdisch.gewaesserschutzbereich_ao%2Ct%2C0.85",
+   "mapgeo": "https://map.geo.admin.ch/#/map?lang=de&center=2652414,1185968&z=1&bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS%7Chttps%3A%2F%2Fgeodienste.ch%2Fdb%2Fplanerischer_gewaesserschutz_v1_1_1%2Fdeu%7Cgewaesserschutzbereich_ao%2Ct%2C0.85%3BWMS%7Chttps%3A%2F%2Fwms.geo.gr.ch%2Fgewaesserschutz%7CGewaesserschutzbereich_Ao%2Ct%2C0.85%3BWMS%7Chttps%3A%2F%2Fmap.geo.sz.ch%2Fmapserv_proxy%7Cch.sz.a209a.planerischer_gewaesserschutz_oberirdisch.gewaesserschutzbereich_ao%2Ct%2C0.85%3BWMS%7Chttps%3A%2F%2Fwms.zh.ch%2FAWELWWgwsZHWMS%7Cgewaesserschutzbereich-ao%2Ct%2C0.85",
    "qlr": "https://davidoesch.github.io/geoservice_harvester_poc/data/topics/gewasserschutzbereich-ao.qlr",
    "lyrx": "https://davidoesch.github.io/geoservice_harvester_poc/data/topics/gewasserschutzbereich-ao.lyrx",
    "owc": "https://davidoesch.github.io/geoservice_harvester_poc/data/topics/gewasserschutzbereich-ao.ows.json"
@@ -29290,7 +29436,7 @@
      }
     }
    ],
-   "mapgeo": "https://map.geo.admin.ch/#/map?lang=de&center=2755170,1170093&z=2&bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS%7Chttps%3A%2F%2Fwms.geo.gr.ch%2Fnaturgefahrenkarte%7CGK_Sturz_%2Ct%2C0.85%3BWMS%7Chttps%3A%2F%2Fgeo.ur.ch%2Fwms%7Cforst%3Agk_einsturz%2Ct%2C0.85",
+   "mapgeo": "https://map.geo.admin.ch/#/map?lang=de&center=2760787,1170167&z=2&bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS%7Chttps%3A%2F%2Fwms.geo.gr.ch%2Fnaturgefahrenkarte%7CGK_Sturz_%2Ct%2C0.85%3BWMS%7Chttps%3A%2F%2Fgeo.ur.ch%2Fwms%7Cforst%3Agk_einsturz%2Ct%2C0.85",
    "qlr": "https://davidoesch.github.io/geoservice_harvester_poc/data/topics/gk-einsturz.qlr",
    "lyrx": "https://davidoesch.github.io/geoservice_harvester_poc/data/topics/gk-einsturz.lyrx",
    "owc": "https://davidoesch.github.io/geoservice_harvester_poc/data/topics/gk-einsturz.ows.json"
@@ -29335,7 +29481,7 @@
      }
     }
    ],
-   "mapgeo": "https://map.geo.admin.ch/#/map?lang=de&center=2710349,1227805&z=2&bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS%7Chttps%3A%2F%2Fservices.geo.sg.ch%2Fwss%2Fservice%2FSG00068_WMS%2Fguest%7CRutsch_Hangmuren%2Ct%2C0.85%3BWMS%7Chttps%3A%2F%2Fgeo.ur.ch%2Fwms%7Cforst%3Agk_hangmuren%2Ct%2C0.85%3BWMS%7Chttps%3A%2F%2Fwms.zh.ch%2FAwelRKHWZHWMS%7Changmuren%2Ct%2C0.85",
+   "mapgeo": "https://map.geo.admin.ch/#/map?lang=de&center=2710230,1240755&z=2&bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS%7Chttps%3A%2F%2Fservices.geo.sg.ch%2Fwss%2Fservice%2FSG00068_WMS%2Fguest%7CRutsch_Hangmuren%2Ct%2C0.85%3BWMS%7Chttps%3A%2F%2Fgeo.ur.ch%2Fwms%7Cforst%3Agk_hangmuren%2Ct%2C0.85%3BWMS%7Chttps%3A%2F%2Fwms.zh.ch%2FAwelRKHWZHWMS%7Changmuren%2Ct%2C0.85",
    "qlr": "https://davidoesch.github.io/geoservice_harvester_poc/data/topics/gk-hangmuren.qlr",
    "lyrx": "https://davidoesch.github.io/geoservice_harvester_poc/data/topics/gk-hangmuren.lyrx",
    "owc": "https://davidoesch.github.io/geoservice_harvester_poc/data/topics/gk-hangmuren.ows.json"
@@ -29888,13 +30034,13 @@
    ],
    "members": [
     {
-     "key": "KT_GR|https://wms.geo.gr.ch/regionen|Grundbuchkreise",
-     "title": "Grundbuchkreise",
+     "key": "KT_GR|https://wms.geo.gr.ch/regionen|Bezeichnung_Grundbuchkreise",
+     "title": "Bezeichnung Grundbuchkreise",
      "owner": "KT_GR",
      "service": {
       "type": "WMS",
       "url": "https://wms.geo.gr.ch/regionen",
-      "layer": "Grundbuchkreise"
+      "layer": "Bezeichnung_Grundbuchkreise"
      }
     },
     {
@@ -29918,7 +30064,7 @@
      }
     }
    ],
-   "mapgeo": "https://map.geo.admin.ch/#/map?lang=de&center=2713246,1179804&z=2&bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS%7Chttps%3A%2F%2Fwms.geo.gr.ch%2Fregionen%7CGrundbuchkreise%2Ct%2C0.85%3BWMS%7Chttps%3A%2F%2Fpublic.geo.lu.ch%2Fogd%2Fservices%2Fmanaged%2FGRZADMIN_COL_V8_MP%2FMapServer%2FWMSServer%7C14%2Ct%2C0.85%3BWMS%7Chttps%3A%2F%2Fgeo.so.ch%2Fapi%2Fwms%7Cch.so.agi.av.grundbuchkreise%2Ct%2C0.85",
+   "mapgeo": "https://map.geo.admin.ch/#/map?lang=de&center=2713246,1179804&z=2&bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS%7Chttps%3A%2F%2Fwms.geo.gr.ch%2Fregionen%7CBezeichnung_Grundbuchkreise%2Ct%2C0.85%3BWMS%7Chttps%3A%2F%2Fpublic.geo.lu.ch%2Fogd%2Fservices%2Fmanaged%2FGRZADMIN_COL_V8_MP%2FMapServer%2FWMSServer%7C14%2Ct%2C0.85%3BWMS%7Chttps%3A%2F%2Fgeo.so.ch%2Fapi%2Fwms%7Cch.so.agi.av.grundbuchkreise%2Ct%2C0.85",
    "qlr": "https://davidoesch.github.io/geoservice_harvester_poc/data/topics/grundbuchkreise.qlr",
    "lyrx": "https://davidoesch.github.io/geoservice_harvester_poc/data/topics/grundbuchkreise.lyrx",
    "owc": "https://davidoesch.github.io/geoservice_harvester_poc/data/topics/grundbuchkreise.ows.json"
@@ -31305,21 +31451,21 @@
    "owc": "https://davidoesch.github.io/geoservice_harvester_poc/data/topics/grundwasserschutzgebiet.ows.json"
   },
   {
-   "id": "grundwasserschutzzone-sm-in-kraft",
-   "label": "Grundwasserschutzzone Sm, in Kraft",
+   "id": "grundwasserschutzzone-sh-in-kraft",
+   "label": "Grundwasserschutzzone Sh, in Kraft",
    "owners": [
     "Geodienste",
     "KT_SZ"
    ],
    "members": [
     {
-     "key": "Geodienste|https://geodienste.ch/db/planerischer_gewaesserschutz_v1_1_1/deu|grundwasserschutzzone_sm_in_kraft",
-     "title": "Grundwasserschutzzone Sm, in Kraft",
+     "key": "Geodienste|https://geodienste.ch/db/planerischer_gewaesserschutz_v1_1_1/deu|grundwasserschutzzone_sh_in_kraft",
+     "title": "Grundwasserschutzzone Sh, in Kraft",
      "owner": "Geodienste",
      "service": {
       "type": "WMS",
       "url": "https://geodienste.ch/db/planerischer_gewaesserschutz_v1_1_1/deu",
-      "layer": "grundwasserschutzzone_sm_in_kraft"
+      "layer": "grundwasserschutzzone_sh_in_kraft"
      }
     },
     {
@@ -31333,10 +31479,10 @@
      }
     }
    ],
-   "mapgeo": "https://map.geo.admin.ch/#/map?lang=de&center=2652414,1185968&z=1&bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS%7Chttps%3A%2F%2Fgeodienste.ch%2Fdb%2Fplanerischer_gewaesserschutz_v1_1_1%2Fdeu%7Cgrundwasserschutzzone_sm_in_kraft%2Ct%2C0.85%3BWMS%7Chttps%3A%2F%2Fmap.geo.sz.ch%2Fmapserv_proxy%7Cch.sz.a013a.planerischergewaesserschutz.gwszonen.gwszone.inkraft%2Ct%2C0.85",
-   "qlr": "https://davidoesch.github.io/geoservice_harvester_poc/data/topics/grundwasserschutzzone-sm-in-kraft.qlr",
-   "lyrx": "https://davidoesch.github.io/geoservice_harvester_poc/data/topics/grundwasserschutzzone-sm-in-kraft.lyrx",
-   "owc": "https://davidoesch.github.io/geoservice_harvester_poc/data/topics/grundwasserschutzzone-sm-in-kraft.ows.json"
+   "mapgeo": "https://map.geo.admin.ch/#/map?lang=de&center=2652414,1185968&z=1&bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS%7Chttps%3A%2F%2Fgeodienste.ch%2Fdb%2Fplanerischer_gewaesserschutz_v1_1_1%2Fdeu%7Cgrundwasserschutzzone_sh_in_kraft%2Ct%2C0.85%3BWMS%7Chttps%3A%2F%2Fmap.geo.sz.ch%2Fmapserv_proxy%7Cch.sz.a013a.planerischergewaesserschutz.gwszonen.gwszone.inkraft%2Ct%2C0.85",
+   "qlr": "https://davidoesch.github.io/geoservice_harvester_poc/data/topics/grundwasserschutzzone-sh-in-kraft.qlr",
+   "lyrx": "https://davidoesch.github.io/geoservice_harvester_poc/data/topics/grundwasserschutzzone-sh-in-kraft.lyrx",
+   "owc": "https://davidoesch.github.io/geoservice_harvester_poc/data/topics/grundwasserschutzzone-sh-in-kraft.ows.json"
   },
   {
    "id": "grundwasserschutzzonen",
@@ -31763,12 +31909,12 @@
    ],
    "members": [
     {
-     "key": "Bund|https://wms.geo.admin.ch/|ch.bfs.gebaeude_wohnungs_register_waermequelle_heizung",
+     "key": "Bund|https://wmts.geo.admin.ch/EPSG/3857/1.0.0/WMTSCapabilities.xml|ch.bfs.gebaeude_wohnungs_register_waermequelle_heizung",
      "title": "GWR: Energie-/Wärmequelle Heizung",
      "owner": "Bund",
      "service": {
-      "type": "WMS",
-      "url": "https://wms.geo.admin.ch/",
+      "type": "WMTS",
+      "url": "https://wmts.geo.admin.ch/EPSG/3857/1.0.0/WMTSCapabilities.xml",
       "layer": "ch.bfs.gebaeude_wohnungs_register_waermequelle_heizung"
      }
     },
@@ -31803,7 +31949,7 @@
      }
     }
    ],
-   "mapgeo": "https://map.geo.admin.ch/#/map?lang=de&center=2665339,818753&z=0&bgLayer=ch.swisstopo.pixelkarte-grau&layers=ch.bfs.gebaeude_wohnungs_register_waermequelle_heizung%2Ct%2C0.85%3BWMS%7Chttps%3A%2F%2Fgeowms.bl.ch%2F%7Cenergieplanung_energietraegermix_waerme_group%2Ct%2C0.85%3BWMS%7Chttps%3A%2F%2Fgeo.ur.ch%2Fwms%7Cweitere%3Ach.bfs.gebaeude_wohnungs_register_waermequelle_heizung%2Ct%2C0.85",
+   "mapgeo": "https://map.geo.admin.ch/#/map?lang=de&center=2647164,754487&z=0&bgLayer=ch.swisstopo.pixelkarte-grau&layers=ch.bfs.gebaeude_wohnungs_register_waermequelle_heizung%2Ct%2C0.85%3BWMS%7Chttps%3A%2F%2Fgeowms.bl.ch%2F%7Cenergieplanung_energietraegermix_waerme_group%2Ct%2C0.85%3BWMS%7Chttps%3A%2F%2Fgeo.ur.ch%2Fwms%7Cweitere%3Ach.bfs.gebaeude_wohnungs_register_waermequelle_heizung%2Ct%2C0.85",
    "qlr": "https://davidoesch.github.io/geoservice_harvester_poc/data/topics/gwr-energie-warmequelle-heizung.qlr",
    "lyrx": "https://davidoesch.github.io/geoservice_harvester_poc/data/topics/gwr-energie-warmequelle-heizung.lyrx",
    "owc": "https://davidoesch.github.io/geoservice_harvester_poc/data/topics/gwr-energie-warmequelle-heizung.ows.json"
@@ -32302,13 +32448,13 @@
    ],
    "members": [
     {
-     "key": "CITY_Zuerich|https://www.ogd.stadt-zuerich.ch/wms/geoportal/Amtliche_Vermessung_Stadt_Zuerich|HFP3 Beschriftung",
-     "title": "HFP3 Beschriftung",
+     "key": "CITY_Zuerich|https://www.ogd.stadt-zuerich.ch/wms/geoportal/Amtliche_Vermessung_Stadt_Zuerich|HFP3",
+     "title": "HFP3",
      "owner": "CITY_Zuerich",
      "service": {
       "type": "WMS",
       "url": "https://www.ogd.stadt-zuerich.ch/wms/geoportal/Amtliche_Vermessung_Stadt_Zuerich",
-      "layer": "HFP3 Beschriftung"
+      "layer": "HFP3"
      }
     },
     {
@@ -32322,7 +32468,7 @@
      }
     }
    ],
-   "mapgeo": "https://map.geo.admin.ch/#/map?lang=de&center=2638859,1257745&z=3&bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS%7Chttps%3A%2F%2Fwww.ogd.stadt-zuerich.ch%2Fwms%2Fgeoportal%2FAmtliche_Vermessung_Stadt_Zuerich%7CHFP3%20Beschriftung%2Ct%2C0.85%3BWMS%7Chttps%3A%2F%2Fgeowms.bl.ch%2F%7Chfp3%2Ct%2C0.85",
+   "mapgeo": "https://map.geo.admin.ch/#/map?lang=de&center=2638859,1257745&z=3&bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS%7Chttps%3A%2F%2Fwww.ogd.stadt-zuerich.ch%2Fwms%2Fgeoportal%2FAmtliche_Vermessung_Stadt_Zuerich%7CHFP3%2Ct%2C0.85%3BWMS%7Chttps%3A%2F%2Fgeowms.bl.ch%2F%7Chfp3%2Ct%2C0.85",
    "qlr": "https://davidoesch.github.io/geoservice_harvester_poc/data/topics/hfp3.qlr",
    "lyrx": "https://davidoesch.github.io/geoservice_harvester_poc/data/topics/hfp3.lyrx",
    "owc": "https://davidoesch.github.io/geoservice_harvester_poc/data/topics/hfp3.ows.json"
@@ -34727,13 +34873,13 @@
      }
     },
     {
-     "key": "KT_ZH|https://maps.zh.ch/wfs/OGDZHWFS|ms:ogd-0044_giszhpub_wb_hw_ik100_f",
-     "title": "Gewässer Intensitätsflächen Hochwasser 100-jährliche Eintrittswahrscheinlichkeit (44.4)",
+     "key": "KT_ZH|https://maps.zh.ch/wfs/OGDZHWFS|ms:ogd-0044_giszhpub_wb_hw_ik300_f",
+     "title": "Gewässer Intensitätsflächen Hochwasser 300-jährliche Eintrittswahrscheinlichkeit (44.5)",
      "owner": "KT_ZH",
      "service": {
       "type": "WFS",
       "url": "https://maps.zh.ch/wfs/OGDZHWFS",
-      "layer": "ms:ogd-0044_giszhpub_wb_hw_ik100_f"
+      "layer": "ms:ogd-0044_giszhpub_wb_hw_ik300_f"
      }
     }
    ],
@@ -35516,6 +35662,84 @@
    "qlr": "https://davidoesch.github.io/geoservice_harvester_poc/data/topics/isostatische-anomalien-500.qlr",
    "lyrx": "https://davidoesch.github.io/geoservice_harvester_poc/data/topics/isostatische-anomalien-500.lyrx",
    "owc": "https://davidoesch.github.io/geoservice_harvester_poc/data/topics/isostatische-anomalien-500.ows.json"
+  },
+  {
+   "id": "itineraires-suisse-mobile-vtt",
+   "label": "Itinéraires SuisseMobile VTT",
+   "owners": [
+    "FL_LI",
+    "KT_BL",
+    "KT_FR",
+    "KT_GL",
+    "KT_GR",
+    "KT_ZH"
+   ],
+   "members": [
+    {
+     "key": "FL_LI|https://service.geo.llv.li/service/wms|li.atg.radrouten-schweiz-mobil",
+     "title": "Radrouten Schweiz Mobil",
+     "owner": "FL_LI",
+     "service": {
+      "type": "WMS",
+      "url": "https://service.geo.llv.li/service/wms",
+      "layer": "li.atg.radrouten-schweiz-mobil"
+     }
+    },
+    {
+     "key": "KT_BL|https://geowms.bl.ch/|schweizmobil",
+     "title": "Schweiz Mobil",
+     "owner": "KT_BL",
+     "service": {
+      "type": "WMS",
+      "url": "https://geowms.bl.ch/",
+      "layer": "schweizmobil"
+     }
+    },
+    {
+     "key": "KT_FR|https://maps.fr.ch/ags/services/OpenData/Itineraires_SuisseMobile_VTT/MapServer/WMSServer|0",
+     "title": "Itinéraires SuisseMobile VTT",
+     "owner": "KT_FR",
+     "service": {
+      "type": "WMS",
+      "url": "https://maps.fr.ch/ags/services/OpenData/Itineraires_SuisseMobile_VTT/MapServer/WMSServer",
+      "layer": "0"
+     }
+    },
+    {
+     "key": "KT_GL|https://map.geo.gl.ch/ows/mainmap|ch.gl.transportation.schweizmobil_wandern",
+     "title": "SchweizMobil-Wanderrouten",
+     "owner": "KT_GL",
+     "service": {
+      "type": "WMS",
+      "url": "https://map.geo.gl.ch/ows/mainmap",
+      "layer": "ch.gl.transportation.schweizmobil_wandern"
+     }
+    },
+    {
+     "key": "KT_GR|https://wms.geo.gr.ch/rrip_mesolcina|Percorso_Grigioni_no_6_di_SchweizMobil",
+     "title": "Percorso Grigioni no. 6 di SchweizMobil",
+     "owner": "KT_GR",
+     "service": {
+      "type": "WMS",
+      "url": "https://wms.geo.gr.ch/rrip_mesolcina",
+      "layer": "Percorso_Grigioni_no_6_di_SchweizMobil"
+     }
+    },
+    {
+     "key": "KT_ZH|https://wms.zh.ch/VelonetzZHWMS|VelonetzZHWMS",
+     "title": "SchweizMobil-Routen WMS",
+     "owner": "KT_ZH",
+     "service": {
+      "type": "WMS",
+      "url": "https://wms.zh.ch/VelonetzZHWMS",
+      "layer": "VelonetzZHWMS"
+     }
+    }
+   ],
+   "mapgeo": "https://map.geo.admin.ch/#/map?lang=de&center=2642178,731230&z=0&bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS%7Chttps%3A%2F%2Fservice.geo.llv.li%2Fservice%2Fwms%7Cli.atg.radrouten-schweiz-mobil%2Ct%2C0.85%3BWMS%7Chttps%3A%2F%2Fgeowms.bl.ch%2F%7Cschweizmobil%2Ct%2C0.85%3BWMS%7Chttps%3A%2F%2Fmaps.fr.ch%2Fags%2Fservices%2FOpenData%2FItineraires_SuisseMobile_VTT%2FMapServer%2FWMSServer%7C0%2Ct%2C0.85%3BWMS%7Chttps%3A%2F%2Fmap.geo.gl.ch%2Fows%2Fmainmap%7Cch.gl.transportation.schweizmobil_wandern%2Ct%2C0.85%3BWMS%7Chttps%3A%2F%2Fwms.geo.gr.ch%2Frrip_mesolcina%7CPercorso_Grigioni_no_6_di_SchweizMobil%2Ct%2C0.85%3BWMS%7Chttps%3A%2F%2Fwms.zh.ch%2FVelonetzZHWMS%7CVelonetzZHWMS%2Ct%2C0.85",
+   "qlr": "https://davidoesch.github.io/geoservice_harvester_poc/data/topics/itineraires-suisse-mobile-vtt.qlr",
+   "lyrx": "https://davidoesch.github.io/geoservice_harvester_poc/data/topics/itineraires-suisse-mobile-vtt.lyrx",
+   "owc": "https://davidoesch.github.io/geoservice_harvester_poc/data/topics/itineraires-suisse-mobile-vtt.ows.json"
   },
   {
    "id": "ivs-gelandekarte",
@@ -37019,40 +37243,6 @@
    "owc": "https://davidoesch.github.io/geoservice_harvester_poc/data/topics/kantonale-ausnahmetransportrouten-ch184.ows.json"
   },
   {
-   "id": "kantonale-denkmalschutzobjekte",
-   "label": "Kantonale Denkmalschutzobjekte",
-   "owners": [
-    "KT_AG",
-    "KT_BE"
-   ],
-   "members": [
-    {
-     "key": "KT_AG|https://wms.geo.ag.ch/public/ows|ch_ag_geo_ka_denkmalschutzobj",
-     "title": "Kantonale Denkmalschutzobjekte",
-     "owner": "KT_AG",
-     "service": {
-      "type": "WMS",
-      "url": "https://wms.geo.ag.ch/public/ows",
-      "layer": "ch_ag_geo_ka_denkmalschutzobj"
-     }
-    },
-    {
-     "key": "KT_BE|https://oerebservice.apps.be.ch/cgi-bin/mapserv.fcgi?map=oereb_de|geodb.denkscho_dso",
-     "title": "Kantonale Denkmalschutzobjekte",
-     "owner": "KT_BE",
-     "service": {
-      "type": "WMS",
-      "url": "https://oerebservice.apps.be.ch/cgi-bin/mapserv.fcgi?map=oereb_de",
-      "layer": "geodb.denkscho_dso"
-     }
-    }
-   ],
-   "mapgeo": "https://map.geo.admin.ch/#/map?lang=de&center=2618852,1202714&z=2&bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS%7Chttps%3A%2F%2Fwms.geo.ag.ch%2Fpublic%2Fows%7Cch_ag_geo_ka_denkmalschutzobj%2Ct%2C0.85%3BWMS%7Chttps%3A%2F%2Foerebservice.apps.be.ch%2Fcgi-bin%2Fmapserv.fcgi%3Fmap%3Doereb_de%7Cgeodb.denkscho_dso%2Ct%2C0.85",
-   "qlr": "https://davidoesch.github.io/geoservice_harvester_poc/data/topics/kantonale-denkmalschutzobjekte.qlr",
-   "lyrx": "https://davidoesch.github.io/geoservice_harvester_poc/data/topics/kantonale-denkmalschutzobjekte.lyrx",
-   "owc": "https://davidoesch.github.io/geoservice_harvester_poc/data/topics/kantonale-denkmalschutzobjekte.ows.json"
-  },
-  {
    "id": "kantonale-klimakarte-physiologisch-aquivalente-temperatur-pe",
    "label": "Kantonale Klimakarte – Physiologisch äquivalente Temperatur (PET) UR",
    "owners": [
@@ -37734,6 +37924,40 @@
    "qlr": "https://davidoesch.github.io/geoservice_harvester_poc/data/topics/kantonales-arbeitsgebiet.qlr",
    "lyrx": "https://davidoesch.github.io/geoservice_harvester_poc/data/topics/kantonales-arbeitsgebiet.lyrx",
    "owc": "https://davidoesch.github.io/geoservice_harvester_poc/data/topics/kantonales-arbeitsgebiet.ows.json"
+  },
+  {
+   "id": "kantonales-denkmalschutzobjekt-punkt",
+   "label": "Kantonales Denkmalschutzobjekt Punkt",
+   "owners": [
+    "KT_AG",
+    "KT_BE"
+   ],
+   "members": [
+    {
+     "key": "KT_AG|https://wms.geo.ag.ch/public/ows|ch_ag_geo_ka_denkmalschutzobj_01",
+     "title": "Kantonales Denkmalschutzobjekt Punkt",
+     "owner": "KT_AG",
+     "service": {
+      "type": "WMS",
+      "url": "https://wms.geo.ag.ch/public/ows",
+      "layer": "ch_ag_geo_ka_denkmalschutzobj_01"
+     }
+    },
+    {
+     "key": "KT_BE|https://oerebservice.apps.be.ch/cgi-bin/mapserv.fcgi?map=oereb_de|geodb.denkscho_dso",
+     "title": "Kantonale Denkmalschutzobjekte",
+     "owner": "KT_BE",
+     "service": {
+      "type": "WMS",
+      "url": "https://oerebservice.apps.be.ch/cgi-bin/mapserv.fcgi?map=oereb_de",
+      "layer": "geodb.denkscho_dso"
+     }
+    }
+   ],
+   "mapgeo": "https://map.geo.admin.ch/#/map?lang=de&center=2618927,1197711&z=2&bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS%7Chttps%3A%2F%2Fwms.geo.ag.ch%2Fpublic%2Fows%7Cch_ag_geo_ka_denkmalschutzobj_01%2Ct%2C0.85%3BWMS%7Chttps%3A%2F%2Foerebservice.apps.be.ch%2Fcgi-bin%2Fmapserv.fcgi%3Fmap%3Doereb_de%7Cgeodb.denkscho_dso%2Ct%2C0.85",
+   "qlr": "https://davidoesch.github.io/geoservice_harvester_poc/data/topics/kantonales-denkmalschutzobjekt-punkt.qlr",
+   "lyrx": "https://davidoesch.github.io/geoservice_harvester_poc/data/topics/kantonales-denkmalschutzobjekt-punkt.lyrx",
+   "owc": "https://davidoesch.github.io/geoservice_harvester_poc/data/topics/kantonales-denkmalschutzobjekt-punkt.ows.json"
   },
   {
    "id": "kantonales-inventar-der-schutzwurdigen-naturobjekte",
@@ -38761,6 +38985,40 @@
    "qlr": "https://davidoesch.github.io/geoservice_harvester_poc/data/topics/kesb-mittelland-nord.qlr",
    "lyrx": "https://davidoesch.github.io/geoservice_harvester_poc/data/topics/kesb-mittelland-nord.lyrx",
    "owc": "https://davidoesch.github.io/geoservice_harvester_poc/data/topics/kesb-mittelland-nord.ows.json"
+  },
+  {
+   "id": "kgs-inventar",
+   "label": "KGS Inventar",
+   "owners": [
+    "Bund",
+    "KT_ZH"
+   ],
+   "members": [
+    {
+     "key": "Bund|https://wms.geo.admin.ch/|ch.babs.kulturgueter",
+     "title": "KGS Inventar",
+     "owner": "Bund",
+     "service": {
+      "type": "WMS",
+      "url": "https://wms.geo.admin.ch/",
+      "layer": "ch.babs.kulturgueter"
+     }
+    },
+    {
+     "key": "KT_ZH|https://maps.zh.ch/wfs/OGDZHWFS|ms:ogd-0391_giszhpub_fns_ausbau_kg_spr_f",
+     "title": "ausbau_kg_spr_f (391.107)",
+     "owner": "KT_ZH",
+     "service": {
+      "type": "WFS",
+      "url": "https://maps.zh.ch/wfs/OGDZHWFS",
+      "layer": "ms:ogd-0391_giszhpub_fns_ausbau_kg_spr_f"
+     }
+    }
+   ],
+   "mapgeo": "https://map.geo.admin.ch/#/map?lang=de&center=2684419,1180364&z=0&bgLayer=ch.swisstopo.pixelkarte-grau&layers=ch.babs.kulturgueter%2Ct%2C0.85",
+   "qlr": "https://davidoesch.github.io/geoservice_harvester_poc/data/topics/kgs-inventar.qlr",
+   "lyrx": "https://davidoesch.github.io/geoservice_harvester_poc/data/topics/kgs-inventar.lyrx",
+   "owc": "https://davidoesch.github.io/geoservice_harvester_poc/data/topics/kgs-inventar.ows.json"
   },
   {
    "id": "kies-und-sand",
@@ -42847,7 +43105,7 @@
      }
     }
    ],
-   "mapgeo": "https://map.geo.admin.ch/#/map?lang=de&center=2679242,1185616&z=3&bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS%7Chttps%3A%2F%2Fwww.gis-daten.ch%2Fwms%2Fnw%2Fservice%7Cch.nw.laermempfindlichkeitsstufen%2Ct%2C0.85%3BWMS%7Chttps%3A%2F%2Fwww.gis-daten.ch%2Fwms%2Fow%2Fservice%7Cch.ow.laermempfindlichkeitsstufen%2Ct%2C0.85%3BWMS%7Chttps%3A%2F%2Fgeo.ur.ch%2Fwms%7Coereb%3Ach145_prj_laermempfindlichkeitsstufen%2Ct%2C0.85",
+   "mapgeo": "https://map.geo.admin.ch/#/map?lang=de&center=2672927,1187558&z=3&bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS%7Chttps%3A%2F%2Fwww.gis-daten.ch%2Fwms%2Fnw%2Fservice%7Cch.nw.laermempfindlichkeitsstufen%2Ct%2C0.85%3BWMS%7Chttps%3A%2F%2Fwww.gis-daten.ch%2Fwms%2Fow%2Fservice%7Cch.ow.laermempfindlichkeitsstufen%2Ct%2C0.85%3BWMS%7Chttps%3A%2F%2Fgeo.ur.ch%2Fwms%7Coereb%3Ach145_prj_laermempfindlichkeitsstufen%2Ct%2C0.85",
    "qlr": "https://davidoesch.github.io/geoservice_harvester_poc/data/topics/larmempfindlichkeitsstufen-in-nutzungszonen-ch145.qlr",
    "lyrx": "https://davidoesch.github.io/geoservice_harvester_poc/data/topics/larmempfindlichkeitsstufen-in-nutzungszonen-ch145.lyrx",
    "owc": "https://davidoesch.github.io/geoservice_harvester_poc/data/topics/larmempfindlichkeitsstufen-in-nutzungszonen-ch145.ows.json"
@@ -43527,40 +43785,6 @@
    "qlr": "https://davidoesch.github.io/geoservice_harvester_poc/data/topics/leitungskataster-gde.qlr",
    "lyrx": "https://davidoesch.github.io/geoservice_harvester_poc/data/topics/leitungskataster-gde.lyrx",
    "owc": "https://davidoesch.github.io/geoservice_harvester_poc/data/topics/leitungskataster-gde.ows.json"
-  },
-  {
-   "id": "lep-vernetzung-grundflache",
-   "label": "LEP: Vernetzung Grundfläche",
-   "owners": [
-    "KT_AG",
-    "KT_ZH"
-   ],
-   "members": [
-    {
-     "key": "KT_AG|https://wms.geo.ag.ch/public/ows|ch_ag_geo_alg_lepvernetzgf",
-     "title": "LEP: Vernetzung Grundfläche",
-     "owner": "KT_AG",
-     "service": {
-      "type": "WMS",
-      "url": "https://wms.geo.ag.ch/public/ows",
-      "layer": "ch_ag_geo_alg_lepvernetzgf"
-     }
-    },
-    {
-     "key": "KT_ZH|https://wms.zh.ch/FNSVernetzZH|FNSVernetzZH",
-     "title": "Vernetzungsflächen",
-     "owner": "KT_ZH",
-     "service": {
-      "type": "WMS",
-      "url": "https://wms.zh.ch/FNSVernetzZH",
-      "layer": "FNSVernetzZH"
-     }
-    }
-   ],
-   "mapgeo": "https://map.geo.admin.ch/#/map?lang=de&center=2676509,1255851&z=2&bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS%7Chttps%3A%2F%2Fwms.geo.ag.ch%2Fpublic%2Fows%7Cch_ag_geo_alg_lepvernetzgf%2Ct%2C0.85%3BWMS%7Chttps%3A%2F%2Fwms.zh.ch%2FFNSVernetzZH%7CFNSVernetzZH%2Ct%2C0.85",
-   "qlr": "https://davidoesch.github.io/geoservice_harvester_poc/data/topics/lep-vernetzung-grundflache.qlr",
-   "lyrx": "https://davidoesch.github.io/geoservice_harvester_poc/data/topics/lep-vernetzung-grundflache.lyrx",
-   "owc": "https://davidoesch.github.io/geoservice_harvester_poc/data/topics/lep-vernetzung-grundflache.ows.json"
   },
   {
    "id": "leuchten",
@@ -44867,6 +45091,40 @@
    "qlr": "https://davidoesch.github.io/geoservice_harvester_poc/data/topics/lockergestein.qlr",
    "lyrx": "https://davidoesch.github.io/geoservice_harvester_poc/data/topics/lockergestein.lyrx",
    "owc": "https://davidoesch.github.io/geoservice_harvester_poc/data/topics/lockergestein.ows.json"
+  },
+  {
+   "id": "lokale-schweiz-mobil-skating-routen",
+   "label": "Lokale SchweizMobil Skating-Routen",
+   "owners": [
+    "KT_GR",
+    "KT_ZH"
+   ],
+   "members": [
+    {
+     "key": "KT_GR|https://wms.geo.gr.ch/langsamverkehr|Skatingroute_SM",
+     "title": "Skatingrouten (SchweizMobil)",
+     "owner": "KT_GR",
+     "service": {
+      "type": "WMS",
+      "url": "https://wms.geo.gr.ch/langsamverkehr",
+      "layer": "Skatingroute_SM"
+     }
+    },
+    {
+     "key": "KT_ZH|https://wms.zh.ch/VelonetzZHWMS|schweizmobil_lokale_skating-routen",
+     "title": "Lokale SchweizMobil Skating-Routen",
+     "owner": "KT_ZH",
+     "service": {
+      "type": "WMS",
+      "url": "https://wms.zh.ch/VelonetzZHWMS",
+      "layer": "schweizmobil_lokale_skating-routen"
+     }
+    }
+   ],
+   "mapgeo": "https://map.geo.admin.ch/#/map?lang=de&center=2759527,1180115&z=1&bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS%7Chttps%3A%2F%2Fwms.geo.gr.ch%2Flangsamverkehr%7CSkatingroute_SM%2Ct%2C0.85%3BWMS%7Chttps%3A%2F%2Fwms.zh.ch%2FVelonetzZHWMS%7Cschweizmobil_lokale_skating-routen%2Ct%2C0.85",
+   "qlr": "https://davidoesch.github.io/geoservice_harvester_poc/data/topics/lokale-schweiz-mobil-skating-routen.qlr",
+   "lyrx": "https://davidoesch.github.io/geoservice_harvester_poc/data/topics/lokale-schweiz-mobil-skating-routen.lyrx",
+   "owc": "https://davidoesch.github.io/geoservice_harvester_poc/data/topics/lokale-schweiz-mobil-skating-routen.ows.json"
   },
   {
    "id": "lokalisationen",
@@ -49535,7 +49793,7 @@
      }
     }
    ],
-   "mapgeo": "https://map.geo.admin.ch/#/map?lang=de&center=2617427,1262534&z=3&bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS%7Chttps%3A%2F%2Fwms.geo.bs.ch%2F%7C%C3%96ffentliches%20Grundeigentum%2Ct%2C0.85%3BWMS%7Chttps%3A%2F%2Fmap.geo.gl.ch%2Fows%2Fmainmap%7Cch.gl.cadastre.oeffentliches-grundeigentum%2Ct%2C0.85",
+   "mapgeo": "https://map.geo.admin.ch/#/map?lang=de&center=2660691,1236985&z=2&bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS%7Chttps%3A%2F%2Fwms.geo.bs.ch%2F%7C%C3%96ffentliches%20Grundeigentum%2Ct%2C0.85%3BWMS%7Chttps%3A%2F%2Fmap.geo.gl.ch%2Fows%2Fmainmap%7Cch.gl.cadastre.oeffentliches-grundeigentum%2Ct%2C0.85",
    "qlr": "https://davidoesch.github.io/geoservice_harvester_poc/data/topics/offentliches-grundeigentum.qlr",
    "lyrx": "https://davidoesch.github.io/geoservice_harvester_poc/data/topics/offentliches-grundeigentum.lyrx",
    "owc": "https://davidoesch.github.io/geoservice_harvester_poc/data/topics/offentliches-grundeigentum.ows.json"
@@ -55721,6 +55979,40 @@
    "owc": "https://davidoesch.github.io/geoservice_harvester_poc/data/topics/quellen-nach-typ.ows.json"
   },
   {
+   "id": "quellen-quellen-ungefasst",
+   "label": "Quellen (Quellen ungefasst)",
+   "owners": [
+    "KT_SO",
+    "KT_SZ"
+   ],
+   "members": [
+    {
+     "key": "KT_SO|https://geo.so.ch/api/wms|ch.so.afu.quellen_ungefasst.quellen",
+     "title": "Quellen (Quellen ungefasst)",
+     "owner": "KT_SO",
+     "service": {
+      "type": "WMS",
+      "url": "https://geo.so.ch/api/wms",
+      "layer": "ch.so.afu.quellen_ungefasst.quellen"
+     }
+    },
+    {
+     "key": "KT_SZ|https://map.geo.sz.ch/mapserv_proxy|ch.sz.a013.quellen_ungefasst",
+     "title": "Quellen ungefasst",
+     "owner": "KT_SZ",
+     "service": {
+      "type": "WMS",
+      "url": "https://map.geo.sz.ch/mapserv_proxy",
+      "layer": "ch.sz.a013.quellen_ungefasst"
+     }
+    }
+   ],
+   "mapgeo": "https://map.geo.admin.ch/#/map?lang=de&center=2657987,1226354&z=2&bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS%7Chttps%3A%2F%2Fgeo.so.ch%2Fapi%2Fwms%7Cch.so.afu.quellen_ungefasst.quellen%2Ct%2C0.85%3BWMS%7Chttps%3A%2F%2Fmap.geo.sz.ch%2Fmapserv_proxy%7Cch.sz.a013.quellen_ungefasst%2Ct%2C0.85",
+   "qlr": "https://davidoesch.github.io/geoservice_harvester_poc/data/topics/quellen-quellen-ungefasst.qlr",
+   "lyrx": "https://davidoesch.github.io/geoservice_harvester_poc/data/topics/quellen-quellen-ungefasst.lyrx",
+   "owc": "https://davidoesch.github.io/geoservice_harvester_poc/data/topics/quellen-quellen-ungefasst.ows.json"
+  },
+  {
    "id": "quellen-und-sondierungen",
    "label": "Quellen und Sondierungen",
    "owners": [
@@ -55753,40 +56045,6 @@
    "qlr": "https://davidoesch.github.io/geoservice_harvester_poc/data/topics/quellen-und-sondierungen.qlr",
    "lyrx": "https://davidoesch.github.io/geoservice_harvester_poc/data/topics/quellen-und-sondierungen.lyrx",
    "owc": "https://davidoesch.github.io/geoservice_harvester_poc/data/topics/quellen-und-sondierungen.ows.json"
-  },
-  {
-   "id": "quellen-ungefasst",
-   "label": "Quellen ungefasst",
-   "owners": [
-    "KT_SO",
-    "KT_SZ"
-   ],
-   "members": [
-    {
-     "key": "KT_SO|https://geo.so.ch/api/wms|ch.so.afu.quellen_ungefasst",
-     "title": "Quellen ungefasst",
-     "owner": "KT_SO",
-     "service": {
-      "type": "WMS",
-      "url": "https://geo.so.ch/api/wms",
-      "layer": "ch.so.afu.quellen_ungefasst"
-     }
-    },
-    {
-     "key": "KT_SZ|https://map.geo.sz.ch/mapserv_proxy|ch.sz.a013.quellen_ungefasst",
-     "title": "Quellen ungefasst",
-     "owner": "KT_SZ",
-     "service": {
-      "type": "WMS",
-      "url": "https://map.geo.sz.ch/mapserv_proxy",
-      "layer": "ch.sz.a013.quellen_ungefasst"
-     }
-    }
-   ],
-   "mapgeo": "https://map.geo.admin.ch/#/map?lang=de&center=2656821,1227411&z=2&bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS%7Chttps%3A%2F%2Fgeo.so.ch%2Fapi%2Fwms%7Cch.so.afu.quellen_ungefasst%2Ct%2C0.85%3BWMS%7Chttps%3A%2F%2Fmap.geo.sz.ch%2Fmapserv_proxy%7Cch.sz.a013.quellen_ungefasst%2Ct%2C0.85",
-   "qlr": "https://davidoesch.github.io/geoservice_harvester_poc/data/topics/quellen-ungefasst.qlr",
-   "lyrx": "https://davidoesch.github.io/geoservice_harvester_poc/data/topics/quellen-ungefasst.lyrx",
-   "owc": "https://davidoesch.github.io/geoservice_harvester_poc/data/topics/quellen-ungefasst.ows.json"
   },
   {
    "id": "quellfassungen",
@@ -55922,40 +56180,6 @@
    "qlr": "https://davidoesch.github.io/geoservice_harvester_poc/data/topics/raccolta-cernita-riciclaggio-rifiuti-edili.qlr",
    "lyrx": "https://davidoesch.github.io/geoservice_harvester_poc/data/topics/raccolta-cernita-riciclaggio-rifiuti-edili.lyrx",
    "owc": "https://davidoesch.github.io/geoservice_harvester_poc/data/topics/raccolta-cernita-riciclaggio-rifiuti-edili.ows.json"
-  },
-  {
-   "id": "radroutenkonzept-radrouten-projekte",
-   "label": "Radroutenkonzept: Radrouten Projekte",
-   "owners": [
-    "FL_LI",
-    "KT_SZ"
-   ],
-   "members": [
-    {
-     "key": "FL_LI|https://service.geo.llv.li/service/wms|li.atg.radroutenkonzept_2014",
-     "title": "Radroutenkonzept 2014",
-     "owner": "FL_LI",
-     "service": {
-      "type": "WMS",
-      "url": "https://service.geo.llv.li/service/wms",
-      "layer": "li.atg.radroutenkonzept_2014"
-     }
-    },
-    {
-     "key": "KT_SZ|https://map.geo.sz.ch/mapserv_proxy|ch.sz.a045a.radrouten_kantonal.projekte",
-     "title": "Radroutenkonzept: Radrouten Projekte",
-     "owner": "KT_SZ",
-     "service": {
-      "type": "WMS",
-      "url": "https://map.geo.sz.ch/mapserv_proxy",
-      "layer": "ch.sz.a045a.radrouten_kantonal.projekte"
-     }
-    }
-   ],
-   "mapgeo": "https://map.geo.admin.ch/#/map?lang=de&center=2715366,1215076&z=3&bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS%7Chttps%3A%2F%2Fservice.geo.llv.li%2Fservice%2Fwms%7Cli.atg.radroutenkonzept_2014%2Ct%2C0.85%3BWMS%7Chttps%3A%2F%2Fmap.geo.sz.ch%2Fmapserv_proxy%7Cch.sz.a045a.radrouten_kantonal.projekte%2Ct%2C0.85",
-   "qlr": "https://davidoesch.github.io/geoservice_harvester_poc/data/topics/radroutenkonzept-radrouten-projekte.qlr",
-   "lyrx": "https://davidoesch.github.io/geoservice_harvester_poc/data/topics/radroutenkonzept-radrouten-projekte.lyrx",
-   "owc": "https://davidoesch.github.io/geoservice_harvester_poc/data/topics/radroutenkonzept-radrouten-projekte.ows.json"
   },
   {
    "id": "radwege",
@@ -56424,13 +56648,13 @@
      }
     },
     {
-     "key": "KT_ZH|https://maps.zh.ch/wfs/OGDZHWFS|ms:ogd-0293_giszhpub_fj_wtk_achsen_regional_f",
-     "title": "Regionale Ausbreitungsachsen (293.2)",
+     "key": "KT_ZH|https://maps.zh.ch/wfs/OGDZHWFS|ms:ogd-0293_giszhpub_fj_wtk_achsen_regional_2009_f",
+     "title": "Regionale Ausbreitungsachsen 2009 (293.21)",
      "owner": "KT_ZH",
      "service": {
       "type": "WFS",
       "url": "https://maps.zh.ch/wfs/OGDZHWFS",
-      "layer": "ms:ogd-0293_giszhpub_fj_wtk_achsen_regional_f"
+      "layer": "ms:ogd-0293_giszhpub_fj_wtk_achsen_regional_2009_f"
      }
     }
    ],
@@ -58853,50 +59077,14 @@
    "owc": "https://davidoesch.github.io/geoservice_harvester_poc/data/topics/schutz-vor-naturgefahren-im-wald.ows.json"
   },
   {
-   "id": "schutzenswerte-waldstandorte",
-   "label": "Schützenswerte Waldstandorte",
-   "owners": [
-    "FL_LI",
-    "KT_TI"
-   ],
-   "members": [
-    {
-     "key": "FL_LI|https://service.geo.llv.li/service/wms|li.au.nl_inv_schuetzenswerte_waldstandorte",
-     "title": "Schützenswerte Waldstandorte",
-     "owner": "FL_LI",
-     "service": {
-      "type": "WMS",
-      "url": "https://service.geo.llv.li/service/wms",
-      "layer": "li.au.nl_inv_schuetzenswerte_waldstandorte"
-     }
-    },
-    {
-     "key": "KT_TI|https://wms.geo.ti.ch/service|ti_007_1_v1_0_bosco_protezione_comprensori",
-     "title": "[TI-007.1] Bosco di protezione - comprensori",
-     "owner": "KT_TI",
-     "service": {
-      "type": "WMS",
-      "url": "https://wms.geo.ti.ch/service",
-      "layer": "ti_007_1_v1_0_bosco_protezione_comprensori"
-     }
-    }
-   ],
-   "mapgeo": "https://map.geo.admin.ch/#/map?lang=de&center=2703453,1143881&z=1&bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS%7Chttps%3A%2F%2Fservice.geo.llv.li%2Fservice%2Fwms%7Cli.au.nl_inv_schuetzenswerte_waldstandorte%2Ct%2C0.85%3BWMS%7Chttps%3A%2F%2Fwms.geo.ti.ch%2Fservice%7Cti_007_1_v1_0_bosco_protezione_comprensori%2Ct%2C0.85",
-   "qlr": "https://davidoesch.github.io/geoservice_harvester_poc/data/topics/schutzenswerte-waldstandorte.qlr",
-   "lyrx": "https://davidoesch.github.io/geoservice_harvester_poc/data/topics/schutzenswerte-waldstandorte.lyrx",
-   "owc": "https://davidoesch.github.io/geoservice_harvester_poc/data/topics/schutzenswerte-waldstandorte.ows.json"
-  },
-  {
-   "id": "schutzgebiete-kt-ag",
-   "label": "Schutzgebiete Kt AG",
+   "id": "schutzbereich",
+   "label": "Schutzbereich",
    "owners": [
     "Bund",
     "CITY_Bern",
     "CITY_Winterthur",
     "CITY_Zuerich",
     "FL_LI",
-    "KT_AI",
-    "KT_AR",
     "KT_BE",
     "KT_BL",
     "KT_GR",
@@ -58954,26 +59142,6 @@
       "type": "WMS",
       "url": "https://service.geo.llv.li/service/wms",
       "layer": "li.au.pg_schutzzone"
-     }
-    },
-    {
-     "key": "KT_AI|https://www.geoportal.ch/services/wms/ktai|ch.geoportal.umwelt_naturschutz.3743.0.schutzgebiete_kt_ag",
-     "title": "Schutzgebiete Kt AG",
-     "owner": "KT_AI",
-     "service": {
-      "type": "WMS",
-      "url": "https://www.geoportal.ch/services/wms/ktai",
-      "layer": "ch.geoportal.umwelt_naturschutz.3743.0.schutzgebiete_kt_ag"
-     }
-    },
-    {
-     "key": "KT_AR|https://www.geoportal.ch/services/wms/ktar|ch.geoportal.umwelt_naturschutz.3743.0.schutzgebiete_kt_ag",
-     "title": "Schutzgebiete Kt AG",
-     "owner": "KT_AR",
-     "service": {
-      "type": "WMS",
-      "url": "https://www.geoportal.ch/services/wms/ktar",
-      "layer": "ch.geoportal.umwelt_naturschutz.3743.0.schutzgebiete_kt_ag"
      }
     },
     {
@@ -59047,10 +59215,44 @@
      }
     }
    ],
-   "mapgeo": "https://map.geo.admin.ch/#/map?lang=de&center=2665339,818753&z=0&bgLayer=ch.swisstopo.pixelkarte-grau&layers=ch.swisstopo.vec200-adminboundaries-protectedarea%2Ct%2C0.85%3BWMS%7Chttps%3A%2F%2Fmap.bern.ch%2Farcgis%2Fservices%2FGeoportal%2FUNESCO_Arch_Fundstellen_Schutzgebiet%2FMapServer%2FWMSServer%7C1%2Ct%2C0.85%3BWMS%7Chttps%3A%2F%2Fstadtplan.winterthur.ch%2Fwms%2FRichtplanSiedlungLandschaft%7CUmgebungsschutzgebiet%2Ct%2C0.85%3BWMS%7Chttps%3A%2F%2Fwww.ogd.stadt-zuerich.ch%2Fwms%2Fgeoportal%2FNutzungsplanung___kommunale_Bau__und_Zonenordnung_1999__BZO99_%7CAussichtsschutz%20%28in%20Kraft%29%2Ct%2C0.85%3BWMS%7Chttps%3A%2F%2Fservice.geo.llv.li%2Fservice%2Fwms%7Cli.au.pg_schutzzone%2Ct%2C0.85%3BWMS%7Chttps%3A%2F%2Fwww.geoportal.ch%2Fservices%2Fwms%2Fktai%7Cch.geoportal.umwelt_naturschutz.3743.0.schutzgebiete_kt_ag%2Ct%2C0.85%3BWMS%7Chttps%3A%2F%2Fwww.geoportal.ch%2Fservices%2Fwms%2Fktar%7Cch.geoportal.umwelt_naturschutz.3743.0.schutzgebiete_kt_ag%2Ct%2C0.85%3BWMS%7Chttps%3A%2F%2Fwww.geoservice.apps.be.ch%2Fgeoservice3%2Fservices%2Fa42geo%2Fof_inlandwaters01_de_ms_wms%2FMapServer%2FWMSServer%7CGSK25_GSKUL_VW_14585%2Ct%2C0.85%3BWMS%7Chttps%3A%2F%2Fgeowms.bl.ch%2F%7Cbevoelkerungsschutz_group%2Ct%2C0.85%3BWMS%7Chttps%3A%2F%2Fwms.geo.gr.ch%2Fpflanzen_pilzschutzgebiete%7CSchutzgebiete%2Ct%2C0.85%3BWMS%7Chttps%3A%2F%2Fgeo.so.ch%2Fwms%2Foereb%7Cch.SO.Einzelschutz%2Ct%2C0.85%3BWMS%7Chttps%3A%2F%2Fows.geo.tg.ch%2Fgeofy_access_proxy%2Foereb_amphibienlaichgebiete%7CSchutzbereich%2Ct%2C0.85%3BWMS%7Chttps%3A%2F%2Fservices.geo.zg.ch%2Fows%2Fnutzungsplanung%7Czg_schutzzone_hagendorn%2Ct%2C0.85",
-   "qlr": "https://davidoesch.github.io/geoservice_harvester_poc/data/topics/schutzgebiete-kt-ag.qlr",
-   "lyrx": "https://davidoesch.github.io/geoservice_harvester_poc/data/topics/schutzgebiete-kt-ag.lyrx",
-   "owc": "https://davidoesch.github.io/geoservice_harvester_poc/data/topics/schutzgebiete-kt-ag.ows.json"
+   "mapgeo": "https://map.geo.admin.ch/#/map?lang=de&center=2665339,818753&z=0&bgLayer=ch.swisstopo.pixelkarte-grau&layers=ch.swisstopo.vec200-adminboundaries-protectedarea%2Ct%2C0.85%3BWMS%7Chttps%3A%2F%2Fmap.bern.ch%2Farcgis%2Fservices%2FGeoportal%2FUNESCO_Arch_Fundstellen_Schutzgebiet%2FMapServer%2FWMSServer%7C1%2Ct%2C0.85%3BWMS%7Chttps%3A%2F%2Fstadtplan.winterthur.ch%2Fwms%2FRichtplanSiedlungLandschaft%7CUmgebungsschutzgebiet%2Ct%2C0.85%3BWMS%7Chttps%3A%2F%2Fwww.ogd.stadt-zuerich.ch%2Fwms%2Fgeoportal%2FNutzungsplanung___kommunale_Bau__und_Zonenordnung_1999__BZO99_%7CAussichtsschutz%20%28in%20Kraft%29%2Ct%2C0.85%3BWMS%7Chttps%3A%2F%2Fservice.geo.llv.li%2Fservice%2Fwms%7Cli.au.pg_schutzzone%2Ct%2C0.85%3BWMS%7Chttps%3A%2F%2Fwww.geoservice.apps.be.ch%2Fgeoservice3%2Fservices%2Fa42geo%2Fof_inlandwaters01_de_ms_wms%2FMapServer%2FWMSServer%7CGSK25_GSKUL_VW_14585%2Ct%2C0.85%3BWMS%7Chttps%3A%2F%2Fgeowms.bl.ch%2F%7Cbevoelkerungsschutz_group%2Ct%2C0.85%3BWMS%7Chttps%3A%2F%2Fwms.geo.gr.ch%2Fpflanzen_pilzschutzgebiete%7CSchutzgebiete%2Ct%2C0.85%3BWMS%7Chttps%3A%2F%2Fgeo.so.ch%2Fwms%2Foereb%7Cch.SO.Einzelschutz%2Ct%2C0.85%3BWMS%7Chttps%3A%2F%2Fows.geo.tg.ch%2Fgeofy_access_proxy%2Foereb_amphibienlaichgebiete%7CSchutzbereich%2Ct%2C0.85%3BWMS%7Chttps%3A%2F%2Fservices.geo.zg.ch%2Fows%2Fnutzungsplanung%7Czg_schutzzone_hagendorn%2Ct%2C0.85",
+   "qlr": "https://davidoesch.github.io/geoservice_harvester_poc/data/topics/schutzbereich.qlr",
+   "lyrx": "https://davidoesch.github.io/geoservice_harvester_poc/data/topics/schutzbereich.lyrx",
+   "owc": "https://davidoesch.github.io/geoservice_harvester_poc/data/topics/schutzbereich.ows.json"
+  },
+  {
+   "id": "schutzenswerte-waldstandorte",
+   "label": "Schützenswerte Waldstandorte",
+   "owners": [
+    "FL_LI",
+    "KT_TI"
+   ],
+   "members": [
+    {
+     "key": "FL_LI|https://service.geo.llv.li/service/wms|li.au.nl_inv_schuetzenswerte_waldstandorte",
+     "title": "Schützenswerte Waldstandorte",
+     "owner": "FL_LI",
+     "service": {
+      "type": "WMS",
+      "url": "https://service.geo.llv.li/service/wms",
+      "layer": "li.au.nl_inv_schuetzenswerte_waldstandorte"
+     }
+    },
+    {
+     "key": "KT_TI|https://wms.geo.ti.ch/service|ti_007_1_v1_0_bosco_protezione_comprensori",
+     "title": "[TI-007.1] Bosco di protezione - comprensori",
+     "owner": "KT_TI",
+     "service": {
+      "type": "WMS",
+      "url": "https://wms.geo.ti.ch/service",
+      "layer": "ti_007_1_v1_0_bosco_protezione_comprensori"
+     }
+    }
+   ],
+   "mapgeo": "https://map.geo.admin.ch/#/map?lang=de&center=2703453,1143881&z=1&bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS%7Chttps%3A%2F%2Fservice.geo.llv.li%2Fservice%2Fwms%7Cli.au.nl_inv_schuetzenswerte_waldstandorte%2Ct%2C0.85%3BWMS%7Chttps%3A%2F%2Fwms.geo.ti.ch%2Fservice%7Cti_007_1_v1_0_bosco_protezione_comprensori%2Ct%2C0.85",
+   "qlr": "https://davidoesch.github.io/geoservice_harvester_poc/data/topics/schutzenswerte-waldstandorte.qlr",
+   "lyrx": "https://davidoesch.github.io/geoservice_harvester_poc/data/topics/schutzenswerte-waldstandorte.lyrx",
+   "owc": "https://davidoesch.github.io/geoservice_harvester_poc/data/topics/schutzenswerte-waldstandorte.ows.json"
   },
   {
    "id": "schutzverordnung-moorlandschaften-kantonal-kt",
@@ -59419,106 +59621,6 @@
    "qlr": "https://davidoesch.github.io/geoservice_harvester_poc/data/topics/schwarzplan-gde.qlr",
    "lyrx": "https://davidoesch.github.io/geoservice_harvester_poc/data/topics/schwarzplan-gde.lyrx",
    "owc": "https://davidoesch.github.io/geoservice_harvester_poc/data/topics/schwarzplan-gde.ows.json"
-  },
-  {
-   "id": "schweiz-mobil-routen-wms",
-   "label": "SchweizMobil-Routen WMS",
-   "owners": [
-    "FL_LI",
-    "KT_BL",
-    "KT_FR",
-    "KT_GL",
-    "KT_GR",
-    "KT_JU",
-    "KT_SZ",
-    "KT_ZH"
-   ],
-   "members": [
-    {
-     "key": "FL_LI|https://service.geo.llv.li/service/wms|li.atg.radrouten-schweiz-mobil",
-     "title": "Radrouten Schweiz Mobil",
-     "owner": "FL_LI",
-     "service": {
-      "type": "WMS",
-      "url": "https://service.geo.llv.li/service/wms",
-      "layer": "li.atg.radrouten-schweiz-mobil"
-     }
-    },
-    {
-     "key": "KT_BL|https://geowms.bl.ch/|schweizmobil_mountainbikerouten",
-     "title": "Schweiz Mobil Mountainbike-Routen",
-     "owner": "KT_BL",
-     "service": {
-      "type": "WMS",
-      "url": "https://geowms.bl.ch/",
-      "layer": "schweizmobil_mountainbikerouten"
-     }
-    },
-    {
-     "key": "KT_FR|https://maps.fr.ch/ags/services/OpenData/Itineraires_SuisseMobile_VTT/MapServer/WMSServer|0",
-     "title": "Itinéraires SuisseMobile VTT",
-     "owner": "KT_FR",
-     "service": {
-      "type": "WMS",
-      "url": "https://maps.fr.ch/ags/services/OpenData/Itineraires_SuisseMobile_VTT/MapServer/WMSServer",
-      "layer": "0"
-     }
-    },
-    {
-     "key": "KT_GL|https://map.geo.gl.ch/ows/mainmap|ch.gl.transportation.schweizmobil_wandern",
-     "title": "SchweizMobil-Wanderrouten",
-     "owner": "KT_GL",
-     "service": {
-      "type": "WMS",
-      "url": "https://map.geo.gl.ch/ows/mainmap",
-      "layer": "ch.gl.transportation.schweizmobil_wandern"
-     }
-    },
-    {
-     "key": "KT_GR|https://wms.geo.gr.ch/rrip_mesolcina|Percorso_Grigioni_no_6_di_SchweizMobil",
-     "title": "Percorso Grigioni no. 6 di SchweizMobil",
-     "owner": "KT_GR",
-     "service": {
-      "type": "WMS",
-      "url": "https://wms.geo.gr.ch/rrip_mesolcina",
-      "layer": "Percorso_Grigioni_no_6_di_SchweizMobil"
-     }
-    },
-    {
-     "key": "KT_JU|https://geo.jura.ch/mapserv_proxy?ogcserver=Main_PNG|sdt_09_19_itineraires_cyclables_suissemobile_la_suisse_des_regi",
-     "title": "sdt_09_19_itineraires_cyclables_suissemobile_la_suisse_des_regi",
-     "owner": "KT_JU",
-     "service": {
-      "type": "WMS",
-      "url": "https://geo.jura.ch/mapserv_proxy?ogcserver=Main_PNG",
-      "layer": "sdt_09_19_itineraires_cyclables_suissemobile_la_suisse_des_regi"
-     }
-    },
-    {
-     "key": "KT_SZ|https://map.geo.sz.ch/mapserv_proxy|ch.sz.a045a.radrouten_dritter.schweizmobil.fahrrad",
-     "title": "Radroutenkonzept: Fahrradstrecken von SchweizMobil Fahrrad",
-     "owner": "KT_SZ",
-     "service": {
-      "type": "WMS",
-      "url": "https://map.geo.sz.ch/mapserv_proxy",
-      "layer": "ch.sz.a045a.radrouten_dritter.schweizmobil.fahrrad"
-     }
-    },
-    {
-     "key": "KT_ZH|https://wms.zh.ch/VelonetzZHWMS|VelonetzZHWMS",
-     "title": "SchweizMobil-Routen WMS",
-     "owner": "KT_ZH",
-     "service": {
-      "type": "WMS",
-      "url": "https://wms.zh.ch/VelonetzZHWMS",
-      "layer": "VelonetzZHWMS"
-     }
-    }
-   ],
-   "mapgeo": "https://map.geo.admin.ch/#/map?lang=de&center=2664061,1199418&z=1&bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS%7Chttps%3A%2F%2Fservice.geo.llv.li%2Fservice%2Fwms%7Cli.atg.radrouten-schweiz-mobil%2Ct%2C0.85%3BWMS%7Chttps%3A%2F%2Fgeowms.bl.ch%2F%7Cschweizmobil_mountainbikerouten%2Ct%2C0.85%3BWMS%7Chttps%3A%2F%2Fmaps.fr.ch%2Fags%2Fservices%2FOpenData%2FItineraires_SuisseMobile_VTT%2FMapServer%2FWMSServer%7C0%2Ct%2C0.85%3BWMS%7Chttps%3A%2F%2Fmap.geo.gl.ch%2Fows%2Fmainmap%7Cch.gl.transportation.schweizmobil_wandern%2Ct%2C0.85%3BWMS%7Chttps%3A%2F%2Fwms.geo.gr.ch%2Frrip_mesolcina%7CPercorso_Grigioni_no_6_di_SchweizMobil%2Ct%2C0.85%3BWMS%7Chttps%3A%2F%2Fgeo.jura.ch%2Fmapserv_proxy%3Fogcserver%3DMain_PNG%7Csdt_09_19_itineraires_cyclables_suissemobile_la_suisse_des_regi%2Ct%2C0.85%3BWMS%7Chttps%3A%2F%2Fmap.geo.sz.ch%2Fmapserv_proxy%7Cch.sz.a045a.radrouten_dritter.schweizmobil.fahrrad%2Ct%2C0.85%3BWMS%7Chttps%3A%2F%2Fwms.zh.ch%2FVelonetzZHWMS%7CVelonetzZHWMS%2Ct%2C0.85",
-   "qlr": "https://davidoesch.github.io/geoservice_harvester_poc/data/topics/schweiz-mobil-routen-wms.qlr",
-   "lyrx": "https://davidoesch.github.io/geoservice_harvester_poc/data/topics/schweiz-mobil-routen-wms.lyrx",
-   "owc": "https://davidoesch.github.io/geoservice_harvester_poc/data/topics/schweiz-mobil-routen-wms.ows.json"
   },
   {
    "id": "schwimmbad",
@@ -60853,21 +60955,21 @@
    "owc": "https://davidoesch.github.io/geoservice_harvester_poc/data/topics/sipv-ev-toit-vert.ows.json"
   },
   {
-   "id": "sipv-mn-carto-05x05",
-   "label": "SIPV MN CARTO 05X05",
+   "id": "sipv-ica-carto-05x05",
+   "label": "SIPV ICA CARTO 05X05",
    "owners": [
     "CITY_Geneve",
     "KT_GE"
    ],
    "members": [
     {
-     "key": "CITY_Geneve|https://vector.sitg.ge.ch/arcgis/services/SIPV_MN_CARTO_05X05/MapServer/WFSServer|esri:SIPV_MN_CARTO_05X05",
+     "key": "CITY_Geneve|https://vector.sitg.ge.ch/arcgis/services/SIPV_MN_CARTO_05X05/MapServer/WMSServer|0",
      "title": "SIPV_MN_CARTO_05X05",
      "owner": "CITY_Geneve",
      "service": {
-      "type": "WFS",
-      "url": "https://vector.sitg.ge.ch/arcgis/services/SIPV_MN_CARTO_05X05/MapServer/WFSServer",
-      "layer": "esri:SIPV_MN_CARTO_05X05"
+      "type": "WMS",
+      "url": "https://vector.sitg.ge.ch/arcgis/services/SIPV_MN_CARTO_05X05/MapServer/WMSServer",
+      "layer": "0"
      }
     },
     {
@@ -60881,10 +60983,10 @@
      }
     }
    ],
-   "mapgeo": null,
-   "qlr": "https://davidoesch.github.io/geoservice_harvester_poc/data/topics/sipv-mn-carto-05x05.qlr",
-   "lyrx": "https://davidoesch.github.io/geoservice_harvester_poc/data/topics/sipv-mn-carto-05x05.lyrx",
-   "owc": "https://davidoesch.github.io/geoservice_harvester_poc/data/topics/sipv-mn-carto-05x05.ows.json"
+   "mapgeo": "https://map.geo.admin.ch/#/map?lang=de&center=2499321,1122975&z=4&bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS%7Chttps%3A%2F%2Fvector.sitg.ge.ch%2Farcgis%2Fservices%2FSIPV_MN_CARTO_05X05%2FMapServer%2FWMSServer%7C0%2Ct%2C0.85",
+   "qlr": "https://davidoesch.github.io/geoservice_harvester_poc/data/topics/sipv-ica-carto-05x05.qlr",
+   "lyrx": "https://davidoesch.github.io/geoservice_harvester_poc/data/topics/sipv-ica-carto-05x05.lyrx",
+   "owc": "https://davidoesch.github.io/geoservice_harvester_poc/data/topics/sipv-ica-carto-05x05.ows.json"
   },
   {
    "id": "sites-de-stockage-sites-pollues",
@@ -61632,7 +61734,11 @@
    "owners": [
     "CITY_Lausanne",
     "CITY_Pully",
-    "KT_NE"
+    "CITY_Zuerich",
+    "KT_FR",
+    "KT_JU",
+    "KT_NE",
+    "KT_VD"
    ],
    "members": [
     {
@@ -61656,6 +61762,36 @@
      }
     },
     {
+     "key": "CITY_Zuerich|https://www.ogd.stadt-zuerich.ch/wms/geoportal/Geschuetzte_Einzelbaeume|Geschuetzte_Einzelbaeume (STZH)",
+     "title": "Geschuetzte_Einzelbaeume (STZH)",
+     "owner": "CITY_Zuerich",
+     "service": {
+      "type": "WMS",
+      "url": "https://www.ogd.stadt-zuerich.ch/wms/geoportal/Geschuetzte_Einzelbaeume",
+      "layer": "Geschuetzte_Einzelbaeume (STZH)"
+     }
+    },
+    {
+     "key": "KT_FR|https://maps.fr.ch/ags/services/OpenData/Arbres_spectaculaires/MapServer/WMSServer|0",
+     "title": "Arbres spectaculaires",
+     "owner": "KT_FR",
+     "service": {
+      "type": "WMS",
+      "url": "https://maps.fr.ch/ags/services/OpenData/Arbres_spectaculaires/MapServer/WMSServer",
+      "layer": "0"
+     }
+    },
+    {
+     "key": "KT_JU|https://geoservices.jura.ch/wms|ju.sdt_04_21",
+     "title": "Inventaire des arbres sur tiges",
+     "owner": "KT_JU",
+     "service": {
+      "type": "WMS",
+      "url": "https://geoservices.jura.ch/wms",
+      "layer": "ju.sdt_04_21"
+     }
+    },
+    {
      "key": "KT_NE|https://sitn.ne.ch/services/wmts?SERVICE=WMTS&REQUEST=GetCapabilities|tree_species_lidar2022_sitn",
      "title": "essences arbres lidar 2022",
      "owner": "KT_NE",
@@ -61664,9 +61800,19 @@
       "url": "https://sitn.ne.ch/services/wmts?SERVICE=WMTS&REQUEST=GetCapabilities",
       "layer": "tree_species_lidar2022_sitn"
      }
+    },
+    {
+     "key": "KT_VD|https://www.ogc.vd.ch/public/services/OGC/wmsVD/Mapserver/WMSServer|vd.inventaire_cantonal_arbres_remarquables",
+     "title": "vd.inventaire_cantonal_arbres_remarquables",
+     "owner": "KT_VD",
+     "service": {
+      "type": "WMS",
+      "url": "https://www.ogc.vd.ch/public/services/OGC/wmsVD/Mapserver/WMSServer",
+      "layer": "vd.inventaire_cantonal_arbres_remarquables"
+     }
     }
    ],
-   "mapgeo": "https://map.geo.admin.ch/#/map?lang=de&center=2654622,1196512&z=1&bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS%7Chttps%3A%2F%2Fmap.lausanne.ch%2Fmapserv_proxy%3Fogcserver%3Dsource%2Bfor%2Bimage%252Fpng%7Cgestion_com_spadom_arbres_msgroup%2Ct%2C0.85%3BWMS%7Chttps%3A%2F%2Fwww.sigip.ch%2Fmapserv_proxy%3Fogcserver%3Dows%7Carbres%2Ct%2C0.85%3BWMTS%7Chttps%3A%2F%2Fsitn.ne.ch%2Fservices%2Fwmts%3FSERVICE%3DWMTS%26REQUEST%3DGetCapabilities%7Ctree_species_lidar2022_sitn%2Ct%2C0.85",
+   "mapgeo": "https://map.geo.admin.ch/#/map?lang=de&center=2654622,1196512&z=1&bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS%7Chttps%3A%2F%2Fmap.lausanne.ch%2Fmapserv_proxy%3Fogcserver%3Dsource%2Bfor%2Bimage%252Fpng%7Cgestion_com_spadom_arbres_msgroup%2Ct%2C0.85%3BWMS%7Chttps%3A%2F%2Fwww.sigip.ch%2Fmapserv_proxy%3Fogcserver%3Dows%7Carbres%2Ct%2C0.85%3BWMS%7Chttps%3A%2F%2Fwww.ogd.stadt-zuerich.ch%2Fwms%2Fgeoportal%2FGeschuetzte_Einzelbaeume%7CGeschuetzte_Einzelbaeume%20%28STZH%29%2Ct%2C0.85%3BWMS%7Chttps%3A%2F%2Fmaps.fr.ch%2Fags%2Fservices%2FOpenData%2FArbres_spectaculaires%2FMapServer%2FWMSServer%7C0%2Ct%2C0.85%3BWMS%7Chttps%3A%2F%2Fgeoservices.jura.ch%2Fwms%7Cju.sdt_04_21%2Ct%2C0.85%3BWMTS%7Chttps%3A%2F%2Fsitn.ne.ch%2Fservices%2Fwmts%3FSERVICE%3DWMTS%26REQUEST%3DGetCapabilities%7Ctree_species_lidar2022_sitn%2Ct%2C0.85%3BWMS%7Chttps%3A%2F%2Fwww.ogc.vd.ch%2Fpublic%2Fservices%2FOGC%2FwmsVD%2FMapserver%2FWMSServer%7Cvd.inventaire_cantonal_arbres_remarquables%2Ct%2C0.85",
    "qlr": "https://davidoesch.github.io/geoservice_harvester_poc/data/topics/spadom-arbres.qlr",
    "lyrx": "https://davidoesch.github.io/geoservice_harvester_poc/data/topics/spadom-arbres.lyrx",
    "owc": "https://davidoesch.github.io/geoservice_harvester_poc/data/topics/spadom-arbres.ows.json"
@@ -63007,7 +63153,7 @@
      }
     }
    ],
-   "mapgeo": "https://map.geo.admin.ch/#/map?lang=de&center=2679242,1185616&z=3&bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS%7Chttps%3A%2F%2Fwww.gis-daten.ch%2Fwms%2Fnw%2Fservice%7Cch.nw.statische-waldgrenzen%2Ct%2C0.85%3BWMS%7Chttps%3A%2F%2Fwww.gis-daten.ch%2Fwms%2Fow%2Fservice%7Cch.ow.statische-waldgrenzen%2Ct%2C0.85%3BWMS%7Chttps%3A%2F%2Fgeo.ur.ch%2Fwms%7Coereb%3Ach157_prj_statische_waldgrenzen%2Ct%2C0.85",
+   "mapgeo": "https://map.geo.admin.ch/#/map?lang=de&center=2672878,1194283&z=3&bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS%7Chttps%3A%2F%2Fwww.gis-daten.ch%2Fwms%2Fnw%2Fservice%7Cch.nw.statische-waldgrenzen%2Ct%2C0.85%3BWMS%7Chttps%3A%2F%2Fwww.gis-daten.ch%2Fwms%2Fow%2Fservice%7Cch.ow.statische-waldgrenzen%2Ct%2C0.85%3BWMS%7Chttps%3A%2F%2Fgeo.ur.ch%2Fwms%7Coereb%3Ach157_prj_statische_waldgrenzen%2Ct%2C0.85",
    "qlr": "https://davidoesch.github.io/geoservice_harvester_poc/data/topics/statische-waldgrenzen-ch157.qlr",
    "lyrx": "https://davidoesch.github.io/geoservice_harvester_poc/data/topics/statische-waldgrenzen-ch157.lyrx",
    "owc": "https://davidoesch.github.io/geoservice_harvester_poc/data/topics/statische-waldgrenzen-ch157.ows.json"
@@ -64562,8 +64708,8 @@
    "owc": "https://davidoesch.github.io/geoservice_harvester_poc/data/topics/stromnetzgebiete.ows.json"
   },
   {
-   "id": "stromversorgungssicherheit-netzebene-7",
-   "label": "Stromversorgungssicherheit Netzebene 7",
+   "id": "stromversorgungssicherheit-ausnahmen-netzebene-7",
+   "label": "Stromversorgungssicherheit Ausnahmen Netzebene 7",
    "owners": [
     "KT_AG",
     "KT_GL"
@@ -64580,20 +64726,20 @@
      }
     },
     {
-     "key": "KT_GL|https://map.geo.gl.ch/ows/mainmap|ch.gl.energy.stromversorgungssicherheit-netzebene7",
-     "title": "Stromversorgungssicherheit Netzebene 7",
+     "key": "KT_GL|https://map.geo.gl.ch/ows/mainmap|ch.gl.energy.stromversorgungssicherheit-netzebene7-ausnahmen",
+     "title": "Stromversorgungssicherheit Ausnahmen Netzebene 7",
      "owner": "KT_GL",
      "service": {
       "type": "WMS",
       "url": "https://map.geo.gl.ch/ows/mainmap",
-      "layer": "ch.gl.energy.stromversorgungssicherheit-netzebene7"
+      "layer": "ch.gl.energy.stromversorgungssicherheit-netzebene7-ausnahmen"
      }
     }
    ],
-   "mapgeo": "https://map.geo.admin.ch/#/map?lang=de&center=2673733,1234312&z=2&bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS%7Chttps%3A%2F%2Fwms.geo.ag.ch%2Fpublic%2Fows%7Cch_ag_geo_ae_netzgeb3%2Ct%2C0.85%3BWMS%7Chttps%3A%2F%2Fmap.geo.gl.ch%2Fows%2Fmainmap%7Cch.gl.energy.stromversorgungssicherheit-netzebene7%2Ct%2C0.85",
-   "qlr": "https://davidoesch.github.io/geoservice_harvester_poc/data/topics/stromversorgungssicherheit-netzebene-7.qlr",
-   "lyrx": "https://davidoesch.github.io/geoservice_harvester_poc/data/topics/stromversorgungssicherheit-netzebene-7.lyrx",
-   "owc": "https://davidoesch.github.io/geoservice_harvester_poc/data/topics/stromversorgungssicherheit-netzebene-7.ows.json"
+   "mapgeo": "https://map.geo.admin.ch/#/map?lang=de&center=2665720,1247032&z=2&bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS%7Chttps%3A%2F%2Fwms.geo.ag.ch%2Fpublic%2Fows%7Cch_ag_geo_ae_netzgeb3%2Ct%2C0.85%3BWMS%7Chttps%3A%2F%2Fmap.geo.gl.ch%2Fows%2Fmainmap%7Cch.gl.energy.stromversorgungssicherheit-netzebene7-ausnahmen%2Ct%2C0.85",
+   "qlr": "https://davidoesch.github.io/geoservice_harvester_poc/data/topics/stromversorgungssicherheit-ausnahmen-netzebene-7.qlr",
+   "lyrx": "https://davidoesch.github.io/geoservice_harvester_poc/data/topics/stromversorgungssicherheit-ausnahmen-netzebene-7.lyrx",
+   "owc": "https://davidoesch.github.io/geoservice_harvester_poc/data/topics/stromversorgungssicherheit-ausnahmen-netzebene-7.ows.json"
   },
   {
    "id": "stromversorgungssicherheit-netzgebiete-ch183",
@@ -67370,10 +67516,44 @@
      }
     }
    ],
-   "mapgeo": "https://map.geo.admin.ch/#/map?lang=de&center=2652347,1227134&z=2&bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS%7Chttps%3A%2F%2Fwms.geo.bs.ch%2F%7CUntersuchungsperimeter%2Ct%2C0.85%3BWMS%7Chttps%3A%2F%2Fgeo.ur.ch%2Fwms%7Cforst%3Agk_untersuchungsperimeter%2Ct%2C0.85%3BWMS%7Chttps%3A%2F%2Fwms.zh.ch%2FAwelGKHWmassenbewegungWMS%7Cuntersuchungsperimeter%2Ct%2C0.85",
+   "mapgeo": "https://map.geo.admin.ch/#/map?lang=de&center=2652356,1230414&z=2&bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS%7Chttps%3A%2F%2Fwms.geo.bs.ch%2F%7CUntersuchungsperimeter%2Ct%2C0.85%3BWMS%7Chttps%3A%2F%2Fgeo.ur.ch%2Fwms%7Cforst%3Agk_untersuchungsperimeter%2Ct%2C0.85%3BWMS%7Chttps%3A%2F%2Fwms.zh.ch%2FAwelGKHWmassenbewegungWMS%7Cuntersuchungsperimeter%2Ct%2C0.85",
    "qlr": "https://davidoesch.github.io/geoservice_harvester_poc/data/topics/untersuchungsperimeter.qlr",
    "lyrx": "https://davidoesch.github.io/geoservice_harvester_poc/data/topics/untersuchungsperimeter.lyrx",
    "owc": "https://davidoesch.github.io/geoservice_harvester_poc/data/topics/untersuchungsperimeter.ows.json"
+  },
+  {
+   "id": "unterwerke",
+   "label": "Unterwerke",
+   "owners": [
+    "KT_TG",
+    "KT_ZH"
+   ],
+   "members": [
+    {
+     "key": "KT_TG|https://ows.geo.tg.ch/geofy_access_proxy/richtplankt200k|Unterwerke_Layer",
+     "title": "Unterwerke",
+     "owner": "KT_TG",
+     "service": {
+      "type": "WMS",
+      "url": "https://ows.geo.tg.ch/geofy_access_proxy/richtplankt200k",
+      "layer": "Unterwerke_Layer"
+     }
+    },
+    {
+     "key": "KT_ZH|https://wms.zh.ch/EnergieStromwwwZH|unterwerke",
+     "title": "Unterwerke",
+     "owner": "KT_ZH",
+     "service": {
+      "type": "WMS",
+      "url": "https://wms.zh.ch/EnergieStromwwwZH",
+      "layer": "unterwerke"
+     }
+    }
+   ],
+   "mapgeo": "https://map.geo.admin.ch/#/map?lang=de&center=2707082,1261684&z=2&bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS%7Chttps%3A%2F%2Fows.geo.tg.ch%2Fgeofy_access_proxy%2Frichtplankt200k%7CUnterwerke_Layer%2Ct%2C0.85%3BWMS%7Chttps%3A%2F%2Fwms.zh.ch%2FEnergieStromwwwZH%7Cunterwerke%2Ct%2C0.85",
+   "qlr": "https://davidoesch.github.io/geoservice_harvester_poc/data/topics/unterwerke.qlr",
+   "lyrx": "https://davidoesch.github.io/geoservice_harvester_poc/data/topics/unterwerke.lyrx",
+   "owc": "https://davidoesch.github.io/geoservice_harvester_poc/data/topics/unterwerke.ows.json"
   },
   {
    "id": "uran-konzentrationen-im-boden",
@@ -69089,13 +69269,13 @@
    ],
    "members": [
     {
-     "key": "CITY_Zuerich|https://www.ogd.stadt-zuerich.ch/wms/geoportal/Erholungs__und_Sporteinrichtungen|Vitaparcours Verlauf",
-     "title": "Vitaparcours Verlauf",
+     "key": "CITY_Zuerich|https://www.ogd.stadt-zuerich.ch/wms/geoportal/Erholungs__und_Sporteinrichtungen|Vitaparcours",
+     "title": "Vitaparcours",
      "owner": "CITY_Zuerich",
      "service": {
       "type": "WMS",
       "url": "https://www.ogd.stadt-zuerich.ch/wms/geoportal/Erholungs__und_Sporteinrichtungen",
-      "layer": "Vitaparcours Verlauf"
+      "layer": "Vitaparcours"
      }
     },
     {
@@ -69109,7 +69289,7 @@
      }
     }
    ],
-   "mapgeo": "https://map.geo.admin.ch/#/map?lang=de&center=2695393,1222050&z=3&bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS%7Chttps%3A%2F%2Fwww.ogd.stadt-zuerich.ch%2Fwms%2Fgeoportal%2FErholungs__und_Sporteinrichtungen%7CVitaparcours%20Verlauf%2Ct%2C0.85%3BWMS%7Chttps%3A%2F%2Fmap.geo.sz.ch%2Fmapserv_proxy%7Cch.sz.a102a.sportanlage.strecken_langsamverkehr.vitaparcours%2Ct%2C0.85",
+   "mapgeo": "https://map.geo.admin.ch/#/map?lang=de&center=2695393,1222050&z=3&bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS%7Chttps%3A%2F%2Fwww.ogd.stadt-zuerich.ch%2Fwms%2Fgeoportal%2FErholungs__und_Sporteinrichtungen%7CVitaparcours%2Ct%2C0.85%3BWMS%7Chttps%3A%2F%2Fmap.geo.sz.ch%2Fmapserv_proxy%7Cch.sz.a102a.sportanlage.strecken_langsamverkehr.vitaparcours%2Ct%2C0.85",
    "qlr": "https://davidoesch.github.io/geoservice_harvester_poc/data/topics/vitaparcours.qlr",
    "lyrx": "https://davidoesch.github.io/geoservice_harvester_poc/data/topics/vitaparcours.lyrx",
    "owc": "https://davidoesch.github.io/geoservice_harvester_poc/data/topics/vitaparcours.ows.json"
@@ -69673,12 +69853,12 @@
      }
     },
     {
-     "key": "KT_LU|https://public.geo.lu.ch/ogd/services/managed/WLDBES24_DS_V1_MP/MapServer/WMSServer|0",
-     "title": "Waldbestand 2024",
+     "key": "KT_LU|https://public.geo.lu.ch/ogd/services/managed/WALDSTOG_DS_V1_MP/MapServer/WMSServer|0",
+     "title": "Standortgerechter Waldbestand",
      "owner": "KT_LU",
      "service": {
       "type": "WMS",
-      "url": "https://public.geo.lu.ch/ogd/services/managed/WLDBES24_DS_V1_MP/MapServer/WMSServer",
+      "url": "https://public.geo.lu.ch/ogd/services/managed/WALDSTOG_DS_V1_MP/MapServer/WMSServer",
       "layer": "0"
      }
     },
@@ -69693,7 +69873,7 @@
      }
     }
    ],
-   "mapgeo": "https://map.geo.admin.ch/#/map?lang=de&center=2699462,1224471&z=2&bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS%7Chttps%3A%2F%2Fmap.geo.gl.ch%2Fows%2Fmainmap%7Cch.gl.biota.waldbestand%2Ct%2C0.85%3BWMS%7Chttps%3A%2F%2Fpublic.geo.lu.ch%2Fogd%2Fservices%2Fmanaged%2FWLDBES24_DS_V1_MP%2FMapServer%2FWMSServer%7C0%2Ct%2C0.85%3BWMS%7Chttps%3A%2F%2Fservices.geo.sg.ch%2Fwss%2Fservice%2FSG00010_WMS%2Fguest%7CWaldbestand%2Ct%2C0.85",
+   "mapgeo": "https://map.geo.admin.ch/#/map?lang=de&center=2699685,1225528&z=2&bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS%7Chttps%3A%2F%2Fmap.geo.gl.ch%2Fows%2Fmainmap%7Cch.gl.biota.waldbestand%2Ct%2C0.85%3BWMS%7Chttps%3A%2F%2Fpublic.geo.lu.ch%2Fogd%2Fservices%2Fmanaged%2FWALDSTOG_DS_V1_MP%2FMapServer%2FWMSServer%7C0%2Ct%2C0.85%3BWMS%7Chttps%3A%2F%2Fservices.geo.sg.ch%2Fwss%2Fservice%2FSG00010_WMS%2Fguest%7CWaldbestand%2Ct%2C0.85",
    "qlr": "https://davidoesch.github.io/geoservice_harvester_poc/data/topics/waldbestand.qlr",
    "lyrx": "https://davidoesch.github.io/geoservice_harvester_poc/data/topics/waldbestand.lyrx",
    "owc": "https://davidoesch.github.io/geoservice_harvester_poc/data/topics/waldbestand.ows.json"
@@ -70254,13 +70434,13 @@
      }
     },
     {
-     "key": "KT_SZ|https://map.geo.sz.ch/mapserv_proxy|ch.sz.a117.waldreservate",
-     "title": "Waldreservate",
+     "key": "KT_SZ|https://map.geo.sz.ch/mapserv_proxy|ch.sz.a094b.oereb.wald.waldreservate",
+     "title": "ÖREB: Waldreservate",
      "owner": "KT_SZ",
      "service": {
       "type": "WMS",
       "url": "https://map.geo.sz.ch/mapserv_proxy",
-      "layer": "ch.sz.a117.waldreservate"
+      "layer": "ch.sz.a094b.oereb.wald.waldreservate"
      }
     },
     {
@@ -70284,7 +70464,7 @@
      }
     }
    ],
-   "mapgeo": "https://map.geo.admin.ch/#/map?lang=de&center=2684419,1180364&z=0&bgLayer=ch.swisstopo.pixelkarte-grau&layers=ch.bafu.waldreservate%2Ct%2C0.85%3BWMS%7Chttps%3A%2F%2Fgeodienste.ch%2Fdb%2Fwaldreservate_0%2Fdeu%7Cwaldreservate%2Ct%2C0.85%3BWMS%7Chttps%3A%2F%2Fwww.geoportal.ch%2Fservices%2Fwms%2Fktai%7Cch.geoportal.umwelt_naturschutz.660.0.waldreservate_kt_ai%2Ct%2C0.85%3BWMS%7Chttps%3A%2F%2Fwww.geoportal.ch%2Fservices%2Fwms%2Fktar%7Cch.geoportal.wald_flora_fauna.806.0.waldreservate_kt_ar%2Ct%2C0.85%3BWMS%7Chttps%3A%2F%2Foerebservice.apps.be.ch%2Fcgi-bin%2Fmapserv.fcgi%3Fmap%3Doereb_de%7Cgeodb.waldbio_vertwres%2Ct%2C0.85%3BWMS%7Chttps%3A%2F%2Fwms.geo.bs.ch%2F%7Cch.bs.waldreservate_wldr%2Ct%2C0.85%3BWMS%7Chttps%3A%2F%2Fwms.geo.gr.ch%2Fwaldbiodiversitaet%7CWaldreservate%2Ct%2C0.85%3BWMS%7Chttps%3A%2F%2Fgeo.so.ch%2Fwms%2Foereb%7Cch.Waldreservate%2Ct%2C0.85%3BWMS%7Chttps%3A%2F%2Fmap.geo.sz.ch%2Fmapserv_proxy%7Cch.sz.a117.waldreservate%2Ct%2C0.85%3BWMS%7Chttps%3A%2F%2Fows.geo.tg.ch%2Fgeofy_access_proxy%2Foereb_waldreservate%7CWaldreservate%2Ct%2C0.85%3BWMS%7Chttps%3A%2F%2Fwms.zh.ch%2FARPOerebZHWMS%7Cwaldreservate%2Ct%2C0.85",
+   "mapgeo": "https://map.geo.admin.ch/#/map?lang=de&center=2684419,1180364&z=0&bgLayer=ch.swisstopo.pixelkarte-grau&layers=ch.bafu.waldreservate%2Ct%2C0.85%3BWMS%7Chttps%3A%2F%2Fgeodienste.ch%2Fdb%2Fwaldreservate_0%2Fdeu%7Cwaldreservate%2Ct%2C0.85%3BWMS%7Chttps%3A%2F%2Fwww.geoportal.ch%2Fservices%2Fwms%2Fktai%7Cch.geoportal.umwelt_naturschutz.660.0.waldreservate_kt_ai%2Ct%2C0.85%3BWMS%7Chttps%3A%2F%2Fwww.geoportal.ch%2Fservices%2Fwms%2Fktar%7Cch.geoportal.wald_flora_fauna.806.0.waldreservate_kt_ar%2Ct%2C0.85%3BWMS%7Chttps%3A%2F%2Foerebservice.apps.be.ch%2Fcgi-bin%2Fmapserv.fcgi%3Fmap%3Doereb_de%7Cgeodb.waldbio_vertwres%2Ct%2C0.85%3BWMS%7Chttps%3A%2F%2Fwms.geo.bs.ch%2F%7Cch.bs.waldreservate_wldr%2Ct%2C0.85%3BWMS%7Chttps%3A%2F%2Fwms.geo.gr.ch%2Fwaldbiodiversitaet%7CWaldreservate%2Ct%2C0.85%3BWMS%7Chttps%3A%2F%2Fgeo.so.ch%2Fwms%2Foereb%7Cch.Waldreservate%2Ct%2C0.85%3BWMS%7Chttps%3A%2F%2Fmap.geo.sz.ch%2Fmapserv_proxy%7Cch.sz.a094b.oereb.wald.waldreservate%2Ct%2C0.85%3BWMS%7Chttps%3A%2F%2Fows.geo.tg.ch%2Fgeofy_access_proxy%2Foereb_waldreservate%7CWaldreservate%2Ct%2C0.85%3BWMS%7Chttps%3A%2F%2Fwms.zh.ch%2FARPOerebZHWMS%7Cwaldreservate%2Ct%2C0.85",
    "qlr": "https://davidoesch.github.io/geoservice_harvester_poc/data/topics/waldreservate.qlr",
    "lyrx": "https://davidoesch.github.io/geoservice_harvester_poc/data/topics/waldreservate.lyrx",
    "owc": "https://davidoesch.github.io/geoservice_harvester_poc/data/topics/waldreservate.ows.json"
@@ -70579,6 +70759,7 @@
     "KT_BL",
     "KT_BS",
     "KT_GR",
+    "KT_SZ",
     "KT_TI"
    ],
    "members": [
@@ -70643,6 +70824,16 @@
      }
     },
     {
+     "key": "KT_SZ|https://map.geo.sz.ch/mapserv_proxy|ch.sz.a045a.velowegnetz",
+     "title": "Velowegnetz",
+     "owner": "KT_SZ",
+     "service": {
+      "type": "WMS",
+      "url": "https://map.geo.sz.ch/mapserv_proxy",
+      "layer": "ch.sz.a045a.velowegnetz"
+     }
+    },
+    {
      "key": "KT_TI|https://wms.geo.ti.ch/service|ch_079_1_v1_0_reti_percorsi_pedonali_sentieri",
      "title": "[CH-079.1] Reti di percorsi pedonali e sentieri",
      "owner": "KT_TI",
@@ -70653,7 +70844,7 @@
      }
     }
    ],
-   "mapgeo": "https://map.geo.admin.ch/#/map?lang=de&center=2700609,1163387&z=1&bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS%7Chttps%3A%2F%2Fows.geodatenonline.ch%2Fogd_wms_kommunaler_richtplan_stadt_zug%7Crp_ta_wanderweg_stadt_zug%2Ct%2C0.85%3BWMS%7Chttps%3A%2F%2Fwww.geoportal.ch%2Fservices%2Fwms%2Fktai%7Cch.geoportal.verkehr.2693.0.wanderwegnetz_kt_ai%2Ct%2C0.85%3BWMS%7Chttps%3A%2F%2Fwww.geoservice.apps.be.ch%2Fgeoservice3%2Fservices%2Fa42geo%2Fof_environment01_de_ms_wms%2FMapServer%2FWMSServer%7CWILDRZ_WILDRZR_VW_11662%2Ct%2C0.85%3BWMS%7Chttps%3A%2F%2Fgeowms.bl.ch%2F%7Cwanderwege%2Ct%2C0.85%3BWMS%7Chttps%3A%2F%2Fwms.geo.bs.ch%2F%7Cch.bs.wanderwege_wawe.wanderwegnetz%2Ct%2C0.85%3BWMS%7Chttps%3A%2F%2Fwms.geo.gr.ch%2Frrip_regioviamala%7CWanderwegnetz%2Ct%2C0.85%3BWMS%7Chttps%3A%2F%2Fwms.geo.ti.ch%2Fservice%7Cch_079_1_v1_0_reti_percorsi_pedonali_sentieri%2Ct%2C0.85",
+   "mapgeo": "https://map.geo.admin.ch/#/map?lang=de&center=2661900,1186024&z=1&bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS%7Chttps%3A%2F%2Fows.geodatenonline.ch%2Fogd_wms_kommunaler_richtplan_stadt_zug%7Crp_ta_wanderweg_stadt_zug%2Ct%2C0.85%3BWMS%7Chttps%3A%2F%2Fwww.geoportal.ch%2Fservices%2Fwms%2Fktai%7Cch.geoportal.verkehr.2693.0.wanderwegnetz_kt_ai%2Ct%2C0.85%3BWMS%7Chttps%3A%2F%2Fwww.geoservice.apps.be.ch%2Fgeoservice3%2Fservices%2Fa42geo%2Fof_environment01_de_ms_wms%2FMapServer%2FWMSServer%7CWILDRZ_WILDRZR_VW_11662%2Ct%2C0.85%3BWMS%7Chttps%3A%2F%2Fgeowms.bl.ch%2F%7Cwanderwege%2Ct%2C0.85%3BWMS%7Chttps%3A%2F%2Fwms.geo.bs.ch%2F%7Cch.bs.wanderwege_wawe.wanderwegnetz%2Ct%2C0.85%3BWMS%7Chttps%3A%2F%2Fwms.geo.gr.ch%2Frrip_regioviamala%7CWanderwegnetz%2Ct%2C0.85%3BWMS%7Chttps%3A%2F%2Fmap.geo.sz.ch%2Fmapserv_proxy%7Cch.sz.a045a.velowegnetz%2Ct%2C0.85%3BWMS%7Chttps%3A%2F%2Fwms.geo.ti.ch%2Fservice%7Cch_079_1_v1_0_reti_percorsi_pedonali_sentieri%2Ct%2C0.85",
    "qlr": "https://davidoesch.github.io/geoservice_harvester_poc/data/topics/wanderwegnetz.qlr",
    "lyrx": "https://davidoesch.github.io/geoservice_harvester_poc/data/topics/wanderwegnetz.lyrx",
    "owc": "https://davidoesch.github.io/geoservice_harvester_poc/data/topics/wanderwegnetz.ows.json"
@@ -70929,38 +71120,38 @@
    "owc": "https://davidoesch.github.io/geoservice_harvester_poc/data/topics/wasser-schutzrohr.ows.json"
   },
   {
-   "id": "wasser-sia-405-baujahr-gde",
-   "label": "Wasser SIA 405 Baujahr Gde",
+   "id": "wasser-sia-405-druckzone-gde",
+   "label": "Wasser SIA 405 Druckzone Gde",
    "owners": [
     "KT_AI",
     "KT_AR"
    ],
    "members": [
     {
-     "key": "KT_AI|https://www.geoportal.ch/services/wms/ktai|ch.geoportal.ver_entsorgung_kommunikation.2254.0.wasser_sia_405_baujahr_gde",
-     "title": "Wasser SIA 405 Baujahr Gde",
+     "key": "KT_AI|https://www.geoportal.ch/services/wms/ktai|ch.geoportal.ver_entsorgung_kommunikation.2253.0.wasser_sia_405_druckzone_gde",
+     "title": "Wasser SIA 405 Druckzone Gde",
      "owner": "KT_AI",
      "service": {
       "type": "WMS",
       "url": "https://www.geoportal.ch/services/wms/ktai",
-      "layer": "ch.geoportal.ver_entsorgung_kommunikation.2254.0.wasser_sia_405_baujahr_gde"
+      "layer": "ch.geoportal.ver_entsorgung_kommunikation.2253.0.wasser_sia_405_druckzone_gde"
      }
     },
     {
-     "key": "KT_AR|https://www.geoportal.ch/services/wms/ktar|ch.geoportal.ver_entsorgung_kommunikation.2254.0.wasser_sia_405_baujahr_gde",
-     "title": "Wasser SIA 405 Baujahr Gde",
+     "key": "KT_AR|https://www.geoportal.ch/services/wms/ktar|ch.geoportal.ver_entsorgung_kommunikation.2253.0.wasser_sia_405_druckzone_gde",
+     "title": "Wasser SIA 405 Druckzone Gde",
      "owner": "KT_AR",
      "service": {
       "type": "WMS",
       "url": "https://www.geoportal.ch/services/wms/ktar",
-      "layer": "ch.geoportal.ver_entsorgung_kommunikation.2254.0.wasser_sia_405_baujahr_gde"
+      "layer": "ch.geoportal.ver_entsorgung_kommunikation.2253.0.wasser_sia_405_druckzone_gde"
      }
     }
    ],
-   "mapgeo": "https://map.geo.admin.ch/#/map?lang=de&center=2748971,1246415&z=4&bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS%7Chttps%3A%2F%2Fwww.geoportal.ch%2Fservices%2Fwms%2Fktai%7Cch.geoportal.ver_entsorgung_kommunikation.2254.0.wasser_sia_405_baujahr_gde%2Ct%2C0.85%3BWMS%7Chttps%3A%2F%2Fwww.geoportal.ch%2Fservices%2Fwms%2Fktar%7Cch.geoportal.ver_entsorgung_kommunikation.2254.0.wasser_sia_405_baujahr_gde%2Ct%2C0.85",
-   "qlr": "https://davidoesch.github.io/geoservice_harvester_poc/data/topics/wasser-sia-405-baujahr-gde.qlr",
-   "lyrx": "https://davidoesch.github.io/geoservice_harvester_poc/data/topics/wasser-sia-405-baujahr-gde.lyrx",
-   "owc": "https://davidoesch.github.io/geoservice_harvester_poc/data/topics/wasser-sia-405-baujahr-gde.ows.json"
+   "mapgeo": "https://map.geo.admin.ch/#/map?lang=de&center=2748971,1246415&z=4&bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS%7Chttps%3A%2F%2Fwww.geoportal.ch%2Fservices%2Fwms%2Fktai%7Cch.geoportal.ver_entsorgung_kommunikation.2253.0.wasser_sia_405_druckzone_gde%2Ct%2C0.85%3BWMS%7Chttps%3A%2F%2Fwww.geoportal.ch%2Fservices%2Fwms%2Fktar%7Cch.geoportal.ver_entsorgung_kommunikation.2253.0.wasser_sia_405_druckzone_gde%2Ct%2C0.85",
+   "qlr": "https://davidoesch.github.io/geoservice_harvester_poc/data/topics/wasser-sia-405-druckzone-gde.qlr",
+   "lyrx": "https://davidoesch.github.io/geoservice_harvester_poc/data/topics/wasser-sia-405-druckzone-gde.lyrx",
+   "owc": "https://davidoesch.github.io/geoservice_harvester_poc/data/topics/wasser-sia-405-druckzone-gde.ows.json"
   },
   {
    "id": "wasser-sia-405-funktion-gde",
@@ -71402,6 +71593,40 @@
    "qlr": "https://davidoesch.github.io/geoservice_harvester_poc/data/topics/wasserkraftnutzung.qlr",
    "lyrx": "https://davidoesch.github.io/geoservice_harvester_poc/data/topics/wasserkraftnutzung.lyrx",
    "owc": "https://davidoesch.github.io/geoservice_harvester_poc/data/topics/wasserkraftnutzung.ows.json"
+  },
+  {
+   "id": "wasserkraftwerke",
+   "label": "Wasserkraftwerke",
+   "owners": [
+    "KT_LU",
+    "KT_ZH"
+   ],
+   "members": [
+    {
+     "key": "KT_LU|https://public.geo.lu.ch/ogd/services/managed/WASKRFTW_DS_V1_MP/MapServer/WMSServer|0",
+     "title": "Wasserkraftwerke",
+     "owner": "KT_LU",
+     "service": {
+      "type": "WMS",
+      "url": "https://public.geo.lu.ch/ogd/services/managed/WASKRFTW_DS_V1_MP/MapServer/WMSServer",
+      "layer": "0"
+     }
+    },
+    {
+     "key": "KT_ZH|https://wms.zh.ch/EnergieStromwwwZH|stromanlagen_p",
+     "title": "Wasserkraftwerke",
+     "owner": "KT_ZH",
+     "service": {
+      "type": "WMS",
+      "url": "https://wms.zh.ch/EnergieStromwwwZH",
+      "layer": "stromanlagen_p"
+     }
+    }
+   ],
+   "mapgeo": "https://map.geo.admin.ch/#/map?lang=de&center=2684304,1255182&z=2&bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS%7Chttps%3A%2F%2Fpublic.geo.lu.ch%2Fogd%2Fservices%2Fmanaged%2FWASKRFTW_DS_V1_MP%2FMapServer%2FWMSServer%7C0%2Ct%2C0.85%3BWMS%7Chttps%3A%2F%2Fwms.zh.ch%2FEnergieStromwwwZH%7Cstromanlagen_p%2Ct%2C0.85",
+   "qlr": "https://davidoesch.github.io/geoservice_harvester_poc/data/topics/wasserkraftwerke.qlr",
+   "lyrx": "https://davidoesch.github.io/geoservice_harvester_poc/data/topics/wasserkraftwerke.lyrx",
+   "owc": "https://davidoesch.github.io/geoservice_harvester_poc/data/topics/wasserkraftwerke.ows.json"
   },
   {
    "id": "wasserpflanzen",
@@ -72455,7 +72680,7 @@
      }
     }
    ],
-   "mapgeo": "https://map.geo.admin.ch/#/map?lang=de&center=2618933,1225401&z=2&bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS%7Chttps%3A%2F%2Fwms.geo.ag.ch%2Fpublic%2Fows%7Cch_ag_geo_al_ahnesterinaktiv%2Ct%2C0.85%3BWMS%7Chttps%3A%2F%2Fwww.geoservice.apps.be.ch%2Fgeoservice3%2Fservices%2Fa42geo%2Fof_farming03_de_ms_wms%2FMapServer%2FWMSServer%7CASHORNIS_NESTZNET_VW_43921%2Ct%2C0.85",
+   "mapgeo": "https://map.geo.admin.ch/#/map?lang=de&center=2620434,1225423&z=2&bgLayer=ch.swisstopo.pixelkarte-grau&layers=WMS%7Chttps%3A%2F%2Fwms.geo.ag.ch%2Fpublic%2Fows%7Cch_ag_geo_al_ahnesterinaktiv%2Ct%2C0.85%3BWMS%7Chttps%3A%2F%2Fwww.geoservice.apps.be.ch%2Fgeoservice3%2Fservices%2Fa42geo%2Fof_farming03_de_ms_wms%2FMapServer%2FWMSServer%7CASHORNIS_NESTZNET_VW_43921%2Ct%2C0.85",
    "qlr": "https://davidoesch.github.io/geoservice_harvester_poc/data/topics/zerstorte-nester-der-asiatischen-hornisse-im-letzten-jahr.qlr",
    "lyrx": "https://davidoesch.github.io/geoservice_harvester_poc/data/topics/zerstorte-nester-der-asiatischen-hornisse-im-letzten-jahr.lyrx",
    "owc": "https://davidoesch.github.io/geoservice_harvester_poc/data/topics/zerstorte-nester-der-asiatischen-hornisse-im-letzten-jahr.ows.json"

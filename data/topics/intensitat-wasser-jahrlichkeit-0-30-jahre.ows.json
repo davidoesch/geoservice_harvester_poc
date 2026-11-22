@@ -4,7 +4,7 @@
  "properties": {
   "lang": "de",
   "title": "Intensität Wasser Jährlichkeit 0-30 Jahre",
-  "updated": "2026-11-20T16:13:33+01:00",
+  "updated": "2026-11-22T08:52:16+01:00",
   "subtitle": "GeoHarvester topic: 3 providers",
   "links": {
    "profiles": [
@@ -47,7 +47,7 @@
    },
    "properties": {
     "title": "Intensität Wasser Jährlichkeit 0-30 Jahre",
-    "updated": "2026-11-20T16:13:33+01:00",
+    "updated": "2026-11-22T08:52:16+01:00",
     "publisher": "geodienste.ch (kantonsübergreifend)",
     "layer": "intensitaet_wasser_jaehrlichkeit_0_30_jahre",
     "offerings": [
@@ -97,7 +97,7 @@
    },
    "properties": {
     "title": "Naturgefahren Intensitäten Wasser 30-jährlich",
-    "updated": "2026-11-20T16:13:33+01:00",
+    "updated": "2026-11-22T08:52:16+01:00",
     "publisher": "Kanton Glarus",
     "layer": "ch.gl.naturalhazards.intensitaeten-wasser-030j",
     "offerings": [
@@ -117,7 +117,7 @@
   },
   {
    "type": "Feature",
-   "id": "https://maps.zh.ch/wfs/OGDZHWFS#ms:ogd-0044_giszhpub_wb_hw_ik100_f",
+   "id": "https://maps.zh.ch/wfs/OGDZHWFS#ms:ogd-0044_giszhpub_wb_hw_ik300_f",
    "geometry": {
     "type": "Polygon",
     "coordinates": [
@@ -146,10 +146,10 @@
     ]
    },
    "properties": {
-    "title": "Gewässer Intensitätsflächen Hochwasser 100-jährliche Eintrittswahrscheinlichkeit (44.4)",
-    "updated": "2026-11-20T16:13:33+01:00",
+    "title": "Gewässer Intensitätsflächen Hochwasser 300-jährliche Eintrittswahrscheinlichkeit (44.5)",
+    "updated": "2026-11-22T08:52:16+01:00",
     "publisher": "Kanton Zürich",
-    "layer": "ms:ogd-0044_giszhpub_wb_hw_ik100_f",
+    "layer": "ms:ogd-0044_giszhpub_wb_hw_ik300_f",
     "offerings": [
      {
       "code": "http://www.opengis.net/spec/owc-geojson/1.0/req/wfs",

@@ -4,7 +4,7 @@
  "properties": {
   "lang": "de",
   "title": "GK Permanente Rutschungen",
-  "updated": "2026-11-20T16:05:37+01:00",
+  "updated": "2026-11-22T08:52:16+01:00",
   "subtitle": "GeoHarvester topic: 5 providers",
   "links": {
    "profiles": [
@@ -47,7 +47,7 @@
    },
    "properties": {
     "title": "[TI-034.1] Scivolamento permanente",
-    "updated": "2026-11-20T16:05:37+01:00",
+    "updated": "2026-11-22T08:52:16+01:00",
     "publisher": "Kanton Tessin",
     "layer": "ti_034_1_v1_0_carta_pericoli_gradi_s_scivolamento_permanente",
     "offerings": [
@@ -73,31 +73,31 @@
     "coordinates": [
      [
       [
-       8.412,
-       46.531
+       8.497,
+       46.595
       ],
       [
-       8.952,
-       46.531
+       8.787,
+       46.595
       ],
       [
-       8.952,
-       46.989
+       8.787,
+       46.951
       ],
       [
-       8.412,
-       46.989
+       8.497,
+       46.951
       ],
       [
-       8.412,
-       46.531
+       8.497,
+       46.595
       ]
      ]
     ]
    },
    "properties": {
     "title": "GK Permanente Rutschungen",
-    "updated": "2026-11-20T16:05:37+01:00",
+    "updated": "2026-11-22T08:52:16+01:00",
     "publisher": "Kanton Uri",
     "layer": "forst:gk_permanente_rutschungen",
     "offerings": [
@@ -147,7 +147,7 @@
    },
    "properties": {
     "title": "vd.glissement_permanent",
-    "updated": "2026-11-20T16:05:37+01:00",
+    "updated": "2026-11-22T08:52:16+01:00",
     "publisher": "Kanton Waadt",
     "layer": "vd.glissement_permanent",
     "offerings": [
@@ -197,7 +197,7 @@
    },
    "properties": {
     "title": "GEO_Permanentrutschung",
-    "updated": "2026-11-20T16:05:37+01:00",
+    "updated": "2026-11-22T08:52:16+01:00",
     "publisher": "Kanton Wallis",
     "layer": "3",
     "offerings": [
@@ -247,7 +247,7 @@
    },
    "properties": {
     "title": "Permanente Rutschungen",
-    "updated": "2026-11-20T16:05:37+01:00",
+    "updated": "2026-11-22T08:52:16+01:00",
     "publisher": "Kanton Zürich",
     "layer": "permanente-rutschungen",
     "offerings": [

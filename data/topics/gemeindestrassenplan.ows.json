@@ -4,7 +4,7 @@
  "properties": {
   "lang": "de",
   "title": "Gemeindestrassenplan",
-  "updated": "2026-11-20T16:13:33+01:00",
+  "updated": "2026-11-22T08:52:16+01:00",
   "subtitle": "GeoHarvester topic: 3 providers",
   "links": {
    "profiles": [
@@ -47,7 +47,7 @@
    },
    "properties": {
     "title": "Kommunale Bebauungspläne (Punkte)",
-    "updated": "2026-11-20T16:13:33+01:00",
+    "updated": "2026-11-22T08:52:16+01:00",
     "publisher": "Kanton Luzern",
     "layer": "3",
     "offerings": [
@@ -97,7 +97,7 @@
    },
    "properties": {
     "title": "Gemeindestrassenplan_projektiert",
-    "updated": "2026-11-20T16:13:33+01:00",
+    "updated": "2026-11-22T08:52:16+01:00",
     "publisher": "Kanton St. Gallen",
     "layer": "Gemeindestrassenplan_projektiert",
     "offerings": [
@@ -117,39 +117,39 @@
   },
   {
    "type": "Feature",
-   "id": "https://geo.ur.ch/wms#strassen:gemeindestrassenplan",
+   "id": "https://geo.ur.ch/wms#strassen:gemeindestrassenplan_genehmigt",
    "geometry": {
     "type": "Polygon",
     "coordinates": [
      [
       [
-       8.403,
-       46.525
+       8.412,
+       46.531
       ],
       [
-       8.965,
-       46.525
+       8.953,
+       46.531
       ],
       [
-       8.965,
-       46.995
+       8.953,
+       46.989
       ],
       [
-       8.403,
-       46.995
+       8.412,
+       46.989
       ],
       [
-       8.403,
-       46.525
+       8.412,
+       46.531
       ]
      ]
     ]
    },
    "properties": {
     "title": "Gemeindestrassenplan",
-    "updated": "2026-11-20T16:13:33+01:00",
+    "updated": "2026-11-22T08:52:16+01:00",
     "publisher": "Kanton Uri",
-    "layer": "strassen:gemeindestrassenplan",
+    "layer": "strassen:gemeindestrassenplan_genehmigt",
     "offerings": [
      {
       "code": "http://www.opengis.net/spec/owc-geojson/1.0/req/wms",

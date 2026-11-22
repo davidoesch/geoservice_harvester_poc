@@ -2,7 +2,7 @@
 <qlr>
   <layer-tree-group expanded="1" checked="Qt::Checked" name="">
     <layer-tree-group expanded="1" checked="Qt::Checked" name="GeoHarvester – Vitaparcours">
-      <layer-tree-layer expanded="0" checked="Qt::Checked" id="geoharvester_vitaparcours_0" name="Vitaparcours Verlauf (Zürich)" source="contextualWMSLegend=0&amp;crs=EPSG:2056&amp;dpiMode=7&amp;featureCount=10&amp;format=image/png&amp;layers=Vitaparcours Verlauf&amp;styles&amp;url=https://www.ogd.stadt-zuerich.ch/wms/geoportal/Erholungs__und_Sporteinrichtungen" providerKey="wms"/>
+      <layer-tree-layer expanded="0" checked="Qt::Checked" id="geoharvester_vitaparcours_0" name="Vitaparcours (Zürich)" source="contextualWMSLegend=0&amp;crs=EPSG:2056&amp;dpiMode=7&amp;featureCount=10&amp;format=image/png&amp;layers=Vitaparcours&amp;styles&amp;url=https://www.ogd.stadt-zuerich.ch/wms/geoportal/Erholungs__und_Sporteinrichtungen" providerKey="wms"/>
       <layer-tree-layer expanded="0" checked="Qt::Checked" id="geoharvester_vitaparcours_1" name="Vitaparcours (SZ)" source="contextualWMSLegend=0&amp;crs=EPSG:2056&amp;dpiMode=7&amp;featureCount=10&amp;format=image/png&amp;layers=ch.sz.a102a.sportanlage.strecken_langsamverkehr.vitaparcours&amp;styles&amp;url=https://map.geo.sz.ch/mapserv_proxy" providerKey="wms"/>
     </layer-tree-group>
   </layer-tree-group>
@@ -10,8 +10,8 @@
     <maplayer type="raster" hasScaleBasedVisibilityFlag="0" minScale="1e+08" maxScale="0" styleCategories="AllStyleCategories">
       <extent><xmin>2679932</xmin><ymin>1241997</ymin><xmax>2687885</xmax><ymax>1251228</ymax></extent>
       <id>geoharvester_vitaparcours_0</id>
-      <datasource>contextualWMSLegend=0&amp;crs=EPSG:2056&amp;dpiMode=7&amp;featureCount=10&amp;format=image/png&amp;layers=Vitaparcours Verlauf&amp;styles&amp;url=https://www.ogd.stadt-zuerich.ch/wms/geoportal/Erholungs__und_Sporteinrichtungen</datasource>
-      <layername>Vitaparcours Verlauf (Zürich)</layername>
+      <datasource>contextualWMSLegend=0&amp;crs=EPSG:2056&amp;dpiMode=7&amp;featureCount=10&amp;format=image/png&amp;layers=Vitaparcours&amp;styles&amp;url=https://www.ogd.stadt-zuerich.ch/wms/geoportal/Erholungs__und_Sporteinrichtungen</datasource>
+      <layername>Vitaparcours (Zürich)</layername>
       <srs><spatialrefsys><proj4>+proj=somerc +lat_0=46.9524055555556 +lon_0=7.43958333333333 +k_0=1 +x_0=2600000 +y_0=1200000 +ellps=bessel +towgs84=674.374,15.056,405.346,0,0,0,0 +units=m +no_defs</proj4><srid>2056</srid><authid>EPSG:2056</authid><description>CH1903+ / LV95</description><projectionacronym>somerc</projectionacronym><ellipsoidacronym>EPSG:7004</ellipsoidacronym><geographicflag>false</geographicflag></spatialrefsys></srs>
       <provider>wms</provider>
     </maplayer>

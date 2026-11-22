@@ -8,7 +8,7 @@
   </layer-tree-group>
   <maplayers>
     <maplayer type="raster" hasScaleBasedVisibilityFlag="0" minScale="1e+08" maxScale="0" styleCategories="AllStyleCategories">
-      <extent><xmin>2610119</xmin><ymin>1264705</ymin><xmax>2614323</xmax><ymax>1269940</ymax></extent>
+      <extent><xmin>2610118</xmin><ymin>1265261</ymin><xmax>2614323</xmax><ymax>1269940</ymax></extent>
       <id>geoharvester_nutzungsplanung-glarus-grundnutzung-zonenflache_0</id>
       <datasource>contextualWMSLegend=0&amp;crs=EPSG:2056&amp;dpiMode=7&amp;featureCount=10&amp;format=image/png&amp;layers=ch.bs.zonenplan_stadt_basel_npba.grundnutzung_zonenflaeche_laufende_aenderung.grundnutzung&amp;styles&amp;url=https://wms.geo.bs.ch/</datasource>
       <layername>Zonenplan Stadt Basel - Grundnutzung Zonenfläche (Basel): laufende Änderung - Grundnutzung (BS)</layername>

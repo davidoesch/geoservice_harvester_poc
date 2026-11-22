@@ -10,7 +10,7 @@
       <layer-tree-layer expanded="0" checked="Qt::Checked" id="geoharvester_waldreservate_5" name="Waldreservate (BS)" source="contextualWMSLegend=0&amp;crs=EPSG:2056&amp;dpiMode=7&amp;featureCount=10&amp;format=image/png&amp;layers=ch.bs.waldreservate_wldr&amp;styles&amp;url=https://wms.geo.bs.ch/" providerKey="wms"/>
       <layer-tree-layer expanded="0" checked="Qt::Checked" id="geoharvester_waldreservate_6" name="Waldreservate (GR)" source="contextualWMSLegend=0&amp;crs=EPSG:2056&amp;dpiMode=7&amp;featureCount=10&amp;format=image/png&amp;layers=Waldreservate&amp;styles&amp;url=https://wms.geo.gr.ch/waldbiodiversitaet" providerKey="wms"/>
       <layer-tree-layer expanded="0" checked="Qt::Checked" id="geoharvester_waldreservate_7" name="Waldreservate (SO)" source="contextualWMSLegend=0&amp;crs=EPSG:2056&amp;dpiMode=7&amp;featureCount=10&amp;format=image/png&amp;layers=ch.Waldreservate&amp;styles&amp;url=https://geo.so.ch/wms/oereb" providerKey="wms"/>
-      <layer-tree-layer expanded="0" checked="Qt::Checked" id="geoharvester_waldreservate_8" name="Waldreservate (SZ)" source="contextualWMSLegend=0&amp;crs=EPSG:2056&amp;dpiMode=7&amp;featureCount=10&amp;format=image/png&amp;layers=ch.sz.a117.waldreservate&amp;styles&amp;url=https://map.geo.sz.ch/mapserv_proxy" providerKey="wms"/>
+      <layer-tree-layer expanded="0" checked="Qt::Checked" id="geoharvester_waldreservate_8" name="ÖREB: Waldreservate (SZ)" source="contextualWMSLegend=0&amp;crs=EPSG:2056&amp;dpiMode=7&amp;featureCount=10&amp;format=image/png&amp;layers=ch.sz.a094b.oereb.wald.waldreservate&amp;styles&amp;url=https://map.geo.sz.ch/mapserv_proxy" providerKey="wms"/>
       <layer-tree-layer expanded="0" checked="Qt::Checked" id="geoharvester_waldreservate_9" name="Waldreservate (TG)" source="contextualWMSLegend=0&amp;crs=EPSG:2056&amp;dpiMode=7&amp;featureCount=10&amp;format=image/png&amp;layers=Waldreservate&amp;styles&amp;url=https://ows.geo.tg.ch/geofy_access_proxy/oereb_waldreservate" providerKey="wms"/>
       <layer-tree-layer expanded="0" checked="Qt::Checked" id="geoharvester_waldreservate_10" name="Waldreservate (ZH)" source="contextualWMSLegend=0&amp;crs=EPSG:2056&amp;dpiMode=7&amp;featureCount=10&amp;format=image/png&amp;layers=waldreservate&amp;styles&amp;url=https://wms.zh.ch/ARPOerebZHWMS" providerKey="wms"/>
     </layer-tree-group>
@@ -83,8 +83,8 @@
     <maplayer type="raster" hasScaleBasedVisibilityFlag="0" minScale="1e+08" maxScale="0" styleCategories="AllStyleCategories">
       <extent><xmin>2669090</xmin><ymin>1192274</ymin><xmax>2722081</xmax><ymax>1233040</ymax></extent>
       <id>geoharvester_waldreservate_8</id>
-      <datasource>contextualWMSLegend=0&amp;crs=EPSG:2056&amp;dpiMode=7&amp;featureCount=10&amp;format=image/png&amp;layers=ch.sz.a117.waldreservate&amp;styles&amp;url=https://map.geo.sz.ch/mapserv_proxy</datasource>
-      <layername>Waldreservate (SZ)</layername>
+      <datasource>contextualWMSLegend=0&amp;crs=EPSG:2056&amp;dpiMode=7&amp;featureCount=10&amp;format=image/png&amp;layers=ch.sz.a094b.oereb.wald.waldreservate&amp;styles&amp;url=https://map.geo.sz.ch/mapserv_proxy</datasource>
+      <layername>ÖREB: Waldreservate (SZ)</layername>
       <srs><spatialrefsys><proj4>+proj=somerc +lat_0=46.9524055555556 +lon_0=7.43958333333333 +k_0=1 +x_0=2600000 +y_0=1200000 +ellps=bessel +towgs84=674.374,15.056,405.346,0,0,0,0 +units=m +no_defs</proj4><srid>2056</srid><authid>EPSG:2056</authid><description>CH1903+ / LV95</description><projectionacronym>somerc</projectionacronym><ellipsoidacronym>EPSG:7004</ellipsoidacronym><geographicflag>false</geographicflag></spatialrefsys></srs>
       <provider>wms</provider>
     </maplayer>

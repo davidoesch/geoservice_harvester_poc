@@ -4,7 +4,7 @@
  "properties": {
   "lang": "de",
   "title": "HFP3",
-  "updated": "2026-11-20T16:05:37+01:00",
+  "updated": "2026-11-22T08:52:16+01:00",
   "subtitle": "GeoHarvester topic: 2 providers",
   "links": {
    "profiles": [
@@ -17,7 +17,7 @@
  "features": [
   {
    "type": "Feature",
-   "id": "https://www.ogd.stadt-zuerich.ch/wms/geoportal/Amtliche_Vermessung_Stadt_Zuerich#HFP3 Beschriftung",
+   "id": "https://www.ogd.stadt-zuerich.ch/wms/geoportal/Amtliche_Vermessung_Stadt_Zuerich#HFP3",
    "geometry": {
     "type": "Polygon",
     "coordinates": [
@@ -46,10 +46,10 @@
     ]
    },
    "properties": {
-    "title": "HFP3 Beschriftung",
-    "updated": "2026-11-20T16:05:37+01:00",
+    "title": "HFP3",
+    "updated": "2026-11-22T08:52:16+01:00",
     "publisher": "Stadt Zürich",
-    "layer": "HFP3 Beschriftung",
+    "layer": "HFP3",
     "offerings": [
      {
       "code": "http://www.opengis.net/spec/owc-geojson/1.0/req/wms",
@@ -97,7 +97,7 @@
    },
    "properties": {
     "title": "HFP3",
-    "updated": "2026-11-20T16:05:37+01:00",
+    "updated": "2026-11-22T08:52:16+01:00",
     "publisher": "Kanton Basel-Landschaft",
     "layer": "hfp3",
     "offerings": [

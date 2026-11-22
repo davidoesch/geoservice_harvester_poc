@@ -71,7 +71,7 @@
       <provider>wms</provider>
     </maplayer>
     <maplayer type="raster" hasScaleBasedVisibilityFlag="0" minScale="1e+08" maxScale="0" styleCategories="AllStyleCategories">
-      <extent><xmin>2673994</xmin><ymin>1153088</ymin><xmax>2716094</xmax><ymax>1206011</ymax></extent>
+      <extent><xmin>2673384</xmin><ymin>1152747</ymin><xmax>2715790</xmax><ymax>1206005</ymax></extent>
       <id>geoharvester_synoptische-gefahrenkarte_7</id>
       <datasource>contextualWMSLegend=0&amp;crs=EPSG:2056&amp;dpiMode=7&amp;featureCount=10&amp;format=image/png&amp;layers=forst:gk_synoptischegefahrenkarte&amp;styles&amp;url=https://geo.ur.ch/wms</datasource>
       <layername>GK_SynoptischeGefahrenkarte (UR)</layername>

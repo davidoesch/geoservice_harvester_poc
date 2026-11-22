@@ -3,7 +3,7 @@
   <layer-tree-group expanded="1" checked="Qt::Checked" name="">
     <layer-tree-group expanded="1" checked="Qt::Checked" name="GeoHarvester – Waldbestand">
       <layer-tree-layer expanded="0" checked="Qt::Checked" id="geoharvester_waldbestand_0" name="Waldbestand (GL)" source="contextualWMSLegend=0&amp;crs=EPSG:2056&amp;dpiMode=7&amp;featureCount=10&amp;format=image/png&amp;layers=ch.gl.biota.waldbestand&amp;styles&amp;url=https://map.geo.gl.ch/ows/mainmap" providerKey="wms"/>
-      <layer-tree-layer expanded="0" checked="Qt::Checked" id="geoharvester_waldbestand_1" name="Waldbestand 2024 (LU)" source="contextualWMSLegend=0&amp;crs=EPSG:2056&amp;dpiMode=7&amp;featureCount=10&amp;format=image/png&amp;layers=0&amp;styles&amp;url=https://public.geo.lu.ch/ogd/services/managed/WLDBES24_DS_V1_MP/MapServer/WMSServer" providerKey="wms"/>
+      <layer-tree-layer expanded="0" checked="Qt::Checked" id="geoharvester_waldbestand_1" name="Standortgerechter Waldbestand (LU)" source="contextualWMSLegend=0&amp;crs=EPSG:2056&amp;dpiMode=7&amp;featureCount=10&amp;format=image/png&amp;layers=0&amp;styles&amp;url=https://public.geo.lu.ch/ogd/services/managed/WALDSTOG_DS_V1_MP/MapServer/WMSServer" providerKey="wms"/>
       <layer-tree-layer expanded="0" checked="Qt::Checked" id="geoharvester_waldbestand_2" name="Waldbestand (SG)" source="contextualWMSLegend=0&amp;crs=EPSG:2056&amp;dpiMode=7&amp;featureCount=10&amp;format=image/png&amp;layers=Waldbestand&amp;styles&amp;url=https://services.geo.sg.ch/wss/service/SG00010_WMS/guest" providerKey="wms"/>
     </layer-tree-group>
   </layer-tree-group>
@@ -17,10 +17,10 @@
       <provider>wms</provider>
     </maplayer>
     <maplayer type="raster" hasScaleBasedVisibilityFlag="0" minScale="1e+08" maxScale="0" styleCategories="AllStyleCategories">
-      <extent><xmin>2630194</xmin><ymin>1180945</ymin><xmax>2681877</xmax><ymax>1238021</ymax></extent>
+      <extent><xmin>2630641</xmin><ymin>1183060</ymin><xmax>2679686</xmax><ymax>1237769</ymax></extent>
       <id>geoharvester_waldbestand_1</id>
-      <datasource>contextualWMSLegend=0&amp;crs=EPSG:2056&amp;dpiMode=7&amp;featureCount=10&amp;format=image/png&amp;layers=0&amp;styles&amp;url=https://public.geo.lu.ch/ogd/services/managed/WLDBES24_DS_V1_MP/MapServer/WMSServer</datasource>
-      <layername>Waldbestand 2024 (LU)</layername>
+      <datasource>contextualWMSLegend=0&amp;crs=EPSG:2056&amp;dpiMode=7&amp;featureCount=10&amp;format=image/png&amp;layers=0&amp;styles&amp;url=https://public.geo.lu.ch/ogd/services/managed/WALDSTOG_DS_V1_MP/MapServer/WMSServer</datasource>
+      <layername>Standortgerechter Waldbestand (LU)</layername>
       <srs><spatialrefsys><proj4>+proj=somerc +lat_0=46.9524055555556 +lon_0=7.43958333333333 +k_0=1 +x_0=2600000 +y_0=1200000 +ellps=bessel +towgs84=674.374,15.056,405.346,0,0,0,0 +units=m +no_defs</proj4><srid>2056</srid><authid>EPSG:2056</authid><description>CH1903+ / LV95</description><projectionacronym>somerc</projectionacronym><ellipsoidacronym>EPSG:7004</ellipsoidacronym><geographicflag>false</geographicflag></spatialrefsys></srs>
       <provider>wms</provider>
     </maplayer>

@@ -25,7 +25,7 @@
       <provider>wms</provider>
     </maplayer>
     <maplayer type="raster" hasScaleBasedVisibilityFlag="0" minScale="1e+08" maxScale="0" styleCategories="AllStyleCategories">
-      <extent><xmin>2673994</xmin><ymin>1153088</ymin><xmax>2716094</xmax><ymax>1206011</ymax></extent>
+      <extent><xmin>2684827</xmin><ymin>1157566</ymin><xmax>2695252</xmax><ymax>1196302</ymax></extent>
       <id>geoharvester_gestaltungsplane-ch073_2</id>
       <datasource>contextualWMSLegend=0&amp;crs=EPSG:2056&amp;dpiMode=7&amp;featureCount=10&amp;format=image/png&amp;layers=oereb:ch073b_prj_gemeindliche_nutzungsplanung&amp;styles&amp;url=https://geo.ur.ch/wms</datasource>
       <layername>CH073B (prj) Gemeindliche Nutzungsplanung (UR)</layername>

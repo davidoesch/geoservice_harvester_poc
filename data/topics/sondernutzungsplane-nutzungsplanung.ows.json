@@ -4,7 +4,7 @@
  "properties": {
   "lang": "de",
   "title": "Sondernutzungspläne (Nutzungsplanung)",
-  "updated": "2026-11-20T16:13:33+01:00",
+  "updated": "2026-11-22T08:52:16+01:00",
   "subtitle": "GeoHarvester topic: 16 providers",
   "links": {
    "profiles": [
@@ -47,7 +47,7 @@
    },
    "properties": {
     "title": "Geoportal_Nutzungszonenplan",
-    "updated": "2026-11-20T16:13:33+01:00",
+    "updated": "2026-11-22T08:52:16+01:00",
     "publisher": "Stadt Bern",
     "layer": "Geoportal_Nutzungszonenplan",
     "offerings": [
@@ -97,7 +97,7 @@
    },
    "properties": {
     "title": "Sondernutzungsplanung (in Kraft)",
-    "updated": "2026-11-20T16:13:33+01:00",
+    "updated": "2026-11-22T08:52:16+01:00",
     "publisher": "Stadt Zürich",
     "layer": "Sondernutzungsplanung (in Kraft)",
     "offerings": [
@@ -147,7 +147,7 @@
    },
    "properties": {
     "title": "Überlagernde Nutzungsplaninhalte (punktbezogene Festlegungen)",
-    "updated": "2026-11-20T16:13:33+01:00",
+    "updated": "2026-11-22T08:52:16+01:00",
     "publisher": "geodienste.ch (kantonsübergreifend)",
     "layer": "ueberlagernde_nutzungsplaninhalte_punktbezogene_festlegungen",
     "offerings": [
@@ -197,7 +197,7 @@
    },
    "properties": {
     "title": "Sondernutzungspläne",
-    "updated": "2026-11-20T16:13:33+01:00",
+    "updated": "2026-11-22T08:52:16+01:00",
     "publisher": "Kanton Aargau",
     "layer": "ch_ag_geo_are_dnpsnp_01",
     "offerings": [
@@ -247,7 +247,7 @@
    },
    "properties": {
     "title": "Sondernutzungspläne Gde",
-    "updated": "2026-11-20T16:13:33+01:00",
+    "updated": "2026-11-22T08:52:16+01:00",
     "publisher": "Kanton Appenzell Innerrhoden",
     "layer": "ch.geoportal.raumplanung_grundstueckskataster.75.0.sondernutzungsplaene_gde",
     "offerings": [
@@ -297,7 +297,7 @@
    },
    "properties": {
     "title": "Sondernutzungspläne Gde Kt AR",
-    "updated": "2026-11-20T16:13:33+01:00",
+    "updated": "2026-11-22T08:52:16+01:00",
     "publisher": "Kanton Appenzell Ausserrhoden",
     "layer": "ch.geoportal.raumplanung_grundstueckskataster.3274.0.sondernutzungsplaene_gde_kt_ar",
     "offerings": [
@@ -347,7 +347,7 @@
    },
    "properties": {
     "title": "Nutzungsplanung Gevierte",
-    "updated": "2026-11-20T16:13:33+01:00",
+    "updated": "2026-11-22T08:52:16+01:00",
     "publisher": "Kanton Basel-Landschaft",
     "layer": "np_bauzonen",
     "offerings": [
@@ -397,7 +397,7 @@
    },
    "properties": {
     "title": "Nutzungsplanung Glarus überlagernde Festlegung",
-    "updated": "2026-11-20T16:13:33+01:00",
+    "updated": "2026-11-22T08:52:16+01:00",
     "publisher": "Kanton Glarus",
     "layer": "ch.gl.planning.np-1632_ueberlagernde-festlegung",
     "offerings": [
@@ -447,7 +447,7 @@
    },
    "properties": {
     "title": "Zusatzinformationen zur Nutzungsplanung",
-    "updated": "2026-11-20T16:13:33+01:00",
+    "updated": "2026-11-22T08:52:16+01:00",
     "publisher": "Kanton Graubünden",
     "layer": "Zusatzinformationen_Nutzungsplanung",
     "offerings": [
@@ -497,7 +497,7 @@
    },
    "properties": {
     "title": "Nutzungsplanung Bauzone",
-    "updated": "2026-11-20T16:13:33+01:00",
+    "updated": "2026-11-22T08:52:16+01:00",
     "publisher": "Kanton Schaffhausen",
     "layer": "sh.bauland.bauzone",
     "offerings": [
@@ -547,7 +547,7 @@
    },
    "properties": {
     "title": "Sondernutzungspläne (Nutzungsplanung)",
-    "updated": "2026-11-20T16:13:33+01:00",
+    "updated": "2026-11-22T08:52:16+01:00",
     "publisher": "Kanton Solothurn",
     "layer": "ch.so.arp.nutzungsplanung.sondernutzungsplaene",
     "offerings": [
@@ -597,7 +597,7 @@
    },
    "properties": {
     "title": "Sondernutzungsplanung, Einsiedeln",
-    "updated": "2026-11-20T16:13:33+01:00",
+    "updated": "2026-11-22T08:52:16+01:00",
     "publisher": "Kanton Schwyz",
     "layer": "ch.sz.a202a.sondernutzungsplanung.einsiedeln",
     "offerings": [
@@ -647,7 +647,7 @@
    },
    "properties": {
     "title": "[AC-065a.1] Disponibilità piani di utilizzazione",
-    "updated": "2026-11-20T16:13:33+01:00",
+    "updated": "2026-11-22T08:52:16+01:00",
     "publisher": "Kanton Tessin",
     "layer": "ac_065a_1_v1_0_disponibilita_piani_utilizzazione",
     "offerings": [
@@ -668,36 +668,10 @@
   {
    "type": "Feature",
    "id": "https://geo.ur.ch/wms#oereb:plan_der_gemeindlichen_nutzungsplanung",
-   "geometry": {
-    "type": "Polygon",
-    "coordinates": [
-     [
-      [
-       8.403,
-       46.525
-      ],
-      [
-       8.965,
-       46.525
-      ],
-      [
-       8.965,
-       46.995
-      ],
-      [
-       8.403,
-       46.995
-      ],
-      [
-       8.403,
-       46.525
-      ]
-     ]
-    ]
-   },
+   "geometry": null,
    "properties": {
     "title": "Plan der gemeindlichen Nutzungsplanung",
-    "updated": "2026-11-20T16:13:33+01:00",
+    "updated": "2026-11-22T08:52:16+01:00",
     "publisher": "Kanton Uri",
     "layer": "oereb:plan_der_gemeindlichen_nutzungsplanung",
     "offerings": [
@@ -747,7 +721,7 @@
    },
    "properties": {
     "title": "Nutzungsplanung",
-    "updated": "2026-11-20T16:13:33+01:00",
+    "updated": "2026-11-22T08:52:16+01:00",
     "publisher": "Kanton Zug",
     "layer": "zg_nutzungsplanung",
     "offerings": [
@@ -797,7 +771,7 @@
    },
    "properties": {
     "title": "Sondernutzungsplanung",
-    "updated": "2026-11-20T16:13:33+01:00",
+    "updated": "2026-11-22T08:52:16+01:00",
     "publisher": "Kanton Zürich",
     "layer": "sondernutzungsplanung",
     "offerings": [

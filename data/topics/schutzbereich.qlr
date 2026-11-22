@@ -1,0 +1,117 @@
+<!DOCTYPE qgis-layer-definition>
+<qlr>
+  <layer-tree-group expanded="1" checked="Qt::Checked" name="">
+    <layer-tree-group expanded="1" checked="Qt::Checked" name="GeoHarvester – Schutzbereich">
+      <layer-tree-layer expanded="0" checked="Qt::Checked" id="geoharvester_schutzbereich_0" name="Schutzgebiete swissTLMRegio (Bund)" source="contextualWMSLegend=0&amp;crs=EPSG:2056&amp;dpiMode=7&amp;featureCount=10&amp;format=image/png&amp;layers=ch.swisstopo.vec200-adminboundaries-protectedarea&amp;styles&amp;url=https://wms.geo.admin.ch/" providerKey="wms"/>
+      <layer-tree-layer expanded="0" checked="Qt::Checked" id="geoharvester_schutzbereich_1" name="Schutzgebiet (Bern)" source="contextualWMSLegend=0&amp;crs=EPSG:2056&amp;dpiMode=7&amp;featureCount=10&amp;format=image/png&amp;layers=1&amp;styles&amp;url=https://map.bern.ch/arcgis/services/Geoportal/UNESCO_Arch_Fundstellen_Schutzgebiet/MapServer/WMSServer" providerKey="wms"/>
+      <layer-tree-layer expanded="0" checked="Qt::Checked" id="geoharvester_schutzbereich_2" name="Umgebungsschutzgebiet (Winterthur)" source="contextualWMSLegend=0&amp;crs=EPSG:2056&amp;dpiMode=7&amp;featureCount=10&amp;format=image/png&amp;layers=Umgebungsschutzgebiet&amp;styles&amp;url=https://stadtplan.winterthur.ch/wms/RichtplanSiedlungLandschaft" providerKey="wms"/>
+      <layer-tree-layer expanded="0" checked="Qt::Checked" id="geoharvester_schutzbereich_3" name="Aussichtsschutz (in Kraft) (Zürich)" source="contextualWMSLegend=0&amp;crs=EPSG:2056&amp;dpiMode=7&amp;featureCount=10&amp;format=image/png&amp;layers=Aussichtsschutz (in Kraft)&amp;styles&amp;url=https://www.ogd.stadt-zuerich.ch/wms/geoportal/Nutzungsplanung___kommunale_Bau__und_Zonenordnung_1999__BZO99_" providerKey="wms"/>
+      <layer-tree-layer expanded="0" checked="Qt::Checked" id="geoharvester_schutzbereich_4" name="Schutzzonen (FL_LI)" source="contextualWMSLegend=0&amp;crs=EPSG:2056&amp;dpiMode=7&amp;featureCount=10&amp;format=image/png&amp;layers=li.au.pg_schutzzone&amp;styles&amp;url=https://service.geo.llv.li/service/wms" providerKey="wms"/>
+      <layer-tree-layer expanded="0" checked="Qt::Checked" id="geoharvester_schutzbereich_5" name="Überlagerte Schutzzonen (BE)" source="contextualWMSLegend=0&amp;crs=EPSG:2056&amp;dpiMode=7&amp;featureCount=10&amp;format=image/png&amp;layers=GSK25_GSKUL_VW_14585&amp;styles&amp;url=https://www.geoservice.apps.be.ch/geoservice3/services/a42geo/of_inlandwaters01_de_ms_wms/MapServer/WMSServer" providerKey="wms"/>
+      <layer-tree-layer expanded="0" checked="Qt::Checked" id="geoharvester_schutzbereich_6" name="Bevölkerungsschutz (BL)" source="contextualWMSLegend=0&amp;crs=EPSG:2056&amp;dpiMode=7&amp;featureCount=10&amp;format=image/png&amp;layers=bevoelkerungsschutz_group&amp;styles&amp;url=https://geowms.bl.ch/" providerKey="wms"/>
+      <layer-tree-layer expanded="0" checked="Qt::Checked" id="geoharvester_schutzbereich_7" name="Schutzgebiete (GR)" source="contextualWMSLegend=0&amp;crs=EPSG:2056&amp;dpiMode=7&amp;featureCount=10&amp;format=image/png&amp;layers=Schutzgebiete&amp;styles&amp;url=https://wms.geo.gr.ch/pflanzen_pilzschutzgebiete" providerKey="wms"/>
+      <layer-tree-layer expanded="0" checked="Qt::Checked" id="geoharvester_schutzbereich_8" name="Einzelschutz (SO)" source="contextualWMSLegend=0&amp;crs=EPSG:2056&amp;dpiMode=7&amp;featureCount=10&amp;format=image/png&amp;layers=ch.SO.Einzelschutz&amp;styles&amp;url=https://geo.so.ch/wms/oereb" providerKey="wms"/>
+      <layer-tree-layer expanded="0" checked="Qt::Checked" id="geoharvester_schutzbereich_9" name="Schutzbereich (TG)" source="contextualWMSLegend=0&amp;crs=EPSG:2056&amp;dpiMode=7&amp;featureCount=10&amp;format=image/png&amp;layers=Schutzbereich&amp;styles&amp;url=https://ows.geo.tg.ch/geofy_access_proxy/oereb_amphibienlaichgebiete" providerKey="wms"/>
+      <layer-tree-layer expanded="0" checked="Qt::Checked" id="geoharvester_schutzbereich_10" name="Schutzzone Hagendorn (ZG)" source="contextualWMSLegend=0&amp;crs=EPSG:2056&amp;dpiMode=7&amp;featureCount=10&amp;format=image/png&amp;layers=zg_schutzzone_hagendorn&amp;styles&amp;url=https://services.geo.zg.ch/ows/nutzungsplanung" providerKey="wms"/>
+      <layer-tree-layer expanded="0" checked="Qt::Checked" id="geoharvester_schutzbereich_11" name="Schutzzone (525.50) (ZH)" source=" pagingEnabled='true' preferCoordinatesForWfsT11='false' restrictToRequestBBOX='1' srsname='EPSG:2056' typename='ms:ogd-0525_giszhpub_fns_schutzzone_f' url='https://maps.zh.ch/wfs/OGDZHWFS' version='auto'" providerKey="WFS"/>
+    </layer-tree-group>
+  </layer-tree-group>
+  <maplayers>
+    <maplayer type="raster" hasScaleBasedVisibilityFlag="0" minScale="1e+08" maxScale="0" styleCategories="AllStyleCategories">
+      <extent><xmin>2270616</xmin><ymin>888855</ymin><xmax>3098222</xmax><ymax>1471872</ymax></extent>
+      <id>geoharvester_schutzbereich_0</id>
+      <datasource>contextualWMSLegend=0&amp;crs=EPSG:2056&amp;dpiMode=7&amp;featureCount=10&amp;format=image/png&amp;layers=ch.swisstopo.vec200-adminboundaries-protectedarea&amp;styles&amp;url=https://wms.geo.admin.ch/</datasource>
+      <layername>Schutzgebiete swissTLMRegio (Bund)</layername>
+      <srs><spatialrefsys><proj4>+proj=somerc +lat_0=46.9524055555556 +lon_0=7.43958333333333 +k_0=1 +x_0=2600000 +y_0=1200000 +ellps=bessel +towgs84=674.374,15.056,405.346,0,0,0,0 +units=m +no_defs</proj4><srid>2056</srid><authid>EPSG:2056</authid><description>CH1903+ / LV95</description><projectionacronym>somerc</projectionacronym><ellipsoidacronym>EPSG:7004</ellipsoidacronym><geographicflag>false</geographicflag></spatialrefsys></srs>
+      <provider>wms</provider>
+    </maplayer>
+    <maplayer type="raster" hasScaleBasedVisibilityFlag="0" minScale="1e+08" maxScale="0" styleCategories="AllStyleCategories">
+      <extent><xmin>2599952</xmin><ymin>1199435</ymin><xmax>2601627</xmax><ymax>1200325</ymax></extent>
+      <id>geoharvester_schutzbereich_1</id>
+      <datasource>contextualWMSLegend=0&amp;crs=EPSG:2056&amp;dpiMode=7&amp;featureCount=10&amp;format=image/png&amp;layers=1&amp;styles&amp;url=https://map.bern.ch/arcgis/services/Geoportal/UNESCO_Arch_Fundstellen_Schutzgebiet/MapServer/WMSServer</datasource>
+      <layername>Schutzgebiet (Bern)</layername>
+      <srs><spatialrefsys><proj4>+proj=somerc +lat_0=46.9524055555556 +lon_0=7.43958333333333 +k_0=1 +x_0=2600000 +y_0=1200000 +ellps=bessel +towgs84=674.374,15.056,405.346,0,0,0,0 +units=m +no_defs</proj4><srid>2056</srid><authid>EPSG:2056</authid><description>CH1903+ / LV95</description><projectionacronym>somerc</projectionacronym><ellipsoidacronym>EPSG:7004</ellipsoidacronym><geographicflag>false</geographicflag></spatialrefsys></srs>
+      <provider>wms</provider>
+    </maplayer>
+    <maplayer type="raster" hasScaleBasedVisibilityFlag="0" minScale="1e+08" maxScale="0" styleCategories="AllStyleCategories">
+      <extent><xmin>2690006</xmin><ymin>1255707</ymin><xmax>2704963</xmax><ymax>1267297</ymax></extent>
+      <id>geoharvester_schutzbereich_2</id>
+      <datasource>contextualWMSLegend=0&amp;crs=EPSG:2056&amp;dpiMode=7&amp;featureCount=10&amp;format=image/png&amp;layers=Umgebungsschutzgebiet&amp;styles&amp;url=https://stadtplan.winterthur.ch/wms/RichtplanSiedlungLandschaft</datasource>
+      <layername>Umgebungsschutzgebiet (Winterthur)</layername>
+      <srs><spatialrefsys><proj4>+proj=somerc +lat_0=46.9524055555556 +lon_0=7.43958333333333 +k_0=1 +x_0=2600000 +y_0=1200000 +ellps=bessel +towgs84=674.374,15.056,405.346,0,0,0,0 +units=m +no_defs</proj4><srid>2056</srid><authid>EPSG:2056</authid><description>CH1903+ / LV95</description><projectionacronym>somerc</projectionacronym><ellipsoidacronym>EPSG:7004</ellipsoidacronym><geographicflag>false</geographicflag></spatialrefsys></srs>
+      <provider>wms</provider>
+    </maplayer>
+    <maplayer type="raster" hasScaleBasedVisibilityFlag="0" minScale="1e+08" maxScale="0" styleCategories="AllStyleCategories">
+      <extent><xmin>2680068</xmin><ymin>1243111</ymin><xmax>2686958</xmax><ymax>1252659</ymax></extent>
+      <id>geoharvester_schutzbereich_3</id>
+      <datasource>contextualWMSLegend=0&amp;crs=EPSG:2056&amp;dpiMode=7&amp;featureCount=10&amp;format=image/png&amp;layers=Aussichtsschutz (in Kraft)&amp;styles&amp;url=https://www.ogd.stadt-zuerich.ch/wms/geoportal/Nutzungsplanung___kommunale_Bau__und_Zonenordnung_1999__BZO99_</datasource>
+      <layername>Aussichtsschutz (in Kraft) (Zürich)</layername>
+      <srs><spatialrefsys><proj4>+proj=somerc +lat_0=46.9524055555556 +lon_0=7.43958333333333 +k_0=1 +x_0=2600000 +y_0=1200000 +ellps=bessel +towgs84=674.374,15.056,405.346,0,0,0,0 +units=m +no_defs</proj4><srid>2056</srid><authid>EPSG:2056</authid><description>CH1903+ / LV95</description><projectionacronym>somerc</projectionacronym><ellipsoidacronym>EPSG:7004</ellipsoidacronym><geographicflag>false</geographicflag></spatialrefsys></srs>
+      <provider>wms</provider>
+    </maplayer>
+    <maplayer type="raster" hasScaleBasedVisibilityFlag="0" minScale="1e+08" maxScale="0" styleCategories="AllStyleCategories">
+      <extent><xmin>2752102</xmin><ymin>1211269</ymin><xmax>2768074</xmax><ymax>1240615</ymax></extent>
+      <id>geoharvester_schutzbereich_4</id>
+      <datasource>contextualWMSLegend=0&amp;crs=EPSG:2056&amp;dpiMode=7&amp;featureCount=10&amp;format=image/png&amp;layers=li.au.pg_schutzzone&amp;styles&amp;url=https://service.geo.llv.li/service/wms</datasource>
+      <layername>Schutzzonen (FL_LI)</layername>
+      <srs><spatialrefsys><proj4>+proj=somerc +lat_0=46.9524055555556 +lon_0=7.43958333333333 +k_0=1 +x_0=2600000 +y_0=1200000 +ellps=bessel +towgs84=674.374,15.056,405.346,0,0,0,0 +units=m +no_defs</proj4><srid>2056</srid><authid>EPSG:2056</authid><description>CH1903+ / LV95</description><projectionacronym>somerc</projectionacronym><ellipsoidacronym>EPSG:7004</ellipsoidacronym><geographicflag>false</geographicflag></spatialrefsys></srs>
+      <provider>wms</provider>
+    </maplayer>
+    <maplayer type="raster" hasScaleBasedVisibilityFlag="0" minScale="1e+08" maxScale="0" styleCategories="AllStyleCategories">
+      <extent><xmin>2561475</xmin><ymin>1159427</ymin><xmax>2643461</xmax><ymax>1236059</ymax></extent>
+      <id>geoharvester_schutzbereich_5</id>
+      <datasource>contextualWMSLegend=0&amp;crs=EPSG:2056&amp;dpiMode=7&amp;featureCount=10&amp;format=image/png&amp;layers=GSK25_GSKUL_VW_14585&amp;styles&amp;url=https://www.geoservice.apps.be.ch/geoservice3/services/a42geo/of_inlandwaters01_de_ms_wms/MapServer/WMSServer</datasource>
+      <layername>Überlagerte Schutzzonen (BE)</layername>
+      <srs><spatialrefsys><proj4>+proj=somerc +lat_0=46.9524055555556 +lon_0=7.43958333333333 +k_0=1 +x_0=2600000 +y_0=1200000 +ellps=bessel +towgs84=674.374,15.056,405.346,0,0,0,0 +units=m +no_defs</proj4><srid>2056</srid><authid>EPSG:2056</authid><description>CH1903+ / LV95</description><projectionacronym>somerc</projectionacronym><ellipsoidacronym>EPSG:7004</ellipsoidacronym><geographicflag>false</geographicflag></spatialrefsys></srs>
+      <provider>wms</provider>
+    </maplayer>
+    <maplayer type="raster" hasScaleBasedVisibilityFlag="0" minScale="1e+08" maxScale="0" styleCategories="AllStyleCategories">
+      <extent><xmin>2444570</xmin><ymin>157618</ymin><xmax>2839786</xmax><ymax>1304843</ymax></extent>
+      <id>geoharvester_schutzbereich_6</id>
+      <datasource>contextualWMSLegend=0&amp;crs=EPSG:2056&amp;dpiMode=7&amp;featureCount=10&amp;format=image/png&amp;layers=bevoelkerungsschutz_group&amp;styles&amp;url=https://geowms.bl.ch/</datasource>
+      <layername>Bevölkerungsschutz (BL)</layername>
+      <srs><spatialrefsys><proj4>+proj=somerc +lat_0=46.9524055555556 +lon_0=7.43958333333333 +k_0=1 +x_0=2600000 +y_0=1200000 +ellps=bessel +towgs84=674.374,15.056,405.346,0,0,0,0 +units=m +no_defs</proj4><srid>2056</srid><authid>EPSG:2056</authid><description>CH1903+ / LV95</description><projectionacronym>somerc</projectionacronym><ellipsoidacronym>EPSG:7004</ellipsoidacronym><geographicflag>false</geographicflag></spatialrefsys></srs>
+      <provider>wms</provider>
+    </maplayer>
+    <maplayer type="raster" hasScaleBasedVisibilityFlag="0" minScale="1e+08" maxScale="0" styleCategories="AllStyleCategories">
+      <extent><xmin>2691144</xmin><ymin>1094287</ymin><xmax>2834923</xmax><ymax>1246113</ymax></extent>
+      <id>geoharvester_schutzbereich_7</id>
+      <datasource>contextualWMSLegend=0&amp;crs=EPSG:2056&amp;dpiMode=7&amp;featureCount=10&amp;format=image/png&amp;layers=Schutzgebiete&amp;styles&amp;url=https://wms.geo.gr.ch/pflanzen_pilzschutzgebiete</datasource>
+      <layername>Schutzgebiete (GR)</layername>
+      <srs><spatialrefsys><proj4>+proj=somerc +lat_0=46.9524055555556 +lon_0=7.43958333333333 +k_0=1 +x_0=2600000 +y_0=1200000 +ellps=bessel +towgs84=674.374,15.056,405.346,0,0,0,0 +units=m +no_defs</proj4><srid>2056</srid><authid>EPSG:2056</authid><description>CH1903+ / LV95</description><projectionacronym>somerc</projectionacronym><ellipsoidacronym>EPSG:7004</ellipsoidacronym><geographicflag>false</geographicflag></spatialrefsys></srs>
+      <provider>wms</provider>
+    </maplayer>
+    <maplayer type="raster" hasScaleBasedVisibilityFlag="0" minScale="1e+08" maxScale="0" styleCategories="AllStyleCategories">
+      <extent><xmin>2592662</xmin><ymin>1214337</ymin><xmax>2644563</xmax><ymax>1260528</ymax></extent>
+      <id>geoharvester_schutzbereich_8</id>
+      <datasource>contextualWMSLegend=0&amp;crs=EPSG:2056&amp;dpiMode=7&amp;featureCount=10&amp;format=image/png&amp;layers=ch.SO.Einzelschutz&amp;styles&amp;url=https://geo.so.ch/wms/oereb</datasource>
+      <layername>Einzelschutz (SO)</layername>
+      <srs><spatialrefsys><proj4>+proj=somerc +lat_0=46.9524055555556 +lon_0=7.43958333333333 +k_0=1 +x_0=2600000 +y_0=1200000 +ellps=bessel +towgs84=674.374,15.056,405.346,0,0,0,0 +units=m +no_defs</proj4><srid>2056</srid><authid>EPSG:2056</authid><description>CH1903+ / LV95</description><projectionacronym>somerc</projectionacronym><ellipsoidacronym>EPSG:7004</ellipsoidacronym><geographicflag>false</geographicflag></spatialrefsys></srs>
+      <provider>wms</provider>
+    </maplayer>
+    <maplayer type="raster" hasScaleBasedVisibilityFlag="0" minScale="1e+08" maxScale="0" styleCategories="AllStyleCategories">
+      <extent><xmin>2690096</xmin><ymin>1244811</ymin><xmax>2755061</xmax><ymax>1286530</ymax></extent>
+      <id>geoharvester_schutzbereich_9</id>
+      <datasource>contextualWMSLegend=0&amp;crs=EPSG:2056&amp;dpiMode=7&amp;featureCount=10&amp;format=image/png&amp;layers=Schutzbereich&amp;styles&amp;url=https://ows.geo.tg.ch/geofy_access_proxy/oereb_amphibienlaichgebiete</datasource>
+      <layername>Schutzbereich (TG)</layername>
+      <srs><spatialrefsys><proj4>+proj=somerc +lat_0=46.9524055555556 +lon_0=7.43958333333333 +k_0=1 +x_0=2600000 +y_0=1200000 +ellps=bessel +towgs84=674.374,15.056,405.346,0,0,0,0 +units=m +no_defs</proj4><srid>2056</srid><authid>EPSG:2056</authid><description>CH1903+ / LV95</description><projectionacronym>somerc</projectionacronym><ellipsoidacronym>EPSG:7004</ellipsoidacronym><geographicflag>false</geographicflag></spatialrefsys></srs>
+      <provider>wms</provider>
+    </maplayer>
+    <maplayer type="raster" hasScaleBasedVisibilityFlag="0" minScale="1e+08" maxScale="0" styleCategories="AllStyleCategories">
+      <extent><xmin>2674811</xmin><ymin>1228366</ymin><xmax>2675034</xmax><ymax>1228702</ymax></extent>
+      <id>geoharvester_schutzbereich_10</id>
+      <datasource>contextualWMSLegend=0&amp;crs=EPSG:2056&amp;dpiMode=7&amp;featureCount=10&amp;format=image/png&amp;layers=zg_schutzzone_hagendorn&amp;styles&amp;url=https://services.geo.zg.ch/ows/nutzungsplanung</datasource>
+      <layername>Schutzzone Hagendorn (ZG)</layername>
+      <srs><spatialrefsys><proj4>+proj=somerc +lat_0=46.9524055555556 +lon_0=7.43958333333333 +k_0=1 +x_0=2600000 +y_0=1200000 +ellps=bessel +towgs84=674.374,15.056,405.346,0,0,0,0 +units=m +no_defs</proj4><srid>2056</srid><authid>EPSG:2056</authid><description>CH1903+ / LV95</description><projectionacronym>somerc</projectionacronym><ellipsoidacronym>EPSG:7004</ellipsoidacronym><geographicflag>false</geographicflag></spatialrefsys></srs>
+      <provider>wms</provider>
+    </maplayer>
+    <maplayer type="vector" hasScaleBasedVisibilityFlag="0" minScale="1e+08" maxScale="0" styleCategories="AllStyleCategories">
+      <extent><xmin>2654491</xmin><ymin>1221474</ymin><xmax>2719945</xmax><ymax>1285821</ymax></extent>
+      <id>geoharvester_schutzbereich_11</id>
+      <datasource> pagingEnabled='true' preferCoordinatesForWfsT11='false' restrictToRequestBBOX='1' srsname='EPSG:2056' typename='ms:ogd-0525_giszhpub_fns_schutzzone_f' url='https://maps.zh.ch/wfs/OGDZHWFS' version='auto'</datasource>
+      <layername>Schutzzone (525.50) (ZH)</layername>
+      <srs><spatialrefsys><proj4>+proj=somerc +lat_0=46.9524055555556 +lon_0=7.43958333333333 +k_0=1 +x_0=2600000 +y_0=1200000 +ellps=bessel +towgs84=674.374,15.056,405.346,0,0,0,0 +units=m +no_defs</proj4><srid>2056</srid><authid>EPSG:2056</authid><description>CH1903+ / LV95</description><projectionacronym>somerc</projectionacronym><ellipsoidacronym>EPSG:7004</ellipsoidacronym><geographicflag>false</geographicflag></spatialrefsys></srs>
+      <provider>WFS</provider>
+    </maplayer>
+  </maplayers>
+</qlr>

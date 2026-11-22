@@ -4,7 +4,7 @@
  "properties": {
   "lang": "de",
   "title": "Einschränkungen für Drohnen",
-  "updated": "2026-11-20T16:05:37+01:00",
+  "updated": "2026-11-22T08:52:16+01:00",
   "subtitle": "GeoHarvester topic: 2 providers",
   "links": {
    "profiles": [
@@ -47,7 +47,7 @@
    },
    "properties": {
     "title": "Einschränkungen für Drohnen",
-    "updated": "2026-11-20T16:05:37+01:00",
+    "updated": "2026-11-22T08:52:16+01:00",
     "publisher": "Bund (geo.admin.ch)",
     "layer": "ch.bazl.einschraenkungen-drohnen",
     "offerings": [
@@ -67,39 +67,39 @@
   },
   {
    "type": "Feature",
-   "id": "https://geowms.bl.ch/#einschraenkungen_fuer_drohnen",
+   "id": "https://geowms.bl.ch/#ch.bazl.einschraenkungen-drohnen",
    "geometry": {
     "type": "Polygon",
     "coordinates": [
      [
       [
-       5.702,
-       37.593
+       7.306,
+       47.309
       ],
       [
-       10.643,
-       37.593
+       8.037,
+       47.309
       ],
       [
-       10.643,
-       47.85
+       8.037,
+       47.626
       ],
       [
-       5.702,
-       47.85
+       7.306,
+       47.626
       ],
       [
-       5.702,
-       37.593
+       7.306,
+       47.309
       ]
      ]
     ]
    },
    "properties": {
-    "title": "Einschränkungen für Drohnen",
-    "updated": "2026-11-20T16:05:37+01:00",
+    "title": "Einschränkungen für Drohnen BAZL",
+    "updated": "2026-11-22T08:52:16+01:00",
     "publisher": "Kanton Basel-Landschaft",
-    "layer": "einschraenkungen_fuer_drohnen",
+    "layer": "ch.bazl.einschraenkungen-drohnen",
     "offerings": [
      {
       "code": "http://www.opengis.net/spec/owc-geojson/1.0/req/wms",

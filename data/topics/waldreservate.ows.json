@@ -4,7 +4,7 @@
  "properties": {
   "lang": "de",
   "title": "Waldreservate",
-  "updated": "2026-11-20T16:05:37+01:00",
+  "updated": "2026-11-22T08:52:16+01:00",
   "subtitle": "GeoHarvester topic: 11 providers",
   "links": {
    "profiles": [
@@ -47,7 +47,7 @@
    },
    "properties": {
     "title": "Waldreservate",
-    "updated": "2026-11-20T16:05:37+01:00",
+    "updated": "2026-11-22T08:52:16+01:00",
     "publisher": "Bund (geo.admin.ch)",
     "layer": "ch.bafu.waldreservate",
     "offerings": [
@@ -97,7 +97,7 @@
    },
    "properties": {
     "title": "geodienste.ch WMS Waldreservate",
-    "updated": "2026-11-20T16:05:37+01:00",
+    "updated": "2026-11-22T08:52:16+01:00",
     "publisher": "geodienste.ch (kantonsübergreifend)",
     "layer": "waldreservate",
     "offerings": [
@@ -147,7 +147,7 @@
    },
    "properties": {
     "title": "Waldreservate Kt AI",
-    "updated": "2026-11-20T16:05:37+01:00",
+    "updated": "2026-11-22T08:52:16+01:00",
     "publisher": "Kanton Appenzell Innerrhoden",
     "layer": "ch.geoportal.umwelt_naturschutz.660.0.waldreservate_kt_ai",
     "offerings": [
@@ -197,7 +197,7 @@
    },
    "properties": {
     "title": "Waldreservate Kt AR",
-    "updated": "2026-11-20T16:05:37+01:00",
+    "updated": "2026-11-22T08:52:16+01:00",
     "publisher": "Kanton Appenzell Ausserrhoden",
     "layer": "ch.geoportal.wald_flora_fauna.806.0.waldreservate_kt_ar",
     "offerings": [
@@ -247,7 +247,7 @@
    },
    "properties": {
     "title": "Waldreservate",
-    "updated": "2026-11-20T16:05:37+01:00",
+    "updated": "2026-11-22T08:52:16+01:00",
     "publisher": "Kanton Bern",
     "layer": "geodb.waldbio_vertwres",
     "offerings": [
@@ -297,7 +297,7 @@
    },
    "properties": {
     "title": "Waldreservate",
-    "updated": "2026-11-20T16:05:37+01:00",
+    "updated": "2026-11-22T08:52:16+01:00",
     "publisher": "Kanton Basel-Stadt",
     "layer": "ch.bs.waldreservate_wldr",
     "offerings": [
@@ -347,7 +347,7 @@
    },
    "properties": {
     "title": "Waldreservate",
-    "updated": "2026-11-20T16:05:37+01:00",
+    "updated": "2026-11-22T08:52:16+01:00",
     "publisher": "Kanton Graubünden",
     "layer": "Waldreservate",
     "offerings": [
@@ -397,7 +397,7 @@
    },
    "properties": {
     "title": "Waldreservate",
-    "updated": "2026-11-20T16:05:37+01:00",
+    "updated": "2026-11-22T08:52:16+01:00",
     "publisher": "Kanton Solothurn",
     "layer": "ch.Waldreservate",
     "offerings": [
@@ -417,7 +417,7 @@
   },
   {
    "type": "Feature",
-   "id": "https://map.geo.sz.ch/mapserv_proxy#ch.sz.a117.waldreservate",
+   "id": "https://map.geo.sz.ch/mapserv_proxy#ch.sz.a094b.oereb.wald.waldreservate",
    "geometry": {
     "type": "Polygon",
     "coordinates": [
@@ -446,10 +446,10 @@
     ]
    },
    "properties": {
-    "title": "Waldreservate",
-    "updated": "2026-11-20T16:05:37+01:00",
+    "title": "ÖREB: Waldreservate",
+    "updated": "2026-11-22T08:52:16+01:00",
     "publisher": "Kanton Schwyz",
-    "layer": "ch.sz.a117.waldreservate",
+    "layer": "ch.sz.a094b.oereb.wald.waldreservate",
     "offerings": [
      {
       "code": "http://www.opengis.net/spec/owc-geojson/1.0/req/wms",
@@ -497,7 +497,7 @@
    },
    "properties": {
     "title": "Waldreservate",
-    "updated": "2026-11-20T16:05:37+01:00",
+    "updated": "2026-11-22T08:52:16+01:00",
     "publisher": "Kanton Thurgau",
     "layer": "Waldreservate",
     "offerings": [
@@ -547,7 +547,7 @@
    },
    "properties": {
     "title": "Waldreservate",
-    "updated": "2026-11-20T16:05:37+01:00",
+    "updated": "2026-11-22T08:52:16+01:00",
     "publisher": "Kanton Zürich",
     "layer": "waldreservate",
     "offerings": [

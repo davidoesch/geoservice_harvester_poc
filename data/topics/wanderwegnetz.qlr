@@ -8,7 +8,8 @@
       <layer-tree-layer expanded="0" checked="Qt::Checked" id="geoharvester_wanderwegnetz_3" name="Wanderwegnetz (BL)" source="contextualWMSLegend=0&amp;crs=EPSG:2056&amp;dpiMode=7&amp;featureCount=10&amp;format=image/png&amp;layers=wanderwege&amp;styles&amp;url=https://geowms.bl.ch/" providerKey="wms"/>
       <layer-tree-layer expanded="0" checked="Qt::Checked" id="geoharvester_wanderwegnetz_4" name="Wanderwege - Wanderwegnetz (BS)" source="contextualWMSLegend=0&amp;crs=EPSG:2056&amp;dpiMode=7&amp;featureCount=10&amp;format=image/png&amp;layers=ch.bs.wanderwege_wawe.wanderwegnetz&amp;styles&amp;url=https://wms.geo.bs.ch/" providerKey="wms"/>
       <layer-tree-layer expanded="0" checked="Qt::Checked" id="geoharvester_wanderwegnetz_5" name="Wanderwegnetz (GR)" source="contextualWMSLegend=0&amp;crs=EPSG:2056&amp;dpiMode=7&amp;featureCount=10&amp;format=image/png&amp;layers=Wanderwegnetz&amp;styles&amp;url=https://wms.geo.gr.ch/rrip_regioviamala" providerKey="wms"/>
-      <layer-tree-layer expanded="0" checked="Qt::Checked" id="geoharvester_wanderwegnetz_6" name="[CH-079.1] Reti di percorsi pedonali e sentieri (TI)" source="contextualWMSLegend=0&amp;crs=EPSG:2056&amp;dpiMode=7&amp;featureCount=10&amp;format=image/png&amp;layers=ch_079_1_v1_0_reti_percorsi_pedonali_sentieri&amp;styles&amp;url=https://wms.geo.ti.ch/service" providerKey="wms"/>
+      <layer-tree-layer expanded="0" checked="Qt::Checked" id="geoharvester_wanderwegnetz_6" name="Velowegnetz (SZ)" source="contextualWMSLegend=0&amp;crs=EPSG:2056&amp;dpiMode=7&amp;featureCount=10&amp;format=image/png&amp;layers=ch.sz.a045a.velowegnetz&amp;styles&amp;url=https://map.geo.sz.ch/mapserv_proxy" providerKey="wms"/>
+      <layer-tree-layer expanded="0" checked="Qt::Checked" id="geoharvester_wanderwegnetz_7" name="[CH-079.1] Reti di percorsi pedonali e sentieri (TI)" source="contextualWMSLegend=0&amp;crs=EPSG:2056&amp;dpiMode=7&amp;featureCount=10&amp;format=image/png&amp;layers=ch_079_1_v1_0_reti_percorsi_pedonali_sentieri&amp;styles&amp;url=https://wms.geo.ti.ch/service" providerKey="wms"/>
     </layer-tree-group>
   </layer-tree-group>
   <maplayers>
@@ -61,8 +62,16 @@
       <provider>wms</provider>
     </maplayer>
     <maplayer type="raster" hasScaleBasedVisibilityFlag="0" minScale="1e+08" maxScale="0" styleCategories="AllStyleCategories">
-      <extent><xmin>2638831</xmin><ymin>1047146</ymin><xmax>2764773</xmax><ymax>1190141</ymax></extent>
+      <extent><xmin>2463973</xmin><ymin>1046091</ymin><xmax>2859827</xmax><ymax>1325956</ymax></extent>
       <id>geoharvester_wanderwegnetz_6</id>
+      <datasource>contextualWMSLegend=0&amp;crs=EPSG:2056&amp;dpiMode=7&amp;featureCount=10&amp;format=image/png&amp;layers=ch.sz.a045a.velowegnetz&amp;styles&amp;url=https://map.geo.sz.ch/mapserv_proxy</datasource>
+      <layername>Velowegnetz (SZ)</layername>
+      <srs><spatialrefsys><proj4>+proj=somerc +lat_0=46.9524055555556 +lon_0=7.43958333333333 +k_0=1 +x_0=2600000 +y_0=1200000 +ellps=bessel +towgs84=674.374,15.056,405.346,0,0,0,0 +units=m +no_defs</proj4><srid>2056</srid><authid>EPSG:2056</authid><description>CH1903+ / LV95</description><projectionacronym>somerc</projectionacronym><ellipsoidacronym>EPSG:7004</ellipsoidacronym><geographicflag>false</geographicflag></spatialrefsys></srs>
+      <provider>wms</provider>
+    </maplayer>
+    <maplayer type="raster" hasScaleBasedVisibilityFlag="0" minScale="1e+08" maxScale="0" styleCategories="AllStyleCategories">
+      <extent><xmin>2638831</xmin><ymin>1047146</ymin><xmax>2764773</xmax><ymax>1190141</ymax></extent>
+      <id>geoharvester_wanderwegnetz_7</id>
       <datasource>contextualWMSLegend=0&amp;crs=EPSG:2056&amp;dpiMode=7&amp;featureCount=10&amp;format=image/png&amp;layers=ch_079_1_v1_0_reti_percorsi_pedonali_sentieri&amp;styles&amp;url=https://wms.geo.ti.ch/service</datasource>
       <layername>[CH-079.1] Reti di percorsi pedonali e sentieri (TI)</layername>
       <srs><spatialrefsys><proj4>+proj=somerc +lat_0=46.9524055555556 +lon_0=7.43958333333333 +k_0=1 +x_0=2600000 +y_0=1200000 +ellps=bessel +towgs84=674.374,15.056,405.346,0,0,0,0 +units=m +no_defs</proj4><srid>2056</srid><authid>EPSG:2056</authid><description>CH1903+ / LV95</description><projectionacronym>somerc</projectionacronym><ellipsoidacronym>EPSG:7004</ellipsoidacronym><geographicflag>false</geographicflag></spatialrefsys></srs>

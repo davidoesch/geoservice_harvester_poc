@@ -2,7 +2,7 @@
 <qlr>
   <layer-tree-group expanded="1" checked="Qt::Checked" name="">
     <layer-tree-group expanded="1" checked="Qt::Checked" name="GeoHarvester – GWR: Energie-/Wärmequelle Heizung">
-      <layer-tree-layer expanded="0" checked="Qt::Checked" id="geoharvester_gwr-energie-warmequelle-heizung_0" name="GWR: Energie-/Wärmequelle Heizung (Bund)" source="contextualWMSLegend=0&amp;crs=EPSG:2056&amp;dpiMode=7&amp;featureCount=10&amp;format=image/png&amp;layers=ch.bfs.gebaeude_wohnungs_register_waermequelle_heizung&amp;styles&amp;url=https://wms.geo.admin.ch/" providerKey="wms"/>
+      <layer-tree-layer expanded="0" checked="Qt::Checked" id="geoharvester_gwr-energie-warmequelle-heizung_0" name="GWR: Energie-/Wärmequelle Heizung (Bund)" source="contextualWMSLegend=0&amp;crs=EPSG:3857&amp;dpiMode=7&amp;featureCount=10&amp;format=image/png&amp;layers=ch.bfs.gebaeude_wohnungs_register_waermequelle_heizung&amp;styles=ch.bfs.gebaeude_wohnungs_register_waermequelle_heizung&amp;tileMatrixSet=3857_20&amp;url=https://wmts.geo.admin.ch/EPSG/3857/1.0.0/WMTSCapabilities.xml" providerKey="wms"/>
       <layer-tree-layer expanded="0" checked="Qt::Checked" id="geoharvester_gwr-energie-warmequelle-heizung_1" name="Energieplanung Energieträgermix Wärme (BL)" source="contextualWMSLegend=0&amp;crs=EPSG:2056&amp;dpiMode=7&amp;featureCount=10&amp;format=image/png&amp;layers=energieplanung_energietraegermix_waerme_group&amp;styles&amp;url=https://geowms.bl.ch/" providerKey="wms"/>
       <layer-tree-layer expanded="0" checked="Qt::Checked" id="geoharvester_gwr-energie-warmequelle-heizung_2" name="GWR: Energie-/Wärmequelle Heizung (UR)" source="contextualWMSLegend=0&amp;crs=EPSG:2056&amp;dpiMode=7&amp;featureCount=10&amp;format=image/png&amp;layers=weitere:ch.bfs.gebaeude_wohnungs_register_waermequelle_heizung&amp;styles&amp;url=https://geo.ur.ch/wms" providerKey="wms"/>
       <layer-tree-layer expanded="0" checked="Qt::Checked" id="geoharvester_gwr-energie-warmequelle-heizung_3" name="Energieplan_Wärme_holz_waermenetz_l (ZH)" source=" pagingEnabled='true' preferCoordinatesForWfsT11='false' restrictToRequestBBOX='1' srsname='EPSG:2056' typename='ms:holz_waermenetz_l' url='https://maps.zh.ch/wfs/AWELEnergieWFS' version='auto'" providerKey="WFS"/>
@@ -10,11 +10,11 @@
   </layer-tree-group>
   <maplayers>
     <maplayer type="raster" hasScaleBasedVisibilityFlag="0" minScale="1e+08" maxScale="0" styleCategories="AllStyleCategories">
-      <extent><xmin>2270616</xmin><ymin>888855</ymin><xmax>3098222</xmax><ymax>1471872</ymax></extent>
+      <extent><xmin>2419976</xmin><ymin>1029987</ymin><xmax>2900040</xmax><ymax>1350045</ymax></extent>
       <id>geoharvester_gwr-energie-warmequelle-heizung_0</id>
-      <datasource>contextualWMSLegend=0&amp;crs=EPSG:2056&amp;dpiMode=7&amp;featureCount=10&amp;format=image/png&amp;layers=ch.bfs.gebaeude_wohnungs_register_waermequelle_heizung&amp;styles&amp;url=https://wms.geo.admin.ch/</datasource>
+      <datasource>contextualWMSLegend=0&amp;crs=EPSG:3857&amp;dpiMode=7&amp;featureCount=10&amp;format=image/png&amp;layers=ch.bfs.gebaeude_wohnungs_register_waermequelle_heizung&amp;styles=ch.bfs.gebaeude_wohnungs_register_waermequelle_heizung&amp;tileMatrixSet=3857_20&amp;url=https://wmts.geo.admin.ch/EPSG/3857/1.0.0/WMTSCapabilities.xml</datasource>
       <layername>GWR: Energie-/Wärmequelle Heizung (Bund)</layername>
-      <srs><spatialrefsys><proj4>+proj=somerc +lat_0=46.9524055555556 +lon_0=7.43958333333333 +k_0=1 +x_0=2600000 +y_0=1200000 +ellps=bessel +towgs84=674.374,15.056,405.346,0,0,0,0 +units=m +no_defs</proj4><srid>2056</srid><authid>EPSG:2056</authid><description>CH1903+ / LV95</description><projectionacronym>somerc</projectionacronym><ellipsoidacronym>EPSG:7004</ellipsoidacronym><geographicflag>false</geographicflag></spatialrefsys></srs>
+      <srs><spatialrefsys><authid>EPSG:3857</authid></spatialrefsys></srs>
       <provider>wms</provider>
     </maplayer>
     <maplayer type="raster" hasScaleBasedVisibilityFlag="0" minScale="1e+08" maxScale="0" styleCategories="AllStyleCategories">

@@ -4,7 +4,7 @@
  "properties": {
   "lang": "de",
   "title": "Beschriftungen Wasser: Fernwirkkabel",
-  "updated": "2026-11-20T16:05:37+01:00",
+  "updated": "2026-11-22T08:52:16+01:00",
   "subtitle": "GeoHarvester topic: 2 providers",
   "links": {
    "profiles": [
@@ -47,7 +47,7 @@
    },
    "properties": {
     "title": "Beschriftungen Wasser: Fernwirkkabel",
-    "updated": "2026-11-20T16:05:37+01:00",
+    "updated": "2026-11-22T08:52:16+01:00",
     "publisher": "geodienste.ch (kantonsübergreifend)",
     "layer": "wasser_fernwirkkabel_beschriftung",
     "offerings": [
@@ -67,39 +67,39 @@
   },
   {
    "type": "Feature",
-   "id": "https://geo.ur.ch/wms#leitungen:was_fernwirkkabel",
+   "id": "https://geo.ur.ch/wms#leitungen:abw_fernwirkkabel",
    "geometry": {
     "type": "Polygon",
     "coordinates": [
      [
       [
-       8.558,
-       46.723
+       8.357,
+       46.682
       ],
       [
-       8.901,
-       46.723
+       8.649,
+       46.682
       ],
       [
-       8.901,
-       46.917
+       8.649,
+       46.967
       ],
       [
-       8.558,
-       46.917
+       8.357,
+       46.967
       ],
       [
-       8.558,
-       46.723
+       8.357,
+       46.682
       ]
      ]
     ]
    },
    "properties": {
-    "title": "Wasser Fernwirkkabel",
-    "updated": "2026-11-20T16:05:37+01:00",
+    "title": "Abwasser Fernwirkkabel",
+    "updated": "2026-11-22T08:52:16+01:00",
     "publisher": "Kanton Uri",
-    "layer": "leitungen:was_fernwirkkabel",
+    "layer": "leitungen:abw_fernwirkkabel",
     "offerings": [
      {
       "code": "http://www.opengis.net/spec/owc-geojson/1.0/req/wms",

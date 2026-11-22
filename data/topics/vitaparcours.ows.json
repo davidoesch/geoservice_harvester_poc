@@ -4,7 +4,7 @@
  "properties": {
   "lang": "de",
   "title": "Vitaparcours",
-  "updated": "2026-11-20T16:05:37+01:00",
+  "updated": "2026-11-22T08:52:16+01:00",
   "subtitle": "GeoHarvester topic: 2 providers",
   "links": {
    "profiles": [
@@ -17,7 +17,7 @@
  "features": [
   {
    "type": "Feature",
-   "id": "https://www.ogd.stadt-zuerich.ch/wms/geoportal/Erholungs__und_Sporteinrichtungen#Vitaparcours Verlauf",
+   "id": "https://www.ogd.stadt-zuerich.ch/wms/geoportal/Erholungs__und_Sporteinrichtungen#Vitaparcours",
    "geometry": {
     "type": "Polygon",
     "coordinates": [
@@ -46,10 +46,10 @@
     ]
    },
    "properties": {
-    "title": "Vitaparcours Verlauf",
-    "updated": "2026-11-20T16:05:37+01:00",
+    "title": "Vitaparcours",
+    "updated": "2026-11-22T08:52:16+01:00",
     "publisher": "Stadt Zürich",
-    "layer": "Vitaparcours Verlauf",
+    "layer": "Vitaparcours",
     "offerings": [
      {
       "code": "http://www.opengis.net/spec/owc-geojson/1.0/req/wms",
@@ -97,7 +97,7 @@
    },
    "properties": {
     "title": "Vitaparcours",
-    "updated": "2026-11-20T16:05:37+01:00",
+    "updated": "2026-11-22T08:52:16+01:00",
     "publisher": "Kanton Schwyz",
     "layer": "ch.sz.a102a.sportanlage.strecken_langsamverkehr.vitaparcours",
     "offerings": [

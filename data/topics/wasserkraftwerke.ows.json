@@ -1,0 +1,119 @@
+{
+ "type": "FeatureCollection",
+ "id": "https://davidoesch.github.io/geoservice_harvester_poc/data/topics/wasserkraftwerke.ows.json",
+ "properties": {
+  "lang": "de",
+  "title": "Wasserkraftwerke",
+  "updated": "2026-11-22T08:52:16+01:00",
+  "subtitle": "GeoHarvester topic: 2 providers",
+  "links": {
+   "profiles": [
+    {
+     "href": "http://www.opengis.net/spec/owc-geojson/1.0/req/core"
+    }
+   ]
+  }
+ },
+ "features": [
+  {
+   "type": "Feature",
+   "id": "https://public.geo.lu.ch/ogd/services/managed/WASKRFTW_DS_V1_MP/MapServer/WMSServer#0",
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       8.078,
+       47.034
+      ],
+      [
+       8.368,
+       47.034
+      ],
+      [
+       8.368,
+       47.114
+      ],
+      [
+       8.078,
+       47.114
+      ],
+      [
+       8.078,
+       47.034
+      ]
+     ]
+    ]
+   },
+   "properties": {
+    "title": "Wasserkraftwerke",
+    "updated": "2026-11-22T08:52:16+01:00",
+    "publisher": "Kanton Luzern",
+    "layer": "0",
+    "offerings": [
+     {
+      "code": "http://www.opengis.net/spec/owc-geojson/1.0/req/wms",
+      "operations": [
+       {
+        "code": "GetCapabilities",
+        "method": "GET",
+        "type": "application/xml",
+        "href": "https://public.geo.lu.ch/ogd/services/managed/WASKRFTW_DS_V1_MP/MapServer/WMSServer?SERVICE=WMS&REQUEST=GetCapabilities"
+       }
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": "https://wms.zh.ch/EnergieStromwwwZH#stromanlagen_p",
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       8.157,
+       47.142
+      ],
+      [
+       9.042,
+       47.142
+      ],
+      [
+       9.042,
+       47.848
+      ],
+      [
+       8.157,
+       47.848
+      ],
+      [
+       8.157,
+       47.142
+      ]
+     ]
+    ]
+   },
+   "properties": {
+    "title": "Wasserkraftwerke",
+    "updated": "2026-11-22T08:52:16+01:00",
+    "publisher": "Kanton Zürich",
+    "layer": "stromanlagen_p",
+    "offerings": [
+     {
+      "code": "http://www.opengis.net/spec/owc-geojson/1.0/req/wms",
+      "operations": [
+       {
+        "code": "GetCapabilities",
+        "method": "GET",
+        "type": "application/xml",
+        "href": "https://wms.zh.ch/EnergieStromwwwZH?SERVICE=WMS&REQUEST=GetCapabilities"
+       }
+      ]
+     }
+    ]
+   }
+  }
+ ]
+}

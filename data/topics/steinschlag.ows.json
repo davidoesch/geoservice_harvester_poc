@@ -4,7 +4,7 @@
  "properties": {
   "lang": "de",
   "title": "Steinschlag",
-  "updated": "2026-11-20T16:05:37+01:00",
+  "updated": "2026-11-22T08:52:16+01:00",
   "subtitle": "GeoHarvester topic: 14 providers",
   "links": {
    "profiles": [
@@ -47,7 +47,7 @@
    },
    "properties": {
     "title": "Dichte von Gesteinen",
-    "updated": "2026-11-20T16:05:37+01:00",
+    "updated": "2026-11-22T08:52:16+01:00",
     "publisher": "Bund (geo.admin.ch)",
     "layer": "ch.swisstopo.geologie-gesteinsdichte",
     "offerings": [
@@ -97,7 +97,7 @@
    },
    "properties": {
     "title": "chutes_pierres_blocs",
-    "updated": "2026-11-20T16:05:37+01:00",
+    "updated": "2026-11-22T08:52:16+01:00",
     "publisher": "Pully (SIGIP)",
     "layer": "chutes_pierres_blocs",
     "offerings": [
@@ -147,7 +147,7 @@
    },
    "properties": {
     "title": "Ereigniskataster Steinschlag/Felssturz Fläche",
-    "updated": "2026-11-20T16:05:37+01:00",
+    "updated": "2026-11-22T08:52:16+01:00",
     "publisher": "Kanton Basel-Landschaft",
     "layer": "ereigniskataster_steinschlag_area",
     "offerings": [
@@ -197,7 +197,7 @@
    },
    "properties": {
     "title": "Grenzpunkt - Stein",
-    "updated": "2026-11-20T16:05:37+01:00",
+    "updated": "2026-11-22T08:52:16+01:00",
     "publisher": "Kanton Basel-Stadt",
     "layer": "BS_Vermessungspunkte_Grenzpunkte_GrenzpunktStein_Punkt",
     "offerings": [
@@ -247,7 +247,7 @@
    },
    "properties": {
     "title": "Kanton Graubünden, Walderschliessung",
-    "updated": "2026-11-20T16:05:37+01:00",
+    "updated": "2026-11-22T08:52:16+01:00",
     "publisher": "Kanton Graubünden",
     "layer": "WMS_Walderschliessung",
     "offerings": [
@@ -297,7 +297,7 @@
    },
    "properties": {
     "title": "Wälder mit Wildvorrangfunktion",
-    "updated": "2026-11-20T16:05:37+01:00",
+    "updated": "2026-11-22T08:52:16+01:00",
     "publisher": "Kanton Luzern",
     "layer": "0",
     "offerings": [
@@ -347,7 +347,7 @@
    },
    "properties": {
     "title": "Forst Walderschliessung Strassen",
-    "updated": "2026-11-20T16:05:37+01:00",
+    "updated": "2026-11-22T08:52:16+01:00",
     "publisher": "Kanton Schaffhausen",
     "layer": "sh.forst.walderschliessung.strassen",
     "offerings": [
@@ -397,7 +397,7 @@
    },
    "properties": {
     "title": "Steinschlag",
-    "updated": "2026-11-20T16:05:37+01:00",
+    "updated": "2026-11-22T08:52:16+01:00",
     "publisher": "Kanton Thurgau",
     "layer": "Steinschlag",
     "offerings": [
@@ -447,7 +447,7 @@
    },
    "properties": {
     "title": "[TI-034.1] Crollo di roccia o frana",
-    "updated": "2026-11-20T16:05:37+01:00",
+    "updated": "2026-11-22T08:52:16+01:00",
     "publisher": "Kanton Tessin",
     "layer": "ti_034_1_v1_0_carta_pericoli_gradi_c_crollo_roccia_frana",
     "offerings": [
@@ -473,31 +473,31 @@
     "coordinates": [
      [
       [
-       8.412,
-       46.531
+       8.522,
+       46.632
       ],
       [
-       8.952,
-       46.531
+       8.78,
+       46.632
       ],
       [
-       8.952,
-       46.989
+       8.78,
+       46.988
       ],
       [
-       8.412,
-       46.989
+       8.522,
+       46.988
       ],
       [
-       8.412,
-       46.531
+       8.522,
+       46.632
       ]
      ]
     ]
    },
    "properties": {
     "title": "GK Sturz Steinschlag",
-    "updated": "2026-11-20T16:05:37+01:00",
+    "updated": "2026-11-22T08:52:16+01:00",
     "publisher": "Kanton Uri",
     "layer": "forst:gk_sturz_steinschlag",
     "offerings": [
@@ -547,7 +547,7 @@
    },
    "properties": {
     "title": "vd.chute_pierre_bloc",
-    "updated": "2026-11-20T16:05:37+01:00",
+    "updated": "2026-11-22T08:52:16+01:00",
     "publisher": "Kanton Waadt",
     "layer": "vd.chute_pierre_bloc",
     "offerings": [
@@ -597,7 +597,7 @@
    },
    "properties": {
     "title": "GEO_Stein_Blockschlag",
-    "updated": "2026-11-20T16:05:37+01:00",
+    "updated": "2026-11-22T08:52:16+01:00",
     "publisher": "Kanton Wallis",
     "layer": "5",
     "offerings": [
@@ -647,7 +647,7 @@
    },
    "properties": {
     "title": "Steinbruch",
-    "updated": "2026-11-20T16:05:37+01:00",
+    "updated": "2026-11-22T08:52:16+01:00",
     "publisher": "Kanton Zug",
     "layer": "zg_steinbruch",
     "offerings": [
@@ -697,7 +697,7 @@
    },
    "properties": {
     "title": "Steinschlag",
-    "updated": "2026-11-20T16:05:37+01:00",
+    "updated": "2026-11-22T08:52:16+01:00",
     "publisher": "Kanton Zürich",
     "layer": "steinschlag",
     "offerings": [

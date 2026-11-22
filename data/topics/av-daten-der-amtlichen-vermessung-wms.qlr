@@ -8,7 +8,7 @@
   </layer-tree-group>
   <maplayers>
     <maplayer type="raster" hasScaleBasedVisibilityFlag="0" minScale="1e+08" maxScale="0" styleCategories="AllStyleCategories">
-      <extent><xmin>2610668</xmin><ymin>1210117</ymin><xmax>2686853</xmax><ymax>1285351</ymax></extent>
+      <extent><xmin>2610667</xmin><ymin>1210562</ymin><xmax>2686853</xmax><ymax>1285351</ymax></extent>
       <id>geoharvester_av-daten-der-amtlichen-vermessung-wms_0</id>
       <datasource>contextualWMSLegend=0&amp;crs=EPSG:2056&amp;dpiMode=7&amp;featureCount=10&amp;format=image/png&amp;layers=ch_ag_geo_va_AVWMS&amp;styles&amp;url=https://wms.geo.ag.ch/public/ows</datasource>
       <layername>AV: Daten der amtlichen Vermessung, WMS (AG)</layername>

@@ -4,7 +4,7 @@
  "properties": {
   "lang": "de",
   "title": "Bioklima von Siedlungs- und Verkehrsflächen in der Nacht (4 Uhr)",
-  "updated": "2026-11-20T16:05:37+01:00",
+  "updated": "2026-11-22T08:52:16+01:00",
   "subtitle": "GeoHarvester topic: 4 providers",
   "links": {
    "profiles": [
@@ -17,7 +17,7 @@
  "features": [
   {
    "type": "Feature",
-   "id": "https://www.geoservice.apps.be.ch/geoservice3/services/a42geo/of_climatologymeteorologyatmosphere01_de_ms_wms/MapServer/WMSServer#KLIMAPHK_VERK20_VW_15459",
+   "id": "https://www.geoservice.apps.be.ch/geoservice3/services/a42geo/of_climatologymeteorologyatmosphere01_de_ms_wms/MapServer/WMSServer#KLIMAPHK_VERK60_VW_15458",
    "geometry": {
     "type": "Polygon",
     "coordinates": [
@@ -46,10 +46,10 @@
     ]
    },
    "properties": {
-    "title": "Nächtliche bioklimatische Bewertung in den Verkehrsflächen in 2 m über Grund, 2020",
-    "updated": "2026-11-20T16:05:37+01:00",
+    "title": "Nächtliche bioklimatische Bewertung in den Verkehrsflächen in 2 m über Grund, 2060",
+    "updated": "2026-11-22T08:52:16+01:00",
     "publisher": "Kanton Bern",
-    "layer": "KLIMAPHK_VERK20_VW_15459",
+    "layer": "KLIMAPHK_VERK60_VW_15458",
     "offerings": [
      {
       "code": "http://www.opengis.net/spec/owc-geojson/1.0/req/wms",
@@ -97,7 +97,7 @@
    },
    "properties": {
     "title": "Bioklima von Siedlungs- und Verkehrsflächen in der Nacht (4 Uhr)",
-    "updated": "2026-11-20T16:05:37+01:00",
+    "updated": "2026-11-22T08:52:16+01:00",
     "publisher": "Kanton Schaffhausen",
     "layer": "sh.klima.klimakarten.planhinweiskarte.nacht_bioklima",
     "offerings": [
@@ -147,7 +147,7 @@
    },
    "properties": {
     "title": "Planhinweiskarte Nacht Siedlungsflächen bioklimatische Situation",
-    "updated": "2026-11-20T16:05:37+01:00",
+    "updated": "2026-11-22T08:52:16+01:00",
     "publisher": "Kanton Thurgau",
     "layer": "planhinweiskarte_nacht_siedlungsflaechen_bioklimatische_situation",
     "offerings": [
@@ -197,7 +197,7 @@
    },
    "properties": {
     "title": "Bioklimatische Bedeutung Grünflächen, Bewertung Nachtsituation",
-    "updated": "2026-11-20T16:05:37+01:00",
+    "updated": "2026-11-22T08:52:16+01:00",
     "publisher": "Kanton Zürich",
     "layer": "gruenflaechen-2024-nacht-a",
     "offerings": [

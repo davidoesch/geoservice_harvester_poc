@@ -5,7 +5,7 @@
       <layer-tree-layer expanded="0" checked="Qt::Checked" id="geoharvester_orthofoto-des-kantons-zug-lv95_0" name="ortho2005 (Pully)" source="contextualWMSLegend=0&amp;crs=EPSG:2056&amp;dpiMode=7&amp;featureCount=10&amp;format=image/png&amp;layers=ortho2005&amp;styles&amp;url=https://www.sigip.ch/mapserv_proxy?ogcserver=ows" providerKey="wms"/>
       <layer-tree-layer expanded="0" checked="Qt::Checked" id="geoharvester_orthofoto-des-kantons-zug-lv95_1" name="ortholac2015 (NE)" source="contextualWMSLegend=0&amp;crs=EPSG:2056&amp;dpiMode=7&amp;featureCount=10&amp;format=image/jpeg&amp;layers=ortholac2015&amp;styles=default&amp;tileMatrixSet=EPSG2056&amp;url=https%3A%2F%2Fsitn.ne.ch%2Fservices%2Fwmts%3FSERVICE%3DWMTS%26REQUEST%3DGetCapabilities" providerKey="wms"/>
       <layer-tree-layer expanded="0" checked="Qt::Checked" id="geoharvester_orthofoto-des-kantons-zug-lv95_2" name="Orthofoto2017 (TG)" source="contextualWMSLegend=0&amp;crs=EPSG:2056&amp;dpiMode=7&amp;featureCount=10&amp;format=image/png&amp;layers=Orthofoto2017&amp;styles&amp;url=https://ows-raster.geo.tg.ch/geofy_access_proxy/orthofoto2017" providerKey="wms"/>
-      <layer-tree-layer expanded="0" checked="Qt::Checked" id="geoharvester_orthofoto-des-kantons-zug-lv95_3" name="Orthofoto des Kantons Zug (LV95) (ZG)" source="contextualWMSLegend=0&amp;crs=EPSG:2056&amp;dpiMode=7&amp;featureCount=10&amp;format=image/jpeg&amp;layers=zg.orthofoto&amp;styles=default&amp;tileMatrixSet=zg&amp;url=https://services.geo.zg.ch/tc/wmts/1.0.0/WMTSCapabilities.xml" providerKey="wms"/>
+      <layer-tree-layer expanded="0" checked="Qt::Checked" id="geoharvester_orthofoto-des-kantons-zug-lv95_3" name="Orthofoto des Kantons Zug (LV95) (ZG)" source="contextualWMSLegend=0&amp;crs=EPSG:2056&amp;dpiMode=7&amp;featureCount=10&amp;format=image/png&amp;layers=zg.orthofoto&amp;styles=default&amp;tileMatrixSet=&amp;url=https://services.geo.zg.ch/tc/wmts/1.0.0/WMTSCapabilities.xml" providerKey="wms"/>
     </layer-tree-group>
   </layer-tree-group>
   <maplayers>
@@ -36,7 +36,7 @@
     <maplayer type="raster" hasScaleBasedVisibilityFlag="0" minScale="1e+08" maxScale="0" styleCategories="AllStyleCategories">
       <extent><xmin>2670007</xmin><ymin>1211630</ymin><xmax>2697960</xmax><ymax>1235373</ymax></extent>
       <id>geoharvester_orthofoto-des-kantons-zug-lv95_3</id>
-      <datasource>contextualWMSLegend=0&amp;crs=EPSG:2056&amp;dpiMode=7&amp;featureCount=10&amp;format=image/jpeg&amp;layers=zg.orthofoto&amp;styles=default&amp;tileMatrixSet=zg&amp;url=https://services.geo.zg.ch/tc/wmts/1.0.0/WMTSCapabilities.xml</datasource>
+      <datasource>contextualWMSLegend=0&amp;crs=EPSG:2056&amp;dpiMode=7&amp;featureCount=10&amp;format=image/png&amp;layers=zg.orthofoto&amp;styles=default&amp;tileMatrixSet=&amp;url=https://services.geo.zg.ch/tc/wmts/1.0.0/WMTSCapabilities.xml</datasource>
       <layername>Orthofoto des Kantons Zug (LV95) (ZG)</layername>
       <srs><spatialrefsys><proj4>+proj=somerc +lat_0=46.9524055555556 +lon_0=7.43958333333333 +k_0=1 +x_0=2600000 +y_0=1200000 +ellps=bessel +towgs84=674.374,15.056,405.346,0,0,0,0 +units=m +no_defs</proj4><srid>2056</srid><authid>EPSG:2056</authid><description>CH1903+ / LV95</description><projectionacronym>somerc</projectionacronym><ellipsoidacronym>EPSG:7004</ellipsoidacronym><geographicflag>false</geographicflag></spatialrefsys></srs>
       <provider>wms</provider>

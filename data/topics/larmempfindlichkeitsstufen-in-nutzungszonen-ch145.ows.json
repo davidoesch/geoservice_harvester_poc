@@ -4,7 +4,7 @@
  "properties": {
   "lang": "de",
   "title": "Lärmempfindlichkeitsstufen (in Nutzungszonen) (CH145)",
-  "updated": "2026-11-20T16:05:37+01:00",
+  "updated": "2026-11-22T08:52:16+01:00",
   "subtitle": "GeoHarvester topic: 3 providers",
   "links": {
    "profiles": [
@@ -47,7 +47,7 @@
    },
    "properties": {
     "title": "Lärmempfindlichkeitsstufen (in Nutzungszonen) (CH145)",
-    "updated": "2026-11-20T16:05:37+01:00",
+    "updated": "2026-11-22T08:52:16+01:00",
     "publisher": "Kanton Nidwalden",
     "layer": "ch.nw.laermempfindlichkeitsstufen",
     "offerings": [
@@ -97,7 +97,7 @@
    },
    "properties": {
     "title": "Lärmempfindlichkeitsstufen (in Nutzungszonen) (CH145)",
-    "updated": "2026-11-20T16:05:37+01:00",
+    "updated": "2026-11-22T08:52:16+01:00",
     "publisher": "Kanton Obwalden",
     "layer": "ch.ow.laermempfindlichkeitsstufen",
     "offerings": [
@@ -123,31 +123,31 @@
     "coordinates": [
      [
       [
-       8.412,
-       46.531
+       8.565,
+       46.568
       ],
       [
-       8.952,
-       46.531
+       8.687,
+       46.568
       ],
       [
-       8.952,
-       46.989
+       8.687,
+       46.911
       ],
       [
-       8.412,
-       46.989
+       8.565,
+       46.911
       ],
       [
-       8.412,
-       46.531
+       8.565,
+       46.568
       ]
      ]
     ]
    },
    "properties": {
     "title": "CH145 (prj) Lärmempfindlichkeitsstufen",
-    "updated": "2026-11-20T16:05:37+01:00",
+    "updated": "2026-11-22T08:52:16+01:00",
     "publisher": "Kanton Uri",
     "layer": "oereb:ch145_prj_laermempfindlichkeitsstufen",
     "offerings": [

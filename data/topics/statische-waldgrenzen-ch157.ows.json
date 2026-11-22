@@ -4,7 +4,7 @@
  "properties": {
   "lang": "de",
   "title": "Statische Waldgrenzen (CH157)",
-  "updated": "2026-11-20T16:05:37+01:00",
+  "updated": "2026-11-22T08:52:16+01:00",
   "subtitle": "GeoHarvester topic: 3 providers",
   "links": {
    "profiles": [
@@ -47,7 +47,7 @@
    },
    "properties": {
     "title": "Statische Waldgrenzen (CH157)",
-    "updated": "2026-11-20T16:05:37+01:00",
+    "updated": "2026-11-22T08:52:16+01:00",
     "publisher": "Kanton Nidwalden",
     "layer": "ch.nw.statische-waldgrenzen",
     "offerings": [
@@ -97,7 +97,7 @@
    },
    "properties": {
     "title": "Statische Waldgrenzen (CH157)",
-    "updated": "2026-11-20T16:05:37+01:00",
+    "updated": "2026-11-22T08:52:16+01:00",
     "publisher": "Kanton Obwalden",
     "layer": "ch.ow.statische-waldgrenzen",
     "offerings": [
@@ -118,36 +118,10 @@
   {
    "type": "Feature",
    "id": "https://geo.ur.ch/wms#oereb:ch157_prj_statische_waldgrenzen",
-   "geometry": {
-    "type": "Polygon",
-    "coordinates": [
-     [
-      [
-       8.412,
-       46.531
-      ],
-      [
-       8.952,
-       46.531
-      ],
-      [
-       8.952,
-       46.989
-      ],
-      [
-       8.412,
-       46.989
-      ],
-      [
-       8.412,
-       46.531
-      ]
-     ]
-    ]
-   },
+   "geometry": null,
    "properties": {
     "title": "CH157 (prj) Statische Waldgrenzen",
-    "updated": "2026-11-20T16:05:37+01:00",
+    "updated": "2026-11-22T08:52:16+01:00",
     "publisher": "Kanton Uri",
     "layer": "oereb:ch157_prj_statische_waldgrenzen",
     "offerings": [

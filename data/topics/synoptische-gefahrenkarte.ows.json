@@ -4,7 +4,7 @@
  "properties": {
   "lang": "de",
   "title": "Synoptische Gefahrenkarte",
-  "updated": "2026-11-20T16:05:37+01:00",
+  "updated": "2026-11-22T08:52:16+01:00",
   "subtitle": "GeoHarvester topic: 9 providers",
   "links": {
    "profiles": [
@@ -47,7 +47,7 @@
    },
    "properties": {
     "title": "Synoptisches Gefahrenhinweisgebiet",
-    "updated": "2026-11-20T16:05:37+01:00",
+    "updated": "2026-11-22T08:52:16+01:00",
     "publisher": "geodienste.ch (kantonsübergreifend)",
     "layer": "synoptisches_gefahrenhinweisgebiet",
     "offerings": [
@@ -97,7 +97,7 @@
    },
    "properties": {
     "title": "Synoptische Gefahrengebiete, behördenverbindlich (Naturgefahrenkarte), Bundesdarstellung",
-    "updated": "2026-11-20T16:05:37+01:00",
+    "updated": "2026-11-22T08:52:16+01:00",
     "publisher": "Kanton Bern",
     "layer": "NATGEFKA_SYGEFGEB_VW_28731",
     "offerings": [
@@ -147,7 +147,7 @@
    },
    "properties": {
     "title": "Naturgefahrenkarte synoptisch Gefahrenhinweis Ufererosion",
-    "updated": "2026-11-20T16:05:37+01:00",
+    "updated": "2026-11-22T08:52:16+01:00",
     "publisher": "Kanton Basel-Landschaft",
     "layer": "ngk_synoptisch_hwp_ufer",
     "offerings": [
@@ -197,7 +197,7 @@
    },
    "properties": {
     "title": "Gefahren synoptisch",
-    "updated": "2026-11-20T16:05:37+01:00",
+    "updated": "2026-11-22T08:52:16+01:00",
     "publisher": "Kanton Nidwalden",
     "layer": "ch.nw.gefahrenkarte-synoptisch",
     "offerings": [
@@ -247,7 +247,7 @@
    },
    "properties": {
     "title": "Gefahrenstufe synoptisch",
-    "updated": "2026-11-20T16:05:37+01:00",
+    "updated": "2026-11-22T08:52:16+01:00",
     "publisher": "Kanton Obwalden",
     "layer": "ch.ow.gefahrenkarte-gefahrenstufe-synoptisch",
     "offerings": [
@@ -297,7 +297,7 @@
    },
    "properties": {
     "title": "Synoptische IK Rutschung (Naturgefahren)",
-    "updated": "2026-11-20T16:05:37+01:00",
+    "updated": "2026-11-22T08:52:16+01:00",
     "publisher": "Kanton Solothurn",
     "layer": "ch.so.afu.naturgefahren.synoptische_ik.rutschung",
     "offerings": [
@@ -347,7 +347,7 @@
    },
    "properties": {
     "title": "Synoptische Gefahrenkarte",
-    "updated": "2026-11-20T16:05:37+01:00",
+    "updated": "2026-11-22T08:52:16+01:00",
     "publisher": "Kanton Thurgau",
     "layer": "GK_Synoptische_Gefahrenkarte",
     "offerings": [
@@ -373,31 +373,31 @@
     "coordinates": [
      [
       [
-       8.403,
-       46.525
+       8.395,
+       46.522
       ],
       [
-       8.965,
-       46.525
+       8.961,
+       46.522
       ],
       [
-       8.965,
+       8.961,
        46.995
       ],
       [
-       8.403,
+       8.395,
        46.995
       ],
       [
-       8.403,
-       46.525
+       8.395,
+       46.522
       ]
      ]
     ]
    },
    "properties": {
     "title": "GK_SynoptischeGefahrenkarte",
-    "updated": "2026-11-20T16:05:37+01:00",
+    "updated": "2026-11-22T08:52:16+01:00",
     "publisher": "Kanton Uri",
     "layer": "forst:gk_synoptischegefahrenkarte",
     "offerings": [
@@ -447,7 +447,7 @@
    },
    "properties": {
     "title": "WMS Naturgefahren: Synoptische Gefahrenkarte",
-    "updated": "2026-11-20T16:05:37+01:00",
+    "updated": "2026-11-22T08:52:16+01:00",
     "publisher": "Kanton Zürich",
     "layer": "AwelGKHWsynoptischWMS",
     "offerings": [

@@ -1,0 +1,4 @@
+Timestamp,Operator,URL,Issue
+2026-11-22T06:53:01.177913+01:00,CITY_Pully,https://www.sigip.ch/mapserv_proxy?ogcserver=ows&SERVICE=WFS&REQUEST=GetCapabilities,Connection timed out (failing since 2026-11-22; 222 layers of the previous run kept)
+2026-11-22T06:56:07.307938+01:00,CITY_Pully,https://www.sigip.ch/mapserv_proxy?ogcserver=ows&SERVICE=WMS&REQUEST=GetCapabilities,Connection timed out (failing since 2026-11-22; 352 layers of the previous run kept)
+2026-11-22T06:59:12.058855+01:00,CITY_Pully,https://www.sigip.ch/tiles/1.0.0/WMTSCapabilities.xml,Connection timed out (failing since 2026-11-22; 20 layers of the previous run kept)

@@ -1,0 +1,219 @@
+{
+ "type": "FeatureCollection",
+ "id": "https://davidoesch.github.io/geoservice_harvester_poc/data/topics/bikestrecken-von-schweiz-mobil-mountainbikeland.ows.json",
+ "properties": {
+  "lang": "de",
+  "title": "Bikestrecken von SchweizMobil Mountainbikeland",
+  "updated": "2026-11-22T08:52:16+01:00",
+  "subtitle": "GeoHarvester topic: 4 providers",
+  "links": {
+   "profiles": [
+    {
+     "href": "http://www.opengis.net/spec/owc-geojson/1.0/req/core"
+    }
+   ]
+  }
+ },
+ "features": [
+  {
+   "type": "Feature",
+   "id": "https://geowms.bl.ch/#schweizmobil_mountainbikerouten",
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       7.306,
+       47.309
+      ],
+      [
+       8.037,
+       47.309
+      ],
+      [
+       8.037,
+       47.626
+      ],
+      [
+       7.306,
+       47.626
+      ],
+      [
+       7.306,
+       47.309
+      ]
+     ]
+    ]
+   },
+   "properties": {
+    "title": "Schweiz Mobil Mountainbike-Routen",
+    "updated": "2026-11-22T08:52:16+01:00",
+    "publisher": "Kanton Basel-Landschaft",
+    "layer": "schweizmobil_mountainbikerouten",
+    "offerings": [
+     {
+      "code": "http://www.opengis.net/spec/owc-geojson/1.0/req/wms",
+      "operations": [
+       {
+        "code": "GetCapabilities",
+        "method": "GET",
+        "type": "application/xml",
+        "href": "https://geowms.bl.ch/?SERVICE=WMS&REQUEST=GetCapabilities"
+       }
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": "https://map.geo.gl.ch/ows/mainmap#ch.gl.transportation.schweizmobil_mtb",
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       6.898,
+       46.412
+      ],
+      [
+       9.54,
+       46.412
+      ],
+      [
+       9.54,
+       47.497
+      ],
+      [
+       6.898,
+       47.497
+      ],
+      [
+       6.898,
+       46.412
+      ]
+     ]
+    ]
+   },
+   "properties": {
+    "title": "SchweizMobil-Mountainbikerouten MTB",
+    "updated": "2026-11-22T08:52:16+01:00",
+    "publisher": "Kanton Glarus",
+    "layer": "ch.gl.transportation.schweizmobil_mtb",
+    "offerings": [
+     {
+      "code": "http://www.opengis.net/spec/owc-geojson/1.0/req/wms",
+      "operations": [
+       {
+        "code": "GetCapabilities",
+        "method": "GET",
+        "type": "application/xml",
+        "href": "https://map.geo.gl.ch/ows/mainmap?SERVICE=WMS&REQUEST=GetCapabilities"
+       }
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": "https://map.geo.sz.ch/mapserv_proxy#ch.sz.a045a.velowegnetz.schweizmobil.mountainbikeland",
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       8.345,
+       46.878
+      ],
+      [
+       9.051,
+       46.878
+      ],
+      [
+       9.051,
+       47.237
+      ],
+      [
+       8.345,
+       47.237
+      ],
+      [
+       8.345,
+       46.878
+      ]
+     ]
+    ]
+   },
+   "properties": {
+    "title": "Bikestrecken von SchweizMobil Mountainbikeland",
+    "updated": "2026-11-22T08:52:16+01:00",
+    "publisher": "Kanton Schwyz",
+    "layer": "ch.sz.a045a.velowegnetz.schweizmobil.mountainbikeland",
+    "offerings": [
+     {
+      "code": "http://www.opengis.net/spec/owc-geojson/1.0/req/wms",
+      "operations": [
+       {
+        "code": "GetCapabilities",
+        "method": "GET",
+        "type": "application/xml",
+        "href": "https://map.geo.sz.ch/mapserv_proxy?SERVICE=WMS&REQUEST=GetCapabilities"
+       }
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": "https://wms.zh.ch/VelonetzZHWMS#schweizmobil_lokale_mountainbike-routen",
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       8.157,
+       47.142
+      ],
+      [
+       9.042,
+       47.142
+      ],
+      [
+       9.042,
+       47.848
+      ],
+      [
+       8.157,
+       47.848
+      ],
+      [
+       8.157,
+       47.142
+      ]
+     ]
+    ]
+   },
+   "properties": {
+    "title": "Lokale SchweizMobil Mountainbike-Routen",
+    "updated": "2026-11-22T08:52:16+01:00",
+    "publisher": "Kanton Zürich",
+    "layer": "schweizmobil_lokale_mountainbike-routen",
+    "offerings": [
+     {
+      "code": "http://www.opengis.net/spec/owc-geojson/1.0/req/wms",
+      "operations": [
+       {
+        "code": "GetCapabilities",
+        "method": "GET",
+        "type": "application/xml",
+        "href": "https://wms.zh.ch/VelonetzZHWMS?SERVICE=WMS&REQUEST=GetCapabilities"
+       }
+      ]
+     }
+    ]
+   }
+  }
+ ]
+}

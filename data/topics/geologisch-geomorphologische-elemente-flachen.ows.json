@@ -4,7 +4,7 @@
  "properties": {
   "lang": "de",
   "title": "Geologisch-geomorphologische Elemente (Flächen)",
-  "updated": "2026-11-20T16:05:37+01:00",
+  "updated": "2026-11-22T08:52:16+01:00",
   "subtitle": "GeoHarvester topic: 2 providers",
   "links": {
    "profiles": [
@@ -17,37 +17,37 @@
  "features": [
   {
    "type": "Feature",
-   "id": "https://public.geo.lu.ch/ogd/services/managed/LRIGEOXX_COL_V1_MP/MapServer/WMSServer#1",
+   "id": "https://public.geo.lu.ch/ogd/services/managed/INRGEOXX_COL_V1_MP/MapServer/WMSServer#1",
    "geometry": {
     "type": "Polygon",
     "coordinates": [
      [
       [
        7.834,
-       46.778
+       46.796
       ],
       [
-       8.667,
-       46.778
+       8.521,
+       46.796
       ],
       [
-       8.667,
-       47.442
-      ],
-      [
-       7.834,
-       47.442
+       8.521,
+       47.315
       ],
       [
        7.834,
-       46.778
+       47.315
+      ],
+      [
+       7.834,
+       46.796
       ]
      ]
     ]
    },
    "properties": {
     "title": "Geologisch-geomorphologische Elemente (Flächen)",
-    "updated": "2026-11-20T16:05:37+01:00",
+    "updated": "2026-11-22T08:52:16+01:00",
     "publisher": "Kanton Luzern",
     "layer": "1",
     "offerings": [
@@ -58,7 +58,7 @@
         "code": "GetCapabilities",
         "method": "GET",
         "type": "application/xml",
-        "href": "https://public.geo.lu.ch/ogd/services/managed/LRIGEOXX_COL_V1_MP/MapServer/WMSServer?SERVICE=WMS&REQUEST=GetCapabilities"
+        "href": "https://public.geo.lu.ch/ogd/services/managed/INRGEOXX_COL_V1_MP/MapServer/WMSServer?SERVICE=WMS&REQUEST=GetCapabilities"
        }
       ]
      }
@@ -97,7 +97,7 @@
    },
    "properties": {
     "title": "Geomorphologie Flächen",
-    "updated": "2026-11-20T16:05:37+01:00",
+    "updated": "2026-11-22T08:52:16+01:00",
     "publisher": "Kanton Zug",
     "layer": "zg_geomorphologie_flaechen",
     "offerings": [

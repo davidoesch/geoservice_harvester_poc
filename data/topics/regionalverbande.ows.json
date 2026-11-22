@@ -4,7 +4,7 @@
  "properties": {
   "lang": "de",
   "title": "Regionalverbände",
-  "updated": "2026-11-20T16:05:37+01:00",
+  "updated": "2026-11-22T08:52:16+01:00",
   "subtitle": "GeoHarvester topic: 6 providers",
   "links": {
    "profiles": [
@@ -47,7 +47,7 @@
    },
    "properties": {
     "title": "Überregionale Ausbreitungsachse",
-    "updated": "2026-11-20T16:05:37+01:00",
+    "updated": "2026-11-22T08:52:16+01:00",
     "publisher": "Kanton Aargau",
     "layer": "ch_ag_geo_are_rptk11wkachse_01",
     "offerings": [
@@ -97,7 +97,7 @@
    },
    "properties": {
     "title": "Regionale Schlichtungsbehörden",
-    "updated": "2026-11-20T16:05:37+01:00",
+    "updated": "2026-11-22T08:52:16+01:00",
     "publisher": "Kanton Bern",
     "layer": "ADMRSB_RSB_VW_11489",
     "offerings": [
@@ -147,7 +147,7 @@
    },
    "properties": {
     "title": "Regionalverbände",
-    "updated": "2026-11-20T16:05:37+01:00",
+    "updated": "2026-11-22T08:52:16+01:00",
     "publisher": "Kanton Graubünden",
     "layer": "Regionalverbaende",
     "offerings": [
@@ -197,7 +197,7 @@
    },
    "properties": {
     "title": "Regionale Führungsstäbe (RFS)",
-    "updated": "2026-11-20T16:05:37+01:00",
+    "updated": "2026-11-22T08:52:16+01:00",
     "publisher": "Kanton Solothurn",
     "layer": "ch.so.amb.regionale_fuehrungsstaebe",
     "offerings": [
@@ -247,7 +247,7 @@
    },
    "properties": {
     "title": "KS_Regionale Unterteilungen",
-    "updated": "2026-11-20T16:05:37+01:00",
+    "updated": "2026-11-22T08:52:16+01:00",
     "publisher": "Kanton Wallis",
     "layer": "9",
     "offerings": [
@@ -267,7 +267,7 @@
   },
   {
    "type": "Feature",
-   "id": "https://maps.zh.ch/wfs/OGDZHWFS#ms:ogd-0293_giszhpub_fj_wtk_achsen_regional_f",
+   "id": "https://maps.zh.ch/wfs/OGDZHWFS#ms:ogd-0293_giszhpub_fj_wtk_achsen_regional_2009_f",
    "geometry": {
     "type": "Polygon",
     "coordinates": [
@@ -296,10 +296,10 @@
     ]
    },
    "properties": {
-    "title": "Regionale Ausbreitungsachsen (293.2)",
-    "updated": "2026-11-20T16:05:37+01:00",
+    "title": "Regionale Ausbreitungsachsen 2009 (293.21)",
+    "updated": "2026-11-22T08:52:16+01:00",
     "publisher": "Kanton Zürich",
-    "layer": "ms:ogd-0293_giszhpub_fj_wtk_achsen_regional_f",
+    "layer": "ms:ogd-0293_giszhpub_fj_wtk_achsen_regional_2009_f",
     "offerings": [
      {
       "code": "http://www.opengis.net/spec/owc-geojson/1.0/req/wfs",

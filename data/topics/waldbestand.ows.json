@@ -4,7 +4,7 @@
  "properties": {
   "lang": "de",
   "title": "Waldbestand",
-  "updated": "2026-11-20T16:05:37+01:00",
+  "updated": "2026-11-22T08:52:16+01:00",
   "subtitle": "GeoHarvester topic: 3 providers",
   "links": {
    "profiles": [
@@ -47,7 +47,7 @@
    },
    "properties": {
     "title": "Waldbestand",
-    "updated": "2026-11-20T16:05:37+01:00",
+    "updated": "2026-11-22T08:52:16+01:00",
     "publisher": "Kanton Glarus",
     "layer": "ch.gl.biota.waldbestand",
     "offerings": [
@@ -67,37 +67,37 @@
   },
   {
    "type": "Feature",
-   "id": "https://public.geo.lu.ch/ogd/services/managed/WLDBES24_DS_V1_MP/MapServer/WMSServer#0",
+   "id": "https://public.geo.lu.ch/ogd/services/managed/WALDSTOG_DS_V1_MP/MapServer/WMSServer#0",
    "geometry": {
     "type": "Polygon",
     "coordinates": [
      [
       [
-       7.834,
-       46.779
+       7.84,
+       46.798
       ],
       [
-       8.521,
-       46.779
+       8.492,
+       46.798
       ],
       [
-       8.521,
-       47.288
+       8.492,
+       47.286
       ],
       [
-       7.834,
-       47.288
+       7.84,
+       47.286
       ],
       [
-       7.834,
-       46.779
+       7.84,
+       46.798
       ]
      ]
     ]
    },
    "properties": {
-    "title": "Waldbestand 2024",
-    "updated": "2026-11-20T16:05:37+01:00",
+    "title": "Standortgerechter Waldbestand",
+    "updated": "2026-11-22T08:52:16+01:00",
     "publisher": "Kanton Luzern",
     "layer": "0",
     "offerings": [
@@ -108,7 +108,7 @@
         "code": "GetCapabilities",
         "method": "GET",
         "type": "application/xml",
-        "href": "https://public.geo.lu.ch/ogd/services/managed/WLDBES24_DS_V1_MP/MapServer/WMSServer?SERVICE=WMS&REQUEST=GetCapabilities"
+        "href": "https://public.geo.lu.ch/ogd/services/managed/WALDSTOG_DS_V1_MP/MapServer/WMSServer?SERVICE=WMS&REQUEST=GetCapabilities"
        }
       ]
      }
@@ -147,7 +147,7 @@
    },
    "properties": {
     "title": "Waldbestand",
-    "updated": "2026-11-20T16:05:37+01:00",
+    "updated": "2026-11-22T08:52:16+01:00",
     "publisher": "Kanton St. Gallen",
     "layer": "Waldbestand",
     "offerings": [

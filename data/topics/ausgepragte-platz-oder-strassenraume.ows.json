@@ -4,7 +4,7 @@
  "properties": {
   "lang": "de",
   "title": "Ausgeprägte Platz- oder Strassenräume",
-  "updated": "2026-11-20T16:05:37+01:00",
+  "updated": "2026-11-22T08:52:16+01:00",
   "subtitle": "GeoHarvester topic: 3 providers",
   "links": {
    "profiles": [
@@ -47,7 +47,7 @@
    },
    "properties": {
     "title": "Dem Platz- oder Strassenraum zugewandte Erdgeschossnutzung",
-    "updated": "2026-11-20T16:05:37+01:00",
+    "updated": "2026-11-22T08:52:16+01:00",
     "publisher": "Stadt Zürich",
     "layer": "Dem Platz- oder Strassenraum zugewandte Erdgeschossnutzung",
     "offerings": [
@@ -73,31 +73,31 @@
     "coordinates": [
      [
       [
-       8.412,
-       46.531
+       8.405,
+       46.525
       ],
       [
-       8.952,
-       46.531
+       8.69,
+       46.525
       ],
       [
-       8.952,
-       46.989
+       8.69,
+       46.954
       ],
       [
-       8.412,
-       46.989
+       8.405,
+       46.954
       ],
       [
-       8.412,
-       46.531
+       8.405,
+       46.525
       ]
      ]
     ]
    },
    "properties": {
     "title": "Suche: APO-Perimeter",
-    "updated": "2026-11-20T16:05:37+01:00",
+    "updated": "2026-11-22T08:52:16+01:00",
     "publisher": "Kanton Uri",
     "layer": "suche:apo_perimeter",
     "offerings": [
@@ -147,7 +147,7 @@
    },
    "properties": {
     "title": "Ausgeprägte Platz- oder Strassenräume",
-    "updated": "2026-11-20T16:05:37+01:00",
+    "updated": "2026-11-22T08:52:16+01:00",
     "publisher": "Kanton Zürich",
     "layer": "ausgepraegte-platz-oder-strassenraeume",
     "offerings": [

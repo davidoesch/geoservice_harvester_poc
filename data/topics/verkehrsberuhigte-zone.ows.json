@@ -4,7 +4,7 @@
  "properties": {
   "lang": "de",
   "title": "Verkehrsberuhigte Zone",
-  "updated": "2026-11-20T16:05:37+01:00",
+  "updated": "2026-11-22T08:52:16+01:00",
   "subtitle": "GeoHarvester topic: 5 providers",
   "links": {
    "profiles": [
@@ -47,7 +47,7 @@
    },
    "properties": {
     "title": "Verkehrsberuhigte Zone",
-    "updated": "2026-11-20T16:05:37+01:00",
+    "updated": "2026-11-22T08:52:16+01:00",
     "publisher": "Stadt Luzern",
     "layer": "0",
     "offerings": [
@@ -97,7 +97,7 @@
    },
    "properties": {
     "title": "Verkehrsberuhigte Zone",
-    "updated": "2026-11-20T16:05:37+01:00",
+    "updated": "2026-11-22T08:52:16+01:00",
     "publisher": "Stadt Winterthur",
     "layer": "VerkehrsberuhigteZone",
     "offerings": [
@@ -147,7 +147,7 @@
    },
    "properties": {
     "title": "Gebietseinteilung Verkehrssicherheit",
-    "updated": "2026-11-20T16:05:37+01:00",
+    "updated": "2026-11-22T08:52:16+01:00",
     "publisher": "Kanton Aargau",
     "layer": "ch_ag_geo_atb_regve_01",
     "offerings": [
@@ -197,7 +197,7 @@
    },
    "properties": {
     "title": "Verkehrsberuhigte Zonen",
-    "updated": "2026-11-20T16:05:37+01:00",
+    "updated": "2026-11-22T08:52:16+01:00",
     "publisher": "Kanton Basel-Stadt",
     "layer": "Verkehrsberuhigte Zonen",
     "offerings": [
@@ -223,7 +223,7 @@
     "coordinates": [
      [
       [
-       7.876,
+       7.884,
        46.894
       ],
       [
@@ -235,11 +235,11 @@
        47.257
       ],
       [
-       7.876,
+       7.884,
        47.257
       ],
       [
-       7.876,
+       7.884,
        46.894
       ]
      ]
@@ -247,7 +247,7 @@
    },
    "properties": {
     "title": "Verkehrssicherheit",
-    "updated": "2026-11-20T16:05:37+01:00",
+    "updated": "2026-11-22T08:52:16+01:00",
     "publisher": "Kanton Luzern",
     "layer": "0",
     "offerings": [

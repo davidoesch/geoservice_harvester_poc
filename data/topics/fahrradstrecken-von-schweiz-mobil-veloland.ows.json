@@ -1,0 +1,319 @@
+{
+ "type": "FeatureCollection",
+ "id": "https://davidoesch.github.io/geoservice_harvester_poc/data/topics/fahrradstrecken-von-schweiz-mobil-veloland.ows.json",
+ "properties": {
+  "lang": "de",
+  "title": "Fahrradstrecken von SchweizMobil Veloland",
+  "updated": "2026-11-22T08:52:16+01:00",
+  "subtitle": "GeoHarvester topic: 6 providers",
+  "links": {
+   "profiles": [
+    {
+     "href": "http://www.opengis.net/spec/owc-geojson/1.0/req/core"
+    }
+   ]
+  }
+ },
+ "features": [
+  {
+   "type": "Feature",
+   "id": "https://geowms.bl.ch/#schweizmobil_velorouten",
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       7.306,
+       47.309
+      ],
+      [
+       8.037,
+       47.309
+      ],
+      [
+       8.037,
+       47.626
+      ],
+      [
+       7.306,
+       47.626
+      ],
+      [
+       7.306,
+       47.309
+      ]
+     ]
+    ]
+   },
+   "properties": {
+    "title": "Schweiz Mobil Velo-Routen",
+    "updated": "2026-11-22T08:52:16+01:00",
+    "publisher": "Kanton Basel-Landschaft",
+    "layer": "schweizmobil_velorouten",
+    "offerings": [
+     {
+      "code": "http://www.opengis.net/spec/owc-geojson/1.0/req/wms",
+      "operations": [
+       {
+        "code": "GetCapabilities",
+        "method": "GET",
+        "type": "application/xml",
+        "href": "https://geowms.bl.ch/?SERVICE=WMS&REQUEST=GetCapabilities"
+       }
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": "https://maps.fr.ch/ags/services/OpenData/Itineraires_SuisseMobile_velo/MapServer/WMSServer#0",
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       6.596,
+       46.315
+      ],
+      [
+       7.684,
+       46.315
+      ],
+      [
+       7.684,
+       47.208
+      ],
+      [
+       6.596,
+       47.208
+      ],
+      [
+       6.596,
+       46.315
+      ]
+     ]
+    ]
+   },
+   "properties": {
+    "title": "Itinéraires SuisseMobile vélo",
+    "updated": "2026-11-22T08:52:16+01:00",
+    "publisher": "Kanton Freiburg",
+    "layer": "0",
+    "offerings": [
+     {
+      "code": "http://www.opengis.net/spec/owc-geojson/1.0/req/wms",
+      "operations": [
+       {
+        "code": "GetCapabilities",
+        "method": "GET",
+        "type": "application/xml",
+        "href": "https://maps.fr.ch/ags/services/OpenData/Itineraires_SuisseMobile_velo/MapServer/WMSServer?SERVICE=WMS&REQUEST=GetCapabilities"
+       }
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": "https://map.geo.gl.ch/ows/mainmap#ch.gl.transportation.schweizmobil_velo",
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       6.815,
+       46.29
+      ],
+      [
+       9.685,
+       46.29
+      ],
+      [
+       9.685,
+       47.577
+      ],
+      [
+       6.815,
+       47.577
+      ],
+      [
+       6.815,
+       46.29
+      ]
+     ]
+    ]
+   },
+   "properties": {
+    "title": "SchweizMobil-Radrouten Velo Fahrrad",
+    "updated": "2026-11-22T08:52:16+01:00",
+    "publisher": "Kanton Glarus",
+    "layer": "ch.gl.transportation.schweizmobil_velo",
+    "offerings": [
+     {
+      "code": "http://www.opengis.net/spec/owc-geojson/1.0/req/wms",
+      "operations": [
+       {
+        "code": "GetCapabilities",
+        "method": "GET",
+        "type": "application/xml",
+        "href": "https://map.geo.gl.ch/ows/mainmap?SERVICE=WMS&REQUEST=GetCapabilities"
+       }
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": "https://geo.jura.ch/mapserv_proxy?ogcserver=Main_PNG#sdt_09_19_itineraires_cyclables_suissemobile_la_suisse_a_velo",
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       6.696,
+       47.107
+      ],
+      [
+       7.644,
+       47.107
+      ],
+      [
+       7.644,
+       47.535
+      ],
+      [
+       6.696,
+       47.535
+      ],
+      [
+       6.696,
+       47.107
+      ]
+     ]
+    ]
+   },
+   "properties": {
+    "title": "sdt_09_19_itineraires_cyclables_suissemobile_la_suisse_a_velo",
+    "updated": "2026-11-22T08:52:16+01:00",
+    "publisher": "Kanton Jura",
+    "layer": "sdt_09_19_itineraires_cyclables_suissemobile_la_suisse_a_velo",
+    "offerings": [
+     {
+      "code": "http://www.opengis.net/spec/owc-geojson/1.0/req/wms",
+      "operations": [
+       {
+        "code": "GetCapabilities",
+        "method": "GET",
+        "type": "application/xml",
+        "href": "https://geo.jura.ch/mapserv_proxy?ogcserver=Main_PNG&SERVICE=WMS&REQUEST=GetCapabilities"
+       }
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": "https://map.geo.sz.ch/mapserv_proxy#ch.sz.a045a.velowegnetz.schweizmobil.veloland",
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       8.345,
+       46.878
+      ],
+      [
+       9.051,
+       46.878
+      ],
+      [
+       9.051,
+       47.237
+      ],
+      [
+       8.345,
+       47.237
+      ],
+      [
+       8.345,
+       46.878
+      ]
+     ]
+    ]
+   },
+   "properties": {
+    "title": "Fahrradstrecken von SchweizMobil Veloland",
+    "updated": "2026-11-22T08:52:16+01:00",
+    "publisher": "Kanton Schwyz",
+    "layer": "ch.sz.a045a.velowegnetz.schweizmobil.veloland",
+    "offerings": [
+     {
+      "code": "http://www.opengis.net/spec/owc-geojson/1.0/req/wms",
+      "operations": [
+       {
+        "code": "GetCapabilities",
+        "method": "GET",
+        "type": "application/xml",
+        "href": "https://map.geo.sz.ch/mapserv_proxy?SERVICE=WMS&REQUEST=GetCapabilities"
+       }
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": "https://wms.zh.ch/VelonetzZHWMS#schweizmobil_lokale_velo-routen",
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       8.157,
+       47.142
+      ],
+      [
+       9.042,
+       47.142
+      ],
+      [
+       9.042,
+       47.848
+      ],
+      [
+       8.157,
+       47.848
+      ],
+      [
+       8.157,
+       47.142
+      ]
+     ]
+    ]
+   },
+   "properties": {
+    "title": "Lokale SchweizMobil Velo-Routen",
+    "updated": "2026-11-22T08:52:16+01:00",
+    "publisher": "Kanton Zürich",
+    "layer": "schweizmobil_lokale_velo-routen",
+    "offerings": [
+     {
+      "code": "http://www.opengis.net/spec/owc-geojson/1.0/req/wms",
+      "operations": [
+       {
+        "code": "GetCapabilities",
+        "method": "GET",
+        "type": "application/xml",
+        "href": "https://wms.zh.ch/VelonetzZHWMS?SERVICE=WMS&REQUEST=GetCapabilities"
+       }
+      ]
+     }
+    ]
+   }
+  }
+ ]
+}

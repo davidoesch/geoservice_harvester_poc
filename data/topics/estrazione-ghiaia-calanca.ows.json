@@ -4,7 +4,7 @@
  "properties": {
   "lang": "de",
   "title": "Estrazione ghiaia (Calanca)",
-  "updated": "2026-11-20T16:13:33+01:00",
+  "updated": "2026-11-22T08:52:16+01:00",
   "subtitle": "GeoHarvester topic: 5 providers",
   "links": {
    "profiles": [
@@ -47,7 +47,7 @@
    },
    "properties": {
     "title": "Gletscherausdehnung",
-    "updated": "2026-11-20T16:13:33+01:00",
+    "updated": "2026-11-22T08:52:16+01:00",
     "publisher": "Bund (geo.admin.ch)",
     "layer": "ch.swisstopo.geologie-gletscherausdehnung",
     "offerings": [
@@ -97,7 +97,7 @@
    },
    "properties": {
     "title": "Estrazione ghiaia (Calanca)",
-    "updated": "2026-11-20T16:13:33+01:00",
+    "updated": "2026-11-22T08:52:16+01:00",
     "publisher": "Kanton Graubünden",
     "layer": "Estrazione_ghiaia_Calanca",
     "offerings": [
@@ -147,7 +147,7 @@
    },
    "properties": {
     "title": "[AC-066.1] Gruppo ghiacciaio",
-    "updated": "2026-11-20T16:13:33+01:00",
+    "updated": "2026-11-22T08:52:16+01:00",
     "publisher": "Kanton Tessin",
     "layer": "ac_066_1_v1_1_gruppo_ghiacciaio",
     "offerings": [
@@ -173,23 +173,23 @@
     "coordinates": [
      [
       [
-       8.412,
+       8.375,
        46.531
       ],
       [
-       8.952,
+       8.914,
        46.531
       ],
       [
-       8.952,
-       46.989
+       8.914,
+       46.873
       ],
       [
-       8.412,
-       46.989
+       8.375,
+       46.873
       ],
       [
-       8.412,
+       8.375,
        46.531
       ]
      ]
@@ -197,7 +197,7 @@
    },
    "properties": {
     "title": "Postglaziale Gletschervorstösse",
-    "updated": "2026-11-20T16:13:33+01:00",
+    "updated": "2026-11-22T08:52:16+01:00",
     "publisher": "Kanton Uri",
     "layer": "weitere:postglaziale_gletschervorstoesse",
     "offerings": [
@@ -247,7 +247,7 @@
    },
    "properties": {
     "title": "Flächen ISOS Stadtteile ZH",
-    "updated": "2026-11-20T16:13:33+01:00",
+    "updated": "2026-11-22T08:52:16+01:00",
     "publisher": "Kanton Zürich",
     "layer": "isos-stadt-zh-stadtteile-f",
     "offerings": [

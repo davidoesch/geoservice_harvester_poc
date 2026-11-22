@@ -4,7 +4,7 @@
  "properties": {
   "lang": "de",
   "title": "GWR: Energie-/Wärmequelle Heizung",
-  "updated": "2026-11-20T16:05:37+01:00",
+  "updated": "2026-11-22T08:52:16+01:00",
   "subtitle": "GeoHarvester topic: 4 providers",
   "links": {
    "profiles": [
@@ -17,48 +17,48 @@
  "features": [
   {
    "type": "Feature",
-   "id": "https://wms.geo.admin.ch/#ch.bfs.gebaeude_wohnungs_register_waermequelle_heizung",
+   "id": "https://wmts.geo.admin.ch/EPSG/3857/1.0.0/WMTSCapabilities.xml#ch.bfs.gebaeude_wohnungs_register_waermequelle_heizung",
    "geometry": {
     "type": "Polygon",
     "coordinates": [
      [
       [
-       3.33,
-       44.075
+       5.14,
+       45.398
       ],
       [
-       14.278,
-       44.075
+       11.478,
+       45.398
       ],
       [
-       14.278,
-       49.2
+       11.478,
+       48.231
       ],
       [
-       3.33,
-       49.2
+       5.14,
+       48.231
       ],
       [
-       3.33,
-       44.075
+       5.14,
+       45.398
       ]
      ]
     ]
    },
    "properties": {
     "title": "GWR: Energie-/Wärmequelle Heizung",
-    "updated": "2026-11-20T16:05:37+01:00",
+    "updated": "2026-11-22T08:52:16+01:00",
     "publisher": "Bund (geo.admin.ch)",
     "layer": "ch.bfs.gebaeude_wohnungs_register_waermequelle_heizung",
     "offerings": [
      {
-      "code": "http://www.opengis.net/spec/owc-geojson/1.0/req/wms",
+      "code": "http://www.opengis.net/spec/owc-geojson/1.0/req/wmts",
       "operations": [
        {
         "code": "GetCapabilities",
         "method": "GET",
         "type": "application/xml",
-        "href": "https://wms.geo.admin.ch/?SERVICE=WMS&REQUEST=GetCapabilities"
+        "href": "https://wmts.geo.admin.ch/EPSG/3857/1.0.0/WMTSCapabilities.xml"
        }
       ]
      }
@@ -97,7 +97,7 @@
    },
    "properties": {
     "title": "Energieplanung Energieträgermix Wärme",
-    "updated": "2026-11-20T16:05:37+01:00",
+    "updated": "2026-11-22T08:52:16+01:00",
     "publisher": "Kanton Basel-Landschaft",
     "layer": "energieplanung_energietraegermix_waerme_group",
     "offerings": [
@@ -147,7 +147,7 @@
    },
    "properties": {
     "title": "GWR: Energie-/Wärmequelle Heizung",
-    "updated": "2026-11-20T16:05:37+01:00",
+    "updated": "2026-11-22T08:52:16+01:00",
     "publisher": "Kanton Uri",
     "layer": "weitere:ch.bfs.gebaeude_wohnungs_register_waermequelle_heizung",
     "offerings": [
@@ -197,7 +197,7 @@
    },
    "properties": {
     "title": "Energieplan_Wärme_holz_waermenetz_l",
-    "updated": "2026-11-20T16:05:37+01:00",
+    "updated": "2026-11-22T08:52:16+01:00",
     "publisher": "Kanton Zürich",
     "layer": "ms:holz_waermenetz_l",
     "offerings": [

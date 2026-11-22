@@ -43,7 +43,7 @@
       <provider>wms</provider>
     </maplayer>
     <maplayer type="raster" hasScaleBasedVisibilityFlag="0" minScale="1e+08" maxScale="0" styleCategories="AllStyleCategories">
-      <extent><xmin>2633330</xmin><ymin>1193747</ymin><xmax>2679200</xmax><ymax>1234538</ymax></extent>
+      <extent><xmin>2633940</xmin><ymin>1193750</ymin><xmax>2679200</xmax><ymax>1234538</ymax></extent>
       <id>geoharvester_verkehrsberuhigte-zone_4</id>
       <datasource>contextualWMSLegend=0&amp;crs=EPSG:2056&amp;dpiMode=7&amp;featureCount=10&amp;format=image/png&amp;layers=0&amp;styles&amp;url=https://public.geo.lu.ch/ogd/services/managed/VERKSIOF_DS_V1_MP/MapServer/WMSServer</datasource>
       <layername>Verkehrssicherheit (LU)</layername>

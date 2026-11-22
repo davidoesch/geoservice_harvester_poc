@@ -4,7 +4,7 @@
  "properties": {
   "lang": "de",
   "title": "AV: Daten der amtlichen Vermessung, WMS",
-  "updated": "2026-11-20T16:05:37+01:00",
+  "updated": "2026-11-22T08:52:16+01:00",
   "subtitle": "GeoHarvester topic: 2 providers",
   "links": {
    "profiles": [
@@ -24,11 +24,11 @@
      [
       [
        7.579,
-       47.042
+       47.046
       ],
       [
        8.596,
-       47.042
+       47.046
       ],
       [
        8.596,
@@ -40,14 +40,14 @@
       ],
       [
        7.579,
-       47.042
+       47.046
       ]
      ]
     ]
    },
    "properties": {
     "title": "AV: Daten der amtlichen Vermessung, WMS",
-    "updated": "2026-11-20T16:05:37+01:00",
+    "updated": "2026-11-22T08:52:16+01:00",
     "publisher": "Kanton Aargau",
     "layer": "ch_ag_geo_va_AVWMS",
     "offerings": [
@@ -97,7 +97,7 @@
    },
    "properties": {
     "title": "Daten der amtlichen Vermessung",
-    "updated": "2026-11-20T16:05:37+01:00",
+    "updated": "2026-11-22T08:52:16+01:00",
     "publisher": "Kanton Schwyz",
     "layer": "ch.sz.a018.amtliche_vermessung",
     "offerings": [

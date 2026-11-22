@@ -4,7 +4,7 @@
  "properties": {
   "lang": "de",
   "title": "Gestaltungspläne (CH073)",
-  "updated": "2026-11-20T16:05:37+01:00",
+  "updated": "2026-11-22T08:52:16+01:00",
   "subtitle": "GeoHarvester topic: 3 providers",
   "links": {
    "profiles": [
@@ -47,7 +47,7 @@
    },
    "properties": {
     "title": "Gestaltungspläne (CH073)",
-    "updated": "2026-11-20T16:05:37+01:00",
+    "updated": "2026-11-22T08:52:16+01:00",
     "publisher": "Kanton Nidwalden",
     "layer": "ch.nw.gestaltungsplaene",
     "offerings": [
@@ -97,7 +97,7 @@
    },
    "properties": {
     "title": "Nutzungsplanung (kommunal) (CH073)",
-    "updated": "2026-11-20T16:05:37+01:00",
+    "updated": "2026-11-22T08:52:16+01:00",
     "publisher": "Kanton Obwalden",
     "layer": "ch.ow.nutzungsplanung-kommunal",
     "offerings": [
@@ -123,31 +123,31 @@
     "coordinates": [
      [
       [
-       8.403,
-       46.525
+       8.545,
+       46.564
       ],
       [
-       8.965,
-       46.525
+       8.689,
+       46.564
       ],
       [
-       8.965,
-       46.995
+       8.689,
+       46.911
       ],
       [
-       8.403,
-       46.995
+       8.545,
+       46.911
       ],
       [
-       8.403,
-       46.525
+       8.545,
+       46.564
       ]
      ]
     ]
    },
    "properties": {
     "title": "CH073B (prj) Gemeindliche Nutzungsplanung",
-    "updated": "2026-11-20T16:05:37+01:00",
+    "updated": "2026-11-22T08:52:16+01:00",
     "publisher": "Kanton Uri",
     "layer": "oereb:ch073b_prj_gemeindliche_nutzungsplanung",
     "offerings": [

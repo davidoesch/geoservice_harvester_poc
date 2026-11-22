@@ -4,7 +4,11 @@
     <layer-tree-group expanded="1" checked="Qt::Checked" name="GeoHarvester – SPADOM - Arbres">
       <layer-tree-layer expanded="0" checked="Qt::Checked" id="geoharvester_spadom-arbres_0" name="SPADOM - Arbres (Lausanne)" source="contextualWMSLegend=0&amp;crs=EPSG:2056&amp;dpiMode=7&amp;featureCount=10&amp;format=image/png&amp;layers=gestion_com_spadom_arbres_msgroup&amp;styles&amp;url=https://map.lausanne.ch/mapserv_proxy?ogcserver=source+for+image%2Fpng" providerKey="wms"/>
       <layer-tree-layer expanded="0" checked="Qt::Checked" id="geoharvester_spadom-arbres_1" name="arbres (Pully)" source="contextualWMSLegend=0&amp;crs=EPSG:2056&amp;dpiMode=7&amp;featureCount=10&amp;format=image/png&amp;layers=arbres&amp;styles&amp;url=https://www.sigip.ch/mapserv_proxy?ogcserver=ows" providerKey="wms"/>
-      <layer-tree-layer expanded="0" checked="Qt::Checked" id="geoharvester_spadom-arbres_2" name="essences arbres lidar 2022 (NE)" source="contextualWMSLegend=0&amp;crs=EPSG:2056&amp;dpiMode=7&amp;featureCount=10&amp;format=image/png&amp;layers=tree_species_lidar2022_sitn&amp;styles=default&amp;tileMatrixSet=EPSG2056&amp;url=https%3A%2F%2Fsitn.ne.ch%2Fservices%2Fwmts%3FSERVICE%3DWMTS%26REQUEST%3DGetCapabilities" providerKey="wms"/>
+      <layer-tree-layer expanded="0" checked="Qt::Checked" id="geoharvester_spadom-arbres_2" name="Geschuetzte_Einzelbaeume (STZH) (Zürich)" source="contextualWMSLegend=0&amp;crs=EPSG:2056&amp;dpiMode=7&amp;featureCount=10&amp;format=image/png&amp;layers=Geschuetzte_Einzelbaeume (STZH)&amp;styles&amp;url=https://www.ogd.stadt-zuerich.ch/wms/geoportal/Geschuetzte_Einzelbaeume" providerKey="wms"/>
+      <layer-tree-layer expanded="0" checked="Qt::Checked" id="geoharvester_spadom-arbres_3" name="Arbres spectaculaires (FR)" source="contextualWMSLegend=0&amp;crs=EPSG:2056&amp;dpiMode=7&amp;featureCount=10&amp;format=image/png&amp;layers=0&amp;styles&amp;url=https://maps.fr.ch/ags/services/OpenData/Arbres_spectaculaires/MapServer/WMSServer" providerKey="wms"/>
+      <layer-tree-layer expanded="0" checked="Qt::Checked" id="geoharvester_spadom-arbres_4" name="Inventaire des arbres sur tiges (JU)" source="contextualWMSLegend=0&amp;crs=EPSG:2056&amp;dpiMode=7&amp;featureCount=10&amp;format=image/png&amp;layers=ju.sdt_04_21&amp;styles&amp;url=https://geoservices.jura.ch/wms" providerKey="wms"/>
+      <layer-tree-layer expanded="0" checked="Qt::Checked" id="geoharvester_spadom-arbres_5" name="essences arbres lidar 2022 (NE)" source="contextualWMSLegend=0&amp;crs=EPSG:2056&amp;dpiMode=7&amp;featureCount=10&amp;format=image/png&amp;layers=tree_species_lidar2022_sitn&amp;styles=default&amp;tileMatrixSet=EPSG2056&amp;url=https%3A%2F%2Fsitn.ne.ch%2Fservices%2Fwmts%3FSERVICE%3DWMTS%26REQUEST%3DGetCapabilities" providerKey="wms"/>
+      <layer-tree-layer expanded="0" checked="Qt::Checked" id="geoharvester_spadom-arbres_6" name="vd.inventaire_cantonal_arbres_remarquables (VD)" source="contextualWMSLegend=0&amp;crs=EPSG:2056&amp;dpiMode=7&amp;featureCount=10&amp;format=image/png&amp;layers=vd.inventaire_cantonal_arbres_remarquables&amp;styles&amp;url=https://www.ogc.vd.ch/public/services/OGC/wmsVD/Mapserver/WMSServer" providerKey="wms"/>
     </layer-tree-group>
   </layer-tree-group>
   <maplayers>
@@ -25,10 +29,42 @@
       <provider>wms</provider>
     </maplayer>
     <maplayer type="raster" hasScaleBasedVisibilityFlag="0" minScale="1e+08" maxScale="0" styleCategories="AllStyleCategories">
-      <extent><xmin>2409654</xmin><ymin>1025627</ymin><xmax>2899590</xmax><ymax>1367397</ymax></extent>
+      <extent><xmin>2680661</xmin><ymin>1244008</ymin><xmax>2684844</xmax><ymax>1252740</ymax></extent>
       <id>geoharvester_spadom-arbres_2</id>
+      <datasource>contextualWMSLegend=0&amp;crs=EPSG:2056&amp;dpiMode=7&amp;featureCount=10&amp;format=image/png&amp;layers=Geschuetzte_Einzelbaeume (STZH)&amp;styles&amp;url=https://www.ogd.stadt-zuerich.ch/wms/geoportal/Geschuetzte_Einzelbaeume</datasource>
+      <layername>Geschuetzte_Einzelbaeume (STZH) (Zürich)</layername>
+      <srs><spatialrefsys><proj4>+proj=somerc +lat_0=46.9524055555556 +lon_0=7.43958333333333 +k_0=1 +x_0=2600000 +y_0=1200000 +ellps=bessel +towgs84=674.374,15.056,405.346,0,0,0,0 +units=m +no_defs</proj4><srid>2056</srid><authid>EPSG:2056</authid><description>CH1903+ / LV95</description><projectionacronym>somerc</projectionacronym><ellipsoidacronym>EPSG:7004</ellipsoidacronym><geographicflag>false</geographicflag></spatialrefsys></srs>
+      <provider>wms</provider>
+    </maplayer>
+    <maplayer type="raster" hasScaleBasedVisibilityFlag="0" minScale="1e+08" maxScale="0" styleCategories="AllStyleCategories">
+      <extent><xmin>2553026</xmin><ymin>1147259</ymin><xmax>2591500</xmax><ymax>1198774</ymax></extent>
+      <id>geoharvester_spadom-arbres_3</id>
+      <datasource>contextualWMSLegend=0&amp;crs=EPSG:2056&amp;dpiMode=7&amp;featureCount=10&amp;format=image/png&amp;layers=0&amp;styles&amp;url=https://maps.fr.ch/ags/services/OpenData/Arbres_spectaculaires/MapServer/WMSServer</datasource>
+      <layername>Arbres spectaculaires (FR)</layername>
+      <srs><spatialrefsys><proj4>+proj=somerc +lat_0=46.9524055555556 +lon_0=7.43958333333333 +k_0=1 +x_0=2600000 +y_0=1200000 +ellps=bessel +towgs84=674.374,15.056,405.346,0,0,0,0 +units=m +no_defs</proj4><srid>2056</srid><authid>EPSG:2056</authid><description>CH1903+ / LV95</description><projectionacronym>somerc</projectionacronym><ellipsoidacronym>EPSG:7004</ellipsoidacronym><geographicflag>false</geographicflag></spatialrefsys></srs>
+      <provider>wms</provider>
+    </maplayer>
+    <maplayer type="raster" hasScaleBasedVisibilityFlag="0" minScale="1e+08" maxScale="0" styleCategories="AllStyleCategories">
+      <extent><xmin>2543632</xmin><ymin>1217601</ymin><xmax>2615465</xmax><ymax>1264939</ymax></extent>
+      <id>geoharvester_spadom-arbres_4</id>
+      <datasource>contextualWMSLegend=0&amp;crs=EPSG:2056&amp;dpiMode=7&amp;featureCount=10&amp;format=image/png&amp;layers=ju.sdt_04_21&amp;styles&amp;url=https://geoservices.jura.ch/wms</datasource>
+      <layername>Inventaire des arbres sur tiges (JU)</layername>
+      <srs><spatialrefsys><proj4>+proj=somerc +lat_0=46.9524055555556 +lon_0=7.43958333333333 +k_0=1 +x_0=2600000 +y_0=1200000 +ellps=bessel +towgs84=674.374,15.056,405.346,0,0,0,0 +units=m +no_defs</proj4><srid>2056</srid><authid>EPSG:2056</authid><description>CH1903+ / LV95</description><projectionacronym>somerc</projectionacronym><ellipsoidacronym>EPSG:7004</ellipsoidacronym><geographicflag>false</geographicflag></spatialrefsys></srs>
+      <provider>wms</provider>
+    </maplayer>
+    <maplayer type="raster" hasScaleBasedVisibilityFlag="0" minScale="1e+08" maxScale="0" styleCategories="AllStyleCategories">
+      <extent><xmin>2409654</xmin><ymin>1025627</ymin><xmax>2899590</xmax><ymax>1367397</ymax></extent>
+      <id>geoharvester_spadom-arbres_5</id>
       <datasource>contextualWMSLegend=0&amp;crs=EPSG:2056&amp;dpiMode=7&amp;featureCount=10&amp;format=image/png&amp;layers=tree_species_lidar2022_sitn&amp;styles=default&amp;tileMatrixSet=EPSG2056&amp;url=https%3A%2F%2Fsitn.ne.ch%2Fservices%2Fwmts%3FSERVICE%3DWMTS%26REQUEST%3DGetCapabilities</datasource>
       <layername>essences arbres lidar 2022 (NE)</layername>
+      <srs><spatialrefsys><proj4>+proj=somerc +lat_0=46.9524055555556 +lon_0=7.43958333333333 +k_0=1 +x_0=2600000 +y_0=1200000 +ellps=bessel +towgs84=674.374,15.056,405.346,0,0,0,0 +units=m +no_defs</proj4><srid>2056</srid><authid>EPSG:2056</authid><description>CH1903+ / LV95</description><projectionacronym>somerc</projectionacronym><ellipsoidacronym>EPSG:7004</ellipsoidacronym><geographicflag>false</geographicflag></spatialrefsys></srs>
+      <provider>wms</provider>
+    </maplayer>
+    <maplayer type="raster" hasScaleBasedVisibilityFlag="0" minScale="1e+08" maxScale="0" styleCategories="AllStyleCategories">
+      <extent><xmin>2499010</xmin><ymin>1127800</ymin><xmax>2584962</xmax><ymax>1202900</ymax></extent>
+      <id>geoharvester_spadom-arbres_6</id>
+      <datasource>contextualWMSLegend=0&amp;crs=EPSG:2056&amp;dpiMode=7&amp;featureCount=10&amp;format=image/png&amp;layers=vd.inventaire_cantonal_arbres_remarquables&amp;styles&amp;url=https://www.ogc.vd.ch/public/services/OGC/wmsVD/Mapserver/WMSServer</datasource>
+      <layername>vd.inventaire_cantonal_arbres_remarquables (VD)</layername>
       <srs><spatialrefsys><proj4>+proj=somerc +lat_0=46.9524055555556 +lon_0=7.43958333333333 +k_0=1 +x_0=2600000 +y_0=1200000 +ellps=bessel +towgs84=674.374,15.056,405.346,0,0,0,0 +units=m +no_defs</proj4><srid>2056</srid><authid>EPSG:2056</authid><description>CH1903+ / LV95</description><projectionacronym>somerc</projectionacronym><ellipsoidacronym>EPSG:7004</ellipsoidacronym><geographicflag>false</geographicflag></spatialrefsys></srs>
       <provider>wms</provider>
     </maplayer>

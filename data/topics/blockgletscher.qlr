@@ -16,7 +16,7 @@
       <provider>wms</provider>
     </maplayer>
     <maplayer type="raster" hasScaleBasedVisibilityFlag="0" minScale="1e+08" maxScale="0" styleCategories="AllStyleCategories">
-      <extent><xmin>2674676</xmin><ymin>1153763</ymin><xmax>2715118</xmax><ymax>1205325</ymax></extent>
+      <extent><xmin>2672416</xmin><ymin>1156626</ymin><xmax>2711158</xmax><ymax>1197355</ymax></extent>
       <id>geoharvester_blockgletscher_1</id>
       <datasource>contextualWMSLegend=0&amp;crs=EPSG:2056&amp;dpiMode=7&amp;featureCount=10&amp;format=image/png&amp;layers=weitere:blockgletscher&amp;styles&amp;url=https://geo.ur.ch/wms</datasource>
       <layername>Blockgletscher (UR)</layername>

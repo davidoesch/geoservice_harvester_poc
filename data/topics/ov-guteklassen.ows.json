@@ -4,7 +4,7 @@
  "properties": {
   "lang": "de",
   "title": "ÖV-Güteklassen",
-  "updated": "2026-11-20T16:05:37+01:00",
+  "updated": "2026-11-22T08:52:16+01:00",
   "subtitle": "GeoHarvester topic: 8 providers",
   "links": {
    "profiles": [
@@ -47,7 +47,7 @@
    },
    "properties": {
     "title": "ÖV-Güteklassen ARE",
-    "updated": "2026-11-20T16:05:37+01:00",
+    "updated": "2026-11-22T08:52:16+01:00",
     "publisher": "Bund (geo.admin.ch)",
     "layer": "ch.are.gueteklassen_oev",
     "offerings": [
@@ -97,7 +97,7 @@
    },
    "properties": {
     "title": "öV-Güteklassen",
-    "updated": "2026-11-20T16:05:37+01:00",
+    "updated": "2026-11-22T08:52:16+01:00",
     "publisher": "Kanton Aargau",
     "layer": "ch_ag_geo_avk_oevgueteklassen",
     "offerings": [
@@ -147,7 +147,7 @@
    },
    "properties": {
     "title": "ÖV Güteklassen und Haltestellen CH",
-    "updated": "2026-11-20T16:05:37+01:00",
+    "updated": "2026-11-22T08:52:16+01:00",
     "publisher": "Kanton Appenzell Innerrhoden",
     "layer": "ch.geoportal.verkehr.1015.0.oev_gueteklassen_und_haltestellen_ch",
     "offerings": [
@@ -197,7 +197,7 @@
    },
    "properties": {
     "title": "ÖV Güteklassen und Haltestellen CH",
-    "updated": "2026-11-20T16:05:37+01:00",
+    "updated": "2026-11-22T08:52:16+01:00",
     "publisher": "Kanton Appenzell Ausserrhoden",
     "layer": "ch.geoportal.verkehr.1015.0.oev_gueteklassen_und_haltestellen_ch",
     "offerings": [
@@ -247,7 +247,7 @@
    },
    "properties": {
     "title": "ÖV-Güteklassen",
-    "updated": "2026-11-20T16:05:37+01:00",
+    "updated": "2026-11-22T08:52:16+01:00",
     "publisher": "Kanton Basel-Landschaft",
     "layer": "oev_gueteklassen",
     "offerings": [
@@ -273,31 +273,31 @@
     "coordinates": [
      [
       [
-       7.369,
-       47.077
+       7.372,
+       47.082
       ],
       [
-       8.038,
-       47.077
+       8.033,
+       47.082
       ],
       [
-       8.038,
-       47.498
+       8.033,
+       47.496
       ],
       [
-       7.369,
-       47.498
+       7.372,
+       47.496
       ],
       [
-       7.369,
-       47.077
+       7.372,
+       47.082
       ]
      ]
     ]
    },
    "properties": {
     "title": "ÖV-Güteklassen",
-    "updated": "2026-11-20T16:05:37+01:00",
+    "updated": "2026-11-22T08:52:16+01:00",
     "publisher": "Kanton Solothurn",
     "layer": "ch.so.avt.oev_gueteklasse",
     "offerings": [
@@ -347,7 +347,7 @@
    },
    "properties": {
     "title": "ÖV Güteklassen",
-    "updated": "2026-11-20T16:05:37+01:00",
+    "updated": "2026-11-22T08:52:16+01:00",
     "publisher": "Kanton Thurgau",
     "layer": "OEV_Gueteklassen",
     "offerings": [
@@ -397,7 +397,7 @@
    },
    "properties": {
     "title": "ÖV-Güteklassen",
-    "updated": "2026-11-20T16:05:37+01:00",
+    "updated": "2026-11-22T08:52:16+01:00",
     "publisher": "Kanton Zürich",
     "layer": "OevGueteklassenZHWMS",
     "offerings": [

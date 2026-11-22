@@ -1,0 +1,119 @@
+{
+ "type": "FeatureCollection",
+ "id": "https://davidoesch.github.io/geoservice_harvester_poc/data/topics/unterwerke.ows.json",
+ "properties": {
+  "lang": "de",
+  "title": "Unterwerke",
+  "updated": "2026-11-22T08:52:16+01:00",
+  "subtitle": "GeoHarvester topic: 2 providers",
+  "links": {
+   "profiles": [
+    {
+     "href": "http://www.opengis.net/spec/owc-geojson/1.0/req/core"
+    }
+   ]
+  }
+ },
+ "features": [
+  {
+   "type": "Feature",
+   "id": "https://ows.geo.tg.ch/geofy_access_proxy/richtplankt200k#Unterwerke_Layer",
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       8.631,
+       47.347
+      ],
+      [
+       9.572,
+       47.347
+      ],
+      [
+       9.572,
+       47.711
+      ],
+      [
+       8.631,
+       47.711
+      ],
+      [
+       8.631,
+       47.347
+      ]
+     ]
+    ]
+   },
+   "properties": {
+    "title": "Unterwerke",
+    "updated": "2026-11-22T08:52:16+01:00",
+    "publisher": "Kanton Thurgau",
+    "layer": "Unterwerke_Layer",
+    "offerings": [
+     {
+      "code": "http://www.opengis.net/spec/owc-geojson/1.0/req/wms",
+      "operations": [
+       {
+        "code": "GetCapabilities",
+        "method": "GET",
+        "type": "application/xml",
+        "href": "https://ows.geo.tg.ch/geofy_access_proxy/richtplankt200k?SERVICE=WMS&REQUEST=GetCapabilities"
+       }
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": "https://wms.zh.ch/EnergieStromwwwZH#unterwerke",
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       8.157,
+       47.142
+      ],
+      [
+       9.042,
+       47.142
+      ],
+      [
+       9.042,
+       47.848
+      ],
+      [
+       8.157,
+       47.848
+      ],
+      [
+       8.157,
+       47.142
+      ]
+     ]
+    ]
+   },
+   "properties": {
+    "title": "Unterwerke",
+    "updated": "2026-11-22T08:52:16+01:00",
+    "publisher": "Kanton Zürich",
+    "layer": "unterwerke",
+    "offerings": [
+     {
+      "code": "http://www.opengis.net/spec/owc-geojson/1.0/req/wms",
+      "operations": [
+       {
+        "code": "GetCapabilities",
+        "method": "GET",
+        "type": "application/xml",
+        "href": "https://wms.zh.ch/EnergieStromwwwZH?SERVICE=WMS&REQUEST=GetCapabilities"
+       }
+      ]
+     }
+    ]
+   }
+  }
+ ]
+}

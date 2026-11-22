@@ -25,7 +25,7 @@
       <provider>wms</provider>
     </maplayer>
     <maplayer type="raster" hasScaleBasedVisibilityFlag="0" minScale="1e+08" maxScale="0" styleCategories="AllStyleCategories">
-      <extent><xmin>2674676</xmin><ymin>1153763</ymin><xmax>2715118</xmax><ymax>1205325</ymax></extent>
+      <extent><xmin>2686354</xmin><ymin>1158033</ymin><xmax>2695100</xmax><ymax>1196300</ymax></extent>
       <id>geoharvester_larmempfindlichkeitsstufen-in-nutzungszonen-ch145_2</id>
       <datasource>contextualWMSLegend=0&amp;crs=EPSG:2056&amp;dpiMode=7&amp;featureCount=10&amp;format=image/png&amp;layers=oereb:ch145_prj_laermempfindlichkeitsstufen&amp;styles&amp;url=https://geo.ur.ch/wms</datasource>
       <layername>CH145 (prj) Lärmempfindlichkeitsstufen (UR)</layername>

@@ -4,7 +4,7 @@
  "properties": {
   "lang": "de",
   "title": "Öffentliches Grundeigentum",
-  "updated": "2026-11-20T16:05:37+01:00",
+  "updated": "2026-11-22T08:52:16+01:00",
   "subtitle": "GeoHarvester topic: 2 providers",
   "links": {
    "profiles": [
@@ -47,7 +47,7 @@
    },
    "properties": {
     "title": "Öffentliches Grundeigentum",
-    "updated": "2026-11-20T16:05:37+01:00",
+    "updated": "2026-11-22T08:52:16+01:00",
     "publisher": "Kanton Basel-Stadt",
     "layer": "Öffentliches Grundeigentum",
     "offerings": [
@@ -68,10 +68,36 @@
   {
    "type": "Feature",
    "id": "https://map.geo.gl.ch/ows/mainmap#ch.gl.cadastre.oeffentliches-grundeigentum",
-   "geometry": null,
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       8.87,
+       46.792
+      ],
+      [
+       9.261,
+       46.792
+      ],
+      [
+       9.261,
+       47.174
+      ],
+      [
+       8.87,
+       47.174
+      ],
+      [
+       8.87,
+       46.792
+      ]
+     ]
+    ]
+   },
    "properties": {
     "title": "Öffentliches Grundeigentum",
-    "updated": "2026-11-20T16:05:37+01:00",
+    "updated": "2026-11-22T08:52:16+01:00",
     "publisher": "Kanton Glarus",
     "layer": "ch.gl.cadastre.oeffentliches-grundeigentum",
     "offerings": [
